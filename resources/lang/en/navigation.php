@@ -1,0 +1,21 @@
+<?php
+return [
+    'dashboard' => 'Dashboard',
+    'province' => 'Province',
+    'district' => 'District',
+    'municipality' => 'Municipality',
+    'ward' => 'Ward',
+    'new_organization' => 'New',
+    'old_data_entry' => 'Old Data Entry',
+    'online_forms' => 'Online Forms',
+    'unrenewed' => 'Un-renewed',
+    'report' => 'Report',
+    'users' => 'Users',
+    'my_settings' => 'My Settings',
+    'settings' => 'Settings',
+    'configuration_checklist' => 'Configuration Checklist',
+    'configurations' => 'Configurations',
+    'organization_type' => 'Organization Type',
+    'sytems logs' => 'System Logs',
+    'fiscal_year' => 'Fiscal Year',
+];

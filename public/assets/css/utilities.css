@@ -1,0 +1,56 @@
+.bg-deep-blue {
+    background-color: var(--main-theme-color);
+}
+
+.bg-theme-color {
+    background-color: var(--main-theme-color);
+}
+
+.font-roboto {
+    font-family: "Roboto", sans-serif;
+}
+
+.lang-english {
+    font-family: "Roboto", sans-serif;
+}
+
+.font-noto {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.font-14px {
+    font-size: 14px;
+}
+
+.font-15px {
+    font-size: 15px;
+}
+
+.font-16px {
+    font-size: 16px;
+}
+
+.font-17px {
+    font-size: 17px;
+}
+
+.font-18px {
+    font-size: 18px;
+}
+
+/* SVG Images */
+.svg-icon {
+    display: inline-flex;
+    align-self: center;
+}
+
+.svg-icon svg {
+    height: 1em;
+    width: 1em;
+    fill: currentColor;
+}
+
+.svg-icon.svg-baseline svg {
+    top: .125em;
+    position: relative;
+}

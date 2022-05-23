@@ -1,0 +1,1 @@
+<input type="number" name="{{ $name }}" class="form-control {{ invalid_class($name) }}" min="0" value="{{ settings()->get($name, 1, true) }}">

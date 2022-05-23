@@ -1,0 +1,167 @@
+:root {
+    --main-theme-color: #1c4267;
+    --dashboard-primary-color: #5333ed;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-family: Kalimati, Georgia, serif;
+    background-color: #f2f7fb;
+}
+
+[v-cloak] {
+    display: none;
+}
+
+/* Sidebar */
+
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: #eee;
+    overflow: hidden;
+    transition: all .5s linear;
+    width: 250px;
+    margin-left: -250px;
+}
+
+.sidebar-opened #sidebar {
+    margin-left: 0;
+}
+
+/* sidebar-wrapper */
+
+#sidenav-wrapper {
+    overflow: auto;
+    height: 100%;
+}
+
+#sidenav-wrapper::-webkit-scrollbar {
+    width: 10px;
+}
+
+#sidenav-wrapper::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 4px;
+}
+
+#sidenav-wrapper:hover::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.40);
+}
+
+#sidenav-wrapper::-webkit-scrollbar-thumb:hover {
+    background: #778af1;
+}
+
+/* content-area */
+
+#content-area {
+    background-color: #f2f7fb;
+    margin-left: 250px;
+    transition: all .5s linear;
+    margin-left: 0;
+}
+
+.sidebar-opened #content-area {
+    margin-left: 250px;
+}
+
+/* ============
+ * Sidenav
+ =============== */
+
+#sidenav .nav-item:hover, #sidenav .nav-item.active {
+    background-color: #4285f4;
+}
+
+#sidenav .nav-item:hover .nav-link, #sidenav .nav-item.active .nav-link {
+    color: #fff;
+}
+
+#sidenav .nav-item:hover span, #sidenav .nav-item.active span {
+    color: #fff!important;
+}
+
+#sidenav .nav-link {
+    color: #e2e7eb;
+}
+
+#sidenav .nav-link span {
+    margin-right: 15px;
+    color: #b6d9ff;
+}
+
+/* Date picker trigger button */
+
+.npd-trigger-btn {
+    background-color: #007bff;
+    border: none;
+    color: #fefefe;
+}
+
+/* Table actiono buttons */
+
+.action-btn {
+    border: 0;
+    padding: 0;
+    margin: 0 5px;
+    background: transparent;
+    color: inherit;
+}
+
+/* change color of button on hover */
+
+.btn {
+    text-transform: capitalize;
+}
+
+.btn:hover {
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.15)!important;
+    filter: brightness(95%);
+}
+
+/*============
+* Action Bar 
+*=============*/
+
+.action-wrapper {
+    display: flex;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #f2f2f2;
+    border-radius: .25rem;
+    background-color: #f9fcff;
+    margin-bottom: 15px;
+}
+
+.action-wrapper:hover {
+    background-color: #f2f7fb;
+}
+
+.action-wrapper .icon-wrapper {
+    align-self: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.action-wrapper .icon-wrapper .icon {
+    align-self: center;
+    font-size: 18px;
+}
+
+.action-wrapper .label {
+    align-self: center;
+    margin-left: 10px;
+    padding: 10px 15px;
+    color: var(--main-theme-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+}

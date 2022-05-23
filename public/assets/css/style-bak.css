@@ -1,0 +1,531 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+    background-color: #f2f7fb;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+*:focus {
+    outline: none;
+}
+
+.bg-theme-color {
+    background-color: #191717;
+    background-color: #982121;
+}
+
+.text-theme-color {
+    color: #982121;
+}
+
+.bg-secondary-color {
+    background-color: #FC7A1E;
+}
+
+.text-secondary-color {
+    color: #28a745;
+}
+
+.card-shadow {
+    box-shadow: 0 0px 15px 2px rgba(143, 143, 143, 0.09);
+}
+
+.custom-navbar {
+    background-color: #dd3e52!important;
+    font-family: 'Sen', sans-serif;
+}
+
+.custom-navbar .navbar-brand {
+    font-family: 'Permanent Marker', cursive;
+}
+
+.custom-navbar .nav-item .nav-link {}
+
+.custom-navbar .dropdown-menu {
+    margin-top: 5px!important;
+    border-radius: 0;
+}
+
+.custom-navbar .dropdown-menu:before {
+    content: "";
+    border-bottom: 10px solid #fff;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    position: absolute;
+    top: -10px;
+    right: 16px;
+    z-index: 10;
+}
+
+.custom-navbar .dropdown-menu a {
+    color: #535b61;
+    padding: .25rem 1.5rem;
+}
+
+.custom-navbar .dropdown-menu a:not(.active) {
+    color: #535b61;
+}
+
+.custom-navbar .dropdown-menu a>i {
+    color: #ff9800;
+    margin-right: 5px;
+}
+
+.custom-navbar .dropdown-menu .dropdown-item:hover {
+    background-color: #dee6ef;
+}
+
+.custom-navbar .dropdown-menu .dropdown-item:active {
+    color: #fff;
+    background-color: #dd3e52;
+}
+
+.custom-navbar .dropdown-menu .dropdown-item:active i {
+    color: #fff;
+}
+
+
+/* small devices (custom navbar) */
+
+@media (max-width: 600px) {
+    .custom-navbar {
+        background-color: #dd3e52!important;
+        font-size: .9em;
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+        padding: 0;
+    }
+}
+
+[v-cloak] {
+    display: none;
+}
+
+.text-strike {
+    text-decoration: line-through;
+}
+
+/* =================
+** Floating Cart
+** ================*/
+
+#floating-cart {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    width: auto;
+    padding: 15px 20px;
+    background-color: #FC7A1E;
+    display: none;
+    font-family: 'Sen', sans-serif;
+    cursor: pointer;
+}
+
+#floating-cart-wrapper .dropdown-menu {
+    border: 0.8px solid #FC7A1E;
+    font-family: 'Sen', sans-serif;
+}
+
+#floating-cart-wrapper .dropdown-menu:before {
+    content: "";
+    border-top: 10px solid #FC7A1E;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    position: absolute;
+    bottom: -10px;
+    right: 16px;
+    z-index: 10;
+}
+
+#floating-cart svg {
+    font-size: 1.5rem;
+    fill: #fff;
+}
+
+#floating-cart .cart-quantity {
+    position: absolute;
+    top: -10px;
+    right: -15px;
+    background-color: #ff3547;
+    color: #fff;
+    padding: 5px 8px;
+    min-height: 15px;
+    min-width: 15px;
+    border-radius: 50%;
+    font-size: 0.6rem;
+}
+
+#floating-cart .cart-price {
+    margin-left: 20px;
+    color: #fff;
+    font-size: 0.8rem;
+}
+
+/* small devices */
+
+@media (max-width: 600px) {
+    #floating-cart-wrapper {
+        display: none;
+    }
+}
+
+/* ------------
+*  Quantity btns in card
+*-------------- */
+
+/* Chrome, Safari, Edge, Opera */
+
+.counter-control::-webkit-outer-spin-button, .counter-control::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+
+.counter-control[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* Product slider Styles */
+
+#featuredProductSlider .product-wrapper {
+    font-family: 'Sen', sans-serif;
+    color: #747d89;
+}
+
+#featuredProductSlider img {
+    height: 150px;
+}
+
+#featuredProductSlider .product-wrapper .add-to-cart-btn {
+    color: #7ac400;
+    font-size: 14px;
+    text-transform: uppercase;
+    background: none;
+    border: 1px solid #7ac400;
+    padding: 6px 14px;
+    margin-top: 5px;
+    line-height: 18px;
+    border-radius: 20px;
+}
+
+#featuredProductSlider .product-wrapper .add-to-cart-btn:hover, #featuredProductSlider .product-wrapper .add-to-cart-btn:focus {
+    color: #fff;
+    background: #7ac400;
+    box-shadow: none;
+}
+
+#featuredProductSlider .product-wrapper .qty-minus-btn, #featuredProductSlider .product-wrapper .qty-plus-btn {
+    /* padding: 5px; */
+    color: #fff;
+    background-color: #ff9800;
+    border: 1px solid #ff9800;
+}
+
+#featuredProductSlider .product-wrapper .qty-minus-btn {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#featuredProductSlider .product-wrapper .qty-plus-btn {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#featuredProductSlider .product-wrapper .qty-minus-btn:hover, #featuredProductSlider .product-wrapper .qty-plus-btn:hover {
+    color: #ff9800;
+    background-color: #fff;
+}
+
+#featuredProductSlider .product-wrapper .qty-minus-btn:focus, #featuredProductSlider .product-wrapper .qty-plus-btn:focus {
+    outline: 0;
+}
+
+#featuredProductSlider .product-wrapper .counter-control {
+    padding: 0;
+    outline: none;
+    color: #747d89;
+    width: 40px;
+    text-align: center;
+}
+
+#featuredProductSlider .product-wrapper .counter-control-wrapper {
+    border-top: 1px solid #ff9800;
+    border-bottom: 1px solid #ff9800;
+}
+
+/* Normal Product Cart Styles */
+
+.product-wrapper {
+    font-family: 'Sen', sans-serif;
+    color: #747d89;
+}
+
+.product-wrapper .card {
+    border-radius: 6px;
+}
+
+.product-wrapper img {
+    height: 180px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.product-wrapper .add-to-cart-btn {
+    color: #7ac400;
+    font-size: 14px;
+    text-transform: uppercase;
+    background: none;
+    border: 1px solid #7ac400;
+    padding: 10px 20px;
+    margin-top: 5px;
+    line-height: 18px;
+    border-radius: 20px;
+}
+
+.product-wrapper .add-to-cart-btn:hover, .product-wrapper .add-to-cart-btn:focus {
+    color: #fff;
+    background: #7ac400;
+    box-shadow: none;
+}
+
+.product-wrapper .qty-minus-btn, .product-wrapper .qty-plus-btn {
+    color: #fff;
+    background-color: #ff9800;
+    border: 1px solid #ff9800;
+}
+
+.product-wrapper .qty-minus-btn {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.product-wrapper .qty-plus-btn {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.product-wrapper .qty-minus-btn:hover, .product-wrapper .qty-plus-btn:hover {
+    color: #ff9800;
+    background-color: #fff;
+}
+
+.product-wrapper .qty-minus-btn:focus, .product-wrapper .qty-plus-btn:focus {
+    outline: 0;
+}
+
+.product-wrapper .counter-control {
+    padding: 0;
+    outline: none;
+    color: #747d89;
+    width: 40px;
+    text-align: center;
+}
+
+.product-wrapper .counter-control-wrapper {
+    border-top: 1px solid #ff9800;
+    border-bottom: 1px solid #ff9800;
+}
+
+/* Small devices */
+
+@media (max-width: 600px) {
+    .product-wrapper {
+        font-size: 16px!important;
+        color: #555;
+    }
+    .product-wrapper .card-title {
+        font-size: 16px!important;
+    }
+    .out-menu-section .product-wrapper .card-title {
+        text-align: left;
+    }
+    .product-wrapper .h4-responsive, .product-wrapper .h5-responsive {
+        font-size: 16px!important;
+    }
+    .product-wrapper .price {
+        text-align: left;
+        font-size: 16px!important;
+        color: #ff9800;
+    }
+    .product-wrapper .old-price {
+        color: #a8a3a3;
+    }
+    .product-wrapper img {
+        height: auto;
+    }
+    .product-wrapper .add-to-cart-btn {
+        padding: 5px 8px;
+        font-size: 12px;
+    }
+}
+
+/* -----------------
+*  Our Menu Section 
+*--------------------*/
+
+#menu-head-section {
+    background-color: #fff;
+    padding: 15px 10px 10px 10px;
+    border-radius: 6px;
+    position: sticky;
+    top: 10px;
+    z-index: 100;
+}
+
+.menu-list {
+    padding: 0;
+    font-family: 'Sen', sans-serif;
+}
+
+.menu-list li {
+    list-style: none;
+    padding: 10px 0;
+}
+
+.menu-list li a {
+    display: block;
+    color: #7ac400;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background: none;
+    border: 1px solid #7ac400;
+    padding: 10px 15px;
+    line-height: 18px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.menu-list .menu-list-item .menu-item.active, .menu-list .menu-list-item .menu-item:hover, .menu-list .menu-list-item .menu-item:focus {
+    color: #fff;
+    background: #7ac400;
+    border-color: #7ac400;
+    box-shadow: none;
+}
+
+/* *****************
+*  SLICK DESIGN
+* ****************** */
+
+/* Slick Prev Next Buttons */
+
+.c-slick-prev, .c-slick-next {
+    position: absolute;
+    top: 40%;
+    z-index: 100;
+    padding: 15px 12px;
+    background: #7ac400;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.c-slick-prev {
+    left: -15px;
+}
+
+.c-slick-next {
+    right: -15px;
+}
+
+.c-slick-prev:hover, .c-slick-next:hover {
+    background: #fff;
+    ;
+    border: 1px solid #ff9800;
+    color: #ff9800;
+    opacity: 1;
+}
+
+/* Dots */
+
+.slick-dotted.slick-slider {
+    margin-bottom: 30px;
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: -40px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+.slick-dots li button:hover, .slick-dots li button:focus {
+    outline: none;
+}
+
+.slick-dots li button:hover:before, .slick-dots li button:focus:before {
+    opacity: 1;
+}
+
+.slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 26px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: .25;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: black;
+}
+
+/* Hide Arrows when disabled */
+
+.c-slick-prev.slick-disabled, .c-slick-next.slick-disabled {
+    display: none!important;
+}
