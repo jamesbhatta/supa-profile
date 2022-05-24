@@ -15,10 +15,12 @@ class CreateTablesTable extends Migration
     {
         Schema::create('tables', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('heading')->nullable();
+            $table->string('key');
+            $table->string('group')->nullable();
+            $table->string('display_name')->nullable();
             $table->string('sub_heading')->nullable();
             $table->longText('data')->nullable();
+            $table->longText('columns')->nullable();
             $table->timestamps();
         });
     }

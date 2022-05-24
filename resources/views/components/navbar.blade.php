@@ -31,7 +31,6 @@
                     </a>
                     <div class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
                         <a class="dropdown-item" href="{{ route('password.change.form', Auth::user()) }}">Change Password</a>
-                        <a class="dropdown-item" href="{{ route('user.settings.index') }}">@lang('navigation.my_settings')</a>
                         @hasanyrole('super-admin|admin')
                         <a class="dropdown-item" href="{{ route('configuration-checklist.index') }}">@lang('navigation.configuration_checklist')</a>
                         @endhasanyrole

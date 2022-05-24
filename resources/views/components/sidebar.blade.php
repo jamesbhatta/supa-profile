@@ -186,10 +186,6 @@
         </li>
         @endcan
 
-        <li class="nav-item pl-5 {{ setActive('organization-type.*') }}">
-            <a class="nav-link" href="{{ route('organization-type.index') }}">@lang('navigation.organization_type')</a>
-        </li>
-
         @hasanyrole('super-admin')
         <li class="nav-item">
             <a class="nav-link" href="{{ route('admin.logs') }}" target="_blank">
