@@ -70,11 +70,7 @@
     <div class="card z-depth-0">
         <div class="card-header">
             <h1 class="h3-responsive d-inline-block">न.पा./गा.वि.स. हरु</h1>
-            @if ($municipalities->count()==1||$municipalities->count()==0)
-            <small>(हाल {{ $municipalities->count() }} न.पा./गा.वि.स. छ)</small>
-            @else
-            <small>(हाल {{ $municipalities->count() }} न.पा./गा.वि.स. हरु छन्)</small>
-            @endif
+            <small>(हाल {{ count($municipalities)  }}  न.पा./गा.वि.स. {{ count($municipalities) > 1 ? 'हरु छन्' : 'छ' }} )</small>
             
         </div>
         <div class="card-body">

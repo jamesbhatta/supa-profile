@@ -116,7 +116,7 @@ function models()
 {
     return [
         [
-            'slug' => 'blog',
+            'slug' => 'blogs',
             'fields' => [
                 [
                     'label' => 'Title',
@@ -154,7 +154,304 @@ function models()
                     'type' => 'text',
                     'rules' => 'required|email'
                 ],
+              
             ]
-        ]
+            ],
+            // table 2.1
+            [
+                'slug' => 'geographical_area',
+                'fields' => [
+                    [
+                        'label' => 'भौगोलिक क्षेत्र को नाम',
+                        'name' => 'geographical_name',
+                        'type' => 'text',
+                        'rules' => 'required|min:5'
+                    ],
+                    [
+                        'label' => 'क्षेत्रफल (वर्ग कि. मि.)',
+                        'name' => 'geographical_area',
+                        'type' => 'number',
+                        'rules' => 'required'
+                    ],
+                    [
+                        'label' => 'प्रतिशत',
+                        'name' => 'geographical_percentage',
+                        'type' => 'number',
+                        'rules' => 'required'
+                    ],
+                  
+                ]
+                ],
+                // table 2.2
+                [
+                    'slug' => 'province_area',
+                    'fields' => [
+                        [
+                            'label' => 'प्रदेशको नाम',
+                            'name' => 'province_name',
+                            'type' => 'text',
+                            'rules' => 'required|min:5'
+                        ],
+                        [
+                            'label' => 'क्षेत्रफल (वर्ग कि. मि.)',
+                            'name' => 'province_area',
+                            'type' => 'number',
+                            'rules' => 'required'
+                        ],
+                        [
+                            'label' => 'प्रतिशत',
+                            'name' => 'province_percentage',
+                            'type' => 'number',
+                            'rules' => 'required'
+                        ],
+                      
+                    ]
+                    ],
+                    // table 2.3
+                    [
+                        'slug' => 'district_area',
+                        'fields' => [
+                            [
+                                'label' => 'जिल्लाको नाम',
+                                'name' => 'district_name',
+                                'type' => 'text',
+                                'rules' => 'required|min:5'
+                            ],
+                            [
+                                'label' => 'क्षेत्रफल (वर्ग कि. मि.)',
+                                'name' => 'district_area',
+                                'type' => 'number',
+                                'rules' => 'required'
+                            ],
+                            [
+                                'label' => 'प्रतिशत',
+                                'name' => 'district_percentage',
+                                'type' => 'number',
+                                'rules' => 'required'
+                            ],
+                          
+                        ]
+                        ],
+                        // table 2.5
+                        [
+                            'slug' => 'used_material',
+                            'fields' => [
+                                [
+                                    'label' => 'क्षेत्र',
+                                    'name' => 'sector_name',
+                                    'type' => 'text',
+                                    'rules' => 'required|min:5'
+                                ],
+                                [
+                                    'label' => 'नेपालको क्षेत्रफल',
+                                    'name' => 'district_area',
+                                    'type' => 'number',
+                                    'rules' => 'required'
+                                ],
+                                [
+                                    'label' => 'सुदूरपश्चिमको क्षेत्रफल  ',
+                                    'name' => 'district_percentage',
+                                    'type' => 'number',
+                                    'rules' => 'required'
+                                ],
+                              
+                            ]
+                            ],
+                             // table 2.7
+                        [
+                            'slug' => 'geographical_election_detail',
+                            'fields' => [
+                                [
+                                    'label' => 'भौगोलिक क्षेत्र',
+                                    'name' => 'sector_name',
+                                    'type' => 'text',
+                                    'rules' => 'required|min:5'
+                                ],
+                                [
+                                    'label' => 'प्रतिनिधि सभा',
+                                    'name' => 'representive_house',
+                                    'type' => 'text',
+                                    'rules' => 'required'
+                                ],
+                                [
+                                    'label' => 'प्रदेश सभा',
+                                    'name' => 'province_house',
+                                    'type' => 'text',
+                                    'rules' => 'required'
+                                ],
+                                [
+                                    'label' => 'प्रतिशत',
+                                    'name' => 'percentage',
+                                    'type' => 'number',
+                                    'rules' => 'required'
+                                ],
+                              
+                            ]
+                        ],
+                        // table 2.8
+                        [
+                            'slug' => 'district_election_detail',
+                            'fields' => [
+                                [
+                                    'label' => 'जिल्लाको नाम',
+                                    'name' => 'district_name',
+                                    'type' => 'text',
+                                    'rules' => 'required|min:5'
+                                ],
+                                [
+                                    'label' => 'प्रतिनिधि सभा',
+                                    'name' => 'representive_house',
+                                    'type' => 'text',
+                                    'rules' => 'required'
+                                ],
+                                [
+                                    'label' => 'प्रदेश सभा',
+                                    'name' => 'province_house',
+                                    'type' => 'text',
+                                    'rules' => 'required'
+                                ],
+                         
+                            ]
+                        ],
+                        // table 2.9
+                        [
+                            'slug' => 'namawali',
+                            'fields' => [
+                                [
+                                    'label' => 'प्रदेश प्रमुख',
+                                    'name' => 'district_name',
+                                    'type' => 'text',
+                                    'rules' => 'required|min:5'
+                                ],
+                                [
+                                    'label' => 'देखी',
+                                    'name' => 'from',
+                                    'type' => 'text',
+                                    'rules' => 'required'
+                                ],
+                                [
+                                    'label' => 'सम्म',
+                                    'name' => 'to',
+                                    'type' => 'text',
+                                    'rules' => 'required'
+                                ],
+                               
+                         
+                            ]
+                            ],
+                         // table 2.10
+                         [
+                            'slug' => 'first_mantriparisadh',
+                            'fields' => [
+                                [
+                                    'label' => 'नाम थार',
+                                    'name' => 'name',
+                                    'type' => 'text',
+                                    'rules' => 'required|min:5'
+                                ],
+                                [
+                                    'label' => 'मन्त्रालय',
+                                    'name' => 'mantralai',
+                                    'type' => 'text',
+                                    'rules' => 'required'
+                                ],
+                                [
+                                    'label' => 'दल',
+                                    'name' => 'dal',
+                                    'type' => 'text',
+                                    'rules' => 'required'
+                                ],
+                               
+                         
+                            ]
+                            ], // table 2.11
+                            [
+                               'slug' => 'current_mantriparisadh',
+                               'fields' => [
+                                   [
+                                       'label' => 'नाम थार',
+                                       'name' => 'name',
+                                       'type' => 'text',
+                                       'rules' => 'required|min:5'
+                                   ],
+                                   [
+                                    'label' => 'पद',
+                                    'name' => 'position',
+                                    'type' => 'text',
+                                    'rules' => 'required|min:5'
+                                    ],
+                                   [
+                                       'label' => 'मन्त्रालय',
+                                       'name' => 'mantralai',
+                                       'type' => 'text',
+                                       'rules' => 'required'
+                                   ],
+                                   [
+                                       'label' => 'दल',
+                                       'name' => 'dal',
+                                       'type' => 'text',
+                                       'rules' => 'required'
+                                   ],
+                                  
+                            
+                               ]
+                           ], // table 2.12
+                           [
+                              'slug' => 'pardesh_namawali',
+                              'fields' => [
+                                  [
+                                      'label' => 'नाम थार',
+                                      'name' => 'name',
+                                      'type' => 'text',
+                                      'rules' => 'required|min:5'
+                                  ],
+                                  [
+                                   'label' => 'निर्वाचन क्षेत्र',
+                                   'name' => 'election_area',
+                                   'type' => 'text',
+                                   'rules' => 'required|min:5'
+                                   ],
+                                  [
+                                      'label' => 'राजनीतिक दल',
+                                      'name' => 'politic_dal',
+                                      'type' => 'text',
+                                      'rules' => 'required'
+                                  ],
+                                 
+                           
+                              ]
+                          ]
+                          , // table 3.1
+                           [
+                              'slug' => 'geographical_population_2068',
+                              'fields' => [
+                                  [
+                                      'label' => 'क्षेत्र',
+                                      'name' => 'name',
+                                      'type' => 'text',
+                                      'rules' => 'required|min:5'
+                                  ],
+                                  [
+                                   'label' => 'जनसंख्या',
+                                   'name' => 'election_area',
+                                   'type' => 'text',
+                                   'rules' => 'required|min:5'
+                                   ],
+                                  [
+                                      'label' => 'क्षेत्रफल',
+                                      'name' => 'politic_dal',
+                                      'type' => 'text',
+                                      'rules' => 'required'
+                                  ],
+                                  [
+                                    'label' => 'जन्घनत्व',
+                                    'name' => 'politic_dal',
+                                    'type' => 'text',
+                                    'rules' => 'required'
+                                ],
+                                 
+                           
+                              ]
+                          ]
     ];
 }

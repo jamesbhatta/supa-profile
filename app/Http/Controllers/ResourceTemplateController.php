@@ -3,11 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use DB;
 class ResourceTemplateController extends Controller
 {
     public function create($model)
     {
+        // return $model;
         $model = collect(models())->filter(fn ($item) =>  $item['slug'] == $model)->first();
         if (!$model) {
             abort(404, 'Page Not Found');
@@ -20,6 +21,7 @@ class ResourceTemplateController extends Controller
     public function store(Request $request, $model)
     {
         $model = collect(models())->filter(fn ($item) =>  $item['slug'] == $model)->first();
+        
         if (!$model) {
             abort(404, 'Page Not Found');
         }
@@ -29,7 +31,11 @@ class ResourceTemplateController extends Controller
             $rules[$field['name']] = $field['rules'];
         };
         $request->validate($rules);
+        return $request->description;
 
-        return $request;
+        DB::table($model['slug'])->insert(
+            ['title' => $request->title],
+            ['description'=>$request->description]
+        );
     }
 }
