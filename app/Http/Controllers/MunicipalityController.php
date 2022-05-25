@@ -8,11 +8,11 @@ use App\Province;
 
 class MunicipalityController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('auth');
-        $this->middleware('role:super-admin|admin');
-    }
+    // public function __construct()
+    // {
+    //     $this->middleware('auth');
+    //     $this->middleware('role:super-admin|admin');
+    // }
 
     /**
      * Display a listing of the resource.
@@ -98,9 +98,9 @@ class MunicipalityController extends Controller
      */
     public function destroy(Municipality $municipality)
     {
-        if ($municipality->organizations()->exists()) {
-            return redirect()->route('municipality.index')->with('error', 'हटाउँदा त्रुटि। व्यवसायहरू यस क्षेत्रमा अवस्थित छन्।');
-        }
+        // if ($municipality->organizations()->exists()) {
+        //     return redirect()->route('municipality.index')->with('error', 'हटाउँदा त्रुटि। व्यवसायहरू यस क्षेत्रमा अवस्थित छन्।');
+        // }
 
         $municipality->delete();
         return redirect()->route('municipality.index')->with('success', 'न.पा./गा.वि.स. हटाइएको छ');

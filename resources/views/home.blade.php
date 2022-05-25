@@ -17,7 +17,7 @@
 @section('content')
 <div id="dashboard" class="m-n3">
     <div class="container font-noto">
-        <div class="row">
+        <div class="row">   
             {{-- <div class="col-md-12">
                 <form action="{{ route('home') }}" method="GET">
             <div class="row">
