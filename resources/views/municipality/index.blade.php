@@ -21,6 +21,15 @@
                     <label for="input-name-en">न.पा./गा.वि.स. को नाम (In English)</label>
                     <input type="text" id="input-name-en" name="name_en" class="form-control" autocomplete="off" value="{{ old('name_en', $municipality->name_en) }}">
                 </div>
+               
+                <div class="form-group">
+                    <label for="input-name-en">न.पा./गा.वि.स. को छेत्रफल</label>
+                    <input type="number" id="input-name-en" name="area" class="form-control" autocomplete="off" value="{{ old('name_en', $municipality->area) }}">
+                </div>
+                <div class="form-group">
+                    <label for="input-name-en">न.पा./गा.वि.स. को वार्ड सांख्य</label>
+                    <input type="number" id="input-name-en" name="number" class="form-control" autocomplete="off" value="{{ old('name_en', $municipality->number) }}">
+                </div>
                 <div class="form-group">
                     <label for="select-province-id">प्रदेशको नाम</label>
                     <select id="select-province-id" class="custom-select">
@@ -61,7 +70,12 @@
     <div class="card z-depth-0">
         <div class="card-header">
             <h1 class="h3-responsive d-inline-block">न.पा./गा.वि.स. हरु</h1>
+            @if ($municipalities->count()==1||$municipalities->count()==0)
+            <small>(हाल {{ $municipalities->count() }} न.पा./गा.वि.स. छ)</small>
+            @else
             <small>(हाल {{ $municipalities->count() }} न.पा./गा.वि.स. हरु छन्)</small>
+            @endif
+            
         </div>
         <div class="card-body">
             <table class="table table-striped table-hover">
@@ -69,7 +83,8 @@
                     <tr>
                         <th>क्र.स.</th>
                         <th>न.पा./गा.वि.स.</th>
-                        <th>न.पा./गा.वि.स. (English)</th>
+                        <th>न.पा./गा.वि.स. को छेत्रफल</th>
+                        <th>न.पा./गा.वि.स. वार्ड सांख्य</th>
                         <th>जिल्ला</th>
                     </tr>
                 </thead>
@@ -78,7 +93,8 @@
                     <tr>
                         <td>{{ $loop->iteration }}</td>
                         <td>{{ $municipality->name }}</td>
-                        <td>{{ $municipality->name_en }}</td>
+                        <td>{{ $municipality->area }}</td>
+                        <td>{{ $municipality->number }}</td>
                         <td>{{ $municipality->district->name ?? '' }}</td>
                         <td>
                             <a class="action-btn text-primary" href="{{ route('municipality.edit', $municipality) }}"><i class="far fa-edit"></i></a>

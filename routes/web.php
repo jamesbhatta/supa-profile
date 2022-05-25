@@ -44,3 +44,4 @@ Route::group(
         Route::get('admin/logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index')->name('admin.logs');
     }
 );
+
