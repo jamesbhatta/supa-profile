@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 Auth::routes(['register' => false]);
@@ -17,6 +18,8 @@ Route::resources([
 
 Route::get('/data/{key}', 'TableController@index');
 Route::post('/data/{key}', 'TableController@store');
+Route::get('resource/{model}/create', 'ResourceTemplateController@create');
+Route::post('resource/{model}', 'ResourceTemplateController@store');
 
 Route::get('fiscal-year/{fiscalYear?}', 'FiscalYearController@index')->name('fiscal-year.index');
 Route::post('fiscal-year', 'FiscalYearController@store')->name('fiscal-year.store');

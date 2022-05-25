@@ -110,3 +110,51 @@ if (!function_exists('ad_to_bs')) {
         return \App\Helpers\BSDateHelper::AdToBsEn('-', $enDate);
     }
 }
+
+
+function models()
+{
+    return [
+        [
+            'slug' => 'blog',
+            'fields' => [
+                [
+                    'label' => 'Title',
+                    'name' => 'title',
+                    'type' => 'text',
+                    'rules' => 'required'
+                ],
+                [
+                    'label' => 'Description',
+                    'name' => 'description',
+                    'type' => 'textarea',
+                    'rules' => 'nullable'
+                ],
+                [
+                    'label' => 'Price',
+                    'name' => 'price',
+                    'type' => 'text',
+                    'rules' => 'nullable'
+                ],
+            ]
+        ],
+
+        [
+            'slug' => 'subscriber',
+            'fields' => [
+                [
+                    'label' => 'Name',
+                    'name' => 'name',
+                    'type' => 'text',
+                    'rules' => 'required'
+                ],
+                [
+                    'label' => 'Email',
+                    'name' => 'email',
+                    'type' => 'text',
+                    'rules' => 'required|email'
+                ],
+            ]
+        ]
+    ];
+}
