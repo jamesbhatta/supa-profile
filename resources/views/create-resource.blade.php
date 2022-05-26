@@ -10,6 +10,7 @@
         <div class="form-group">
             <label for="">{{ $field['label'] }}</label>
             <input type="text" name="{{$field['name'] }}" class="form-control">
+             
         </div>
         @endforeach
         <div class="form-group">

@@ -21,8 +21,7 @@ class ResourceTemplateController extends Controller
     public function store(Request $request, $model)
     {
         $model = collect(models())->filter(fn ($item) =>  $item['slug'] == $model)->first();
-        
-        if (!$model) {
+                if (!$model) {
             abort(404, 'Page Not Found');
         }
         // return $model['fields'];
@@ -31,11 +30,5 @@ class ResourceTemplateController extends Controller
             $rules[$field['name']] = $field['rules'];
         };
         $request->validate($rules);
-        return $request->description;
-
-        DB::table($model['slug'])->insert(
-            ['title' => $request->title],
-            ['description'=>$request->description]
-        );
-    }
+            }
 }
