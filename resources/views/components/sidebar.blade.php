@@ -1,11 +1,3 @@
-    <style>
-        @media print
-        {
-            #sidebar {
-                display: none;
-            }
-        }
-    </style>
 <div class="py-4 pl-5">
     <img class="img-reponsive" src="{{ asset(config('constants.nep_gov.logo_sm')) }}" alt="Nepal Government Logo" height="80px">
 </div>
@@ -17,24 +9,30 @@
             </a>
         </li>
 
-        {{-- <li class="nav-item {{ setActive('organization.create') }}">
-            <a class="nav-link" href="{{ route('organization.create') }}">
-                <span class="text-success"><i class="fa fa-plus"></i></span>@lang('navigation.new_organization')
+        <li class="nav-item {{ setActive('resources.*') }}">
+            <a class="nav-link" href="{{ route('resources.index') }}">
+                <span class="text-warning"><i class="fa fa-cogs"></i></span>Resources
             </a>
+        </li>
+
+        {{-- <li class="nav-item {{ setActive('organization.create') }}">
+        <a class="nav-link" href="{{ route('organization.create') }}">
+            <span class="text-success"><i class="fa fa-plus"></i></span>@lang('navigation.new_organization')
+        </a>
         </li> --}}
 
         {{-- @hasanyrole('admin|super-admin')
         <li class="nav-item {{ setActive('old-organizations.create') }}">
-            <a class="nav-link" href="{{ route('old-organizations.create') }}">
-                <span class="text-success"><i class="fa fa-plus"></i></span>@lang('navigation.old_data_entry')
-            </a>
+        <a class="nav-link" href="{{ route('old-organizations.create') }}">
+            <span class="text-success"><i class="fa fa-plus"></i></span>@lang('navigation.old_data_entry')
+        </a>
         </li>
         @endhasanyrole --}}
 
         {{-- <li class="nav-item {{ setActive('online-application.*') }}">
-            <a class="nav-link" href="{{ route('online-application.index') }}">
-                <span class="text-warning"><i class="fab fa-wpforms"></i></span>@lang('navigation.online_forms')
-            </a>
+        <a class="nav-link" href="{{ route('online-application.index') }}">
+            <span class="text-warning"><i class="fab fa-wpforms"></i></span>@lang('navigation.online_forms')
+        </a>
         </li> --}}
 
         {{-- @can('organization.verify')
@@ -56,9 +54,9 @@
         {{-- changes
         @can('organization.verify')
         <li class="nav-item {{ request()->routeIs('organization.index') && request('checked') && request()->has('verified') && !request('verified') ? 'active' : '' }}">
-            <a class="nav-link" href="{{ route('organization.index', ['checked' => '1', 'verified' => '0', 'fiscal_year' => runningFiscalYear()->name]) }}">
-                <span class="red-text"><i class="far fa-times-circle"></i></span>सिफारिस नभएका
-            </a>
+        <a class="nav-link" href="{{ route('organization.index', ['checked' => '1', 'verified' => '0', 'fiscal_year' => runningFiscalYear()->name]) }}">
+            <span class="red-text"><i class="far fa-times-circle"></i></span>सिफारिस नभएका
+        </a>
         </li>
         @endcan
 
@@ -81,12 +79,12 @@
         @can('organization.register')
         <li class="nav-item {{ request()->routeIs('organization.index') && request('closed') ? 'active' : '' }}">
             <a class="nav-link" href="{{ route('organization.index', ['closed' => '1', 'fiscal_year' => runningFiscalYear()->name]) }}">
-                <span class="deep-orange-text"><i c      <li class="nav-item {{ setActive('organization.create') }}">
-            <a class="nav-link" href="{{ route('organization.create') }}">
-                <span class="text-success"><i class="fa fa-plus"></i></span>@lang('navigation.new_organization')
-            </a>
+                <span class="deep-orange-text"><i c <li class="nav-item {{ setActive('organization.create') }}">
+                        <a class="nav-link" href="{{ route('organization.create') }}">
+                            <span class="text-success"><i class="fa fa-plus"></i></span>@lang('navigation.new_organization')
+                        </a>
         </li>lass="far fa-closed-captioning"></i></span>बन्द भएका
-            </a>
+        </a>
         </li>
         @endcan
 
@@ -110,17 +108,17 @@
 
         {{-- @hasanyrole('super-admin|admin')
         <li class="nav-item {{ setActive('organization.unrenewed.index') }}">
-            <a class="nav-link" href="{{ route('organization.unrenewed.index') }}">
-                <span class="red-text"><i class="far fa-times-circle"></i></span>@lang('navigation.unrenewed')
-            </a>
+        <a class="nav-link" href="{{ route('organization.unrenewed.index') }}">
+            <span class="red-text"><i class="far fa-times-circle"></i></span>@lang('navigation.unrenewed')
+        </a>
         </li>
         @endhasrole --}}
 
         {{-- @hasanyrole('super-admin|admin')
         <li class="nav-item {{ setActive('organization.report.index') }}">
-            <a class="nav-link" href="{{ route('organization.report.index') }}">
-                <span class="text-success"><i class="far fa-chart-bar"></i></span>@lang('navigation.report')
-            </a>
+        <a class="nav-link" href="{{ route('organization.report.index') }}">
+            <span class="text-success"><i class="far fa-chart-bar"></i></span>@lang('navigation.report')
+        </a>
         </li>
         @endhasrole --}}
 
@@ -142,17 +140,17 @@
 
         {{-- @unlessrole('user')
         <li class="nav-item {{ setActive('user.settings.index') }}">
-            <a class="nav-link" href="{{ route('user.settings.index') }}">
-                <span class="text-info"><i class="fas fa-cog"></i></span>@lang('navigation.my_settings')
-            </a>
+        <a class="nav-link" href="{{ route('user.settings.index') }}">
+            <span class="text-info"><i class="fas fa-cog"></i></span>@lang('navigation.my_settings')
+        </a>
         </li>
         @endunlessrole --}}
 
         {{-- @hasrole('super-admin')
         <li class="nav-item {{ request()->routeIs('organization.index') && request()->has('trashed') ? 'active' : '' }} }}">
-            <a class="nav-link" href="{{ route('organization.index', ['trashed' => '1']) }}">
-                <span class="text-danger"><i class="fas fa-trash-alt"></i></span> Trashed
-            </a>
+        <a class="nav-link" href="{{ route('organization.index', ['trashed' => '1']) }}">
+            <span class="text-danger"><i class="fas fa-trash-alt"></i></span> Trashed
+        </a>
         </li>
         @endhasrole --}}
 

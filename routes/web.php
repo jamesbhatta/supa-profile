@@ -16,10 +16,18 @@ Route::resources([
     'ward' => 'WardController',
 ]);
 
-Route::get('/data/{key}', 'TableController@index');
-Route::post('/data/{key}', 'TableController@store');
-Route::get('resource/{model}/create', 'ResourceTemplateController@create');
-Route::post('resource/{model}', 'ResourceTemplateController@store');
+// Route::get('/data/{key}', 'TableController@index');
+// Route::post('/data/{key}', 'TableController@store');
+Route::get('data/{slug}/create', 'ResourceTemplateController@create');
+Route::post('data/{slug}', 'ResourceTemplateController@store');
+
+Route::get('resources', 'ResourceController@index')->name('resources.index');
+Route::get('resources/create', 'ResourceController@create')->name('resources.create');
+Route::post('resources', 'ResourceController@store')->name('resources.store');
+Route::get('resources/{slug}/edit', 'ResourceController@edit')->name('resources.edit');
+
+Route::post('resources/{slug}/fields', 'ResourceController@saveFields')->name('resources.fields.store');
+
 
 Route::get('fiscal-year/{fiscalYear?}', 'FiscalYearController@index')->name('fiscal-year.index');
 Route::post('fiscal-year', 'FiscalYearController@store')->name('fiscal-year.store');

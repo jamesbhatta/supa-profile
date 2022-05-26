@@ -22,4 +22,4 @@
 @guest
 <link rel="stylesheet" href="{{ asset('assets/css/guest.css') }}">
 @endguest
-@livewireStyles
+<link rel="stylesheet" href="{{ mix('css/app.css') }}">
