@@ -13,7 +13,7 @@
 
 </head>
 <body class="sidebar-opened">
-
+<div id="app">
     @guest
     @yield('content')
     @endguest
@@ -30,6 +30,7 @@
     </div>
     @endauth
 
+</div>
     @include('layouts.partials.scripts')
 
     <script>
