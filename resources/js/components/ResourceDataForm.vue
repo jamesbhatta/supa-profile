@@ -13,13 +13,18 @@
           <tbody>
             <tr>
               <td v-for="(field, index) in resource.fields" :key="index">
-                <input type="text" class="form-control" />
+                <input type="text" class="form-control" :value="field.name" />
               </td>
               <td class="text-right">
                 <div class="d-flex">
                   <button class="btn btn-primary btn-sm z-depth-0">Edit</button>
                   <button class="btn btn-danger btn-sm z-depth-0">Delete</button>
                 </div>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="42">
+                <button>Add</button>
               </td>
             </tr>
           </tbody>
@@ -112,11 +117,19 @@ export default {
 
   methods: {
     addField() {
-      this.form.fields.push({
-        label: null,
-        answer_type: "short_answer",
-        is_required: false,
-      });
+      // this.form.fields.push({
+      //   label: null,
+      //   answer_type: "short_answer",
+      //   is_required: false,
+      // });
+      let newFields =  this.resource.fields.map((field) => {
+      return {
+        label: field.label,
+        name: field.name,
+        type: field.type,
+        is_required: field.is_required,
+      };
+    });
     },
 
     removeField(index) {

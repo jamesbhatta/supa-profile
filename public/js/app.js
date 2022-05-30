@@ -2004,6 +2004,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: {
@@ -2037,10 +2042,18 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     addField: function addField() {
-      this.form.fields.push({
-        label: null,
-        answer_type: "short_answer",
-        is_required: false
+      // this.form.fields.push({
+      //   label: null,
+      //   answer_type: "short_answer",
+      //   is_required: false,
+      // });
+      var newFields = this.resource.fields.map(function (field) {
+        return {
+          label: field.label,
+          name: field.name,
+          type: field.type,
+          is_required: field.is_required
+        };
       });
     },
     removeField: function removeField(index) {
@@ -20838,6 +20851,7 @@ var render = function () {
                     _c("input", {
                       staticClass: "form-control",
                       attrs: { type: "text" },
+                      domProps: { value: field.name },
                     }),
                   ])
                 }),
@@ -20846,6 +20860,8 @@ var render = function () {
               ],
               2
             ),
+            _vm._v(" "),
+            _vm._m(1),
           ]),
         ]),
       ]),
@@ -20867,6 +20883,14 @@ var staticRenderFns = [
           _vm._v("Delete"),
         ]),
       ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [
+      _c("td", { attrs: { colspan: "42" } }, [_c("button", [_vm._v("Add")])]),
     ])
   },
 ]

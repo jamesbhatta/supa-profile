@@ -3,22 +3,6 @@
 @section('content')
 <div class="mx-auto">
     @include('alerts.all')
-<<<<<<< HEAD
-    <form action="/resource/{{ $model['slug'] }}" method="POST">
-        @csrf
-        <input type="hidden" name="model" pavalue="{{ $model['slug'] }}">
-        @foreach ($model['fields'] as $field)
-        <div class="form-group">
-            <label for="">{{ $field['label'] }}</label>
-            <input type="text" name="{{$field['name'] }}" class="form-control">
-             
-        </div>
-        @endforeach
-        <div class="form-group">
-            <button class="btn btn-primary">Submit</button>
-        </div>
-    </form>
-=======
     {{-- <form action="/resource/{{ $resource['slug'] }}" method="POST">
     @csrf
     <input type="hidden" name="resource" pavalue="{{ $resource['slug'] }}">
@@ -32,7 +16,6 @@
         <button class="btn btn-primary">Submit</button>
     </div>
     </form> --}}
->>>>>>> d1fae47e99a18a118bc26cf8a270ef7290e55f70
 
     <resource-data-form :resource="{{ $resource }}"></resource-data-form>
 
