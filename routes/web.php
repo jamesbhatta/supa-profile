@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes(['register' => false]);
 Route::get('/registration', 'FrontendController@index')->name('organization.new');
-Route::get('/', 'HomeController@index')->name('home');
+// Route::get('/', 'HomeController@index')->name('home');
 Route::get('language/{locale}', 'LanguageController@setLocale')->name('locale');
 
 Route::resources([
@@ -56,3 +56,7 @@ Route::group(
     }
 );
 
+Route::any('/{all}', function () {
+    return view('app');
+})
+->where(['all' => '.*']);

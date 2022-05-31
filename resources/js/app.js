@@ -1,14 +1,24 @@
-require('./bootstrap');
+require("./bootstrap");
 
-import Vue from 'vue'
+// import { vue } from "laravel-mix";
+import Vue from "vue";
+import VueRouter from "vue-router";
+import routes from "./routes";
 
-window.Vue = Vue //this is important! Do not use require('vue') for livewire-vue
+window.Vue = Vue; //this is important! Do not use require('vue') for livewire-vue
 
 // Register Vue components
-Vue.component('fields-form', require('./components/FieldsForm.vue').default);
-Vue.component('resource-data-form', require('./components/ResourceDataForm.vue').default);
+Vue.component("fields-form", require("./components/FieldsForm.vue").default);
+Vue.component(
+    "resource-data-form",
+    require("./components/ResourceDataForm.vue").default
+);
+Vue.component("data-viewer", require("./components/DataViewer.vue").default);
+
+Vue.use(VueRouter);
 
 // Initialize Vue
 const app = new Vue({
-    el: '#app',
+    el: "#app",
+    router: new VueRouter(routes),
 });

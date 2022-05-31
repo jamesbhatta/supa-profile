@@ -22,6 +22,7 @@
         "vue-template-compiler": "^2.6.14"
     },
     "dependencies": {
-        "form-backend-validation": "^2.4.0"
+        "form-backend-validation": "^2.4.0",    
+        "vue-router": "^3.0.0"
     }
 }
