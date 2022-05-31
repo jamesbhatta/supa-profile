@@ -14,6 +14,8 @@ Vue.component(
     require("./components/ResourceDataForm.vue").default
 );
 Vue.component("data-viewer", require("./components/DataViewer.vue").default);
+// Vue.component("economical-situation", require("./pages/economical-situation/Index.vue").default);
+
 
 Vue.use(VueRouter);
 

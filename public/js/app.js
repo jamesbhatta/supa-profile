@@ -2133,7 +2133,8 @@ window.Vue = vue__WEBPACK_IMPORTED_MODULE_1__["default"]; //this is important! D
 
 vue__WEBPACK_IMPORTED_MODULE_1__["default"].component("fields-form", (__webpack_require__(/*! ./components/FieldsForm.vue */ "./resources/js/components/FieldsForm.vue")["default"]));
 vue__WEBPACK_IMPORTED_MODULE_1__["default"].component("resource-data-form", (__webpack_require__(/*! ./components/ResourceDataForm.vue */ "./resources/js/components/ResourceDataForm.vue")["default"]));
-vue__WEBPACK_IMPORTED_MODULE_1__["default"].component("data-viewer", (__webpack_require__(/*! ./components/DataViewer.vue */ "./resources/js/components/DataViewer.vue")["default"]));
+vue__WEBPACK_IMPORTED_MODULE_1__["default"].component("data-viewer", (__webpack_require__(/*! ./components/DataViewer.vue */ "./resources/js/components/DataViewer.vue")["default"])); // Vue.component("economical-situation", require("./pages/economical-situation/Index.vue").default);
+
 vue__WEBPACK_IMPORTED_MODULE_1__["default"].use(vue_router__WEBPACK_IMPORTED_MODULE_2__["default"]); // Initialize Vue
 
 var app = new vue__WEBPACK_IMPORTED_MODULE_1__["default"]({
