@@ -21166,9 +21166,15 @@ var render = function () {
           _c(
             "tr",
             _vm._l(_vm.data.labels, function (label, index) {
-              return _c("th", { key: index, staticClass: "font-weight-bold" }, [
-                _vm._v(_vm._s(label)),
-              ])
+              return _c(
+                "th",
+                {
+                  key: index,
+                  staticClass: "font-weight-bold",
+                  attrs: { colspan: _vm.i },
+                },
+                [_vm._v(_vm._s(label))]
+              )
             }),
             0
           ),

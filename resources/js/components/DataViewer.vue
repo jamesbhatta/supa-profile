@@ -5,7 +5,7 @@
       <table class="table table-responsive-sm table-striped">
         <thead>
           <tr>
-            <th v-for="(label, index) in data.labels" v-bind:key="index" class="font-weight-bold">{{ label }}</th>
+            <th v-for="(label, index) in data.labels" v-bind:key="index" class="font-weight-bold" v-bind:colspan="i">{{ label }}</th>
           </tr>
         </thead>
         <tbody>
