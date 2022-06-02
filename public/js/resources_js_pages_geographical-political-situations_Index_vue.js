@@ -11,6 +11,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _components_DataViewer_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../components/DataViewer.vue */ "./resources/js/components/DataViewer.vue");
 //
 //
 //
@@ -22,7 +23,20 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  components: {
+    DataViewer: _components_DataViewer_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
+  },
   data: function data() {
     return {
       geographicalAreaData: {
@@ -42,6 +56,21 @@ __webpack_require__.r(__webpack_exports__);
         title: "प्रदेशको जिल्लागत क्षेत्रफल",
         labels: ["क्र.स.", "जिल्ला", "क्षेत्रफल (वर्ग कि.मि.)", "प्रतिशत"],
         data: [[1, "कैलाली", 3247, 16.23], [2, "कञ्चनपुर", 1610, 8.05], [3, "डोटी", 2081, 10.4], [4, "अछाम", 1692, 8.46], [5, "बझाङ", 3422, 17.11], [6, "बाजुरा", 2188, 10.94], [6, "दार्चुला", 2782.28, 13.91], [6, "बैतडी", 1482, 7.41], [6, "डडेलधुरा", 1495, 7.48], ["", "सुदूरपश्चिम", 19999.28, 100]]
+      },
+      // 2.6
+      districtWiseNumberOfLocalLevel: {
+        title: "स्थानीय तहको जिल्लागत संख्या",
+        labels: ["क्र.स.", "जिल्ला", "उप महानगर", "नगरपालिका", "गाउँपालिका", "वडा संख्या"],
+        data: [[6, "दार्चुला", "", 2, 7, 61], [6, "बैतडी", "", 4, 6, 84], [6, "डडेलधुरा", "", 2, 5, 52], [2, "कञ्चनपुर", "", 7, 2, 92], [5, "बझाङ", "", 2, 10, 94], [6, "बाजुरा", "", 4, 5, 69], [3, "डोटी", "", 2, 7, 65], [4, "अछाम", "", 4, 6, 91], [1, "कैलाली", 1, 6, 6, 126], [{
+          colspan: 2,
+          value: "सुदूरपश्चिम जम्मा"
+        }, 1, 33, 54, 734], [{
+          colspan: 2,
+          value: "नेपाल"
+        }, 11, 276, 460, 6743], [{
+          colspan: 2,
+          value: "सुदूरपश्चिमले ओगटेको अंश (प्रतिशत)"
+        }, 9.09, 11.95, 11.73, 10.88]]
       }
     };
   }
@@ -152,6 +181,30 @@ var render = function () {
       _c("div", { staticClass: "my-5" }),
       _vm._v(" "),
       _c("data-viewer", { attrs: { data: _vm.districtWiseAreaOfStateData } }),
+      _vm._v(" "),
+      _c("div", { staticClass: "my-5" }),
+      _vm._v(" "),
+      _c(
+        "data-viewer",
+        { attrs: { data: _vm.districtWiseNumberOfLocalLevel } },
+        [
+          _c("template", { slot: "thead-top" }, [
+            _c("tr", [
+              _c("th", { attrs: { colspan: "2" } }),
+              _vm._v(" "),
+              _c(
+                "th",
+                {
+                  staticClass: "bg-light text-center font-weight-bold",
+                  attrs: { colspan: "4" },
+                },
+                [_vm._v("स्थानीय तह विवरण")]
+              ),
+            ]),
+          ]),
+        ],
+        2
+      ),
     ],
     1
   )

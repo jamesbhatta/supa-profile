@@ -6,11 +6,23 @@
     <data-viewer :data="territorialGeographicalAreaData"></data-viewer>
     <div class="my-5"></div>
     <data-viewer :data="districtWiseAreaOfStateData"></data-viewer>
+    <div class="my-5"></div>
+    <data-viewer :data="districtWiseNumberOfLocalLevel">
+      <template slot="thead-top">
+        <tr>
+          <th colspan="2"></th>
+          <th colspan="4" class="bg-light text-center font-weight-bold">स्थानीय तह विवरण</th>
+        </tr>
+      </template>
+    </data-viewer>
   </div>
 </template>
 
 <script>
+import DataViewer from "../../components/DataViewer.vue";
+
 export default {
+  components: { DataViewer },
   data() {
     return {
       geographicalAreaData: {
@@ -59,6 +71,26 @@ export default {
           [6, "बैतडी", 1482, 7.41],
           [6, "डडेलधुरा", 1495, 7.48],
           ["", "सुदूरपश्चिम", 19999.28, 100],
+        ],
+      },
+
+      // 2.6
+      districtWiseNumberOfLocalLevel: {
+        title: "स्थानीय तहको जिल्लागत संख्या",
+        labels: ["क्र.स.", "जिल्ला", "उप महानगर", "नगरपालिका", "गाउँपालिका", "वडा संख्या"],
+        data: [
+          [6, "दार्चुला", "", 2, 7, 61],
+          [6, "बैतडी", "", 4, 6, 84],
+          [6, "डडेलधुरा", "", 2, 5, 52],
+          [2, "कञ्चनपुर", "", 7, 2, 92],
+          [5, "बझाङ", "", 2, 10, 94],
+          [6, "बाजुरा", "", 4, 5, 69],
+          [3, "डोटी", "", 2, 7, 65],
+          [4, "अछाम", "", 4, 6, 91],
+          [1, "कैलाली", 1, 6, 6, 126],
+          [{ colspan: 2, value: "सुदूरपश्चिम जम्मा" }, 1, 33, 54, 734],
+          [{ colspan: 2, value: "नेपाल" }, 11, 276, 460, 6743],
+          [{ colspan: 2, value: "सुदूरपश्चिमले ओगटेको अंश (प्रतिशत)" }, 9.09, 11.95, 11.73, 10.88],
         ],
       },
     };
