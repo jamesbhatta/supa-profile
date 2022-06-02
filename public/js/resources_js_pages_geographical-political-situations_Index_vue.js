@@ -39,6 +39,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {
@@ -266,7 +273,27 @@ var render = function () {
       _vm._v(" "),
       _c("div", { staticClass: "my-5" }),
       _vm._v(" "),
-      _c("data-viewer", { attrs: { data: _vm.sthaniyetahapopulation } }),
+      _c(
+        "data-viewer",
+        { attrs: { data: _vm.sthaniyetahapopulation } },
+        [
+          _c("template", { slot: "thead-top" }, [
+            _c("tr", [
+              _c("th", { attrs: { colspan: "2" } }),
+              _vm._v(" "),
+              _c(
+                "th",
+                {
+                  staticClass: "bg-light text-center font-weight-bold",
+                  attrs: { colspan: "4" },
+                },
+                [_vm._v("स्थानीय तह विवरण")]
+              ),
+            ]),
+          ]),
+        ],
+        2
+      ),
       _vm._v(" "),
       _c("div", { staticClass: "my-5" }),
       _vm._v(" "),

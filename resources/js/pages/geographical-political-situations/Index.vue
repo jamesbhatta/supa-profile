@@ -9,7 +9,14 @@
      <div class="my-5"></div>
      <data-viewer :data="vuupyogkodata"></data-viewer>
      <div class="my-5"></div>
-     <data-viewer :data="sthaniyetahapopulation"></data-viewer>
+     <data-viewer :data="sthaniyetahapopulation">
+       <template slot="thead-top">
+         <tr>
+           <th colspan="2"></th>
+           <th colspan="4" class="bg-light text-center font-weight-bold">स्थानीय तह विवरण</th>
+         </tr>
+       </template>
+     </data-viewer>
      <div class="my-5"></div>
      <data-viewer :data="nirbachanchhetra"></data-viewer>
      <div class="my-5"></div>
