@@ -1,6 +1,31 @@
 <template>
   <div class="container py-5">
-    <div class="navigation-grid">
+    <section id="profile-summary">
+      <div class="info-grid">
+        <div class="info-card">
+          <div class="label">क्षेत्रफल</div>
+          <div class="value">19,539</div>
+        </div>
+        <div class="info-card">
+          <div class="label">जम्मा जिल्ला</div>
+          <div class="value">9</div>
+        </div>
+        <div class="info-card">
+          <div class="label">जनघनत्तो</div>
+          <div class="value">19,539</div>
+        </div>
+        <div class="info-card">
+          <div class="label">प्रदेशसभा निर्वाचन क्षेत्र</div>
+          <div class="value">32</div>
+        </div>
+        <div class="info-card">
+          <div class="label">प्रतिनिधि निर्वाचन क्षेत्र</div>
+          <div class="value">16</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="navigation-grid mt-5">
       <router-link v-for="(item, index) in links" :key="index" :to="item.url">
         <span>{{ item.name }}</span>
       </router-link>
@@ -60,6 +85,39 @@ export default {
 </script>
 
 <style scoped>
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.info-card {
+  background-color: #fff;
+  display: flex;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.info-card .label {
+  padding: 30px 20px;
+  font-size: 1.1rem;
+  color: #303942;
+  font-weight: 600;
+}
+
+.info-card .value {
+  margin-left: auto;
+  padding: 30px 15px;
+  background-color: #2572bc;
+  background-color: #ebf6ff;
+  /* color: #fff; */
+  color: #2572bc;
+  font-size: 1.4rem;
+  min-width: 100px;
+  text-align: center;
+}
+
 .navigation-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

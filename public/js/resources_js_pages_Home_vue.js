@@ -21,6 +21,31 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -77,7 +102,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.navigation-grid[data-v-b3c5cf30] {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  gap: 1.5rem;\n}\n.navigation-grid > a[data-v-b3c5cf30] {\n  background-color: #fff;\n  padding: 10px 15px;\n  border-radius: 6px;\n  min-height: 200px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  color: #2572bc;\n  font-size: 1.5rem;\n  font-weight: 600;\n  transition: 0.3s ease;\n}\n.navigation-grid > a[data-v-b3c5cf30]:hover {\n  background-color: #2572bc;\n  color: #fff;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.info-grid[data-v-b3c5cf30] {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  gap: 1.5rem;\n}\n.info-card[data-v-b3c5cf30] {\n  background-color: #fff;\n  display: flex;\n  border-radius: 6px;\n  overflow: hidden;\n  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;\n}\n.info-card .label[data-v-b3c5cf30] {\n  padding: 30px 20px;\n  font-size: 1.1rem;\n  color: #303942;\n  font-weight: 600;\n}\n.info-card .value[data-v-b3c5cf30] {\n  margin-left: auto;\n  padding: 30px 15px;\n  background-color: #2572bc;\n  background-color: #ebf6ff;\n  /* color: #fff; */\n  color: #2572bc;\n  font-size: 1.4rem;\n  min-width: 100px;\n  text-align: center;\n}\n.navigation-grid[data-v-b3c5cf30] {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  gap: 1.5rem;\n}\n.navigation-grid > a[data-v-b3c5cf30] {\n  background-color: #fff;\n  padding: 10px 15px;\n  border-radius: 6px;\n  min-height: 200px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  color: #2572bc;\n  font-size: 1.5rem;\n  font-weight: 600;\n  transition: 0.3s ease;\n}\n.navigation-grid > a[data-v-b3c5cf30]:hover {\n  background-color: #2572bc;\n  color: #fff;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -212,9 +237,11 @@ var render = function () {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "container py-5" }, [
+    _vm._m(0),
+    _vm._v(" "),
     _c(
       "div",
-      { staticClass: "navigation-grid" },
+      { staticClass: "navigation-grid mt-5" },
       _vm._l(_vm.links, function (item, index) {
         return _c("router-link", { key: index, attrs: { to: item.url } }, [
           _c("span", [_vm._v(_vm._s(item.name))]),
@@ -224,7 +251,50 @@ var render = function () {
     ),
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("section", { attrs: { id: "profile-summary" } }, [
+      _c("div", { staticClass: "info-grid" }, [
+        _c("div", { staticClass: "info-card" }, [
+          _c("div", { staticClass: "label" }, [_vm._v("क्षेत्रफल")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "value" }, [_vm._v("19,539")]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "info-card" }, [
+          _c("div", { staticClass: "label" }, [_vm._v("जम्मा जिल्ला")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "value" }, [_vm._v("9")]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "info-card" }, [
+          _c("div", { staticClass: "label" }, [_vm._v("जनघनत्तो")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "value" }, [_vm._v("19,539")]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "info-card" }, [
+          _c("div", { staticClass: "label" }, [
+            _vm._v("प्रदेशसभा निर्वाचन क्षेत्र"),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "value" }, [_vm._v("32")]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "info-card" }, [
+          _c("div", { staticClass: "label" }, [
+            _vm._v("प्रतिनिधि निर्वाचन क्षेत्र"),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "value" }, [_vm._v("16")]),
+        ]),
+      ]),
+    ])
+  },
+]
 render._withStripped = true
 
 
