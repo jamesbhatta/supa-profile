@@ -271,9 +271,11 @@ var staticRenderFns = [
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "info-card" }, [
-          _c("div", { staticClass: "label" }, [_vm._v("जनघनत्तो")]),
+          _c("div", { staticClass: "label" }, [
+            _vm._v("जनघनत्तो (वर्ग कि.मि.)"),
+          ]),
           _vm._v(" "),
-          _c("div", { staticClass: "value" }, [_vm._v("19,539")]),
+          _c("div", { staticClass: "value" }, [_vm._v("131")]),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "info-card" }, [
