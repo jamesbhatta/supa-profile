@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes(['register' => false]);
 Route::get('/registration', 'FrontendController@index')->name('organization.new');
-// Route::get('/', 'HomeController@index')->name('home');
+Route::get('/dashboard', 'HomeController@index')->name('dashboard');
 Route::get('language/{locale}', 'LanguageController@setLocale')->name('locale');
 
 Route::resources([

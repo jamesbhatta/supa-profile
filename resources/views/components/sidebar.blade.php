@@ -3,8 +3,8 @@
 </div>
 <div id="sidenav-wrapper">
     <ul id="sidenav" class="nav flex-column font-noto">
-        <li class="nav-item {{ setActive('home') }}">
-            <a class="nav-link" href="{{ route('home') }}">
+        <li class="nav-item {{ setActive('dashboard') }}">
+            <a class="nav-link" href="{{ route('dashboard') }}">
                 <span class="text-warning"><i class="fa fa-tachometer-alt"></i></span>@lang('navigation.dashboard')
             </a>
         </li>
