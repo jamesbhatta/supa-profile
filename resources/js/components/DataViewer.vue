@@ -4,8 +4,9 @@
       <h3 v-if="data.title" class="h3-responsive data-title">{{ data.title }}</h3>
       <table class="table table-responsive-sm table-striped">
         <thead>
+          <slot name="thead-top"></slot>
           <tr>
-            <th v-for="(label, index) in data.labels" v-bind:key="index" class="font-weight-bold" v-bind:colspan="i">{{ label }}</th>
+            <th v-for="(label, index) in data.labels" v-bind:key="index" class="font-weight-bold">{{ label }}</th>
           </tr>
         </thead>
         <tbody>
@@ -15,6 +16,7 @@
               <td v-else v-bind:key="index">{{ item }}</td>
             </template>
           </tr>
+          <slot name="tbody-bottom"></slot>
         </tbody>
       </table>
     </div>

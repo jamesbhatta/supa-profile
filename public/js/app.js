@@ -1822,6 +1822,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: ["data"]
 });
@@ -21162,47 +21164,53 @@ var render = function () {
         : _vm._e(),
       _vm._v(" "),
       _c("table", { staticClass: "table table-responsive-sm table-striped" }, [
-        _c("thead", [
-          _c(
-            "tr",
-            _vm._l(_vm.data.labels, function (label, index) {
-              return _c(
-                "th",
-                {
-                  key: index,
-                  staticClass: "font-weight-bold",
-                  attrs: { colspan: _vm.i },
-                },
-                [_vm._v(_vm._s(label))]
-              )
-            }),
-            0
-          ),
-        ]),
+        _c(
+          "thead",
+          [
+            _vm._t("thead-top"),
+            _vm._v(" "),
+            _c(
+              "tr",
+              _vm._l(_vm.data.labels, function (label, index) {
+                return _c(
+                  "th",
+                  { key: index, staticClass: "font-weight-bold" },
+                  [_vm._v(_vm._s(label))]
+                )
+              }),
+              0
+            ),
+          ],
+          2
+        ),
         _vm._v(" "),
         _c(
           "tbody",
-          _vm._l(_vm.data.data, function (row, index) {
-            return _c(
-              "tr",
-              { key: index },
-              [
-                _vm._l(row, function (item, index) {
-                  return [
-                    typeof item == "object"
-                      ? _c(
-                          "td",
-                          { key: index, attrs: { colspan: item.colspan } },
-                          [_vm._v(_vm._s(item.value))]
-                        )
-                      : _c("td", { key: index }, [_vm._v(_vm._s(item))]),
-                  ]
-                }),
-              ],
-              2
-            )
-          }),
-          0
+          [
+            _vm._l(_vm.data.data, function (row, index) {
+              return _c(
+                "tr",
+                { key: index },
+                [
+                  _vm._l(row, function (item, index) {
+                    return [
+                      typeof item == "object"
+                        ? _c(
+                            "td",
+                            { key: index, attrs: { colspan: item.colspan } },
+                            [_vm._v(_vm._s(item.value))]
+                          )
+                        : _c("td", { key: index }, [_vm._v(_vm._s(item))]),
+                    ]
+                  }),
+                ],
+                2
+              )
+            }),
+            _vm._v(" "),
+            _vm._t("tbody-bottom"),
+          ],
+          2
         ),
       ]),
     ]),
