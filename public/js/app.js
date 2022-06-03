@@ -21197,7 +21197,13 @@ var render = function () {
                       typeof item == "object"
                         ? _c(
                             "td",
-                            { key: index, attrs: { colspan: item.colspan } },
+                            {
+                              key: index,
+                              attrs: {
+                                colspan: item.colspan,
+                                rowspan: item.rowspan,
+                              },
+                            },
                             [_vm._v(_vm._s(item.value))]
                           )
                         : _c("td", { key: index }, [_vm._v(_vm._s(item))]),
