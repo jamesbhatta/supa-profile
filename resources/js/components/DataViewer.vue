@@ -30,18 +30,5 @@ export default {
 </script>
 
 <style scoped>
-.data-card {
-  padding: 15px 25px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 3px 6px 0 rgb(0 0 0 / 12%);
-}
 
-.data-card .data-card-body {
-  padding: 25px 15px;
-}
-.data-title {
-  font-size: 20px;
-  color: #2572bc;
-}
 </style>

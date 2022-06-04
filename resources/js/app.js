@@ -8,6 +8,7 @@ import routes from "./routes";
 window.Vue = Vue; //this is important! Do not use require('vue') for livewire-vue
 
 // Register Vue components
+Vue.component("navbar", require("./components/Navbar.vue").default);
 Vue.component("fields-form", require("./components/FieldsForm.vue").default);
 Vue.component(
     "resource-data-form",

@@ -1,1 +1,121 @@
-//
+// Homepage
+.dataset-links-card {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: rgb(0 0 0 / 19%) 0px 2px 4px 0px;
+    .heading {
+        background-image: linear-gradient(to top, rgb(0, 82, 155), rgb(2, 142, 255));
+        color: #fff;
+        padding: 15px 20px;
+        font-weight: 600;
+        font-size: 1.1rem;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+    }
+    .content {
+        padding-top: 15px;
+        .link {
+            display: block;
+            color: inherit;
+            padding: 10px 20px;
+        }
+        .link:hover {
+            background-color: #f37736;
+            color: #fff;
+        }
+    }
+}
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.info-card {
+    padding: 30px 20px;
+    background-color: #fff;
+    background-color: #5b96fb;
+    color: #ffffff;
+    text-align: center;
+    // display: flex;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    &.orange-color {
+        background-color: #f37736;
+        color: #fff;
+    }
+    &.brown-color {
+        background-color: #851e3e;
+        color: #fff;
+    }
+    &.blue-color {
+        background-color: #0392cf;
+        color: #fff;
+    }
+    &.indigo-color {
+        background-color: #3f0fb7;
+        color: #fff;
+    }
+    &.green-color {
+        background-color: #5fb96c;
+        color: #fff;
+    }
+    &.yellow-color {
+        background-color: #edc951;
+        color: #fff;
+    }
+    &.teal-color {
+        background-color: #29a8ab;
+        color: #fff;
+    }
+}
+
+.info-card .label {
+    // font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.info-card .value {
+    margin-left: auto;
+    font-size: 2rem;
+    min-width: 100px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+//   Chart Card
+.chart-card {
+    padding: 15px 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 12%);
+}
+.chart-card .chart-card-body {
+    padding: 25px 15px;
+}
+
+.chart-title {
+    font-size: 20px;
+    color: #2572bc;
+    font-weight: 600;
+    text-align: center;
+}
+
+//  Data Card
+.data-card {
+    padding: 15px 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 12%);
+}
+
+.data-card .data-card-body {
+    padding: 25px 15px;
+}
+
+.data-title {
+    font-size: 20px;
+    color: #2572bc;
+}
