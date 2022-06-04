@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[354],{5354:(e,n,l)=>{l.r(n),l.d(n,{default:()=>t});const t=(0,l(1900).Z)({},(function(){var e=this,n=e.$createElement;return(e._self._c||n)("div",[e._v("\n    भौगोलिक तथा राजनीतिक अवस्था\n")])}),[],!1,null,null,null).exports}}]);
