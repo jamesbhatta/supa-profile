@@ -1,6 +1,6 @@
 <template>
   <nav id="navbar" class="navbar navbar-expand-lg navbar-dark py-3">
-    <div class="container" style="">
+    <div class="container">
       <!-- Navbar brand -->
       <router-link class="d-flex align-items-center" to="/">
         <img src="https://fra.mofaga.gov.np/static/media/logo.940ff832.svg" height="50px" />
