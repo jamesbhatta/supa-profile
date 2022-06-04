@@ -12,7 +12,7 @@
         <tbody>
           <tr v-for="(row, index) in data.data" v-bind:key="index">
             <template v-for="(item, index) in row">
-              <td v-if="typeof item == 'object'" v-bind:key="index" :colspan="item.colspan">{{ item.value }}</td>
+              <td v-if="typeof item == 'object'" v-bind:key="index" :colspan="item.colspan"  :rowspan="item.rowspan">{{ item.value }}</td>
               <td v-else v-bind:key="index">{{ item }}</td>
             </template>
           </tr>
