@@ -58,14 +58,17 @@ Route::group(
 
 // Route::resource('area', AreaofMunicipalityController::class);
 Route::get('area','AreaofMunicipalityController@index')->name('area.index');
+Route::get('area/create','AreaofMunicipalityController@create')->name('area.create');
 Route::post('area','AreaofMunicipalityController@store')->name('area.store');
 Route::get('area/{municipalityArea}/edit','AreaofMunicipalityController@edit')->name('area.edit');
 Route::put('area/{municipalityArea}','AreaofMunicipalityController@update')->name('area.update');
 Route::delete('area/{municipalityArea}','AreaofMunicipalityController@destroy')->name('area.destroy');
 
-Route::any('/{all}', function () {
-    return view('app');
-})
-->where(['all' => '.*']);
+Route::resource('local-population', LocalPopulationController::class);
+Route::resource('population', PopulationController::class);
+Route::resource('age-population', AgePopulationController::class);
+// Route::any('/{all}', function () {
+//     return view('app');
+// })->where(['all' => '.*']);
 
 

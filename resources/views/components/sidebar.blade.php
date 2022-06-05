@@ -184,6 +184,24 @@
         </li>
         @endcan
 
+        <li class="nav-item ">
+            <a class="nav-link" href="{{ route('local-population.index') }}">
+                <span class="text-warning"><i class="fa fa-tachometer-alt"></i></span>@lang('navigation.local_population')
+            </a>
+        </li>
+
+        <li class="nav-item ">
+            <a class="nav-link" href="{{ route('population.index') }}">
+                <span class="text-warning"><i class="fa fa-tachometer-alt"></i></span>@lang('navigation.population')
+            </a>
+        </li>
+
+        <li class="nav-item ">
+            <a class="nav-link" href="{{ route('age-population.index') }}">
+                <span class="text-warning"><i class="fa fa-tachometer-alt"></i></span>@lang('navigation.age_population')
+            </a>
+        </li>
+
         @hasanyrole('super-admin')
         <li class="nav-item">
             <a class="nav-link" href="{{ route('admin.logs') }}" target="_blank">
@@ -191,6 +209,7 @@
             </a>
         </li>
         @endhasanyrole
+       
 
     </ul>
 </div>

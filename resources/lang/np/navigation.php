@@ -19,4 +19,7 @@ return [
     'sytems logs' => 'प्रणाली लगहरू',
     'fiscal_year' => 'आर्थिक वर्ष',
     'municipality_area'=>"नगरपालिका क्षेत्र",
+    'local_population'=>"स्थानिय तह को जनसंख्या",
+    'population'=>"२०७८ को स्थानीय तहको जनसंख्या",
+    'age_population'=>"उमेर अनुसारको जनसंख्या",
 ];

@@ -19,4 +19,7 @@ return [
     'sytems logs' => 'System Logs',
     'fiscal_year' => 'Fiscal Year',
     'municipality_area'=>"Municipality Area",
+    'local_population'=>"Local Population",
+    'population'=>"2078 population",
+    'age_population'=>"Age Population",
 ];
