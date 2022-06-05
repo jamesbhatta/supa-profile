@@ -9,4 +9,5 @@ class Resource extends Model
     protected $guarded = [];
 
     protected $casts = ['fields' => 'array'];
+
 }

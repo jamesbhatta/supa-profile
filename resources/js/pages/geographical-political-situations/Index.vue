@@ -13,9 +13,11 @@
         </div>
       </template>
     </data-viewer>
+
     <div class="my-5"></div>
-    <data-viewer :data="territorialGeographicalAreaData"></data-viewer>
+    <pardeshsavanamawali></pardeshsavanamawali>
     <div class="my-5"></div>
+    
     <data-viewer :data="districtWiseAreaOfStateData"></data-viewer>
     <div class="my-5"></div>
     <data-viewer :data="vuupyogkodata"></data-viewer>
@@ -47,9 +49,10 @@
 import BarChart from "../../charts/BarChart.vue";
 import PieChart from "../../charts/PieChart.vue";
 import DataViewer from "../../components/DataViewer.vue";
+import Pardeshsavanamawali from "./partials/Pardeshsavanamawali.vue";
 
 export default {
-  components: { DataViewer, BarChart, PieChart },
+  components: { DataViewer, BarChart, PieChart, Pardeshsavanamawali },
   data() {
     return {
       geographicalAreaData: {
@@ -71,27 +74,7 @@ export default {
         ],
       },
 
-      territorialGeographicalAreaData: {
-        title: "प्रदेशगत भौगोलिक क्षेत्रफल",
-        labels: ["क्र.स.", "प्रदेश", "क्षेत्रफल (वर्ग कि.मि.)", "प्रतिशत"],
-        data: [
-          [1, "1", 25905, 17.55],
-          [2, "मधेश", 9661, 6.54],
-          [3, "बागमती", 20300, 13.75],
-          [4, "गण्डकी", 22585, 15.3],
-          [5, "लुम्बीनी", 17318, 11.73],
-          [6, "कर्णाली", 31873, 21.56],
-          [7, "सुदूरपश्चिम", 19999.25, 13.55],
-          [
-            {
-              colspan: 2,
-              value: "जम्मा",
-            },
-            147641.28,
-            100,
-          ],
-        ],
-      },
+      
 
       districtWiseAreaOfStateData: {
         title: "प्रदेशको जिल्लागत क्षेत्रफल",
