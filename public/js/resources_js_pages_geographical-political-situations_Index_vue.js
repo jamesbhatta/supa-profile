@@ -81,6 +81,21 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -158,6 +173,13 @@ __webpack_require__.r(__webpack_exports__);
           value: "सुदूरपश्चिम जम्मा"
         }, 16, 32, 100]]
       },
+      nirbachanchhetraChartData: {
+        labels: ["हिमाल", "पहाड", "तराई"],
+        datasets: [{
+          backgroundColor: ["#29a8ab", "#5fb96c", "#e6b40f"],
+          data: ["18.75", "31.25", "50"]
+        }]
+      },
       // 2.8
       jillanirbachanchhetra: {
         title: "प्रदेशका जिल्लाहरुमा रहेका निर्वाचन क्षेत्रको विवरण",
@@ -172,6 +194,9 @@ __webpack_require__.r(__webpack_exports__);
           colspan: 2,
           value: "सुदूरपश्चिमले ओगटेको अंश(प्रतिशत)"
         }, 9.69, 9.69]]
+      },
+      jillanirbachanchhetraChartData: {
+        da: da
       },
       parmukhharukonaamwali: {
         title: " हालसम्म भएका प्रदेश प्रमुखहरुको नामावली र मिति",
@@ -538,6 +563,17 @@ var render = function () {
                 ],
                 1
               ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "col-md-6" },
+                [
+                  _c("bar-chart", {
+                    attrs: { "chart-data": _vm.vuupyogkoChartData },
+                  }),
+                ],
+                1
+              ),
             ]),
           ]),
         ],
@@ -570,7 +606,38 @@ var render = function () {
       _vm._v(" "),
       _c("div", { staticClass: "my-5" }),
       _vm._v(" "),
-      _c("data-viewer", { attrs: { data: _vm.nirbachanchhetra } }),
+      _c(
+        "data-viewer",
+        { attrs: { data: _vm.nirbachanchhetra } },
+        [
+          _c("template", { slot: "chart" }, [
+            _c("div", { staticClass: "row" }, [
+              _c(
+                "div",
+                { staticClass: "col-md-6" },
+                [
+                  _c("pie-chart", {
+                    attrs: { "chart-data": _vm.nirbachanchhetraChartData },
+                  }),
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "col-md-6" },
+                [
+                  _c("bar-chart", {
+                    attrs: { "chart-data": _vm.nirbachanchhetraChartData },
+                  }),
+                ],
+                1
+              ),
+            ]),
+          ]),
+        ],
+        2
+      ),
       _vm._v(" "),
       _c("div", { staticClass: "my-5" }),
       _vm._v(" "),

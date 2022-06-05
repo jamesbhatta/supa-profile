@@ -18,4 +18,5 @@ return [
     'organization_type' => 'Organization Type',
     'sytems logs' => 'System Logs',
     'fiscal_year' => 'Fiscal Year',
+    'municipality_area'=>"Municipality Area",
 ];

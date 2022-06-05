@@ -18,4 +18,5 @@ return [
     'organization_type' => 'व्यवसाय किसिम',
     'sytems logs' => 'प्रणाली लगहरू',
     'fiscal_year' => 'आर्थिक वर्ष',
+    'municipality_area'=>"नगरपालिका क्षेत्र",
 ];

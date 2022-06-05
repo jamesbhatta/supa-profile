@@ -7,6 +7,7 @@ use App\MunicipalityArea;
 use App\Municipality;
 use App\District;
 use App\Province;
+
 class AreaofMunicipalityController extends Controller
 {
     /**
@@ -16,12 +17,11 @@ class AreaofMunicipalityController extends Controller
      */
     public function index()
     {
-        $municipalities = Municipality::all();
+        $municipalities = Municipality::latest()->get();
         $municipalities_area = MunicipalityArea::with('municipalities')->get();
         $provinces = Province::with('districts')->get();
-        $municipality = new Municipality();
-        // return $municipality;
-        return view('area-of-municipality.index', compact(['municipalities','municipalities_area','municipality','provinces']));
+        
+        return view('area-of-municipality.index', compact(['municipalities','municipalities_area', 'provinces']));
     }
 
     /**
@@ -31,7 +31,7 @@ class AreaofMunicipalityController extends Controller
      */
     public function create()
     {
-        //
+        return $this->showForm(new MunicipalityArea);
     }
 
     /**
@@ -42,21 +42,14 @@ class AreaofMunicipalityController extends Controller
      */
     public function store(Request $request)
     {
-       
-        // return $request->municipalitiy_id;
-        $request->validate([
+        MunicipalityArea::create($request->validate([
+            'district_name'=>'required|max:50|min:5',
+            'municipalitiy_id'=>'required|unique:municipality_areas,municipalitiy_id',
             'muncipality_area'=>'required',
-            'ward_count'=>'required',
-            'municipalitiy_id'=>'required'
-        ]);
-        if(MunicipalityArea::where('municipalitiy_id',$request->municipalitiy_id)){
-            return redirect()->back()->with('error', 'न.पा./गा.वि.स. पहिले नै सम्मिलित छ');
-        }else{
-            MunicipalityArea::create($request->all());
+            'ward_count'=>'required'
+        ]));
 
-            return redirect()->back()->with('success', 'न.पा./गा.वि.स. सफलतापूर्वक थपियो');
-        }
-       
+        return redirect()->back()->with('success', 'न.पा./गा.वि.स. सफलतापूर्वक थपियो');
     }
 
     /**
@@ -65,7 +58,7 @@ class AreaofMunicipalityController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(MunicipalityArea $municipalityArea)
     {
         //
     }
@@ -76,18 +69,12 @@ class AreaofMunicipalityController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
-    {   $municipalities = Municipality::all();
-        // return $municipalities;
-        $municipalities_area = MunicipalityArea::with('municipalities')->where('id',$id)->get();
-        // return $municipalities_area;
-        $provinces = Province::with('districts')->get();
-        $municipality = new Municipality();
-        // return $municipality;
-        return view('area-of-municipality.edit', compact(['municipalities','municipalities_area','municipality','provinces']));
-
+    public function edit(MunicipalityArea $municipalityArea)
+    { 
+        return $this->showForm($municipalityArea);
     }
 
+    
     /**
      * Update the specified resource in storage.
      *
@@ -95,32 +82,49 @@ class AreaofMunicipalityController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, MunicipalityArea $municipalityArea)
     {
-        $request->validate([
+        $municipalityArea->udpate($request->validate([
             'district_name'=>'required|max:50|min:5',
-            'municipalitiy_id'=>'required',
+            'municipalitiy_id'=>'required|unique:municipality_areas,municipalitiy_id,' . $request->municipalitiy_id,
             'muncipality_area'=>'required',
             'ward_count'=>'required'
-        ]);
-        if(MunicipalityArea::where('municipalitiy_id',$request->municipalitiy_id)){
-            return redirect()->back()->with('error', 'न.पा./गा.वि.स. पहिले नै सम्मिलित छ');
-        }
-        MunicipalityArea::find($id)->update($request->all());
+        ]));
         
         return redirect()->back()->with('success', 'न.पा./गा.वि.स. सफलतापूर्वक अपडेट भयो ');
     }
-
+    
     /**
      * Remove the specified resource from storage.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(MunicipalityArea $municipalityArea)
     {
-        $municipality=MunicipalityArea::find($id);
-        $municipality->delete();
+        $municipalityArea->delete();
+
         return redirect()->route('area.index')->with('success', 'न.पा./गा.वि.स. हटाइएको छ');
+    }
+    
+    private function showForm(MunicipalityArea $municipalityArea)
+    {
+        $updateMode = false;
+    
+        if($municipalityArea->exists)
+        {
+            $updateMode = true;
+        }
+    
+        $municipalities = Municipality::all();
+        $provinces = Province::with('districts')->get();
+    
+        return view('area-of-municipality.form', compact([
+            'municipalityArea',
+            'updateMode',
+            'municipalities',
+            // 'municipalities_area',
+            'provinces'
+        ]));
     }
 }
