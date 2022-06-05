@@ -37,6 +37,9 @@
         <div class="col-md-6">
           <pie-chart :chart-data="vuupyogkoChartData"></pie-chart>
         </div>
+         <div class="col-md-6">
+          <bar-chart :chart-data="vuupyogkoChartData"></bar-chart>
+        </div>
       </div>
    </template>
     </data-viewer>
@@ -50,7 +53,19 @@
       </template>
     </data-viewer>
     <div class="my-5"></div>
-    <data-viewer :data="nirbachanchhetra"></data-viewer>
+    <data-viewer :data="nirbachanchhetra">
+      <template slot="chart">
+          <div class="row">
+            <div class="col-md-6">
+              <pie-chart :chart-data="nirbachanchhetraChartData"></pie-chart>
+            </div>
+
+             <div class="col-md-6">
+              <bar-chart :chart-data="nirbachanchhetraChartData"></bar-chart>
+            </div>
+          </div>
+      </template>
+    </data-viewer>
     <div class="my-5"></div>
     <data-viewer :data="jillanirbachanchhetra"></data-viewer>
     <div class="my-5"></div>
@@ -215,7 +230,15 @@ export default {
           ],
         ],
       },
-
+      nirbachanchhetraChartData:{
+        labels:["हिमाल","पहाड","तराई",],
+        datasets:[
+          {
+            backgroundColor:["#29a8ab", "#5fb96c", "#e6b40f"],
+            data:["18.75","31.25","50"],
+          }
+        ],
+      },
       // 2.8
       jillanirbachanchhetra: {
         title: "प्रदेशका जिल्लाहरुमा रहेका निर्वाचन क्षेत्रको विवरण",
@@ -230,32 +253,16 @@ export default {
           ["7", "डोटी", 1, 2],
           ["8", "अछाम", 2, 4],
           ["9", "कैलाली", 5, 10],
-          [
-            {
-              colspan: 2,
-              value: "सुदूरपश्चिम जम्मा",
-            },
-            16,
-            32,
-          ],
-          [
-            {
-              colspan: 2,
-              value: "नेपाल",
-            },
-            165,
-            330,
-          ],
-          [
-            {
-              colspan: 2,
-              value: "सुदूरपश्चिमले ओगटेको अंश(प्रतिशत)",
-            },
-            9.69,
-            9.69,
-          ],
+          [{colspan: 2,value: "सुदूरपश्चिम जम्मा",},16,32,],
+          [{colspan: 2,value: "नेपाल",},165,330,],
+          [{colspan: 2,value: "सुदूरपश्चिमले ओगटेको अंश(प्रतिशत)",},9.69,9.69,],
         ],
       },
+
+      jillanirbachanchhetraChartData:{
+        da
+      },
+
 
       parmukhharukonaamwali: {
         title: " हालसम्म भएका प्रदेश प्रमुखहरुको नामावली र मिति",
