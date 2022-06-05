@@ -60,3 +60,6 @@ Route::any('/{all}', function () {
     return view('app');
 })
 ->where(['all' => '.*']);
+
+
+Route::resource('area', AreaofMunicipalityController::class);
