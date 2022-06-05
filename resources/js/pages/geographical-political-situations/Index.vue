@@ -18,9 +18,28 @@
     <pardeshsavanamawali></pardeshsavanamawali>
     <div class="my-5"></div>
     
-    <data-viewer :data="districtWiseAreaOfStateData"></data-viewer>
+    <data-viewer :data="districtWiseAreaOfStateData">
+    <template slot="chart">
+      <div class="row">
+        <div class="col-md-6">
+          <pie-chart :chart-data="districtWiseAreaOfStateChartData"></pie-chart>
+        </div>
+         <div class="col-md-6">
+          <bar-chart :chart-data="districtWiseAreaOfStateChartData"></bar-chart>
+        </div>
+      </div>
+    </template>
+    </data-viewer>
     <div class="my-5"></div>
-    <data-viewer :data="vuupyogkodata"></data-viewer>
+    <data-viewer :data="vuupyogkoData">
+    <template slot="chart">
+      <div class="row">
+        <div class="col-md-6">
+          <pie-chart :chart-data="vuupyogkoChartData"></pie-chart>
+        </div>
+      </div>
+   </template>
+    </data-viewer>
     <div class="my-5"></div>
     <data-viewer :data="sthaniyetahapopulation">
       <template slot="thead-top">
@@ -92,8 +111,17 @@ export default {
           ["", "सुदूरपश्चिम", 19999.28, 100],
         ],
       },
+      districtWiseAreaOfStateChartData:{
+        labels:["कैलाली","कञ्चनपुर","डोटी","अछाम","बझाङ","बाजुरा","दार्चुला","बैतडी","डडेलधुरा","सुदूरपश्चिम",],
+        datasets:[
+          {
+            backgroundColor: ["#29a8ab", "#5fb96c", "#e6b40f", 'indigo', 'cyan', 'pink', 'yellowgreen','#5e4b9c',"#5e4b9c"],
+          data:['3247','1610','2081','1692','3422','2188','2782','1482','1495',],
+          }
+        ]
+      },
       // 2.5
-      vuupyogkodata: {
+      vuupyogkoData: {
         title: "भू – उपयोगको अवस्था",
         labels: ["क्र.स.", "क्षेत्र", "नेपालको क्षेत्रफल (हे.हजारमा)", "सुदूरपश्चिमको क्षेत्रफल (हे.हजारमा)"],
         data: [
@@ -112,6 +140,15 @@ export default {
             "",
           ],
         ],
+      },
+      vuupyogkoChartData:{
+        labels:["खेती गरिएको जमिन","खेती नगरिएको जमिन","वन जंगल","चरन","पानी","अन्य"],
+        datasets:[
+            {
+              backgroundColor:["#29a8ab", "#5fb96c", "#e6b40f", 'indigo', 'cyan', 'pink'],
+              data:['3031','1030','5828','1766','383','2620'],
+            }
+        ]
       },
       // 2.6
       sthaniyetahapopulation: {

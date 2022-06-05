@@ -16,10 +16,7 @@
 </template>
 
 <script>
-import PieChart from "../../../charts/PieChart.vue"
-import BarChart from "../../../charts/BarChart.vue"
 export default {
-    components: { PieChart, BarChart },
     data() {
         return {
             territorialGeographicalAreaData: {
