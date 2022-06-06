@@ -19,7 +19,6 @@ Vue.component("pie-chart", require("./charts/PieChart.vue").default);
 Vue.component("bar-chart", require("./charts/BarChart.vue").default);
 // Vue.component("economical-situation", require("./pages/economical-situation/Index.vue").default);
 
-
 Vue.use(VueRouter);
 
 // Initialize Vue

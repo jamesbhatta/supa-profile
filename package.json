@@ -27,6 +27,7 @@
         "chart.js": "^3.8.0",
         "form-backend-validation": "^2.4.0",
         "vue-chartjs": "^4.1.1",
-        "vue-router": "^3.0.0"
+        "vue-router": "^3.0.0",
+        "xlsx": "https://cdn.sheetjs.com/xlsx-0.18.8/xlsx-0.18.8.tgz"
     }
 }

@@ -3,12 +3,13 @@
     <div class="data-card-body">
       <div class="d-flex mb-2">
         <h3 v-if="data.title" class="h3-responsive data-title">{{ data.title }}</h3>
-        <div v-if="hasChartSlot" class="ml-auto switch-type-btn-group">
+        <div class="ml-auto switch-type-btn-group">
           <button type="button" v-on:click="setActive('table')" class="switch-data-type-btn" v-bind:class="{ active: activeDataType == 'table' }">Table</button>
-          <button type="button" v-on:click="setActive('chart')" class="switch-data-type-btn" v-bind:class="{ active: activeDataType == 'chart' }">Chart</button>
+          <button v-if="hasChartSlot" type="button" v-on:click="setActive('chart')" class="switch-data-type-btn" v-bind:class="{ active: activeDataType == 'chart' }">Chart</button>
+          <button type="button" v-on:click="exportToExcel()" class="switch-data-type-btn">Export</button>
         </div>
       </div>
-      <table v-if="activeDataType == 'table'" class="table table-responsive-sm table-striped">
+      <table v-if="activeDataType == 'table'" class="table table-responsive-sm table-striped" ref="exportable_table">
         <thead>
           <slot name="thead-top"></slot>
           <tr>
@@ -52,6 +53,15 @@ export default {
     setActive(type = "table") {
       this.activeDataType = type;
     },
+
+    exportToExcel() {
+      var XLSX = require("xlsx");
+      var elt = this.$refs.exportable_table;
+      var wb = XLSX.utils.table_to_book(elt, { sheet: "Sheet JS" });
+      let filename = this.data.title || 'profile-export';
+      return XLSX.writeFile(wb, filename + ".xlsx");
+      // return dl ? XLSX.write(wb, { bookType: type, bookSST: true, type: "base64" }) : XLSX.writeFile(wb, fn || "SheetJSTableExport." + (type || "xlsx"));
+    },
   },
 };
 </script>
@@ -83,5 +93,17 @@ export default {
 .switch-type-btn-group button.active {
   background-color: #4285f4;
   color: #ffffff;
+}
+.export-btn {
+  margin-left: 0;
+  margin-right: 0;
+  background-color: #f2f2f2;
+  color: #525b70;
+  outline: none;
+  border: 0px;
+  padding: 5px 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.025rem;
 }
 </style>
