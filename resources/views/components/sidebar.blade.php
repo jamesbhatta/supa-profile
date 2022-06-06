@@ -202,6 +202,18 @@
             </a>
         </li>
 
+        <li class="nav-item ">
+            <a class="nav-link" href="{{ route('disability.index') }}">
+                <span class="text-warning"><i class="fa fa-tachometer-alt"></i></span>@lang('navigation.disability')
+            </a>
+        </li>
+
+        <li class="nav-item ">
+            <a class="nav-link" href="{{ route('disability-detail.index') }}">
+                <span class="text-warning"><i class="fa fa-tachometer-alt"></i></span>@lang('navigation.disability_detail')
+            </a>
+        </li>
+
         @hasanyrole('super-admin')
         <li class="nav-item">
             <a class="nav-link" href="{{ route('admin.logs') }}" target="_blank">

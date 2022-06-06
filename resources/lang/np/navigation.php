@@ -22,4 +22,6 @@ return [
     'local_population'=>"स्थानिय तह को जनसंख्या",
     'population'=>"२०७८ को स्थानीय तहको जनसंख्या",
     'age_population'=>"उमेर अनुसारको जनसंख्या",
+    'disability'=>"अपांगता",
+    'disability_detail'=>"अपांगताको संख्यात्मक विवरण",
 ];

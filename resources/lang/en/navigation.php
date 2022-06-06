@@ -22,4 +22,6 @@ return [
     'local_population'=>"Local Population",
     'population'=>"2078 population",
     'age_population'=>"Age Population",
+    'disability'=>'Disability',
+    'disability_detail'=>"Disability Detail",
 ];
