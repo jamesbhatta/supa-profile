@@ -37,6 +37,7 @@
   background-color: #5b96fb;
   color: #ffffff;
   text-align: center;
+  position: relative;
   border-radius: 6px;
   overflow: hidden;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -68,6 +69,13 @@
 .info-card.teal-color {
   background-color: #29a8ab;
   color: #fff;
+}
+.info-card .icon {
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+  font-size: 3rem;
+  opacity: 0.35;
 }
 
 .info-card .label {

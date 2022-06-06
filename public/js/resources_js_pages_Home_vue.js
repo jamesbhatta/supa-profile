@@ -112,6 +112,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 
 chart_js__WEBPACK_IMPORTED_MODULE_0__.Chart.register(chart_js__WEBPACK_IMPORTED_MODULE_0__.Title, chart_js__WEBPACK_IMPORTED_MODULE_0__.Tooltip, chart_js__WEBPACK_IMPORTED_MODULE_0__.Legend, chart_js__WEBPACK_IMPORTED_MODULE_0__.BarElement, chart_js__WEBPACK_IMPORTED_MODULE_0__.CategoryScale, chart_js__WEBPACK_IMPORTED_MODULE_0__.LinearScale, chart_js__WEBPACK_IMPORTED_MODULE_0__.ArcElement);
@@ -417,18 +423,30 @@ var staticRenderFns = [
           _c("div", { staticClass: "value" }, [_vm._v("19,539")]),
           _vm._v(" "),
           _c("div", { staticClass: "label" }, [_vm._v("क्षेत्रफल")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "icon" }, [
+            _c("i", { staticClass: "far fa-map" }),
+          ]),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "info-card green-color" }, [
           _c("div", { staticClass: "value" }, [_vm._v("9")]),
           _vm._v(" "),
           _c("div", { staticClass: "label" }, [_vm._v("जम्मा जिल्ला")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "icon" }, [
+            _c("i", { staticClass: "fa fa-globe" }),
+          ]),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "info-card indigo-color" }, [
           _c("div", { staticClass: "value" }, [_vm._v("27,11,270")]),
           _vm._v(" "),
           _c("div", { staticClass: "label" }, [_vm._v("जनसंख्या")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "icon" }, [
+            _c("i", { staticClass: "fa fa-users" }),
+          ]),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "info-card orange-color" }, [
@@ -436,6 +454,10 @@ var staticRenderFns = [
           _vm._v(" "),
           _c("div", { staticClass: "label" }, [
             _vm._v("जनघनत्तो (वर्ग कि.मि.)"),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "icon" }, [
+            _c("i", { staticClass: "fa fa-users" }),
           ]),
         ]),
         _vm._v(" "),
@@ -445,6 +467,10 @@ var staticRenderFns = [
           _c("div", { staticClass: "label" }, [
             _vm._v("प्रदेशसभा निर्वाचन क्षेत्र"),
           ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "icon" }, [
+            _c("i", { staticClass: "fa fa-person-booth" }),
+          ]),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "info-card teal-color" }, [
@@ -452,6 +478,10 @@ var staticRenderFns = [
           _vm._v(" "),
           _c("div", { staticClass: "label" }, [
             _vm._v("प्रतिनिधि निर्वाचन क्षेत्र"),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "icon" }, [
+            _c("i", { staticClass: "fa fa-person-booth" }),
           ]),
         ]),
       ]),

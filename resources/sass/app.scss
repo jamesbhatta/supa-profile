@@ -38,6 +38,7 @@
     color: #ffffff;
     text-align: center;
     // display: flex;
+    position: relative;
     border-radius: 6px;
     overflow: hidden;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -69,6 +70,14 @@
     &.teal-color {
         background-color: #29a8ab;
         color: #fff;
+    }
+
+    .icon {
+        position: absolute;
+        bottom: 0px;
+        right: 10px;
+        font-size: 3rem;
+        opacity: .35;
     }
 }
 
