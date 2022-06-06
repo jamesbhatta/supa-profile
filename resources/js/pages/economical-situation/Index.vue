@@ -18,7 +18,19 @@
         <div class="my-5"></div>
         <data-viewer :data="RevenueReceivedState"></data-viewer>
         <div class="my-5"></div>
-        <data-viewer :data="StatusofBudgetResources"></data-viewer>
+        <data-viewer :data="StatusofBudgetResources">
+        
+        <template slot="chart">
+                <div class="row">
+                    <div class="col-md-6">
+                        <pie-chart :chart-data="StatusofBudgetResourcesChartData" :width="200" :height="200"></pie-chart>
+                    </div>
+                    <div class="col-md-6">
+                        <bar-chart :chart-data="StatusofBudgetResourcesChartData" :width="200" :height="200"></bar-chart>
+                    </div>
+                </div>
+            </template>
+        </data-viewer>
         <div class="my-5"></div>
         <data-viewer :data="supabudget">
             <template slot="thead-top">
@@ -28,11 +40,34 @@
                     <th colspan="6" class="bg-light text-center font-weight-bold">खर्च (रु. हजारमा)</th>
                 </tr>
             </template>
+             <template slot="chart">
+                <div class="row">
+                    <div class="col-md-6">
+                        <pie-chart :chart-data="supabudgetChartData" :width="200" :height="200"></pie-chart>
+                    </div>
+                    <div class="col-md-6">
+                        <bar-chart :chart-data="supabudgetChartData" :width="200" :height="200"></bar-chart>
+                    </div>
+                </div>
+            </template>
         </data-viewer>
+
         <div class="my-5"></div>
         <data-viewer :data="LaborandEmploymentStatus"></data-viewer>
         <div class="my-5"></div>
-        <data-viewer :data="StateGovernmentHarukoDetails"></data-viewer>
+        <data-viewer :data="StateGovernmentHarukoDetails">
+            
+             <template slot="chart">
+                <div class="row">
+                    <div class="col-md-6">
+                        <pie-chart :chart-data="StateGovernmentHarukoDetailsChartData" :width="200" :height="200"></pie-chart>
+                    </div>
+                    <div class="col-md-6">
+                        <bar-chart :chart-data="StateGovernmentHarukoDetailsChartData" :width="200" :height="200"></bar-chart>
+                    </div>
+                </div>
+            </template>
+        </data-viewer>
     </div>
 </template>
 
@@ -159,6 +194,16 @@ export default {
                 ],
             },
 
+            StatusofBudgetResourcesChartData:{
+                labels: ["आन्तरिक राजश्व", "राजश्व बाँडफाँड","रोयल्टी बाँडफाँड","वित्तिय समानीकरण अनुदान","सशर्त अनुदान","समपुरक अनुदान","विशेष अनुदान","बैदेशिक सहायता","गत आबको बचत"],
+                datasets: [
+                    {
+                        backgroundColor: ["#29a8ab", "#5fb96c", "#e6b40f", 'red', 'pink', 'purple', 'grey','silver','green'],
+                        data: [1080322,7929100,39463,8544000,4193300,1229400,613500,24610,6683961],
+                    },
+                ],
+            },
+
             // 4.5
             //To be develop
             supabudget: {
@@ -173,7 +218,15 @@ export default {
                 ],
             },
 
-
+            supabudgetChartData:{
+                labels: ["074/075","075/076","076/077","077/078","078/079",],
+                datasets: [
+                    {
+                        backgroundColor: ["#29a8ab", "#5fb96c", "#e6b40f", 'red', 'pink'],
+                        data: [25.5,56.5,62.8,66.8,8.9],
+                    },
+                ],
+            },
 
             LaborandEmploymentStatus: {
                 title: "श्रम तथा रोजगारको अवस्था",
@@ -190,10 +243,10 @@ export default {
                     ["नेपाल", '११.४', '३४.२', '३८.५'],
                 ],
             },
-
+           
 
             StateGovernmentHarukoDetails: {
-                title: "प्रदेशमा दर्ता भएका सरकारी हरुको विवरण",
+                title: "प्रदेशमा दर्ता भएका सहकारीहरुको विवरण",
                 labels: ["क्र.स.", "बेरोजगारी", "बहुउद्देश्यीय", "कृषि", "ऋण तथा बचत", "स्वास्थ्य", "सञ्चार", "विधुत", "जडिबुटी", "वतावरण संरक्षण", "प्रकाशन", "अन्य", "जम्मा"],
                 data: [
                     [1, "कैलाली", '23', '31', '22', '', '', '10', '', '2', '1', '5', '94'],
@@ -224,6 +277,15 @@ export default {
                 ],
             },
 
+            StateGovernmentHarukoDetailsChartData:{
+               labels: ["कैलाली","कञ्चनपुर","डडेलधुरा","बैतडी","दार्चुला","डोटी","अछाम","बझाङ","बाजुरा",],
+                datasets: [
+                    {
+                        backgroundColor: ["#29a8ab", "#5fb96c", "#e6b40f", 'red', 'pink','green','blue','brown','grey'],
+                        data: [94,55,22,32,24,10,66,18,31],
+                    },
+                ], 
+            },
         };
     },
 };

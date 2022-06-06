@@ -49,6 +49,41 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -85,6 +120,13 @@ __webpack_require__.r(__webpack_exports__);
           value: "आब ०७८÷७९ को कुल बजेट"
         }, '३०३३९४५५']]
       },
+      StatusofBudgetResourcesChartData: {
+        labels: ["आन्तरिक राजश्व", "राजश्व बाँडफाँड", "रोयल्टी बाँडफाँड", "वित्तिय समानीकरण अनुदान", "सशर्त अनुदान", "समपुरक अनुदान", "विशेष अनुदान", "बैदेशिक सहायता", "गत आबको बचत"],
+        datasets: [{
+          backgroundColor: ["#29a8ab", "#5fb96c", "#e6b40f", 'red', 'pink', 'purple', 'grey', 'silver', 'green'],
+          data: [1080322, 7929100, 39463, 8544000, 4193300, 1229400, 613500, 24610, 6683961]
+        }]
+      },
       // 4.5
       //To be develop
       supabudget: {
@@ -92,18 +134,32 @@ __webpack_require__.r(__webpack_exports__);
         labels: ["क्र.स.", "आर्थिक वर्ष", "चालु", "पुँजीगत", "जम्मा", "चालु", "प्रतिशत", "पुँजीगत", "प्रतिशत", "जम्मा", "प्रतिशत"],
         data: [[1, "074/075", 843400, 177100, 1020500, 165817, 19.66, 93999, 53.08, 259816, 25.5], [2, "075/076", 13350800, 11714814, 25065614, 6930792, 51.91, 7232608, 61.74, 14163400, 56.5], [3, "076/077", 15094836, 13067199, 28162035, 8403434, 55.67, 9288578, 71.08, 17692012, 62.8], [4, "077/078", 16402360, 1824639, 34644999, 10444795, 63.68, 12700680, 69.62, 23145475, 66.8], [5, "078/079", 12447899, 18030106, 30478005, 1910495, 15.35, 812258, 4.51, 2722753, 8.9]]
       },
+      supabudgetChartData: {
+        labels: ["074/075", "075/076", "076/077", "077/078", "078/079"],
+        datasets: [{
+          backgroundColor: ["#29a8ab", "#5fb96c", "#e6b40f", 'red', 'pink'],
+          data: [25.5, 56.5, 62.8, 66.8, 8.9]
+        }]
+      },
       LaborandEmploymentStatus: {
         title: "श्रम तथा रोजगारको अवस्था",
         labels: ["प्रदेश", "बेरोजगारी", "जनसंख्याको अनुपातमा बेरोजगारी", "श्रमशक्तिमा सहभागिताको दर"],
         data: [["प्रदेश १", '१०.२', '३४', '३७.८'], ["मधेश", '२०.१', '३१.८', '३९.७'], ["बागमती", '७', '४३.८', '४७.१'], ["गण्डकी", '९', '३२.५', '३५.७'], ["लुम्बीनी", '११.२', '३३.१', '३७.३'], ["कर्णाली", '९.७', '२४.८', '२७.३'], ["सुदूरपश्चिम", '११.५', '२४.१', '२७.३'], ["नेपाल", '११.४', '३४.२', '३८.५']]
       },
       StateGovernmentHarukoDetails: {
-        title: "प्रदेशमा दर्ता भएका सरकारी हरुको विवरण",
+        title: "प्रदेशमा दर्ता भएका सहकारीहरुको विवरण",
         labels: ["क्र.स.", "बेरोजगारी", "बहुउद्देश्यीय", "कृषि", "ऋण तथा बचत", "स्वास्थ्य", "सञ्चार", "विधुत", "जडिबुटी", "वतावरण संरक्षण", "प्रकाशन", "अन्य", "जम्मा"],
         data: [[1, "कैलाली", '23', '31', '22', '', '', '10', '', '2', '1', '5', '94'], [2, "कञ्चनपुर", '24', '27', '19', '1', '', '6', '', '', '', '11', '55'], [3, "डडेलधुरा", '2', '4', '3', '2', '', '', '2', '', '', '9', '22'], [4, "बैतडी", '2', '9', '17', '', '', '2', '1', '', '', '1', '32'], [5, "दार्चुला", '', '4', '18', '', '', '', '', '', '', '2', '24'], [6, "डोटी", '3', '', '6', '', '', '', '', '', '', '1', '10'], [7, "अछाम", '12', '1', '16', '', '', '2', '', '', '', '5', '66'], [8, "बझाङ", '3', '2', '12', '', '', '', '', '', '', '1', '18'], [9, "बाजुरा", '4', '7', '15', '1', '2', '', '', '', '', '2', '31'], [{
           colspan: 2,
           value: "जम्मा"
         }, '73', '85', '128', '4', '2', '20', '3', '2', '1', '37', '355']]
+      },
+      StateGovernmentHarukoDetailsChartData: {
+        labels: ["कैलाली", "कञ्चनपुर", "डडेलधुरा", "बैतडी", "दार्चुला", "डोटी", "अछाम", "बझाङ", "बाजुरा"],
+        datasets: [{
+          backgroundColor: ["#29a8ab", "#5fb96c", "#e6b40f", 'red', 'pink', 'green', 'blue', 'brown', 'grey'],
+          data: [94, 55, 22, 32, 24, 10, 66, 18, 31]
+        }]
       }
     };
   }
@@ -252,7 +308,46 @@ var render = function () {
       _vm._v(" "),
       _c("div", { staticClass: "my-5" }),
       _vm._v(" "),
-      _c("data-viewer", { attrs: { data: _vm.StatusofBudgetResources } }),
+      _c(
+        "data-viewer",
+        { attrs: { data: _vm.StatusofBudgetResources } },
+        [
+          _c("template", { slot: "chart" }, [
+            _c("div", { staticClass: "row" }, [
+              _c(
+                "div",
+                { staticClass: "col-md-6" },
+                [
+                  _c("pie-chart", {
+                    attrs: {
+                      "chart-data": _vm.StatusofBudgetResourcesChartData,
+                      width: 200,
+                      height: 200,
+                    },
+                  }),
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "col-md-6" },
+                [
+                  _c("bar-chart", {
+                    attrs: {
+                      "chart-data": _vm.StatusofBudgetResourcesChartData,
+                      width: 200,
+                      height: 200,
+                    },
+                  }),
+                ],
+                1
+              ),
+            ]),
+          ]),
+        ],
+        2
+      ),
       _vm._v(" "),
       _c("div", { staticClass: "my-5" }),
       _vm._v(" "),
@@ -283,6 +378,40 @@ var render = function () {
               ),
             ]),
           ]),
+          _vm._v(" "),
+          _c("template", { slot: "chart" }, [
+            _c("div", { staticClass: "row" }, [
+              _c(
+                "div",
+                { staticClass: "col-md-6" },
+                [
+                  _c("pie-chart", {
+                    attrs: {
+                      "chart-data": _vm.supabudgetChartData,
+                      width: 200,
+                      height: 200,
+                    },
+                  }),
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "col-md-6" },
+                [
+                  _c("bar-chart", {
+                    attrs: {
+                      "chart-data": _vm.supabudgetChartData,
+                      width: 200,
+                      height: 200,
+                    },
+                  }),
+                ],
+                1
+              ),
+            ]),
+          ]),
         ],
         2
       ),
@@ -293,7 +422,46 @@ var render = function () {
       _vm._v(" "),
       _c("div", { staticClass: "my-5" }),
       _vm._v(" "),
-      _c("data-viewer", { attrs: { data: _vm.StateGovernmentHarukoDetails } }),
+      _c(
+        "data-viewer",
+        { attrs: { data: _vm.StateGovernmentHarukoDetails } },
+        [
+          _c("template", { slot: "chart" }, [
+            _c("div", { staticClass: "row" }, [
+              _c(
+                "div",
+                { staticClass: "col-md-6" },
+                [
+                  _c("pie-chart", {
+                    attrs: {
+                      "chart-data": _vm.StateGovernmentHarukoDetailsChartData,
+                      width: 200,
+                      height: 200,
+                    },
+                  }),
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "col-md-6" },
+                [
+                  _c("bar-chart", {
+                    attrs: {
+                      "chart-data": _vm.StateGovernmentHarukoDetailsChartData,
+                      width: 200,
+                      height: 200,
+                    },
+                  }),
+                ],
+                1
+              ),
+            ]),
+          ]),
+        ],
+        2
+      ),
     ],
     1
   )
