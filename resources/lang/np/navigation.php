@@ -28,4 +28,6 @@ return [
     'bank'=>"बैंक",
     'local_bank'=>"बैंक तथा वित्तिय संस्थाहरुका धेरै भएका स्थानीय",
     'school_detail'=>"विद्यालय वििरण २०७७",
+    'feeder_hostel'=>"Feeder Hostel",
+    'kamlari_hostel'=>"मुक्त कमलरी छात्रावास",
 ];

@@ -74,6 +74,8 @@ Route::resource('bank-detail', BankDetailController::class);
 Route::resource('bank', BankController::class);
 Route::resource('local-bank', LocalBankController::class);
 Route::resource('school', SchoolController::class);
+Route::resource('feeder-hostel', FeederHostelController::class);
+Route::resource('kamlari-hostel', KamlariHostelController::class);
 
 Route::any('/{all}', function () {
     return view('app');
