@@ -73,6 +73,7 @@ Route::resource('disability-detail', DisabilityDetailController::class);
 Route::resource('bank-detail', BankDetailController::class);
 Route::resource('bank', BankController::class);
 Route::resource('local-bank', LocalBankController::class);
+Route::resource('school', SchoolController::class);
 
 Route::any('/{all}', function () {
     return view('app');

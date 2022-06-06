@@ -232,6 +232,12 @@
             </a>
         </li>
 
+        <li class="nav-item ">
+            <a class="nav-link" href="{{ route('school.index') }}">
+                <span class="text-warning"><i class="fa fa-tachometer-alt"></i></span>@lang('navigation.school_detail')
+            </a>
+        </li>
+
         @hasanyrole('super-admin')
         <li class="nav-item">
             <a class="nav-link" href="{{ route('admin.logs') }}" target="_blank">

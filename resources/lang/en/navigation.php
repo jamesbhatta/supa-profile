@@ -27,4 +27,5 @@ return [
     'bank_detail'=>"Bank Detail",
     'bank'=>"Bank",
     'local_bank'=>"Local Bank",
+    'school_detail'=>"School Detail 2077",
 ];
