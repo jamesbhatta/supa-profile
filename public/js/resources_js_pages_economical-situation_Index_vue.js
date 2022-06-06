@@ -38,6 +38,17 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -50,6 +61,13 @@ __webpack_require__.r(__webpack_exports__);
         title: "राजश्व बाँडफाँड (रु.दश लाखमा)",
         labels: ["प्रदेश", "राजश्व बाँडफाँड", "प्रतिशत", "स्थानीय तह", "राजश्व बाँडफाँड", "प्रतिशत"],
         data: [["प्रदेश १", 457, 15.6, 137, 524, 17.8], ["मधेश", 434, 14.8, 136, 538, 18.3], ["बागमती", 460, 15.7, 119, 479, 16.3], ["गण्डकी", 381, 12.9, 85, 298, 10.1], ["लुम्बीनी", 438, 14.8, 109, 492, 16.7], ["कर्णाली", 384, 13.0, 79, 266, 9.1], ["सुदूरपश्चिम", 384, 13.0, 88, 344, 11.7], ["जम्मा", 2941, 100.0, 753, 2941, 100.0]]
+      },
+      statusofRevenueSharingChartData: {
+        labels: ["प्रदेश १", "मधेश", "बागमती", "गण्डकी", "लुम्बीनी", "कर्णाली", "सुदूरपश्चिम"],
+        datasets: [{
+          backgroundColor: ["#29a8ab", "#5fb96c", "#e6b40f", 'red', 'pink', 'purple', 'grey'],
+          data: [17.8, 18.3, 16.3, 10.1, 16.7, 9.1, 11.7]
+        }]
       },
       RevenueReceivedState: {
         title: "प्रदेशमा प्राप्त हुने राजश्वको शिर्षकगत विवरण",
@@ -187,7 +205,46 @@ var render = function () {
       _vm._v(" "),
       _c("div", { staticClass: "my-5" }),
       _vm._v(" "),
-      _c("data-viewer", { attrs: { data: _vm.statusofRevenueSharing } }),
+      _c(
+        "data-viewer",
+        { attrs: { data: _vm.statusofRevenueSharing } },
+        [
+          _c("template", { slot: "chart" }, [
+            _c("div", { staticClass: "row" }, [
+              _c(
+                "div",
+                { staticClass: "col-md-6" },
+                [
+                  _c("pie-chart", {
+                    attrs: {
+                      "chart-data": _vm.statusofRevenueSharingChartData,
+                      width: 200,
+                      height: 200,
+                    },
+                  }),
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "col-md-6" },
+                [
+                  _c("bar-chart", {
+                    attrs: {
+                      "chart-data": _vm.statusofRevenueSharingChartData,
+                      width: 200,
+                      height: 200,
+                    },
+                  }),
+                ],
+                1
+              ),
+            ]),
+          ]),
+        ],
+        2
+      ),
       _vm._v(" "),
       _c("div", { staticClass: "my-5" }),
       _vm._v(" "),

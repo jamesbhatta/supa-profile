@@ -3,20 +3,31 @@
         <h1 class="page-title">आर्थिक अवस्था</h1>
         <data-viewer :data="provinceEconomicData"></data-viewer>
         <div class="my-5"></div>
-        <data-viewer :data="statusofRevenueSharing"></data-viewer>
+        <data-viewer :data="statusofRevenueSharing">
+            <template slot="chart">
+                <div class="row">
+                    <div class="col-md-6">
+                        <pie-chart :chart-data="statusofRevenueSharingChartData" :width="200" :height="200"></pie-chart>
+                    </div>
+                    <div class="col-md-6">
+                        <bar-chart :chart-data="statusofRevenueSharingChartData" :width="200" :height="200"></bar-chart>
+                    </div>
+                </div>
+            </template>
+        </data-viewer>
         <div class="my-5"></div>
         <data-viewer :data="RevenueReceivedState"></data-viewer>
         <div class="my-5"></div>
         <data-viewer :data="StatusofBudgetResources"></data-viewer>
         <div class="my-5"></div>
         <data-viewer :data="supabudget">
-        <template slot="thead-top">
-         <tr>
-           <th colspan="2"></th>
-           <th colspan="3" class="bg-light text-center font-weight-bold">बजेट (रु. हजारमा)</th>
-           <th colspan="6" class="bg-light text-center font-weight-bold">खर्च (रु. हजारमा)</th>
-         </tr>
-       </template>
+            <template slot="thead-top">
+                <tr>
+                    <th colspan="2"></th>
+                    <th colspan="3" class="bg-light text-center font-weight-bold">बजेट (रु. हजारमा)</th>
+                    <th colspan="6" class="bg-light text-center font-weight-bold">खर्च (रु. हजारमा)</th>
+                </tr>
+            </template>
         </data-viewer>
         <div class="my-5"></div>
         <data-viewer :data="LaborandEmploymentStatus"></data-viewer>
@@ -55,7 +66,7 @@ export default {
 
                 ],
             },
-      
+
             statusofRevenueSharing: {
                 title: "राजश्व बाँडफाँड (रु.दश लाखमा)",
                 labels: ["प्रदेश", "राजश्व बाँडफाँड", "प्रतिशत", "स्थानीय तह", "राजश्व बाँडफाँड", "प्रतिशत"],
@@ -68,6 +79,16 @@ export default {
                     ["कर्णाली", 384, 13.0, 79, 266, 9.1],
                     ["सुदूरपश्चिम", 384, 13.0, 88, 344, 11.7],
                     ["जम्मा", 2941, 100.0, 753, 2941, 100.0],
+                ],
+            },
+
+            statusofRevenueSharingChartData: {
+                labels: ["प्रदेश १", "मधेश", "बागमती", "गण्डकी", "लुम्बीनी", "कर्णाली", "सुदूरपश्चिम"],
+                datasets: [
+                    {
+                        backgroundColor: ["#29a8ab", "#5fb96c", "#e6b40f", 'red', 'pink', 'purple', 'grey'],
+                        data: [17.8, 18.3, 16.3, 10.1, 16.7, 9.1, 11.7],
+                    },
                 ],
             },
 
@@ -138,17 +159,17 @@ export default {
                 ],
             },
 
-// 4.5
+            // 4.5
             //To be develop
             supabudget: {
                 title: "सुदूरपश्चिम प्रदेशको कूल बजेट र खर्चको अवस्था",
-                labels: ["क्र.स.","आर्थिक वर्ष","चालु","पुँजीगत","जम्मा","चालु","प्रतिशत","पुँजीगत","प्रतिशत","जम्मा","प्रतिशत"],
+                labels: ["क्र.स.", "आर्थिक वर्ष", "चालु", "पुँजीगत", "जम्मा", "चालु", "प्रतिशत", "पुँजीगत", "प्रतिशत", "जम्मा", "प्रतिशत"],
                 data: [
-                    [1,"074/075",843400,177100,1020500,165817,19.66,93999,53.08,259816,25.5],
-                    [2,"075/076",13350800,11714814,25065614,6930792,51.91,7232608,61.74,14163400,56.5],
-                    [3,"076/077",15094836,13067199,28162035,8403434,55.67,9288578,71.08,17692012,62.8],
-                    [4,"077/078",16402360,1824639,34644999,10444795,63.68,12700680,69.62,23145475,66.8],
-                    [5,"078/079",12447899,18030106,30478005,1910495,15.35,812258,4.51,2722753,8.9],
+                    [1, "074/075", 843400, 177100, 1020500, 165817, 19.66, 93999, 53.08, 259816, 25.5],
+                    [2, "075/076", 13350800, 11714814, 25065614, 6930792, 51.91, 7232608, 61.74, 14163400, 56.5],
+                    [3, "076/077", 15094836, 13067199, 28162035, 8403434, 55.67, 9288578, 71.08, 17692012, 62.8],
+                    [4, "077/078", 16402360, 1824639, 34644999, 10444795, 63.68, 12700680, 69.62, 23145475, 66.8],
+                    [5, "078/079", 12447899, 18030106, 30478005, 1910495, 15.35, 812258, 4.51, 2722753, 8.9],
                 ],
             },
 
