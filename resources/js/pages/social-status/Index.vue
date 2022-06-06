@@ -150,7 +150,23 @@
     </data-viewer>
     <div class="my-5"></div>
 
-    <data-viewer :data="supahelthinsurancedata"></data-viewer>
+    <data-viewer :data="supahelthinsurancedata">
+      
+      <template slot="chart">
+        <div class="row">
+          <div class="col-md-6">
+             <pie-chart :chart-data="supahelthinsuranceChartdata"></pie-chart>
+          </div>
+          <div class="col-md-6">
+            <bar-chart :chart-data="supahelthinsuranceChartdata">
+
+            </bar-chart>
+          </div>
+        </div>
+
+
+      </template>
+    </data-viewer>
 
 
      <div class="my-5"></div>
@@ -1322,6 +1338,17 @@ export default {
               value:"जम्मा",
             },"१९४३२३","२१८९३८","४१३२६१"
           ],
+        ],
+      },
+
+      supahelthinsuranceChartdata:{
+         labels: ["कैलाली","अछाम","बझाङ्ग","बाजुरा","दार्चुला","कञ्चनपुर","बैतडी","डडेलधुरा","डोटी"],
+        datasets: [
+          {
+            backgroundColor: ["#29a8ab", "#5fb96c", "#e6b40f",'blue','green','red','purple','grey','pink'],
+            data: [215846, 43952, 36931, 31336,9530,39871,19746,10320,6007],
+
+          },
         ],
       },
 
