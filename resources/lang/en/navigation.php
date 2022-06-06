@@ -24,4 +24,7 @@ return [
     'age_population'=>"Age Population",
     'disability'=>'Disability',
     'disability_detail'=>"Disability Detail",
+    'bank_detail'=>"Bank Detail",
+    'bank'=>"Bank",
+    'local_bank'=>"Local Bank",
 ];

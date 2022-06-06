@@ -214,6 +214,24 @@
             </a>
         </li>
 
+
+        <li class="nav-item ">
+            <a class="nav-link" href="{{ route('bank-detail.index') }}">
+                <span class="text-warning"><i class="fa fa-tachometer-alt"></i></span>@lang('navigation.bank_detail')
+            </a>
+        </li>
+        <li class="nav-item ">
+            <a class="nav-link" href="{{ route('bank.index') }}">
+                <span class="text-warning"><i class="fa fa-tachometer-alt"></i></span>@lang('navigation.bank')
+            </a>
+        </li>
+
+        <li class="nav-item ">
+            <a class="nav-link" href="{{ route('local-bank.index') }}">
+                <span class="text-warning"><i class="fa fa-tachometer-alt"></i></span>@lang('navigation.local_bank')
+            </a>
+        </li>
+
         @hasanyrole('super-admin')
         <li class="nav-item">
             <a class="nav-link" href="{{ route('admin.logs') }}" target="_blank">
