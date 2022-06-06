@@ -2034,11 +2034,12 @@ __webpack_require__.r(__webpack_exports__);
     printData: function printData() {
       var printContent = this.$refs.exportable_table;
       console.log(printContent);
-      var WinPrint = window.open('', '', 'width=600,height=1250');
-      WinPrint.document.write(printContent.innerHTML);
+      var WinPrint = window.open('', '', 'width=1000,height=1250');
+      WinPrint.document.write(printContent.outerHTML);
       WinPrint.document.close();
       WinPrint.focus();
-      WinPrint.print(); // WinPrint.close();
+      WinPrint.print();
+      WinPrint.close();
     }
   }
 });
