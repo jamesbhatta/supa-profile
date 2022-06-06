@@ -7,6 +7,7 @@
           <button type="button" v-on:click="setActive('table')" class="switch-data-type-btn" v-bind:class="{ active: activeDataType == 'table' }">Table</button>
           <button v-if="hasChartSlot" type="button" v-on:click="setActive('chart')" class="switch-data-type-btn" v-bind:class="{ active: activeDataType == 'chart' }">Chart</button>
           <button type="button" v-on:click="exportToExcel()" class="switch-data-type-btn">Export</button>
+          <button type="button" v-on:click="printData()" class="switch-data-type-btn">Print</button>
         </div>
       </div>
       <table v-if="activeDataType == 'table'" class="table table-responsive-sm table-striped" ref="exportable_table">
@@ -62,6 +63,16 @@ export default {
       return XLSX.writeFile(wb, filename + ".xlsx");
       // return dl ? XLSX.write(wb, { bookType: type, bookSST: true, type: "base64" }) : XLSX.writeFile(wb, fn || "SheetJSTableExport." + (type || "xlsx"));
     },
+    printData(){
+       var printContent = this.$refs.exportable_table;
+        console.log(printContent);
+    var WinPrint = window.open('', '', 'width=600,height=1250');
+    WinPrint.document.write(printContent.innerHTML);
+    WinPrint.document.close();
+    WinPrint.focus();
+    WinPrint.print();
+    // WinPrint.close();
+    }
   },
 };
 </script>

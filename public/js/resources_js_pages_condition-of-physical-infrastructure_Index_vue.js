@@ -77,6 +77,116 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -146,20 +256,48 @@ __webpack_require__.r(__webpack_exports__);
         labels: ["क्र.स.", "सडक सञ्जाल", "सुदूरपश्चिममा लम्बाई (कि.मि)", "नेपाल (कि.मि.)"],
         data: [[1, "कूल सडक सञ्जाल ", '५,३२६', '६३५७७'], [2, "कालोपत्रे", '२१४', '४२७४'], [3, "ग्रावेल", '११५८', '१३३९७'], [4, "कच्ची", '३९५४', '४५९०६']]
       },
+      DescriptionofServiceNetworkInTheFarWestChartData: {
+        labels: ["कूल सडक सञ्जाल", "कालोपत्रे", "ग्रावेल", "कच्ची"],
+        datasets: [{
+          backgroundColor: ['Red', 'Blue', 'Green', ' Grey'],
+          data: [5326, 214, 1158, 3954]
+        }]
+      },
       StateAndLocalLevelRoadDetails: {
         title: "प्रदेश अनुसार प्रदेश र स्थानीय तहको सडक विवरण (कि.मि.)",
         labels: ["सडकको विवरण", "प्रदेश १", "मधेश", "बागमती", "गण्डकी", "लुम्बीनी", "कर्णाली", "सुदूरपश्चिम", "जम्मा"],
         data: [["प्रादेशिक सडक(कि.मि.)", '६३७४', '३३४४', '६४०७', '४३५५', '६२७४', '११६२', '४१४९', '३१,९६५'], ["स्थानीय सडक(कि.मि.)", '६५०८', '२६२१', '९२८५', '७१३९', '२७७७', '२१०५', '११७७', '३१६१२'], ["जम्मा (कि.मि.)", '१२७८२', '५९६५', '१५६९२', '११४९४', '९०५१', '३२६६', '५३२६', '६३५७७']]
+      },
+      StateAndLocalLevelRoadDetailsChartData: {
+        labels: ["प्रादेशिक सडक(कि.मि.)", "स्थानीय सडक(कि.मि.)"],
+        datasets: [{
+          backgroundColor: ['Red', ' Blue'],
+          data: [31965, 31612]
+        }]
       },
       RoadtypeDetails: {
         title: "प्रदेश अनुसार सडकको प्रकार विवरण (कि.मि.)",
         labels: ["प्रदेश", "धुले/कच्ची", "ग्राबेल", "कालोपत्रे", "जम्मा सडक", "प्रदेशको हिस्सा प्रतिशत", "सडक घनत्व"],
         data: [["प्रदेश १", 9492, 2522, 768, 12782, 20.11, 0.49], ["मधेश", 2733, 2854, 378, 5965, 9.38, 0.62], ["बागमती", 11734, 2690, 1268, 15692, 24.68, 0.77], ["गण्डकी", 9596, 1252, 646, 11494, 18.08, 0.53], ["लुम्बीनी", 5428, 2712, 911, 9051, 14.24, 0.41], ["कर्णाली", 2969, 209, 89, 3266, 5.14, 0.12], ["सुदूरपश्चिम", 3954, 1158, 214, 5326, 8.38, 0.27], ["जम्मा", 45906, 13397, 4274, 63577, 100, 0.43]]
       },
+      RoadtypeDetailsChartData: {
+        labels: ["प्रदेश १", "मधेश", "बागमती", "गण्डकी", "लुम्बीनी", "कर्णाली", "सुदूरपश्चिम"],
+        datasets: [{
+          backgroundColor: ['red', 'green', ' blue', ' yellow', ' cyan', ' grey', ' pink'],
+          data: [0.49, 0.62, 0.77, 0.53, 0.41, 0.12, 0.27]
+        }]
+      },
       yatayatdata: {
         title: "सवारी साधनको संख्या विवरण",
         labels: ["विवरण", "२०७७ असार मसान्तसम्म", "२०७८ असार मसान्तसम्म", "बृद्धि प्रतिशत"],
         data: [["मोटरसाइकल", 101897, 120729, 18.48], ["अन्य", 20718, 24863, 20.01], ["यातायात साधनको संख्या", 122615, 145592, 18.74]]
+      },
+      yatayatdataChartData: {
+        labels: ["मोटरसाइकल", "अन्य", "यातायात साधनको संख्या"],
+        datasets: [{
+          backgroundColor: ['red', 'green', ' blue'],
+          data: [18.48, 20.01, 18.74]
+        }]
       },
       // 6.7
       airportdata: {
@@ -263,25 +401,60 @@ __webpack_require__.r(__webpack_exports__);
         labels: ["प्रदेश", "पहुँच (प्रतिशत)"],
         data: [["प्रदेश १", 82.43], ["मधेश", 99.05], ["बागमती", 94.44], ["गण्डकी", 92.79], ["लुम्बीनी", 91], ["कर्णाली", 34.75], ["सुदूरपश्चिम", 64.69], ["बैकल्पिक उर्जा", 3], ["जम्मा", 93]]
       },
+      provinceelectricitypahuchChartData: {
+        labels: ["प्रदेश १", "मधेश", "बागमती", "गण्डकी", "लुम्बीनी", "कर्णाली", "सुदूरपश्चिम"],
+        datasets: [{
+          backgroundColor: ['red', 'green', 'blue', ' yellow', 'cyan', ' grey', ' pink'],
+          data: [82.43, 99.05, 94.44, 92.79, 91, 34.75, 64.69]
+        }]
+      },
       produceelectricitydata: {
         title: "विधुत उत्पादनको प्रदेशगत अवस्था",
         labels: ["प्रदेश", "०७७ सम्म (मे.वा.)"],
         data: [["प्रदेश १", 280.0], ["मधेश", 13.0], ["बागमती", 272.0], ["गण्डकी", 527.0], ["लुम्बीनी", 31.0], ["कर्णाली", 11.0], ["सुदूरपश्चिम", 52.0], ["जम्मा", 1386]]
+      },
+      produceelectricitydataChartData: {
+        labels: ["प्रदेश १", "मधेश", "बागमती", "गण्डकी", "लुम्बीनी", "कर्णाली", "सुदूरपश्चिम"],
+        datasets: [{
+          backgroundColor: ['red', 'green', ' blue', 'yellow', 'cyan', 'grey', 'pink', 'Aqua'],
+          data: [280.0, 13.0, 272.0, 527.0, 31.0, 11.0, 52.0]
+        }]
       },
       telecomunicationdata: {
         title: "सुदूरपश्चिममा सञ्चार सेवा उपभोगकर्ताका संख्या विवरण",
         labels: ["विवरण", "२०७७ असार मसान्तसम्म", "२०७८ असार मसान्तसम्म", "बृद्धि प्रतिशत"],
         data: [["प्जिएसएम मोबाइलसहित सम्पूण टेलिफोन संख्या", 2055760, 2324444, 13.09], ["कूल वितरित इन्टरनेट सेवा", 1040662, 1379326, 32.54]]
       },
+      telecomunicationdataChartData: {
+        labels: ["प्जिएसएम मोबाइलसहित सम्पूण टेलिफोन संख्या", "कूल वितरित इन्टरनेट सेवा"],
+        datasets: [{
+          backgroundColor: ['Red', 'green'],
+          data: [13.09, 32.54]
+        }]
+      },
       newspaperdata: {
         title: "प्रेस काउन्सिलमा दर्ता भएका सुदूरपश्चिमका पत्रपत्रिकाहरु",
         labels: ["जिल्ला", "दैनिक", "अर्ध साप्ताहिक", "साप्ताहिक", "पाक्षिक", "मासिक", "द्धैमासिक", "त्रैमासिक", "जम्मा"],
         data: [["कैलाली", 29, 4, 39, 3, 0, 2, 1, 78], ["बझाङ", 0, 1, 3, 0, 0, 1, 0, 5], ["बाजुरा", 0, 0, 5, 0, 0, 0, 0, 5], ["डोटी", 0, 0, 12, 0, 0, 0, 0, 12], ["अछाम", 3, 0, 5, 1,, 0, 0, 9], ["कञ्चनपुर", 29, 2, 37, 0, 2, 1, 1, 72], ["दार्चुला", 2, 1, 3, 0, 0, 0, 0, 6], ["बैतडी", 1, 0, 4, 0, 0, 0, 0, 5], ["डडेलधुरा", 4, 1, 11, 0, 0, 0, 0, 16], ["जम्मा", 68, 9, 119, 4, 2, 4, 1, 208]]
       },
+      newspaperdataChartData: {
+        labels: ["कैलाली", "बझाङ", "बाजुरा", "डोटी", "अछाम", "कञ्चनपुर", "दार्चुला", "बैतडी", "डडेलधुरा"],
+        datasets: [{
+          backgroundColor: ['red', ' green', 'blue', 'yellow', 'cyan', 'grey', ' pink', ' Aqua', 'darkcyan'],
+          data: [78, 5, 5, 12, 9, 72, 6, 5, 16]
+        }]
+      },
       fmdata: {
         title: "प्रदेशमा रहेका एफएम रेडियोको विवरण",
         labels: ["जिल्ला", "एफएम रेडियोको संख्या"],
         data: [["बाजुरा", 4], ["बझाङ", 9], ["अछाम", 12], ["डोटी", 5], ["डडेलधुरा", 6], ["बैतडी", 7], ["दार्चुला", 10], ["कैलाली", 22], ["कञ्चनपुर", 10], ["जम्मा", 85]]
+      },
+      fmdataChartData: {
+        labels: ["बाजुरा", "बझाङ", "अछाम", "डोटी", "डडेलधुरा", "बैतडी", "दार्चुला", "कैलाली", "कञ्चनपुर"],
+        datasets: [{
+          backgroundColor: ['red', 'green', ' blue', ' yellow', 'cyan', 'grey', 'pink', ' Aqua', 'darkcyan'],
+          data: [4, 9, 12, 5, 6, 7, 10, 22, 10]
+        }]
       }
     };
   }
@@ -389,21 +562,153 @@ var render = function () {
       _vm._v(" "),
       _c("div", { staticClass: "my-5" }),
       _vm._v(" "),
-      _c("data-viewer", {
-        attrs: { data: _vm.DescriptionofServiceNetworkInTheFarWest },
-      }),
+      _c(
+        "data-viewer",
+        { attrs: { data: _vm.DescriptionofServiceNetworkInTheFarWest } },
+        [
+          _c("template", { slot: "chart" }, [
+            _c("div", { staticClass: "row" }, [
+              _c(
+                "div",
+                { staticClass: "col-md-6" },
+                [
+                  _c("pie-chart", {
+                    attrs: {
+                      "chart-data":
+                        _vm.DescriptionofServiceNetworkInTheFarWestChartData,
+                    },
+                  }),
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "col-md-6" },
+                [
+                  _c("bar-chart", {
+                    attrs: {
+                      "chart-data":
+                        _vm.DescriptionofServiceNetworkInTheFarWestChartData,
+                    },
+                  }),
+                ],
+                1
+              ),
+            ]),
+          ]),
+        ],
+        2
+      ),
       _vm._v(" "),
       _c("div", { staticClass: "my-5" }),
       _vm._v(" "),
-      _c("data-viewer", { attrs: { data: _vm.StateAndLocalLevelRoadDetails } }),
+      _c(
+        "data-viewer",
+        { attrs: { data: _vm.StateAndLocalLevelRoadDetails } },
+        [
+          _c("template", { slot: "chart" }, [
+            _c("div", { staticClass: "row" }, [
+              _c(
+                "div",
+                { staticClass: "col-md-6" },
+                [
+                  _c("pie-chart", {
+                    attrs: {
+                      "chart-data": _vm.StateAndLocalLevelRoadDetailsChartData,
+                    },
+                  }),
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "col-md-6" },
+                [
+                  _c("bar-chart", {
+                    attrs: {
+                      "chart-data": _vm.StateAndLocalLevelRoadDetailsChartData,
+                    },
+                  }),
+                ],
+                1
+              ),
+            ]),
+          ]),
+        ],
+        2
+      ),
       _vm._v(" "),
       _c("div", { staticClass: "my-5" }),
       _vm._v(" "),
-      _c("data-viewer", { attrs: { data: _vm.RoadtypeDetails } }),
+      _c(
+        "data-viewer",
+        { attrs: { data: _vm.RoadtypeDetails } },
+        [
+          _c("template", { slot: "chart" }, [
+            _c("div", { staticClass: "row" }, [
+              _c(
+                "div",
+                { staticClass: "col-md-6" },
+                [
+                  _c("pie-chart", {
+                    attrs: { "chart-data": _vm.RoadtypeDetailsChartData },
+                  }),
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "col-md-6" },
+                [
+                  _c("bar-chart", {
+                    attrs: { "chart-data": _vm.RoadtypeDetailsChartData },
+                  }),
+                ],
+                1
+              ),
+            ]),
+          ]),
+        ],
+        2
+      ),
       _vm._v(" "),
       _c("div", { staticClass: "my-5" }),
       _vm._v(" "),
-      _c("data-viewer", { attrs: { data: _vm.yatayatdata } }),
+      _c(
+        "data-viewer",
+        { attrs: { data: _vm.yatayatdata } },
+        [
+          _c("template", { slot: "chart" }, [
+            _c("div", { staticClass: "row" }, [
+              _c(
+                "div",
+                { staticClass: "col-md-6" },
+                [
+                  _c("pie-chart", {
+                    attrs: { "chart-data": _vm.yatayatdataChartData },
+                  }),
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "col-md-6" },
+                [
+                  _c("bar-chart", {
+                    attrs: { "chart-data": _vm.yatayatdataChartData },
+                  }),
+                ],
+                1
+              ),
+            ]),
+          ]),
+        ],
+        2
+      ),
       _vm._v(" "),
       _c("div", { staticClass: "my-5" }),
       _vm._v(" "),
@@ -477,23 +782,186 @@ var render = function () {
       _vm._v(" "),
       _c("div", { staticClass: "my-5" }),
       _vm._v(" "),
-      _c("data-viewer", { attrs: { data: _vm.provinceelectricitypahuch } }),
+      _c(
+        "data-viewer",
+        { attrs: { data: _vm.provinceelectricitypahuch } },
+        [
+          _c("template", { slot: "chart" }, [
+            _c("div", { staticClass: "row" }, [
+              _c(
+                "div",
+                { staticClass: "col-md-6" },
+                [
+                  _c("pie-chart", {
+                    attrs: {
+                      "chart-data": _vm.provinceelectricitypahuchChartData,
+                    },
+                  }),
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "col-md-6" },
+                [
+                  _c("bar-chart", {
+                    attrs: {
+                      "chart-data": _vm.provinceelectricitypahuchChartData,
+                    },
+                  }),
+                ],
+                1
+              ),
+            ]),
+          ]),
+        ],
+        2
+      ),
       _vm._v(" "),
       _c("div", { staticClass: "my-5" }),
       _vm._v(" "),
-      _c("data-viewer", { attrs: { data: _vm.produceelectricitydata } }),
+      _c(
+        "data-viewer",
+        { attrs: { data: _vm.produceelectricitydata } },
+        [
+          _c("template", { slot: "chart" }, [
+            _c("div", { staticClass: "row" }, [
+              _c(
+                "div",
+                { staticClass: "col-md-6" },
+                [
+                  _c("pie-chart", {
+                    attrs: {
+                      "chart-data": _vm.produceelectricitydataChartData,
+                    },
+                  }),
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "col-md-6" },
+                [
+                  _c("bar-chart", {
+                    attrs: {
+                      "chart-data": _vm.produceelectricitydataChartData,
+                    },
+                  }),
+                ],
+                1
+              ),
+            ]),
+          ]),
+        ],
+        2
+      ),
       _vm._v(" "),
       _c("div", { staticClass: "my-5" }),
       _vm._v(" "),
-      _c("data-viewer", { attrs: { data: _vm.telecomunicationdata } }),
+      _c(
+        "data-viewer",
+        { attrs: { data: _vm.telecomunicationdata } },
+        [
+          _c("template", { slot: "chart" }, [
+            _c("div", { staticClass: "row" }, [
+              _c(
+                "div",
+                { staticClass: "col-md-6" },
+                [
+                  _c("pie-chart", {
+                    attrs: { "chart-data": _vm.telecomunicationdataChartData },
+                  }),
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "col-md-6" },
+                [
+                  _c("bar-chart", {
+                    attrs: { "chart-data": _vm.telecomunicationdataChartData },
+                  }),
+                ],
+                1
+              ),
+            ]),
+          ]),
+        ],
+        2
+      ),
       _vm._v(" "),
       _c("div", { staticClass: "my-5" }),
       _vm._v(" "),
-      _c("data-viewer", { attrs: { data: _vm.newspaperdata } }),
+      _c(
+        "data-viewer",
+        { attrs: { data: _vm.newspaperdata } },
+        [
+          _c("template", { slot: "chart" }, [
+            _c("div", { staticClass: "row" }, [
+              _c(
+                "div",
+                { staticClass: "col-md-6" },
+                [
+                  _c("pie-chart", {
+                    attrs: { "chart-data": _vm.newspaperdataChartData },
+                  }),
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "col-md-6" },
+                [
+                  _c("bar-chart", {
+                    attrs: { "chart-data": _vm.newspaperdataChartData },
+                  }),
+                ],
+                1
+              ),
+            ]),
+          ]),
+        ],
+        2
+      ),
       _vm._v(" "),
       _c("div", { staticClass: "my-5" }),
       _vm._v(" "),
-      _c("data-viewer", { attrs: { data: _vm.fmdata } }),
+      _c(
+        "data-viewer",
+        { attrs: { data: _vm.fmdata } },
+        [
+          _c("template", { slot: "chart" }, [
+            _c("div", { staticClass: "row" }, [
+              _c(
+                "div",
+                { staticClass: "col-md-6" },
+                [
+                  _c("pie-chart", {
+                    attrs: { "chart-data": _vm.fmdataChartData },
+                  }),
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "col-md-6" },
+                [
+                  _c("bar-chart", {
+                    attrs: { "chart-data": _vm.fmdataChartData },
+                  }),
+                ],
+                1
+              ),
+            ]),
+          ]),
+        ],
+        2
+      ),
     ],
     1
   )
