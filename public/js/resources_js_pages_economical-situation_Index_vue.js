@@ -38,8 +38,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -231,10 +229,6 @@ var render = function () {
         ],
         2
       ),
-      _vm._v(" "),
-      _c("div", { staticClass: "my-5" }),
-      _vm._v(" "),
-      _c("data-viewer", { attrs: { data: _vm.BudgetandSpendingStatus } }),
       _vm._v(" "),
       _c("div", { staticClass: "my-5" }),
       _vm._v(" "),

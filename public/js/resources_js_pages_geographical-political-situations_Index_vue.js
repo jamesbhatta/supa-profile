@@ -96,6 +96,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 
 
@@ -195,9 +196,7 @@ __webpack_require__.r(__webpack_exports__);
           value: "सुदूरपश्चिमले ओगटेको अंश(प्रतिशत)"
         }, 9.69, 9.69]]
       },
-      jillanirbachanchhetraChartData: {
-        da: da
-      },
+      jillanirbachanchhetraChartData: {},
       parmukhharukonaamwali: {
         title: " हालसम्म भएका प्रदेश प्रमुखहरुको नामावली र मिति",
         labels: ["क्र.स.", "प्रदेश प्रमुख", "देखि", "सम्म"],
@@ -252,6 +251,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+//
 //
 //
 //

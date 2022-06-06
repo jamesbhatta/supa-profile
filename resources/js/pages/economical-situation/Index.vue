@@ -19,8 +19,6 @@
        </template>
         </data-viewer>
         <div class="my-5"></div>
-        <data-viewer :data="BudgetandSpendingStatus"></data-viewer>
-        <div class="my-5"></div>
         <data-viewer :data="LaborandEmploymentStatus"></data-viewer>
         <div class="my-5"></div>
         <data-viewer :data="StateGovernmentHarukoDetails"></data-viewer>

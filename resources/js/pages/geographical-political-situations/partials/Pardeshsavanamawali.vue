@@ -1,4 +1,5 @@
 <template>
+    
     <data-viewer :data="territorialGeographicalAreaData">
         <template slot="chart">
             <div class="row">
@@ -58,6 +59,7 @@ export default {
                     },
                 ],
             },
+         
         }
     }
 }
