@@ -8,9 +8,9 @@
 <div class="container">
     <div class="card z-depth-0">
         <div class="card-body">
-            <form action="{{ $disabilities ? route('disability.update', $disabilities->id) : route('area.store') }}" method="POST" class="form">
+            <form action="{{ $disabilities->id ? route('disability.update', $disabilities->id) : route('area.store') }}" method="POST" class="form">
                 @csrf
-                @isset($disabilities)
+                @isset($disabilities->id)
                     @method('PUT')
                 @endisset
                  <div class="form-group">
@@ -22,7 +22,7 @@
                     <input type="text" id="input-name" name="disability_en" class="form-control" autocomplete="off" value="{{ old('name',$disabilities->disability_en) }}">
                 </div>
                 <div class="form-group">
-                    <button type="submit" class="btn btn-success z-depth-0">{{$disabilities? 'Update':'save'}}</button>
+                    <button type="submit" class="btn btn-success z-depth-0">{{$disabilities->id? 'Update':'save'}}</button>
                 </div>
             </form>
         </div>
