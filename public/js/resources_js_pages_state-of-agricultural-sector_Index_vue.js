@@ -102,6 +102,85 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     var _ref;
@@ -114,7 +193,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         data: [["जग्गा विहीन", 14000], ["जग्गा भएका", 455971], ["कूल जम्मा", 469971], [">०.१ हे.", 43633], ["०.१ हे. देखि >०.२ हे.", 56692], ["०.२०.२ हे. देखि >०.५ हे.", 143520], ["०.५ हे. देखि >०.१ हे.", 120759], ["१ हे. देखि >२ हे", 67370], ["२ हे. देखि >३ हे.", 15876], ["३ हे देखि >४ हे.", 4848], ["४ हे देखि > ५ हे.", 1827], ["५ हे. देखि >१०. हे", 1319], ["१० हे. र सोभन्दा धेरै", 129]]
       },
       // 10.2
-      minesdata: {
+      vuupyogkoData: {
         title: "भू – उपयोगको अवस्था",
         labels: ["क्र.स.", "क्षेत्र", "नेपालको क्षेत्रफल (हे. हजारमा)", "सुदूरपश्चिमको क्षेत्रफल(हे.हजारमा)"],
         data: [[1, "खेती गरिएको जमिन", 3031, 318 + "(" + 10.3 + "प्रतिशत)"], [2, "खेती नगरिएको जमिन", 1030, 39 + "(" + 3.8 + "प्रतिशत)"], [3, "वन जंगल", 5828, 297 + "(" + 5.1 + "प्रतिशत)"], [4, "चरन", 1766, 15.3, ""], [5, "पानी", 383, ""], [6, "अन्य", 2620, ""], [7, "जम्मा", 14718, ""], [{
@@ -124,6 +203,13 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
           colspan: 2,
           value: "सुदूरपश्चिममा प्रति कृषक परिवार खेतियोग्य जग्गा उपलब्धता"
         }, 0.53 + "हेक्टर (" + 3 + "टुक्रा)", ""]]
+      },
+      vuupyogkoChartData: {
+        labels: ["खेती गरिएको जमिन", "खेती नगरिएको जमिन", "वन जंगल", "चरन", "पानी", "अन्य"],
+        datasets: [{
+          backgroundColor: ["#29a8ab", "#5fb96c", "#e6b40f", 'indigo', 'cyan', 'pink'],
+          data: ['3031', '1030', '5828', '1766', '383', '2620']
+        }]
       },
       // 10.3
       supakirsiipaj: {
@@ -136,6 +222,13 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         title: "सुदूरपश्चिम प्रदेशको जिल्लागत क्षेत्रफल र सिंचाई स्थिति",
         labels: ["क्रस", "जिल्ला", "कूल क्षेत्रफल (हे.)", "खेतीयोग्य जमिन (हे.)", "खेती गरिएको जमिन (हे.)", "बर्षभरि", "आंशिक", "जम्मा"],
         data: [[1, "बाजुरा", 230037, 28135, 26160, 3475, 1760, 5235], [2, "बझाङ", 367845, 34607, 28214, 8295, 3555, 11850], [3, "दार्चुला", 232200, 29544, 22825, 5495, 1963, 7458], [4, "अछाम", 169200, 56347, 42413, 3683, 6593, 10276], [5, "डोटी", 196018, 22276, 25500, 9521, 1760, 11281], [6, "बैतडी", 145113, 31485, 25700, 3027, 7623, 10650], [7, "डडेलधुरा", 153800, 11618, 106676, 3091, 1806, 7897], [8, "कैलाली", 233500, 89935, 86450, 42700, 27800, 70500], [9, "कञ्चनपुर", 161741, 59602, 56602, 15874, 23811, 39685], ["", "जम्मा", 1749417, 363549, 324532, 95161, 76671, 171832]]
+      },
+      supasichaiChartData: {
+        labels: ["बाजुरा", "बझाङ", "दार्चुला", "अछाम", "डोटी", "बैतडी", "डडेलधुरा", "कैलाली", "कञ्चनपुर"],
+        datasets: [{
+          backgroundColor: ["#29a8ab", "#5fb96c", "#e6b40f", 'blue', 'pink', 'red', 'gray', 'purple', 'brown'],
+          data: [5235, 11850, 7458, 10276, 11281, 10650, 7897, 70500, 39685]
+        }]
       },
       // 10.5
       supabaliutpadan: {
@@ -244,22 +337,52 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       title: "सुदूरपश्चिममा दुधालु पशु र दुग्ध उत्पादनको अवस्था (मे.ट. ०७७/०७८)",
       labels: ["जिल्ला", "दुधालु गाइ सख्या", "गाइको दुध", "दुधालु भैसी सख्या", "भैसीको दुध", "जम्मा दुध उत्पादन"],
       data: [["अछाम", "८०४३", "५४४०", "९६९०", "१२५८७", "१८०२७"], ["बैतडी", "१७१७६", "७८७८", "१६१०६", "१२३६७", "२०२४५"], ["बाजुरा", "१५०२४", "७७४९", "१०१०५", "६३३८", "१४०८७"], ["बझाङ्ग", "२१२४५", "९६३२", "६८१७", "७७२९", "१७३६१"], ["डडेिधूरा", "१२८९०", "८८६०", "१३८३१", "७८८४", "१६७४४"], ["दार्चुला", "१०३३४", "५६६४", "८२२८", "८९८०", "१४६४४"], ["डोटी", "१७३४५", "९०८०", "१५२९६", "१२१२६", "२१२०६"], ["कैलाली", "३२७३९", "३१९७०", "४५५८५", "३९०५७", "७१०२७"], ["कञ्चनपुर", "२२५६५", "२६५०४", "२५९१८", "२९१२५", "५५६२९"], ["जम्मा", "१५७३६१", "११२७७७", "१५१५७६", "१३६१९३", "२४८९७०"]]
+    }), _defineProperty(_ref, "dudhalupasuChartData", {
+      labels: ["अछाम", "बैतडी", "बाजुरा", "बझाङ्ग", "डडेिधूरा", "दार्चुला", "डोटी", "कैलाली", "कञ्चनपुर"],
+      datasets: [{
+        backgroundColor: ["#29a8ab", "#5fb96c", "#e6b40f", 'blue', 'pink', 'red', 'gray', 'purple', 'brown'],
+        data: [18027, 20245, 14087, 17361, 16744, 14644, 21206, 71027, 55629]
+      }]
     }), _defineProperty(_ref, "meatproduction", {
       title: "सुदूरपश्चिममा बार्षिक मासु उत्पादनको अवस्था मे.ट. ०७७/०७८",
       labels: ["जिल्ला", "बफ", "मटन", "चेवन", "पोर्क", "चिकेन", "डक मिट", "जम्मा मासु"],
       data: [["अछाम", "१४३०", "११", "८१७", "११", "१२८", "", "२३९७"], ["बैतडी", "१७७३", "१", "९३७", "१७", "५३", "", "२७८१"], ["बाजुरा", "१४६७", "९२", "६४५", "४१", "५४", "", "२२९९"], ["बझाङ्ग", "७९६", "६९", "६०६", "४०", "६२", "", "१५७३"], ["डडेिधूरा", "१०५२", "२", "९०९", "२८", "१३१", "", "२१२२"], ["दार्चुला", "७९८", "७०", "४९२", "१०", "४८", "", "१४१८"], ["डोटी", "१७००", "२", "१०४३", "५३", "२३९", "", "३०३७"], ["कैलाली", "६५९३", "७०", "१६५०", "५०५", "१५४५", "९", "१०३७२"], ["कञ्चनपुर", "४१४६", "२३", "९८४", "२९४", "१२६२", "७", "६७१६"], ["जम्मा", "१९७५५", "३४०", "८०८३", "९९९", "३५२२", "१६", "३२७१५"]]
+    }), _defineProperty(_ref, "meatproductionChartData", {
+      labels: ["अछाम", "बैतडी", "बाजुरा", "बझाङ्ग", "डडेिधूरा", "दार्चुला", "डोटी", "कैलाली", "कञ्चनपुर"],
+      datasets: [{
+        backgroundColor: ["#29a8ab", "#5fb96c", "#e6b40f", 'blue', 'pink', 'red', 'gray', 'purple', 'brown'],
+        data: [2397, 2781, 2299, 1573, 2122, 1418, 3037, 10372, 6716]
+      }]
     }), _defineProperty(_ref, "eggproduction", {
       title: "सुदूरपश्चिममा बार्षिक अण्डा उत्पादनको अवस्था ०७७/०७८",
       labels: ["जिल्ला", "लेयर्स", "हास", "कुखुरा अण्डा", "हास अण्डा", "जम्मा"],
       data: [["अछाम", "११०३९", "२८१", "३२४५", "२०", "१४५८५"], ["बैतडी", "३५७६", "१२०", "४५७३", "१३", "८२८२"], ["बाजुरा", "१३१५२", "२०८", "२२४३", "२६", "१५६२९"], ["बझाङ्ग", "९९९२", "२१६", "१९६८", "१८", "१२१९४"], ["डडेिधूरा", "२५१४", "२९३", "४९८", "२८", "३३३३"], ["दार्चुला", "६९५४", "३१८", "१०२५", "१२", "८३०९"], ["डोटी", "३७३०१", "८५", "३८३६", "९", "४१२३१"], ["कैलाली", "२६३४१६", "३४८१", "२८८०६", "३१२", "२८५०१५"], ["कञ्चनपुर", "१३८४४२", "२२०६", "२५४४", "१७२", "१६६३६४"], ["जम्मा", "४८६३८६", "७२०८", "७०८३८", "६१०", "५५४९४२"]]
+    }), _defineProperty(_ref, "eggproductionChartData", {
+      labels: ["अछाम", "बैतडी", "बाजुरा", "बझाङ्ग", "डडेिधूरा", "दार्चुला", "डोटी", "कैलाली", "कञ्चनपुर"],
+      datasets: [{
+        backgroundColor: ["#29a8ab", "#5fb96c", "#e6b40f", 'blue', 'pink', 'red', 'gray', 'purple', 'brown'],
+        data: [14585, 8282, 15629, 12194, 3333, 8309, 41231, 285015, 166364]
+      }]
     }), _defineProperty(_ref, "woolproduction", {
       title: "सुदूरपश्चिममा बार्षिक उन उत्पादनको अवस्था ०७७/०७८",
       labels: ["जिल्ला", "भेडा", "उन उत्पादन किले"],
       data: [["अछाम", "३११५", "२१७४"], ["बैतडी", "७५२", "५८१"], ["बाजुरा", "२३७३५", "१७७४५"], ["बझाङ्ग", "२४४५३", "१७३२१"], ["डडेिधूरा", "४७२", "३२८"], ["दार्चुला", "२२३०९", "१७०३२"], ["डोटी", "७३९", "५२६"], ["कैलाली", "२१२०६", "१३४५३"], ["कञ्चनपुर", "८०३२", "५९३४"], ["जम्मा", "१०४८१३", "७५०९४"]]
+    }), _defineProperty(_ref, "woolproductionChartData", {
+      labels: ["अछाम", "बैतडी", "बाजुरा", "बझाङ्ग", "डडेिधूरा", "दार्चुला", "डोटी", "कैलाली", "कञ्चनपुर"],
+      datasets: [{
+        backgroundColor: ["#29a8ab", "#5fb96c", "#e6b40f", 'blue', 'pink', 'red', 'gray', 'purple', 'brown'],
+        data: [2174, 581, 17745, 17321, 328, 17032, 526, 13453, 5934]
+      }]
     }), _defineProperty(_ref, "supapasujanyepadarth", {
       title: "सुदूरपश्चिममा पशुपंक्षीजन्य पदार्थको बार्षिक उत्पादनको अवस्था ०७७/०७८",
       labels: ["सि.न.", "उत्पादन", "प्रादेसिक उत्पादन", "प्रादेसिक उपलव्धता", "उपलव्धता राष्ट्रिय ", "प्रती व्यक्ति प्रती बर्ष आवश्यकता", "राष्ट्रिय उत्पादनमा योगदान"],
       data: [[1, "दुध", "२४४ हजार मे.टन.", "८०.७९ लि.", "७२ लि.", "९१ लिटर", "११.२%"], [2, "मासु", "३१.०९ हजार मे.टन.", "१०.६८ के .जि", "११.८९ के .जि", "१४ के .जि", "९%"], [3, "फुल", "९.१ करोड गोटा", "३०.४१ गोटा", "५२ गोटा", "४८ गोटा", "६%"]]
+    }), _defineProperty(_ref, "supapasujanyepadarthChartData", {
+      labels: ["दुध", "मासु", "फुल"],
+      datasets: [{
+        backgroundColor: ["#29a8ab", "#5fb96c", "#e6b40f"],
+        data: [11.2, 9, 6]
+      }]
     }), _defineProperty(_ref, "khadhyesuraxa", {
       title: "सुदूरपश्चिममा खाद्य सुरक्षाको अवस्था",
       labels: ["जिल्ला", "उपभोग्य खाद्यान्न", "आवश्यक खाद्यान्न", "वचत वा न्यून"],
@@ -364,7 +487,38 @@ var render = function () {
       _vm._v(" "),
       _c("div", { staticClass: "my-5" }),
       _vm._v(" "),
-      _c("data-viewer", { attrs: { data: _vm.minesdata } }),
+      _c(
+        "data-viewer",
+        { attrs: { data: _vm.vuupyogkoData } },
+        [
+          _c("template", { slot: "chart" }, [
+            _c("div", { staticClass: "row" }, [
+              _c(
+                "div",
+                { staticClass: "col-md-6" },
+                [
+                  _c("pie-chart", {
+                    attrs: { "chart-data": _vm.vuupyogkoChartData },
+                  }),
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "col-md-6" },
+                [
+                  _c("bar-chart", {
+                    attrs: { "chart-data": _vm.vuupyogkoChartData },
+                  }),
+                ],
+                1
+              ),
+            ]),
+          ]),
+        ],
+        2
+      ),
       _vm._v(" "),
       _c("div", { staticClass: "my-5" }),
       _vm._v(" "),
@@ -427,6 +581,32 @@ var render = function () {
                   attrs: { colspan: "3" },
                 },
                 [_vm._v("सिंचित (हे.)")]
+              ),
+            ]),
+          ]),
+          _vm._v(" "),
+          _c("template", { slot: "chart" }, [
+            _c("div", { staticClass: "row" }, [
+              _c(
+                "div",
+                { staticClass: "col-md-6" },
+                [
+                  _c("pie-chart", {
+                    attrs: { "chart-data": _vm.supasichaiChartData },
+                  }),
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "col-md-6" },
+                [
+                  _c("bar-chart", {
+                    attrs: { "chart-data": _vm.supasichaiChartData },
+                  }),
+                ],
+                1
               ),
             ]),
           ]),
@@ -553,23 +733,178 @@ var render = function () {
       _vm._v(" "),
       _c("div", { staticClass: "my-5" }),
       _vm._v(" "),
-      _c("data-viewer", { attrs: { data: _vm.dudhalupasu } }),
+      _c(
+        "data-viewer",
+        { attrs: { data: _vm.dudhalupasu } },
+        [
+          _c("template", { slot: "chart" }, [
+            _c("div", { staticClass: "row" }, [
+              _c(
+                "div",
+                { staticClass: "col-md-6" },
+                [
+                  _c("pie-chart", {
+                    attrs: { "chart-data": _vm.dudhalupasuChartData },
+                  }),
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "col-md-6" },
+                [
+                  _c("bar-chart", {
+                    attrs: { "chart-data": _vm.dudhalupasuChartData },
+                  }),
+                ],
+                1
+              ),
+            ]),
+          ]),
+        ],
+        2
+      ),
       _vm._v(" "),
       _c("div", { staticClass: "my-5" }),
       _vm._v(" "),
-      _c("data-viewer", { attrs: { data: _vm.meatproduction } }),
+      _c(
+        "data-viewer",
+        { attrs: { data: _vm.meatproduction } },
+        [
+          _c("template", { slot: "chart" }, [
+            _c("div", { staticClass: "row" }, [
+              _c(
+                "div",
+                { staticClass: "col-md-6" },
+                [
+                  _c("pie-chart", {
+                    attrs: { "chart-data": _vm.meatproductionChartData },
+                  }),
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "col-md-6" },
+                [
+                  _c("bar-chart", {
+                    attrs: { "chart-data": _vm.meatproductionChartData },
+                  }),
+                ],
+                1
+              ),
+            ]),
+          ]),
+        ],
+        2
+      ),
       _vm._v(" "),
       _c("div", { staticClass: "my-5" }),
       _vm._v(" "),
-      _c("data-viewer", { attrs: { data: _vm.eggproduction } }),
+      _c(
+        "data-viewer",
+        { attrs: { data: _vm.eggproduction } },
+        [
+          _c("template", { slot: "chart" }, [
+            _c("div", { staticClass: "row" }, [
+              _c(
+                "div",
+                { staticClass: "col-md-6" },
+                [
+                  _c("pie-chart", {
+                    attrs: { "chart-data": _vm.eggproductionChartData },
+                  }),
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "col-md-6" },
+                [
+                  _c("bar-chart", {
+                    attrs: { "chart-data": _vm.eggproductionChartData },
+                  }),
+                ],
+                1
+              ),
+            ]),
+          ]),
+        ],
+        2
+      ),
       _vm._v(" "),
       _c("div", { staticClass: "my-5" }),
       _vm._v(" "),
-      _c("data-viewer", { attrs: { data: _vm.woolproduction } }),
+      _c(
+        "data-viewer",
+        { attrs: { data: _vm.woolproduction } },
+        [
+          _c("template", { slot: "chart" }, [
+            _c("div", { staticClass: "row" }, [
+              _c(
+                "div",
+                { staticClass: "col-md-6" },
+                [
+                  _c("pie-chart", {
+                    attrs: { "chart-data": _vm.woolproductionChartData },
+                  }),
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "col-md-6" },
+                [
+                  _c("bar-chart", {
+                    attrs: { "chart-data": _vm.woolproductionChartData },
+                  }),
+                ],
+                1
+              ),
+            ]),
+          ]),
+        ],
+        2
+      ),
       _vm._v(" "),
       _c("div", { staticClass: "my-5" }),
       _vm._v(" "),
-      _c("data-viewer", { attrs: { data: _vm.supapasujanyepadarth } }),
+      _c(
+        "data-viewer",
+        { attrs: { data: _vm.supapasujanyepadarth } },
+        [
+          _c("template", { slot: "chart" }, [
+            _c("div", { staticClass: "row" }, [
+              _c(
+                "div",
+                { staticClass: "col-md-6" },
+                [
+                  _c("pie-chart", {
+                    attrs: { "chart-data": _vm.supapasujanyepadarthChartData },
+                  }),
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "col-md-6" },
+                [
+                  _c("bar-chart", {
+                    attrs: { "chart-data": _vm.supapasujanyepadarthChartData },
+                  }),
+                ],
+                1
+              ),
+            ]),
+          ]),
+        ],
+        2
+      ),
       _vm._v(" "),
       _c("div", { staticClass: "my-5" }),
       _vm._v(" "),
