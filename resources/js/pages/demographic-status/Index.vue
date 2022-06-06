@@ -94,7 +94,20 @@
 
     </data-viewer>
     <div class="my-5"></div>
-    <data-viewer :data="religionpopulationData"></data-viewer>
+    <data-viewer :data="religionpopulationData">
+    <template slot="chart">
+        <div class="row">
+          <div class="col-md-6">
+            <pie-chart :chart-data="religionpopulationChartData">
+            </pie-chart>
+          </div>
+          <div class="col-md-6">
+            <bar-chart :chart-data="religionpopulationChartData">
+            </bar-chart>
+          </div>
+        </div>
+      </template>
+    </data-viewer>
     <div class="my-5"></div>
     <data-viewer :data="supaandotherprovincedata">
       <template slot="chart">
@@ -306,32 +319,12 @@ export default {
       },
 
       districtpopulationChartData: {
-        labels: [
-          "बाजुरा",
-          "बझाङ्ग",
-          "दार्चुला",
-          "बैतडी",
-          "डडेल्धुरा",
-          "डोटी",
-          "अछाम",
-          "कैलाली",
-          "कंञ्चनपुर",
-        ],
+        labels: ["बाजुरा","बझाङ्ग","दार्चुला","बैतडी","डडेल्धुरा","डोटी","अछाम","कैलाली","कंञ्चनपुर"],
 
         datasets: [
           {
             backgroundcolor: ["red", "green", " blue", " yellow", "cyan", "grey", "pink", "Aqua", "Brown"],
-            data: [
-              '2.15',
-              '1.56',
-              '0.88',
-              '1.07',
-              '0.22',
-              '0.68',
-              '1.19',
-              '2.29',
-              '1.77',
-            ],
+            data: ['2.15','1.56','0.88','1.07','0.22','0.68','1.19','2.29','1.77'],
           }
         ],
 
@@ -359,6 +352,18 @@ export default {
               value: "जम्मा",
             }, 97.23, 1.06, 0.23, 0.005, 1.089, 0.22, 0.15
           ],
+        ],
+      },
+
+      religionpopulationChartData:{
+          labels: ["बाजुरा","बझाङ्ग","दार्चुला","बैतडी","डडेल्धुरा","डोटी","अछाम","कैलाली","कंञ्चनपुर",
+        ],
+
+        datasets: [
+          {
+            backgroundColor: ["red", "green", "blue", "yellow", "cyan", "grey", "pink", "Aqua", "Brown"],
+            data: [134912,195159, 133274,250898,142094,211746, 257477,775709,451248],
+          }
         ],
       },
 

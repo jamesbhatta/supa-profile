@@ -84,6 +84,17 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -145,6 +156,13 @@ __webpack_require__.r(__webpack_exports__);
         title: "श्रम तथा रोजगारको अवस्था",
         labels: ["प्रदेश", "बेरोजगारी", "जनसंख्याको अनुपातमा बेरोजगारी", "श्रमशक्तिमा सहभागिताको दर"],
         data: [["प्रदेश १", '१०.२', '३४', '३७.८'], ["मधेश", '२०.१', '३१.८', '३९.७'], ["बागमती", '७', '४३.८', '४७.१'], ["गण्डकी", '९', '३२.५', '३५.७'], ["लुम्बीनी", '११.२', '३३.१', '३७.३'], ["कर्णाली", '९.७', '२४.८', '२७.३'], ["सुदूरपश्चिम", '११.५', '२४.१', '२७.३'], ["नेपाल", '११.४', '३४.२', '३८.५']]
+      },
+      LaborandEmploymentStatusChartData: {
+        labels: ["प्रदेश १", "मधेश", "बागमती", "गण्डकी", "लुम्बीनी", "कर्णाली", "सुदूरपश्चिम"],
+        datasets: [{
+          backgroundColor: ["#29a8ab", "#5fb96c", "#e6b40f", 'red', 'pink', 'blue', 'green'],
+          data: [10.2, 20.1, 7, 9, 11.2, 9.7, 11.5, 11.4]
+        }]
       },
       StateGovernmentHarukoDetails: {
         title: "प्रदेशमा दर्ता भएका सहकारीहरुको विवरण",
@@ -418,7 +436,46 @@ var render = function () {
       _vm._v(" "),
       _c("div", { staticClass: "my-5" }),
       _vm._v(" "),
-      _c("data-viewer", { attrs: { data: _vm.LaborandEmploymentStatus } }),
+      _c(
+        "data-viewer",
+        { attrs: { data: _vm.LaborandEmploymentStatus } },
+        [
+          _c("template", { slot: "chart" }, [
+            _c("div", { staticClass: "row" }, [
+              _c(
+                "div",
+                { staticClass: "col-md-6" },
+                [
+                  _c("pie-chart", {
+                    attrs: {
+                      "chart-data": _vm.LaborandEmploymentStatusChartData,
+                      width: 200,
+                      height: 200,
+                    },
+                  }),
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "col-md-6" },
+                [
+                  _c("bar-chart", {
+                    attrs: {
+                      "chart-data": _vm.LaborandEmploymentStatusChartData,
+                      width: 200,
+                      height: 200,
+                    },
+                  }),
+                ],
+                1
+              ),
+            ]),
+          ]),
+        ],
+        2
+      ),
       _vm._v(" "),
       _c("div", { staticClass: "my-5" }),
       _vm._v(" "),

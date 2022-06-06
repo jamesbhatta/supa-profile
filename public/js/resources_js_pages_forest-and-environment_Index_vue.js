@@ -25,6 +25,30 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -32,6 +56,13 @@ __webpack_require__.r(__webpack_exports__);
         title: "वन क्षेत्रको प्रदेशगत विवरण",
         labels: ["प्रदेश", "प्रदेशको क्षेत्रफल (हे.)", "वन क्षेत्र (हे.)", "नेपालको कूल वन क्षेत्रको हिस्सा (प्रतिशत)", "प्रदेशको कूल भूभागको तुलनामा वन क्षेत्रफल (प्रतिशत)"],
         data: [["प्रदेश १", '२५९०५००', '११३४२५०', '१७.१६', '४३.७८'], ["मधेश", '९६६१००', '२६३६३०', '३.९९', '२७.२९'], ["बागमती", '२०३००००', '१०९०८८०', '१६.५०', '५३.७४'], ["गण्डकी", '२१५०४००', '८१७२९०', '१२.३६', '३८.०१'], ["लुम्बीनी", '२२२८८००', '९७४३८०', '१४.७४', '४३.७२'], ["कर्णाली", '२७९८४००', '११८३४००', '१७.९०', '४२.२९'], ["सुदूरपश्चिम", '१९५३९००', '११४६११०', '१७.३४', '५८.६६'], ["जम्मा", '१४७१८१००', '६६०९९४०', '१००.००', '४४.७४']]
+      },
+      TerritorialDetailsofForestAreaChartData: {
+        labels: ["प्रदेश १", "मधेश", "बागमती", "गण्डकी", "लुम्बीनी", "कर्णाली", "सुदूरपश्चिम"],
+        datasets: [{
+          backgroundColor: ["#29a8ab", "#5fb96c", "#e6b40f", 'blue', 'pink', 'purple'],
+          data: [43.78, 27.29, 53.74, 38.01, 43.72, 42.29, 58.66]
+        }]
       },
       NationalParksintheFarWesternStates: {
         title: "सुदूरपश्चिम प्रदेशमा रहेका राष्ट्रिय निकुञ्ज",
@@ -42,6 +73,13 @@ __webpack_require__.r(__webpack_exports__);
         title: "सुदूरपश्चिममा रहेका हिमनदी र हिमतालहरु",
         labels: ["प्रकार", "जम्मा सङ्ख्या", "कूल क्षेत्रफल (बर्ग किमि)"],
         data: [["हिमनदी (GLACIERS)", '१६४', '११२.५'], ["हिमताल (GLACIERS Lakes)", '९', '०.१३७']]
+      },
+      GlaciersRiversandLakesintheFarWestChartData: {
+        labels: ["हिमनदी", "हिमताल"],
+        datasets: [{
+          backgroundColor: ["#29a8ab", "#5fb96c"],
+          data: [164, 9]
+        }]
       },
       LakesandPondsintheFarWest: {
         title: " सुदूरपश्चिममा रहेका तालतलैया",
@@ -146,9 +184,42 @@ var render = function () {
         _vm._v("वन क्षेत्रको प्रदेशगत विवरण"),
       ]),
       _vm._v(" "),
-      _c("data-viewer", {
-        attrs: { data: _vm.TerritorialDetailsofForestArea },
-      }),
+      _c(
+        "data-viewer",
+        { attrs: { data: _vm.TerritorialDetailsofForestArea } },
+        [
+          _c("template", { slot: "chart" }, [
+            _c("div", { staticClass: "row" }, [
+              _c(
+                "div",
+                { staticClass: "col-md-6" },
+                [
+                  _c("pie-chart", {
+                    attrs: {
+                      "chart-data": _vm.TerritorialDetailsofForestAreaChartData,
+                    },
+                  }),
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "col-md-6" },
+                [
+                  _c("bar-chart", {
+                    attrs: {
+                      "chart-data": _vm.TerritorialDetailsofForestAreaChartData,
+                    },
+                  }),
+                ],
+                1
+              ),
+            ]),
+          ]),
+        ],
+        2
+      ),
       _vm._v(" "),
       _c("div", { staticClass: "my-5" }),
       _vm._v(" "),
@@ -158,9 +229,44 @@ var render = function () {
       _vm._v(" "),
       _c("div", { staticClass: "my-5" }),
       _vm._v(" "),
-      _c("data-viewer", {
-        attrs: { data: _vm.GlaciersRiversandLakesintheFarWest },
-      }),
+      _c(
+        "data-viewer",
+        { attrs: { data: _vm.GlaciersRiversandLakesintheFarWest } },
+        [
+          _c("template", { slot: "chart" }, [
+            _c("div", { staticClass: "row" }, [
+              _c(
+                "div",
+                { staticClass: "col-md-6" },
+                [
+                  _c("pie-chart", {
+                    attrs: {
+                      "chart-data":
+                        _vm.GlaciersRiversandLakesintheFarWestChartData,
+                    },
+                  }),
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "col-md-6" },
+                [
+                  _c("bar-chart", {
+                    attrs: {
+                      "chart-data":
+                        _vm.GlaciersRiversandLakesintheFarWestChartData,
+                    },
+                  }),
+                ],
+                1
+              ),
+            ]),
+          ]),
+        ],
+        2
+      ),
       _vm._v(" "),
       _c("div", { staticClass: "my-5" }),
       _vm._v(" "),

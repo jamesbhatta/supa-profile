@@ -53,7 +53,18 @@
         </data-viewer>
 
         <div class="my-5"></div>
-        <data-viewer :data="LaborandEmploymentStatus"></data-viewer>
+        <data-viewer :data="LaborandEmploymentStatus">
+             <template slot="chart">
+                <div class="row">
+                    <div class="col-md-6">
+                        <pie-chart :chart-data="LaborandEmploymentStatusChartData" :width="200" :height="200"></pie-chart>
+                    </div>
+                    <div class="col-md-6">
+                        <bar-chart :chart-data="LaborandEmploymentStatusChartData" :width="200" :height="200"></bar-chart>
+                    </div>
+                </div>
+            </template>
+        </data-viewer>
         <div class="my-5"></div>
         <data-viewer :data="StateGovernmentHarukoDetails">
             
@@ -244,6 +255,15 @@ export default {
                 ],
             },
            
+            LaborandEmploymentStatusChartData:{
+                 labels: ["प्रदेश १","मधेश","बागमती","गण्डकी","लुम्बीनी","कर्णाली","सुदूरपश्चिम"],
+                datasets: [
+                    {
+                        backgroundColor: ["#29a8ab", "#5fb96c", "#e6b40f", 'red', 'pink','blue','green'],
+                        data: [10.2,20.1,7,9,11.2,9.7,11.5,11.4],
+                    },
+                ],
+            },
 
             StateGovernmentHarukoDetails: {
                 title: "प्रदेशमा दर्ता भएका सहकारीहरुको विवरण",

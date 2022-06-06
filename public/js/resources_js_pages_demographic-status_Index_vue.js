@@ -178,6 +178,19 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -248,6 +261,13 @@ __webpack_require__.r(__webpack_exports__);
           colspan: 2,
           value: "जम्मा"
         }, 97.23, 1.06, 0.23, 0.005, 1.089, 0.22, 0.15]]
+      },
+      religionpopulationChartData: {
+        labels: ["बाजुरा", "बझाङ्ग", "दार्चुला", "बैतडी", "डडेल्धुरा", "डोटी", "अछाम", "कैलाली", "कंञ्चनपुर"],
+        datasets: [{
+          backgroundColor: ["red", "green", "blue", "yellow", "cyan", "grey", "pink", "Aqua", "Brown"],
+          data: [134912, 195159, 133274, 250898, 142094, 211746, 257477, 775709, 451248]
+        }]
       },
       // 3.5
       supaandotherprovincedata: {
@@ -674,7 +694,38 @@ var render = function () {
       _vm._v(" "),
       _c("div", { staticClass: "my-5" }),
       _vm._v(" "),
-      _c("data-viewer", { attrs: { data: _vm.religionpopulationData } }),
+      _c(
+        "data-viewer",
+        { attrs: { data: _vm.religionpopulationData } },
+        [
+          _c("template", { slot: "chart" }, [
+            _c("div", { staticClass: "row" }, [
+              _c(
+                "div",
+                { staticClass: "col-md-6" },
+                [
+                  _c("pie-chart", {
+                    attrs: { "chart-data": _vm.religionpopulationChartData },
+                  }),
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "col-md-6" },
+                [
+                  _c("bar-chart", {
+                    attrs: { "chart-data": _vm.religionpopulationChartData },
+                  }),
+                ],
+                1
+              ),
+            ]),
+          ]),
+        ],
+        2
+      ),
       _vm._v(" "),
       _c("div", { staticClass: "my-5" }),
       _vm._v(" "),
