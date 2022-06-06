@@ -250,6 +250,12 @@
             </a>
         </li>
 
+        <li class="nav-item ">
+            <a class="nav-link" href="{{ route('goverment-student.index') }}">
+                <span class="text-warning"><i class="fa fa-tachometer-alt"></i></span>@lang('navigation.goverment_student')
+            </a>
+        </li>
+
         @hasanyrole('super-admin')
         <li class="nav-item">
             <a class="nav-link" href="{{ route('admin.logs') }}" target="_blank">

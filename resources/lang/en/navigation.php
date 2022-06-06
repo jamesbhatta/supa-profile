@@ -30,5 +30,5 @@ return [
     'school_detail'=>"School Detail 2077",
     'feeder_hostel'=>"Feeder Hostel",
     'kamlari_hostel'=>"Kamlari Hostel",
-
+    'goverment_student'=>"Student detail",
 ];
