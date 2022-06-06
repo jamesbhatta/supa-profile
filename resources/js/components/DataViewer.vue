@@ -4,8 +4,10 @@
       <div class="d-flex mb-2">
         <h3 v-if="data.title" class="h3-responsive data-title">{{ data.title }}</h3>
         <div class="ml-auto switch-type-btn-group">
-          <button type="button" v-on:click="setActive('table')" class="switch-data-type-btn" v-bind:class="{ active: activeDataType == 'table' }">Table</button>
-          <button v-if="hasChartSlot" type="button" v-on:click="setActive('chart')" class="switch-data-type-btn" v-bind:class="{ active: activeDataType == 'chart' }">Chart</button>
+          <button type="button" v-on:click="setActive('table')" class="switch-data-type-btn"
+            v-bind:class="{ active: activeDataType == 'table' }">Table</button>
+          <button v-if="hasChartSlot" type="button" v-on:click="setActive('chart')" class="switch-data-type-btn"
+            v-bind:class="{ active: activeDataType == 'chart' }">Chart</button>
           <button type="button" v-on:click="exportToExcel()" class="switch-data-type-btn">Export</button>
           <button type="button" v-on:click="printData()" class="switch-data-type-btn">Print</button>
         </div>
@@ -20,7 +22,9 @@
         <tbody>
           <tr v-for="(row, index) in data.data" v-bind:key="index">
             <template v-for="(item, index) in row">
-              <td v-if="typeof item == 'object'" v-bind:key="index" :colspan="item.colspan" :rowspan="item.rowspan">{{ item.value }}</td>
+              <td v-if="typeof item == 'object'" v-bind:key="index" :colspan="item.colspan" :rowspan="item.rowspan">{{
+                  item.value
+              }}</td>
               <td v-else v-bind:key="index">{{ item }}</td>
             </template>
           </tr>
@@ -63,15 +67,15 @@ export default {
       return XLSX.writeFile(wb, filename + ".xlsx");
       // return dl ? XLSX.write(wb, { bookType: type, bookSST: true, type: "base64" }) : XLSX.writeFile(wb, fn || "SheetJSTableExport." + (type || "xlsx"));
     },
-    printData(){
-       var printContent = this.$refs.exportable_table;
-        console.log(printContent);
-    var WinPrint = window.open('', '', 'width=1000,height=1250');
-    WinPrint.document.write(printContent.outerHTML);
-    WinPrint.document.close();
-    WinPrint.focus();
-    WinPrint.print();
-    WinPrint.close();
+    printData() {
+      var printContent = this.$refs.exportable_table;
+      // console.log(printContent);
+      var WinPrint = window.open('', '', 'width=1000,height=1250');
+      WinPrint.document.write(printContent.outerHTML);
+      WinPrint.document.close();
+      WinPrint.focus();
+      WinPrint.print();
+      WinPrint.close();
     }
   },
 };
@@ -81,6 +85,7 @@ export default {
 .switch-type-btn-group {
   display: inline-flex;
 }
+
 .switch-type-btn-group button {
   margin-left: 0;
   margin-right: 0;
@@ -93,18 +98,22 @@ export default {
   font-weight: 600;
   letter-spacing: 0.025rem;
 }
+
 .switch-type-btn-group button:first-of-type {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
+
 .switch-type-btn-group button:last-of-type {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
 }
+
 .switch-type-btn-group button.active {
   background-color: #4285f4;
   color: #ffffff;
 }
+
 .export-btn {
   margin-left: 0;
   margin-right: 0;

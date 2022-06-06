@@ -2004,6 +2004,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: ["data"],
   data: function data() {
@@ -2032,8 +2036,8 @@ __webpack_require__.r(__webpack_exports__);
       return XLSX.writeFile(wb, filename + ".xlsx"); // return dl ? XLSX.write(wb, { bookType: type, bookSST: true, type: "base64" }) : XLSX.writeFile(wb, fn || "SheetJSTableExport." + (type || "xlsx"));
     },
     printData: function printData() {
-      var printContent = this.$refs.exportable_table;
-      console.log(printContent);
+      var printContent = this.$refs.exportable_table; // console.log(printContent);
+
       var WinPrint = window.open('', '', 'width=1000,height=1250');
       WinPrint.document.write(printContent.outerHTML);
       WinPrint.document.close();
