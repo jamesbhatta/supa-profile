@@ -67,6 +67,8 @@ Route::delete('area/{municipalityArea}','AreaofMunicipalityController@destroy')-
 Route::resource('local-population', LocalPopulationController::class);
 Route::resource('population', PopulationController::class);
 Route::resource('age-population', AgePopulationController::class);
+Route::resource('disability', DisabilityController::class);
+
 // Route::any('/{all}', function () {
 //     return view('app');
 // })->where(['all' => '.*']);
