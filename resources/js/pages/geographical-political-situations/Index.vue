@@ -15,33 +15,34 @@
     </data-viewer>
 
     <div class="my-5"></div>
+
     <pardeshsavanamawali></pardeshsavanamawali>
     <div class="my-5"></div>
-    
+
     <data-viewer :data="districtWiseAreaOfStateData">
-    <template slot="chart">
-      <div class="row">
-        <div class="col-md-6">
-          <pie-chart :chart-data="districtWiseAreaOfStateChartData"></pie-chart>
+      <template slot="chart">
+        <div class="row">
+          <div class="col-md-6">
+            <pie-chart :chart-data="districtWiseAreaOfStateChartData"></pie-chart>
+          </div>
+          <div class="col-md-6">
+            <bar-chart :chart-data="districtWiseAreaOfStateChartData"></bar-chart>
+          </div>
         </div>
-         <div class="col-md-6">
-          <bar-chart :chart-data="districtWiseAreaOfStateChartData"></bar-chart>
-        </div>
-      </div>
-    </template>
+      </template>
     </data-viewer>
     <div class="my-5"></div>
     <data-viewer :data="vuupyogkoData">
-    <template slot="chart">
-      <div class="row">
-        <div class="col-md-6">
-          <pie-chart :chart-data="vuupyogkoChartData"></pie-chart>
+      <template slot="chart">
+        <div class="row">
+          <div class="col-md-6">
+            <pie-chart :chart-data="vuupyogkoChartData"></pie-chart>
+          </div>
+          <div class="col-md-6">
+            <bar-chart :chart-data="vuupyogkoChartData"></bar-chart>
+          </div>
         </div>
-         <div class="col-md-6">
-          <bar-chart :chart-data="vuupyogkoChartData"></bar-chart>
-        </div>
-      </div>
-   </template>
+      </template>
     </data-viewer>
     <div class="my-5"></div>
     <data-viewer :data="sthaniyetahapopulation">
@@ -55,15 +56,15 @@
     <div class="my-5"></div>
     <data-viewer :data="nirbachanchhetra">
       <template slot="chart">
-          <div class="row">
-            <div class="col-md-6">
-              <pie-chart :chart-data="nirbachanchhetraChartData"></pie-chart>
-            </div>
-
-             <div class="col-md-6">
-              <bar-chart :chart-data="nirbachanchhetraChartData"></bar-chart>
-            </div>
+        <div class="row">
+          <div class="col-md-6">
+            <pie-chart :chart-data="nirbachanchhetraChartData"></pie-chart>
           </div>
+
+          <div class="col-md-6">
+            <bar-chart :chart-data="nirbachanchhetraChartData"></bar-chart>
+          </div>
+        </div>
       </template>
     </data-viewer>
     <div class="my-5"></div>
@@ -89,6 +90,7 @@ export default {
   components: { DataViewer, BarChart, PieChart, Pardeshsavanamawali },
   data() {
     return {
+
       geographicalAreaData: {
         title: "सुदूरपश्चिम प्रदेशको भौगोलिक क्षेत्रगत क्षेत्रफल",
         labels: ["क्र.स.", "भौगोलिक क्षेत्र", "क्षेत्रफल (वर्ग कि.मि.)", "प्रतिशत"],
@@ -108,7 +110,6 @@ export default {
         ],
       },
 
-      
 
       districtWiseAreaOfStateData: {
         title: "प्रदेशको जिल्लागत क्षेत्रफल",
@@ -126,12 +127,12 @@ export default {
           ["", "सुदूरपश्चिम", 19999.28, 100],
         ],
       },
-      districtWiseAreaOfStateChartData:{
-        labels:["कैलाली","कञ्चनपुर","डोटी","अछाम","बझाङ","बाजुरा","दार्चुला","बैतडी","डडेलधुरा","सुदूरपश्चिम",],
-        datasets:[
+      districtWiseAreaOfStateChartData: {
+        labels: ["कैलाली", "कञ्चनपुर", "डोटी", "अछाम", "बझाङ", "बाजुरा", "दार्चुला", "बैतडी", "डडेलधुरा", "सुदूरपश्चिम",],
+        datasets: [
           {
-            backgroundColor: ["#29a8ab", "#5fb96c", "#e6b40f", 'indigo', 'cyan', 'pink', 'yellowgreen','#5e4b9c',"#5e4b9c"],
-          data:['3247','1610','2081','1692','3422','2188','2782','1482','1495',],
+            backgroundColor: ["#29a8ab", "#5fb96c", "#e6b40f", 'indigo', 'cyan', 'pink', 'yellowgreen', '#5e4b9c', "#5e4b9c"],
+            data: ['3247', '1610', '2081', '1692', '3422', '2188', '2782', '1482', '1495',],
           }
         ]
       },
@@ -156,13 +157,13 @@ export default {
           ],
         ],
       },
-      vuupyogkoChartData:{
-        labels:["खेती गरिएको जमिन","खेती नगरिएको जमिन","वन जंगल","चरन","पानी","अन्य"],
-        datasets:[
-            {
-              backgroundColor:["#29a8ab", "#5fb96c", "#e6b40f", 'indigo', 'cyan', 'pink'],
-              data:['3031','1030','5828','1766','383','2620'],
-            }
+      vuupyogkoChartData: {
+        labels: ["खेती गरिएको जमिन", "खेती नगरिएको जमिन", "वन जंगल", "चरन", "पानी", "अन्य"],
+        datasets: [
+          {
+            backgroundColor: ["#29a8ab", "#5fb96c", "#e6b40f", 'indigo', 'cyan', 'pink'],
+            data: ['3031', '1030', '5828', '1766', '383', '2620'],
+          }
         ]
       },
       // 2.6
@@ -230,12 +231,12 @@ export default {
           ],
         ],
       },
-      nirbachanchhetraChartData:{
-        labels:["हिमाल","पहाड","तराई",],
-        datasets:[
+      nirbachanchhetraChartData: {
+        labels: ["हिमाल", "पहाड", "तराई",],
+        datasets: [
           {
-            backgroundColor:["#29a8ab", "#5fb96c", "#e6b40f"],
-            data:["18.75","31.25","50"],
+            backgroundColor: ["#29a8ab", "#5fb96c", "#e6b40f"],
+            data: ["18.75", "31.25", "50"],
           }
         ],
       },
@@ -253,14 +254,14 @@ export default {
           ["7", "डोटी", 1, 2],
           ["8", "अछाम", 2, 4],
           ["9", "कैलाली", 5, 10],
-          [{colspan: 2,value: "सुदूरपश्चिम जम्मा",},16,32,],
-          [{colspan: 2,value: "नेपाल",},165,330,],
-          [{colspan: 2,value: "सुदूरपश्चिमले ओगटेको अंश(प्रतिशत)",},9.69,9.69,],
+          [{ colspan: 2, value: "सुदूरपश्चिम जम्मा", }, 16, 32,],
+          [{ colspan: 2, value: "नेपाल", }, 165, 330,],
+          [{ colspan: 2, value: "सुदूरपश्चिमले ओगटेको अंश(प्रतिशत)", }, 9.69, 9.69,],
         ],
       },
 
-      jillanirbachanchhetraChartData:{
-        da
+      jillanirbachanchhetraChartData: {
+        
       },
 
 
