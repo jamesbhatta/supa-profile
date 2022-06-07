@@ -54,5 +54,14 @@ return [
         'phone' => '०९१–४०३०६४',
         'email' => 'ghodaghodimun@gmail.com',
         'website' => 'www.ghodaghodimun.gov.np',
+    ],
+
+    'info_card_themes' => [
+        'blue-color',
+        'green-color',
+        'indigo-color',
+        'orange-color',
+        'yellow-color',
+        'teal-color'
     ]
 ];
