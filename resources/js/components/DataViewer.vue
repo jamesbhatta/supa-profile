@@ -75,8 +75,15 @@ export default {
       // console.log(title);
       var WinPrint = window.open('', '', 'width=1000,height=1250');
       WinPrint.document.write();
+      WinPrint.document.write('<div style="display: flex;justify-content: center;">');
+      WinPrint.document.write('<div class="row">');
+      WinPrint.document.write('<div class="col-12">');
       WinPrint.document.write(printTableTitle.innerHTML);
+      WinPrint.document.write('</div>');
+      WinPrint.document.write('<div style="height:30px;"></div>');
       WinPrint.document.write(printContent.outerHTML);
+      WinPrint.document.write('</div>');
+      WinPrint.document.write('</div>');
       WinPrint.document.close();
       WinPrint.focus();
       WinPrint.print();
@@ -134,4 +141,5 @@ export default {
 #tabletitle{
   display: none;
 }
+
 </style>
