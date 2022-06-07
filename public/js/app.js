@@ -2008,6 +2008,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: ["data"],
   data: function data() {
@@ -2036,9 +2037,13 @@ __webpack_require__.r(__webpack_exports__);
       return XLSX.writeFile(wb, filename + ".xlsx"); // return dl ? XLSX.write(wb, { bookType: type, bookSST: true, type: "base64" }) : XLSX.writeFile(wb, fn || "SheetJSTableExport." + (type || "xlsx"));
     },
     printData: function printData() {
-      var printContent = this.$refs.exportable_table; // console.log(printContent);
+      var printContent = this.$refs.exportable_table;
+      var printTableTitle = this.$refs.exportable_table_title; // console.log(printContent);
+      // console.log(title);
 
       var WinPrint = window.open('', '', 'width=1000,height=1250');
+      WinPrint.document.write();
+      WinPrint.document.write(printTableTitle.innerHTML);
       WinPrint.document.write(printContent.outerHTML);
       WinPrint.document.close();
       WinPrint.focus();
@@ -16037,7 +16042,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.switch-type-btn-group[data-v-33724507] {\n  display: inline-flex;\n}\n.switch-type-btn-group button[data-v-33724507] {\n  margin-left: 0;\n  margin-right: 0;\n  background-color: #f2f2f2;\n  color: #525b70;\n  outline: none;\n  border: 0px;\n  padding: 5px 15px;\n  font-family: \"Segoe UI\", Tahoma, Geneva, Verdana, sans-serif;\n  font-weight: 600;\n  letter-spacing: 0.025rem;\n}\n.switch-type-btn-group button[data-v-33724507]:first-of-type {\n  border-top-left-radius: 4px;\n  border-bottom-left-radius: 4px;\n}\n.switch-type-btn-group button[data-v-33724507]:last-of-type {\n  border-top-right-radius: 4px;\n  border-bottom-right-radius: 4px;\n}\n.switch-type-btn-group button.active[data-v-33724507] {\n  background-color: #4285f4;\n  color: #ffffff;\n}\n.export-btn[data-v-33724507] {\n  margin-left: 0;\n  margin-right: 0;\n  background-color: #f2f2f2;\n  color: #525b70;\n  outline: none;\n  border: 0px;\n  padding: 5px 15px;\n  font-family: \"Segoe UI\", Tahoma, Geneva, Verdana, sans-serif;\n  font-weight: 600;\n  letter-spacing: 0.025rem;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.switch-type-btn-group[data-v-33724507] {\n  display: inline-flex;\n}\n.switch-type-btn-group button[data-v-33724507] {\n  margin-left: 0;\n  margin-right: 0;\n  background-color: #f2f2f2;\n  color: #525b70;\n  outline: none;\n  border: 0px;\n  padding: 5px 15px;\n  font-family: \"Segoe UI\", Tahoma, Geneva, Verdana, sans-serif;\n  font-weight: 600;\n  letter-spacing: 0.025rem;\n}\n.switch-type-btn-group button[data-v-33724507]:first-of-type {\n  border-top-left-radius: 4px;\n  border-bottom-left-radius: 4px;\n}\n.switch-type-btn-group button[data-v-33724507]:last-of-type {\n  border-top-right-radius: 4px;\n  border-bottom-right-radius: 4px;\n}\n.switch-type-btn-group button.active[data-v-33724507] {\n  background-color: #4285f4;\n  color: #ffffff;\n}\n.export-btn[data-v-33724507] {\n  margin-left: 0;\n  margin-right: 0;\n  background-color: #f2f2f2;\n  color: #525b70;\n  outline: none;\n  border: 0px;\n  padding: 5px 15px;\n  font-family: \"Segoe UI\", Tahoma, Geneva, Verdana, sans-serif;\n  font-weight: 600;\n  letter-spacing: 0.025rem;\n}\n#tabletitle[data-v-33724507]{\n  display: none;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -35567,9 +35572,14 @@ var render = function () {
     _c("div", { staticClass: "data-card-body" }, [
       _c("div", { staticClass: "d-flex mb-2" }, [
         _vm.data.title
-          ? _c("h3", { staticClass: "h3-responsive data-title" }, [
-              _vm._v(_vm._s(_vm.data.title)),
-            ])
+          ? _c(
+              "h3",
+              {
+                ref: "exportable_table_title",
+                staticClass: "h3-responsive data-title",
+              },
+              [_vm._v(_vm._s(_vm.data.title))]
+            )
           : _vm._e(),
         _vm._v(" "),
         _c("div", { staticClass: "ml-auto switch-type-btn-group" }, [

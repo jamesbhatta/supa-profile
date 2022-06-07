@@ -26,12 +26,70 @@ class InfoCardController extends Controller
 
     public function showForm(InfoCard $infoCard)
     {
-        $udpateMode = false;
+        $updateMode = false;
         if ($infoCard->exists) {
-            $udpateMode = true;
+            $updateMode = true;
         }
+        $infoCards=InfoCard::all();
         $themes = config('constants.info_card_themes');
 
-        return view();
+        return view('infoCards.index',compact('infoCard','updateMode','infoCards'));
+    }
+
+    public function store(Request $request)
+    {
+        // return $request;
+        $data=$request->validate([
+            'label'=>'required|max:50|min:5',
+            'value'=>'required',
+            'icon'=>'image|mimes:jpeg,png,jpg,svg|max:2048',
+            'card_theme'=>'',
+            'position'=>'',
+            'link'=>'',
+        ]);
+           
+        if ($image = $request->file('icon')) {
+            $imagePath = 'icon/';
+            $iconImage = date('YmdHis') . "." . $image->getClientOriginalExtension();
+            $image->move($imagePath, $iconImage);
+            $data['icon'] = "$iconImage";
+        }
+    
+        InfoCard::create($data);
+
+        return redirect()->back()->with('success', 'Card info सफलतापूर्वक थपियो');
+    }
+
+    public function destroy(infoCard $infocard)
+    {
+        $infocard->delete();
+
+        return redirect()->back()->with('success', 'न.पा./गा.वि.स. हटाइएको छ');
+    }
+    public function edit(infoCard $infocard)
+    { 
+        return $this->showForm($infocard);
+    }
+    public function update(Request $request, infoCard $infocard)
+    {
+        $data=$request->validate([
+            'label'=>'required|max:50|min:5',
+            'value'=>'required',
+            'icon'=>'image|mimes:jpeg,png,jpg,svg|max:2048',
+            'card_theme'=>'',
+            'position'=>'',
+            'link'=>'',
+        ]);
+
+        if ($image = $request->file('icon')) {
+            $imagePath = 'icon/';
+            $iconImage = date('YmdHis') . "." . $image->getClientOriginalExtension();
+            $image->move($imagePath, $iconImage);
+            $data['icon'] = "$iconImage";
+        }
+
+        $infocard->update($data);
+        
+        return redirect()->back()->with('success', 'न.पा./गा.वि.स. सफलतापूर्वक अपडेट भयो ');
     }
 }

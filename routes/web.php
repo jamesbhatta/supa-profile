@@ -78,8 +78,18 @@ Route::resource('feeder-hostel', FeederHostelController::class);
 Route::resource('kamlari-hostel', KamlariHostelController::class);
 Route::resource('goverment-student', GovermentStudentController::class);
 
+Route::get('info-card', 'InfoCardController@create')->name('info-card.create');
+Route::post('info-card', 'InfoCardController@store')->name('info-card.store');
+Route::delete('info-card/{infocard}', 'InfoCardController@destroy')->name('info-card.destroy');
+Route::get('info-card/{infocard}/edit', 'InfoCardController@edit')->name('info-card.edit');
+Route::put('info-card/{infocard}', 'InfoCardController@update')->name('info-card.update');
+
+// Route::get('info-card/create','InfoCardController@create')->name('info-card.create');
+// 
+
 Route::any('/{all}', function () {
     return view('app');
 })->where(['all' => '.*']);
+
 
 

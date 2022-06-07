@@ -2,7 +2,7 @@
   <div class="data-card">
     <div class="data-card-body">
       <div class="d-flex mb-2">
-        <h3 v-if="data.title" class="h3-responsive data-title">{{ data.title }}</h3>
+        <h3 v-if="data.title" class="h3-responsive data-title" ref="exportable_table_title">{{ data.title }}</h3>
         <div class="ml-auto switch-type-btn-group">
           <button type="button" v-on:click="setActive('table')" class="switch-data-type-btn"
             v-bind:class="{ active: activeDataType == 'table' }">Table</button>
@@ -13,6 +13,7 @@
         </div>
       </div>
       <table v-if="activeDataType == 'table'" class="table table-responsive-sm table-striped" ref="exportable_table">
+        <!-- <h4 id="tabletitle">{{ data.title }}</h4> -->
         <thead>
           <slot name="thead-top"></slot>
           <tr>
@@ -69,8 +70,12 @@ export default {
     },
     printData() {
       var printContent = this.$refs.exportable_table;
+      var printTableTitle = this.$refs.exportable_table_title;
       // console.log(printContent);
+      // console.log(title);
       var WinPrint = window.open('', '', 'width=1000,height=1250');
+      WinPrint.document.write();
+      WinPrint.document.write(printTableTitle.innerHTML);
       WinPrint.document.write(printContent.outerHTML);
       WinPrint.document.close();
       WinPrint.focus();
@@ -125,5 +130,8 @@ export default {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 600;
   letter-spacing: 0.025rem;
+}
+#tabletitle{
+  display: none;
 }
 </style>
