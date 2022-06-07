@@ -58,82 +58,8 @@
           </div>
         </section>
         <div class="my-5"></div>
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-6">
-              <template>
-                <div class="col-md-12">
-                  <div class="chart-card">
-                    <div class="chart-body">
-                      <div class="chart-title mb-3">भौगोलिक क्षेत्रगत क्षेत्रफल</div>
-                      <div class="row">
-                        <div class="col-md-12">
-
-                        </div>
-                        <div class="col-md-12">
-                          <bar :chart-options="{ responsive: true }" :chart-data="{
-                            labels: ['हिमाली', 'पहाडी', 'तराई'],
-                            datasets: [
-                              {
-                                backgroundColor: ['#007bff', '#dc3545', 'green'],
-                                data: [8393.11, 6748.78, 4857.39],
-                              },
-                            ],
-                          }" />
-
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-
-              </template>
-            </div>
-            <div class="col-6">
-              <template>
-                <div class="col-md-12">
-                  <div class="chart-card">
-                    <div class="chart-body">
-                      <div class="chart-title mb-3">जनसाङ्ख्यिक अवस्था</div>
-                      <div class="row">
-                        <div class="col-md-6">
-                          <Pie :chart-options="{ responsive: true }" :chart-data="{
-                            labels: ['पुरुष', 'महिला'],
-                            datasets: [
-                              {
-                                backgroundColor: ['#007bff', '#dc3545'],
-                                data: [1287997, 1423273],
-                              },
-                            ],
-                          }" />
-                          <div class="text-center">2068</div>
-                        </div>
-                        <div class="col-md-6">
-                          <Pie :chart-options="{ responsive: true }" :chart-data="{
-                            labels: ['पुरुष', 'महिला'],
-                            datasets: [
-                              {
-                                backgroundColor: ['#007bff', '#dc3545'],
-                                data: [1217887, 1334630],
-                              },
-                            ],
-                          }" />
-                          <div class="text-center">2078</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-
-              </template>
-            </div>
-          </div>
-          <!-- ======================== -->
-
-          <div class="my-5"></div>
-          <div class="row">
+        <!-- ========================================== -->
+         <div class="row">
             <div class="col-12">
               <template>
                 <div class="col-md-12">
@@ -215,6 +141,81 @@
             </div>
 
           </div>
+        <!-- =========================================== -->
+        <div class="my-5"></div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-6">
+              <template>
+                <div class="col-md-12">
+                  <div class="chart-card">
+                    <div class="chart-body">
+                      <div class="chart-title mb-3">भौगोलिक क्षेत्रगत क्षेत्रफल</div>
+                      <div class="row">
+                        <div class="col-md-12">
+
+                        </div>
+                        <div class="col-md-12">
+                          <bar :chart-options="{ responsive: true }" :chart-data="{
+                            labels: ['हिमाली', 'पहाडी', 'तराई'],
+                            datasets: [
+                              {
+                                backgroundColor: ['#007bff', '#dc3545', 'green'],
+                                data: [8393.11, 6748.78, 4857.39],
+                              },
+                            ],
+                          }" />
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </template>
+            </div>
+            <div class="col-6">
+              <template>
+                <div class="col-md-12">
+                  <div class="chart-card">
+                    <div class="chart-body">
+                      <div class="chart-title mb-3">जनसाङ्ख्यिक अवस्था</div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <Pie :chart-options="{ responsive: true }" :chart-data="{
+                            labels: ['पुरुष', 'महिला'],
+                            datasets: [
+                              {
+                                backgroundColor: ['#007bff', '#dc3545'],
+                                data: [1287997, 1423273],
+                              },
+                            ],
+                          }" />
+                          <div class="text-center">2068</div>
+                        </div>
+                        <div class="col-md-6">
+                          <Pie :chart-options="{ responsive: true }" :chart-data="{
+                            labels: ['पुरुष', 'महिला'],
+                            datasets: [
+                              {
+                                backgroundColor: ['#007bff', '#dc3545'],
+                                data: [1217887, 1334630],
+                              },
+                            ],
+                          }" />
+                          <div class="text-center">2078</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </template>
+            </div>
+          </div>
+          
         </div>
         <!-- ======================== -->
         <!-- <section class="mt-4">
