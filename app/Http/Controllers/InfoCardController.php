@@ -42,19 +42,13 @@ class InfoCardController extends Controller
         $data=$request->validate([
             'label'=>'required|max:50|min:5',
             'value'=>'required',
-            'icon'=>'image|mimes:jpeg,png,jpg,svg|max:2048',
+            'icon'=>'',
             'card_theme'=>'',
             'position'=>'',
             'link'=>'',
         ]);
            
-        if ($image = $request->file('icon')) {
-            $imagePath = 'icon/';
-            $iconImage = date('YmdHis') . "." . $image->getClientOriginalExtension();
-            $image->move($imagePath, $iconImage);
-            $data['icon'] = "$iconImage";
-        }
-    
+      
         InfoCard::create($data);
 
         return redirect()->back()->with('success', 'Card info सफलतापूर्वक थपियो');
@@ -75,19 +69,13 @@ class InfoCardController extends Controller
         $data=$request->validate([
             'label'=>'required|max:50|min:5',
             'value'=>'required',
-            'icon'=>'image|mimes:jpeg,png,jpg,svg|max:2048',
+            'icon'=>'',
             'card_theme'=>'',
             'position'=>'',
             'link'=>'',
         ]);
 
-        if ($image = $request->file('icon')) {
-            $imagePath = 'icon/';
-            $iconImage = date('YmdHis') . "." . $image->getClientOriginalExtension();
-            $image->move($imagePath, $iconImage);
-            $data['icon'] = "$iconImage";
-        }
-
+     
         $infocard->update($data);
         
         return redirect()->back()->with('success', 'न.पा./गा.वि.स. सफलतापूर्वक अपडेट भयो ');

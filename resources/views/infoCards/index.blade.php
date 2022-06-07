@@ -25,7 +25,7 @@
                 <div class="form-group">
                     <label for="input-name-en">Icon</label>
                     {{-- <input type="file" class="form-control" name="icon" > --}}
-                    <input type="file" id="input-name-en" name="icon" class="form-control" autocomplete="off" value="{{ old('icon',$infoCard->icon) }}">
+                    <input type="text" id="input-name-en" name="icon" class="form-control" autocomplete="off" value="{{ old('icon',$infoCard->icon) }}">
                 </div>
 
                 <div class="form-group">
