@@ -118,6 +118,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 chart_js__WEBPACK_IMPORTED_MODULE_0__.Chart.register(chart_js__WEBPACK_IMPORTED_MODULE_0__.Title, chart_js__WEBPACK_IMPORTED_MODULE_0__.Tooltip, chart_js__WEBPACK_IMPORTED_MODULE_0__.Legend, chart_js__WEBPACK_IMPORTED_MODULE_0__.BarElement, chart_js__WEBPACK_IMPORTED_MODULE_0__.CategoryScale, chart_js__WEBPACK_IMPORTED_MODULE_0__.LinearScale, chart_js__WEBPACK_IMPORTED_MODULE_0__.ArcElement);
@@ -128,6 +137,7 @@ chart_js__WEBPACK_IMPORTED_MODULE_0__.Chart.register(chart_js__WEBPACK_IMPORTED_
   },
   data: function data() {
     return {
+      infoCards: [],
       links: [{
         url: "/geographical-political-situation",
         name: "भौगोलिक तथा राजनीतिक अवस्था"
@@ -160,6 +170,20 @@ chart_js__WEBPACK_IMPORTED_MODULE_0__.Chart.register(chart_js__WEBPACK_IMPORTED_
         name: "विविध"
       }]
     };
+  },
+  mounted: function mounted() {
+    this.fetchInfoCards();
+  },
+  methods: {
+    fetchInfoCards: function fetchInfoCards() {
+      var _this = this;
+
+      axios.get("/api/info-cards").then(function (response) {
+        _this.infoCards = response.data;
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    }
   }
 });
 
@@ -337,7 +361,41 @@ var render = function () {
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "col-md-9" }, [
-        _vm._m(0),
+        _vm.infoCards
+          ? _c("section", { attrs: { id: "profile-summary" } }, [
+              _c(
+                "div",
+                { staticClass: "info-grid" },
+                _vm._l(_vm.infoCards, function (item) {
+                  return _c(
+                    "a",
+                    {
+                      key: item.id,
+                      staticClass: "info-card",
+                      class: item.card_theme,
+                      attrs: { href: item.link || "#" },
+                    },
+                    [
+                      _c("div", { staticClass: "value" }, [
+                        _vm._v(_vm._s(item.value)),
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "label" }, [
+                        _vm._v(_vm._s(item.label)),
+                      ]),
+                      _vm._v(" "),
+                      item.icon
+                        ? _c("div", { staticClass: "icon" }, [
+                            _c("i", { class: item.icon }),
+                          ])
+                        : _vm._e(),
+                    ]
+                  )
+                }),
+                0
+              ),
+            ])
+          : _vm._e(),
         _vm._v(" "),
         _c("section", { staticClass: "mt-4" }, [
           _c("div", { staticClass: "row" }, [
@@ -412,82 +470,7 @@ var render = function () {
     ]),
   ])
 }
-var staticRenderFns = [
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("section", { attrs: { id: "profile-summary" } }, [
-      _c("div", { staticClass: "info-grid" }, [
-        _c("div", { staticClass: "info-card blue-color" }, [
-          _c("div", { staticClass: "value" }, [_vm._v("19,539")]),
-          _vm._v(" "),
-          _c("div", { staticClass: "label" }, [_vm._v("क्षेत्रफल")]),
-          _vm._v(" "),
-          _c("div", { staticClass: "icon" }, [
-            _c("i", { staticClass: "far fa-map" }),
-          ]),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "info-card green-color" }, [
-          _c("div", { staticClass: "value" }, [_vm._v("9")]),
-          _vm._v(" "),
-          _c("div", { staticClass: "label" }, [_vm._v("जम्मा जिल्ला")]),
-          _vm._v(" "),
-          _c("div", { staticClass: "icon" }, [
-            _c("i", { staticClass: "fa fa-globe" }),
-          ]),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "info-card indigo-color" }, [
-          _c("div", { staticClass: "value" }, [_vm._v("27,11,270")]),
-          _vm._v(" "),
-          _c("div", { staticClass: "label" }, [_vm._v("जनसंख्या")]),
-          _vm._v(" "),
-          _c("div", { staticClass: "icon" }, [
-            _c("i", { staticClass: "fa fa-users" }),
-          ]),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "info-card orange-color" }, [
-          _c("div", { staticClass: "value" }, [_vm._v("131")]),
-          _vm._v(" "),
-          _c("div", { staticClass: "label" }, [
-            _vm._v("जनघनत्तो (वर्ग कि.मि.)"),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "icon" }, [
-            _c("i", { staticClass: "fa fa-users" }),
-          ]),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "info-card yellow-color" }, [
-          _c("div", { staticClass: "value" }, [_vm._v("32")]),
-          _vm._v(" "),
-          _c("div", { staticClass: "label" }, [
-            _vm._v("प्रदेशसभा निर्वाचन क्षेत्र"),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "icon" }, [
-            _c("i", { staticClass: "fa fa-person-booth" }),
-          ]),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "info-card teal-color" }, [
-          _c("div", { staticClass: "value" }, [_vm._v("16")]),
-          _vm._v(" "),
-          _c("div", { staticClass: "label" }, [
-            _vm._v("प्रतिनिधि निर्वाचन क्षेत्र"),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "icon" }, [
-            _c("i", { staticClass: "fa fa-person-booth" }),
-          ]),
-        ]),
-      ]),
-    ])
-  },
-]
+var staticRenderFns = []
 render._withStripped = true
 
 

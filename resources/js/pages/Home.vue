@@ -12,7 +12,7 @@
         </nav>
       </div>
       <div class="col-md-9">
-        <section id="profile-summary">
+        <!-- <section id="profile-summary">
           <div class="info-grid">
             <div class="info-card blue-color">
               <div class="value">19,539</div>
@@ -44,6 +44,16 @@
               <div class="label">प्रतिनिधि निर्वाचन क्षेत्र</div>
               <div class="icon"><i class="fa fa-person-booth"></i></div>
             </div>
+          </div>
+        </section> -->
+        
+        <section v-if="infoCards" id="profile-summary">
+          <div class="info-grid">
+            <a v-for="item in infoCards" class="info-card" v-bind:key="item.id" :href="item.link || '#'" :class="item.card_theme">
+              <div class="value">{{ item.value }}</div>
+              <div class="label">{{ item.label }}</div>
+              <div v-if="item.icon" class="icon"><i :class="item.icon"></i></div>
+            </a>
           </div>
         </section>
 
@@ -99,7 +109,6 @@
         <span>{{ item.name }}</span>
       </router-link>
     </div> -->
-
   </div>
 </template>
 
@@ -115,6 +124,7 @@ export default {
 
   data() {
     return {
+      infoCards: [],
       links: [
         {
           url: "/geographical-political-situation",
@@ -158,6 +168,21 @@ export default {
         },
       ],
     };
+  },
+
+  mounted() {
+    this.fetchInfoCards();
+  },
+
+  methods: {
+    fetchInfoCards() {
+      axios
+        .get("/api/info-cards")
+        .then((response) => {
+          this.infoCards = response.data;
+        })
+        .catch((error) => console.log(error));
+    },
   },
 };
 </script>
