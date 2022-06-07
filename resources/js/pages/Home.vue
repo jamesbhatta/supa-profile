@@ -17,26 +17,32 @@
             <div class="info-card blue-color">
               <div class="value">19,539</div>
               <div class="label">क्षेत्रफल</div>
+              <div class="icon"><i class="far fa-map"></i></div>
             </div>
             <div class="info-card green-color">
               <div class="value">9</div>
               <div class="label">जम्मा जिल्ला</div>
+              <div class="icon"><i class="fa fa-globe"></i></div>
             </div>
             <div class="info-card indigo-color">
               <div class="value">27,11,270</div>
               <div class="label">जनसंख्या</div>
+              <div class="icon"><i class="fa fa-users"></i></div>
             </div>
             <div class="info-card orange-color">
               <div class="value">131</div>
               <div class="label">जनघनत्तो (वर्ग कि.मि.)</div>
+              <div class="icon"><i class="fa fa-users"></i></div>
             </div>
             <div class="info-card yellow-color">
               <div class="value">32</div>
               <div class="label">प्रदेशसभा निर्वाचन क्षेत्र</div>
+              <div class="icon"><i class="fa fa-person-booth"></i></div>
             </div>
             <div class="info-card teal-color">
               <div class="value">16</div>
               <div class="label">प्रतिनिधि निर्वाचन क्षेत्र</div>
+              <div class="icon"><i class="fa fa-person-booth"></i></div>
             </div>
           </div>
         </section>
