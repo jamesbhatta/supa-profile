@@ -1,6 +1,33 @@
 <template>
     <div class="container py-5">
         <h1 class="page-title">वन क्षेत्रको प्रदेशगत विवरण</h1>
+        <data-viewer :data="DistrictWiseForestData">
+            <template slot="thead-top">
+                <tr>
+                    <th colspan="3"></th>
+                    <th colspan="2" class="bg-light text-center font-weight-bold">सामूदायिक वन</th>
+                    <th colspan="2" class="bg-light text-center font-weight-bold">कबुलियती वन</th>
+                    <th colspan="2" class="bg-light text-center font-weight-bold">धार्मिक वन</th>
+                    <th colspan="2" class="bg-light text-center font-weight-bold">साझेदारी वन</th>
+                    <th colspan="2" class="bg-light text-center font-weight-bold">वैज्ञानिक वन</th>
+                    <th colspan="2" class="bg-light text-center font-weight-bold">वन संरक्षण क्षेत्र</th>
+                    <th colspan="2" class="bg-light text-center font-weight-bold">निजी वन</th>
+                </tr>
+            </template>
+             <template slot="chart">
+                <div class="row">
+                    <div class="col-md-6">
+                        <pie-chart :chart-data="DistrictWiseForestChartData"></pie-chart>
+                    </div>
+
+                    <div class="col-md-6">
+                        <bar-chart :chart-data="DistrictWiseForestChartData"></bar-chart>
+                    </div>
+                </div>
+            </template>
+        </data-viewer>
+        <div class="my-5"></div>
+
         <data-viewer :data="TerritorialDetailsofForestArea">
             <template slot="chart">
                 <div class="row">
@@ -18,7 +45,7 @@
         <data-viewer :data="NationalParksintheFarWesternStates"></data-viewer>
         <div class="my-5"></div>
         <data-viewer :data="GlaciersRiversandLakesintheFarWest">
-             <template slot="chart">
+            <template slot="chart">
                 <div class="row">
                     <div class="col-md-6">
                         <pie-chart :chart-data="GlaciersRiversandLakesintheFarWestChartData"></pie-chart>
@@ -40,7 +67,33 @@
 export default {
     data() {
         return {
+            DistrictWiseForestData: {
+                title: "वन क्षेत्रको जिल्लागत विवरण",
+                labels: ["क्र.स.", "जिल्ला", "वनको क्षेत्रफल (हे.)", "संख्या", "क्षेत्रफल (हे.)", "संख्या", "क्षेत्रफल (हे.)", "संख्या", "क्षेत्रफल (हे.)", "संख्या", "क्षेत्रफल (हे.)", "संख्या", "क्षेत्रफल (हे.)", "संख्या", "क्षेत्रफल (हे.)",  "संख्या", "क्षेत्रफल (हे.)",
+                ],
+                data: [
+                    [1,"कैलाली",200570,553,74237.34,0,0,14,188,2,4344.59,94,25684.4,1,69001,79,75.11],
+                    [2,"कञ्चनपुर",78800,139,19570,26,39.7,11,116,0,0,12,3332.7,1,29642,182,110.2],
+                    [3,"डडेलधुरा",113310,786,55181.22,177,906.72,7,76.7,0,0,5,1315.46,"1 (प्रस्तावित)",53014,4,1.163],
+                    [4,"बैतडी",93180,362,33427.57,174,479.6,0,0,0,0,2,614.07,"2 (प्रस्तावित)",5878.3,3,2.4],
+                    [5,"डोटी",15300,391,36819,215,941.4,1,3,0,0,8,2483.41,"1 (प्रस्तावित)",21618,7,5.23],
+                    [6,"अछाम",108910,408,42818.23,166,640.42,2,6,0,0,4,213.29,"1 (प्रस्तावित)",3051.3,1,1.158],
+                    [7,"दार्चुला",107750,170,7189.7,0,0,0,0,0,0,0,0,0,0,2,6],
+                    [8,"बझाङ",155360,401,34575.01,121,2243.87,3,2285,0,0,0,0,0,0,13,8.5],
+                    [9,"बाजुरा",135230,307,19999,163,2030.89,1,0.38,0,0,1,229.6,0,0,12,6.42],
+                    ["जम्मा","",1146110,3217,323816.9,1042,7282.6,39,2675.1,2,4344.59,126,33872.9,"",182204,303,216.2]
+                ],
+            },
 
+            DistrictWiseForestChartData:{
+                labels: ["कैलाली","कञ्चनपुर","डडेलधुरा","बैतडी","डोटी","अछाम","दार्चुला","बझाङ","बाजुरा",],
+                datasets: [
+                    {
+                        backgroundColor:["#29a8ab", "#5fb96c", "#e6b40f", 'blue', 'pink', 'red', 'gray', 'purple', 'brown'],
+                        data: [200570,78800,113310,93180,15300,108910,107750,155360,135230],
+                    },
+                ],
+            },
 
             TerritorialDetailsofForestArea: {
                 title: "वन क्षेत्रको प्रदेशगत विवरण",

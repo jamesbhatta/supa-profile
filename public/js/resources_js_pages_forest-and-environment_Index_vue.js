@@ -49,9 +49,48 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
+      DistrictWiseForestData: {
+        title: "वन क्षेत्रको जिल्लागत विवरण",
+        labels: ["क्र.स.", "जिल्ला", "वनको क्षेत्रफल (हे.)", "संख्या", "क्षेत्रफल (हे.)", "संख्या", "क्षेत्रफल (हे.)", "संख्या", "क्षेत्रफल (हे.)", "संख्या", "क्षेत्रफल (हे.)", "संख्या", "क्षेत्रफल (हे.)", "संख्या", "क्षेत्रफल (हे.)", "संख्या", "क्षेत्रफल (हे.)"],
+        data: [[1, "कैलाली", 200570, 553, 74237.34, 0, 0, 14, 188, 2, 4344.59, 94, 25684.4, 1, 69001, 79, 75.11], [2, "कञ्चनपुर", 78800, 139, 19570, 26, 39.7, 11, 116, 0, 0, 12, 3332.7, 1, 29642, 182, 110.2], [3, "डडेलधुरा", 113310, 786, 55181.22, 177, 906.72, 7, 76.7, 0, 0, 5, 1315.46, "1 (प्रस्तावित)", 53014, 4, 1.163], [4, "बैतडी", 93180, 362, 33427.57, 174, 479.6, 0, 0, 0, 0, 2, 614.07, "2 (प्रस्तावित)", 5878.3, 3, 2.4], [5, "डोटी", 15300, 391, 36819, 215, 941.4, 1, 3, 0, 0, 8, 2483.41, "1 (प्रस्तावित)", 21618, 7, 5.23], [6, "अछाम", 108910, 408, 42818.23, 166, 640.42, 2, 6, 0, 0, 4, 213.29, "1 (प्रस्तावित)", 3051.3, 1, 1.158], [7, "दार्चुला", 107750, 170, 7189.7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 6], [8, "बझाङ", 155360, 401, 34575.01, 121, 2243.87, 3, 2285, 0, 0, 0, 0, 0, 0, 13, 8.5], [9, "बाजुरा", 135230, 307, 19999, 163, 2030.89, 1, 0.38, 0, 0, 1, 229.6, 0, 0, 12, 6.42], ["जम्मा", "", 1146110, 3217, 323816.9, 1042, 7282.6, 39, 2675.1, 2, 4344.59, 126, 33872.9, "", 182204, 303, 216.2]]
+      },
+      DistrictWiseForestChartData: {
+        labels: ["कैलाली", "कञ्चनपुर", "डडेलधुरा", "बैतडी", "डोटी", "अछाम", "दार्चुला", "बझाङ", "बाजुरा"],
+        datasets: [{
+          backgroundColor: ["#29a8ab", "#5fb96c", "#e6b40f", 'blue', 'pink', 'red', 'gray', 'purple', 'brown'],
+          data: [200570, 78800, 113310, 93180, 15300, 108910, 107750, 155360, 135230]
+        }]
+      },
       TerritorialDetailsofForestArea: {
         title: "वन क्षेत्रको प्रदेशगत विवरण",
         labels: ["प्रदेश", "प्रदेशको क्षेत्रफल (हे.)", "वन क्षेत्र (हे.)", "नेपालको कूल वन क्षेत्रको हिस्सा (प्रतिशत)", "प्रदेशको कूल भूभागको तुलनामा वन क्षेत्रफल (प्रतिशत)"],
@@ -183,6 +222,110 @@ var render = function () {
       _c("h1", { staticClass: "page-title" }, [
         _vm._v("वन क्षेत्रको प्रदेशगत विवरण"),
       ]),
+      _vm._v(" "),
+      _c(
+        "data-viewer",
+        { attrs: { data: _vm.DistrictWiseForestData } },
+        [
+          _c("template", { slot: "thead-top" }, [
+            _c("tr", [
+              _c("th", { attrs: { colspan: "3" } }),
+              _vm._v(" "),
+              _c(
+                "th",
+                {
+                  staticClass: "bg-light text-center font-weight-bold",
+                  attrs: { colspan: "2" },
+                },
+                [_vm._v("सामूदायिक वन")]
+              ),
+              _vm._v(" "),
+              _c(
+                "th",
+                {
+                  staticClass: "bg-light text-center font-weight-bold",
+                  attrs: { colspan: "2" },
+                },
+                [_vm._v("कबुलियती वन")]
+              ),
+              _vm._v(" "),
+              _c(
+                "th",
+                {
+                  staticClass: "bg-light text-center font-weight-bold",
+                  attrs: { colspan: "2" },
+                },
+                [_vm._v("धार्मिक वन")]
+              ),
+              _vm._v(" "),
+              _c(
+                "th",
+                {
+                  staticClass: "bg-light text-center font-weight-bold",
+                  attrs: { colspan: "2" },
+                },
+                [_vm._v("साझेदारी वन")]
+              ),
+              _vm._v(" "),
+              _c(
+                "th",
+                {
+                  staticClass: "bg-light text-center font-weight-bold",
+                  attrs: { colspan: "2" },
+                },
+                [_vm._v("वैज्ञानिक वन")]
+              ),
+              _vm._v(" "),
+              _c(
+                "th",
+                {
+                  staticClass: "bg-light text-center font-weight-bold",
+                  attrs: { colspan: "2" },
+                },
+                [_vm._v("वन संरक्षण क्षेत्र")]
+              ),
+              _vm._v(" "),
+              _c(
+                "th",
+                {
+                  staticClass: "bg-light text-center font-weight-bold",
+                  attrs: { colspan: "2" },
+                },
+                [_vm._v("निजी वन")]
+              ),
+            ]),
+          ]),
+          _vm._v(" "),
+          _c("template", { slot: "chart" }, [
+            _c("div", { staticClass: "row" }, [
+              _c(
+                "div",
+                { staticClass: "col-md-6" },
+                [
+                  _c("pie-chart", {
+                    attrs: { "chart-data": _vm.DistrictWiseForestChartData },
+                  }),
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "col-md-6" },
+                [
+                  _c("bar-chart", {
+                    attrs: { "chart-data": _vm.DistrictWiseForestChartData },
+                  }),
+                ],
+                1
+              ),
+            ]),
+          ]),
+        ],
+        2
+      ),
+      _vm._v(" "),
+      _c("div", { staticClass: "my-5" }),
       _vm._v(" "),
       _c(
         "data-viewer",
