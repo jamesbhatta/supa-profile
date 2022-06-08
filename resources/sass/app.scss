@@ -27,8 +27,18 @@
 }
 .info-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 1.5rem;
+}
+@media screen AND (min-width: 450px ) {
+    .info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen AND (min-width: 768px ) {
+    .info-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 .info-card {

@@ -274,16 +274,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 chart_js__WEBPACK_IMPORTED_MODULE_0__.Chart.register(chart_js__WEBPACK_IMPORTED_MODULE_0__.Title, chart_js__WEBPACK_IMPORTED_MODULE_0__.Tooltip, chart_js__WEBPACK_IMPORTED_MODULE_0__.Legend, chart_js__WEBPACK_IMPORTED_MODULE_0__.BarElement, chart_js__WEBPACK_IMPORTED_MODULE_0__.CategoryScale, chart_js__WEBPACK_IMPORTED_MODULE_0__.LinearScale, chart_js__WEBPACK_IMPORTED_MODULE_0__.ArcElement);
@@ -498,7 +488,7 @@ var render = function () {
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "container py-4" }, [
     _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-md-3" }, [
+      _c("div", { staticClass: "col-md-3 d-none d-md-block" }, [
         _c("nav", { staticClass: "dataset-links-card" }, [
           _c("div", { staticClass: "heading" }, [_vm._v("डाटासेटहरु")]),
           _vm._v(" "),
@@ -683,120 +673,109 @@ var render = function () {
         _vm._v(" "),
         _c("div", { staticClass: "container-fluid" }, [
           _c("div", { staticClass: "row" }, [
-            _c(
-              "div",
-              { staticClass: "col-6" },
-              [
-                [
-                  _c("div", { staticClass: "col-md-12" }, [
-                    _c("div", { staticClass: "chart-card" }, [
-                      _c("div", { staticClass: "chart-body" }, [
-                        _c("div", { staticClass: "chart-title mb-3" }, [
-                          _vm._v("भौगोलिक क्षेत्रगत क्षेत्रफल"),
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "row" }, [
-                          _c("div", { staticClass: "col-md-12" }),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-12" },
-                            [
-                              _c("bar", {
-                                attrs: {
-                                  "chart-options": { responsive: true },
-                                  "chart-data": {
-                                    labels: ["हिमाली", "पहाडी", "तराई"],
-                                    datasets: [
-                                      {
-                                        backgroundColor: [
-                                          "#007bff",
-                                          "#dc3545",
-                                          "green",
-                                        ],
-                                        data: [8393.11, 6748.78, 4857.39],
-                                      },
-                                    ],
-                                  },
-                                },
-                              }),
-                            ],
-                            1
-                          ),
-                        ]),
-                      ]),
-                    ]),
+            _c("div", { staticClass: "col-md-6" }, [
+              _c("div", { staticClass: "chart-card" }, [
+                _c("div", { staticClass: "chart-body" }, [
+                  _c("div", { staticClass: "chart-title mb-3" }, [
+                    _vm._v("भौगोलिक क्षेत्रगत क्षेत्रफल"),
                   ]),
-                ],
-              ],
-              2
-            ),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "col-md-12" }),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "col-md-12" },
+                      [
+                        _c("bar", {
+                          attrs: {
+                            "chart-options": { responsive: true },
+                            "chart-data": {
+                              labels: ["हिमाली", "पहाडी", "तराई"],
+                              datasets: [
+                                {
+                                  backgroundColor: [
+                                    "#007bff",
+                                    "#dc3545",
+                                    "green",
+                                  ],
+                                  data: [8393.11, 6748.78, 4857.39],
+                                },
+                              ],
+                            },
+                          },
+                        }),
+                      ],
+                      1
+                    ),
+                  ]),
+                ]),
+              ]),
+            ]),
             _vm._v(" "),
             _c(
               "div",
-              { staticClass: "col-6" },
+              { staticClass: "col-md-6" },
               [
                 [
-                  _c("div", { staticClass: "col-md-12" }, [
-                    _c("div", { staticClass: "chart-card" }, [
-                      _c("div", { staticClass: "chart-body" }, [
-                        _c("div", { staticClass: "chart-title mb-3" }, [
-                          _vm._v("जनसाङ्ख्यिक अवस्था"),
-                        ]),
+                  _c("div", { staticClass: "chart-card" }, [
+                    _c("div", { staticClass: "chart-body" }, [
+                      _c("div", { staticClass: "chart-title mb-3" }, [
+                        _vm._v("जनसाङ्ख्यिक अवस्था"),
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "row" }, [
+                        _c(
+                          "div",
+                          { staticClass: "col-md-6" },
+                          [
+                            _c("Pie", {
+                              attrs: {
+                                "chart-options": { responsive: true },
+                                "chart-data": {
+                                  labels: ["पुरुष", "महिला"],
+                                  datasets: [
+                                    {
+                                      backgroundColor: ["#007bff", "#dc3545"],
+                                      data: [1287997, 1423273],
+                                    },
+                                  ],
+                                },
+                              },
+                            }),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "text-center" }, [
+                              _vm._v("2068"),
+                            ]),
+                          ],
+                          1
+                        ),
                         _vm._v(" "),
-                        _c("div", { staticClass: "row" }, [
-                          _c(
-                            "div",
-                            { staticClass: "col-md-6" },
-                            [
-                              _c("Pie", {
-                                attrs: {
-                                  "chart-options": { responsive: true },
-                                  "chart-data": {
-                                    labels: ["पुरुष", "महिला"],
-                                    datasets: [
-                                      {
-                                        backgroundColor: ["#007bff", "#dc3545"],
-                                        data: [1287997, 1423273],
-                                      },
-                                    ],
-                                  },
+                        _c(
+                          "div",
+                          { staticClass: "col-md-6" },
+                          [
+                            _c("Pie", {
+                              attrs: {
+                                "chart-options": { responsive: true },
+                                "chart-data": {
+                                  labels: ["पुरुष", "महिला"],
+                                  datasets: [
+                                    {
+                                      backgroundColor: ["#007bff", "#dc3545"],
+                                      data: [1217887, 1334630],
+                                    },
+                                  ],
                                 },
-                              }),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "text-center" }, [
-                                _vm._v("2068"),
-                              ]),
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-6" },
-                            [
-                              _c("Pie", {
-                                attrs: {
-                                  "chart-options": { responsive: true },
-                                  "chart-data": {
-                                    labels: ["पुरुष", "महिला"],
-                                    datasets: [
-                                      {
-                                        backgroundColor: ["#007bff", "#dc3545"],
-                                        data: [1217887, 1334630],
-                                      },
-                                    ],
-                                  },
-                                },
-                              }),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "text-center" }, [
-                                _vm._v("2078"),
-                              ]),
-                            ],
-                            1
-                          ),
-                        ]),
+                              },
+                            }),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "text-center" }, [
+                              _vm._v("2078"),
+                            ]),
+                          ],
+                          1
+                        ),
                       ]),
                     ]),
                   ]),

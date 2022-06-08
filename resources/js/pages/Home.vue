@@ -1,7 +1,7 @@
 <template>
   <div class="container py-4">
     <div class="row">
-      <div class="col-md-3">
+      <div class="col-md-3 d-none d-md-block">
         <nav class="dataset-links-card">
           <div class="heading">डाटासेटहरु</div>
           <div class="content">
@@ -145,9 +145,7 @@
         <div class="my-5"></div>
         <div class="container-fluid">
           <div class="row">
-            <div class="col-6">
-              <template>
-                <div class="col-md-12">
+            <div class="col-md-6">
                   <div class="chart-card">
                     <div class="chart-body">
                       <div class="chart-title mb-3">भौगोलिक क्षेत्रगत क्षेत्रफल</div>
@@ -170,14 +168,9 @@
                       </div>
                     </div>
                   </div>
-                </div>
-
-
-              </template>
             </div>
-            <div class="col-6">
+            <div class="col-md-6">
               <template>
-                <div class="col-md-12">
                   <div class="chart-card">
                     <div class="chart-body">
                       <div class="chart-title mb-3">जनसाङ्ख्यिक अवस्था</div>
@@ -209,9 +202,6 @@
                       </div>
                     </div>
                   </div>
-                </div>
-
-
               </template>
             </div>
           </div>

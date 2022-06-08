@@ -2005,10 +2005,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: ["data"],
   data: function data() {
@@ -2033,7 +2029,7 @@ __webpack_require__.r(__webpack_exports__);
       var wb = XLSX.utils.table_to_book(elt, {
         sheet: "Sheet JS"
       });
-      var filename = this.data.title || 'profile-export';
+      var filename = this.data.title || "profile-export";
       return XLSX.writeFile(wb, filename + ".xlsx"); // return dl ? XLSX.write(wb, { bookType: type, bookSST: true, type: "base64" }) : XLSX.writeFile(wb, fn || "SheetJSTableExport." + (type || "xlsx"));
     },
     printData: function printData() {
@@ -2041,17 +2037,17 @@ __webpack_require__.r(__webpack_exports__);
       var printTableTitle = this.$refs.exportable_table_title; // console.log(printContent);
       // console.log(title);
 
-      var WinPrint = window.open('', '', 'width=1000,height=1250');
+      var WinPrint = window.open("", "", "width=1000,height=1250");
       WinPrint.document.write();
       WinPrint.document.write('<div style="display: flex;justify-content: center;">');
       WinPrint.document.write('<div class="row">');
       WinPrint.document.write('<div class="col-12">');
       WinPrint.document.write(printTableTitle.innerHTML);
-      WinPrint.document.write('</div>');
+      WinPrint.document.write("</div>");
       WinPrint.document.write('<div style="height:30px;"></div>');
       WinPrint.document.write(printContent.outerHTML);
-      WinPrint.document.write('</div>');
-      WinPrint.document.write('</div>');
+      WinPrint.document.write("</div>");
+      WinPrint.document.write("</div>");
       WinPrint.document.close();
       WinPrint.focus();
       WinPrint.print();
@@ -16049,7 +16045,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.switch-type-btn-group[data-v-33724507] {\n  display: inline-flex;\n}\n.switch-type-btn-group button[data-v-33724507] {\n  margin-left: 0;\n  margin-right: 0;\n  background-color: #f2f2f2;\n  color: #525b70;\n  outline: none;\n  border: 0px;\n  padding: 5px 15px;\n  font-family: \"Segoe UI\", Tahoma, Geneva, Verdana, sans-serif;\n  font-weight: 600;\n  letter-spacing: 0.025rem;\n}\n.switch-type-btn-group button[data-v-33724507]:first-of-type {\n  border-top-left-radius: 4px;\n  border-bottom-left-radius: 4px;\n}\n.switch-type-btn-group button[data-v-33724507]:last-of-type {\n  border-top-right-radius: 4px;\n  border-bottom-right-radius: 4px;\n}\n.switch-type-btn-group button.active[data-v-33724507] {\n  background-color: #4285f4;\n  color: #ffffff;\n}\n.export-btn[data-v-33724507] {\n  margin-left: 0;\n  margin-right: 0;\n  background-color: #f2f2f2;\n  color: #525b70;\n  outline: none;\n  border: 0px;\n  padding: 5px 15px;\n  font-family: \"Segoe UI\", Tahoma, Geneva, Verdana, sans-serif;\n  font-weight: 600;\n  letter-spacing: 0.025rem;\n}\n#tabletitle[data-v-33724507]{\n  display: none;\n}\n\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.switch-type-btn-group[data-v-33724507] {\n  display: inline-flex;\n  font-size: 0.8rem;\n}\n@media screen AND (min-width: 576px) {\n.switch-type-btn-group[data-v-33724507] {\n    font-size: 1rem;\n}\n}\n.switch-type-btn-group button[data-v-33724507] {\n  margin-left: 0;\n  margin-right: 0;\n  background-color: #f2f2f2;\n  color: #525b70;\n  outline: none;\n  border: 0px;\n  padding: 5px 15px;\n  font-family: \"Segoe UI\", Tahoma, Geneva, Verdana, sans-serif;\n  font-weight: 600;\n  letter-spacing: 0.025rem;\n}\n.switch-type-btn-group button[data-v-33724507]:first-of-type {\n  border-top-left-radius: 4px;\n  border-bottom-left-radius: 4px;\n}\n.switch-type-btn-group button[data-v-33724507]:last-of-type {\n  border-top-right-radius: 4px;\n  border-bottom-right-radius: 4px;\n}\n.switch-type-btn-group button.active[data-v-33724507] {\n  background-color: #4285f4;\n  color: #ffffff;\n}\n.export-btn[data-v-33724507] {\n  margin-left: 0;\n  margin-right: 0;\n  background-color: #f2f2f2;\n  color: #525b70;\n  outline: none;\n  border: 0px;\n  padding: 5px 15px;\n  font-family: \"Segoe UI\", Tahoma, Geneva, Verdana, sans-serif;\n  font-weight: 600;\n  letter-spacing: 0.025rem;\n}\n#tabletitle[data-v-33724507] {\n  display: none;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -16073,7 +16069,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n#navbar[data-v-6dde423b] {\n  background: linear-gradient(to right, #3f0fb7, #1e78de);\n  box-shadow: 0 3px 6px 0 rgb(0 0 0 / 12%) !important;\n  font-family: \"Roboto\", sans-serif;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n#navbar[data-v-6dde423b] {\n  background: linear-gradient(to right, #3f0fb7, #1e78de);\n  box-shadow: 0 3px 6px 0 rgb(0 0 0 / 12%) !important;\n  font-family: \"Roboto\", sans-serif;\n}\n#site-name[data-v-6dde423b] {\n  color:#fff;\n}\n@media screen AND (min-width: 576px ) {\n#site-name[data-v-6dde423b] {\n    font-size: 1.25rem;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -35577,7 +35573,7 @@ var render = function () {
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "data-card" }, [
     _c("div", { staticClass: "data-card-body" }, [
-      _c("div", { staticClass: "d-flex mb-2" }, [
+      _c("div", { staticClass: "d-md-flex mb-2" }, [
         _vm.data.title
           ? _c(
               "h3",
@@ -36086,15 +36082,21 @@ var render = function () {
                 },
               }),
               _vm._v(" "),
-              _c("div", { staticClass: "ml-3 navbar-brand text-main" }, [
-                _c("div", { staticClass: "font-weight-bold" }, [
-                  _vm._v("सुदूरपश्चिम प्रदेश प्रोफाइल"),
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "font-weight-bold" }, [
-                  _vm._v("Profile of Sudur Paschim Province"),
-                ]),
-              ]),
+              _c(
+                "div",
+                { staticClass: "ml-3 text-main", attrs: { id: "site-name" } },
+                [
+                  _c("div", { staticClass: "font-weight-bold" }, [
+                    _vm._v("सुदूरपश्चिम प्रदेश प्रोफाइल"),
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "font-weight-bold d-none d-sm-block" },
+                    [_vm._v("Profile of Sudur Paschim Province")]
+                  ),
+                ]
+              ),
             ]
           ),
           _vm._v(" "),

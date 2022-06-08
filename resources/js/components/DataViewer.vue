@@ -1,13 +1,11 @@
 <template>
   <div class="data-card">
     <div class="data-card-body">
-      <div class="d-flex mb-2">
+      <div class="d-md-flex mb-2">
         <h3 v-if="data.title" class="h3-responsive data-title" ref="exportable_table_title">{{ data.title }}</h3>
         <div class="ml-auto switch-type-btn-group">
-          <button type="button" v-on:click="setActive('table')" class="switch-data-type-btn"
-            v-bind:class="{ active: activeDataType == 'table' }">Table</button>
-          <button v-if="hasChartSlot" type="button" v-on:click="setActive('chart')" class="switch-data-type-btn"
-            v-bind:class="{ active: activeDataType == 'chart' }">Chart</button>
+          <button type="button" v-on:click="setActive('table')" class="switch-data-type-btn" v-bind:class="{ active: activeDataType == 'table' }">Table</button>
+          <button v-if="hasChartSlot" type="button" v-on:click="setActive('chart')" class="switch-data-type-btn" v-bind:class="{ active: activeDataType == 'chart' }">Chart</button>
           <button type="button" v-on:click="exportToExcel()" class="switch-data-type-btn">Export</button>
           <button type="button" v-on:click="printData()" class="switch-data-type-btn">Print</button>
         </div>
@@ -23,9 +21,7 @@
         <tbody>
           <tr v-for="(row, index) in data.data" v-bind:key="index">
             <template v-for="(item, index) in row">
-              <td v-if="typeof item == 'object'" v-bind:key="index" :colspan="item.colspan" :rowspan="item.rowspan">{{
-                  item.value
-              }}</td>
+              <td v-if="typeof item == 'object'" v-bind:key="index" :colspan="item.colspan" :rowspan="item.rowspan">{{ item.value }}</td>
               <td v-else v-bind:key="index">{{ item }}</td>
             </template>
           </tr>
@@ -64,7 +60,7 @@ export default {
       var XLSX = require("xlsx");
       var elt = this.$refs.exportable_table;
       var wb = XLSX.utils.table_to_book(elt, { sheet: "Sheet JS" });
-      let filename = this.data.title || 'profile-export';
+      let filename = this.data.title || "profile-export";
       return XLSX.writeFile(wb, filename + ".xlsx");
       // return dl ? XLSX.write(wb, { bookType: type, bookSST: true, type: "base64" }) : XLSX.writeFile(wb, fn || "SheetJSTableExport." + (type || "xlsx"));
     },
@@ -73,22 +69,22 @@ export default {
       var printTableTitle = this.$refs.exportable_table_title;
       // console.log(printContent);
       // console.log(title);
-      var WinPrint = window.open('', '', 'width=1000,height=1250');
+      var WinPrint = window.open("", "", "width=1000,height=1250");
       WinPrint.document.write();
       WinPrint.document.write('<div style="display: flex;justify-content: center;">');
       WinPrint.document.write('<div class="row">');
       WinPrint.document.write('<div class="col-12">');
       WinPrint.document.write(printTableTitle.innerHTML);
-      WinPrint.document.write('</div>');
+      WinPrint.document.write("</div>");
       WinPrint.document.write('<div style="height:30px;"></div>');
       WinPrint.document.write(printContent.outerHTML);
-      WinPrint.document.write('</div>');
-      WinPrint.document.write('</div>');
+      WinPrint.document.write("</div>");
+      WinPrint.document.write("</div>");
       WinPrint.document.close();
       WinPrint.focus();
       WinPrint.print();
       WinPrint.close();
-    }
+    },
   },
 };
 </script>
@@ -96,6 +92,12 @@ export default {
 <style scoped>
 .switch-type-btn-group {
   display: inline-flex;
+  font-size: 0.8rem;
+}
+@media screen AND (min-width: 576px) {
+  .switch-type-btn-group {
+    font-size: 1rem;
+  }
 }
 
 .switch-type-btn-group button {
@@ -138,8 +140,7 @@ export default {
   font-weight: 600;
   letter-spacing: 0.025rem;
 }
-#tabletitle{
+#tabletitle {
   display: none;
 }
-
 </style>
