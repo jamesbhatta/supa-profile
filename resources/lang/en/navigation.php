@@ -29,6 +29,7 @@ return [
     'bank_detail'=>"Bank Detail",
     'bank'=>"Bank",
     'local_bank'=>"Local Bank",
+    'school'=>"School",
     'school_detail'=>"School Detail 2077",
     'feeder_hostel'=>"Feeder Hostel",
     'kamlari_hostel'=>"Kamlari Hostel",

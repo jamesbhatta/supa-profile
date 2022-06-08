@@ -15,6 +15,23 @@
     .sub-nav{
         background-color:  #12213a;;
     }
+    .card-icon{
+        position: relative;
+        top: 15px;
+
+    }
+    .cards-footer{
+        background-color: rgba(255, 255, 255,0.5);
+        
+    }
+    .cards-footer label{
+        cursor: pointer;
+    }
+    /* style="width: 60vw;margin-left:-200px;"
+     */
+     .dashboard-container{
+        width: 60vw;
+     }
 
 </style>
 <link rel="stylesheet" href="{{ asset('assets/css/admin.css') }}">
