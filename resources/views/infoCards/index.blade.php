@@ -30,7 +30,12 @@
 
                 <div class="form-group">
                     <label for="input-name-en">Card Theme</label>
-                    <input type="text" id="input-name-en" name="card_theme" class="form-control" autocomplete="off" value="{{ old('card_theme',$infoCard->card_theme) }}">
+                    {{-- <input type="text" id="input-name-en" name="card_theme" class="form-control" autocomplete="off" value="{{ old('card_theme',$infoCard->card_theme) }}"> --}}
+                    <select name="" class="custom-select">
+                        @foreach ($themes as $theme)
+                            <option value="{{ $theme }}" @if(old('card_theme', $infoCard->card_theme) == $theme) selected @endif>{{ ucwords(str_replace('-', ' ', $theme)) }}</option>
+                        @endforeach
+                    </select>
                 </div>
 
                 <div class="form-group">
