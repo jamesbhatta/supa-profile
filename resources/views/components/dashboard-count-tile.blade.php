@@ -24,7 +24,7 @@
                 
                     <a href="{{ $link ?? '#' }}">
                         <div class="col-12 cards-footer">
-                            <label class="m-2 col-12 text-center text-white" >More info <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></label>
+                            <label class="m-2 col-12 text-center text-white" >थप जानकारी<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></label>
                         </div>
                         
                     </a>
@@ -48,7 +48,7 @@
                 
                     <a href="{{ $link ?? '#' }}">
                         <div class="col-12 cards-footer">
-                            <label class="m-2 col-12 text-center text-white" >More info <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></label>
+                            <label class="m-2 col-12 text-center text-white" >थप जानकारी<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></label>
                         </div>
                         
                     </a>
@@ -71,7 +71,7 @@
                 
                     <a href="{{ $link ?? '#' }}">
                         <div class="col-12 cards-footer">
-                            <label class="m-2 col-12 text-center text-white" >More info <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></label>
+                            <label class="m-2 col-12 text-center text-white" >थप जानकारी<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></label>
                         </div>
                         
                     </a>
@@ -95,7 +95,7 @@
                 
                     <a href="{{ $link ?? '#' }}">
                         <div class="col-12 cards-footer">
-                            <label class="m-2 col-12 text-center text-white" >More info <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></label>
+                            <label class="m-2 col-12 text-center text-white" >थप जानकारी<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></label>
                         </div>
                         
                     </a>
@@ -119,7 +119,7 @@
                 
                     <a href="{{ $link ?? '#' }}">
                         <div class="col-12 cards-footer">
-                            <label class="m-2 col-12 text-center text-white" >More info <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></label>
+                            <label class="m-2 col-12 text-center text-white" >थप जानकारी <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></label>
                         </div>
                         
                     </a>
@@ -142,7 +142,7 @@
                 
                     <a href="{{ $link ?? '#' }}">
                         <div class="col-12 cards-footer">
-                            <label class="m-2 col-12 text-center text-white" >More info <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></label>
+                            <label class="m-2 col-12 text-center text-white" >थप जानकारी <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></label>
                         </div>
                         
                     </a>
