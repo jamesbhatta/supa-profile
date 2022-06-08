@@ -65,7 +65,7 @@ class InfoCardController extends Controller
         
         $infocard->update($data);
         
-        return redirect()->back()->with('success', 'न.पा./गा.वि.स. सफलतापूर्वक अपडेट भयो ');
+        return redirect()->route('info-card.create')->with('success', 'न.पा./गा.वि.स. सफलतापूर्वक अपडेट भयो ');
     }
 
     public function destroy(InfoCard $infocard)

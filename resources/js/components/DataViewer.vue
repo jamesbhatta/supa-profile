@@ -14,7 +14,7 @@
         <!-- <h4 id="tabletitle">{{ data.title }}</h4> -->
         <thead>
           <slot name="thead-top"></slot>
-          <tr>
+          <tr >
             <th v-for="(label, index) in data.labels" v-bind:key="index" class="font-weight-bold">{{ label }}</th>
           </tr>
         </thead>
