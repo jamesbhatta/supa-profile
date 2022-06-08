@@ -10,7 +10,8 @@
     a.bg-white {
         color: #1f2d3d !important;
     }
-
+   
+    
 </style>
 @endpush
 

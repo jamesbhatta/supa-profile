@@ -1,5 +1,6 @@
 <div class="py-4 pl-5">
-    <img class="img-reponsive" src="{{ asset(config('constants.nep_gov.logo_sm')) }}" alt="Nepal Government Logo" height="80px">
+    <img class="img-reponsive" src="{{ asset(config('constants.nep_gov.logo_sm')) }}" alt="Nepal Government Logo"
+        height="80px">
 </div>
 <div id="sidenav-wrapper">
     <ul id="sidenav" class="nav flex-column font-noto">
@@ -123,19 +124,20 @@
         @endhasrole --}}
 
         @can('user.*')
-        <li class="nav-item {{ setActive('user.index') }} {{ setActive('user.create') }} {{ setActive('user.edit') }}">
-            <a class="nav-link" href="{{ route('user.index') }}">
-                <span class=""><i class="fa fa-users"></i></span>@lang('navigation.users')
-            </a>
-        </li>
+            <li
+                class="nav-item {{ setActive('user.index') }} {{ setActive('user.create') }} {{ setActive('user.edit') }}">
+                <a class="nav-link" href="{{ route('user.index') }}">
+                    <span class=""><i class="fa fa-users"></i></span>@lang('navigation.users')
+                </a>
+            </li>
         @endcan
 
         @hasanyrole('super-admin|admin')
-        <li class="nav-item {{ setActive('settings.index') }}">
-            <a class="nav-link" href="{{ route('settings.index') }}">
-                <span class="amber-text"><i class="fas fa-cogs"></i></span>@lang('navigation.settings')
-            </a>
-        </li>
+            <li class="nav-item {{ setActive('settings.index') }}">
+                <a class="nav-link" href="{{ route('settings.index') }}">
+                    <span class="amber-text"><i class="fas fa-cogs"></i></span>@lang('navigation.settings')
+                </a>
+            </li>
         @endhasrole
 
         {{-- @unlessrole('user')
@@ -154,116 +156,163 @@
         </li>
         @endhasrole --}}
 
+        {{-- ============configrations=========== --}}
         <li class="nav-item">
-            <a class="nav-link" href="#!">
-                <span class="text-default"><i class="fas fa-tools"></i></span>@lang('navigation.configurations')</a>
-        </li>
-        @hasanyrole('super-admin|admin')
-        <li class="nav-item pl-5 {{ setActive('fiscal-year.*') }}">
-            <a class="nav-link" href="{{ route('fiscal-year.index') }}">@lang('navigation.fiscal_year')</a>
-        </li>
-        @endhasanyrole
-        @can('province.*')
-        <li class="nav-item pl-5 {{ setActive('province.*') }}">
-            <a class="nav-link" href="{{ route('province.index') }}">@lang('navigation.province')</a>
-        </li>
-        @endcan
-        @can('district.*')
-        <li class="nav-item pl-5 {{ setActive('district.*') }}">
-            <a class="nav-link" href="{{ route('district.index') }}">@lang('navigation.district')</a>
-        </li>
-        @endcan
-        @can('municipality.*')
-        <li class="nav-item pl-5 {{ setActive('municipality.*') }}">
-            <a class="nav-link" href="{{ route('municipality.index') }}">@lang('navigation.municipality')</a>
-        </li>
-        @endcan
-        @can('ward.*')
-        <li class="nav-item pl-5 {{ setActive('ward.*') }}">
-            <a class="nav-link" href="{{ route('ward.index') }}">@lang('navigation.ward')</a>
-        </li>
-        @endcan
+            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"
+                class="dropdown-toggle collapsed nav-link"><span class="text-default"><i
+                        class="fas fa-tools"></i></span>@lang('navigation.configurations')</a>
+            <ul class="list-unstyled collapse" id="homeSubmenu" style="">
+                @hasanyrole('super-admin|admin')
+                    <li class="nav-item sub-nav">
+                        <a class="nav-link" href="{{ route('fiscal-year.index') }}"><span class="mx-3"><i
+                                    class="fas fa-circle"></i></span>@lang('navigation.fiscal_year')</a>
+                    </li>
+                @endhasanyrole
+                @can('province.*')
+                    <li class="nav-item sub-nav {{ setActive('province.*') }}">
+                        <a class="nav-link " href="{{ route('province.index') }}"><span class="mx-3"><i
+                                    class="fas fa-circle"></i></span>@lang('navigation.province')</a>
+                    </li>
+                @endcan
+                @can('district.*')
+                    <li class="nav-item sub-nav {{ setActive('district.*') }}">
+                        <a class="nav-link" href="{{ route('district.index') }}"><span class="mx-3"><i
+                                    class="fas fa-circle"></i></span>@lang('navigation.district')</a>
+                    </li>
+                @endcan
+                @can('municipality.*')
+                    <li class="nav-item sub-nav {{ setActive('municipality.*') }}">
+                        <a class="nav-link" href="{{ route('municipality.index') }}"><span
+                                class="mx-3"><i class="fas fa-circle"></i></span>@lang('navigation.municipality')</a>
+                    </li>
+                @endcan
+                @can('ward.*')
+                    <li class="nav-item sub-nav {{ setActive('ward.*') }}">
+                        <a class="nav-link" href="{{ route('ward.index') }}"> <span class="mx-3"><i
+                                    class="fas fa-circle"></i></span> @lang('navigation.ward')</a>
+                    </li>
+                @endcan
 
-        <li class="nav-item ">
-            <a class="nav-link" href="{{ route('local-population.index') }}">
-                <span class="text-warning"><i class="fa fa-tachometer-alt"></i></span>@lang('navigation.local_population')
-            </a>
-        </li>
-
-        <li class="nav-item ">
-            <a class="nav-link" href="{{ route('population.index') }}">
-                <span class="text-warning"><i class="fa fa-tachometer-alt"></i></span>@lang('navigation.population')
-            </a>
+            </ul>
         </li>
 
-        <li class="nav-item ">
-            <a class="nav-link" href="{{ route('age-population.index') }}">
-                <span class="text-warning"><i class="fa fa-tachometer-alt"></i></span>@lang('navigation.age_population')
-            </a>
+        {{-- ==========populations============ --}}
+        <li class="nav-item">
+            <a href="#population" data-toggle="collapse" aria-expanded="false"
+                class="dropdown-toggle collapsed nav-link"><span class="text-default"><i
+                        class="fas fa-tools"></i></span>@lang('navigation.populations')</a>
+            <ul class="list-unstyled collapse" id="population" style="">
+
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('local-population.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span>@lang('navigation.local_population')
+                    </a>
+                </li>
+
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('population.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span>@lang('navigation.population')
+                    </a>
+                </li>
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('age-population.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span>@lang('navigation.age_population')
+                    </a>
+                </li>
+            </ul>
         </li>
 
-        <li class="nav-item ">
-            <a class="nav-link" href="{{ route('disability.index') }}">
-                <span class="text-warning"><i class="fa fa-tachometer-alt"></i></span>@lang('navigation.disability')
-            </a>
+        {{-- ============Disability============ --}}
+
+        <li class="nav-item">
+            <a href="#disability" data-toggle="collapse" aria-expanded="false"
+                class="dropdown-toggle collapsed nav-link"><span class="text-default"><i
+                        class="fas fa-tools"></i></span>@lang('navigation.disability')</a>
+            <ul class="list-unstyled collapse" id="disability" style="">
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('disability.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span>@lang('navigation.disability_type')
+                    </a>
+                </li>
+
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('disability-detail.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span>@lang('navigation.disability_detail')
+                    </a>
+                </li>
+
+            </ul>
         </li>
 
-        <li class="nav-item ">
-            <a class="nav-link" href="{{ route('disability-detail.index') }}">
-                <span class="text-warning"><i class="fa fa-tachometer-alt"></i></span>@lang('navigation.disability_detail')
-            </a>
+        {{-- ===============Bank============== --}}
+
+        <li class="nav-item">
+            <a href="#bank" data-toggle="collapse" aria-expanded="false"
+                class="dropdown-toggle collapsed nav-link"><span class="text-default"><i
+                        class="fas fa-tools"></i></span>@lang('navigation.bank')</a>
+            <ul class="list-unstyled collapse" id="bank" style="">
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('bank-detail.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span>@lang('navigation.bank_detail')
+                    </a>
+                </li>
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('bank.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span>@lang('navigation.bank')
+                    </a>
+                </li>
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('local-bank.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span>@lang('navigation.local_bank')
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        {{-- =============+School=========== --}}
+
+        <li class="nav-item">
+            <a href="#school" data-toggle="collapse" aria-expanded="false"
+                class="dropdown-toggle collapsed nav-link"><span class="text-default"><i
+                        class="fas fa-tools"></i></span>@lang('navigation.school')</a>
+            <ul class="list-unstyled collapse" id="school" style="">
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('school.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span>@lang('navigation.school_detail')
+                    </a>
+                </li>
+
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('feeder-hostel.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span>@lang('navigation.feeder_hostel')
+                    </a>
+                </li>
+
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('kamlari-hostel.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span>@lang('navigation.kamlari_hostel')
+                    </a>
+                </li>
+
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('goverment-student.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span>@lang('navigation.goverment_student')
+                    </a>
+                </li>
+            </ul>
         </li>
 
 
-        <li class="nav-item ">
-            <a class="nav-link" href="{{ route('bank-detail.index') }}">
-                <span class="text-warning"><i class="fa fa-tachometer-alt"></i></span>@lang('navigation.bank_detail')
-            </a>
-        </li>
-        <li class="nav-item ">
-            <a class="nav-link" href="{{ route('bank.index') }}">
-                <span class="text-warning"><i class="fa fa-tachometer-alt"></i></span>@lang('navigation.bank')
-            </a>
-        </li>
 
-        <li class="nav-item ">
-            <a class="nav-link" href="{{ route('local-bank.index') }}">
-                <span class="text-warning"><i class="fa fa-tachometer-alt"></i></span>@lang('navigation.local_bank')
-            </a>
-        </li>
-
-        <li class="nav-item ">
-            <a class="nav-link" href="{{ route('school.index') }}">
-                <span class="text-warning"><i class="fa fa-tachometer-alt"></i></span>@lang('navigation.school_detail')
-            </a>
-        </li>
-
-        <li class="nav-item ">
-            <a class="nav-link" href="{{ route('feeder-hostel.index') }}">
-                <span class="text-warning"><i class="fa fa-tachometer-alt"></i></span>@lang('navigation.feeder_hostel')
-            </a>
-        </li>
-
-        <li class="nav-item ">
-            <a class="nav-link" href="{{ route('kamlari-hostel.index') }}">
-                <span class="text-warning"><i class="fa fa-tachometer-alt"></i></span>@lang('navigation.kamlari_hostel')
-            </a>
-        </li>
-
-        <li class="nav-item ">
-            <a class="nav-link" href="{{ route('goverment-student.index') }}">
-                <span class="text-warning"><i class="fa fa-tachometer-alt"></i></span>@lang('navigation.goverment_student')
-            </a>
-        </li>
 
         @hasanyrole('super-admin')
-        <li class="nav-item">
-            <a class="nav-link" href="{{ route('admin.logs') }}" target="_blank">
-                <span class="text-info"><i class="fas fa-exclamation-triangle"></i></span>@lang('System Logs')
-            </a>
-        </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('admin.logs') }}" target="_blank">
+                    <span class="text-info"><i class="fas fa-exclamation-triangle"></i></span>@lang('System Logs')
+                </a>
+            </li>
         @endhasanyrole
-       
+
 
     </ul>
 </div>

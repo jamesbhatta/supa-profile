@@ -12,6 +12,9 @@
     .unicode-font {
         /* font-family: 'noto'; */
     }
+    .sub-nav{
+        background-color:  #12213a;;
+    }
 
 </style>
 <link rel="stylesheet" href="{{ asset('assets/css/admin.css') }}">
