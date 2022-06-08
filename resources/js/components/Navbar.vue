@@ -3,7 +3,7 @@
     <div class="container">
       <!-- Navbar brand -->
       <router-link class="d-flex align-items-center" to="/">
-        <img src="https://fra.mofaga.gov.np/static/media/logo.940ff832.svg" height="50px" />
+        <img src="/assets/img/nep-gov-logo-sm.png" height="50px" />
         <div id="site-name" class="ml-3 text-main">
           <div class="font-weight-bold">सुदूरपश्चिम प्रदेश प्रोफाइल</div>
           <div class="font-weight-bold d-none d-sm-block">Profile of Sudur Paschim Province</div>

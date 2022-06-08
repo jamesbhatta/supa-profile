@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>
-        @isset($title) {{ $title }} | @endisset {{ config('app.name', __('appname')) }}
+        @isset($title) {{ $title }} | @endisset {{ settings('app_name' ,config('app.name')) }}
     </title>
 
     @include('layouts.partials.styles')

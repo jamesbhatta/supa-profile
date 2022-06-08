@@ -36077,7 +36077,7 @@ var render = function () {
             [
               _c("img", {
                 attrs: {
-                  src: "https://fra.mofaga.gov.np/static/media/logo.940ff832.svg",
+                  src: "/assets/img/nep-gov-logo-sm.png",
                   height: "50px",
                 },
               }),
