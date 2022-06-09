@@ -58,208 +58,164 @@
           </div>
         </section>
         <div class="my-5"></div>
-      
+
         <!-- =========================================== -->
         <div class="my-5"></div>
         <div class="container-fluid">
           <div class="row">
-            <div class="col-md-5 my-3">
-                  <div class="chart-card">
-                    <div class="chart-body">
-                      <div class="chart-title mb-3">भौगोलिक क्षेत्रगत क्षेत्रफल</div>
-                      <div class="row">
-                        <div class="col-md-12">
-
-                        </div>
-                        <div class="col-md-12">
-                          <bar :chart-options="{ responsive: true }" :chart-data="{
-                            labels: ['हिमाली', 'पहाडी', 'तराई'],
-                            datasets: [
-                              {
-                                backgroundColor: ['#007bff', '#dc3545', 'green'],
-                                data: [8393.11, 6748.78, 4857.39],
-                              },
-                            ],
-                          }" />
-
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-md-7 my-3">
-              <template>
-                  <div class="chart-card">
-                    <div class="chart-body">
-                      <div class="chart-title mb-3">जनसाङ्ख्यिक अवस्था</div>
-                      <div class="row">
-                        <div class="col-md-6">
-                          <Pie :chart-options="{ responsive: true }" :chart-data="{
-                            labels: ['पुरुष', 'महिला'],
-                            datasets: [
-                              {
-                                backgroundColor: ['#007bff', '#dc3545'],
-                                data: [1287997, 1423273],
-                              },
-                            
-                            ],
-                          }" />
-                          <div class="text-center year"><label>2068</label></div>
-                        </div>
-                        <div class="col-md-6 my-pie">
-                          
-                          <Pie :chart-options="{ responsive: true }" :chart-data="{
-                           labels: ['पुरुष', 'महिला'],
-                            datasets: [
-                                {
-                                backgroundColor: ['#007bff', '#dc3545'],
-                                data: [1217887, 1334630],
-                              },
-                            ],
-                          }" />
-                          <div class="text-center year"><label for="">2078</label></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-              </template>
-            </div>
-          </div>
-          
-        </div>
-        <div class="my-5"></div>
-          <!-- ========================================== -->
-         <div class="row">
-            <div class="col-12">
-              <template>
-                <div class="col-md-12">
-                  <div class="chart-card">
-                    <div class="chart-body">
-                      <div class="chart-title mb-3">श्रम सम्बन्धि सूचक</div>
-                      <div class="row">
-                        <div class="col-md-12">
-
-                        </div>
-                        <div class="col-md-6">
-                          <bar :chart-options="{ responsive: true }" :chart-data="{
-                            labels: ['बेरोजगारी दर', 'श्रम शक्ति सजभागिता दर', 'जनसंख्या अनुपातमा रोजगार', 'रोजगारको क्षेत्र', 'रोजगार'],
-                            datasets: [
-                              {
-                                label: 'पुरुष',
-                                data: [11.5, 45.6, 40.4,],
-                                backgroundColor: '#007bff',
-                              },
-                              {
-                                label: 'महिला',
-                                data: [11.5, 15.7, 0],
-                                backgroundColor: '#dc3545',
-                              },
-                              {
-                                label: 'औपचारिक',
-                                data: [0, 0,0, 33.3, 14.8],
-                                backgroundColor: 'pink',
-                              },
-                              {
-                                label: 'अनौपचारिक',
-                                data: [0, 0,0, 66.7, 85.2],
-                                backgroundColor: '#00663d',
-                              }
-                          
-                            ]
-                          }" />
-
-                          <label class=" col-12 text-center">(सुदुरपश्चिममा)</label>
-
-                        </div>
-                        <div class="col-md-6">
-                          <bar :chart-options="{ responsive: true }" :chart-data="{
-                            labels: ['बेरोजगारी दर', 'श्रम शक्ति सजभागिता दर', 'जनसंख्या अनुपातमा रोजगार', 'रोजगारको क्षेत्र', 'रोजगार'],
-                            datasets: [
-                              {
-                                label: 'पुरुष',
-                                data: [10.3, 53.8, 48.3],
-                                backgroundColor: '#007bff',
-                              },
-                              {
-                                label: 'महिला',
-                                data: [13.1, 26.3, 0],
-                                backgroundColor: '#dc3545',
-                              },
-                              {
-                                label: 'औपचारिक',
-                                data: [0, 0,0, 37.8, 15.4],
-                                backgroundColor: 'pink',
-                              },
-                              {
-                                label: 'अनौपचारिक',
-                                data: [0, 0,0, 62.2, 84.6],
-                                backgroundColor: '#00663d',
-                              }
-                            ]
-                          }" />
-
-                          <label class="col-12 text-center">(नेपालमा)</label>
-
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-
-              </template>
-            </div>
-
-          </div>
-        <!-- ======================== -->
-        <!-- <section class="mt-4">
-          <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-4 my-3">
               <div class="chart-card">
                 <div class="chart-body">
-                  <div class="chart-title mb-3">जनसाङ्ख्यिक अवस्था</div>
+                  <div class="chart-title mb-3">भौगोलिक क्षेत्रगत क्षेत्रफल</div>
                   <div class="row">
-                    <div class="col-md-6">
-                      <Pie :chart-options="{ responsive: true }" :chart-data="{
-                        labels: ['पुरुष', 'महिला'],
-                        datasets: [
-                          {
-                            backgroundColor: ['#007bff', '#dc3545'],
-                            data: [1287997, 1423273],
-                          },
-                        ],
-                      }" />
-                      <div class="text-center">2068</div>
+                    <div class="col-md-12">
+
                     </div>
-                    <div class="col-md-6">
-                      <Pie :chart-options="{ responsive: true }" :chart-data="{
-                        labels: ['पुरुष', 'महिला'],
+                    <div class="col-md-12">
+                      <bar :chart-options="{ responsive: true }" :chart-data="{
+                        labels: ['हिमाली', 'पहाडी', 'तराई'],
                         datasets: [
                           {
-                            backgroundColor: ['#007bff', '#dc3545'],
-                            data: [1217887, 1334630],
+                            backgroundColor: ['#007bff', '#dc3545', 'green'],
+                            data: [8393.11, 6748.78, 4857.39],
                           },
                         ],
                       }" />
-                      <div class="text-center">2078</div>
+
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-4"></div>
-          </div>
-        </section> -->
+            <div class="col-md-7 my-3">
+              <template>
+                <div class="chart-card">
+                  <div class="chart-body">
+                    <div class="chart-title mb-3">जनसाङ्ख्यिक अवस्था</div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <Pie :chart-options="{ responsive: true }" :chart-data="{
+                          labels: ['पुरुष', 'महिला'],
+                          datasets: [
+                            {
+                              backgroundColor: ['#007bff', '#dc3545'],
+                              data: [1287997, 1423273],
+                            },
+                        
+                          ],
+                        }" />
+                        <div class="text-center year"><label>2068</label></div>
+                      </div>
+                      <div class="col-md-6 my-pie">
 
+                        <Pie :chart-options="{ responsive: true }" :chart-data="{
+                          labels: ['पुरुष', 'महिला'],
+                          datasets: [
+                            {
+                              backgroundColor: ['#007bff', '#dc3545'],
+                              data: [1217887, 1334630],
+                            },
+                          ],
+                        }" />
+                        <div class="text-center year"><label for="">2078</label></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </template>
+            </div>
+          </div>
+
+        </div>
 
       </div>
     </div>
+    <div class="my-5"></div>
+    <!-- ========================================== -->
+    <div class="row">
+      <div class="col-12">
+        <template>
+          <div class="col-md-12">
+            <div class="chart-card">
+              <div class="chart-body">
+                <div class="chart-title mb-3">श्रम सम्बन्धि सूचक</div>
+                <div class="row">
+                  <div class="col-md-12">
 
-    <!-- <div class="navigation-grid mt-5">
-      <router-link v-for="(item, index) in links" :key="index" :to="item.url">
-        <span>{{ item.name }}</span>
-      </router-link>
-    </div> -->
+                  </div>
+                  <div class="col-md-6">
+                    <bar :chart-options="{ responsive: true }" :chart-data="{
+                      labels: ['बेरोजगारी दर', 'श्रम शक्ति सजभागिता दर', 'जनसंख्या अनुपातमा रोजगार', 'रोजगारको क्षेत्र', 'रोजगार'],
+                      datasets: [
+                        {
+                          label: 'पुरुष',
+                          data: [11.5, 45.6, 40.4,],
+                          backgroundColor: '#007bff',
+                        },
+                        {
+                          label: 'महिला',
+                          data: [11.5, 15.7, 0],
+                          backgroundColor: '#dc3545',
+                        },
+                        {
+                          label: 'औपचारिक',
+                          data: [0, 0, 0, 33.3, 14.8],
+                          backgroundColor: 'pink',
+                        },
+                        {
+                          label: 'अनौपचारिक',
+                          data: [0, 0, 0, 66.7, 85.2],
+                          backgroundColor: '#00663d',
+                        }
+                    
+                      ]
+                    }" />
+
+                    <label class=" col-12 text-center">(सुदुरपश्चिममा)</label>
+
+                  </div>
+                  <div class="col-md-6">
+                    <bar :chart-options="{ responsive: true }" :chart-data="{
+                      labels: ['बेरोजगारी दर', 'श्रम शक्ति सजभागिता दर', 'जनसंख्या अनुपातमा रोजगार', 'रोजगारको क्षेत्र', 'रोजगार'],
+                      datasets: [
+                        {
+                          label: 'पुरुष',
+                          data: [10.3, 53.8, 48.3],
+                          backgroundColor: '#007bff',
+                        },
+                        {
+                          label: 'महिला',
+                          data: [13.1, 26.3, 0],
+                          backgroundColor: '#dc3545',
+                        },
+                        {
+                          label: 'औपचारिक',
+                          data: [0, 0, 0, 37.8, 15.4],
+                          backgroundColor: 'pink',
+                        },
+                        {
+                          label: 'अनौपचारिक',
+                          data: [0, 0, 0, 62.2, 84.6],
+                          backgroundColor: '#00663d',
+                        }
+                      ]
+                    }" />
+
+                    <label class="col-12 text-center">(नेपालमा)</label>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </template>
+      </div>
+
+    </div>
+
+
   </div>
 </template>
 
