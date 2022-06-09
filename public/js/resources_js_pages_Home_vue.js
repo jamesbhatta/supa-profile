@@ -276,6 +276,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 
 chart_js__WEBPACK_IMPORTED_MODULE_0__.Chart.register(chart_js__WEBPACK_IMPORTED_MODULE_0__.Title, chart_js__WEBPACK_IMPORTED_MODULE_0__.Tooltip, chart_js__WEBPACK_IMPORTED_MODULE_0__.Legend, chart_js__WEBPACK_IMPORTED_MODULE_0__.BarElement, chart_js__WEBPACK_IMPORTED_MODULE_0__.CategoryScale, chart_js__WEBPACK_IMPORTED_MODULE_0__.LinearScale, chart_js__WEBPACK_IMPORTED_MODULE_0__.ArcElement);
@@ -552,7 +554,7 @@ var render = function () {
         _vm._v(" "),
         _c("div", { staticClass: "container-fluid" }, [
           _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col-md-6 my-3" }, [
+            _c("div", { staticClass: "col-md-5 my-3" }, [
               _c("div", { staticClass: "chart-card" }, [
                 _c("div", { staticClass: "chart-body" }, [
                   _c("div", { staticClass: "chart-title mb-3" }, [
@@ -594,7 +596,7 @@ var render = function () {
             _vm._v(" "),
             _c(
               "div",
-              { staticClass: "col-md-6 my-3" },
+              { staticClass: "col-md-7 my-3" },
               [
                 [
                   _c("div", { staticClass: "chart-card" }, [
@@ -623,16 +625,14 @@ var render = function () {
                               },
                             }),
                             _vm._v(" "),
-                            _c("div", { staticClass: "text-center" }, [
-                              _vm._v("2068"),
-                            ]),
+                            _vm._m(0),
                           ],
                           1
                         ),
                         _vm._v(" "),
                         _c(
                           "div",
-                          { staticClass: "col-md-6" },
+                          { staticClass: "col-md-6 my-pie" },
                           [
                             _c("Pie", {
                               attrs: {
@@ -649,9 +649,7 @@ var render = function () {
                               },
                             }),
                             _vm._v(" "),
-                            _c("div", { staticClass: "text-center" }, [
-                              _vm._v("2078"),
-                            ]),
+                            _vm._m(1),
                           ],
                           1
                         ),
@@ -793,7 +791,24 @@ var render = function () {
     ]),
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "text-center year" }, [
+      _c("label", [_vm._v("2068")]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "text-center year" }, [
+      _c("label", { attrs: { for: "" } }, [_vm._v("2078")]),
+    ])
+  },
+]
 render._withStripped = true
 
 

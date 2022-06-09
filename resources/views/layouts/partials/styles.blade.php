@@ -71,6 +71,8 @@
             min-width: 380px;
         }
     }
+
+
 </style>
 <link rel="stylesheet" href="{{ asset('assets/css/admin.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/css/utilities.css') }}">

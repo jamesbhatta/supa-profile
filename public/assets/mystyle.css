@@ -10,3 +10,9 @@
 .data-card div{
     overflow: auto;
 }
+.my-pie div #pie-chart {
+    display: none;
+}
+.year label{
+    font-size: 13px;
+}

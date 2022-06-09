@@ -63,7 +63,7 @@
         <div class="my-5"></div>
         <div class="container-fluid">
           <div class="row">
-            <div class="col-md-6 my-3">
+            <div class="col-md-5 my-3">
                   <div class="chart-card">
                     <div class="chart-body">
                       <div class="chart-title mb-3">भौगोलिक क्षेत्रगत क्षेत्रफल</div>
@@ -87,7 +87,7 @@
                     </div>
                   </div>
             </div>
-            <div class="col-md-6 my-3">
+            <div class="col-md-7 my-3">
               <template>
                   <div class="chart-card">
                     <div class="chart-body">
@@ -101,21 +101,23 @@
                                 backgroundColor: ['#007bff', '#dc3545'],
                                 data: [1287997, 1423273],
                               },
+                            
                             ],
                           }" />
-                          <div class="text-center">2068</div>
+                          <div class="text-center year"><label>2068</label></div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 my-pie">
+                          
                           <Pie :chart-options="{ responsive: true }" :chart-data="{
-                            labels: ['पुरुष', 'महिला'],
+                           labels: ['पुरुष', 'महिला'],
                             datasets: [
-                              {
+                                {
                                 backgroundColor: ['#007bff', '#dc3545'],
                                 data: [1217887, 1334630],
                               },
                             ],
                           }" />
-                          <div class="text-center">2078</div>
+                          <div class="text-center year"><label for="">2078</label></div>
                         </div>
                       </div>
                     </div>
