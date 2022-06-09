@@ -154,8 +154,8 @@
                   <div class="col-md-12">
 
                   </div>
-                  <div class="col-md-6">
-                    <bar :chart-options="{ responsive: true }" :chart-data="{
+                  <div class="col-md-6 mybar">
+                    <bar  :chart-options="{ responsive: true }" :chart-data="{
                       labels: ['बेरोजगारी दर', 'श्रम शक्ति सजभागिता दर', 'जनसंख्या अनुपातमा रोजगार', 'रोजगारको क्षेत्र', 'रोजगार'],
                       datasets: [
                         {
