@@ -498,7 +498,4 @@ export default {
   margin-top: 5px;
 }
 
-.my-div {
-  z-index: 1;
-}
 </style>

@@ -1,181 +1,237 @@
 <template>
-  <div class="container py-5">
-    <h1 class="page-title">जनसांख्यिक स्थिति</h1>
-    <data-viewer :data="geographicalPopulationData">
-      <template slot="chart">
-        <div class="row">
-          <div class="col-md-6">
-            <pie-chart :chart-data="geographicalPopulationChartData">
-            </pie-chart>
-          </div>
-          <div class="col-md-6">
-            <bar-chart :chart-data="geographicalPopulationChartData">
-            </bar-chart>
-          </div>
-        </div>
-      </template>
 
-    </data-viewer>
-    <div class="my-5"></div>
-    <data-viewer :data="nationalcenses"></data-viewer>
-    <div class="my-5"></div>
-    <data-viewer :data="beginingcenses">
-      <template slot="thead-top">
-        <tr>
-          <th colspan="4"></th>
-          <th colspan="3" class="bg-light text-center font-weight-bold">प्रारम्भिक जनसंख्या</th>
-        </tr>
-      </template>
-       <template slot="chart">
-        <div class="row">
-          <div class="col-md-6">
-             <pie-chart :chart-data="beginingcensesChartData"></pie-chart>
-          </div>
-          <div class="col-md-6">
-            <bar-chart :chart-data="beginingcensesChartData">
+  <div class="container-fluid my-div">
+    <div class="container-fluid py-5">
+      <div class="row">
+        <div class="col-xl-2 col-lg-3 col-md-4 side-client-menus">
 
-            </bar-chart>
-          </div>
-        </div>
-
-
-      </template>
-    </data-viewer>
-
-    <div class="my-5"></div>
-    <data-viewer :data="beginingcenses1">
-      <template slot="thead-top">
-        <tr>
-          <th colspan="1"></th>
-          <th colspan="3" class="bg-light text-center font-weight-bold">अनुपस्थित जनसंख्या ( प्रारम्भिक)</th>
-        </tr>
-
-      </template>
-      <template slot="chart">
-        <div class="row">
-          <div class="col-md-6">
-             <pie-chart :chart-data="beginingcenses1ChartData"></pie-chart>
-          </div>
-          <div class="col-md-6">
-            <bar-chart :chart-data="beginingcenses1ChartData">
-
-            </bar-chart>
+          <div class="col-xl-12 col-lg-12 col-md-12 main-content">
+            <div style="height: 80px;"></div>
+            <div class="list-set">
+              <ul class="table-list ">
+                <li class="my-3">
+                  <a href="http://localhost:3000/demographic-status/#table_1">सुदूरपश्चिम प्रदेशका भौगोलिक क्षेत्रगत जनसंख्या तथा जनघनत्व विवरण</a>
+                </li>
+                <li class="my-3">
+                  <a href="http://localhost:3000/demographic-status/#table_2">राष्ट्रिय जनगणना २०७८ को प्रारम्भिक तथ्याङ्क अनुसार</a>
+                </li>
+                <li class="my-3">
+                  <a href="http://localhost:3000/demographic-status/#table_3">राष्ट्रिय जनगणना २०७८ को प्रारम्भिक तथ्याङ्क अनुसार जिल्लागत जनसंख्या विवरण</a>
+                </li>
+                <li class="my-3">
+                  <a href="http://localhost:3000/demographic-status/#table_4">राष्ट्रिय जनगणना २०७८ को प्रारम्भिक तथ्याङ्क अनुसार जिल्लागत जनसंख्या विवरण</a>
+                </li>
+                <li class="my-3">
+                  <a href="http://localhost:3000/demographic-status/#table_5">जिल्लागत जनसंख्या वितरण</a>
+                </li>
+                <li class="my-3">
+                  <a href="http://localhost:3000/demographic-status/#table_6">धर्मावलम्वीका आधारमा जिल्लागत विवरण</a>
+                </li>
+                <li class="my-3">
+                  <a href="http://localhost:3000/demographic-status/#table_7">सुदूरपश्चिम प्रदेश र अन्य प्रदेशमा रहेको जनसांख्यिक स्थिति</a>
+                </li>
+                <li class="my-3">
+                  <a href="http://localhost:3000/demographic-status/#table_8">जातजाती आधारमा रहेको जनसंख्या</a>
+                </li>
+                <li class="my-3">
+                  <a href="http://localhost:3000/demographic-status/#table_9">प्रखुम दश भाषाभाषी विवरण</a>
+                </li>
+                <li class="my-3">
+                  <a href="http://localhost:3000/demographic-status/#table_10">स्थानीय तहको जनसंख्या, औषत घरपरिवार सदस्य संख्या र लैङ्गिक अनुपात विवरण</a>
+                </li>
+                <li class="my-3">
+                  <a href="http://localhost:3000/demographic-status/#table_11">सुराष्ट्रिय जनगणना २०७८ को प्रारम्भिक तथ्यांक अनुसार स्थानीय तहको जनसंख्या</a>
+                </li>
+              
+              </ul>
+            </div>
           </div>
         </div>
+        <div class="col-xl-9 col-lg-8 col-md-12">
+          <div class="container py-5">
+            <h1 class="page-title">जनसांख्यिक स्थिति</h1>
+            <data-viewer :data="geographicalPopulationData">
+              <template slot="chart">
+                <div class="row">
+                  <div class="col-md-6">
+                    <pie-chart :chart-data="geographicalPopulationChartData">
+                    </pie-chart>
+                  </div>
+                  <div class="col-md-6">
+                    <bar-chart :chart-data="geographicalPopulationChartData">
+                    </bar-chart>
+                  </div>
+                </div>
+              </template>
+
+            </data-viewer>
+
+            <data-viewer :data="nationalcenses"></data-viewer>
+            
+            <data-viewer :data="beginingcenses">
+              <template slot="thead-top">
+                <tr>
+                  <th colspan="4"></th>
+                  <th colspan="3" class="bg-light text-center font-weight-bold">प्रारम्भिक जनसंख्या</th>
+                </tr>
+              </template>
+              <template slot="chart">
+                <div class="row">
+                  <div class="col-md-6">
+                    <pie-chart :chart-data="beginingcensesChartData"></pie-chart>
+                  </div>
+                  <div class="col-md-6">
+                    <bar-chart :chart-data="beginingcensesChartData">
+
+                    </bar-chart>
+                  </div>
+                </div>
 
 
-      </template>
+              </template>
+            </data-viewer>
 
-    </data-viewer>
-    <div class="my-5"></div>
-    <data-viewer :data="districtpopulation">
-      <template slot="thead-top">
-        <tr>
-          <th colspan="3"></th>
-          <th colspan="3" class="bg-light text-center font-weight-bold">जनसंख्या</th>
-        </tr>
-      </template>
+            <data-viewer :data="beginingcenses1">
+              <template slot="thead-top">
+                <tr>
+                  <th colspan="1"></th>
+                  <th colspan="3" class="bg-light text-center font-weight-bold">अनुपस्थित जनसंख्या ( प्रारम्भिक)</th>
+                </tr>
 
-      <template slot="chart">
-        <div class="row">
-          <div class="col-md-6">
-            <pie-chart :chart-data="districtpopulationChartData">
-            </pie-chart>
-          </div>
-          <div class="col-md-6">
-            <bar-chart :chart-data="districtpopulationChartData">
-            </bar-chart>
+              </template>
+              <template slot="chart">
+                <div class="row">
+                  <div class="col-md-6">
+                    <pie-chart :chart-data="beginingcenses1ChartData"></pie-chart>
+                  </div>
+                  <div class="col-md-6">
+                    <bar-chart :chart-data="beginingcenses1ChartData">
+
+                    </bar-chart>
+                  </div>
+                </div>
+
+
+              </template>
+
+            </data-viewer>
+            
+            <data-viewer :data="districtpopulation">
+              <template slot="thead-top">
+                <tr>
+                  <th colspan="3"></th>
+                  <th colspan="3" class="bg-light text-center font-weight-bold">जनसंख्या</th>
+                </tr>
+              </template>
+
+              <template slot="chart">
+                <div class="row">
+                  <div class="col-md-6">
+                    <pie-chart :chart-data="districtpopulationChartData">
+                    </pie-chart>
+                  </div>
+                  <div class="col-md-6">
+                    <bar-chart :chart-data="districtpopulationChartData">
+                    </bar-chart>
+                  </div>
+                </div>
+              </template>
+
+
+
+
+            </data-viewer>
+            
+            <data-viewer :data="religionpopulationData">
+              <template slot="chart">
+                <div class="row">
+                  <div class="col-md-6">
+                    <pie-chart :chart-data="religionpopulationChartData">
+                    </pie-chart>
+                  </div>
+                  <div class="col-md-6">
+                    <bar-chart :chart-data="religionpopulationChartData">
+                    </bar-chart>
+                  </div>
+                </div>
+              </template>
+            </data-viewer>
+            
+            <data-viewer :data="supaandotherprovincedata">
+              <template slot="chart">
+                <div class="row">
+                  <div class="col-md-6">
+                    <pie-chart :chart-data="supaandotherprovinceChartData">
+                    </pie-chart>
+                  </div>
+                  <div class="col-md-6">
+                    <bar-chart :chart-data="supaandotherprovinceChartData">
+                    </bar-chart>
+                  </div>
+                </div>
+              </template>
+
+            </data-viewer>
+            
+            <data-viewer :data="jatjatidata">
+
+              <template slot="chart">
+                <div class="row">
+                  <div class="col-md-6">
+                    <pie-chart :chart-data="jatjatidataChartData">
+                    </pie-chart>
+                  </div>
+                  <div class="col-md-6">
+                    <bar-chart :chart-data="jatjatidataChartData">
+                    </bar-chart>
+                  </div>
+                </div>
+              </template>
+
+            </data-viewer>
+           
+            <data-viewer :data="languagedata">
+
+              <template slot="chart">
+                <div class="row">
+                  <div class="col-md-6">
+                    <pie-chart :chart-data="languageChartData">
+                    </pie-chart>
+                  </div>
+                  <div class="col-md-6">
+                    <bar-chart :chart-data="languageChartData">
+                    </bar-chart>
+                  </div>
+                </div>
+              </template>
+            </data-viewer>
+            
+            <data-viewer :data="laingikanupat">
+              <template slot="thead-top">
+                <tr>
+                  <th colspan="2" class="bg-light text-center font-weight-bold">जिल्ला</th>
+                  <th colspan="6"></th>
+                  <th colspan="3" class="bg-light text-center font-weight-bold">साक्षरता (प्रतिशत)</th>
+                </tr>
+              </template>
+            </data-viewer>
+
+            <data-viewer :data="AccordingtothePreliminaryDataofNationalCensus">
+              <template slot="thead-top">
+                <tr>
+                  <th colspan="2" class="bg-light text-center font-weight-bold">जिल्ला </th>
+                </tr>
+              </template>
+            </data-viewer>
+
           </div>
         </div>
-      </template>
-
-
-
-
-    </data-viewer>
-    <div class="my-5"></div>
-    <data-viewer :data="religionpopulationData">
-    <template slot="chart">
-        <div class="row">
-          <div class="col-md-6">
-            <pie-chart :chart-data="religionpopulationChartData">
-            </pie-chart>
-          </div>
-          <div class="col-md-6">
-            <bar-chart :chart-data="religionpopulationChartData">
-            </bar-chart>
-          </div>
-        </div>
-      </template>
-    </data-viewer>
-    <div class="my-5"></div>
-    <data-viewer :data="supaandotherprovincedata">
-      <template slot="chart">
-        <div class="row">
-          <div class="col-md-6">
-            <pie-chart :chart-data="supaandotherprovinceChartData">
-            </pie-chart>
-          </div>
-          <div class="col-md-6">
-            <bar-chart :chart-data="supaandotherprovinceChartData">
-            </bar-chart>
-          </div>
-        </div>
-      </template>
-
-    </data-viewer>
-    <div class="my-5"></div>
-    <data-viewer :data="jatjatidata">
-
-      <template slot="chart">
-        <div class="row">
-          <div class="col-md-6">
-            <pie-chart :chart-data="jatjatidataChartData">
-            </pie-chart>
-          </div>
-          <div class="col-md-6">
-            <bar-chart :chart-data="jatjatidataChartData">
-            </bar-chart>
-          </div>
-        </div>
-      </template>
-
-    </data-viewer>
-    <div class="my-5"></div>
-    <data-viewer :data="languagedata">
-
-      <template slot="chart">
-        <div class="row">
-          <div class="col-md-6">
-            <pie-chart :chart-data="languageChartData">
-            </pie-chart>
-          </div>
-          <div class="col-md-6">
-            <bar-chart :chart-data="languageChartData">
-            </bar-chart>
-          </div>
-        </div>
-      </template>
-    </data-viewer>
-    <div class="my-5"></div>
-    <data-viewer :data="laingikanupat">
-      <template slot="thead-top">
-        <tr>
-          <th colspan="2" class="bg-light text-center font-weight-bold">जिल्ला</th>
-          <th colspan="6"></th>
-          <th colspan="3" class="bg-light text-center font-weight-bold">साक्षरता (प्रतिशत)</th>
-        </tr>
-      </template>
-    </data-viewer>
-    <div class="my-5"></div>
-    <data-viewer :data="AccordingtothePreliminaryDataofNationalCensus">
-      <template slot="thead-top">
-        <tr>
-          <th colspan="2" class="bg-light text-center font-weight-bold">जिल्ला </th>
-        </tr>
-      </template>
-    </data-viewer>
+      </div>
+    </div>
   </div>
+
+  <!-- 
+   -->
 </template>
 
 <script>
@@ -184,6 +240,7 @@ export default {
     return {
       // 3.1
       geographicalPopulationData: {
+        id:'table_1',
         title: "सुदूरपश्चिम प्रदेशका भौगोलिक क्षेत्रगत जनसंख्या तथा जनघनत्व विवरण",
         labels: ["क्षेत्र", "जनसङ्ख्या", "क्षेत्रफल (वर्ग कि.मि.)", "जनघनत्व(जना/वर्ग कि.मि.)"],
         data: [
@@ -214,6 +271,7 @@ export default {
 
       // 3.1.1
       nationalcenses: {
+        id:'table_2',
         title: "राष्ट्रिय जनगणना २०७८ को प्रारम्भिक तथ्याङ्क अनुसार",
         labels: ["क्र.स.", "क्षेत्र", "2078", "2068"],
         data: [
@@ -231,6 +289,7 @@ export default {
 
       // 3.1.2
       beginingcenses: {
+        id:'table_3',
         title: "राष्ट्रिय जनगणना २०७८ को प्रारम्भिक तथ्याङ्क अनुसार जिल्लागत जनसंख्या विवरण",
         labels: ["क्षेत्र", "कुल जनसंख्या(२०६८)", "जनगणना घरसंख्या", "घरपरिवार संख्या", "जम्मा", "पुरुष", "महिला", "लैंगिक अनुपात", "औषत परिवार आकार", "वार्षिक वृद्धिदर(%)", "जनघनत्व र(प्रतिवग कि.मि.)"],
         data: [
@@ -250,18 +309,19 @@ export default {
         ],
       },
 
-      beginingcensesChartData:{
-        labels: ["बाजुरा","बझाङ्ग","दार्चुला","बैतडी","डडेल्धुरा","डोटी","अछाम","कैलाली","कंञ्चनपुर",],
+      beginingcensesChartData: {
+        labels: ["बाजुरा", "बझाङ्ग", "दार्चुला", "बैतडी", "डडेल्धुरा", "डोटी", "अछाम", "कैलाली", "कंञ्चनपुर",],
         datasets: [
           {
-            backgroundColor: ["#29a8ab", "#5fb96c", "#e6b40f",'blue','green','red','purple','grey','pink'],
-            data: [64, 55, 58, 131,91,102,137,2.82,322],
+            backgroundColor: ["#29a8ab", "#5fb96c", "#e6b40f", 'blue', 'green', 'red', 'purple', 'grey', 'pink'],
+            data: [64, 55, 58, 131, 91, 102, 137, 2.82, 322],
 
           },
         ],
       },
 
       beginingcenses1: {
+        id:'table_4',
         title: "राष्ट्रिय जनगणना २०७८ को प्रारम्भिक तथ्याङ्क अनुसार जिल्लागत जनसंख्या विवरण",
         labels: ["क्षेत्र", "जम्मा", "पुरुष", "महिला", "प्रतिशत"],
         data: [
@@ -287,19 +347,20 @@ export default {
 
 
       beginingcenses1ChartData: {
-        labels: ["बाजुरा","बझाङ्ग","दार्चुला","बैतडी","डडेल्धुरा","डोटी","अछाम","कैलाली","कंञ्चनपुर",
+        labels: ["बाजुरा", "बझाङ्ग", "दार्चुला", "बैतडी", "डडेल्धुरा", "डोटी", "अछाम", "कैलाली", "कंञ्चनपुर",
         ],
 
         datasets: [
           {
             backgroundColor: ["red", "green", "blue", "yellow", "cyan", "grey", "pink", "Aqua", "Brown"],
-            data: ['0.71','1.64','0.34',' 1.0',' 0.7','1.34','2.05','5.10','3.05',],
+            data: ['0.71', '1.64', '0.34', ' 1.0', ' 0.7', '1.34', '2.05', '5.10', '3.05',],
           }
         ],
       },
 
       // 3.2
       districtpopulation: {
+        id:'table_5',
         title: "जिल्लागत जनसंख्या वितरण",
         labels: ["जिल्ला", "घरपरिवार संख्या", "औषत परिवार संख्या", "महिला जनसङ्ख्या", "पुरुष जनसङ्ख्या", "जम्मा जनसङ्ख्या", "प्रदेशको कुल जनसंख्याका प्रतिशत", "लैङ्गिक अनुपात", "जनसंख्या बृद्धिदर", "जनघनत्व( प्रति वग कि.मि.)"],
         data: [
@@ -319,12 +380,12 @@ export default {
       },
 
       districtpopulationChartData: {
-        labels: ["बाजुरा","बझाङ्ग","दार्चुला","बैतडी","डडेल्धुरा","डोटी","अछाम","कैलाली","कंञ्चनपुर"],
+        labels: ["बाजुरा", "बझाङ्ग", "दार्चुला", "बैतडी", "डडेल्धुरा", "डोटी", "अछाम", "कैलाली", "कंञ्चनपुर"],
 
         datasets: [
           {
             backgroundcolor: ["red", "green", " blue", " yellow", "cyan", "grey", "pink", "Aqua", "Brown"],
-            data: ['2.15','1.56','0.88','1.07','0.22','0.68','1.19','2.29','1.77'],
+            data: ['2.15', '1.56', '0.88', '1.07', '0.22', '0.68', '1.19', '2.29', '1.77'],
           }
         ],
 
@@ -332,6 +393,7 @@ export default {
 
       // 3.4
       religionpopulationData: {
+        id:'table_6',
         title: "धर्मावलम्वीका आधारमा जिल्लागत विवरण",
         labels: ["जिल्ला", "जम्मा", "हिन्दु", "बौद्ध", "इश्लाम", "किराँत", "क्रिश्चियन", "प्रकृति", "अन्य"],
         data: [
@@ -355,20 +417,21 @@ export default {
         ],
       },
 
-      religionpopulationChartData:{
-          labels: ["बाजुरा","बझाङ्ग","दार्चुला","बैतडी","डडेल्धुरा","डोटी","अछाम","कैलाली","कंञ्चनपुर",
+      religionpopulationChartData: {
+        labels: ["बाजुरा", "बझाङ्ग", "दार्चुला", "बैतडी", "डडेल्धुरा", "डोटी", "अछाम", "कैलाली", "कंञ्चनपुर",
         ],
 
         datasets: [
           {
             backgroundColor: ["red", "green", "blue", "yellow", "cyan", "grey", "pink", "Aqua", "Brown"],
-            data: [134912,195159, 133274,250898,142094,211746, 257477,775709,451248],
+            data: [134912, 195159, 133274, 250898, 142094, 211746, 257477, 775709, 451248],
           }
         ],
       },
 
       // 3.5
       supaandotherprovincedata: {
+        id:'table_7',
         title: "सुदूरपश्चिम प्रदेश र अन्य प्रदेशमा रहेको जनसांख्यिक स्थिति",
         labels: ["प्रदेश", "जनसङ्ख्या", "प्रतिशत", "जनसंख्या बृद्धिदर"],
         data: [
@@ -385,17 +448,18 @@ export default {
       },
 
       supaandotherprovinceChartData: {
-        labels: ["प्रदेश न. १","मधेश","बाग्मती","गण्डकी","लुम्बिनी","कर्णाली","सुदूरपश्चिम",],
+        labels: ["प्रदेश न. १", "मधेश", "बाग्मती", "गण्डकी", "लुम्बिनी", "कर्णाली", "सुदूरपश्चिम",],
         datasets: [
           {
             backgroundColor: ["red", "green", "blue", " yellow", " cyan", "grey", "pink"],
-            data: ['17.1','20.4','20.9','9.1','17.0','5.9','9.6',],
+            data: ['17.1', '20.4', '20.9', '9.1', '17.0', '5.9', '9.6',],
           }
         ],
 
       },
       // 3.6
       jatjatidata: {
+        id:'table_8',
         title: "जातजाती आधारमा रहेको जनसंख्या",
         labels: ["क्र.स.", "प्रदेश", "सङ्ख्या", "प्रतिशत"],
         data: [
@@ -416,11 +480,11 @@ export default {
 
 
       jatjatidataChartData: {
-        labels: ["क्षेत्री","थारु","ब्राह्मण-पहाड","कामी","ठकुरी","अन्य दलित","दमाई/ढोली ","मगर","साकी","लोहार","अन्य"],
+        labels: ["क्षेत्री", "थारु", "ब्राह्मण-पहाड", "कामी", "ठकुरी", "अन्य दलित", "दमाई/ढोली ", "मगर", "साकी", "लोहार", "अन्य"],
         datasets: [
           {
             backgroundColor: ["red", "green", "blue", "yellow", "cyan", "grey", "pink", "Aqua", "purple", "Brown", " darkcyan"],
-            data: ['41.4','17.2','13.0','8.3','4.5','4.2','2.6','2.2','1.7','1.2','3.7',],
+            data: ['41.4', '17.2', '13.0', '8.3', '4.5', '4.2', '2.6', '2.2', '1.7', '1.2', '3.7',],
           }
         ],
 
@@ -428,6 +492,7 @@ export default {
 
       // 3.7
       languagedata: {
+        id:'table_9',
         title: "प्रखुम दश भाषाभाषी विवरण",
         labels: ["क्र.स.", "भाषा", "जनसंख्या", "प्रतिशत"],
         data: [
@@ -445,11 +510,11 @@ export default {
       },
 
       languageChartData: {
-        labels: ["डोटेली","नेपाली","थारु","बैतडेली","अछामी","बझाङ्गी","मगर","बाजुरेली","मैथली","हिन्दी"],
+        labels: ["डोटेली", "नेपाली", "थारु", "बैतडेली", "अछामी", "बझाङ्गी", "मगर", "बाजुरेली", "मैथली", "हिन्दी"],
         datasets: [
           {
             backgroundColor: ["red", "green", "blue", " yellow", "cyan", "grey", "pink", "Aqua", " purple", "Brown"],
-            data: ['30.4','30.2','17.0','10.6','5.6','2.6','0.9','0.4','0.3','0.3',],
+            data: ['30.4', '30.2', '17.0', '10.6', '5.6', '2.6', '0.9', '0.4', '0.3', '0.3',],
           }
         ],
 
@@ -457,6 +522,7 @@ export default {
 
       // 3.8
       laingikanupat: {
+        id:'table_10',
         title: "स्थानीय तहको जनसंख्या, औषत घरपरिवार सदस्य संख्या र लैङ्गिक अनुपात विवरण",
         labels: ["क्र.स.", "बाजुरा", "घरपरिवार संख्या", "जम्मा", "पुरुष", "महिला", "औषत घरपरिवार सदस्य संख्या", "लैगिंक अनुपात", "महिला", "पुरुष", "जम्मा"],
         data: [
@@ -694,8 +760,9 @@ export default {
 
       // 3.8.1
       AccordingtothePreliminaryDataofNationalCensus: {
+        id:'table_11',
         title: "सुराष्ट्रिय जनगणना २०७८ को प्रारम्भिक तथ्यांक अनुसार स्थानीय तहको जनसंख्या",
-        labels: ["क्र.स.","बाजुरा","परिवार संख्या","जम्मा","पुरुष","महिला",],
+        labels: ["क्र.स.", "बाजुरा", "परिवार संख्या", "जम्मा", "पुरुष", "महिला",],
         data: [
           [1, "बडिमालिका नगरपालिका", 4082, 18432, 9253, 9179],
           [2, "बुढीगंगा नगरपालिका", 4680, 20072, 9259, 10813],

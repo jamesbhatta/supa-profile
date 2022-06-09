@@ -137,85 +137,7 @@
             </div>
           </div>
           <!-- ========================================== -->
-          <div class="row">
-            <div class="col-12">
-              <template>
-                <div class="col-md-12">
-                  <div class="chart-card">
-                    <div class="chart-body">
-                      <div class="chart-title mb-3">श्रम सम्बन्धि सूचक</div>
-                      <div class="row">
-                        <div class="col-md-6 mybar">
-                          <bar :chart-options="{ responsive: true }" :chart-data="{
-                            labels: ['बेरोजगारी दर', 'श्रम शक्ति सजभागिता दर', 'जनसंख्या अनुपातमा रोजगार', 'रोजगारको क्षेत्र', 'रोजगार'],
-                            datasets: [
-                              {
-                                label: 'पुरुष',
-                                data: [11.5, 45.6, 40.4,],
-                                backgroundColor: '#007bff',
-                              },
-                              {
-                                label: 'महिला',
-                                data: [11.5, 15.7, 0],
-                                backgroundColor: '#dc3545',
-                              },
-                              {
-                                label: 'औपचारिक',
-                                data: [0, 0, 0, 33.3, 14.8],
-                                backgroundColor: 'pink',
-                              },
-                              {
-                                label: 'अनौपचारिक',
-                                data: [0, 0, 0, 66.7, 85.2],
-                                backgroundColor: '#00663d',
-                              }
-                          
-                            ]
-                          }" />
-
-                          <label class=" col-12 text-center">(सुदुरपश्चिममा)</label>
-
-                        </div>
-                        <div class="col-md-6">
-                          <bar :chart-options="{ responsive: true }" :chart-data="{
-                            labels: ['बेरोजगारी दर', 'श्रम शक्ति सजभागिता दर', 'जनसंख्या अनुपातमा रोजगार', 'रोजगारको क्षेत्र', 'रोजगार'],
-                            datasets: [
-                              {
-                                label: 'पुरुष',
-                                data: [10.3, 53.8, 48.3],
-                                backgroundColor: '#007bff',
-                              },
-                              {
-                                label: 'महिला',
-                                data: [13.1, 26.3, 0],
-                                backgroundColor: '#dc3545',
-                              },
-                              {
-                                label: 'औपचारिक',
-                                data: [0, 0, 0, 37.8, 15.4],
-                                backgroundColor: 'pink',
-                              },
-                              {
-                                label: 'अनौपचारिक',
-                                data: [0, 0, 0, 62.2, 84.6],
-                                backgroundColor: '#00663d',
-                              }
-                            ]
-                          }" />
-
-                          <label class="col-12 text-center">(नेपालमा)</label>
-
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-
-              </template>
-            </div>
-
-          </div>
+         
         </div>
 
       </div>
@@ -468,7 +390,86 @@
 
     </div>
 
+  <!-- ================= -->
+   <div class="row">
+            <div class="col-12">
+              <template>
+                <div class="col-md-12">
+                  <div class="chart-card">
+                    <div class="chart-body">
+                      <div class="chart-title mb-3">श्रम सम्बन्धि सूचक</div>
+                      <div class="row">
+                        <div class="col-md-6 mybar">
+                          <bar :chart-options="{ responsive: true }" :chart-data="{
+                            labels: ['बेरोजगारी दर', 'श्रम शक्ति सजभागिता दर', 'जनसंख्या अनुपातमा रोजगार', 'रोजगारको क्षेत्र', 'रोजगार'],
+                            datasets: [
+                              {
+                                label: 'पुरुष',
+                                data: [11.5, 45.6, 40.4,],
+                                backgroundColor: '#007bff',
+                              },
+                              {
+                                label: 'महिला',
+                                data: [11.5, 15.7, 0],
+                                backgroundColor: '#dc3545',
+                              },
+                              {
+                                label: 'औपचारिक',
+                                data: [0, 0, 0, 33.3, 14.8],
+                                backgroundColor: 'pink',
+                              },
+                              {
+                                label: 'अनौपचारिक',
+                                data: [0, 0, 0, 66.7, 85.2],
+                                backgroundColor: '#00663d',
+                              }
+                          
+                            ]
+                          }" />
 
+                          <label class=" col-12 text-center">(सुदुरपश्चिममा)</label>
+
+                        </div>
+                        <div class="col-md-6">
+                          <bar :chart-options="{ responsive: true }" :chart-data="{
+                            labels: ['बेरोजगारी दर', 'श्रम शक्ति सजभागिता दर', 'जनसंख्या अनुपातमा रोजगार', 'रोजगारको क्षेत्र', 'रोजगार'],
+                            datasets: [
+                              {
+                                label: 'पुरुष',
+                                data: [10.3, 53.8, 48.3],
+                                backgroundColor: '#007bff',
+                              },
+                              {
+                                label: 'महिला',
+                                data: [13.1, 26.3, 0],
+                                backgroundColor: '#dc3545',
+                              },
+                              {
+                                label: 'औपचारिक',
+                                data: [0, 0, 0, 37.8, 15.4],
+                                backgroundColor: 'pink',
+                              },
+                              {
+                                label: 'अनौपचारिक',
+                                data: [0, 0, 0, 62.2, 84.6],
+                                backgroundColor: '#00663d',
+                              }
+                            ]
+                          }" />
+
+                          <label class="col-12 text-center">(नेपालमा)</label>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </template>
+            </div>
+
+          </div>
   </div>
 </template>
 

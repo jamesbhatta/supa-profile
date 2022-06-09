@@ -396,7 +396,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n#unit-nav[data-v-3886a01a] {\n  position: fixed;\n  top: -100px;\n  display: block;\n  margin-left: -50px;\n}\n.unit-nav-list[data-v-3886a01a] {\n  margin-top: 20vh;\n\n  /* box-shadow: 5px 5px 10px #888888; */\n}\n.unit-nav-list li[data-v-3886a01a] {\n  list-style: none;\n}\n.unit-nav-list li a label[data-v-3886a01a] {\n  cursor: pointer;\n  margin-right: 20px;\n  margin-top: 5px;\n}\n.my-div[data-v-3886a01a] {\n  z-index: 1;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n#unit-nav[data-v-3886a01a] {\n  position: fixed;\n  top: -100px;\n  display: block;\n  margin-left: -50px;\n}\n.unit-nav-list[data-v-3886a01a] {\n  margin-top: 20vh;\n\n  /* box-shadow: 5px 5px 10px #888888; */\n}\n.unit-nav-list li[data-v-3886a01a] {\n  list-style: none;\n}\n.unit-nav-list li a label[data-v-3886a01a] {\n  cursor: pointer;\n  margin-right: 20px;\n  margin-top: 5px;\n}\n\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

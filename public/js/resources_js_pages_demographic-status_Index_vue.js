@@ -191,11 +191,68 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
       // 3.1
       geographicalPopulationData: {
+        id: 'table_1',
         title: "सुदूरपश्चिम प्रदेशका भौगोलिक क्षेत्रगत जनसंख्या तथा जनघनत्व विवरण",
         labels: ["क्षेत्र", "जनसङ्ख्या", "क्षेत्रफल (वर्ग कि.मि.)", "जनघनत्व(जना/वर्ग कि.मि.)"],
         data: [["हिमाली", 463345, 8393.11, 58], ["पहाडी", 862215, 6748.78, 128], ["तराई", 1226957, 4857.39, 253], //   [4, "जम्मा", 2552517, 19999.28,131],
@@ -210,12 +267,14 @@ __webpack_require__.r(__webpack_exports__);
       },
       // 3.1.1
       nationalcenses: {
+        id: 'table_2',
         title: "राष्ट्रिय जनगणना २०७८ को प्रारम्भिक तथ्याङ्क अनुसार",
         labels: ["क्र.स.", "क्षेत्र", "2078", "2068"],
         data: [[1, "जम्मा जनसंख्या", 2711270, 2552517], [2, "महिला", 1423273, 1334630], [3, "पुरुष", 1287997, 1217887], [4, "घरपरिवार", 587054, 469971], [5, "जनघनत्व", '126 (प्रति वर्ग किमि)', 131], [6, "लैङ्गिक अनुपात", 90.49, 91.25], [7, "जनसंख्या बृद्धिदर", 0.58, 1.53], [8, "औषत परिवारको आकार", 4.62, 5.43]]
       },
       // 3.1.2
       beginingcenses: {
+        id: 'table_3',
         title: "राष्ट्रिय जनगणना २०७८ को प्रारम्भिक तथ्याङ्क अनुसार जिल्लागत जनसंख्या विवरण",
         labels: ["क्षेत्र", "कुल जनसंख्या(२०६८)", "जनगणना घरसंख्या", "घरपरिवार संख्या", "जम्मा", "पुरुष", "महिला", "लैंगिक अनुपात", "औषत परिवार आकार", "वार्षिक वृद्धिदर(%)", "जनघनत्व र(प्रतिवग कि.मि.)"],
         data: [["नेपाल", 26494504, 5643945, 6761059, 29192480, 14291311, 14901169, 95.91, 4.32, 0.93, 198], ["सुदूरपश्चिमप्रदेश", "", 514059, 587054, 2711270, 1287997, 1423273, 90.49, 4.62, 0.58, 136], ["जिल्ला", "", "", "", "", "", "", "", "", "", ""], ["बाजुरा", 134912, 23891, 28922, 138998, 67608, 71390, 94.70, 4.81, 0.29, 64], ["बझाङ्ग", 195159, 32917, 38369, 189097, 88988, 100109, 88.89, 4.93, -0.3, 55], ["दार्चुला", 133274, 25200, 29186, 135056, 65349, 69707, 93.75, 4.66, 0.13, 58], ["बैतडी", 250898, 42288, 50472, 244400, 115426, 128974, 89.50, 4.84, -0.25, 161], ["डडेल्धुरा", 142094, 26503, 31608, 139420, 65930, 73490, 89.71, 4.41, -0.18, 91], ["डोटी", 211746, 36806, 46100, 205683, 95066, 110617, 85.94, 4.46, -0.28, 102], ["अछाम", 257477, 39375, 49969, 229816, 106240, 123576, 85.97, 4.60, -1.09, 137], ["कैलाली", 775709, 183707, 200528, 911155, 439792, 471363, 93.30, 4.54, 1.54, 282], ["कंञ्चनपुर", 451248, 103372, 111900, 517645, 243598, 274047, 88.89, 4.63, 1.32, 322]]
@@ -228,6 +287,7 @@ __webpack_require__.r(__webpack_exports__);
         }]
       },
       beginingcenses1: {
+        id: 'table_4',
         title: "राष्ट्रिय जनगणना २०७८ को प्रारम्भिक तथ्याङ्क अनुसार जिल्लागत जनसंख्या विवरण",
         labels: ["क्षेत्र", "जम्मा", "पुरुष", "महिला", "प्रतिशत"],
         data: [["नेपाल", 2169478, 1763315, 406163, ""], ["सुदूरपश्चिमप्रदेश", 346836, 253169, 93667, 15.99], ["जिल्ला", "", "", "", ""], ["बाजुरा", 15348, 10006, 5342, 0.71], ["बझाङ्ग", 35553, 22250, 13303, 1.64], ["दार्चुला", 7378, 6223, 1155, 0.34], ["बैतडी", 22789, 18269, 4520, 1.05], ["डडेल्धुरा", 15349, 12400, 2949, 0.71], ["डोटी", 29125, 23862, 5263, 1.34], ["अछाम", 44565, 30761, 13804, 2.05], ["कैलाली", 110651, 78536, 32115, 5.10], ["कंञ्चनपुर", 66078, 50862, 15216, 3.05]]
@@ -242,6 +302,7 @@ __webpack_require__.r(__webpack_exports__);
       },
       // 3.2
       districtpopulation: {
+        id: 'table_5',
         title: "जिल्लागत जनसंख्या वितरण",
         labels: ["जिल्ला", "घरपरिवार संख्या", "औषत परिवार संख्या", "महिला जनसङ्ख्या", "पुरुष जनसङ्ख्या", "जम्मा जनसङ्ख्या", "प्रदेशको कुल जनसंख्याका प्रतिशत", "लैङ्गिक अनुपात", "जनसंख्या बृद्धिदर", "जनघनत्व( प्रति वग कि.मि.)"],
         data: [["बाजुरा", 24908, 5.42, 69106, 65806, 134912, 5.28, 95.22, 2.15, 62], ["बझाङ्ग", 33786, 5.78, 102365, 92794, 195159, 7.64, 90.65, 1.56, 57], ["दार्चुला", 24618, 5.41, 69669, 63605, 133274, 5.22, 91.3, 0.88, 57], ["अछाम", 48351, 5.33, 137469, 120008, 257477, 10.08, 87.30, 1.07, 153], ["डोटी", 41440, 5.11, 114494, 97252, 211746, 8.29, 84.94, 0.22, 105], ["बैतडी", 45191, 5.55, 133491, 117407, 250898, 9.82, 87.95, 0.68, 165], ["डडेलधुरा", 27045, 5.25, 75538, 66556, 142094, 5.56, 88.11, 1.19, 92], ["कैलाली", 142480, 5.44, 397292, 378417, 775709, 30.38, 95.25, 2.29, 240], ["कञ्चनपुर", 82152, 5.49, 235206, 216042, 451248, 17.67, 91.85, 1.77, 280], ["सुदूरपश्चिम जम्मा", 469971, 5.43, 1334630, 1217887, 2552517, 100.0, 91.25, 1.53, 131], ["नेपालका जम्मा", 5427302, 4.88, 13645463, 12849041, 26494504, 9.63, 94.16, 1.35, 180]]
@@ -255,6 +316,7 @@ __webpack_require__.r(__webpack_exports__);
       },
       // 3.4
       religionpopulationData: {
+        id: 'table_6',
         title: "धर्मावलम्वीका आधारमा जिल्लागत विवरण",
         labels: ["जिल्ला", "जम्मा", "हिन्दु", "बौद्ध", "इश्लाम", "किराँत", "क्रिश्चियन", "प्रकृति", "अन्य"],
         data: [["बाजुरा", 134912, 133130, 1544, 100, 10, 82, 6, 40], ["बझाङ", 195159, 194656, 359, 8, 0, 51, 7, 79], ["दार्चुला", 133274, 131782, 1167, 31, 0, 74, 201, 19], ["बैतडी", 250898, 250727, 55, 21, 1, 54, 1, 39], ["डडेलधुरा", 142094, 140503, 1008, 37, 3, 473, 46, 24], ["डोटी", 211746, 209710, 1591, 116, 1, 273, 14, 41], ["अछाम", 257477, 256002, 776, 257, 2, 344, 1, 95], ["कैलाली", 775709, 736213, 15620, 4930, 86, 14493, 1710, 2657], ["कञ्चनपुर", 451248, 429082, 5183, 461, 25, 11962, 3699, 836], ["जम्मा", 2552517, 2481805, 27303, 5961, 128, 27806, 5685, 3829], [{
@@ -271,6 +333,7 @@ __webpack_require__.r(__webpack_exports__);
       },
       // 3.5
       supaandotherprovincedata: {
+        id: 'table_7',
         title: "सुदूरपश्चिम प्रदेश र अन्य प्रदेशमा रहेको जनसांख्यिक स्थिति",
         labels: ["प्रदेश", "जनसङ्ख्या", "प्रतिशत", "जनसंख्या बृद्धिदर"],
         data: [["प्रदेश न. १", 4534943, 17.1, 0.8], ["मधेश", 5404145, 20.4, 1.6], ["बाग्मती", 5529452, 20.9, 1.9], ["गण्डकी", 2403757, 9.1, 0.4], ["लुम्बिनी", 4499272, 17.0, 1.6], ["कर्णाली", 1570418, 5.9, 1.8], ["सुदूरपश्चिम", 2552517, 9.6, 1.53], ["नेपाल", 26494504, 100.0, 1.35]]
@@ -284,6 +347,7 @@ __webpack_require__.r(__webpack_exports__);
       },
       // 3.6
       jatjatidata: {
+        id: 'table_8',
         title: "जातजाती आधारमा रहेको जनसंख्या",
         labels: ["क्र.स.", "प्रदेश", "सङ्ख्या", "प्रतिशत"],
         data: [[1, "क्षेत्री", 1060365, 41.4], [2, "थारु", 439267, 17.2], [3, "ब्राह्मण-पहाड", 332223, 13.0], [4, "कामी", 210835, 8.3], [5, "ठकुरी", 113588, 4.5], [6, "अन्य दलित", 106248, 4.2], [7, "दमाई/ढोली ", 65624, 2.6], [8, "मगर", 56667, 2.2], [9, "सार्की", 42987, 1.7], [10, "लोहार", 30217, 1.2], [11, "अन्य", 94496, 3.7]]
@@ -297,6 +361,7 @@ __webpack_require__.r(__webpack_exports__);
       },
       // 3.7
       languagedata: {
+        id: 'table_9',
         title: "प्रखुम दश भाषाभाषी विवरण",
         labels: ["क्र.स.", "भाषा", "जनसंख्या", "प्रतिशत"],
         data: [[1, "डोटेली", 777247, 30.4], [2, "नेपाली", 770322, 30.2], [3, "थारु", 434304, 17.0], [4, "बैतडेली", 271838, 10.6], [5, "अछामी", 142516, 5.6], [6, "बझाङ्गी", 67440, 2.6], [7, "मगर", 23246, 0.9], [8, "बाजुरेली", 10685, 0.4], [9, "मैथली", 8895, 0.3], [10, "हिन्दी", 8294, 0.3]]
@@ -310,6 +375,7 @@ __webpack_require__.r(__webpack_exports__);
       },
       // 3.8
       laingikanupat: {
+        id: 'table_10',
         title: "स्थानीय तहको जनसंख्या, औषत घरपरिवार सदस्य संख्या र लैङ्गिक अनुपात विवरण",
         labels: ["क्र.स.", "बाजुरा", "घरपरिवार संख्या", "जम्मा", "पुरुष", "महिला", "औषत घरपरिवार सदस्य संख्या", "लैगिंक अनुपात", "महिला", "पुरुष", "जम्मा"],
         data: [[1, "बडिमालिका नगरपालिका", 3446, 16818, 8656, 8162, 4.88, 106.05, 75.0, 47.7, 62.1], [2, "बुढीगंगा नगरपालिका", 4277, 21677, 9975, 11702, 5.07, 85.24, 76.4, 46.6, 85.24], [3, "बुढीनन्दा नगरपालिका", 3452, 18776, 9351, 9425, 5.44, 99.21, 65.7, 73.8, 54.7], [4, "छेडेदह गाउँपालिका", 3174, 18575, 8797, 9778, 5.85, 89.97, 65.1, 35.6, 49.5], [5, "गौमूल गाउँपालिका", 1560, 8515, 4166, 4349, 5.46, 95.79, 65.8, 44.9, 55.2], [6, "हिमाली गाउँपालिका", 1722, 9214, 4625, 4589, 5.35, 100.78, 65.1, 38.8, 51.9], [7, "जगन्नाथ गाउँपालिका", 1684, 9432, 4651, 4781, 5.60, 97.28, 64.1, 43.2, 53.5], [8, "स्वामीकार्तिक गाउँपालिका", 2223, 12784, 6226, 6558, 5.75, 94.94, 64.4, 39.4, 51.5], [9, "त्रिबेणी नगरपालिका", 3350, 18363, 8631, 9732, 5.48, 88.68, 70.0, 47.1, 57.8], ["", "संस्थागत", 20, 758, 728, 30, "", "", "", ""], ["जम्मा", "", 24908, 134912, 65806, 69106, 5.42, 95.22, "", "", ""], [{
@@ -370,6 +436,7 @@ __webpack_require__.r(__webpack_exports__);
       },
       // 3.8.1
       AccordingtothePreliminaryDataofNationalCensus: {
+        id: 'table_11',
         title: "सुराष्ट्रिय जनगणना २०७८ को प्रारम्भिक तथ्यांक अनुसार स्थानीय तहको जनसंख्या",
         labels: ["क्र.स.", "बाजुरा", "परिवार संख्या", "जम्मा", "पुरुष", "महिला"],
         data: [[1, "बडिमालिका नगरपालिका", 4082, 18432, 9253, 9179], [2, "बुढीगंगा नगरपालिका", 4680, 20072, 9259, 10813], [3, "बुढीनन्दा नगरपालिका", 4317, 20745, 10214, 10531], [4, "खप्तड छेडेदह गाउँपालिका", 3627, 19274, 9326, 9948], [5, "गौमूल गाउँपालिका", 1731, 8765, 4373, 4392], [6, "हिमाली गाउँपालिका", 2092, 10503, 5284, 5219], [7, "जगन्नाथ गाउँपालिका", 1965, 10205, 4938, 5267], [8, "स्वामीकार्तिक खापर गाउँपालिका", 2392, 13013, 6593, 6420], [9, "त्रिबेणी नगरपालिका", 4036, 17989, 8368, 9321], //Bajhang start
@@ -495,402 +562,601 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { staticClass: "container py-5" },
-    [
-      _c("h1", { staticClass: "page-title" }, [_vm._v("जनसांख्यिक स्थिति")]),
-      _vm._v(" "),
-      _c(
-        "data-viewer",
-        { attrs: { data: _vm.geographicalPopulationData } },
-        [
-          _c("template", { slot: "chart" }, [
-            _c("div", { staticClass: "row" }, [
+  return _c("div", { staticClass: "container-fluid my-div" }, [
+    _c("div", { staticClass: "container-fluid py-5" }, [
+      _c("div", { staticClass: "row" }, [
+        _vm._m(0),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-xl-9 col-lg-8 col-md-12" }, [
+          _c(
+            "div",
+            { staticClass: "container py-5" },
+            [
+              _c("h1", { staticClass: "page-title" }, [
+                _vm._v("जनसांख्यिक स्थिति"),
+              ]),
+              _vm._v(" "),
               _c(
-                "div",
-                { staticClass: "col-md-6" },
+                "data-viewer",
+                { attrs: { data: _vm.geographicalPopulationData } },
                 [
-                  _c("pie-chart", {
-                    attrs: {
-                      "chart-data": _vm.geographicalPopulationChartData,
-                    },
-                  }),
+                  _c("template", { slot: "chart" }, [
+                    _c("div", { staticClass: "row" }, [
+                      _c(
+                        "div",
+                        { staticClass: "col-md-6" },
+                        [
+                          _c("pie-chart", {
+                            attrs: {
+                              "chart-data": _vm.geographicalPopulationChartData,
+                            },
+                          }),
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "col-md-6" },
+                        [
+                          _c("bar-chart", {
+                            attrs: {
+                              "chart-data": _vm.geographicalPopulationChartData,
+                            },
+                          }),
+                        ],
+                        1
+                      ),
+                    ]),
+                  ]),
                 ],
-                1
+                2
+              ),
+              _vm._v(" "),
+              _c("data-viewer", { attrs: { data: _vm.nationalcenses } }),
+              _vm._v(" "),
+              _c(
+                "data-viewer",
+                { attrs: { data: _vm.beginingcenses } },
+                [
+                  _c("template", { slot: "thead-top" }, [
+                    _c("tr", [
+                      _c("th", { attrs: { colspan: "4" } }),
+                      _vm._v(" "),
+                      _c(
+                        "th",
+                        {
+                          staticClass: "bg-light text-center font-weight-bold",
+                          attrs: { colspan: "3" },
+                        },
+                        [_vm._v("प्रारम्भिक जनसंख्या")]
+                      ),
+                    ]),
+                  ]),
+                  _vm._v(" "),
+                  _c("template", { slot: "chart" }, [
+                    _c("div", { staticClass: "row" }, [
+                      _c(
+                        "div",
+                        { staticClass: "col-md-6" },
+                        [
+                          _c("pie-chart", {
+                            attrs: {
+                              "chart-data": _vm.beginingcensesChartData,
+                            },
+                          }),
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "col-md-6" },
+                        [
+                          _c("bar-chart", {
+                            attrs: {
+                              "chart-data": _vm.beginingcensesChartData,
+                            },
+                          }),
+                        ],
+                        1
+                      ),
+                    ]),
+                  ]),
+                ],
+                2
               ),
               _vm._v(" "),
               _c(
-                "div",
-                { staticClass: "col-md-6" },
+                "data-viewer",
+                { attrs: { data: _vm.beginingcenses1 } },
                 [
-                  _c("bar-chart", {
-                    attrs: {
-                      "chart-data": _vm.geographicalPopulationChartData,
-                    },
-                  }),
+                  _c("template", { slot: "thead-top" }, [
+                    _c("tr", [
+                      _c("th", { attrs: { colspan: "1" } }),
+                      _vm._v(" "),
+                      _c(
+                        "th",
+                        {
+                          staticClass: "bg-light text-center font-weight-bold",
+                          attrs: { colspan: "3" },
+                        },
+                        [_vm._v("अनुपस्थित जनसंख्या ( प्रारम्भिक)")]
+                      ),
+                    ]),
+                  ]),
+                  _vm._v(" "),
+                  _c("template", { slot: "chart" }, [
+                    _c("div", { staticClass: "row" }, [
+                      _c(
+                        "div",
+                        { staticClass: "col-md-6" },
+                        [
+                          _c("pie-chart", {
+                            attrs: {
+                              "chart-data": _vm.beginingcenses1ChartData,
+                            },
+                          }),
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "col-md-6" },
+                        [
+                          _c("bar-chart", {
+                            attrs: {
+                              "chart-data": _vm.beginingcenses1ChartData,
+                            },
+                          }),
+                        ],
+                        1
+                      ),
+                    ]),
+                  ]),
                 ],
-                1
+                2
               ),
-            ]),
-          ]),
-        ],
-        2
-      ),
-      _vm._v(" "),
-      _c("div", { staticClass: "my-5" }),
-      _vm._v(" "),
-      _c("data-viewer", { attrs: { data: _vm.nationalcenses } }),
-      _vm._v(" "),
-      _c("div", { staticClass: "my-5" }),
-      _vm._v(" "),
-      _c(
-        "data-viewer",
-        { attrs: { data: _vm.beginingcenses } },
-        [
-          _c("template", { slot: "thead-top" }, [
-            _c("tr", [
-              _c("th", { attrs: { colspan: "4" } }),
               _vm._v(" "),
               _c(
-                "th",
+                "data-viewer",
+                { attrs: { data: _vm.districtpopulation } },
+                [
+                  _c("template", { slot: "thead-top" }, [
+                    _c("tr", [
+                      _c("th", { attrs: { colspan: "3" } }),
+                      _vm._v(" "),
+                      _c(
+                        "th",
+                        {
+                          staticClass: "bg-light text-center font-weight-bold",
+                          attrs: { colspan: "3" },
+                        },
+                        [_vm._v("जनसंख्या")]
+                      ),
+                    ]),
+                  ]),
+                  _vm._v(" "),
+                  _c("template", { slot: "chart" }, [
+                    _c("div", { staticClass: "row" }, [
+                      _c(
+                        "div",
+                        { staticClass: "col-md-6" },
+                        [
+                          _c("pie-chart", {
+                            attrs: {
+                              "chart-data": _vm.districtpopulationChartData,
+                            },
+                          }),
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "col-md-6" },
+                        [
+                          _c("bar-chart", {
+                            attrs: {
+                              "chart-data": _vm.districtpopulationChartData,
+                            },
+                          }),
+                        ],
+                        1
+                      ),
+                    ]),
+                  ]),
+                ],
+                2
+              ),
+              _vm._v(" "),
+              _c(
+                "data-viewer",
+                { attrs: { data: _vm.religionpopulationData } },
+                [
+                  _c("template", { slot: "chart" }, [
+                    _c("div", { staticClass: "row" }, [
+                      _c(
+                        "div",
+                        { staticClass: "col-md-6" },
+                        [
+                          _c("pie-chart", {
+                            attrs: {
+                              "chart-data": _vm.religionpopulationChartData,
+                            },
+                          }),
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "col-md-6" },
+                        [
+                          _c("bar-chart", {
+                            attrs: {
+                              "chart-data": _vm.religionpopulationChartData,
+                            },
+                          }),
+                        ],
+                        1
+                      ),
+                    ]),
+                  ]),
+                ],
+                2
+              ),
+              _vm._v(" "),
+              _c(
+                "data-viewer",
+                { attrs: { data: _vm.supaandotherprovincedata } },
+                [
+                  _c("template", { slot: "chart" }, [
+                    _c("div", { staticClass: "row" }, [
+                      _c(
+                        "div",
+                        { staticClass: "col-md-6" },
+                        [
+                          _c("pie-chart", {
+                            attrs: {
+                              "chart-data": _vm.supaandotherprovinceChartData,
+                            },
+                          }),
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "col-md-6" },
+                        [
+                          _c("bar-chart", {
+                            attrs: {
+                              "chart-data": _vm.supaandotherprovinceChartData,
+                            },
+                          }),
+                        ],
+                        1
+                      ),
+                    ]),
+                  ]),
+                ],
+                2
+              ),
+              _vm._v(" "),
+              _c(
+                "data-viewer",
+                { attrs: { data: _vm.jatjatidata } },
+                [
+                  _c("template", { slot: "chart" }, [
+                    _c("div", { staticClass: "row" }, [
+                      _c(
+                        "div",
+                        { staticClass: "col-md-6" },
+                        [
+                          _c("pie-chart", {
+                            attrs: { "chart-data": _vm.jatjatidataChartData },
+                          }),
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "col-md-6" },
+                        [
+                          _c("bar-chart", {
+                            attrs: { "chart-data": _vm.jatjatidataChartData },
+                          }),
+                        ],
+                        1
+                      ),
+                    ]),
+                  ]),
+                ],
+                2
+              ),
+              _vm._v(" "),
+              _c(
+                "data-viewer",
+                { attrs: { data: _vm.languagedata } },
+                [
+                  _c("template", { slot: "chart" }, [
+                    _c("div", { staticClass: "row" }, [
+                      _c(
+                        "div",
+                        { staticClass: "col-md-6" },
+                        [
+                          _c("pie-chart", {
+                            attrs: { "chart-data": _vm.languageChartData },
+                          }),
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "col-md-6" },
+                        [
+                          _c("bar-chart", {
+                            attrs: { "chart-data": _vm.languageChartData },
+                          }),
+                        ],
+                        1
+                      ),
+                    ]),
+                  ]),
+                ],
+                2
+              ),
+              _vm._v(" "),
+              _c(
+                "data-viewer",
+                { attrs: { data: _vm.laingikanupat } },
+                [
+                  _c("template", { slot: "thead-top" }, [
+                    _c("tr", [
+                      _c(
+                        "th",
+                        {
+                          staticClass: "bg-light text-center font-weight-bold",
+                          attrs: { colspan: "2" },
+                        },
+                        [_vm._v("जिल्ला")]
+                      ),
+                      _vm._v(" "),
+                      _c("th", { attrs: { colspan: "6" } }),
+                      _vm._v(" "),
+                      _c(
+                        "th",
+                        {
+                          staticClass: "bg-light text-center font-weight-bold",
+                          attrs: { colspan: "3" },
+                        },
+                        [_vm._v("साक्षरता (प्रतिशत)")]
+                      ),
+                    ]),
+                  ]),
+                ],
+                2
+              ),
+              _vm._v(" "),
+              _c(
+                "data-viewer",
                 {
-                  staticClass: "bg-light text-center font-weight-bold",
-                  attrs: { colspan: "3" },
+                  attrs: {
+                    data: _vm.AccordingtothePreliminaryDataofNationalCensus,
+                  },
                 },
-                [_vm._v("प्रारम्भिक जनसंख्या")]
-              ),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("template", { slot: "chart" }, [
-            _c("div", { staticClass: "row" }, [
-              _c(
-                "div",
-                { staticClass: "col-md-6" },
                 [
-                  _c("pie-chart", {
-                    attrs: { "chart-data": _vm.beginingcensesChartData },
-                  }),
+                  _c("template", { slot: "thead-top" }, [
+                    _c("tr", [
+                      _c(
+                        "th",
+                        {
+                          staticClass: "bg-light text-center font-weight-bold",
+                          attrs: { colspan: "2" },
+                        },
+                        [_vm._v("जिल्ला ")]
+                      ),
+                    ]),
+                  ]),
                 ],
-                1
+                2
               ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "col-md-6" },
-                [
-                  _c("bar-chart", {
-                    attrs: { "chart-data": _vm.beginingcensesChartData },
-                  }),
-                ],
-                1
-              ),
-            ]),
-          ]),
-        ],
-        2
-      ),
-      _vm._v(" "),
-      _c("div", { staticClass: "my-5" }),
-      _vm._v(" "),
-      _c(
-        "data-viewer",
-        { attrs: { data: _vm.beginingcenses1 } },
-        [
-          _c("template", { slot: "thead-top" }, [
-            _c("tr", [
-              _c("th", { attrs: { colspan: "1" } }),
-              _vm._v(" "),
-              _c(
-                "th",
-                {
-                  staticClass: "bg-light text-center font-weight-bold",
-                  attrs: { colspan: "3" },
-                },
-                [_vm._v("अनुपस्थित जनसंख्या ( प्रारम्भिक)")]
-              ),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("template", { slot: "chart" }, [
-            _c("div", { staticClass: "row" }, [
-              _c(
-                "div",
-                { staticClass: "col-md-6" },
-                [
-                  _c("pie-chart", {
-                    attrs: { "chart-data": _vm.beginingcenses1ChartData },
-                  }),
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "col-md-6" },
-                [
-                  _c("bar-chart", {
-                    attrs: { "chart-data": _vm.beginingcenses1ChartData },
-                  }),
-                ],
-                1
-              ),
-            ]),
-          ]),
-        ],
-        2
-      ),
-      _vm._v(" "),
-      _c("div", { staticClass: "my-5" }),
-      _vm._v(" "),
-      _c(
-        "data-viewer",
-        { attrs: { data: _vm.districtpopulation } },
-        [
-          _c("template", { slot: "thead-top" }, [
-            _c("tr", [
-              _c("th", { attrs: { colspan: "3" } }),
-              _vm._v(" "),
-              _c(
-                "th",
-                {
-                  staticClass: "bg-light text-center font-weight-bold",
-                  attrs: { colspan: "3" },
-                },
-                [_vm._v("जनसंख्या")]
-              ),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("template", { slot: "chart" }, [
-            _c("div", { staticClass: "row" }, [
-              _c(
-                "div",
-                { staticClass: "col-md-6" },
-                [
-                  _c("pie-chart", {
-                    attrs: { "chart-data": _vm.districtpopulationChartData },
-                  }),
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "col-md-6" },
-                [
-                  _c("bar-chart", {
-                    attrs: { "chart-data": _vm.districtpopulationChartData },
-                  }),
-                ],
-                1
-              ),
-            ]),
-          ]),
-        ],
-        2
-      ),
-      _vm._v(" "),
-      _c("div", { staticClass: "my-5" }),
-      _vm._v(" "),
-      _c(
-        "data-viewer",
-        { attrs: { data: _vm.religionpopulationData } },
-        [
-          _c("template", { slot: "chart" }, [
-            _c("div", { staticClass: "row" }, [
-              _c(
-                "div",
-                { staticClass: "col-md-6" },
-                [
-                  _c("pie-chart", {
-                    attrs: { "chart-data": _vm.religionpopulationChartData },
-                  }),
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "col-md-6" },
-                [
-                  _c("bar-chart", {
-                    attrs: { "chart-data": _vm.religionpopulationChartData },
-                  }),
-                ],
-                1
-              ),
-            ]),
-          ]),
-        ],
-        2
-      ),
-      _vm._v(" "),
-      _c("div", { staticClass: "my-5" }),
-      _vm._v(" "),
-      _c(
-        "data-viewer",
-        { attrs: { data: _vm.supaandotherprovincedata } },
-        [
-          _c("template", { slot: "chart" }, [
-            _c("div", { staticClass: "row" }, [
-              _c(
-                "div",
-                { staticClass: "col-md-6" },
-                [
-                  _c("pie-chart", {
-                    attrs: { "chart-data": _vm.supaandotherprovinceChartData },
-                  }),
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "col-md-6" },
-                [
-                  _c("bar-chart", {
-                    attrs: { "chart-data": _vm.supaandotherprovinceChartData },
-                  }),
-                ],
-                1
-              ),
-            ]),
-          ]),
-        ],
-        2
-      ),
-      _vm._v(" "),
-      _c("div", { staticClass: "my-5" }),
-      _vm._v(" "),
-      _c(
-        "data-viewer",
-        { attrs: { data: _vm.jatjatidata } },
-        [
-          _c("template", { slot: "chart" }, [
-            _c("div", { staticClass: "row" }, [
-              _c(
-                "div",
-                { staticClass: "col-md-6" },
-                [
-                  _c("pie-chart", {
-                    attrs: { "chart-data": _vm.jatjatidataChartData },
-                  }),
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "col-md-6" },
-                [
-                  _c("bar-chart", {
-                    attrs: { "chart-data": _vm.jatjatidataChartData },
-                  }),
-                ],
-                1
-              ),
-            ]),
-          ]),
-        ],
-        2
-      ),
-      _vm._v(" "),
-      _c("div", { staticClass: "my-5" }),
-      _vm._v(" "),
-      _c(
-        "data-viewer",
-        { attrs: { data: _vm.languagedata } },
-        [
-          _c("template", { slot: "chart" }, [
-            _c("div", { staticClass: "row" }, [
-              _c(
-                "div",
-                { staticClass: "col-md-6" },
-                [
-                  _c("pie-chart", {
-                    attrs: { "chart-data": _vm.languageChartData },
-                  }),
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "col-md-6" },
-                [
-                  _c("bar-chart", {
-                    attrs: { "chart-data": _vm.languageChartData },
-                  }),
-                ],
-                1
-              ),
-            ]),
-          ]),
-        ],
-        2
-      ),
-      _vm._v(" "),
-      _c("div", { staticClass: "my-5" }),
-      _vm._v(" "),
-      _c(
-        "data-viewer",
-        { attrs: { data: _vm.laingikanupat } },
-        [
-          _c("template", { slot: "thead-top" }, [
-            _c("tr", [
-              _c(
-                "th",
-                {
-                  staticClass: "bg-light text-center font-weight-bold",
-                  attrs: { colspan: "2" },
-                },
-                [_vm._v("जिल्ला")]
-              ),
-              _vm._v(" "),
-              _c("th", { attrs: { colspan: "6" } }),
-              _vm._v(" "),
-              _c(
-                "th",
-                {
-                  staticClass: "bg-light text-center font-weight-bold",
-                  attrs: { colspan: "3" },
-                },
-                [_vm._v("साक्षरता (प्रतिशत)")]
-              ),
-            ]),
-          ]),
-        ],
-        2
-      ),
-      _vm._v(" "),
-      _c("div", { staticClass: "my-5" }),
-      _vm._v(" "),
-      _c(
-        "data-viewer",
-        { attrs: { data: _vm.AccordingtothePreliminaryDataofNationalCensus } },
-        [
-          _c("template", { slot: "thead-top" }, [
-            _c("tr", [
-              _c(
-                "th",
-                {
-                  staticClass: "bg-light text-center font-weight-bold",
-                  attrs: { colspan: "2" },
-                },
-                [_vm._v("जिल्ला ")]
-              ),
-            ]),
-          ]),
-        ],
-        2
-      ),
-    ],
-    1
-  )
+            ],
+            1
+          ),
+        ]),
+      ]),
+    ]),
+  ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "col-xl-2 col-lg-3 col-md-4 side-client-menus" },
+      [
+        _c(
+          "div",
+          { staticClass: "col-xl-12 col-lg-12 col-md-12 main-content" },
+          [
+            _c("div", { staticStyle: { height: "80px" } }),
+            _vm._v(" "),
+            _c("div", { staticClass: "list-set" }, [
+              _c("ul", { staticClass: "table-list " }, [
+                _c("li", { staticClass: "my-3" }, [
+                  _c(
+                    "a",
+                    {
+                      attrs: {
+                        href: "http://localhost:3000/demographic-status/#table_1",
+                      },
+                    },
+                    [
+                      _vm._v(
+                        "सुदूरपश्चिम प्रदेशका भौगोलिक क्षेत्रगत जनसंख्या तथा जनघनत्व विवरण"
+                      ),
+                    ]
+                  ),
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "my-3" }, [
+                  _c(
+                    "a",
+                    {
+                      attrs: {
+                        href: "http://localhost:3000/demographic-status/#table_2",
+                      },
+                    },
+                    [
+                      _vm._v(
+                        "राष्ट्रिय जनगणना २०७८ को प्रारम्भिक तथ्याङ्क अनुसार"
+                      ),
+                    ]
+                  ),
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "my-3" }, [
+                  _c(
+                    "a",
+                    {
+                      attrs: {
+                        href: "http://localhost:3000/demographic-status/#table_3",
+                      },
+                    },
+                    [
+                      _vm._v(
+                        "राष्ट्रिय जनगणना २०७८ को प्रारम्भिक तथ्याङ्क अनुसार जिल्लागत जनसंख्या विवरण"
+                      ),
+                    ]
+                  ),
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "my-3" }, [
+                  _c(
+                    "a",
+                    {
+                      attrs: {
+                        href: "http://localhost:3000/demographic-status/#table_4",
+                      },
+                    },
+                    [
+                      _vm._v(
+                        "राष्ट्रिय जनगणना २०७८ को प्रारम्भिक तथ्याङ्क अनुसार जिल्लागत जनसंख्या विवरण"
+                      ),
+                    ]
+                  ),
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "my-3" }, [
+                  _c(
+                    "a",
+                    {
+                      attrs: {
+                        href: "http://localhost:3000/demographic-status/#table_5",
+                      },
+                    },
+                    [_vm._v("जिल्लागत जनसंख्या वितरण")]
+                  ),
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "my-3" }, [
+                  _c(
+                    "a",
+                    {
+                      attrs: {
+                        href: "http://localhost:3000/demographic-status/#table_6",
+                      },
+                    },
+                    [_vm._v("धर्मावलम्वीका आधारमा जिल्लागत विवरण")]
+                  ),
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "my-3" }, [
+                  _c(
+                    "a",
+                    {
+                      attrs: {
+                        href: "http://localhost:3000/demographic-status/#table_7",
+                      },
+                    },
+                    [
+                      _vm._v(
+                        "सुदूरपश्चिम प्रदेश र अन्य प्रदेशमा रहेको जनसांख्यिक स्थिति"
+                      ),
+                    ]
+                  ),
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "my-3" }, [
+                  _c(
+                    "a",
+                    {
+                      attrs: {
+                        href: "http://localhost:3000/demographic-status/#table_8",
+                      },
+                    },
+                    [_vm._v("जातजाती आधारमा रहेको जनसंख्या")]
+                  ),
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "my-3" }, [
+                  _c(
+                    "a",
+                    {
+                      attrs: {
+                        href: "http://localhost:3000/demographic-status/#table_9",
+                      },
+                    },
+                    [_vm._v("प्रखुम दश भाषाभाषी विवरण")]
+                  ),
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "my-3" }, [
+                  _c(
+                    "a",
+                    {
+                      attrs: {
+                        href: "http://localhost:3000/demographic-status/#table_10",
+                      },
+                    },
+                    [
+                      _vm._v(
+                        "स्थानीय तहको जनसंख्या, औषत घरपरिवार सदस्य संख्या र लैङ्गिक अनुपात विवरण"
+                      ),
+                    ]
+                  ),
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "my-3" }, [
+                  _c(
+                    "a",
+                    {
+                      attrs: {
+                        href: "http://localhost:3000/demographic-status/#table_11",
+                      },
+                    },
+                    [
+                      _vm._v(
+                        "सुराष्ट्रिय जनगणना २०७८ को प्रारम्भिक तथ्यांक अनुसार स्थानीय तहको जनसंख्या"
+                      ),
+                    ]
+                  ),
+                ]),
+              ]),
+            ]),
+          ]
+        ),
+      ]
+    )
+  },
+]
 render._withStripped = true
 
 
