@@ -1,30 +1,80 @@
 <template>
-  <div class="container py-5">
-    <h1 class="page-title">विविध</h1>
-    <data-viewer :data="paritbidheyak"></data-viewer>
-    <data-viewer :data="DetailsofLocalLevelintheFarWest">
-      <template slot="thead-top">
-        <tr>
-          <th colspan="2" class="bg-light text-center font-weight-bold">जिल्ला </th>
-        </tr>
-      </template>
-    </data-viewer>
-    <div class="my-5"></div>
 
-    <data-viewer
-      :data="StatusofHealthManpoweFarWesternProvincialPoliceOfficeandSubordinatePoliceUnitOfficesrUndertheHospital">
-    </data-viewer>
-    <div class="my-5"></div>
-    <data-viewer :data="parmanentunit"></data-viewer>
-    <div class="my-5"></div>
-    <data-viewer :data="p1armanentunithjkh"></data-viewer>
-    <div class="my-5"></div>
-    <data-viewer :data="temporaryunit"></data-viewer>
-    <div class="my-5"></div>
-    <data-viewer :data="fobbibaran"></data-viewer>
-    <div class="my-5"></div>
-    <data-viewer :data="territorialGeographicalAreaData"></data-viewer>
+  <div class="container-fluid my-div">
+    <div class="container-fluid py-5">
+      <div class="row">
+        <div class="col-xl-2 col-lg-3 col-md-4 side-client-menus">
+
+          <div class="col-xl-12 col-lg-12 col-md-12 main-content">
+            <div style="height: 80px;"></div>
+            <div class="list-set">
+              <ul class="table-list " style="overflow: scroll;">
+                <li class="my-3">
+                  <a href="http://localhost:3000/miscellaneous/#table_1">सुदूरपश्चिम प्रदेशसभाद्धारा हालसम्म पारित भएका विधेयकहरु</a>
+                </li>
+
+                <li class="my-3">
+                  <a href="http://localhost:3000/miscellaneous/#table_2">सुदूरपश्चिममा रहेका स्थानीय तहको विवरण</a>
+                </li>
+
+                <li class="my-3">
+                  <a href="http://localhost:3000/miscellaneous/#supa_police">सुदूरपश्चिम प्रदेश प्रहरी कार्यालयहरु तथा मातहतका प्रहरी ईकाई कार्यालयहरु</a>
+                </li>
+
+                <li class="my-3">
+                  <a href="http://localhost:3000/miscellaneous/#table_4">स्थायी युनिट (दरबन्दी स्वीकृत भएको)</a>
+                </li>
+
+                <li class="my-3">
+                  <a href="http://localhost:3000/miscellaneous/#table_5">अस्थायी युनिट (दरबन्दी स्वीकृत नभएको)</a>
+                </li>
+
+                 <li class="my-3">
+                  <a href="http://localhost:3000/miscellaneous/#table_5">FOB को बिवरण</a>
+                </li>
+
+                 <li class="my-3">
+                  <a href="http://localhost:3000/miscellaneous/#table_5">प्रदेश सरकार मातहतका मन्त्रालय, आयोग, निर्देशनालय र कार्यालयको विवरण</a>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-xl-8 col-lg-7 col-md-12">
+          <div class="container py-5">
+            <h1 class="page-title">विविध</h1>
+            <data-viewer :data="paritbidheyak"></data-viewer>
+            <data-viewer :data="DetailsofLocalLevelintheFarWest">
+              <template slot="thead-top">
+                <tr>
+                  <th colspan="2" class="bg-light text-center font-weight-bold">जिल्ला </th>
+                </tr>
+              </template>
+            </data-viewer>
+            <div class="my-5"></div>
+
+            <data-viewer
+              :data="StatusofHealthManpoweFarWesternProvincialPoliceOfficeandSubordinatePoliceUnitOfficesrUndertheHospital">
+            </data-viewer>
+            <div class="my-5"></div>
+            <data-viewer :data="parmanentunit"></data-viewer>
+            <div class="my-5"></div>
+            <data-viewer :data="p1armanentunithjkh"></data-viewer>
+            <div class="my-5"></div>
+            <data-viewer :data="temporaryunit"></data-viewer>
+            <div class="my-5"></div>
+            <data-viewer :data="fobbibaran"></data-viewer>
+            <div class="my-5"></div>
+            <data-viewer :data="territorialGeographicalAreaData"></data-viewer>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+
 </template>
 
 <script>
@@ -33,6 +83,7 @@ export default {
     return {
       // 12.1
       paritbidheyak: {
+        id:'table_1',
         title: "सुदूरपश्चिम प्रदेशसभाद्धारा हालसम्म पारित भएका विधेयकहरु",
         labels: ["क्रस", "प्रमाणिकरण भएका विधेयक", "प्रदेश सभाबाट विधेयक पारित मिति"],
         data: [
@@ -95,6 +146,7 @@ export default {
       },
 
       DetailsofLocalLevelintheFarWest: {
+        id:'table_2',
         title: "सुदूरपश्चिममा रहेका स्थानीय तहको विवरण",
         labels: [
           "क्र.स.",
@@ -320,7 +372,7 @@ export default {
       },
 
       StatusofHealthManpoweFarWesternProvincialPoliceOfficeandSubordinatePoliceUnitOfficesrUndertheHospital: {
-        id:"supa_police",
+        id: "supa_police",
         title: "सुदूरपश्चिम प्रदेश प्रहरी कार्यालयहरु तथा मातहतका प्रहरी ईकाई कार्यालयहरु",
         labels: ["सि.नं.", "कार्यालयको नाम", "कार्यालयको टेलिफोन नं."],
         data: [
@@ -499,6 +551,7 @@ export default {
         ],
       },
       p1armanentunithjkh: {
+        id:'table_4',
         title: "स्थायी युनिट (दरबन्दी स्वीकृत भएको)",
         labels: ["क्रस", "युनिटको नाम", "युनिट स्थापना मिति", "जिल्ला", "गापा/नपाको नाम", "सम्पर्क  नम्बर"],
         data: [
@@ -511,11 +564,12 @@ export default {
           [7, "नं. ४९ गुल्म हेक्वा अछाम", "२०६७।०१।१५", "अछाम", "साँफेबगर नपा- ७ गुनडाँडा", "०९७-६२५००२/९८५१२७२२११"],
           [8, "नं. ५० गुल्म हेक्वा छाङ्गरुङ्ग,दार्चुला", "२०७७।०६।०९", "दार्चुला", "ब्याँस गापा- १ छाङ्गरु", "९९४९३००४६/९९४९३००४७"],
           [9, "नं. ५१ गुल्म हेक्वा बैतडी", "२०७५।०६।०८", "बैतडी", "दिरथचन्द नपा-४ गढी", "०९५-५२०१६३"],
-          [10, "नं. ५१ गुल्म हेक्वा डडेल्धुरा", "२०७४।११।१६","डडेल्धुरा", "अमरगढी नपा- ७ खलङ्गा", "९८५१२७२५१३"],
+          [10, "नं. ५१ गुल्म हेक्वा डडेल्धुरा", "२०७४।११।१६", "डडेल्धुरा", "अमरगढी नपा- ७ खलङ्गा", "९८५१२७२५१३"],
           [11, "मद्दती तथा सेवा गुल्म कैलाली", "२०७७।०५।२२", "कैलाली", "गोदािरी नपा-१ अत्तरीया", "९८५१२७२७५०"],
         ],
       },
       temporaryunit: {
+        id:'table_5',
         title: "अस्थायी युनिट (दरबन्दी स्वीकृत नभएको)",
         labels: ["क्रस", "युनिटको नाम", "युनिट स्थापना मिति", "जिल्ला", "गापा/नपाको नाम", "दरबन्दी"],
         data: [
@@ -580,6 +634,7 @@ export default {
       },
       // fobbibaran
       fobbibaran: {
+        id:'table_6',
         title: "FOB को बिवरण",
         labels: ["क्र.स.", "युनिटको नाम", "युनिट स्थापना मिति", "जिल्ला", "गापा/नपाको नाम", "दरबन्दी"],
         data: [
@@ -593,6 +648,7 @@ export default {
         ],
       },
       territorialGeographicalAreaData: {
+        id:'table_7',
         title: "प्रदेश सरकार मातहतका मन्त्रालय, आयोग, निर्देशनालय र कार्यालयको विवरण",
         labels: ["क्र.स.", "कार्यायलको नाम", "सम्पर्क नम्बर", "इमेल"],
         data: [

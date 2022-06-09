@@ -1,20 +1,64 @@
 <template>
-    <div class="container py-5">
-        <h1 class="page-title">पर्यटन विकास</h1>
-        <data-viewer :data="DistrictWiseDetailsOfMajorTouristDestinationsintheFarWest"></data-viewer>
-        <div class="my-5"></div>
-        <data-viewer :data="OccupancyandEmploymentDetailsof5TouristHotelsSelectedasSample"></data-viewer>
-        <div class="my-5"></div>
-        <data-viewer :data="HomestaysRegisteredintheFarWest"></data-viewer>
-        <div class="my-5"></div>
-        <data-viewer :data="ToursandTravelsintheFarWest"></data-viewer>
+    <div class="container-fluid my-div">
+        <div class="container-fluid py-5">
+            <div class="row">
+                <div class="col-xl-2 col-lg-3 col-md-4 side-client-menus">
+
+                    <div class="col-xl-12 col-lg-12 col-md-12 main-content">
+                        <div style="height: 80px;"></div>
+                        <div class="list-set">
+                            <ul class="table-list " style="overflow: scroll;">
+                                <li class="my-3">
+                                    <a href="http://localhost:3000/status-of-tourism-development/#table_1">सुदूरपश्चिममा
+                                        रहेका प्रमुख पर्यटकीय गन्तब्यहरुको जिल्लागत विवरण</a>
+                                </li>
+
+                                <li class="my-3">
+                                    <a href="http://localhost:3000/status-of-tourism-development/#table_2">नमुनाको रुपमा
+                                        छनोट गरिएका ५ वटा पर्यटकस्तरीय होटलहरुको अकुपेन्सी तथा रोजगारी विवरण</a>
+                                </li>
+
+                                <li class="my-3">
+                                    <a href="http://localhost:3000/status-of-tourism-development/#table_3">सुदूरपश्चिममा
+                                        दर्ता रहेका होमस्टे</a>
+                                </li>
+
+                                <li class="my-3">
+                                    <a href="http://localhost:3000/status-of-tourism-development/#table_4">सुदूरपश्चिममा
+                                        रहेको टुर्स एण्ड ट्राभल्स</a>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-xl-8 col-lg-7 col-md-12">
+                    <div class="container py-5">
+                        <h1 class="page-title">पर्यटन विकास</h1>
+                        <data-viewer :data="DistrictWiseDetailsOfMajorTouristDestinationsintheFarWest"></data-viewer>
+
+                        <data-viewer :data="OccupancyandEmploymentDetailsof5TouristHotelsSelectedasSample">
+                        </data-viewer>
+
+                        <data-viewer :data="HomestaysRegisteredintheFarWest"></data-viewer>
+
+                        <data-viewer :data="ToursandTravelsintheFarWest"></data-viewer>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
 </template>
 <script>
 export default {
     data() {
         return {
             DistrictWiseDetailsOfMajorTouristDestinationsintheFarWest: {
+                id:'table_1',
                 title: "सुदूरपश्चिममा रहेका प्रमुख पर्यटकीय गन्तब्यहरुको जिल्लागत विवरण",
                 labels: ["क्र.स.", "जिल्ला", "पर्यटकीय गन्तब्यहरु"],
                 data: [
@@ -30,6 +74,7 @@ export default {
                 ],
             },
             OccupancyandEmploymentDetailsof5TouristHotelsSelectedasSample: {
+                id:'table_2',
                 title: "नमुनाको रुपमा छनोट गरिएका ५ वटा पर्यटकस्तरीय होटलहरुको अकुपेन्सी तथा रोजगारी विवरण",
                 labels: [" ", "विवरण", "आ.व २०७७/७८"],
                 data: [
@@ -44,6 +89,7 @@ export default {
                 ],
             },
             HomestaysRegisteredintheFarWest: {
+                id:'table_3',
                 title: "सुदूरपश्चिममा दर्ता रहेका होमस्टे",
                 labels: ["क्र.स", "नाम", "ठेगाना", "किसिम"],
                 data: [
@@ -63,6 +109,7 @@ export default {
                 ],
             },
             ToursandTravelsintheFarWest: {
+                id:'table_4',
                 title: "सुदूरपश्चिममा रहेको टुर्स एण्ड ट्राभल्स",
                 labels: ["क्र.स", "नाम", "ठेगाना", "किसिम"],
                 data: [
