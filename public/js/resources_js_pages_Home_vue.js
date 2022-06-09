@@ -475,6 +475,18 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 chart_js__WEBPACK_IMPORTED_MODULE_0__.Chart.register(chart_js__WEBPACK_IMPORTED_MODULE_0__.Title, chart_js__WEBPACK_IMPORTED_MODULE_0__.Tooltip, chart_js__WEBPACK_IMPORTED_MODULE_0__.Legend, chart_js__WEBPACK_IMPORTED_MODULE_0__.BarElement, chart_js__WEBPACK_IMPORTED_MODULE_0__.CategoryScale, chart_js__WEBPACK_IMPORTED_MODULE_0__.LinearScale, chart_js__WEBPACK_IMPORTED_MODULE_0__.ArcElement);
@@ -1003,6 +1015,8 @@ var render = function () {
                       _c("div", { staticClass: "row" }, [
                         _c("div", { staticClass: "card" }, [
                           _c("div", { staticClass: "row" }, [
+                            _vm._m(3),
+                            _vm._v(" "),
                             _c(
                               "div",
                               { staticClass: "col-md-4" },
@@ -1011,7 +1025,7 @@ var render = function () {
                                   attrs: {
                                     "chart-options": { responsive: true },
                                     "chart-data": {
-                                      labels: ["2068", "2078"],
+                                      // labels: ['2068', '2078'],
                                       datasets: [
                                         {
                                           backgroundColor: [
@@ -1042,7 +1056,7 @@ var render = function () {
                                   attrs: {
                                     "chart-options": { responsive: true },
                                     "chart-data": {
-                                      labels: ["2068", "2078"],
+                                      // labels: ['2068', '2078'],
                                       datasets: [
                                         {
                                           backgroundColor: [
@@ -1073,7 +1087,7 @@ var render = function () {
                                   attrs: {
                                     "chart-options": { responsive: true },
                                     "chart-data": {
-                                      labels: ["2068", "2078"],
+                                      // labels: ['2068', '2078'],
                                       datasets: [
                                         {
                                           backgroundColor: [
@@ -1419,6 +1433,18 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "text-center year" }, [
       _c("label", { attrs: { for: "" } }, [_vm._v("2078")]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "container" }, [
+      _c("div", { staticClass: "row col-12" }, [
+        _c("div", { staticClass: "data2068 col-6" }, [_c("div")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "data2078 col-6" }, [_c("div")]),
+      ]),
     ])
   },
 ]

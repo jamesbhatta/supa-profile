@@ -237,9 +237,21 @@
                     <div class="row">
                       <div class="card">
                         <div class="row">
+                          <div class="container">
+                              <div class="row col-12">
+                                  <div class="data2068 col-6">
+                                      <div></div>
+                                  </div>
+                                  <div class="data2078 col-6">
+                                    <div></div>
+                                  </div>
+                                  
+                              </div>
+                            </div>
                           <div class="col-md-4">
+                            
                             <Pie :chart-options="{ responsive: true }" :chart-data="{
-                              labels: ['2068', '2078'],
+                              // labels: ['2068', '2078'],
                               datasets: [
                                 {
                                   backgroundColor: ['#007bff', '#dc3545'],
@@ -254,7 +266,7 @@
 
                           <div class="col-md-4">
                             <Pie :chart-options="{ responsive: true }" :chart-data="{
-                              labels: ['2068', '2078'],
+                              // labels: ['2068', '2078'],
                               datasets: [
                                 {
                                   backgroundColor: ['#007bff', '#dc3545'],
@@ -269,7 +281,7 @@
 
                           <div class="col-md-4">
                             <Pie :chart-options="{ responsive: true }" :chart-data="{
-                              labels: ['2068', '2078'],
+                              // labels: ['2068', '2078'],
                               datasets: [
                                 {
                                   backgroundColor: ['#007bff', '#dc3545'],
@@ -412,35 +424,35 @@
 
                       <div class="col-md-3">
                         <bar :chart-options="{ responsive: true }" :chart-data="{
-                            labels: ['खना पकाउने', 'वत्तीवाल्ने'],
-                            datasets: [
-                              {
-                                label: 'दाउरा',
-                                data: [98.57],
-                                backgroundColor: '#007bff',
-                              },
-                              {
-                                label: 'एलपिजीग्याँस',
-                                data: [1.07],
-                                backgroundColor: '#dc3545',
-                              },
-                              {
-                                label: 'अन्यः',
-                                data: [0.36],
-                                backgroundColor: 'pink',
-                              },
-                              {
-                                label: 'विजुली',
-                                data: [0,64.69],
-                                backgroundColor: '#00663d',
-                              },
+                          labels: ['खना पकाउने', 'वत्तीवाल्ने'],
+                          datasets: [
                             {
-                              label:'वैकल्पिक उर्जा',
-                              data:[0,3],
-                              backgroundColor:'yellow'
+                              label: 'दाउरा',
+                              data: [98.57],
+                              backgroundColor: '#007bff',
+                            },
+                            {
+                              label: 'एलपिजीग्याँस',
+                              data: [1.07],
+                              backgroundColor: '#dc3545',
+                            },
+                            {
+                              label: 'अन्यः',
+                              data: [0.36],
+                              backgroundColor: 'pink',
+                            },
+                            {
+                              label: 'विजुली',
+                              data: [0, 64.69],
+                              backgroundColor: '#00663d',
+                            },
+                            {
+                              label: 'वैकल्पिक उर्जा',
+                              data: [0, 3],
+                              backgroundColor: 'yellow'
                             }
-                            ]
-                          }" />
+                          ]
+                        }" />
                       </div>
 
                     </div>

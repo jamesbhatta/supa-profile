@@ -42,3 +42,32 @@
     top: -5px;
     font-size: 12px;
 }
+.data2068 div{
+    height: 10px;
+    width: 40px;
+    margin-left: 220px;
+    margin-top: 10px;
+    background-color: #007bff;
+}
+.data2068 div::after{
+    content: "2068";
+    position: absolute;
+    left: 275px;
+    top: 5px;
+    font-size: 12px;
+}
+
+.data2078 div{
+    height: 10px;
+    width: 40px;
+    margin-left: 1px;
+    margin-top: 10px;
+    background-color: #dc3545;
+}
+.data2078 div::after{
+    content: "2068";
+    position: absolute;
+    left: 60px;
+    top: 5px;
+    font-size: 12px;
+}
