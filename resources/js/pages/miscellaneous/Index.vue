@@ -318,6 +318,7 @@ export default {
       },
 
       StatusofHealthManpoweFarWesternProvincialPoliceOfficeandSubordinatePoliceUnitOfficesrUndertheHospital: {
+        id:"supa_police",
         title: "सुदूरपश्चिम प्रदेश प्रहरी कार्यालयहरु तथा मातहतका प्रहरी ईकाई कार्यालयहरु",
         labels: ["सि.नं.", "कार्यालयको नाम", "कार्यालयको टेलिफोन नं."],
         data: [
@@ -378,7 +379,7 @@ export default {
           ["सा.प्र.से.के.", '९८५८७९०४१६'],
           ["का.सु.गार्ड क.पु.", '०९९-४१८१४७'],
           [{
-            rowspan: 6,
+            rowspan: 5,
             value: "बैतडी",
           },
             "जि.प्र.का.बैतडी", '०९५-५२०१०१,९८५८७०५५५५',

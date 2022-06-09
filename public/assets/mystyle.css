@@ -1,0 +1,8 @@
+/* table border */
+#supa_police div div table thead tr th{
+    border: 1px solid black;
+    
+}
+#supa_police div div table tbody tr td{
+    border: 1px solid black;
+}
