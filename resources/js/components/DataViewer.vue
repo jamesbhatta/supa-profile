@@ -31,8 +31,8 @@
         </tbody>
       </table>
 
-      <div v-show="activeDataType == 'chart'">
-        <slot name="chart"></slot>
+      <div v-show="activeDataType == 'chart'" >
+        <slot name="chart" ref="exportable_chart"></slot>
       </div>
     </div>
   </div>
@@ -70,8 +70,8 @@ export default {
     printData() {
       var printContent = this.$refs.exportable_table;
       var printTableTitle = this.$refs.exportable_table_title;
-      // console.log(printContent);
-      // console.log(title);
+      console.log(printContent);
+      
       var WinPrint = window.open("", "", "width=1000,height=1250");
       WinPrint.document.write();
       WinPrint.document.write('<div style="display: flex;justify-content: center;">');
@@ -80,7 +80,7 @@ export default {
       WinPrint.document.write(printTableTitle.innerHTML);
       WinPrint.document.write("</div>");
       WinPrint.document.write('<div style="height:30px;"></div>');
-      WinPrint.document.write(printContent.outerHTML);
+      WinPrint.document.write(printContent.innerHTML);
       WinPrint.document.write("</div>");
       WinPrint.document.write("</div>");
       WinPrint.document.close();

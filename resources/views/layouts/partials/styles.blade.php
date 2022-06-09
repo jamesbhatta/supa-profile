@@ -32,7 +32,9 @@
         color: #000;
     }
     .list-set{
-        box-shadow: 1px 1px 5px 10px gray;
+        /* box-shadow: 1px 1px 5px 10px gray;    */
+        background-color: #fff;
+        padding: 10px;
     }
     .table-list li a:hover{
         color: blue;
@@ -62,10 +64,10 @@
         }
     }
 
-    @media only screen and (max-width:1600px) {
+    @media only screen and (max-width:2000px) {
 
         .side-client-menus {
-            min-width: 290px;
+            min-width: 380px;
         }
     }
 </style>

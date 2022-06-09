@@ -2037,9 +2037,8 @@ __webpack_require__.r(__webpack_exports__);
     },
     printData: function printData() {
       var printContent = this.$refs.exportable_table;
-      var printTableTitle = this.$refs.exportable_table_title; // console.log(printContent);
-      // console.log(title);
-
+      var printTableTitle = this.$refs.exportable_table_title;
+      console.log(printContent);
       var WinPrint = window.open("", "", "width=1000,height=1250");
       WinPrint.document.write();
       WinPrint.document.write('<div style="display: flex;justify-content: center;">');
@@ -2048,7 +2047,7 @@ __webpack_require__.r(__webpack_exports__);
       WinPrint.document.write(printTableTitle.innerHTML);
       WinPrint.document.write("</div>");
       WinPrint.document.write('<div style="height:30px;"></div>');
-      WinPrint.document.write(printContent.outerHTML);
+      WinPrint.document.write(printContent.innerHTML);
       WinPrint.document.write("</div>");
       WinPrint.document.write("</div>");
       WinPrint.document.close();

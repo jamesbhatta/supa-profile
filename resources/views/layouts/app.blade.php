@@ -91,3 +91,6 @@
     @stack('scripts')
 </body>
 </html>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://parall.ax/parallax/js/jspdf.js"></script>
