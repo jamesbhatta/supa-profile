@@ -234,6 +234,17 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 chart_js__WEBPACK_IMPORTED_MODULE_0__.Chart.register(chart_js__WEBPACK_IMPORTED_MODULE_0__.Title, chart_js__WEBPACK_IMPORTED_MODULE_0__.Tooltip, chart_js__WEBPACK_IMPORTED_MODULE_0__.Legend, chart_js__WEBPACK_IMPORTED_MODULE_0__.BarElement, chart_js__WEBPACK_IMPORTED_MODULE_0__.CategoryScale, chart_js__WEBPACK_IMPORTED_MODULE_0__.LinearScale, chart_js__WEBPACK_IMPORTED_MODULE_0__.ArcElement);
@@ -561,6 +572,8 @@ var render = function () {
                         _vm._v("जनसाङ्ख्यिक अवस्था"),
                       ]),
                       _vm._v(" "),
+                      _vm._m(0),
+                      _vm._v(" "),
                       _c("div", { staticClass: "row" }, [
                         _c(
                           "div",
@@ -570,7 +583,7 @@ var render = function () {
                               attrs: {
                                 "chart-options": { responsive: true },
                                 "chart-data": {
-                                  labels: ["पुरुष", "महिला"],
+                                  // labels: ['पुरुष', 'महिला'],
                                   datasets: [
                                     {
                                       backgroundColor: ["#007bff", "#dc3545"],
@@ -581,7 +594,7 @@ var render = function () {
                               },
                             }),
                             _vm._v(" "),
-                            _vm._m(0),
+                            _vm._m(1),
                           ],
                           1
                         ),
@@ -594,7 +607,7 @@ var render = function () {
                               attrs: {
                                 "chart-options": { responsive: true },
                                 "chart-data": {
-                                  labels: ["पुरुष", "महिला"],
+                                  // labels: ['पुरुष', 'महिला'],
                                   datasets: [
                                     {
                                       backgroundColor: ["#007bff", "#dc3545"],
@@ -605,7 +618,7 @@ var render = function () {
                               },
                             }),
                             _vm._v(" "),
-                            _vm._m(1),
+                            _vm._m(2),
                           ],
                           1
                         ),
@@ -746,6 +759,18 @@ var render = function () {
   ])
 }
 var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-12" }, [
+      _c("div", { staticClass: "row chart-datas" }, [
+        _c("div", { staticClass: "male_num" }, [_c("div")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "female_num" }, [_c("div")]),
+      ]),
+    ])
+  },
   function () {
     var _vm = this
     var _h = _vm.$createElement

@@ -16,3 +16,29 @@
 .year label{
     font-size: 13px;
 }
+.male_num div{
+    height: 10px;
+    width: 40px;
+    margin-left: 120px;
+    background-color: #007bff;
+}
+.male_num div::after{
+    content: "पुरुष";
+    position: absolute;
+    left: 165px;
+    top: -5px;
+    font-size: 12px;
+}
+.female_num div{
+    height: 10px;
+    width: 40px;
+    margin-left: 40px;
+    background-color: #dc3545;
+}
+.female_num div::after{
+    content: "महिला";
+    position: absolute;
+    left: 245px;
+    top: -5px;
+    font-size: 12px;
+}

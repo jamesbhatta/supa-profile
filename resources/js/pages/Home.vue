@@ -92,10 +92,21 @@
                 <div class="chart-card">
                   <div class="chart-body">
                     <div class="chart-title mb-3">जनसाङ्ख्यिक अवस्था</div>
+                    <div class="col-12">
+                      <div class="row chart-datas">
+                        <div class="male_num">
+                          <div></div>
+                        </div>
+
+                        <div class="female_num">
+                          <div></div>
+                        </div>
+                      </div>
+                    </div>
                     <div class="row">
                       <div class="col-md-6">
                         <Pie :chart-options="{ responsive: true }" :chart-data="{
-                          labels: ['पुरुष', 'महिला'],
+                          // labels: ['पुरुष', 'महिला'],
                           datasets: [
                             {
                               backgroundColor: ['#007bff', '#dc3545'],
@@ -109,7 +120,7 @@
                       <div class="col-md-6 my-pie">
 
                         <Pie :chart-options="{ responsive: true }" :chart-data="{
-                          labels: ['पुरुष', 'महिला'],
+                          // labels: ['पुरुष', 'महिला'],
                           datasets: [
                             {
                               backgroundColor: ['#007bff', '#dc3545'],
