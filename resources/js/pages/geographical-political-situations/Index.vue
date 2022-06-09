@@ -1,62 +1,78 @@
 <template>
   <div class="container-fluid my-div">
 
-    
+
     <div class="container-fluid py-5">
       <div class="row">
         <div class="col-xl-2 col-lg-3 col-md-4 side-client-menus">
-         
-          <div class="col-xl-12 col-lg-12 col-md-12 main-content" >
-             <div style="height: 80px;"></div>
-              <div class="list-set">
-                <ul class="table-list ">
-                  <li class="my-3">
-                    <a href="http://localhost:3000/geographical-political-situation/#table_1">सुदूरपश्चिम प्रदेशको भौगोलिक क्षेत्रगत क्षेत्रफल</a>
-                  </li>
 
-                   <li class="my-3">
-                    <a href="http://localhost:3000/geographical-political-situation/#table_2">प्रदेशगत भौगोलिक क्षेत्रफल</a>
-                  </li>
+          <div class="col-xl-12 col-lg-12 col-md-12 main-content">
+            <div style="height: 80px;"></div>
+            <div class="list-set">
+              <ul class="table-list ">
+                <li class="my-3">
+                  <a href="http://localhost:3000/geographical-political-situation/#table_1">सुदूरपश्चिम प्रदेशको भौगोलिक
+                    क्षेत्रगत क्षेत्रफल</a>
+                </li>
 
-                  <li class="my-3">
-                    <a href="http://localhost:3000/geographical-political-situation/#table_3">प्रदेशको जिल्लागत क्षेत्रफल</a>
-                  </li>
+                <li class="my-3">
+                  <a href="http://localhost:3000/geographical-political-situation/#table_2">प्रदेशगत भौगोलिक
+                    क्षेत्रफल</a>
+                </li>
 
-                    <li class="my-3">
-                    <a href="http://localhost:3000/geographical-political-situation/#table_4">भू – उपयोगको अवस्था</a>
-                  </li>
+                <li class="my-3">
+                  <a href="http://localhost:3000/geographical-political-situation/#table_3">प्रदेशको जिल्लागत
+                    क्षेत्रफल</a>
+                </li>
 
-                    <li class="my-3">
-                    <a href="http://localhost:3000/geographical-political-situation/#table_5">स्थानीय तहको जिल्लागत संख्या</a>
-                  </li>
+                <li class="my-3">
+                  <a href="http://localhost:3000/geographical-political-situation/#table_4">भू – उपयोगको अवस्था</a>
+                </li>
 
-                    <li class="my-3">
-                    <a href="http://localhost:3000/geographical-political-situation/#table_6">प्रदेशमा भौगोलिक विभाजन अनुसार निर्वाचन क्षेत्रको विवरण</a>
-                  </li>
-                  <li class="my-3">
-                    <a href="http://localhost:3000/geographical-political-situation/#table_7">प्रदेशका जिल्लाहरुमा रहेका निर्वाचन क्षेत्रको विवरण</a>
-                  </li>
-                  <li class="my-3">
-                    <a href="http://localhost:3000/geographical-political-situation/#table_8">हालसम्म भएका प्रदेश प्रमुखहरुको नामावली र मिति</a>
-                  </li>
-                  <li class="my-3">
-                    <a href="http://localhost:3000/geographical-political-situation/#table_9">सुदूरपश्चिम प्रदेशको पहिलो मन्त्रिपरिषद्</a>
-                  </li>
-                  <li class="my-3">
-                    <a href="http://localhost:3000/geographical-political-situation/#table_10">सुदूरपश्चिम प्रदेशमा हालको मन्त्रिपरिषद्</a>
-                  </li>
-                  <li class="my-3">
-                    <a href="http://localhost:3000/geographical-political-situation/#table_11">प्रदेश सभा सदस्यहरुको नामावली</a>
-                  </li>
-                  
-                </ul>
-              </div>
+                <li class="my-3">
+                  <a href="http://localhost:3000/geographical-political-situation/#table_5">स्थानीय तहको जिल्लागत
+                    संख्या</a>
+                </li>
+
+                <li class="my-3">
+                  <a href="http://localhost:3000/geographical-political-situation/#table_6">प्रदेशमा भौगोलिक विभाजन
+                    अनुसार निर्वाचन क्षेत्रको विवरण</a>
+                </li>
+
+                <li class="my-3">
+                  <a href="http://localhost:3000/geographical-political-situation/#table_7">प्रदेशका जिल्लाहरुमा रहेका
+                    निर्वाचन क्षेत्रको विवरण</a>
+                </li>
+                
+                <li class="my-3">
+                  <a href="http://localhost:3000/geographical-political-situation/#table_8">हालसम्म भएका प्रदेश
+                    प्रमुखहरुको नामावली र मिति</a>
+                </li>
+                
+                <li class="my-3">
+                  <a href="http://localhost:3000/geographical-political-situation/#table_9">सुदूरपश्चिम प्रदेशको पहिलो
+                    मन्त्रिपरिषद्</a>
+                </li>
+                
+                <li class="my-3">
+                  <a href="http://localhost:3000/geographical-political-situation/#table_10">सुदूरपश्चिम प्रदेशमा हालको
+                    मन्त्रिपरिषद्</a>
+                </li>
+                
+                <li class="my-3">
+                  <a href="http://localhost:3000/geographical-political-situation/#table_11">प्रदेश सभा सदस्यहरुको
+                    नामावली</a>
+                </li>
+
+              </ul>
+            </div>
           </div>
         </div>
         <!-- ================================== -->
         <div class="col-xl-9 col-lg-8 col-md-12">
           <div class="container">
             <h1 class="page-title">भौगोलिक तथा राजनीतिक अवस्था</h1>
+            
             <data-viewer :data="geographicalAreaData">
               <template slot="chart">
                 <div class="row">
@@ -69,8 +85,6 @@
                 </div>
               </template>
             </data-viewer>
-
-            <!-- <div class="my-5"></div> -->
 
             <pardeshsavanamawali></pardeshsavanamawali>
             <div class="my-5"></div>
@@ -87,7 +101,7 @@
                 </div>
               </template>
             </data-viewer>
-            <!-- <div class="my-5"></div> -->
+
             <data-viewer :data="vuupyogkoData">
               <template slot="chart">
                 <div class="row">
@@ -100,7 +114,7 @@
                 </div>
               </template>
             </data-viewer>
-            <!-- <div class="my-5"></div> -->
+
             <data-viewer :data="sthaniyetahapopulation">
               <template slot="thead-top">
                 <tr>
@@ -109,7 +123,7 @@
                 </tr>
               </template>
             </data-viewer>
-            <div class="my-5"></div>
+            
             <data-viewer :data="nirbachanchhetra">
               <template slot="chart">
                 <div class="row">
@@ -123,16 +137,17 @@
                 </div>
               </template>
             </data-viewer>
-            <div class="my-5"></div>
+            
             <data-viewer :data="jillanirbachanchhetra"></data-viewer>
-            <div class="my-5"></div>
+            
             <data-viewer :data="parmukhharukonaamwali"></data-viewer>
-            <div class="my-5"></div>
+           
             <data-viewer :data="pahilomantriparisadh"></data-viewer>
-            <div class="my-5"></div>
+            
             <data-viewer :data="supaparisadh"></data-viewer>
-            <div class="my-5"></div>
+           
             <data-viewer :data="pardeshsavanamawali"></data-viewer>
+            
           </div>
         </div>
       </div>
@@ -497,5 +512,4 @@ export default {
   margin-right: 20px;
   margin-top: 5px;
 }
-
 </style>

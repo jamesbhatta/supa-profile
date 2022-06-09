@@ -1,85 +1,146 @@
 <template>
-    <div class="container py-5">
-        <h1 class="page-title">आर्थिक अवस्था</h1>
-        <data-viewer :data="provinceEconomicData"></data-viewer>
-        <div class="my-5"></div>
-        <data-viewer :data="statusofRevenueSharing">
-            <template slot="chart">
-                <div class="row">
-                    <div class="col-md-6">
-                        <pie-chart :chart-data="statusofRevenueSharingChartData" :width="200" :height="200"></pie-chart>
-                    </div>
-                    <div class="col-md-6">
-                        <bar-chart :chart-data="statusofRevenueSharingChartData" :width="200" :height="200"></bar-chart>
-                    </div>
-                </div>
-            </template>
-        </data-viewer>
-        <div class="my-5"></div>
-        <data-viewer :data="RevenueReceivedState"></data-viewer>
-        <div class="my-5"></div>
-        <data-viewer :data="StatusofBudgetResources">
-        
-        <template slot="chart">
-                <div class="row">
-                    <div class="col-md-6">
-                        <pie-chart :chart-data="StatusofBudgetResourcesChartData" :width="200" :height="200"></pie-chart>
-                    </div>
-                    <div class="col-md-6">
-                        <bar-chart :chart-data="StatusofBudgetResourcesChartData" :width="200" :height="200"></bar-chart>
-                    </div>
-                </div>
-            </template>
-        </data-viewer>
-        <div class="my-5"></div>
-        <data-viewer :data="supabudget">
-            <template slot="thead-top">
-                <tr>
-                    <th colspan="2"></th>
-                    <th colspan="3" class="bg-light text-center font-weight-bold">बजेट (रु. हजारमा)</th>
-                    <th colspan="6" class="bg-light text-center font-weight-bold">खर्च (रु. हजारमा)</th>
-                </tr>
-            </template>
-             <template slot="chart">
-                <div class="row">
-                    <div class="col-md-6">
-                        <pie-chart :chart-data="supabudgetChartData" :width="200" :height="200"></pie-chart>
-                    </div>
-                    <div class="col-md-6">
-                        <bar-chart :chart-data="supabudgetChartData" :width="200" :height="200"></bar-chart>
-                    </div>
-                </div>
-            </template>
-        </data-viewer>
+    <div class="container-fluid my-div">
+        <div class="container-fluid py-5">
+            <div class="row">
+                <div class="col-xl-2 col-lg-3 col-md-4 side-client-menus">
 
-        <div class="my-5"></div>
-        <data-viewer :data="LaborandEmploymentStatus">
-             <template slot="chart">
-                <div class="row">
-                    <div class="col-md-6">
-                        <pie-chart :chart-data="LaborandEmploymentStatusChartData" :width="200" :height="200"></pie-chart>
-                    </div>
-                    <div class="col-md-6">
-                        <bar-chart :chart-data="LaborandEmploymentStatusChartData" :width="200" :height="200"></bar-chart>
+                    <div class="col-xl-12 col-lg-12 col-md-12 main-content">
+                        <div style="height: 80px;"></div>
+                        <div class="list-set">
+                            <ul class="table-list ">
+                                <li class="my-3">
+                                    <a href="http://localhost:3000/economical-situation/#table_1">प्रदेशको आर्थिक सूचकहरु</a>
+                                </li>
+
+                                <li class="my-3">
+                                    <a href="http://localhost:3000/economical-situation/#table_2">राजश्व बाँडफाँड (रु.दश लाखमा)</a>
+                                </li>
+
+                                <li class="my-3">
+                                    <a href="http://localhost:3000/economical-situation/#table_3">प्रदेशमा प्राप्त हुने राजश्वको शिर्षकगत विवरण</a>
+                                </li>
+
+                                <li class="my-3">
+                                    <a href="http://localhost:3000/economical-situation/#table_4">बजेटको स्रोतको अवस्था</a>
+                                </li>
+
+                                <li class="my-3">
+                                    <a href="http://localhost:3000/economical-situation/#table_5">सुदूरपश्चिम प्रदेशको कूल बजेट र खर्चको अवस्था</a>
+                                </li>
+
+                                <li class="my-3">
+                                    <a href="http://localhost:3000/economical-situation/#table_6">श्रम तथा रोजगारको अवस्था</a>
+                                </li>
+
+                                <li class="my-3">
+                                    <a href="http://localhost:3000/economical-situation/#table_7">प्रदेशमा दर्ता भएका सहकारीहरुको विवरण</a>
+                                </li>
+
+                              
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </template>
-        </data-viewer>
-        <div class="my-5"></div>
-        <data-viewer :data="StateGovernmentHarukoDetails">
-            
-             <template slot="chart">
-                <div class="row">
-                    <div class="col-md-6">
-                        <pie-chart :chart-data="StateGovernmentHarukoDetailsChartData" :width="200" :height="200"></pie-chart>
-                    </div>
-                    <div class="col-md-6">
-                        <bar-chart :chart-data="StateGovernmentHarukoDetailsChartData" :width="200" :height="200"></bar-chart>
+
+
+                <div class="col-xl-9 col-lg-8 col-md-12">
+                    <div class="container py-5">
+                        <h1 class="page-title">आर्थिक अवस्था</h1>
+                        
+                        <data-viewer :data="provinceEconomicData"></data-viewer>
+                        
+                        <data-viewer :data="statusofRevenueSharing">
+                            <template slot="chart">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <pie-chart :chart-data="statusofRevenueSharingChartData" :width="200"
+                                            :height="200"></pie-chart>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <bar-chart :chart-data="statusofRevenueSharingChartData" :width="200"
+                                            :height="200"></bar-chart>
+                                    </div>
+                                </div>
+                            </template>
+                        </data-viewer>
+                        
+                        <data-viewer :data="RevenueReceivedState"></data-viewer>
+                       
+                        <data-viewer :data="StatusofBudgetResources">
+
+                            <template slot="chart">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <pie-chart :chart-data="StatusofBudgetResourcesChartData" :width="200"
+                                            :height="200"></pie-chart>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <bar-chart :chart-data="StatusofBudgetResourcesChartData" :width="200"
+                                            :height="200"></bar-chart>
+                                    </div>
+                                </div>
+                            </template>
+                        </data-viewer>
+                        
+                        <data-viewer :data="supabudget">
+                            <template slot="thead-top">
+                                <tr>
+                                    <th colspan="2"></th>
+                                    <th colspan="3" class="bg-light text-center font-weight-bold">बजेट (रु. हजारमा)</th>
+                                    <th colspan="6" class="bg-light text-center font-weight-bold">खर्च (रु. हजारमा)</th>
+                                </tr>
+                            </template>
+                            <template slot="chart">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <pie-chart :chart-data="supabudgetChartData" :width="200" :height="200">
+                                        </pie-chart>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <bar-chart :chart-data="supabudgetChartData" :width="200" :height="200">
+                                        </bar-chart>
+                                    </div>
+                                </div>
+                            </template>
+                        </data-viewer>
+
+                        <data-viewer :data="LaborandEmploymentStatus">
+                            <template slot="chart">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <pie-chart :chart-data="LaborandEmploymentStatusChartData" :width="200"
+                                            :height="200"></pie-chart>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <bar-chart :chart-data="LaborandEmploymentStatusChartData" :width="200"
+                                            :height="200"></bar-chart>
+                                    </div>
+                                </div>
+                            </template>
+                        </data-viewer>
+                        
+                        <data-viewer :data="StateGovernmentHarukoDetails">
+
+                            <template slot="chart">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <pie-chart :chart-data="StateGovernmentHarukoDetailsChartData" :width="200"
+                                            :height="200"></pie-chart>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <bar-chart :chart-data="StateGovernmentHarukoDetailsChartData" :width="200"
+                                            :height="200"></bar-chart>
+                                    </div>
+                                </div>
+                            </template>
+                        </data-viewer>
+                        
                     </div>
                 </div>
-            </template>
-        </data-viewer>
+            </div>
+        </div>
     </div>
+    <!--  -->
 </template>
 
 <script>
@@ -87,6 +148,7 @@ export default {
     data() {
         return {
             provinceEconomicData: {
+                id:'table_1',
                 title: "प्रदेशको आर्थिक सूचकहरु",
                 labels: ["क्र.स.", "विवरण", "सूचक (प्रतिशत)"],
                 data: [
@@ -114,6 +176,7 @@ export default {
             },
 
             statusofRevenueSharing: {
+                id:'table_2',
                 title: "राजश्व बाँडफाँड (रु.दश लाखमा)",
                 labels: ["प्रदेश", "राजश्व बाँडफाँड", "प्रतिशत", "स्थानीय तह", "राजश्व बाँडफाँड", "प्रतिशत"],
                 data: [
@@ -139,6 +202,7 @@ export default {
             },
 
             RevenueReceivedState: {
+                id:'table_3',
                 title: "प्रदेशमा प्राप्त हुने राजश्वको शिर्षकगत विवरण",
                 labels: ["क्र.स.", "शिर्षक", "रकम"],
                 data: [
@@ -183,6 +247,7 @@ export default {
             },
 
             StatusofBudgetResources: {
+                id:'table_4',
                 title: "बजेटको स्रोतको अवस्था ",
                 labels: ["क्र.स.", "आय तथा राजश्व", "रकम (रु.हजारमा)"],
                 data: [
@@ -205,12 +270,12 @@ export default {
                 ],
             },
 
-            StatusofBudgetResourcesChartData:{
-                labels: ["आन्तरिक राजश्व", "राजश्व बाँडफाँड","रोयल्टी बाँडफाँड","वित्तिय समानीकरण अनुदान","सशर्त अनुदान","समपुरक अनुदान","विशेष अनुदान","बैदेशिक सहायता","गत आबको बचत"],
+            StatusofBudgetResourcesChartData: {
+                labels: ["आन्तरिक राजश्व", "राजश्व बाँडफाँड", "रोयल्टी बाँडफाँड", "वित्तिय समानीकरण अनुदान", "सशर्त अनुदान", "समपुरक अनुदान", "विशेष अनुदान", "बैदेशिक सहायता", "गत आबको बचत"],
                 datasets: [
                     {
-                        backgroundColor: ["#29a8ab", "#5fb96c", "#e6b40f", 'red', 'pink', 'purple', 'grey','silver','green'],
-                        data: [1080322,7929100,39463,8544000,4193300,1229400,613500,24610,6683961],
+                        backgroundColor: ["#29a8ab", "#5fb96c", "#e6b40f", 'red', 'pink', 'purple', 'grey', 'silver', 'green'],
+                        data: [1080322, 7929100, 39463, 8544000, 4193300, 1229400, 613500, 24610, 6683961],
                     },
                 ],
             },
@@ -218,6 +283,7 @@ export default {
             // 4.5
             //To be develop
             supabudget: {
+                id:'table_5',
                 title: "सुदूरपश्चिम प्रदेशको कूल बजेट र खर्चको अवस्था",
                 labels: ["क्र.स.", "आर्थिक वर्ष", "चालु", "पुँजीगत", "जम्मा", "चालु", "प्रतिशत", "पुँजीगत", "प्रतिशत", "जम्मा", "प्रतिशत"],
                 data: [
@@ -229,17 +295,18 @@ export default {
                 ],
             },
 
-            supabudgetChartData:{
-                labels: ["074/075","075/076","076/077","077/078","078/079",],
+            supabudgetChartData: {
+                labels: ["074/075", "075/076", "076/077", "077/078", "078/079",],
                 datasets: [
                     {
                         backgroundColor: ["#29a8ab", "#5fb96c", "#e6b40f", 'red', 'pink'],
-                        data: [25.5,56.5,62.8,66.8,8.9],
+                        data: [25.5, 56.5, 62.8, 66.8, 8.9],
                     },
                 ],
             },
 
             LaborandEmploymentStatus: {
+                id:'table_6',
                 title: "श्रम तथा रोजगारको अवस्था",
                 labels: ["प्रदेश", "बेरोजगारी", "जनसंख्याको अनुपातमा बेरोजगारी", "श्रमशक्तिमा सहभागिताको दर"],
 
@@ -254,18 +321,19 @@ export default {
                     ["नेपाल", '११.४', '३४.२', '३८.५'],
                 ],
             },
-           
-            LaborandEmploymentStatusChartData:{
-                 labels: ["प्रदेश १","मधेश","बागमती","गण्डकी","लुम्बीनी","कर्णाली","सुदूरपश्चिम"],
+
+            LaborandEmploymentStatusChartData: {
+                labels: ["प्रदेश १", "मधेश", "बागमती", "गण्डकी", "लुम्बीनी", "कर्णाली", "सुदूरपश्चिम"],
                 datasets: [
                     {
-                        backgroundColor: ["#29a8ab", "#5fb96c", "#e6b40f", 'red', 'pink','blue','green'],
-                        data: [10.2,20.1,7,9,11.2,9.7,11.5,11.4],
+                        backgroundColor: ["#29a8ab", "#5fb96c", "#e6b40f", 'red', 'pink', 'blue', 'green'],
+                        data: [10.2, 20.1, 7, 9, 11.2, 9.7, 11.5, 11.4],
                     },
                 ],
             },
 
             StateGovernmentHarukoDetails: {
+                id:'table_6',
                 title: "प्रदेशमा दर्ता भएका सहकारीहरुको विवरण",
                 labels: ["क्र.स.", "बेरोजगारी", "बहुउद्देश्यीय", "कृषि", "ऋण तथा बचत", "स्वास्थ्य", "सञ्चार", "विधुत", "जडिबुटी", "वतावरण संरक्षण", "प्रकाशन", "अन्य", "जम्मा"],
                 data: [
@@ -297,14 +365,14 @@ export default {
                 ],
             },
 
-            StateGovernmentHarukoDetailsChartData:{
-               labels: ["कैलाली","कञ्चनपुर","डडेलधुरा","बैतडी","दार्चुला","डोटी","अछाम","बझाङ","बाजुरा",],
+            StateGovernmentHarukoDetailsChartData: {
+                labels: ["कैलाली", "कञ्चनपुर", "डडेलधुरा", "बैतडी", "दार्चुला", "डोटी", "अछाम", "बझाङ", "बाजुरा",],
                 datasets: [
                     {
-                        backgroundColor: ["#29a8ab", "#5fb96c", "#e6b40f", 'red', 'pink','green','blue','brown','grey'],
-                        data: [94,55,22,32,24,10,66,18,31],
+                        backgroundColor: ["#29a8ab", "#5fb96c", "#e6b40f", 'red', 'pink', 'green', 'blue', 'brown', 'grey'],
+                        data: [94, 55, 22, 32, 24, 10, 66, 18, 31],
                     },
-                ], 
+                ],
             },
         };
     },

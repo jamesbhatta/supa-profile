@@ -159,6 +159,21 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -396,7 +411,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n#unit-nav[data-v-3886a01a] {\n  position: fixed;\n  top: -100px;\n  display: block;\n  margin-left: -50px;\n}\n.unit-nav-list[data-v-3886a01a] {\n  margin-top: 20vh;\n\n  /* box-shadow: 5px 5px 10px #888888; */\n}\n.unit-nav-list li[data-v-3886a01a] {\n  list-style: none;\n}\n.unit-nav-list li a label[data-v-3886a01a] {\n  cursor: pointer;\n  margin-right: 20px;\n  margin-top: 5px;\n}\n\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n#unit-nav[data-v-3886a01a] {\n  position: fixed;\n  top: -100px;\n  display: block;\n  margin-left: -50px;\n}\n.unit-nav-list[data-v-3886a01a] {\n  margin-top: 20vh;\n\n  /* box-shadow: 5px 5px 10px #888888; */\n}\n.unit-nav-list li[data-v-3886a01a] {\n  list-style: none;\n}\n.unit-nav-list li a label[data-v-3886a01a] {\n  cursor: pointer;\n  margin-right: 20px;\n  margin-top: 5px;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -752,8 +767,6 @@ var render = function () {
                 2
               ),
               _vm._v(" "),
-              _c("div", { staticClass: "my-5" }),
-              _vm._v(" "),
               _c(
                 "data-viewer",
                 { attrs: { data: _vm.nirbachanchhetra } },
@@ -791,23 +804,13 @@ var render = function () {
                 2
               ),
               _vm._v(" "),
-              _c("div", { staticClass: "my-5" }),
-              _vm._v(" "),
               _c("data-viewer", { attrs: { data: _vm.jillanirbachanchhetra } }),
-              _vm._v(" "),
-              _c("div", { staticClass: "my-5" }),
               _vm._v(" "),
               _c("data-viewer", { attrs: { data: _vm.parmukhharukonaamwali } }),
               _vm._v(" "),
-              _c("div", { staticClass: "my-5" }),
-              _vm._v(" "),
               _c("data-viewer", { attrs: { data: _vm.pahilomantriparisadh } }),
               _vm._v(" "),
-              _c("div", { staticClass: "my-5" }),
-              _vm._v(" "),
               _c("data-viewer", { attrs: { data: _vm.supaparisadh } }),
-              _vm._v(" "),
-              _c("div", { staticClass: "my-5" }),
               _vm._v(" "),
               _c("data-viewer", { attrs: { data: _vm.pardeshsavanamawali } }),
             ],
@@ -843,7 +846,11 @@ var staticRenderFns = [
                         href: "http://localhost:3000/geographical-political-situation/#table_1",
                       },
                     },
-                    [_vm._v("सुदूरपश्चिम प्रदेशको भौगोलिक क्षेत्रगत क्षेत्रफल")]
+                    [
+                      _vm._v(
+                        "सुदूरपश्चिम प्रदेशको भौगोलिक\n                  क्षेत्रगत क्षेत्रफल"
+                      ),
+                    ]
                   ),
                 ]),
                 _vm._v(" "),
@@ -855,7 +862,7 @@ var staticRenderFns = [
                         href: "http://localhost:3000/geographical-political-situation/#table_2",
                       },
                     },
-                    [_vm._v("प्रदेशगत भौगोलिक क्षेत्रफल")]
+                    [_vm._v("प्रदेशगत भौगोलिक\n                  क्षेत्रफल")]
                   ),
                 ]),
                 _vm._v(" "),
@@ -867,7 +874,7 @@ var staticRenderFns = [
                         href: "http://localhost:3000/geographical-political-situation/#table_3",
                       },
                     },
-                    [_vm._v("प्रदेशको जिल्लागत क्षेत्रफल")]
+                    [_vm._v("प्रदेशको जिल्लागत\n                  क्षेत्रफल")]
                   ),
                 ]),
                 _vm._v(" "),
@@ -891,7 +898,7 @@ var staticRenderFns = [
                         href: "http://localhost:3000/geographical-political-situation/#table_5",
                       },
                     },
-                    [_vm._v("स्थानीय तहको जिल्लागत संख्या")]
+                    [_vm._v("स्थानीय तहको जिल्लागत\n                  संख्या")]
                   ),
                 ]),
                 _vm._v(" "),
@@ -905,7 +912,7 @@ var staticRenderFns = [
                     },
                     [
                       _vm._v(
-                        "प्रदेशमा भौगोलिक विभाजन अनुसार निर्वाचन क्षेत्रको विवरण"
+                        "प्रदेशमा भौगोलिक विभाजन\n                  अनुसार निर्वाचन क्षेत्रको विवरण"
                       ),
                     ]
                   ),
@@ -921,7 +928,7 @@ var staticRenderFns = [
                     },
                     [
                       _vm._v(
-                        "प्रदेशका जिल्लाहरुमा रहेका निर्वाचन क्षेत्रको विवरण"
+                        "प्रदेशका जिल्लाहरुमा रहेका\n                  निर्वाचन क्षेत्रको विवरण"
                       ),
                     ]
                   ),
@@ -935,7 +942,11 @@ var staticRenderFns = [
                         href: "http://localhost:3000/geographical-political-situation/#table_8",
                       },
                     },
-                    [_vm._v("हालसम्म भएका प्रदेश प्रमुखहरुको नामावली र मिति")]
+                    [
+                      _vm._v(
+                        "हालसम्म भएका प्रदेश\n                  प्रमुखहरुको नामावली र मिति"
+                      ),
+                    ]
                   ),
                 ]),
                 _vm._v(" "),
@@ -947,7 +958,11 @@ var staticRenderFns = [
                         href: "http://localhost:3000/geographical-political-situation/#table_9",
                       },
                     },
-                    [_vm._v("सुदूरपश्चिम प्रदेशको पहिलो मन्त्रिपरिषद्")]
+                    [
+                      _vm._v(
+                        "सुदूरपश्चिम प्रदेशको पहिलो\n                  मन्त्रिपरिषद्"
+                      ),
+                    ]
                   ),
                 ]),
                 _vm._v(" "),
@@ -959,7 +974,11 @@ var staticRenderFns = [
                         href: "http://localhost:3000/geographical-political-situation/#table_10",
                       },
                     },
-                    [_vm._v("सुदूरपश्चिम प्रदेशमा हालको मन्त्रिपरिषद्")]
+                    [
+                      _vm._v(
+                        "सुदूरपश्चिम प्रदेशमा हालको\n                  मन्त्रिपरिषद्"
+                      ),
+                    ]
                   ),
                 ]),
                 _vm._v(" "),
@@ -971,7 +990,7 @@ var staticRenderFns = [
                         href: "http://localhost:3000/geographical-political-situation/#table_11",
                       },
                     },
-                    [_vm._v("प्रदेश सभा सदस्यहरुको नामावली")]
+                    [_vm._v("प्रदेश सभा सदस्यहरुको\n                  नामावली")]
                   ),
                 ]),
               ]),
