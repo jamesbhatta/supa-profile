@@ -2047,7 +2047,7 @@ __webpack_require__.r(__webpack_exports__);
       WinPrint.document.write(printTableTitle.innerHTML);
       WinPrint.document.write("</div>");
       WinPrint.document.write('<div style="height:30px;"></div>');
-      WinPrint.document.write(printContent.innerHTML);
+      WinPrint.document.write(printContent.outerHTML);
       WinPrint.document.write("</div>");
       WinPrint.document.write("</div>");
       WinPrint.document.close();
