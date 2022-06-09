@@ -245,6 +245,236 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 chart_js__WEBPACK_IMPORTED_MODULE_0__.Chart.register(chart_js__WEBPACK_IMPORTED_MODULE_0__.Title, chart_js__WEBPACK_IMPORTED_MODULE_0__.Tooltip, chart_js__WEBPACK_IMPORTED_MODULE_0__.Legend, chart_js__WEBPACK_IMPORTED_MODULE_0__.BarElement, chart_js__WEBPACK_IMPORTED_MODULE_0__.CategoryScale, chart_js__WEBPACK_IMPORTED_MODULE_0__.LinearScale, chart_js__WEBPACK_IMPORTED_MODULE_0__.ArcElement);
@@ -630,123 +860,527 @@ var render = function () {
               2
             ),
           ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "row" }, [
+            _c(
+              "div",
+              { staticClass: "col-12" },
+              [
+                [
+                  _c("div", { staticClass: "col-md-12" }, [
+                    _c("div", { staticClass: "chart-card" }, [
+                      _c("div", { staticClass: "chart-body" }, [
+                        _c("div", { staticClass: "chart-title mb-3" }, [
+                          _vm._v("श्रम सम्बन्धि सूचक"),
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "row" }, [
+                          _c(
+                            "div",
+                            { staticClass: "col-md-6 mybar" },
+                            [
+                              _c("bar", {
+                                attrs: {
+                                  "chart-options": { responsive: true },
+                                  "chart-data": {
+                                    labels: [
+                                      "बेरोजगारी दर",
+                                      "श्रम शक्ति सजभागिता दर",
+                                      "जनसंख्या अनुपातमा रोजगार",
+                                      "रोजगारको क्षेत्र",
+                                      "रोजगार",
+                                    ],
+                                    datasets: [
+                                      {
+                                        label: "पुरुष",
+                                        data: [11.5, 45.6, 40.4],
+                                        backgroundColor: "#007bff",
+                                      },
+                                      {
+                                        label: "महिला",
+                                        data: [11.5, 15.7, 0],
+                                        backgroundColor: "#dc3545",
+                                      },
+                                      {
+                                        label: "औपचारिक",
+                                        data: [0, 0, 0, 33.3, 14.8],
+                                        backgroundColor: "pink",
+                                      },
+                                      {
+                                        label: "अनौपचारिक",
+                                        data: [0, 0, 0, 66.7, 85.2],
+                                        backgroundColor: "#00663d",
+                                      },
+                                    ],
+                                  },
+                                },
+                              }),
+                              _vm._v(" "),
+                              _c(
+                                "label",
+                                { staticClass: " col-12 text-center" },
+                                [_vm._v("(सुदुरपश्चिममा)")]
+                              ),
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            { staticClass: "col-md-6" },
+                            [
+                              _c("bar", {
+                                attrs: {
+                                  "chart-options": { responsive: true },
+                                  "chart-data": {
+                                    labels: [
+                                      "बेरोजगारी दर",
+                                      "श्रम शक्ति सजभागिता दर",
+                                      "जनसंख्या अनुपातमा रोजगार",
+                                      "रोजगारको क्षेत्र",
+                                      "रोजगार",
+                                    ],
+                                    datasets: [
+                                      {
+                                        label: "पुरुष",
+                                        data: [10.3, 53.8, 48.3],
+                                        backgroundColor: "#007bff",
+                                      },
+                                      {
+                                        label: "महिला",
+                                        data: [13.1, 26.3, 0],
+                                        backgroundColor: "#dc3545",
+                                      },
+                                      {
+                                        label: "औपचारिक",
+                                        data: [0, 0, 0, 37.8, 15.4],
+                                        backgroundColor: "pink",
+                                      },
+                                      {
+                                        label: "अनौपचारिक",
+                                        data: [0, 0, 0, 62.2, 84.6],
+                                        backgroundColor: "#00663d",
+                                      },
+                                    ],
+                                  },
+                                },
+                              }),
+                              _vm._v(" "),
+                              _c(
+                                "label",
+                                { staticClass: "col-12 text-center" },
+                                [_vm._v("(नेपालमा)")]
+                              ),
+                            ],
+                            1
+                          ),
+                        ]),
+                      ]),
+                    ]),
+                  ]),
+                ],
+              ],
+              2
+            ),
+          ]),
         ]),
       ]),
     ]),
     _vm._v(" "),
     _c("div", { staticClass: "my-5" }),
     _vm._v(" "),
-    _c("div", { staticClass: "row" }, [
+    _c("div", { staticClass: "row my-5" }, [
       _c(
         "div",
         { staticClass: "col-12" },
         [
           [
             _c("div", { staticClass: "col-md-12" }, [
-              _c("div", { staticClass: "chart-card" }, [
+              _c("div", {}, [
                 _c("div", { staticClass: "chart-body" }, [
-                  _c("div", { staticClass: "chart-title mb-3" }, [
-                    _vm._v("श्रम सम्बन्धि सूचक"),
+                  _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "col-md-7" }, [
+                      _c("div", { staticClass: "row" }, [
+                        _c("div", { staticClass: "card" }, [
+                          _c("div", { staticClass: "row" }, [
+                            _c(
+                              "div",
+                              { staticClass: "col-md-4" },
+                              [
+                                _c("Pie", {
+                                  attrs: {
+                                    "chart-options": { responsive: true },
+                                    "chart-data": {
+                                      labels: ["2068", "2078"],
+                                      datasets: [
+                                        {
+                                          backgroundColor: [
+                                            "#007bff",
+                                            "#dc3545",
+                                          ],
+                                          data: [91.25, 90.49],
+                                        },
+                                      ],
+                                    },
+                                  },
+                                }),
+                                _vm._v(" "),
+                                _c(
+                                  "label",
+                                  { staticClass: "col-12 text-center" },
+                                  [_vm._v("लैङ्गिक अनुपात")]
+                                ),
+                              ],
+                              1
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              { staticClass: "col-md-4" },
+                              [
+                                _c("Pie", {
+                                  attrs: {
+                                    "chart-options": { responsive: true },
+                                    "chart-data": {
+                                      labels: ["2068", "2078"],
+                                      datasets: [
+                                        {
+                                          backgroundColor: [
+                                            "#007bff",
+                                            "#dc3545",
+                                          ],
+                                          data: [1.53, 0.58],
+                                        },
+                                      ],
+                                    },
+                                  },
+                                }),
+                                _vm._v(" "),
+                                _c(
+                                  "label",
+                                  { staticClass: "col-12 text-center" },
+                                  [_vm._v("जनसंख्या बृद्धिदर")]
+                                ),
+                              ],
+                              1
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              { staticClass: "col-md-4" },
+                              [
+                                _c("Pie", {
+                                  attrs: {
+                                    "chart-options": { responsive: true },
+                                    "chart-data": {
+                                      labels: ["2068", "2078"],
+                                      datasets: [
+                                        {
+                                          backgroundColor: [
+                                            "#007bff",
+                                            "#dc3545",
+                                          ],
+                                          data: [5.43, 4.62],
+                                        },
+                                      ],
+                                    },
+                                  },
+                                }),
+                                _vm._v(" "),
+                                _c(
+                                  "label",
+                                  { staticClass: "col-12 text-center" },
+                                  [_vm._v("औषत परिवारको आकार")]
+                                ),
+                              ],
+                              1
+                            ),
+                          ]),
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "card my-3" }, [
+                          _c("div", { staticClass: "row" }, [
+                            _c(
+                              "div",
+                              { staticClass: "col-md-4" },
+                              [
+                                _c("bar", {
+                                  attrs: {
+                                    "chart-options": { responsive: true },
+                                    "chart-data": {
+                                      labels: ["2068"],
+                                      datasets: [
+                                        {
+                                          backgroundColor: ["#007bff"],
+                                          data: [3.56],
+                                        },
+                                      ],
+                                    },
+                                  },
+                                }),
+                                _vm._v(" "),
+                                _c(
+                                  "label",
+                                  { staticClass: "col-12 text-center" },
+                                  [_vm._v("आर्थित बृद्धिदर")]
+                                ),
+                              ],
+                              1
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              { staticClass: "col-md-4" },
+                              [
+                                _c("bar", {
+                                  attrs: {
+                                    "chart-options": { responsive: true },
+                                    "chart-data": {
+                                      labels: ["2068"],
+                                      datasets: [
+                                        {
+                                          backgroundColor: ["#dc3545"],
+                                          data: [685],
+                                        },
+                                      ],
+                                    },
+                                  },
+                                }),
+                                _vm._v(" "),
+                                _c(
+                                  "label",
+                                  { staticClass: "col-12 text-center" },
+                                  [_vm._v("प्रति ब्यक्ति आय")]
+                                ),
+                              ],
+                              1
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              { staticClass: "col-md-4" },
+                              [
+                                _c("Pie", {
+                                  attrs: {
+                                    "chart-options": { responsive: true },
+                                    "chart-data": {
+                                      labels: ["सामुदायिक", "संस्थागत"],
+                                      datasets: [
+                                        {
+                                          backgroundColor: [
+                                            "#007bff",
+                                            "#dc3545",
+                                          ],
+                                          data: [4044, 599],
+                                        },
+                                      ],
+                                    },
+                                  },
+                                }),
+                                _vm._v(" "),
+                                _c(
+                                  "label",
+                                  { staticClass: "col-12 text-center" },
+                                  [_vm._v("शैक्षिक संस्था संख्या")]
+                                ),
+                              ],
+                              1
+                            ),
+                          ]),
+                        ]),
+                      ]),
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-5" }, [
+                      _c("div", { staticClass: "card" }, [
+                        _c("div", { staticClass: "row" }, [
+                          _c(
+                            "div",
+                            { staticClass: "col-md-12" },
+                            [
+                              _c("bar", {
+                                attrs: {
+                                  "chart-options": { responsive: true },
+                                  "chart-data": {
+                                    labels: [
+                                      "कृषि क्षेत्र",
+                                      "उद्योग क्षेत्र",
+                                      "सेवा क्षेत्र",
+                                    ],
+                                    datasets: [
+                                      {
+                                        backgroundColor: [
+                                          "#007bff",
+                                          "#dc3545",
+                                          "green",
+                                        ],
+                                        data: [36.1, 13.2, 50.7],
+                                      },
+                                    ],
+                                  },
+                                },
+                              }),
+                              _vm._v(" "),
+                              _c(
+                                "label",
+                                { staticClass: "col-12 text-center" },
+                                [_vm._v("कूलगार्हस्थ उत्पादन")]
+                              ),
+                            ],
+                            1
+                          ),
+                        ]),
+                      ]),
+                    ]),
                   ]),
                   _vm._v(" "),
-                  _c("div", { staticClass: "row" }, [
-                    _c("div", { staticClass: "col-md-12" }),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "col-md-6 mybar" },
-                      [
-                        _c("bar", {
-                          attrs: {
-                            "chart-options": { responsive: true },
-                            "chart-data": {
-                              labels: [
-                                "बेरोजगारी दर",
-                                "श्रम शक्ति सजभागिता दर",
-                                "जनसंख्या अनुपातमा रोजगार",
-                                "रोजगारको क्षेत्र",
-                                "रोजगार",
-                              ],
-                              datasets: [
-                                {
-                                  label: "पुरुष",
-                                  data: [11.5, 45.6, 40.4],
-                                  backgroundColor: "#007bff",
+                  _c("div", { staticClass: "col-md-12" }, [
+                    _c("div", { staticClass: "card" }, [
+                      _c("div", { staticClass: "row" }, [
+                        _c(
+                          "div",
+                          { staticClass: "col-md-3" },
+                          [
+                            _c("Pie", {
+                              attrs: {
+                                "chart-options": { responsive: true },
+                                "chart-data": {
+                                  labels: ["महिला", "पुरुष", "जम्मा"],
+                                  datasets: [
+                                    {
+                                      backgroundColor: [
+                                        "#007bff",
+                                        "#dc3545",
+                                        "green",
+                                      ],
+                                      data: [51.93, 76.4, 63.48],
+                                    },
+                                  ],
                                 },
-                                {
-                                  label: "महिला",
-                                  data: [11.5, 15.7, 0],
-                                  backgroundColor: "#dc3545",
-                                },
-                                {
-                                  label: "औपचारिक",
-                                  data: [0, 0, 0, 33.3, 14.8],
-                                  backgroundColor: "pink",
-                                },
-                                {
-                                  label: "अनौपचारिक",
-                                  data: [0, 0, 0, 66.7, 85.2],
-                                  backgroundColor: "#00663d",
-                                },
-                              ],
-                            },
-                          },
-                        }),
+                              },
+                            }),
+                            _vm._v(" "),
+                            _c("label", { staticClass: "col-12 text-center" }, [
+                              _vm._v("साक्षरता दर"),
+                            ]),
+                          ],
+                          1
+                        ),
                         _vm._v(" "),
-                        _c("label", { staticClass: " col-12 text-center" }, [
-                          _vm._v("(सुदुरपश्चिममा)"),
-                        ]),
-                      ],
-                      1
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "col-md-6" },
-                      [
-                        _c("bar", {
-                          attrs: {
-                            "chart-options": { responsive: true },
-                            "chart-data": {
-                              labels: [
-                                "बेरोजगारी दर",
-                                "श्रम शक्ति सजभागिता दर",
-                                "जनसंख्या अनुपातमा रोजगार",
-                                "रोजगारको क्षेत्र",
-                                "रोजगार",
-                              ],
-                              datasets: [
-                                {
-                                  label: "पुरुष",
-                                  data: [10.3, 53.8, 48.3],
-                                  backgroundColor: "#007bff",
+                        _c(
+                          "div",
+                          { staticClass: "col-md-3" },
+                          [
+                            _c("bar", {
+                              attrs: {
+                                "chart-options": { responsive: true },
+                                "chart-data": {
+                                  labels: [
+                                    "अस्पताल",
+                                    "प्रास्वाक",
+                                    "स्वास्थ्य चौकी",
+                                    "सा.स्वा.इकाई.",
+                                    "आ.स्वा.के.",
+                                    "पोषण गृह",
+                                  ],
+                                  datasets: [
+                                    {
+                                      backgroundColor: [
+                                        "#007bff",
+                                        "#dc3545",
+                                        "green",
+                                        "grey",
+                                        "pink",
+                                        "purple",
+                                      ],
+                                      data: [13, 16, 375, 135, 133],
+                                    },
+                                  ],
                                 },
-                                {
-                                  label: "महिला",
-                                  data: [13.1, 26.3, 0],
-                                  backgroundColor: "#dc3545",
-                                },
-                                {
-                                  label: "औपचारिक",
-                                  data: [0, 0, 0, 37.8, 15.4],
-                                  backgroundColor: "pink",
-                                },
-                                {
-                                  label: "अनौपचारिक",
-                                  data: [0, 0, 0, 62.2, 84.6],
-                                  backgroundColor: "#00663d",
-                                },
-                              ],
-                            },
-                          },
-                        }),
+                              },
+                            }),
+                            _vm._v(" "),
+                            _c("label", { staticClass: "col-12 text-center" }, [
+                              _vm._v("स्वास्थ्य संस्था संख्या"),
+                            ]),
+                          ],
+                          1
+                        ),
                         _vm._v(" "),
-                        _c("label", { staticClass: "col-12 text-center" }, [
-                          _vm._v("(नेपालमा)"),
-                        ]),
-                      ],
-                      1
-                    ),
+                        _c(
+                          "div",
+                          { staticClass: "col-md-3" },
+                          [
+                            _c("pie", {
+                              attrs: {
+                                "chart-options": { responsive: true },
+                                "chart-data": {
+                                  labels: ["कालोपत्रे", "ग्राभेल", "कच्ची"],
+                                  datasets: [
+                                    {
+                                      backgroundColor: [
+                                        "#007bff",
+                                        "#dc3545",
+                                        "green",
+                                      ],
+                                      data: [234, 1158, 3954],
+                                    },
+                                  ],
+                                },
+                              },
+                            }),
+                            _vm._v(" "),
+                            _c("label", { staticClass: "col-12 text-center" }, [
+                              _vm._v("सडक"),
+                            ]),
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          { staticClass: "col-md-3" },
+                          [
+                            _c("bar", {
+                              attrs: {
+                                "chart-options": { responsive: true },
+                                "chart-data": {
+                                  labels: ["खना पकाउने", "वत्तीवाल्ने"],
+                                  datasets: [
+                                    {
+                                      label: "दाउरा",
+                                      data: [98.57],
+                                      backgroundColor: "#007bff",
+                                    },
+                                    {
+                                      label: "एलपिजीग्याँस",
+                                      data: [1.07],
+                                      backgroundColor: "#dc3545",
+                                    },
+                                    {
+                                      label: "अन्यः",
+                                      data: [0.36],
+                                      backgroundColor: "pink",
+                                    },
+                                    {
+                                      label: "विजुली",
+                                      data: [0, 64.69],
+                                      backgroundColor: "#00663d",
+                                    },
+                                    {
+                                      label: "वैकल्पिक उर्जा",
+                                      data: [0, 3],
+                                      backgroundColor: "yellow",
+                                    },
+                                  ],
+                                },
+                              },
+                            }),
+                          ],
+                          1
+                        ),
+                      ]),
+                    ]),
                   ]),
                 ]),
               ]),
