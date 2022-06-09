@@ -43,7 +43,7 @@
                 </div>
 
 
-                <div class="col-xl-9 col-lg-8 col-md-12">
+                <div class="col-xl-8 col-lg-7 col-md-12">
                     <div class="container py-5">
                         <h1 class="page-title">आर्थिक अवस्था</h1>
                         

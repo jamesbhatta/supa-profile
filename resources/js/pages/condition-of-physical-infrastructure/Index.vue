@@ -1,176 +1,255 @@
 <template>
-    <div class="container py-5">
-        <h1 class="page-title">पूर्वाधार विकास</h1>
-        <data-viewer :data="FarWestOperatedNationalPrideProgram"></data-viewer>
-        <div class="my-5"></div>
-        <data-viewer :data="OrganizingStatePride"></data-viewer>
-        <div class="my-5"></div>
-        <data-viewer :data="DescriptionofServiceNetworkInTheFarWest">
+    <div class="container-fluid my-div">
+        <div class="container-fluid py-5">
+            <div class="row">
+                <div class="col-xl-2 col-lg-3 col-md-4 side-client-menus">
 
-            <template slot="chart">
-                <div class="row">
-                    <div class="col-md-6">
-                        <pie-chart :chart-data="DescriptionofServiceNetworkInTheFarWestChartData"></pie-chart>
-                    </div>
-                    <div class="col-md-6">
-                        <bar-chart :chart-data="DescriptionofServiceNetworkInTheFarWestChartData">
+                    <div class="col-xl-12 col-lg-12 col-md-12 main-content">
+                        <div style="height: 80px;"></div>
+                        <div class="list-set">
+                            <ul class="table-list " style="overflow: scroll;">
+                                <li class="my-3">
+                                    <a href="http://localhost:3000/condition-of-physical-infrastructure/#table_1">सुदूरपश्चिम संचालित राष्ट्रिय गौरवका आयोजनाहरु</a>
+                                </li>
 
-                        </bar-chart>
-                    </div>
-                </div>
+                                <li class="my-3">
+                                    <a href="http://localhost:3000/condition-of-physical-infrastructure/#table_2">प्रदेश गौरबका आयोजाहरु</a>
+                                </li>
 
-            </template>
-        </data-viewer>
-        <div class="my-5"></div>
-        <data-viewer :data="StateAndLocalLevelRoadDetails">
-            <template slot="chart">
-                <div class="row">
-                    <div class="col-md-6">
-                        <pie-chart :chart-data="StateAndLocalLevelRoadDetailsChartData"></pie-chart>
-                    </div>
-                    <div class="col-md-6">
-                        <bar-chart :chart-data="StateAndLocalLevelRoadDetailsChartData"></bar-chart>
-                    </div>
-                </div>
-            </template>
-        </data-viewer>
-        <div class="my-5"></div>
-        <data-viewer :data="RoadtypeDetails">
-            <template slot="chart">
-                <div class="row">
-                    <div class="col-md-6">
-                        <pie-chart :chart-data="RoadtypeDetailsChartData"></pie-chart>
-                    </div>
-                    <div class="col-md-6">
-                        <bar-chart :chart-data="RoadtypeDetailsChartData"></bar-chart>
-                    </div>
-                </div>
-            </template>
-        </data-viewer>
-        <div class="my-5"></div>
-        <data-viewer :data="yatayatdata">
-            <template slot="chart">
-                <div class="row">
-                    <div class="col-md-6">
-                        <pie-chart :chart-data="yatayatdataChartData"></pie-chart>
-                    </div>
-                    <div class="col-md-6">
-                        <bar-chart :chart-data="yatayatdataChartData"></bar-chart>
-                    </div>
-                </div>
-            </template>
+                                <li class="my-3">
+                                    <a href="http://localhost:3000/condition-of-physical-infrastructure/#table_3">सुदूरपश्चिममा सेवा सञ्जालको विवरण</a>
+                                </li>
 
+                                <li class="my-3">
+                                    <a href="http://localhost:3000/condition-of-physical-infrastructure/#table_4">प्रदेश अनुसार प्रदेश र स्थानीय तहको सडक विवरण (कि.मि.)</a>
+                                </li>
 
-        </data-viewer>
-        <div class="my-5"></div>
-        <!-- 6.7 -->
-        <data-viewer :data="airportdata"></data-viewer>
-        <div class="my-5"></div>
-        <!-- 6.8 -->
-        <data-viewer :data="khanepanikashrot">
-            <template slot="thead-top">
-                <tr>
-                    <th colspan="2" class="bg-light text-center font-weight-bold">जिल्ला</th>
+                                <li class="my-3">
+                                    <a href="http://localhost:3000/condition-of-physical-infrastructure/#table_5">प्रदेश अनुसार सडकको प्रकार विवरण (कि.मि.)</a>
+                                </li>
 
-                </tr>
-            </template>
-        </data-viewer>
-        <div class="my-5"></div>
+                                <li class="my-3">
+                                    <a href="http://localhost:3000/condition-of-physical-infrastructure/#table_6">सवारी साधनको संख्या विवरण</a>
+                                </li>
 
-        <!-- indhan -->
-        <data-viewer :data="indhankoshrot">
-            <template slot="thead-top">
-                <tr>
-                    <th colspan="2" class="bg-light text-center font-weight-bold">जिल्ला</th>
+                                <li class="my-3">
+                                    <a href="http://localhost:3000/condition-of-physical-infrastructure/#table_7">विमानस्थलको सञ्चालन अवस्था</a>
+                                </li>
 
-                </tr>
-            </template>
-        </data-viewer>
-        <div class="my-5"></div>
+                                <li class="my-3">
+                                    <a href="http://localhost:3000/condition-of-physical-infrastructure/#table_8">खानेपानीका मुख्य श्रोत अनुसार स्थानीय तहगत घरपरिवार संख्या</a>
+                                </li>
 
-        <!-- electricity -->
-        <data-viewer :data="electricity">
-            <template slot="thead-top">
-                <tr>
-                    <th colspan="2" class="bg-light text-center font-weight-bold">जिल्ला</th>
+                                <li class="my-3">
+                                    <a href="http://localhost:3000/condition-of-physical-infrastructure/#table_9">खाना पकाउनका लागि प्रयोग हुने इन्धनको स्रोत</a>
+                                </li>
 
-                </tr>
-            </template>
-        </data-viewer>
+                                <li class="my-3">
+                                    <a href="http://localhost:3000/condition-of-physical-infrastructure/#table_10">घरपरिवारमा उज्यालोका लागि प्रयोग हुने स्रोत</a>
+                                </li>
 
+                                <li class="my-3">
+                                    <a href="http://localhost:3000/condition-of-physical-infrastructure/#table_11">विधुत सेवामा पहुँचको प्रदेशगत अवस्था</a>
+                                </li>
 
-        <div class="my-5"></div>
-        <data-viewer :data="provinceelectricitypahuch">
+                                <li class="my-3">
+                                    <a href="http://localhost:3000/condition-of-physical-infrastructure/#table_12">विधुत उत्पादनको प्रदेशगत अवस्था</a>
+                                </li>
 
-            <template slot="chart">
-                <div class="row">
-                    <div class="col-md-6">
-                        <pie-chart :chart-data="provinceelectricitypahuchChartData"></pie-chart>
-                    </div>
-                    <div class="col-md-6">
-                        <bar-chart :chart-data="provinceelectricitypahuchChartData"></bar-chart>
+                                <li class="my-3">
+                                    <a href="http://localhost:3000/condition-of-physical-infrastructure/#table_13">सुदूरपश्चिममा सञ्चार सेवा उपभोगकर्ताका संख्या विवरण</a>
+                                </li>
+
+                                <li class="my-3">
+                                    <a href="http://localhost:3000/condition-of-physical-infrastructure/#table_14">प्रेस काउन्सिलमा दर्ता भएका सुदूरपश्चिमका पत्रपत्रिकाहरु</a>
+                                </li>
+
+                                <li class="my-3">
+                                    <a href="http://localhost:3000/condition-of-physical-infrastructure/#table_15">प्रदेशमा रहेका एफएम रेडियोको विवरण</a>
+                                </li>
+
+                                
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </template>
 
-        </data-viewer>
 
-        <div class="my-5"></div>
-        <data-viewer :data="produceelectricitydata">
-            <template slot="chart">
-                <div class="row">
-                    <div class="col-md-6">
-                        <pie-chart :chart-data="produceelectricitydataChartData"></pie-chart>
+                <div class="col-xl-8 col-lg-7 col-md-12">
+                    <div class="container py-5">
+                        <h1 class="page-title">पूर्वाधार विकास</h1>
+                        <data-viewer :data="FarWestOperatedNationalPrideProgram"></data-viewer>
+                        
+                        <data-viewer :data="OrganizingStatePride"></data-viewer>
+                        
+                        <data-viewer :data="DescriptionofServiceNetworkInTheFarWest">
+
+                            <template slot="chart">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <pie-chart :chart-data="DescriptionofServiceNetworkInTheFarWestChartData">
+                                        </pie-chart>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <bar-chart :chart-data="DescriptionofServiceNetworkInTheFarWestChartData">
+
+                                        </bar-chart>
+                                    </div>
+                                </div>
+
+                            </template>
+                        </data-viewer>
+                        
+                        <data-viewer :data="StateAndLocalLevelRoadDetails">
+                            <template slot="chart">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <pie-chart :chart-data="StateAndLocalLevelRoadDetailsChartData"></pie-chart>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <bar-chart :chart-data="StateAndLocalLevelRoadDetailsChartData"></bar-chart>
+                                    </div>
+                                </div>
+                            </template>
+                        </data-viewer>
+                        
+                        <data-viewer :data="RoadtypeDetails">
+                            <template slot="chart">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <pie-chart :chart-data="RoadtypeDetailsChartData"></pie-chart>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <bar-chart :chart-data="RoadtypeDetailsChartData"></bar-chart>
+                                    </div>
+                                </div>
+                            </template>
+                        </data-viewer>
+                        
+                        <data-viewer :data="yatayatdata">
+                            <template slot="chart">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <pie-chart :chart-data="yatayatdataChartData"></pie-chart>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <bar-chart :chart-data="yatayatdataChartData"></bar-chart>
+                                    </div>
+                                </div>
+                            </template>
+
+
+                        </data-viewer>
+                        
+                        <!-- 6.7 -->
+                        <data-viewer :data="airportdata"></data-viewer>
+                        
+                        <!-- 6.8 -->
+                        <data-viewer :data="khanepanikashrot">
+                            <template slot="thead-top">
+                                <tr>
+                                    <th colspan="2" class="bg-light text-center font-weight-bold">जिल्ला</th>
+
+                                </tr>
+                            </template>
+                        </data-viewer>
+                       
+
+                        <!-- indhan -->
+                        <data-viewer :data="indhankoshrot">
+                            <template slot="thead-top">
+                                <tr>
+                                    <th colspan="2" class="bg-light text-center font-weight-bold">जिल्ला</th>
+
+                                </tr>
+                            </template>
+                        </data-viewer>
+                       
+                        <!-- electricity -->
+                        <data-viewer :data="electricity">
+                            <template slot="thead-top">
+                                <tr>
+                                    <th colspan="2" class="bg-light text-center font-weight-bold">जिल्ला</th>
+
+                                </tr>
+                            </template>
+                        </data-viewer>
+
+                        <data-viewer :data="provinceelectricitypahuch">
+
+                            <template slot="chart">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <pie-chart :chart-data="provinceelectricitypahuchChartData"></pie-chart>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <bar-chart :chart-data="provinceelectricitypahuchChartData"></bar-chart>
+                                    </div>
+                                </div>
+                            </template>
+
+                        </data-viewer>
+
+                        <data-viewer :data="produceelectricitydata">
+                            <template slot="chart">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <pie-chart :chart-data="produceelectricitydataChartData"></pie-chart>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <bar-chart :chart-data="produceelectricitydataChartData"></bar-chart>
+                                    </div>
+                                </div>
+                            </template>
+                        </data-viewer>
+                        
+                        <data-viewer :data="telecomunicationdata">
+                            <template slot="chart">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <pie-chart :chart-data="telecomunicationdataChartData"></pie-chart>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <bar-chart :chart-data="telecomunicationdataChartData"></bar-chart>
+                                    </div>
+                                </div>
+                            </template>
+                        </data-viewer>
+                        
+                        <data-viewer :data="newspaperdata">
+
+                            <template slot="chart">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <pie-chart :chart-data="newspaperdataChartData"></pie-chart>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <bar-chart :chart-data="newspaperdataChartData"></bar-chart>
+                                    </div>
+                                </div>
+                            </template>
+
+                        </data-viewer>
+                        
+                        <data-viewer :data="fmdata">
+                            <template slot="chart">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <pie-chart :chart-data="fmdataChartData"></pie-chart>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <bar-chart :chart-data="fmdataChartData"></bar-chart>
+                                    </div>
+                                </div>
+                            </template>
+
+                        </data-viewer>
+
                     </div>
-                    <div class="col-md-6">
-                        <bar-chart :chart-data="produceelectricitydataChartData"></bar-chart>
-                    </div>
+
                 </div>
-            </template>
-        </data-viewer>
-        <div class="my-5"></div>
-        <data-viewer :data="telecomunicationdata">
-            <template slot="chart">
-                <div class="row">
-                    <div class="col-md-6">
-                        <pie-chart :chart-data="telecomunicationdataChartData"></pie-chart>
-                    </div>
-                    <div class="col-md-6">
-                        <bar-chart :chart-data="telecomunicationdataChartData"></bar-chart>
-                    </div>
-                </div>
-            </template>
-        </data-viewer>
-        <div class="my-5"></div>
-        <data-viewer :data="newspaperdata">
-
-            <template slot="chart">
-                <div class="row">
-                    <div class="col-md-6">
-                        <pie-chart :chart-data="newspaperdataChartData"></pie-chart>
-                    </div>
-                    <div class="col-md-6">
-                        <bar-chart :chart-data="newspaperdataChartData"></bar-chart>
-                    </div>
-                </div>
-            </template>
-
-        </data-viewer>
-        <div class="my-5"></div>
-        <data-viewer :data="fmdata">
-        <template slot="chart">
-                <div class="row">
-                    <div class="col-md-6">
-                        <pie-chart :chart-data="fmdataChartData"></pie-chart>
-                    </div>
-                    <div class="col-md-6">
-                        <bar-chart :chart-data="fmdataChartData"></bar-chart>
-                    </div>
-                </div>
-            </template>
-        
-        </data-viewer>
-
+            </div>
+        </div>
     </div>
 
 </template>
@@ -181,6 +260,7 @@ export default {
 
             //To be develop
             FarWestOperatedNationalPrideProgram: {
+                id:'table_1',
                 title: "सुदूरपश्चिम संचालित राष्ट्रिय गौरवका आयोजनाहरु",
                 labels: ["क्र.स.", "आयोजनाको नाम", "जिल्ला", "विवरण"],
                 data: [
@@ -206,6 +286,7 @@ export default {
 
             // start प्रदेश गौरबका आयोजाहरु
             OrganizingStatePride: {
+                id:'table_2',
                 title: "प्रदेश गौरबका आयोजाहरु",
                 labels: ["क्र.स.", "सडक", "जिल्ला", "ठेक्का लागेको लम्बाइ", "रकम (रु.लाखमा)", "सम्पन्न हुने अवधि"],
                 data: [
@@ -278,6 +359,7 @@ export default {
             //End प्रदेश गौरबका आयोजाहरु
 
             DescriptionofServiceNetworkInTheFarWest: {
+                id:'table_3',
                 title: "सुदूरपश्चिममा सेवा सञ्जालको विवरण",
                 labels: ["क्र.स.", "सडक सञ्जाल", "सुदूरपश्चिममा लम्बाई (कि.मि)", "नेपाल (कि.मि.)"],
                 data: [
@@ -290,13 +372,13 @@ export default {
 
             DescriptionofServiceNetworkInTheFarWestChartData: {
                 labels:
-                    ["कूल सडक सञ्जाल","कालोपत्रे","ग्रावेल","कच्ची",
+                    ["कूल सडक सञ्जाल", "कालोपत्रे", "ग्रावेल", "कच्ची",
                     ],
                 datasets: [
 
                     {
-                        backgroundColor: ['Red', 'Blue', 'Green',' Grey'],
-                        data: [5326,214,1158,3954,
+                        backgroundColor: ['Red', 'Blue', 'Green', ' Grey'],
+                        data: [5326, 214, 1158, 3954,
                         ],
 
                     },
@@ -306,6 +388,7 @@ export default {
 
 
             StateAndLocalLevelRoadDetails: {
+                id:'table_4',
                 title: "प्रदेश अनुसार प्रदेश र स्थानीय तहको सडक विवरण (कि.मि.)",
                 labels: ["सडकको विवरण", "प्रदेश १", "मधेश", "बागमती", "गण्डकी", "लुम्बीनी", "कर्णाली", "सुदूरपश्चिम", "जम्मा"],
                 data: [
@@ -317,12 +400,12 @@ export default {
 
             StateAndLocalLevelRoadDetailsChartData: {
                 labels:
-                    ["प्रादेशिक सडक(कि.मि.)","स्थानीय सडक(कि.मि.)",
+                    ["प्रादेशिक सडक(कि.मि.)", "स्थानीय सडक(कि.मि.)",
                     ],
                 datasets: [
                     {
-                        backgroundColor: ['Red',' Blue'],
-                        data: [31965,31612
+                        backgroundColor: ['Red', ' Blue'],
+                        data: [31965, 31612
                         ],
                     },
                 ],
@@ -334,6 +417,7 @@ export default {
 
 
             RoadtypeDetails: {
+                id:'table_5',
                 title: "प्रदेश अनुसार सडकको प्रकार विवरण (कि.मि.)",
                 labels: ["प्रदेश", "धुले/कच्ची", "ग्राबेल", "कालोपत्रे", "जम्मा सडक", "प्रदेशको हिस्सा प्रतिशत", "सडक घनत्व"],
                 data: [
@@ -351,18 +435,19 @@ export default {
             RoadtypeDetailsChartData: {
 
                 labels:
-                    ["प्रदेश १","मधेश","बागमती","गण्डकी","लुम्बीनी","कर्णाली","सुदूरपश्चिम",
+                    ["प्रदेश १", "मधेश", "बागमती", "गण्डकी", "लुम्बीनी", "कर्णाली", "सुदूरपश्चिम",
                     ],
                 datasets: [
                     {
-                        backgroundColor: ['red', 'green',' blue',' yellow',' cyan',' grey',' pink'],
-                        data: [0.49,0.62,0.77,0.53,0.41,0.12,0.27
+                        backgroundColor: ['red', 'green', ' blue', ' yellow', ' cyan', ' grey', ' pink'],
+                        data: [0.49, 0.62, 0.77, 0.53, 0.41, 0.12, 0.27
                         ],
                     },
                 ],
             },
 
             yatayatdata: {
+                id:'table_6',
                 title: "सवारी साधनको संख्या विवरण",
                 labels: ["विवरण", "२०७७ असार मसान्तसम्म", "२०७८ असार मसान्तसम्म", "बृद्धि प्रतिशत"],
                 data: [
@@ -373,12 +458,12 @@ export default {
             },
             yatayatdataChartData: {
                 labels:
-                    ["मोटरसाइकल","अन्य","यातायात साधनको संख्या"
+                    ["मोटरसाइकल", "अन्य", "यातायात साधनको संख्या"
                     ],
                 datasets: [
                     {
-                        backgroundColor: ['red', 'green',' blue'],
-                        data: [18.48,20.01,18.74,
+                        backgroundColor: ['red', 'green', ' blue'],
+                        data: [18.48, 20.01, 18.74,
                         ],
                     },
                 ],
@@ -388,6 +473,7 @@ export default {
 
             // 6.7
             airportdata: {
+                id:'table_7',
                 title: "विमानस्थलको सञ्चालन अवस्था",
                 labels: ["क्र.स.", "विमानस्थल", "जिल्ला", "पालिका", "स्थान", "अवस्था"],
                 data: [
@@ -411,6 +497,7 @@ export default {
 
             // 6.8
             khanepanikashrot: {
+                id:'table_8',
                 title: "खानेपानीका मुख्य श्रोत अनुसार स्थानीय तहगत घरपरिवार संख्या",
                 labels: ["क्रस", "बाजुरा", "धारा", "ट्युबेल", "संरक्षित कुवा", "असंरक्षित कुवा", "थोपा पानी", "नदीको धारा", "अन्य"],
                 data: [
@@ -555,6 +642,7 @@ export default {
 
             // indhan
             indhankoshrot: {
+                id:'table_9',
                 title: "खाना पकाउनका लागि प्रयोग हुने इन्धनको स्रोत",
                 labels: ["क्रस", "बाजुरा", "काठ दाउरा", "मट्टितेल", "एलपी ग्यास", "गुइँठा, गोबर", "बायोग्यास", "विधुत", "अन्य"],
                 data: [
@@ -697,6 +785,7 @@ export default {
             },
             // electricity
             electricity: {
+                id:'table_10',
                 title: "घरपरिवारमा उज्यालोका लागि प्रयोग हुने स्रोत",
                 labels: ["क्रस", "बाजुरा", "विजुली", "मट्टितेल", "ब्यायो ग्यास", "सोलार", "अन्य"],
                 data: [
@@ -839,6 +928,7 @@ export default {
             },
             // 6.10
             provinceelectricitypahuch: {
+                id:'table_11',
                 title: "विधुत सेवामा पहुँचको प्रदेशगत अवस्था",
                 labels: ["प्रदेश", "पहुँच (प्रतिशत)"],
                 data: [
@@ -856,12 +946,12 @@ export default {
 
             provinceelectricitypahuchChartData: {
                 labels:
-                    ["प्रदेश १","मधेश","बागमती","गण्डकी","लुम्बीनी","कर्णाली","सुदूरपश्चिम"
+                    ["प्रदेश १", "मधेश", "बागमती", "गण्डकी", "लुम्बीनी", "कर्णाली", "सुदूरपश्चिम"
                     ],
                 datasets: [
                     {
-                        backgroundColor: ['red', 'green', 'blue',' yellow', 'cyan',' grey',' pink'],
-                        data: [82.43,99.05,94.44,92.79,91,34.75,64.69
+                        backgroundColor: ['red', 'green', 'blue', ' yellow', 'cyan', ' grey', ' pink'],
+                        data: [82.43, 99.05, 94.44, 92.79, 91, 34.75, 64.69
                         ],
                     },
                 ],
@@ -869,6 +959,7 @@ export default {
 
 
             produceelectricitydata: {
+                id:'table_12',
                 title: "विधुत उत्पादनको प्रदेशगत अवस्था",
                 labels: ["प्रदेश", "०७७ सम्म (मे.वा.)"],
                 data: [
@@ -886,18 +977,19 @@ export default {
             produceelectricitydataChartData: {
 
                 labels:
-                    ["प्रदेश १","मधेश","बागमती","गण्डकी","लुम्बीनी","कर्णाली","सुदूरपश्चिम",
+                    ["प्रदेश १", "मधेश", "बागमती", "गण्डकी", "लुम्बीनी", "कर्णाली", "सुदूरपश्चिम",
                     ],
                 datasets: [
                     {
-                        backgroundColor: ['red', 'green',' blue', 'yellow', 'cyan', 'grey', 'pink', 'Aqua'],
-                        data: [280.0,13.0,272.0,527.0,31.0,11.0,52.0,
+                        backgroundColor: ['red', 'green', ' blue', 'yellow', 'cyan', 'grey', 'pink', 'Aqua'],
+                        data: [280.0, 13.0, 272.0, 527.0, 31.0, 11.0, 52.0,
                         ],
                     },
                 ],
             },
 
             telecomunicationdata: {
+                id:'table_13',
                 title: "सुदूरपश्चिममा सञ्चार सेवा उपभोगकर्ताका संख्या विवरण",
                 labels: ["विवरण", "२०७७ असार मसान्तसम्म", "२०७८ असार मसान्तसम्म", "बृद्धि प्रतिशत"],
                 data: [
@@ -917,7 +1009,7 @@ export default {
                     {
 
                         backgroundColor: ['Red', 'green'],
-                        data: [13.09,32.54
+                        data: [13.09, 32.54
                         ],
                     },
 
@@ -925,6 +1017,7 @@ export default {
             },
 
             newspaperdata: {
+                id:'table_14',
                 title: "प्रेस काउन्सिलमा दर्ता भएका सुदूरपश्चिमका पत्रपत्रिकाहरु",
                 labels: ["जिल्ला", "दैनिक", "अर्ध साप्ताहिक", "साप्ताहिक", "पाक्षिक", "मासिक", "द्धैमासिक", "त्रैमासिक", "जम्मा",],
                 data: [
@@ -941,13 +1034,13 @@ export default {
                 ],
             },
             newspaperdataChartData: {
-                labels: ["कैलाली","बझाङ","बाजुरा","डोटी","अछाम","कञ्चनपुर","दार्चुला","बैतडी","डडेलधुरा",
+                labels: ["कैलाली", "बझाङ", "बाजुरा", "डोटी", "अछाम", "कञ्चनपुर", "दार्चुला", "बैतडी", "डडेलधुरा",
                 ],
                 datasets: [
                     {
 
-                        backgroundColor: ['red',' green', 'blue', 'yellow', 'cyan', 'grey',' pink',' Aqua', 'darkcyan'],
-                        data: [78,5,5,12,9,72,6,5,16,
+                        backgroundColor: ['red', ' green', 'blue', 'yellow', 'cyan', 'grey', ' pink', ' Aqua', 'darkcyan'],
+                        data: [78, 5, 5, 12, 9, 72, 6, 5, 16,
                         ],
                     },
 
@@ -957,9 +1050,10 @@ export default {
 
 
             fmdata: {
+                id:'table_15',
                 title: "प्रदेशमा रहेका एफएम रेडियोको विवरण",
                 labels: ["जिल्ला", "एफएम रेडियोको संख्या"],
-                data: [["बाजुरा", 4],["बझाङ", 9],["अछाम", 12],["डोटी", 5],["डडेलधुरा", 6],["बैतडी", 7],["दार्चुला", 10],["कैलाली", 22],["कञ्चनपुर", 10],["जम्मा", 85],
+                data: [["बाजुरा", 4], ["बझाङ", 9], ["अछाम", 12], ["डोटी", 5], ["डडेलधुरा", 6], ["बैतडी", 7], ["दार्चुला", 10], ["कैलाली", 22], ["कञ्चनपुर", 10], ["जम्मा", 85],
                 ],
             },
 
@@ -967,11 +1061,11 @@ export default {
 
             fmdataChartData:
             {
-                labels: ["बाजुरा","बझाङ","अछाम","डोटी","डडेलधुरा","बैतडी","दार्चुला","कैलाली","कञ्चनपुर"],
+                labels: ["बाजुरा", "बझाङ", "अछाम", "डोटी", "डडेलधुरा", "बैतडी", "दार्चुला", "कैलाली", "कञ्चनपुर"],
                 datasets: [
                     {
-                        backgroundColor: ['red', 'green',' blue',' yellow', 'cyan', 'grey', 'pink',' Aqua', 'darkcyan'],
-                        data: [4,9,12,5,6,7,10,22,10],
+                        backgroundColor: ['red', 'green', ' blue', ' yellow', 'cyan', 'grey', 'pink', ' Aqua', 'darkcyan'],
+                        data: [4, 9, 12, 5, 6, 7, 10, 22, 10],
                     },
                 ],
             }

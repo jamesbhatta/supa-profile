@@ -619,7 +619,7 @@ var render = function () {
       _c("div", { staticClass: "row" }, [
         _vm._m(0),
         _vm._v(" "),
-        _c("div", { staticClass: "col-xl-9 col-lg-8 col-md-12" }, [
+        _c("div", { staticClass: "col-xl-8 col-lg-7 col-md-12" }, [
           _c(
             "div",
             { staticClass: "container" },
