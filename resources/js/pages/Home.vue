@@ -63,7 +63,7 @@
         <div class="my-5"></div>
         <div class="container-fluid">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 my-3">
                   <div class="chart-card">
                     <div class="chart-body">
                       <div class="chart-title mb-3">भौगोलिक क्षेत्रगत क्षेत्रफल</div>
@@ -87,7 +87,7 @@
                     </div>
                   </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 my-3">
               <template>
                   <div class="chart-card">
                     <div class="chart-body">

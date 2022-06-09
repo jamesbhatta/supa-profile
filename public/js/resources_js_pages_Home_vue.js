@@ -552,7 +552,7 @@ var render = function () {
         _vm._v(" "),
         _c("div", { staticClass: "container-fluid" }, [
           _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col-md-6" }, [
+            _c("div", { staticClass: "col-md-6 my-3" }, [
               _c("div", { staticClass: "chart-card" }, [
                 _c("div", { staticClass: "chart-body" }, [
                   _c("div", { staticClass: "chart-title mb-3" }, [
@@ -594,7 +594,7 @@ var render = function () {
             _vm._v(" "),
             _c(
               "div",
-              { staticClass: "col-md-6" },
+              { staticClass: "col-md-6 my-3" },
               [
                 [
                   _c("div", { staticClass: "chart-card" }, [
