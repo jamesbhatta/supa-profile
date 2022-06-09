@@ -1,83 +1,145 @@
 <template>
-  <div class="container py-5">
-    <h1 class="page-title">भौगोलिक तथा राजनीतिक अवस्था</h1>
-    <data-viewer :data="geographicalAreaData">
-      <template slot="chart">
-        <div class="row">
-          <div class="col-md-6">
-            <pie-chart :chart-data="geographicalAreaChartData" :width="200" :height="200"></pie-chart>
-          </div>
-          <div class="col-md-6">
-            <bar-chart :chart-data="geographicalAreaChartData" :width="200" :height="200"></bar-chart>
+  <div class="container-fluid my-div">
+
+    
+    <div class="container-fluid py-5">
+      <div class="row">
+        <div class="col-xl-2 col-lg-3 col-md-4 side-client-menus">
+         
+          <div class="col-xl-12 col-lg-12 col-md-12 main-content" >
+             <div style="height: 80px;"></div>
+              <div class="list-set">
+                <ul class="table-list ">
+                  <li class="my-3">
+                    <a href="http://localhost:3000/geographical-political-situation/#table_1">सुदूरपश्चिम प्रदेशको भौगोलिक क्षेत्रगत क्षेत्रफल</a>
+                  </li>
+
+                   <li class="my-3">
+                    <a href="http://localhost:3000/geographical-political-situation/#table_2">प्रदेशगत भौगोलिक क्षेत्रफल</a>
+                  </li>
+
+                  <li class="my-3">
+                    <a href="http://localhost:3000/geographical-political-situation/#table_3">प्रदेशको जिल्लागत क्षेत्रफल</a>
+                  </li>
+
+                    <li class="my-3">
+                    <a href="http://localhost:3000/geographical-political-situation/#table_4">भू – उपयोगको अवस्था</a>
+                  </li>
+
+                    <li class="my-3">
+                    <a href="http://localhost:3000/geographical-political-situation/#table_5">स्थानीय तहको जिल्लागत संख्या</a>
+                  </li>
+
+                    <li class="my-3">
+                    <a href="http://localhost:3000/geographical-political-situation/#table_6">प्रदेशमा भौगोलिक विभाजन अनुसार निर्वाचन क्षेत्रको विवरण</a>
+                  </li>
+                  <li class="my-3">
+                    <a href="http://localhost:3000/geographical-political-situation/#table_7">प्रदेशका जिल्लाहरुमा रहेका निर्वाचन क्षेत्रको विवरण</a>
+                  </li>
+                  <li class="my-3">
+                    <a href="http://localhost:3000/geographical-political-situation/#table_8">हालसम्म भएका प्रदेश प्रमुखहरुको नामावली र मिति</a>
+                  </li>
+                  <li class="my-3">
+                    <a href="http://localhost:3000/geographical-political-situation/#table_9">सुदूरपश्चिम प्रदेशको पहिलो मन्त्रिपरिषद्</a>
+                  </li>
+                  <li class="my-3">
+                    <a href="http://localhost:3000/geographical-political-situation/#table_10">सुदूरपश्चिम प्रदेशमा हालको मन्त्रिपरिषद्</a>
+                  </li>
+                  <li class="my-3">
+                    <a href="http://localhost:3000/geographical-political-situation/#table_11">प्रदेश सभा सदस्यहरुको नामावली</a>
+                  </li>
+                  
+                </ul>
+              </div>
           </div>
         </div>
-      </template>
-    </data-viewer>
+        <!-- ================================== -->
+        <div class="col-xl-9 col-lg-8 col-md-12">
+          <div class="container">
+            <h1 class="page-title">भौगोलिक तथा राजनीतिक अवस्था</h1>
+            <data-viewer :data="geographicalAreaData">
+              <template slot="chart">
+                <div class="row">
+                  <div class="col-md-6">
+                    <pie-chart :chart-data="geographicalAreaChartData" :width="200" :height="200"></pie-chart>
+                  </div>
+                  <div class="col-md-6">
+                    <bar-chart :chart-data="geographicalAreaChartData" :width="200" :height="200"></bar-chart>
+                  </div>
+                </div>
+              </template>
+            </data-viewer>
 
-    <div class="my-5"></div>
+            <!-- <div class="my-5"></div> -->
 
-    <pardeshsavanamawali></pardeshsavanamawali>
-    <div class="my-5"></div>
+            <pardeshsavanamawali></pardeshsavanamawali>
+            <div class="my-5"></div>
 
-    <data-viewer :data="districtWiseAreaOfStateData">
-      <template slot="chart">
-        <div class="row">
-          <div class="col-md-6">
-            <pie-chart :chart-data="districtWiseAreaOfStateChartData"></pie-chart>
-          </div>
-          <div class="col-md-6">
-            <bar-chart :chart-data="districtWiseAreaOfStateChartData"></bar-chart>
+            <data-viewer :data="districtWiseAreaOfStateData">
+              <template slot="chart">
+                <div class="row">
+                  <div class="col-md-6">
+                    <pie-chart :chart-data="districtWiseAreaOfStateChartData"></pie-chart>
+                  </div>
+                  <div class="col-md-6">
+                    <bar-chart :chart-data="districtWiseAreaOfStateChartData"></bar-chart>
+                  </div>
+                </div>
+              </template>
+            </data-viewer>
+            <!-- <div class="my-5"></div> -->
+            <data-viewer :data="vuupyogkoData">
+              <template slot="chart">
+                <div class="row">
+                  <div class="col-md-6">
+                    <pie-chart :chart-data="vuupyogkoChartData"></pie-chart>
+                  </div>
+                  <div class="col-md-6">
+                    <bar-chart :chart-data="vuupyogkoChartData"></bar-chart>
+                  </div>
+                </div>
+              </template>
+            </data-viewer>
+            <!-- <div class="my-5"></div> -->
+            <data-viewer :data="sthaniyetahapopulation">
+              <template slot="thead-top">
+                <tr>
+                  <th colspan="2"></th>
+                  <th colspan="4" class="bg-light text-center font-weight-bold">स्थानीय तह विवरण</th>
+                </tr>
+              </template>
+            </data-viewer>
+            <div class="my-5"></div>
+            <data-viewer :data="nirbachanchhetra">
+              <template slot="chart">
+                <div class="row">
+                  <div class="col-md-6">
+                    <pie-chart :chart-data="nirbachanchhetraChartData"></pie-chart>
+                  </div>
+
+                  <div class="col-md-6">
+                    <bar-chart :chart-data="nirbachanchhetraChartData"></bar-chart>
+                  </div>
+                </div>
+              </template>
+            </data-viewer>
+            <div class="my-5"></div>
+            <data-viewer :data="jillanirbachanchhetra"></data-viewer>
+            <div class="my-5"></div>
+            <data-viewer :data="parmukhharukonaamwali"></data-viewer>
+            <div class="my-5"></div>
+            <data-viewer :data="pahilomantriparisadh"></data-viewer>
+            <div class="my-5"></div>
+            <data-viewer :data="supaparisadh"></data-viewer>
+            <div class="my-5"></div>
+            <data-viewer :data="pardeshsavanamawali"></data-viewer>
           </div>
         </div>
-      </template>
-    </data-viewer>
-    <div class="my-5"></div>
-    <data-viewer :data="vuupyogkoData">
-      <template slot="chart">
-        <div class="row">
-          <div class="col-md-6">
-            <pie-chart :chart-data="vuupyogkoChartData"></pie-chart>
-          </div>
-          <div class="col-md-6">
-            <bar-chart :chart-data="vuupyogkoChartData"></bar-chart>
-          </div>
-        </div>
-      </template>
-    </data-viewer>
-    <div class="my-5"></div>
-    <data-viewer :data="sthaniyetahapopulation">
-      <template slot="thead-top">
-        <tr>
-          <th colspan="2"></th>
-          <th colspan="4" class="bg-light text-center font-weight-bold">स्थानीय तह विवरण</th>
-        </tr>
-      </template>
-    </data-viewer>
-    <div class="my-5"></div>
-    <data-viewer :data="nirbachanchhetra">
-      <template slot="chart">
-        <div class="row">
-          <div class="col-md-6">
-            <pie-chart :chart-data="nirbachanchhetraChartData"></pie-chart>
-          </div>
+      </div>
 
-          <div class="col-md-6">
-            <bar-chart :chart-data="nirbachanchhetraChartData"></bar-chart>
-          </div>
-        </div>
-      </template>
-    </data-viewer>
-    <div class="my-5"></div>
-    <data-viewer :data="jillanirbachanchhetra"></data-viewer>
-    <div class="my-5"></div>
-    <data-viewer :data="parmukhharukonaamwali"></data-viewer>
-    <div class="my-5"></div>
-    <data-viewer :data="pahilomantriparisadh"></data-viewer>
-    <div class="my-5"></div>
-    <data-viewer :data="supaparisadh"></data-viewer>
-    <div class="my-5"></div>
-    <data-viewer :data="pardeshsavanamawali"></data-viewer>
+    </div>
   </div>
+
 </template>
 
 <script>
@@ -90,8 +152,11 @@ export default {
   components: { DataViewer, BarChart, PieChart, Pardeshsavanamawali },
   data() {
     return {
-
+      currentUrl: {
+        cUrl: window.location.pathname,
+      },
       geographicalAreaData: {
+        id: "table_1",
         title: "सुदूरपश्चिम प्रदेशको भौगोलिक क्षेत्रगत क्षेत्रफल",
         labels: ["क्र.स.", "भौगोलिक क्षेत्र", "क्षेत्रफल (वर्ग कि.मि.)", "प्रतिशत"],
         data: [
@@ -99,9 +164,9 @@ export default {
           [2, "पहाडी", 6748.78, 33.75],
           [3, "तराई", 4857.39, 24.28],
           [{
-            colspan:2,
-            value:"जम्मा",
-          },19999.28,100.00],
+            colspan: 2,
+            value: "जम्मा",
+          }, 19999.28, 100.00],
         ],
       },
       geographicalAreaChartData: {
@@ -116,6 +181,7 @@ export default {
 
 
       districtWiseAreaOfStateData: {
+        id: "table_3",
         title: "प्रदेशको जिल्लागत क्षेत्रफल",
         labels: ["क्र.स.", "जिल्ला", "क्षेत्रफल (वर्ग कि.मि.)", "प्रतिशत"],
         data: [
@@ -142,6 +208,7 @@ export default {
       },
       // 2.5
       vuupyogkoData: {
+        id: "table_4",
         title: "भू – उपयोगको अवस्था",
         labels: ["क्र.स.", "क्षेत्र", "नेपालको क्षेत्रफल (हे.हजारमा)", "सुदूरपश्चिमको क्षेत्रफल (हे.हजारमा)"],
         data: [
@@ -172,6 +239,7 @@ export default {
       },
       // 2.6
       sthaniyetahapopulation: {
+        id: "table_5",
         title: "स्थानीय तहको जिल्लागत संख्या",
         labels: ["क्र.स.", "जिल्ला", "उप महानगर", "नगरपालिका", "गाउँपालिका", "वडा संख्या"],
         data: [
@@ -218,6 +286,7 @@ export default {
       },
       // 2.7
       nirbachanchhetra: {
+        id: "table_6",
         title: " प्रदेशमा भौगोलिक विभाजन अनुसार निर्वाचन क्षेत्रको विवरण",
         labels: ["क्र.स.", "भौगोलिक क्षेत्र", "प्रतिनिधि सभा", "प्रदेश सभा", "प्रतिशत"],
         data: [
@@ -246,6 +315,7 @@ export default {
       },
       // 2.8
       jillanirbachanchhetra: {
+        id: "table_7",
         title: "प्रदेशका जिल्लाहरुमा रहेका निर्वाचन क्षेत्रको विवरण",
         labels: ["क्र.स.", "जिल्ला", "प्रतिनिधि सभा", "प्रदेश सभा"],
         data: [
@@ -265,11 +335,12 @@ export default {
       },
 
       jillanirbachanchhetraChartData: {
-        
+
       },
 
 
       parmukhharukonaamwali: {
+        id: "table_8",
         title: " हालसम्म भएका प्रदेश प्रमुखहरुको नामावली र मिति",
         labels: ["क्र.स.", "प्रदेश प्रमुख", "देखि", "सम्म"],
         data: [
@@ -282,6 +353,7 @@ export default {
 
       // 2.10
       pahilomantriparisadh: {
+        id: "table_9",
         title: "सुदूरपश्चिम प्रदेशको पहिलो मन्त्रिपरिषद्",
         labels: ["क्र.स.", "नाम थर", "मन्त्रालय", "दल"],
         data: [
@@ -296,6 +368,7 @@ export default {
       },
       // 2.11
       supaparisadh: {
+        id: "table_10",
         title: "सुदूरपश्चिम प्रदेशमा हालको मन्त्रिपरिषद्",
         labels: ["क्र.स.", "नाम थर", "पद", "मन्त्रालय", "दल"],
         data: [
@@ -315,6 +388,7 @@ export default {
 
       // 2.12
       pardeshsavanamawali: {
+        id: "table_11",
         title: "प्रदेश सभा सदस्यहरुको नामावली",
         labels: ["क्र.स.", "नाम थर", "निर्वाचन क्षेत्र", "हालको राजनीतिक दल"],
         data: [
@@ -376,6 +450,7 @@ export default {
 
       // 2.6
       districtWiseNumberOfLocalLevel: {
+        id: "table_12",
         title: "स्थानीय तहको जिल्लागत संख्या",
         labels: ["क्र.स.", "जिल्ला", "उप महानगर", "नगरपालिका", "गाउँपालिका", "वडा संख्या"],
         data: [
@@ -399,4 +474,31 @@ export default {
 </script>
 
 <style scoped>
+#unit-nav {
+  position: fixed;
+  top: -100px;
+  display: block;
+  margin-left: -50px;
+}
+
+.unit-nav-list {
+  margin-top: 20vh;
+
+  /* box-shadow: 5px 5px 10px #888888; */
+}
+
+.unit-nav-list li {
+  list-style: none;
+
+}
+
+.unit-nav-list li a label {
+  cursor: pointer;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+.my-div {
+  z-index: 1;
+}
 </style>

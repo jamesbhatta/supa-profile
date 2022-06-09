@@ -1,5 +1,7 @@
 <template>
-  <div class="data-card">
+  <div v-bind:id="data.id" >
+  <div class="heights"></div>
+    <div class="data-card"  >
     <div class="data-card-body">
       <div class="d-md-flex mb-2">
         <h3 v-if="data.title" class="h3-responsive data-title" ref="exportable_table_title">{{ data.title }}</h3>
@@ -33,6 +35,7 @@
         <slot name="chart"></slot>
       </div>
     </div>
+  </div>
   </div>
 </template>
 
@@ -142,5 +145,8 @@ export default {
 }
 #tabletitle {
   display: none;
+}
+.heights{
+  height: 100px;
 }
 </style>

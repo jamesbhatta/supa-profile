@@ -21,6 +21,7 @@ export default {
     data() {
         return {
             territorialGeographicalAreaData: {
+                id:"table_2",
                 title: "प्रदेशगत भौगोलिक क्षेत्रफल",
                 labels: ["क्र.स.", "प्रदेश", "क्षेत्रफल (वर्ग कि.मि.)", "प्रतिशत"],
                 data: [

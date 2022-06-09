@@ -705,7 +705,7 @@ var render = function () {
                                       backgroundColor: "#007bff",
                                     },
                                     {
-                                      label: "महलिा",
+                                      label: "महिला",
                                       data: [11.5, 15.7, 0],
                                       backgroundColor: "#dc3545",
                                     },
@@ -755,7 +755,7 @@ var render = function () {
                                       backgroundColor: "#007bff",
                                     },
                                     {
-                                      label: "महलिा",
+                                      label: "महिला",
                                       data: [13.1, 26.3, 0],
                                       backgroundColor: "#dc3545",
                                     },

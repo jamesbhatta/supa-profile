@@ -2005,6 +2005,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: ["data"],
   data: function data() {
@@ -2197,6 +2200,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -16045,7 +16055,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.switch-type-btn-group[data-v-33724507] {\n  display: inline-flex;\n  font-size: 0.8rem;\n}\n@media screen AND (min-width: 576px) {\n.switch-type-btn-group[data-v-33724507] {\n    font-size: 1rem;\n}\n}\n.switch-type-btn-group button[data-v-33724507] {\n  margin-left: 0;\n  margin-right: 0;\n  background-color: #f2f2f2;\n  color: #525b70;\n  outline: none;\n  border: 0px;\n  padding: 5px 15px;\n  font-family: \"Segoe UI\", Tahoma, Geneva, Verdana, sans-serif;\n  font-weight: 600;\n  letter-spacing: 0.025rem;\n}\n.switch-type-btn-group button[data-v-33724507]:first-of-type {\n  border-top-left-radius: 4px;\n  border-bottom-left-radius: 4px;\n}\n.switch-type-btn-group button[data-v-33724507]:last-of-type {\n  border-top-right-radius: 4px;\n  border-bottom-right-radius: 4px;\n}\n.switch-type-btn-group button.active[data-v-33724507] {\n  background-color: #4285f4;\n  color: #ffffff;\n}\n.export-btn[data-v-33724507] {\n  margin-left: 0;\n  margin-right: 0;\n  background-color: #f2f2f2;\n  color: #525b70;\n  outline: none;\n  border: 0px;\n  padding: 5px 15px;\n  font-family: \"Segoe UI\", Tahoma, Geneva, Verdana, sans-serif;\n  font-weight: 600;\n  letter-spacing: 0.025rem;\n}\n#tabletitle[data-v-33724507] {\n  display: none;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.switch-type-btn-group[data-v-33724507] {\n  display: inline-flex;\n  font-size: 0.8rem;\n}\n@media screen AND (min-width: 576px) {\n.switch-type-btn-group[data-v-33724507] {\n    font-size: 1rem;\n}\n}\n.switch-type-btn-group button[data-v-33724507] {\n  margin-left: 0;\n  margin-right: 0;\n  background-color: #f2f2f2;\n  color: #525b70;\n  outline: none;\n  border: 0px;\n  padding: 5px 15px;\n  font-family: \"Segoe UI\", Tahoma, Geneva, Verdana, sans-serif;\n  font-weight: 600;\n  letter-spacing: 0.025rem;\n}\n.switch-type-btn-group button[data-v-33724507]:first-of-type {\n  border-top-left-radius: 4px;\n  border-bottom-left-radius: 4px;\n}\n.switch-type-btn-group button[data-v-33724507]:last-of-type {\n  border-top-right-radius: 4px;\n  border-bottom-right-radius: 4px;\n}\n.switch-type-btn-group button.active[data-v-33724507] {\n  background-color: #4285f4;\n  color: #ffffff;\n}\n.export-btn[data-v-33724507] {\n  margin-left: 0;\n  margin-right: 0;\n  background-color: #f2f2f2;\n  color: #525b70;\n  outline: none;\n  border: 0px;\n  padding: 5px 15px;\n  font-family: \"Segoe UI\", Tahoma, Geneva, Verdana, sans-serif;\n  font-weight: 600;\n  letter-spacing: 0.025rem;\n}\n#tabletitle[data-v-33724507] {\n  display: none;\n}\n.heights[data-v-33724507]{\n  height: 100px;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -16069,7 +16079,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n#navbar[data-v-6dde423b] {\n  background: linear-gradient(to right, #3f0fb7, #1e78de);\n  box-shadow: 0 3px 6px 0 rgb(0 0 0 / 12%) !important;\n  font-family: \"Roboto\", sans-serif;\n}\n#site-name[data-v-6dde423b] {\n  color:#fff;\n}\n@media screen AND (min-width: 576px ) {\n#site-name[data-v-6dde423b] {\n    font-size: 1.25rem;\n}\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n#navbar[data-v-6dde423b] {\n  background: linear-gradient(to right, #3f0fb7, #1e78de);\n  box-shadow: 0 3px 6px 0 rgb(0 0 0 / 12%) !important;\n  font-family: \"Roboto\", sans-serif;\n}\n#site-name[data-v-6dde423b] {\n  color: #fff;\n}\n@media screen AND (min-width: 576px) {\n#site-name[data-v-6dde423b] {\n    font-size: 1.25rem;\n}\n}\n.my-nav[data-v-6dde423b] {\n  position: fixed;\n  width: 100vw;\n  z-index: 1;\n}\n.gaps[data-v-6dde423b] {\n  height: 100px;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -35571,166 +35581,170 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "data-card" }, [
-    _c("div", { staticClass: "data-card-body" }, [
-      _c("div", { staticClass: "d-md-flex mb-2" }, [
-        _vm.data.title
-          ? _c(
-              "h3",
-              {
-                ref: "exportable_table_title",
-                staticClass: "h3-responsive data-title",
-              },
-              [_vm._v(_vm._s(_vm.data.title))]
-            )
-          : _vm._e(),
-        _vm._v(" "),
-        _c("div", { staticClass: "ml-auto switch-type-btn-group" }, [
-          _c(
-            "button",
-            {
-              staticClass: "switch-data-type-btn",
-              class: { active: _vm.activeDataType == "table" },
-              attrs: { type: "button" },
-              on: {
-                click: function ($event) {
-                  return _vm.setActive("table")
-                },
-              },
-            },
-            [_vm._v("Table")]
-          ),
-          _vm._v(" "),
-          _vm.hasChartSlot
+  return _c("div", { attrs: { id: _vm.data.id } }, [
+    _c("div", { staticClass: "heights" }),
+    _vm._v(" "),
+    _c("div", { staticClass: "data-card" }, [
+      _c("div", { staticClass: "data-card-body" }, [
+        _c("div", { staticClass: "d-md-flex mb-2" }, [
+          _vm.data.title
             ? _c(
-                "button",
+                "h3",
                 {
-                  staticClass: "switch-data-type-btn",
-                  class: { active: _vm.activeDataType == "chart" },
-                  attrs: { type: "button" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.setActive("chart")
-                    },
-                  },
+                  ref: "exportable_table_title",
+                  staticClass: "h3-responsive data-title",
                 },
-                [_vm._v("Chart")]
+                [_vm._v(_vm._s(_vm.data.title))]
               )
             : _vm._e(),
           _vm._v(" "),
-          _c(
-            "button",
-            {
-              staticClass: "switch-data-type-btn",
-              attrs: { type: "button" },
-              on: {
-                click: function ($event) {
-                  return _vm.exportToExcel()
+          _c("div", { staticClass: "ml-auto switch-type-btn-group" }, [
+            _c(
+              "button",
+              {
+                staticClass: "switch-data-type-btn",
+                class: { active: _vm.activeDataType == "table" },
+                attrs: { type: "button" },
+                on: {
+                  click: function ($event) {
+                    return _vm.setActive("table")
+                  },
                 },
               },
-            },
-            [_vm._v("Export")]
-          ),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              staticClass: "switch-data-type-btn",
-              attrs: { type: "button" },
-              on: {
-                click: function ($event) {
-                  return _vm.printData()
+              [_vm._v("Table")]
+            ),
+            _vm._v(" "),
+            _vm.hasChartSlot
+              ? _c(
+                  "button",
+                  {
+                    staticClass: "switch-data-type-btn",
+                    class: { active: _vm.activeDataType == "chart" },
+                    attrs: { type: "button" },
+                    on: {
+                      click: function ($event) {
+                        return _vm.setActive("chart")
+                      },
+                    },
+                  },
+                  [_vm._v("Chart")]
+                )
+              : _vm._e(),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass: "switch-data-type-btn",
+                attrs: { type: "button" },
+                on: {
+                  click: function ($event) {
+                    return _vm.exportToExcel()
+                  },
                 },
               },
-            },
-            [_vm._v("Print")]
-          ),
+              [_vm._v("Export")]
+            ),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass: "switch-data-type-btn",
+                attrs: { type: "button" },
+                on: {
+                  click: function ($event) {
+                    return _vm.printData()
+                  },
+                },
+              },
+              [_vm._v("Print")]
+            ),
+          ]),
         ]),
-      ]),
-      _vm._v(" "),
-      _vm.activeDataType == "table"
-        ? _c(
-            "table",
-            {
-              ref: "exportable_table",
-              staticClass: "table table-responsive-sm table-striped",
-            },
-            [
-              _c(
-                "thead",
-                [
-                  _vm._t("thead-top"),
-                  _vm._v(" "),
-                  _c(
-                    "tr",
-                    _vm._l(_vm.data.labels, function (label, index) {
+        _vm._v(" "),
+        _vm.activeDataType == "table"
+          ? _c(
+              "table",
+              {
+                ref: "exportable_table",
+                staticClass: "table table-responsive-sm table-striped",
+              },
+              [
+                _c(
+                  "thead",
+                  [
+                    _vm._t("thead-top"),
+                    _vm._v(" "),
+                    _c(
+                      "tr",
+                      _vm._l(_vm.data.labels, function (label, index) {
+                        return _c(
+                          "th",
+                          { key: index, staticClass: "font-weight-bold" },
+                          [_vm._v(_vm._s(label))]
+                        )
+                      }),
+                      0
+                    ),
+                  ],
+                  2
+                ),
+                _vm._v(" "),
+                _c(
+                  "tbody",
+                  [
+                    _vm._l(_vm.data.data, function (row, index) {
                       return _c(
-                        "th",
-                        { key: index, staticClass: "font-weight-bold" },
-                        [_vm._v(_vm._s(label))]
+                        "tr",
+                        { key: index },
+                        [
+                          _vm._l(row, function (item, index) {
+                            return [
+                              typeof item == "object"
+                                ? _c(
+                                    "td",
+                                    {
+                                      key: index,
+                                      attrs: {
+                                        colspan: item.colspan,
+                                        rowspan: item.rowspan,
+                                      },
+                                    },
+                                    [_vm._v(_vm._s(item.value))]
+                                  )
+                                : _c("td", { key: index }, [
+                                    _vm._v(_vm._s(item)),
+                                  ]),
+                            ]
+                          }),
+                        ],
+                        2
                       )
                     }),
-                    0
-                  ),
-                ],
-                2
-              ),
-              _vm._v(" "),
-              _c(
-                "tbody",
-                [
-                  _vm._l(_vm.data.data, function (row, index) {
-                    return _c(
-                      "tr",
-                      { key: index },
-                      [
-                        _vm._l(row, function (item, index) {
-                          return [
-                            typeof item == "object"
-                              ? _c(
-                                  "td",
-                                  {
-                                    key: index,
-                                    attrs: {
-                                      colspan: item.colspan,
-                                      rowspan: item.rowspan,
-                                    },
-                                  },
-                                  [_vm._v(_vm._s(item.value))]
-                                )
-                              : _c("td", { key: index }, [
-                                  _vm._v(_vm._s(item)),
-                                ]),
-                          ]
-                        }),
-                      ],
-                      2
-                    )
-                  }),
-                  _vm._v(" "),
-                  _vm._t("tbody-bottom"),
-                ],
-                2
-              ),
-            ]
-          )
-        : _vm._e(),
-      _vm._v(" "),
-      _c(
-        "div",
-        {
-          directives: [
-            {
-              name: "show",
-              rawName: "v-show",
-              value: _vm.activeDataType == "chart",
-              expression: "activeDataType == 'chart'",
-            },
-          ],
-        },
-        [_vm._t("chart")],
-        2
-      ),
+                    _vm._v(" "),
+                    _vm._t("tbody-bottom"),
+                  ],
+                  2
+                ),
+              ]
+            )
+          : _vm._e(),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            directives: [
+              {
+                name: "show",
+                rawName: "v-show",
+                value: _vm.activeDataType == "chart",
+                expression: "activeDataType == 'chart'",
+              },
+            ],
+          },
+          [_vm._t("chart")],
+          2
+        ),
+      ]),
     ]),
   ])
 }
@@ -36060,112 +36074,116 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "nav",
-    {
-      staticClass: "navbar navbar-expand-lg navbar-dark py-3",
-      attrs: { id: "navbar" },
-    },
-    [
-      _c(
-        "div",
-        { staticClass: "container" },
-        [
-          _c(
-            "router-link",
-            { staticClass: "d-flex align-items-center", attrs: { to: "/" } },
-            [
-              _c("img", {
-                attrs: {
-                  src: "/assets/img/nep-gov-logo-sm.png",
-                  height: "50px",
-                },
-              }),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "ml-3 text-main", attrs: { id: "site-name" } },
-                [
-                  _c("div", { staticClass: "font-weight-bold" }, [
-                    _vm._v("सुदूरपश्चिम प्रदेश प्रोफाइल"),
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "font-weight-bold d-none d-sm-block" },
-                    [_vm._v("Profile of Sudur Paschim Province")]
-                  ),
-                ]
-              ),
-            ]
-          ),
-          _vm._v(" "),
-          _vm._m(0),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "collapse navbar-collapse",
-              attrs: { id: "basicExampleNav" },
-            },
-            [
-              _c("ul", { staticClass: "navbar-nav ml-auto" }, [
-                _c(
-                  "li",
-                  { staticClass: "nav-item" },
-                  [
-                    _c(
-                      "router-link",
-                      { staticClass: "nav-link", attrs: { to: "/" } },
-                      [_vm._v("गृह पृष्ठ")]
-                    ),
-                  ],
-                  1
-                ),
+  return _c("div", [
+    _c(
+      "nav",
+      {
+        staticClass: "navbar navbar-expand-lg navbar-dark py-3 my-nav",
+        attrs: { id: "navbar" },
+      },
+      [
+        _c(
+          "div",
+          { staticClass: "container" },
+          [
+            _c(
+              "router-link",
+              { staticClass: "d-flex align-items-center", attrs: { to: "/" } },
+              [
+                _c("img", {
+                  attrs: {
+                    src: "/assets/img/nep-gov-logo-sm.png",
+                    height: "50px",
+                  },
+                }),
                 _vm._v(" "),
-                _c("li", { staticClass: "nav-item dropdown" }, [
+                _c(
+                  "div",
+                  { staticClass: "ml-3 text-main", attrs: { id: "site-name" } },
+                  [
+                    _c("div", { staticClass: "font-weight-bold" }, [
+                      _vm._v("सुदूरपश्चिम प्रदेश प्रोफाइल"),
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "font-weight-bold d-none d-sm-block" },
+                      [_vm._v("Profile of Sudur Paschim Province")]
+                    ),
+                  ]
+                ),
+              ]
+            ),
+            _vm._v(" "),
+            _vm._m(0),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "collapse navbar-collapse",
+                attrs: { id: "basicExampleNav" },
+              },
+              [
+                _c("ul", { staticClass: "navbar-nav ml-auto" }, [
                   _c(
-                    "a",
-                    {
-                      staticClass: "nav-link dropdown-toggle",
-                      attrs: {
-                        id: "navbarDropdownMenuLink",
-                        "data-toggle": "dropdown",
-                        "aria-haspopup": "true",
-                        "aria-expanded": "false",
-                      },
-                    },
-                    [_vm._v("डाटासेटहरु")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    {
-                      staticClass: "dropdown-menu dropdown-primary",
-                      attrs: { "aria-labelledby": "navbarDropdownMenuLink" },
-                    },
-                    _vm._l(_vm.links, function (item, index) {
-                      return _c(
+                    "li",
+                    { staticClass: "nav-item" },
+                    [
+                      _c(
                         "router-link",
-                        {
-                          key: index,
-                          staticClass: "dropdown-item",
-                          attrs: { to: item.url },
-                        },
-                        [_c("span", [_vm._v(_vm._s(item.name))])]
-                      )
-                    }),
+                        { staticClass: "nav-link", attrs: { to: "/" } },
+                        [_vm._v("गृह पृष्ठ")]
+                      ),
+                    ],
                     1
                   ),
+                  _vm._v(" "),
+                  _c("li", { staticClass: "nav-item dropdown" }, [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "nav-link dropdown-toggle",
+                        attrs: {
+                          id: "navbarDropdownMenuLink",
+                          "data-toggle": "dropdown",
+                          "aria-haspopup": "true",
+                          "aria-expanded": "false",
+                        },
+                      },
+                      [_vm._v("डाटासेटहरु")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass: "dropdown-menu dropdown-primary",
+                        attrs: { "aria-labelledby": "navbarDropdownMenuLink" },
+                      },
+                      _vm._l(_vm.links, function (item, index) {
+                        return _c(
+                          "router-link",
+                          {
+                            key: index,
+                            staticClass: "dropdown-item",
+                            attrs: { to: item.url },
+                          },
+                          [_c("span", [_vm._v(_vm._s(item.name))])]
+                        )
+                      }),
+                      1
+                    ),
+                  ]),
                 ]),
-              ]),
-            ]
-          ),
-        ],
-        1
-      ),
-    ]
-  )
+              ]
+            ),
+          ],
+          1
+        ),
+      ]
+    ),
+    _vm._v(" "),
+    _c("div", { staticClass: "gaps" }),
+  ])
 }
 var staticRenderFns = [
   function () {
