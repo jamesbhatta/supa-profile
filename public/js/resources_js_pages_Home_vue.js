@@ -430,55 +430,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 chart_js__WEBPACK_IMPORTED_MODULE_0__.Chart.register(chart_js__WEBPACK_IMPORTED_MODULE_0__.Title, chart_js__WEBPACK_IMPORTED_MODULE_0__.Tooltip, chart_js__WEBPACK_IMPORTED_MODULE_0__.Legend, chart_js__WEBPACK_IMPORTED_MODULE_0__.BarElement, chart_js__WEBPACK_IMPORTED_MODULE_0__.CategoryScale, chart_js__WEBPACK_IMPORTED_MODULE_0__.LinearScale, chart_js__WEBPACK_IMPORTED_MODULE_0__.ArcElement);
@@ -557,7 +508,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.navigation-grid[data-v-b3c5cf30] {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  gap: 1.5rem;\n}\n.navigation-grid > a[data-v-b3c5cf30] {\n  background-color: #fff;\n  padding: 10px 15px;\n  border-radius: 6px;\n  min-height: 200px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  color: #2572bc;\n  font-size: 1.5rem;\n  font-weight: 600;\n  transition: 0.3s ease;\n}\n.navigation-grid > a[data-v-b3c5cf30]:hover {\n  background-color: #2572bc;\n  color: #fff;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.navigation-grid[data-v-b3c5cf30] {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  gap: 1.5rem;\n}\n.navigation-grid>a[data-v-b3c5cf30] {\n  background-color: #fff;\n  padding: 10px 15px;\n  border-radius: 6px;\n  min-height: 200px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  color: #2572bc;\n  font-size: 1.5rem;\n  font-weight: 600;\n  transition: 0.3s ease;\n}\n.navigation-grid>a[data-v-b3c5cf30]:hover {\n  background-color: #2572bc;\n  color: #fff;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -750,362 +701,300 @@ var render = function () {
           : _vm._e(),
         _vm._v(" "),
         _c("div", { staticClass: "my-5" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "container-fluid mt-5" }, [
-          _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col-md-4 my-3" }, [
-              _c("div", { staticClass: "chart-card" }, [
-                _c(
-                  "div",
-                  { staticClass: "chart-body" },
-                  [
-                    _c("div", { staticClass: "chart-title mb-3" }, [
-                      _vm._v("भौगोलिक क्षेत्रगत क्षेत्रफल"),
-                    ]),
-                    _vm._v(" "),
-                    _c("bar", {
-                      attrs: {
-                        "chart-options": {
-                          plugins: { legend: { display: false } },
-                        },
-                        "chart-data": {
-                          labels: ["हिमाली", "पहाडी", "तराई"],
-                          datasets: [
-                            {
-                              backgroundColor: ["#007bff", "#dc3545", "green"],
-                              data: [8393.11, 6748.78, 4857.39],
-                            },
-                          ],
-                        },
-                      },
-                    }),
-                  ],
-                  1
-                ),
-              ]),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-md-7 my-3" }, [
-              _c("div", { staticClass: "chart-card" }, [
-                _c("div", { staticClass: "chart-body" }, [
-                  _c("div", { staticClass: "chart-title mb-3" }, [
-                    _vm._v("जनसाङ्ख्यिक अवस्था"),
-                  ]),
-                  _vm._v(" "),
-                  _vm._m(0),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row" }, [
-                    _c(
-                      "div",
-                      { staticClass: "col-md-6" },
-                      [
-                        _c("Pie", {
-                          attrs: {
-                            "chart-options": { responsive: true },
-                            "chart-data": {
-                              // labels: ['पुरुष', 'महिला'],
-                              datasets: [
-                                {
-                                  backgroundColor: ["#007bff", "#dc3545"],
-                                  data: [1287997, 1423273],
-                                },
-                              ],
-                            },
-                          },
-                        }),
-                        _vm._v(" "),
-                        _vm._m(1),
-                      ],
-                      1
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "col-md-6 my-pie" },
-                      [
-                        _c("Pie", {
-                          attrs: {
-                            "chart-options": { responsive: true },
-                            "chart-data": {
-                              // labels: ['पुरुष', 'महिला'],
-                              datasets: [
-                                {
-                                  backgroundColor: ["#007bff", "#dc3545"],
-                                  data: [1217887, 1334630],
-                                },
-                              ],
-                            },
-                          },
-                        }),
-                        _vm._v(" "),
-                        _vm._m(2),
-                      ],
-                      1
-                    ),
-                  ]),
-                ]),
-              ]),
-            ]),
-          ]),
-        ]),
       ]),
     ]),
     _vm._v(" "),
     _c("div", { staticClass: "my-5" }),
     _vm._v(" "),
-    _c("div", { staticClass: "row my-5" }, [
-      _c("div", { staticClass: "col-md-12" }, [
-        _c("div", { staticClass: "chart-body" }, [
-          _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col-md-7" }, [
-              _c("div", { staticClass: "row" }, [
-                _c("div", { staticClass: "card" }, [
-                  _c("div", { staticClass: "row" }, [
-                    _vm._m(3),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "col-md-4" },
-                      [
-                        _c("Pie", {
-                          attrs: {
-                            "chart-options": { responsive: true },
-                            "chart-data": {
-                              // labels: ['2068', '2078'],
-                              datasets: [
-                                {
-                                  backgroundColor: ["#007bff", "#dc3545"],
-                                  data: [91.25, 90.49],
-                                },
-                              ],
-                            },
-                          },
-                        }),
-                        _vm._v(" "),
-                        _c("label", { staticClass: "col-12 text-center" }, [
-                          _vm._v("लैङ्गिक अनुपात"),
-                        ]),
-                      ],
-                      1
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "col-md-4" },
-                      [
-                        _c("Pie", {
-                          attrs: {
-                            "chart-options": { responsive: true },
-                            "chart-data": {
-                              // labels: ['2068', '2078'],
-                              datasets: [
-                                {
-                                  backgroundColor: ["#007bff", "#dc3545"],
-                                  data: [1.53, 0.58],
-                                },
-                              ],
-                            },
-                          },
-                        }),
-                        _vm._v(" "),
-                        _c("label", { staticClass: "col-12 text-center" }, [
-                          _vm._v("जनसंख्या बृद्धिदर"),
-                        ]),
-                      ],
-                      1
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "col-md-4" },
-                      [
-                        _c("Pie", {
-                          attrs: {
-                            "chart-options": { responsive: true },
-                            "chart-data": {
-                              // labels: ['2068', '2078'],
-                              datasets: [
-                                {
-                                  backgroundColor: ["#007bff", "#dc3545"],
-                                  data: [5.43, 4.62],
-                                },
-                              ],
-                            },
-                          },
-                        }),
-                        _vm._v(" "),
-                        _c("label", { staticClass: "col-12 text-center" }, [
-                          _vm._v("औषत परिवारको आकार"),
-                        ]),
-                      ],
-                      1
-                    ),
-                  ]),
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "card my-3" }, [
-                  _c("div", { staticClass: "row" }, [
-                    _c(
-                      "div",
-                      { staticClass: "col-md-4" },
-                      [
-                        _c("bar", {
-                          attrs: {
-                            "chart-options": {
-                              plugins: { legend: { display: false } },
-                            },
-                            "chart-data": {
-                              labels: ["2068"],
-                              datasets: [
-                                {
-                                  backgroundColor: ["#007bff"],
-                                  data: [3.56],
-                                },
-                              ],
-                            },
-                          },
-                        }),
-                        _vm._v(" "),
-                        _c("label", { staticClass: "col-12 text-center" }, [
-                          _vm._v("आर्थित बृद्धिदर"),
-                        ]),
-                      ],
-                      1
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "col-md-4" },
-                      [
-                        _c("bar", {
-                          attrs: {
-                            "chart-options": {
-                              plugins: { legend: { display: false } },
-                            },
-                            "chart-data": {
-                              labels: ["2068"],
-                              datasets: [
-                                {
-                                  backgroundColor: ["#dc3545"],
-                                  data: [685],
-                                },
-                              ],
-                            },
-                          },
-                        }),
-                        _vm._v(" "),
-                        _c("label", { staticClass: "col-12 text-center" }, [
-                          _vm._v("प्रति ब्यक्ति आय"),
-                        ]),
-                      ],
-                      1
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "col-md-4" },
-                      [
-                        _c("Pie", {
-                          attrs: {
-                            "chart-options": {
-                              plugins: { legend: { display: false } },
-                            },
-                            "chart-data": {
-                              labels: ["सामुदायिक", "संस्थागत"],
-                              datasets: [
-                                {
-                                  backgroundColor: ["#007bff", "#dc3545"],
-                                  data: [4044, 599],
-                                },
-                              ],
-                            },
-                          },
-                        }),
-                        _vm._v(" "),
-                        _c("label", { staticClass: "col-12 text-center" }, [
-                          _vm._v("शैक्षिक संस्था संख्या"),
-                        ]),
-                      ],
-                      1
-                    ),
-                  ]),
-                ]),
+    _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-md-3 my-3" }, [
+        _c("div", { staticClass: "chart-card" }, [
+          _c(
+            "div",
+            { staticClass: "chart-body" },
+            [
+              _c("div", { staticClass: "chart-title mb-3" }, [
+                _vm._v("शैक्षिक संस्था संख्या"),
               ]),
+              _vm._v(" "),
+              _c("pie", {
+                attrs: {
+                  "chart-options": { responsive: true },
+                  "chart-data": {
+                    labels: ["सामुदायिक", "संस्थागत"],
+                    datasets: [
+                      {
+                        backgroundColor: ["#007bff", "#dc3545"],
+                        data: [4044, 599],
+                      },
+                    ],
+                  },
+                },
+              }),
+            ],
+            1
+          ),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-md-3 my-3" }, [
+        _c("div", { staticClass: "chart-card" }, [
+          _c(
+            "div",
+            { staticClass: "chart-body" },
+            [
+              _c("div", { staticClass: "chart-title mb-3" }, [
+                _vm._v("भौगोलिक क्षेत्रगत क्षेत्रफल"),
+              ]),
+              _vm._v(" "),
+              _c("bar", {
+                attrs: {
+                  "chart-options": { plugins: { legend: { display: false } } },
+                  "chart-data": {
+                    labels: ["हिमाली", "पहाडी", "तराई"],
+                    datasets: [
+                      {
+                        backgroundColor: ["#007bff", "#dc3545", "green"],
+                        data: [8393.11, 6748.78, 4857.39],
+                      },
+                    ],
+                  },
+                },
+              }),
+            ],
+            1
+          ),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-md-6 my-3" }, [
+        _c("div", { staticClass: "chart-card" }, [
+          _c("div", { staticClass: "chart-body" }, [
+            _c("div", { staticClass: "chart-title mb-3" }, [
+              _vm._v("जनसाङ्ख्यिक अवस्था"),
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "col-md-5" }, [
-              _c("div", { staticClass: "card" }, [
-                _c("div", { staticClass: "row" }, [
-                  _c(
-                    "div",
-                    { staticClass: "col-md-12" },
-                    [
-                      _c("bar", {
-                        attrs: {
-                          "chart-options": {
-                            plugins: { legend: { display: false } },
+            _vm._m(0),
+            _vm._v(" "),
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col-md-1" }),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "col-md-5" },
+                [
+                  _c("Pie", {
+                    attrs: {
+                      "chart-options": { responsive: true },
+                      "chart-data": {
+                        // labels: ['पुरुष', 'महिला'],
+                        datasets: [
+                          {
+                            backgroundColor: ["#007bff", "#dc3545"],
+                            data: [1287997, 1423273],
                           },
-                          "chart-data": {
-                            labels: [
-                              "कृषि क्षेत्र",
-                              "उद्योग क्षेत्र",
-                              "सेवा क्षेत्र",
-                            ],
-                            datasets: [
-                              {
-                                backgroundColor: [
-                                  "#007bff",
-                                  "#dc3545",
-                                  "green",
-                                ],
-                                data: [36.1, 13.2, 50.7],
-                              },
-                            ],
+                        ],
+                      },
+                    },
+                  }),
+                  _vm._v(" "),
+                  _vm._m(1),
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "col-md-5 my-pie" },
+                [
+                  _c("Pie", {
+                    attrs: {
+                      "chart-options": { responsive: true },
+                      "chart-data": {
+                        // labels: ['पुरुष', 'महिला'],
+                        datasets: [
+                          {
+                            backgroundColor: ["#007bff", "#dc3545"],
+                            data: [1217887, 1334630],
                           },
-                        },
-                      }),
-                      _vm._v(" "),
-                      _c("label", { staticClass: "col-12 text-center" }, [
-                        _vm._v("कूलगार्हस्थ उत्पादन"),
-                      ]),
-                    ],
-                    1
-                  ),
-                ]),
-              ]),
+                        ],
+                      },
+                    },
+                  }),
+                  _vm._v(" "),
+                  _vm._m(2),
+                ],
+                1
+              ),
             ]),
           ]),
         ]),
       ]),
     ]),
     _vm._v(" "),
+    _c("div", { staticClass: "row my-5" }, [
+      _c("div", { staticClass: "col-md-6" }, [
+        _c("div", { staticClass: "card" }, [
+          _c("div", { staticClass: "row" }, [
+            _vm._m(3),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "col-md-4" },
+              [
+                _c("Pie", {
+                  attrs: {
+                    "chart-options": { responsive: true },
+                    "chart-data": {
+                      // labels: ['2068', '2078'],
+                      datasets: [
+                        {
+                          backgroundColor: ["#007bff", "#dc3545"],
+                          data: [91.25, 90.49],
+                        },
+                      ],
+                    },
+                  },
+                }),
+                _vm._v(" "),
+                _c("label", { staticClass: "col-12 text-center" }, [
+                  _vm._v("लैङ्गिक अनुपात"),
+                ]),
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "col-md-4" },
+              [
+                _c("Pie", {
+                  attrs: {
+                    "chart-options": { responsive: true },
+                    "chart-data": {
+                      // labels: ['2068', '2078'],
+                      datasets: [
+                        {
+                          backgroundColor: ["#007bff", "#dc3545"],
+                          data: [1.53, 0.58],
+                        },
+                      ],
+                    },
+                  },
+                }),
+                _vm._v(" "),
+                _c("label", { staticClass: "col-12 text-center" }, [
+                  _vm._v("जनसंख्या बृद्धिदर"),
+                ]),
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "col-md-4" },
+              [
+                _c("Pie", {
+                  attrs: {
+                    "chart-options": { responsive: true },
+                    "chart-data": {
+                      // labels: ['2068', '2078'],
+                      datasets: [
+                        {
+                          backgroundColor: ["#007bff", "#dc3545"],
+                          data: [5.43, 4.62],
+                        },
+                      ],
+                    },
+                  },
+                }),
+                _vm._v(" "),
+                _c("label", { staticClass: "col-12 text-center" }, [
+                  _vm._v("औषत परिवारको आकार"),
+                ]),
+              ],
+              1
+            ),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-4" }),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-md-6" }, [
+        _c("div", { staticClass: "card " }, [
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-1" }),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "col-5" },
+              [
+                _c("bar", {
+                  attrs: {
+                    "chart-options": {
+                      plugins: { legend: { display: false } },
+                    },
+                    "chart-data": {
+                      labels: [
+                        "कृषि क्षेत्र",
+                        "उद्योग क्षेत्र",
+                        "सेवा क्षेत्र",
+                      ],
+                      datasets: [
+                        {
+                          backgroundColor: ["#007bff", "#dc3545", "green"],
+                          data: [36.1, 13.2, 50.7],
+                        },
+                      ],
+                    },
+                  },
+                }),
+                _vm._v(" "),
+                _c("label", { staticClass: "col-12 text-center" }, [
+                  _vm._v("कूलगार्हस्थ उत्पादन"),
+                ]),
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "col-5" },
+              [
+                _c("bar", {
+                  attrs: {
+                    "chart-options": {
+                      plugins: { legend: { display: false } },
+                    },
+                    "chart-data": {
+                      labels: ["महिला", "पुरुष", "जम्मा"],
+                      datasets: [
+                        {
+                          backgroundColor: ["#007bff", "#dc3545", "green"],
+                          data: [51.93, 76.4, 63.48],
+                        },
+                      ],
+                    },
+                  },
+                }),
+                _vm._v(" "),
+                _c("label", { staticClass: "col-12 text-center" }, [
+                  _vm._v("साक्षरता दर"),
+                ]),
+              ],
+              1
+            ),
+          ]),
+        ]),
+      ]),
+      _vm._v(" "),
+      _vm._m(4),
+    ]),
+    _vm._v(" "),
     _c("div", { staticClass: "card" }, [
       _c("div", { staticClass: "row" }, [
-        _c(
-          "div",
-          { staticClass: "col-md-3" },
-          [
-            _c("Pie", {
-              attrs: {
-                "chart-options": { responsive: true },
-                "chart-data": {
-                  labels: ["महिला", "पुरुष", "जम्मा"],
-                  datasets: [
-                    {
-                      backgroundColor: ["#007bff", "#dc3545", "green"],
-                      data: [51.93, 76.4, 63.48],
-                    },
-                  ],
-                },
-              },
-            }),
-            _vm._v(" "),
-            _c("label", { staticClass: "col-12 text-center" }, [
-              _vm._v("साक्षरता दर"),
-            ]),
-          ],
-          1
-        ),
+        _c("div", { staticClass: "col-md-3" }),
         _vm._v(" "),
         _c(
           "div",
@@ -1365,6 +1254,26 @@ var staticRenderFns = [
         _c("div", { staticClass: "data2068 col-6" }, [_c("div")]),
         _vm._v(" "),
         _c("div", { staticClass: "data2078 col-6" }, [_c("div")]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-md-12" }, [
+      _c("div", { staticClass: "chart-body" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-md-7" }, [
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "card my-3" }, [
+                _c("div", { staticClass: "row" }),
+              ]),
+            ]),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-5" }),
+        ]),
       ]),
     ])
   },

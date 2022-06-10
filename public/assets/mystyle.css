@@ -19,26 +19,26 @@
 .male_num div{
     height: 10px;
     width: 40px;
-    margin-left: 120px;
+    margin-left: 170px;
     background-color: #007bff;
 }
 .male_num div::after{
     content: "पुरुष";
     position: absolute;
-    left: 165px;
+    left: 215px;
     top: -5px;
     font-size: 12px;
 }
 .female_num div{
     height: 10px;
     width: 40px;
-    margin-left: 40px;
+    margin-left: 43px;
     background-color: #dc3545;
 }
 .female_num div::after{
     content: "महिला";
     position: absolute;
-    left: 245px;
+    left: 297px;
     top: -5px;
     font-size: 12px;
 }
