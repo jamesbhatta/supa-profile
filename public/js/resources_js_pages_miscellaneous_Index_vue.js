@@ -435,13 +435,13 @@ var staticRenderFns = [
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c("a", { attrs: { href: "#table_5" } }, [
+                    _c("a", { attrs: { href: "#table_6" } }, [
                       _vm._v("FOB को बिवरण"),
                     ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c("a", { attrs: { href: "#table_5" } }, [
+                    _c("a", { attrs: { href: "#table_7" } }, [
                       _vm._v(
                         "प्रदेश सरकार मातहतका मन्त्रालय, आयोग, निर्देशनालय र कार्यालयको विवरण"
                       ),
