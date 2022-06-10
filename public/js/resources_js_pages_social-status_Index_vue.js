@@ -1376,315 +1376,159 @@ var staticRenderFns = [
                 "ul",
                 {
                   staticClass: "table-list ",
-                  staticStyle: { overflow: "scroll" },
+                  staticStyle: { overflow: "auto" },
                 },
                 [
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/social-status/#table_1",
-                        },
-                      },
-                      [
-                        _vm._v(
-                          "सुदूरपश्चिममा रहेका कूल विद्यार्थी संख्या विवरण"
-                        ),
-                      ]
-                    ),
+                    _c("a", { attrs: { href: "#table_1" } }, [
+                      _vm._v("सुदूरपश्चिममा रहेका कूल विद्यार्थी संख्या विवरण"),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/social-status/#table_2",
-                        },
-                      },
-                      [
-                        _vm._v(
-                          "सामूदायिक विद्यालयमा विद्यार्थीको जिल्लागत संख्या विवरण"
-                        ),
-                      ]
-                    ),
+                    _c("a", { attrs: { href: "#table_2" } }, [
+                      _vm._v(
+                        "सामूदायिक विद्यालयमा विद्यार्थीको जिल्लागत संख्या विवरण"
+                      ),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/social-status/#table_3",
-                        },
-                      },
-                      [
-                        _vm._v(
-                          " बालविकास केन्द्रका विद्यार्थीको जिल्लागत संख्या विवरण"
-                        ),
-                      ]
-                    ),
+                    _c("a", { attrs: { href: "#table_3" } }, [
+                      _vm._v(
+                        " बालविकास केन्द्रका विद्यार्थीको जिल्लागत संख्या विवरण"
+                      ),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/social-status/#table_4",
-                        },
-                      },
-                      [_vm._v("दलित विद्यार्थीहरुको जिल्लागत संख्या विवरण")]
-                    ),
+                    _c("a", { attrs: { href: "#table_4" } }, [
+                      _vm._v("दलित विद्यार्थीहरुको जिल्लागत संख्या विवरण"),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/social-status/#table_5",
-                        },
-                      },
-                      [_vm._v("जिल्लागत जनजाती विद्यार्थी संख्या विवरण")]
-                    ),
+                    _c("a", { attrs: { href: "#table_5" } }, [
+                      _vm._v("जिल्लागत जनजाती विद्यार्थी संख्या विवरण"),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/social-status/#table_6",
-                        },
-                      },
-                      [_vm._v("सामूदायिक विद्यालय शिक्षक विवरण ")]
-                    ),
+                    _c("a", { attrs: { href: "#table_6" } }, [
+                      _vm._v("सामूदायिक विद्यालय शिक्षक विवरण "),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/social-status/#table_7",
-                        },
-                      },
-                      [_vm._v(" सुदूरपश्चिम प्रदेशमा शिक्षक अनुपात विवरण")]
-                    ),
+                    _c("a", { attrs: { href: "#table_7" } }, [
+                      _vm._v(" सुदूरपश्चिम प्रदेशमा शिक्षक अनुपात विवरण"),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/social-status/#table_8",
-                        },
-                      },
-                      [
-                        _vm._v(
-                          "सुदूरपश्चिम प्रदेशमा नमूना विद्यालय कार्यक्रम सञ्चालित विद्यालयहरु "
-                        ),
-                      ]
-                    ),
+                    _c("a", { attrs: { href: "#table_8" } }, [
+                      _vm._v(
+                        "सुदूरपश्चिम प्रदेशमा नमूना विद्यालय कार्यक्रम सञ्चालित विद्यालयहरु "
+                      ),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/social-status/#table_9",
-                        },
-                      },
-                      [_vm._v(" सुदूरपश्चिममा रहेका स्थानीय तहको विवरण")]
-                    ),
+                    _c("a", { attrs: { href: "#table_9" } }, [
+                      _vm._v(" सुदूरपश्चिममा रहेका स्थानीय तहको विवरण"),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/social-status/#table_10",
-                        },
-                      },
-                      [_vm._v(" प्रदेशमा रहेका क्याम्पस विवरण")]
-                    ),
+                    _c("a", { attrs: { href: "#table_10" } }, [
+                      _vm._v(" प्रदेशमा रहेका क्याम्पस विवरण"),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/social-status/#table_11",
-                        },
-                      },
-                      [_vm._v("सुदूरपश्चिममा स्वास्थ्य सूचकहरु ")]
-                    ),
+                    _c("a", { attrs: { href: "#table_11" } }, [
+                      _vm._v("सुदूरपश्चिममा स्वास्थ्य सूचकहरु "),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/social-status/#table_12",
-                        },
-                      },
-                      [
-                        _vm._v(
-                          " सुदूरपश्चिममा रहेका सरकारी स्वास्थ्य संस्था विवरण"
-                        ),
-                      ]
-                    ),
+                    _c("a", { attrs: { href: "#table_12" } }, [
+                      _vm._v(
+                        " सुदूरपश्चिममा रहेका सरकारी स्वास्थ्य संस्था विवरण"
+                      ),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/social-status/#table_13",
-                        },
-                      },
-                      [_vm._v(" सरकारी अस्पताल विवरण")]
-                    ),
+                    _c("a", { attrs: { href: "#table_13" } }, [
+                      _vm._v(" सरकारी अस्पताल विवरण"),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/social-status/#table_14",
-                        },
-                      },
-                      [_vm._v("नीजि तथा सामूदायिक अस्पतालहरु ")]
-                    ),
+                    _c("a", { attrs: { href: "#table_14" } }, [
+                      _vm._v("नीजि तथा सामूदायिक अस्पतालहरु "),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/social-status/#table_15",
-                        },
-                      },
-                      [_vm._v("अस्पताल अन्तर्गत स्वास्थ्य जनशक्तिको अवस्था ")]
-                    ),
+                    _c("a", { attrs: { href: "#table_15" } }, [
+                      _vm._v("अस्पताल अन्तर्गत स्वास्थ्य जनशक्तिको अवस्था "),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/social-status/#table_16",
-                        },
-                      },
-                      [_vm._v(" आयुर्वेद स्वास्थ्य संस्थाको जिल्लागत विवरण")]
-                    ),
+                    _c("a", { attrs: { href: "#table_16" } }, [
+                      _vm._v(" आयुर्वेद स्वास्थ्य संस्थाको जिल्लागत विवरण"),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/social-status/#table_17",
-                        },
-                      },
-                      [
-                        _vm._v(
-                          " आर्युवेद स्वास्थ्य संस्थामा कार्यरत स्वास्थ्यकर्मीको जिल्लागत विवरण"
-                        ),
-                      ]
-                    ),
+                    _c("a", { attrs: { href: "#table_17" } }, [
+                      _vm._v(
+                        " आर्युवेद स्वास्थ्य संस्थामा कार्यरत स्वास्थ्यकर्मीको जिल्लागत विवरण"
+                      ),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/social-status/#table_18",
-                        },
-                      },
-                      [
-                        _vm._v(
-                          "कूल प्रजनन् दर, जन्मको अबस्थाको सरदर आयु,मृत्यूदर (Mortality) बारे मा संक्षिप्त क्षबबरण"
-                        ),
-                      ]
-                    ),
+                    _c("a", { attrs: { href: "#table_18" } }, [
+                      _vm._v(
+                        "कूल प्रजनन् दर, जन्मको अबस्थाको सरदर आयु,मृत्यूदर (Mortality) बारे मा संक्षिप्त क्षबबरण"
+                      ),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/social-status/#table_19",
-                        },
-                      },
-                      [
-                        _vm._v(
-                          "उच्चतम दश रोगहरु अनुसार विरामी संख्या तथा प्रतिशत"
-                        ),
-                      ]
-                    ),
+                    _c("a", { attrs: { href: "#table_19" } }, [
+                      _vm._v(
+                        "उच्चतम दश रोगहरु अनुसार विरामी संख्या तथा प्रतिशत"
+                      ),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/social-status/#table_20",
-                        },
-                      },
-                      [_vm._v("सुदूरपश्चिम प्रादेशमा स्वास्थ्य बीमाको विवरण")]
-                    ),
+                    _c("a", { attrs: { href: "#table_20" } }, [
+                      _vm._v("सुदूरपश्चिम प्रादेशमा स्वास्थ्य बीमाको विवरण"),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/social-status/#table_21",
-                        },
-                      },
-                      [_vm._v("वास्थ्य सेवा प्रवाहको अवस्था")]
-                    ),
+                    _c("a", { attrs: { href: "#table_21" } }, [
+                      _vm._v("वास्थ्य सेवा प्रवाहको अवस्था"),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/social-status/#table_22",
-                        },
-                      },
-                      [_vm._v("बालबाललका तथा महिलािरूको पोषण अबस्था")]
-                    ),
+                    _c("a", { attrs: { href: "#table_22" } }, [
+                      _vm._v("बालबाललका तथा महिलािरूको पोषण अबस्था"),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/social-status/#table_23",
-                        },
-                      },
-                      [_vm._v("एम्बुलेन्स वििरण")]
-                    ),
+                    _c("a", { attrs: { href: "#table_23" } }, [
+                      _vm._v("एम्बुलेन्स वििरण"),
+                    ]),
                   ]),
                 ]
               ),

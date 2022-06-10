@@ -8,33 +8,33 @@
           <div class="col-xl-12 col-lg-12 col-md-12 main-content">
             <div style="height: 80px;"></div>
             <div class="list-set">
-              <ul class="table-list " style="overflow: scroll;">
+              <ul class="table-list " style="overflow: auto;">
                 <li class="my-3">
-                  <a href="http://localhost:3000/miscellaneous/#table_1">सुदूरपश्चिम प्रदेशसभाद्धारा हालसम्म पारित भएका विधेयकहरु</a>
+                  <a href="#table_1">सुदूरपश्चिम प्रदेशसभाद्धारा हालसम्म पारित भएका विधेयकहरु</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/miscellaneous/#table_2">सुदूरपश्चिममा रहेका स्थानीय तहको विवरण</a>
+                  <a href="#table_2">सुदूरपश्चिममा रहेका स्थानीय तहको विवरण</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/miscellaneous/#supa_police">सुदूरपश्चिम प्रदेश प्रहरी कार्यालयहरु तथा मातहतका प्रहरी ईकाई कार्यालयहरु</a>
+                  <a href="#supa_police">सुदूरपश्चिम प्रदेश प्रहरी कार्यालयहरु तथा मातहतका प्रहरी ईकाई कार्यालयहरु</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/miscellaneous/#table_4">स्थायी युनिट (दरबन्दी स्वीकृत भएको)</a>
+                  <a href="#table_4">स्थायी युनिट (दरबन्दी स्वीकृत भएको)</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/miscellaneous/#table_5">अस्थायी युनिट (दरबन्दी स्वीकृत नभएको)</a>
+                  <a href="#table_5">अस्थायी युनिट (दरबन्दी स्वीकृत नभएको)</a>
                 </li>
 
                  <li class="my-3">
-                  <a href="http://localhost:3000/miscellaneous/#table_5">FOB को बिवरण</a>
+                  <a href="#table_5">FOB को बिवरण</a>
                 </li>
 
                  <li class="my-3">
-                  <a href="http://localhost:3000/miscellaneous/#table_5">प्रदेश सरकार मातहतका मन्त्रालय, आयोग, निर्देशनालय र कार्यालयको विवरण</a>
+                  <a href="#table_5">प्रदेश सरकार मातहतका मन्त्रालय, आयोग, निर्देशनालय र कार्यालयको विवरण</a>
                 </li>
                 
               </ul>

@@ -8,94 +8,94 @@
           <div class="col-xl-12 col-lg-12 col-md-12 main-content">
             <div style="height: 80px;"></div>
             <div class="list-set">
-              <ul class="table-list " style="overflow: scroll;">
+              <ul class="table-list " style="overflow: auto;">
                 <li class="my-3">
-                  <a href="http://localhost:3000/state-of-agricultural-sector/#table_1">प्रदेशमा भू – स्वामित्वको अवस्था</a>
+                  <a href="#table_1">प्रदेशमा भू – स्वामित्वको अवस्था</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/state-of-agricultural-sector/#table_2">भू – उपयोगको अवस्था</a>
+                  <a href="#table_2">भू – उपयोगको अवस्था</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/state-of-agricultural-sector/#table_3">सुदूरपश्चिममा कृषि उपजले ढाकेको जिल्लागत भू – क्षेत्र</a>
+                  <a href="#table_3">सुदूरपश्चिममा कृषि उपजले ढाकेको जिल्लागत भू – क्षेत्र</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/state-of-agricultural-sector/#table_4">सुदूरपश्चिम प्रदेशको जिल्लागत क्षेत्रफल र सिंचाई स्थिति</a>
+                  <a href="#table_4">सुदूरपश्चिम प्रदेशको जिल्लागत क्षेत्रफल र सिंचाई स्थिति</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/state-of-agricultural-sector/#table_5">कृषि बालीको जिल्लागत उत्पादन अवस्था</a>
+                  <a href="#table_5">कृषि बालीको जिल्लागत उत्पादन अवस्था</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/state-of-agricultural-sector/#table_6">व्यवसायिक उत्पादनमा अगाडी बढेका बाली र पकेट क्षेत्रहरुको जिल्लागत विवरण</a>
+                  <a href="#table_6">व्यवसायिक उत्पादनमा अगाडी बढेका बाली र पकेट क्षेत्रहरुको जिल्लागत विवरण</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/state-of-agricultural-sector/#table_7">प्रमुख खाद्यान्न बालीहरुको तुलनात्मक क्षेत्रफल तथा उत्पादन विवरण</a>
+                  <a href="#table_7">प्रमुख खाद्यान्न बालीहरुको तुलनात्मक क्षेत्रफल तथा उत्पादन विवरण</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/state-of-agricultural-sector/#table_8">सुदूरपश्चिमका प्रमुख हिउँदे बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व</a>
+                  <a href="#table_8">सुदूरपश्चिमका प्रमुख हिउँदे बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/state-of-agricultural-sector/#table_9">सुदूरपश्चिमका प्रमुख बर्षे बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व</a>
+                  <a href="#table_9">सुदूरपश्चिमका प्रमुख बर्षे बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/state-of-agricultural-sector/#table_10">सुदूरपश्चिमका प्रमुख दलहन बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व</a>
+                  <a href="#table_10">सुदूरपश्चिमका प्रमुख दलहन बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/state-of-agricultural-sector/#table_11">सुदूरपश्चिमका प्रमुख तेलहन बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व</a>
+                  <a href="#table_11">सुदूरपश्चिमका प्रमुख तेलहन बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/state-of-agricultural-sector/#table_12">प्रमुख बर्षे तरकारी बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व</a>
+                  <a href="#table_12">प्रमुख बर्षे तरकारी बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/state-of-agricultural-sector/#table_13"> उपभोग्य खाद्यान्नको स्थिति प्रदेशगत विवरण प्रक्षेपित जनसंख्यामा (मे.ट.) २०७५/२०७६</a>
+                  <a href="#table_13"> उपभोग्य खाद्यान्नको स्थिति प्रदेशगत विवरण प्रक्षेपित जनसंख्यामा (मे.ट.) २०७५/२०७६</a>
                 </li>
                   
                 <li class="my-3">
-                  <a href="http://localhost:3000/state-of-agricultural-sector/#table_14">वाली अनुसार विभिन्न आर्थिक वर्षहरुका खाद्यान्न</a>
+                  <a href="#table_14">वाली अनुसार विभिन्न आर्थिक वर्षहरुका खाद्यान्न</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/state-of-agricultural-sector/#table_15">जिल्ला अनुसार खाद्यान्न उत्पादन</a>
+                  <a href="#table_15">जिल्ला अनुसार खाद्यान्न उत्पादन</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/state-of-agricultural-sector/#table_16">सुदूरपश्चिममा पशुपंक्षीको तथ्यांक ०७७/०७८
+                  <a href="#table_16">सुदूरपश्चिममा पशुपंक्षीको तथ्यांक ०७७/०७८
                   </a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/state-of-agricultural-sector/#table_17"> सुदूरपश्चिममा दुधालु पशु र दुग्ध उत्पादनको अवस्था (मे.ट. ०७७/०७८)</a>
+                  <a href="#table_17"> सुदूरपश्चिममा दुधालु पशु र दुग्ध उत्पादनको अवस्था (मे.ट. ०७७/०७८)</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/state-of-agricultural-sector/#table_18"> सुदूरपश्चिममा बार्षिक मासु उत्पादनको अवस्था मे.ट. ०७७/०७८</a>
+                  <a href="#table_18"> सुदूरपश्चिममा बार्षिक मासु उत्पादनको अवस्था मे.ट. ०७७/०७८</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/state-of-agricultural-sector/#table_19">सुदूरपश्चिममा बार्षिक अण्डा उत्पादनको अवस्था ०७७/०७८</a>
+                  <a href="#table_19">सुदूरपश्चिममा बार्षिक अण्डा उत्पादनको अवस्था ०७७/०७८</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/state-of-agricultural-sector/#table_20">सुदूरपश्चिममा बार्षिक उन उत्पादनको अवस्था ०७७/०७८</a>
+                  <a href="#table_20">सुदूरपश्चिममा बार्षिक उन उत्पादनको अवस्था ०७७/०७८</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/state-of-agricultural-sector/#table_21">सुदूरपश्चिममा पशुपंक्षीजन्य पदार्थको बार्षिक उत्पादनको अवस्था ०७७/०७८</a>
+                  <a href="#table_21">सुदूरपश्चिममा पशुपंक्षीजन्य पदार्थको बार्षिक उत्पादनको अवस्था ०७७/०७८</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/state-of-agricultural-sector/#table_22">सुदूरपश्चिममा खाद्य सुरक्षाको अवस्था</a>
+                  <a href="#table_22">सुदूरपश्चिममा खाद्य सुरक्षाको अवस्था</a>
                 </li>
 
                

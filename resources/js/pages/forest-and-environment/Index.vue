@@ -8,25 +8,25 @@
                     <div class="col-xl-12 col-lg-12 col-md-12 main-content">
                         <div style="height: 80px;"></div>
                         <div class="list-set">
-                            <ul class="table-list " style="overflow: scroll;">
+                            <ul class="table-list " style="overflow: auto;">
                                 <li class="my-3">
-                                    <a href="http://localhost:3000/forest-and-environment/#table_1">वन क्षेत्रको जिल्लागत विवरण</a>
+                                    <a href="#table_1">वन क्षेत्रको जिल्लागत विवरण</a>
                                 </li>
 
                                 <li class="my-3">
-                                    <a href="http://localhost:3000/forest-and-environment/#table_2">वन क्षेत्रको प्रदेशगत विवरण</a>
+                                    <a href="#table_2">वन क्षेत्रको प्रदेशगत विवरण</a>
                                 </li>
 
                                 <li class="my-3">
-                                    <a href="http://localhost:3000/forest-and-environment/#table_3">सुदूरपश्चिम प्रदेशमा रहेका राष्ट्रिय निकुञ्ज</a>
+                                    <a href="#table_3">सुदूरपश्चिम प्रदेशमा रहेका राष्ट्रिय निकुञ्ज</a>
                                 </li>
 
                                 <li class="my-3">
-                                    <a href="http://localhost:3000/forest-and-environment/#table_4">सुदूरपश्चिममा रहेका हिमनदी र हिमतालहरु</a>
+                                    <a href="#table_4">सुदूरपश्चिममा रहेका हिमनदी र हिमतालहरु</a>
                                 </li>
 
                                 <li class="my-3">
-                                    <a href="http://localhost:3000/forest-and-environment/#table_5">सुदूरपश्चिममा रहेका तालतलैया</a>
+                                    <a href="#table_5">सुदूरपश्चिममा रहेका तालतलैया</a>
                                 </li>
                             </ul>
                         </div>

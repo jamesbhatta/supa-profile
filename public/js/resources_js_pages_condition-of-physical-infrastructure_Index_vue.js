@@ -1078,203 +1078,105 @@ var staticRenderFns = [
                 "ul",
                 {
                   staticClass: "table-list ",
-                  staticStyle: { overflow: "scroll" },
+                  staticStyle: { overflow: "auto" },
                 },
                 [
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/condition-of-physical-infrastructure/#table_1",
-                        },
-                      },
-                      [_vm._v("सुदूरपश्चिम संचालित राष्ट्रिय गौरवका आयोजनाहरु")]
-                    ),
+                    _c("a", { attrs: { href: "#table_1" } }, [
+                      _vm._v("सुदूरपश्चिम संचालित राष्ट्रिय गौरवका आयोजनाहरु"),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/condition-of-physical-infrastructure/#table_2",
-                        },
-                      },
-                      [_vm._v("प्रदेश गौरबका आयोजाहरु")]
-                    ),
+                    _c("a", { attrs: { href: "#table_2" } }, [
+                      _vm._v("प्रदेश गौरबका आयोजाहरु"),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/condition-of-physical-infrastructure/#table_3",
-                        },
-                      },
-                      [_vm._v("सुदूरपश्चिममा सेवा सञ्जालको विवरण")]
-                    ),
+                    _c("a", { attrs: { href: "#table_3" } }, [
+                      _vm._v("सुदूरपश्चिममा सेवा सञ्जालको विवरण"),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/condition-of-physical-infrastructure/#table_4",
-                        },
-                      },
-                      [
-                        _vm._v(
-                          "प्रदेश अनुसार प्रदेश र स्थानीय तहको सडक विवरण (कि.मि.)"
-                        ),
-                      ]
-                    ),
+                    _c("a", { attrs: { href: "#table_4" } }, [
+                      _vm._v(
+                        "प्रदेश अनुसार प्रदेश र स्थानीय तहको सडक विवरण (कि.मि.)"
+                      ),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/condition-of-physical-infrastructure/#table_5",
-                        },
-                      },
-                      [_vm._v("प्रदेश अनुसार सडकको प्रकार विवरण (कि.मि.)")]
-                    ),
+                    _c("a", { attrs: { href: "#table_5" } }, [
+                      _vm._v("प्रदेश अनुसार सडकको प्रकार विवरण (कि.मि.)"),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/condition-of-physical-infrastructure/#table_6",
-                        },
-                      },
-                      [_vm._v("सवारी साधनको संख्या विवरण")]
-                    ),
+                    _c("a", { attrs: { href: "#table_6" } }, [
+                      _vm._v("सवारी साधनको संख्या विवरण"),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/condition-of-physical-infrastructure/#table_7",
-                        },
-                      },
-                      [_vm._v("विमानस्थलको सञ्चालन अवस्था")]
-                    ),
+                    _c("a", { attrs: { href: "#table_7" } }, [
+                      _vm._v("विमानस्थलको सञ्चालन अवस्था"),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/condition-of-physical-infrastructure/#table_8",
-                        },
-                      },
-                      [
-                        _vm._v(
-                          "खानेपानीका मुख्य श्रोत अनुसार स्थानीय तहगत घरपरिवार संख्या"
-                        ),
-                      ]
-                    ),
+                    _c("a", { attrs: { href: "#table_8" } }, [
+                      _vm._v(
+                        "खानेपानीका मुख्य श्रोत अनुसार स्थानीय तहगत घरपरिवार संख्या"
+                      ),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/condition-of-physical-infrastructure/#table_9",
-                        },
-                      },
-                      [_vm._v("खाना पकाउनका लागि प्रयोग हुने इन्धनको स्रोत")]
-                    ),
+                    _c("a", { attrs: { href: "#table_9" } }, [
+                      _vm._v("खाना पकाउनका लागि प्रयोग हुने इन्धनको स्रोत"),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/condition-of-physical-infrastructure/#table_10",
-                        },
-                      },
-                      [_vm._v("घरपरिवारमा उज्यालोका लागि प्रयोग हुने स्रोत")]
-                    ),
+                    _c("a", { attrs: { href: "#table_10" } }, [
+                      _vm._v("घरपरिवारमा उज्यालोका लागि प्रयोग हुने स्रोत"),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/condition-of-physical-infrastructure/#table_11",
-                        },
-                      },
-                      [_vm._v("विधुत सेवामा पहुँचको प्रदेशगत अवस्था")]
-                    ),
+                    _c("a", { attrs: { href: "#table_11" } }, [
+                      _vm._v("विधुत सेवामा पहुँचको प्रदेशगत अवस्था"),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/condition-of-physical-infrastructure/#table_12",
-                        },
-                      },
-                      [_vm._v("विधुत उत्पादनको प्रदेशगत अवस्था")]
-                    ),
+                    _c("a", { attrs: { href: "#table_12" } }, [
+                      _vm._v("विधुत उत्पादनको प्रदेशगत अवस्था"),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/condition-of-physical-infrastructure/#table_13",
-                        },
-                      },
-                      [
-                        _vm._v(
-                          "सुदूरपश्चिममा सञ्चार सेवा उपभोगकर्ताका संख्या विवरण"
-                        ),
-                      ]
-                    ),
+                    _c("a", { attrs: { href: "#table_13" } }, [
+                      _vm._v(
+                        "सुदूरपश्चिममा सञ्चार सेवा उपभोगकर्ताका संख्या विवरण"
+                      ),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/condition-of-physical-infrastructure/#table_14",
-                        },
-                      },
-                      [
-                        _vm._v(
-                          "प्रेस काउन्सिलमा दर्ता भएका सुदूरपश्चिमका पत्रपत्रिकाहरु"
-                        ),
-                      ]
-                    ),
+                    _c("a", { attrs: { href: "#table_14" } }, [
+                      _vm._v(
+                        "प्रेस काउन्सिलमा दर्ता भएका सुदूरपश्चिमका पत्रपत्रिकाहरु"
+                      ),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/condition-of-physical-infrastructure/#table_15",
-                        },
-                      },
-                      [_vm._v("प्रदेशमा रहेका एफएम रेडियोको विवरण")]
-                    ),
+                    _c("a", { attrs: { href: "#table_15" } }, [
+                      _vm._v("प्रदेशमा रहेका एफएम रेडियोको विवरण"),
+                    ]),
                   ]),
                 ]
               ),

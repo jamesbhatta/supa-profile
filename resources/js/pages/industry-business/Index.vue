@@ -7,17 +7,17 @@
           <div class="col-xl-12 col-lg-12 col-md-12 main-content">
             <div style="height: 80px;"></div>
             <div class="list-set">
-              <ul class="table-list " style="overflow: scroll;">
+              <ul class="table-list " style="overflow: auto;">
                 <li class="my-3">
-                  <a href="http://localhost:3000/industry-business/#table_1">ठूला तथा मझौला उद्योगहरुको प्रदेशगत विवरण</a>
+                  <a href="#table_1">ठूला तथा मझौला उद्योगहरुको प्रदेशगत विवरण</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/industry-business/#table_2">सुदूरपश्चिमका दर्ता भएका कूल साना उद्योगहरुको विवरण</a>
+                  <a href="#table_2">सुदूरपश्चिमका दर्ता भएका कूल साना उद्योगहरुको विवरण</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/industry-business/#table_3">सुदूरपश्चिममा रहेका मुख्य खानीको विवरण</a>
+                  <a href="#table_3">सुदूरपश्चिममा रहेका मुख्य खानीको विवरण</a>
                 </li>
 
               </ul>

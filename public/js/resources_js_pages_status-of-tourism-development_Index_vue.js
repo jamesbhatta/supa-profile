@@ -245,71 +245,39 @@ var staticRenderFns = [
                 "ul",
                 {
                   staticClass: "table-list ",
-                  staticStyle: { overflow: "scroll" },
+                  staticStyle: { overflow: "auto" },
                 },
                 [
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/status-of-tourism-development/#table_1",
-                        },
-                      },
-                      [
-                        _vm._v(
-                          "सुदूरपश्चिममा\n                                    रहेका प्रमुख पर्यटकीय गन्तब्यहरुको जिल्लागत विवरण"
-                        ),
-                      ]
-                    ),
+                    _c("a", { attrs: { href: "#table_1" } }, [
+                      _vm._v(
+                        "सुदूरपश्चिममा\n                                    रहेका प्रमुख पर्यटकीय गन्तब्यहरुको जिल्लागत विवरण"
+                      ),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/status-of-tourism-development/#table_2",
-                        },
-                      },
-                      [
-                        _vm._v(
-                          "नमुनाको रुपमा\n                                    छनोट गरिएका ५ वटा पर्यटकस्तरीय होटलहरुको अकुपेन्सी तथा रोजगारी विवरण"
-                        ),
-                      ]
-                    ),
+                    _c("a", { attrs: { href: "#table_2" } }, [
+                      _vm._v(
+                        "नमुनाको रुपमा\n                                    छनोट गरिएका ५ वटा पर्यटकस्तरीय होटलहरुको अकुपेन्सी तथा रोजगारी विवरण"
+                      ),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/status-of-tourism-development/#table_3",
-                        },
-                      },
-                      [
-                        _vm._v(
-                          "सुदूरपश्चिममा\n                                    दर्ता रहेका होमस्टे"
-                        ),
-                      ]
-                    ),
+                    _c("a", { attrs: { href: "#table_3" } }, [
+                      _vm._v(
+                        "सुदूरपश्चिममा\n                                    दर्ता रहेका होमस्टे"
+                      ),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/status-of-tourism-development/#table_4",
-                        },
-                      },
-                      [
-                        _vm._v(
-                          "सुदूरपश्चिममा\n                                    रहेको टुर्स एण्ड ट्राभल्स"
-                        ),
-                      ]
-                    ),
+                    _c("a", { attrs: { href: "#table_4" } }, [
+                      _vm._v(
+                        "सुदूरपश्चिममा\n                                    रहेको टुर्स एण्ड ट्राभल्स"
+                      ),
+                    ]),
                   ]),
                 ]
               ),

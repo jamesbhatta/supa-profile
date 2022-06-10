@@ -10,47 +10,47 @@
             <div class="list-set">
               <ul class="table-list ">
                 <li class="my-3">
-                  <a href="http://localhost:3000/demographic-status/#table_1">सुदूरपश्चिम प्रदेशका भौगोलिक क्षेत्रगत जनसंख्या तथा जनघनत्व विवरण</a>
+                  <a href="#table_1">सुदूरपश्चिम प्रदेशका भौगोलिक क्षेत्रगत जनसंख्या तथा जनघनत्व विवरण</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/demographic-status/#table_2">राष्ट्रिय जनगणना २०७८ को प्रारम्भिक तथ्याङ्क अनुसार</a>
+                  <a href="#table_2">राष्ट्रिय जनगणना २०७८ को प्रारम्भिक तथ्याङ्क अनुसार</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/demographic-status/#table_3">राष्ट्रिय जनगणना २०७८ को प्रारम्भिक तथ्याङ्क अनुसार जिल्लागत जनसंख्या विवरण</a>
+                  <a href="#table_3">राष्ट्रिय जनगणना २०७८ को प्रारम्भिक तथ्याङ्क अनुसार जिल्लागत जनसंख्या विवरण</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/demographic-status/#table_4">राष्ट्रिय जनगणना २०७८ को प्रारम्भिक तथ्याङ्क अनुसार जिल्लागत जनसंख्या विवरण</a>
+                  <a href="#table_4">राष्ट्रिय जनगणना २०७८ को प्रारम्भिक तथ्याङ्क अनुसार जिल्लागत जनसंख्या विवरण</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/demographic-status/#table_5">जिल्लागत जनसंख्या वितरण</a>
+                  <a href="#table_5">जिल्लागत जनसंख्या वितरण</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/demographic-status/#table_6">धर्मावलम्वीका आधारमा जिल्लागत विवरण</a>
+                  <a href="#table_6">धर्मावलम्वीका आधारमा जिल्लागत विवरण</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/demographic-status/#table_7">सुदूरपश्चिम प्रदेश र अन्य प्रदेशमा रहेको जनसांख्यिक स्थिति</a>
+                  <a href="#table_7">सुदूरपश्चिम प्रदेश र अन्य प्रदेशमा रहेको जनसांख्यिक स्थिति</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/demographic-status/#table_8">जातजाती आधारमा रहेको जनसंख्या</a>
+                  <a href="#table_8">जातजाती आधारमा रहेको जनसंख्या</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/demographic-status/#table_9">प्रखुम दश भाषाभाषी विवरण</a>
+                  <a href="#table_9">प्रखुम दश भाषाभाषी विवरण</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/demographic-status/#table_10">स्थानीय तहको जनसंख्या, औषत घरपरिवार सदस्य संख्या र लैङ्गिक अनुपात विवरण</a>
+                  <a href="#table_10">स्थानीय तहको जनसंख्या, औषत घरपरिवार सदस्य संख्या र लैङ्गिक अनुपात विवरण</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/demographic-status/#table_11">सुराष्ट्रिय जनगणना २०७८ को प्रारम्भिक तथ्यांक अनुसार स्थानीय तहको जनसंख्या</a>
+                  <a href="#table_11">सुराष्ट्रिय जनगणना २०७८ को प्रारम्भिक तथ्यांक अनुसार स्थानीय तहको जनसंख्या</a>
                 </li>
               
               </ul>

@@ -7,97 +7,97 @@
           <div class="col-xl-12 col-lg-12 col-md-12 main-content" >
             <div style="height: 80px;"></div>
             <div class="list-set" >
-              <ul class="table-list " style="overflow: scroll;" >
+              <ul class="table-list " style="overflow: auto;" >
                 <li class="my-3">
-                  <a href="http://localhost:3000/social-status/#table_1">सुदूरपश्चिममा रहेका कूल विद्यार्थी संख्या विवरण</a>
+                  <a href="#table_1">सुदूरपश्चिममा रहेका कूल विद्यार्थी संख्या विवरण</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/social-status/#table_2">सामूदायिक विद्यालयमा विद्यार्थीको जिल्लागत संख्या विवरण</a>
+                  <a href="#table_2">सामूदायिक विद्यालयमा विद्यार्थीको जिल्लागत संख्या विवरण</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/social-status/#table_3"> बालविकास केन्द्रका विद्यार्थीको जिल्लागत संख्या विवरण</a>
+                  <a href="#table_3"> बालविकास केन्द्रका विद्यार्थीको जिल्लागत संख्या विवरण</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/social-status/#table_4">दलित विद्यार्थीहरुको जिल्लागत संख्या विवरण</a>
+                  <a href="#table_4">दलित विद्यार्थीहरुको जिल्लागत संख्या विवरण</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/social-status/#table_5">जिल्लागत जनजाती विद्यार्थी संख्या विवरण</a>
+                  <a href="#table_5">जिल्लागत जनजाती विद्यार्थी संख्या विवरण</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/social-status/#table_6">सामूदायिक विद्यालय शिक्षक विवरण </a>
+                  <a href="#table_6">सामूदायिक विद्यालय शिक्षक विवरण </a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/social-status/#table_7"> सुदूरपश्चिम प्रदेशमा शिक्षक अनुपात विवरण</a>
+                  <a href="#table_7"> सुदूरपश्चिम प्रदेशमा शिक्षक अनुपात विवरण</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/social-status/#table_8">सुदूरपश्चिम प्रदेशमा नमूना विद्यालय कार्यक्रम सञ्चालित विद्यालयहरु </a>
+                  <a href="#table_8">सुदूरपश्चिम प्रदेशमा नमूना विद्यालय कार्यक्रम सञ्चालित विद्यालयहरु </a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/social-status/#table_9"> सुदूरपश्चिममा रहेका स्थानीय तहको विवरण</a>
+                  <a href="#table_9"> सुदूरपश्चिममा रहेका स्थानीय तहको विवरण</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/social-status/#table_10"> प्रदेशमा रहेका क्याम्पस विवरण</a>
+                  <a href="#table_10"> प्रदेशमा रहेका क्याम्पस विवरण</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/social-status/#table_11">सुदूरपश्चिममा स्वास्थ्य सूचकहरु </a>
+                  <a href="#table_11">सुदूरपश्चिममा स्वास्थ्य सूचकहरु </a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/social-status/#table_12"> सुदूरपश्चिममा रहेका सरकारी स्वास्थ्य संस्था विवरण</a>
+                  <a href="#table_12"> सुदूरपश्चिममा रहेका सरकारी स्वास्थ्य संस्था विवरण</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/social-status/#table_13"> सरकारी अस्पताल विवरण</a>
+                  <a href="#table_13"> सरकारी अस्पताल विवरण</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/social-status/#table_14">नीजि तथा सामूदायिक अस्पतालहरु </a>
+                  <a href="#table_14">नीजि तथा सामूदायिक अस्पतालहरु </a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/social-status/#table_15">अस्पताल अन्तर्गत स्वास्थ्य जनशक्तिको अवस्था </a>
+                  <a href="#table_15">अस्पताल अन्तर्गत स्वास्थ्य जनशक्तिको अवस्था </a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/social-status/#table_16"> आयुर्वेद स्वास्थ्य संस्थाको जिल्लागत विवरण</a>
+                  <a href="#table_16"> आयुर्वेद स्वास्थ्य संस्थाको जिल्लागत विवरण</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/social-status/#table_17"> आर्युवेद स्वास्थ्य संस्थामा कार्यरत स्वास्थ्यकर्मीको जिल्लागत विवरण</a>
+                  <a href="#table_17"> आर्युवेद स्वास्थ्य संस्थामा कार्यरत स्वास्थ्यकर्मीको जिल्लागत विवरण</a>
                 </li>
 
                  <li class="my-3">
-                  <a href="http://localhost:3000/social-status/#table_18">कूल प्रजनन् दर, जन्मको अबस्थाको सरदर आयु,मृत्यूदर (Mortality) बारे मा संक्षिप्त क्षबबरण</a>
+                  <a href="#table_18">कूल प्रजनन् दर, जन्मको अबस्थाको सरदर आयु,मृत्यूदर (Mortality) बारे मा संक्षिप्त क्षबबरण</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/social-status/#table_19">उच्चतम दश रोगहरु अनुसार विरामी संख्या तथा प्रतिशत</a>
+                  <a href="#table_19">उच्चतम दश रोगहरु अनुसार विरामी संख्या तथा प्रतिशत</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/social-status/#table_20">सुदूरपश्चिम प्रादेशमा स्वास्थ्य बीमाको विवरण</a>
+                  <a href="#table_20">सुदूरपश्चिम प्रादेशमा स्वास्थ्य बीमाको विवरण</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/social-status/#table_21">वास्थ्य सेवा प्रवाहको अवस्था</a>
+                  <a href="#table_21">वास्थ्य सेवा प्रवाहको अवस्था</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/social-status/#table_22">बालबाललका तथा महिलािरूको पोषण अबस्था</a>
+                  <a href="#table_22">बालबाललका तथा महिलािरूको पोषण अबस्था</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/social-status/#table_23">एम्बुलेन्स वििरण</a>
+                  <a href="#table_23">एम्बुलेन्स वििरण</a>
                 </li>
 
 

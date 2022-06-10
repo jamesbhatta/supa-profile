@@ -7,65 +7,65 @@
                     <div class="col-xl-12 col-lg-12 col-md-12 main-content">
                         <div style="height: 80px;"></div>
                         <div class="list-set">
-                            <ul class="table-list " style="overflow: scroll;">
+                            <ul class="table-list " style="overflow: auto;">
                                 <li class="my-3">
-                                    <a href="http://localhost:3000/condition-of-physical-infrastructure/#table_1">सुदूरपश्चिम संचालित राष्ट्रिय गौरवका आयोजनाहरु</a>
+                                    <a href="#table_1">सुदूरपश्चिम संचालित राष्ट्रिय गौरवका आयोजनाहरु</a>
                                 </li>
 
                                 <li class="my-3">
-                                    <a href="http://localhost:3000/condition-of-physical-infrastructure/#table_2">प्रदेश गौरबका आयोजाहरु</a>
+                                    <a href="#table_2">प्रदेश गौरबका आयोजाहरु</a>
                                 </li>
 
                                 <li class="my-3">
-                                    <a href="http://localhost:3000/condition-of-physical-infrastructure/#table_3">सुदूरपश्चिममा सेवा सञ्जालको विवरण</a>
+                                    <a href="#table_3">सुदूरपश्चिममा सेवा सञ्जालको विवरण</a>
                                 </li>
 
                                 <li class="my-3">
-                                    <a href="http://localhost:3000/condition-of-physical-infrastructure/#table_4">प्रदेश अनुसार प्रदेश र स्थानीय तहको सडक विवरण (कि.मि.)</a>
+                                    <a href="#table_4">प्रदेश अनुसार प्रदेश र स्थानीय तहको सडक विवरण (कि.मि.)</a>
                                 </li>
 
                                 <li class="my-3">
-                                    <a href="http://localhost:3000/condition-of-physical-infrastructure/#table_5">प्रदेश अनुसार सडकको प्रकार विवरण (कि.मि.)</a>
+                                    <a href="#table_5">प्रदेश अनुसार सडकको प्रकार विवरण (कि.मि.)</a>
                                 </li>
 
                                 <li class="my-3">
-                                    <a href="http://localhost:3000/condition-of-physical-infrastructure/#table_6">सवारी साधनको संख्या विवरण</a>
+                                    <a href="#table_6">सवारी साधनको संख्या विवरण</a>
                                 </li>
 
                                 <li class="my-3">
-                                    <a href="http://localhost:3000/condition-of-physical-infrastructure/#table_7">विमानस्थलको सञ्चालन अवस्था</a>
+                                    <a href="#table_7">विमानस्थलको सञ्चालन अवस्था</a>
                                 </li>
 
                                 <li class="my-3">
-                                    <a href="http://localhost:3000/condition-of-physical-infrastructure/#table_8">खानेपानीका मुख्य श्रोत अनुसार स्थानीय तहगत घरपरिवार संख्या</a>
+                                    <a href="#table_8">खानेपानीका मुख्य श्रोत अनुसार स्थानीय तहगत घरपरिवार संख्या</a>
                                 </li>
 
                                 <li class="my-3">
-                                    <a href="http://localhost:3000/condition-of-physical-infrastructure/#table_9">खाना पकाउनका लागि प्रयोग हुने इन्धनको स्रोत</a>
+                                    <a href="#table_9">खाना पकाउनका लागि प्रयोग हुने इन्धनको स्रोत</a>
                                 </li>
 
                                 <li class="my-3">
-                                    <a href="http://localhost:3000/condition-of-physical-infrastructure/#table_10">घरपरिवारमा उज्यालोका लागि प्रयोग हुने स्रोत</a>
+                                    <a href="#table_10">घरपरिवारमा उज्यालोका लागि प्रयोग हुने स्रोत</a>
                                 </li>
 
                                 <li class="my-3">
-                                    <a href="http://localhost:3000/condition-of-physical-infrastructure/#table_11">विधुत सेवामा पहुँचको प्रदेशगत अवस्था</a>
+                                    <a href="#table_11">विधुत सेवामा पहुँचको प्रदेशगत अवस्था</a>
                                 </li>
 
                                 <li class="my-3">
-                                    <a href="http://localhost:3000/condition-of-physical-infrastructure/#table_12">विधुत उत्पादनको प्रदेशगत अवस्था</a>
+                                    <a href="#table_12">विधुत उत्पादनको प्रदेशगत अवस्था</a>
                                 </li>
 
                                 <li class="my-3">
-                                    <a href="http://localhost:3000/condition-of-physical-infrastructure/#table_13">सुदूरपश्चिममा सञ्चार सेवा उपभोगकर्ताका संख्या विवरण</a>
+                                    <a href="#table_13">सुदूरपश्चिममा सञ्चार सेवा उपभोगकर्ताका संख्या विवरण</a>
                                 </li>
 
                                 <li class="my-3">
-                                    <a href="http://localhost:3000/condition-of-physical-infrastructure/#table_14">प्रेस काउन्सिलमा दर्ता भएका सुदूरपश्चिमका पत्रपत्रिकाहरु</a>
+                                    <a href="#table_14">प्रेस काउन्सिलमा दर्ता भएका सुदूरपश्चिमका पत्रपत्रिकाहरु</a>
                                 </li>
 
                                 <li class="my-3">
-                                    <a href="http://localhost:3000/condition-of-physical-infrastructure/#table_15">प्रदेशमा रहेका एफएम रेडियोको विवरण</a>
+                                    <a href="#table_15">प्रदेशमा रहेका एफएम रेडियोको विवरण</a>
                                 </li>
 
                                 

@@ -615,87 +615,45 @@ var staticRenderFns = [
             _c("div", { staticClass: "list-set" }, [
               _c("ul", { staticClass: "table-list " }, [
                 _c("li", { staticClass: "my-3" }, [
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        href: "http://localhost:3000/economical-situation/#table_1",
-                      },
-                    },
-                    [_vm._v("प्रदेशको आर्थिक सूचकहरु")]
-                  ),
+                  _c("a", { attrs: { href: "#table_1" } }, [
+                    _vm._v("प्रदेशको आर्थिक सूचकहरु"),
+                  ]),
                 ]),
                 _vm._v(" "),
                 _c("li", { staticClass: "my-3" }, [
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        href: "http://localhost:3000/economical-situation/#table_2",
-                      },
-                    },
-                    [_vm._v("राजश्व बाँडफाँड (रु.दश लाखमा)")]
-                  ),
+                  _c("a", { attrs: { href: "#table_2" } }, [
+                    _vm._v("राजश्व बाँडफाँड (रु.दश लाखमा)"),
+                  ]),
                 ]),
                 _vm._v(" "),
                 _c("li", { staticClass: "my-3" }, [
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        href: "http://localhost:3000/economical-situation/#table_3",
-                      },
-                    },
-                    [_vm._v("प्रदेशमा प्राप्त हुने राजश्वको शिर्षकगत विवरण")]
-                  ),
+                  _c("a", { attrs: { href: "#table_3" } }, [
+                    _vm._v("प्रदेशमा प्राप्त हुने राजश्वको शिर्षकगत विवरण"),
+                  ]),
                 ]),
                 _vm._v(" "),
                 _c("li", { staticClass: "my-3" }, [
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        href: "http://localhost:3000/economical-situation/#table_4",
-                      },
-                    },
-                    [_vm._v("बजेटको स्रोतको अवस्था")]
-                  ),
+                  _c("a", { attrs: { href: "#table_4" } }, [
+                    _vm._v("बजेटको स्रोतको अवस्था"),
+                  ]),
                 ]),
                 _vm._v(" "),
                 _c("li", { staticClass: "my-3" }, [
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        href: "http://localhost:3000/economical-situation/#table_5",
-                      },
-                    },
-                    [_vm._v("सुदूरपश्चिम प्रदेशको कूल बजेट र खर्चको अवस्था")]
-                  ),
+                  _c("a", { attrs: { href: "#table_5" } }, [
+                    _vm._v("सुदूरपश्चिम प्रदेशको कूल बजेट र खर्चको अवस्था"),
+                  ]),
                 ]),
                 _vm._v(" "),
                 _c("li", { staticClass: "my-3" }, [
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        href: "http://localhost:3000/economical-situation/#table_6",
-                      },
-                    },
-                    [_vm._v("श्रम तथा रोजगारको अवस्था")]
-                  ),
+                  _c("a", { attrs: { href: "#table_6" } }, [
+                    _vm._v("श्रम तथा रोजगारको अवस्था"),
+                  ]),
                 ]),
                 _vm._v(" "),
                 _c("li", { staticClass: "my-3" }, [
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        href: "http://localhost:3000/economical-situation/#table_7",
-                      },
-                    },
-                    [_vm._v("प्रदेशमा दर्ता भएका सहकारीहरुको विवरण")]
-                  ),
+                  _c("a", { attrs: { href: "#table_7" } }, [
+                    _vm._v("प्रदेशमा दर्ता भएका सहकारीहरुको विवरण"),
+                  ]),
                 ]),
               ]),
             ]),

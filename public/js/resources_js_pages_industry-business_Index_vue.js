@@ -281,47 +281,27 @@ var staticRenderFns = [
                 "ul",
                 {
                   staticClass: "table-list ",
-                  staticStyle: { overflow: "scroll" },
+                  staticStyle: { overflow: "auto" },
                 },
                 [
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/industry-business/#table_1",
-                        },
-                      },
-                      [_vm._v("ठूला तथा मझौला उद्योगहरुको प्रदेशगत विवरण")]
-                    ),
+                    _c("a", { attrs: { href: "#table_1" } }, [
+                      _vm._v("ठूला तथा मझौला उद्योगहरुको प्रदेशगत विवरण"),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/industry-business/#table_2",
-                        },
-                      },
-                      [
-                        _vm._v(
-                          "सुदूरपश्चिमका दर्ता भएका कूल साना उद्योगहरुको विवरण"
-                        ),
-                      ]
-                    ),
+                    _c("a", { attrs: { href: "#table_2" } }, [
+                      _vm._v(
+                        "सुदूरपश्चिमका दर्ता भएका कूल साना उद्योगहरुको विवरण"
+                      ),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/industry-business/#table_3",
-                        },
-                      },
-                      [_vm._v("सुदूरपश्चिममा रहेका मुख्य खानीको विवरण")]
-                    ),
+                    _c("a", { attrs: { href: "#table_3" } }, [
+                      _vm._v("सुदूरपश्चिममा रहेका मुख्य खानीको विवरण"),
+                    ]),
                   ]),
                 ]
               ),

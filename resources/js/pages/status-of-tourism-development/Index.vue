@@ -7,24 +7,24 @@
                     <div class="col-xl-12 col-lg-12 col-md-12 main-content">
                         <div style="height: 80px;"></div>
                         <div class="list-set">
-                            <ul class="table-list " style="overflow: scroll;">
+                            <ul class="table-list " style="overflow: auto;">
                                 <li class="my-3">
-                                    <a href="http://localhost:3000/status-of-tourism-development/#table_1">सुदूरपश्चिममा
+                                    <a href="#table_1">सुदूरपश्चिममा
                                         रहेका प्रमुख पर्यटकीय गन्तब्यहरुको जिल्लागत विवरण</a>
                                 </li>
 
                                 <li class="my-3">
-                                    <a href="http://localhost:3000/status-of-tourism-development/#table_2">नमुनाको रुपमा
+                                    <a href="#table_2">नमुनाको रुपमा
                                         छनोट गरिएका ५ वटा पर्यटकस्तरीय होटलहरुको अकुपेन्सी तथा रोजगारी विवरण</a>
                                 </li>
 
                                 <li class="my-3">
-                                    <a href="http://localhost:3000/status-of-tourism-development/#table_3">सुदूरपश्चिममा
+                                    <a href="#table_3">सुदूरपश्चिममा
                                         दर्ता रहेका होमस्टे</a>
                                 </li>
 
                                 <li class="my-3">
-                                    <a href="http://localhost:3000/status-of-tourism-development/#table_4">सुदूरपश्चिममा
+                                    <a href="#table_4">सुदूरपश्चिममा
                                         रहेको टुर्स एण्ड ट्राभल्स</a>
                                 </li>
 

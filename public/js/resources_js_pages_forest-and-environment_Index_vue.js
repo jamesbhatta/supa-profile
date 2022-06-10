@@ -511,67 +511,37 @@ var staticRenderFns = [
                 "ul",
                 {
                   staticClass: "table-list ",
-                  staticStyle: { overflow: "scroll" },
+                  staticStyle: { overflow: "auto" },
                 },
                 [
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/forest-and-environment/#table_1",
-                        },
-                      },
-                      [_vm._v("वन क्षेत्रको जिल्लागत विवरण")]
-                    ),
+                    _c("a", { attrs: { href: "#table_1" } }, [
+                      _vm._v("वन क्षेत्रको जिल्लागत विवरण"),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/forest-and-environment/#table_2",
-                        },
-                      },
-                      [_vm._v("वन क्षेत्रको प्रदेशगत विवरण")]
-                    ),
+                    _c("a", { attrs: { href: "#table_2" } }, [
+                      _vm._v("वन क्षेत्रको प्रदेशगत विवरण"),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/forest-and-environment/#table_3",
-                        },
-                      },
-                      [_vm._v("सुदूरपश्चिम प्रदेशमा रहेका राष्ट्रिय निकुञ्ज")]
-                    ),
+                    _c("a", { attrs: { href: "#table_3" } }, [
+                      _vm._v("सुदूरपश्चिम प्रदेशमा रहेका राष्ट्रिय निकुञ्ज"),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/forest-and-environment/#table_4",
-                        },
-                      },
-                      [_vm._v("सुदूरपश्चिममा रहेका हिमनदी र हिमतालहरु")]
-                    ),
+                    _c("a", { attrs: { href: "#table_4" } }, [
+                      _vm._v("सुदूरपश्चिममा रहेका हिमनदी र हिमतालहरु"),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/forest-and-environment/#table_5",
-                        },
-                      },
-                      [_vm._v("सुदूरपश्चिममा रहेका तालतलैया")]
-                    ),
+                    _c("a", { attrs: { href: "#table_5" } }, [
+                      _vm._v("सुदूरपश्चिममा रहेका तालतलैया"),
+                    ]),
                   ]),
                 ]
               ),

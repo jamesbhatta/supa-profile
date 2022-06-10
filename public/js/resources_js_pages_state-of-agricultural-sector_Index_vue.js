@@ -1076,335 +1076,171 @@ var staticRenderFns = [
                 "ul",
                 {
                   staticClass: "table-list ",
-                  staticStyle: { overflow: "scroll" },
+                  staticStyle: { overflow: "auto" },
                 },
                 [
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/state-of-agricultural-sector/#table_1",
-                        },
-                      },
-                      [_vm._v("प्रदेशमा भू – स्वामित्वको अवस्था")]
-                    ),
+                    _c("a", { attrs: { href: "#table_1" } }, [
+                      _vm._v("प्रदेशमा भू – स्वामित्वको अवस्था"),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/state-of-agricultural-sector/#table_2",
-                        },
-                      },
-                      [_vm._v("भू – उपयोगको अवस्था")]
-                    ),
+                    _c("a", { attrs: { href: "#table_2" } }, [
+                      _vm._v("भू – उपयोगको अवस्था"),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/state-of-agricultural-sector/#table_3",
-                        },
-                      },
-                      [
-                        _vm._v(
-                          "सुदूरपश्चिममा कृषि उपजले ढाकेको जिल्लागत भू – क्षेत्र"
-                        ),
-                      ]
-                    ),
+                    _c("a", { attrs: { href: "#table_3" } }, [
+                      _vm._v(
+                        "सुदूरपश्चिममा कृषि उपजले ढाकेको जिल्लागत भू – क्षेत्र"
+                      ),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/state-of-agricultural-sector/#table_4",
-                        },
-                      },
-                      [
-                        _vm._v(
-                          "सुदूरपश्चिम प्रदेशको जिल्लागत क्षेत्रफल र सिंचाई स्थिति"
-                        ),
-                      ]
-                    ),
+                    _c("a", { attrs: { href: "#table_4" } }, [
+                      _vm._v(
+                        "सुदूरपश्चिम प्रदेशको जिल्लागत क्षेत्रफल र सिंचाई स्थिति"
+                      ),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/state-of-agricultural-sector/#table_5",
-                        },
-                      },
-                      [_vm._v("कृषि बालीको जिल्लागत उत्पादन अवस्था")]
-                    ),
+                    _c("a", { attrs: { href: "#table_5" } }, [
+                      _vm._v("कृषि बालीको जिल्लागत उत्पादन अवस्था"),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/state-of-agricultural-sector/#table_6",
-                        },
-                      },
-                      [
-                        _vm._v(
-                          "व्यवसायिक उत्पादनमा अगाडी बढेका बाली र पकेट क्षेत्रहरुको जिल्लागत विवरण"
-                        ),
-                      ]
-                    ),
+                    _c("a", { attrs: { href: "#table_6" } }, [
+                      _vm._v(
+                        "व्यवसायिक उत्पादनमा अगाडी बढेका बाली र पकेट क्षेत्रहरुको जिल्लागत विवरण"
+                      ),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/state-of-agricultural-sector/#table_7",
-                        },
-                      },
-                      [
-                        _vm._v(
-                          "प्रमुख खाद्यान्न बालीहरुको तुलनात्मक क्षेत्रफल तथा उत्पादन विवरण"
-                        ),
-                      ]
-                    ),
+                    _c("a", { attrs: { href: "#table_7" } }, [
+                      _vm._v(
+                        "प्रमुख खाद्यान्न बालीहरुको तुलनात्मक क्षेत्रफल तथा उत्पादन विवरण"
+                      ),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/state-of-agricultural-sector/#table_8",
-                        },
-                      },
-                      [
-                        _vm._v(
-                          "सुदूरपश्चिमका प्रमुख हिउँदे बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व"
-                        ),
-                      ]
-                    ),
+                    _c("a", { attrs: { href: "#table_8" } }, [
+                      _vm._v(
+                        "सुदूरपश्चिमका प्रमुख हिउँदे बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व"
+                      ),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/state-of-agricultural-sector/#table_9",
-                        },
-                      },
-                      [
-                        _vm._v(
-                          "सुदूरपश्चिमका प्रमुख बर्षे बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व"
-                        ),
-                      ]
-                    ),
+                    _c("a", { attrs: { href: "#table_9" } }, [
+                      _vm._v(
+                        "सुदूरपश्चिमका प्रमुख बर्षे बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व"
+                      ),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/state-of-agricultural-sector/#table_10",
-                        },
-                      },
-                      [
-                        _vm._v(
-                          "सुदूरपश्चिमका प्रमुख दलहन बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व"
-                        ),
-                      ]
-                    ),
+                    _c("a", { attrs: { href: "#table_10" } }, [
+                      _vm._v(
+                        "सुदूरपश्चिमका प्रमुख दलहन बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व"
+                      ),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/state-of-agricultural-sector/#table_11",
-                        },
-                      },
-                      [
-                        _vm._v(
-                          "सुदूरपश्चिमका प्रमुख तेलहन बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व"
-                        ),
-                      ]
-                    ),
+                    _c("a", { attrs: { href: "#table_11" } }, [
+                      _vm._v(
+                        "सुदूरपश्चिमका प्रमुख तेलहन बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व"
+                      ),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/state-of-agricultural-sector/#table_12",
-                        },
-                      },
-                      [
-                        _vm._v(
-                          "प्रमुख बर्षे तरकारी बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व"
-                        ),
-                      ]
-                    ),
+                    _c("a", { attrs: { href: "#table_12" } }, [
+                      _vm._v(
+                        "प्रमुख बर्षे तरकारी बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व"
+                      ),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/state-of-agricultural-sector/#table_13",
-                        },
-                      },
-                      [
-                        _vm._v(
-                          " उपभोग्य खाद्यान्नको स्थिति प्रदेशगत विवरण प्रक्षेपित जनसंख्यामा (मे.ट.) २०७५/२०७६"
-                        ),
-                      ]
-                    ),
+                    _c("a", { attrs: { href: "#table_13" } }, [
+                      _vm._v(
+                        " उपभोग्य खाद्यान्नको स्थिति प्रदेशगत विवरण प्रक्षेपित जनसंख्यामा (मे.ट.) २०७५/२०७६"
+                      ),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/state-of-agricultural-sector/#table_14",
-                        },
-                      },
-                      [_vm._v("वाली अनुसार विभिन्न आर्थिक वर्षहरुका खाद्यान्न")]
-                    ),
+                    _c("a", { attrs: { href: "#table_14" } }, [
+                      _vm._v("वाली अनुसार विभिन्न आर्थिक वर्षहरुका खाद्यान्न"),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/state-of-agricultural-sector/#table_15",
-                        },
-                      },
-                      [_vm._v("जिल्ला अनुसार खाद्यान्न उत्पादन")]
-                    ),
+                    _c("a", { attrs: { href: "#table_15" } }, [
+                      _vm._v("जिल्ला अनुसार खाद्यान्न उत्पादन"),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/state-of-agricultural-sector/#table_16",
-                        },
-                      },
-                      [
-                        _vm._v(
-                          "सुदूरपश्चिममा पशुपंक्षीको तथ्यांक ०७७/०७८\n                "
-                        ),
-                      ]
-                    ),
+                    _c("a", { attrs: { href: "#table_16" } }, [
+                      _vm._v(
+                        "सुदूरपश्चिममा पशुपंक्षीको तथ्यांक ०७७/०७८\n                "
+                      ),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/state-of-agricultural-sector/#table_17",
-                        },
-                      },
-                      [
-                        _vm._v(
-                          " सुदूरपश्चिममा दुधालु पशु र दुग्ध उत्पादनको अवस्था (मे.ट. ०७७/०७८)"
-                        ),
-                      ]
-                    ),
+                    _c("a", { attrs: { href: "#table_17" } }, [
+                      _vm._v(
+                        " सुदूरपश्चिममा दुधालु पशु र दुग्ध उत्पादनको अवस्था (मे.ट. ०७७/०७८)"
+                      ),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/state-of-agricultural-sector/#table_18",
-                        },
-                      },
-                      [
-                        _vm._v(
-                          " सुदूरपश्चिममा बार्षिक मासु उत्पादनको अवस्था मे.ट. ०७७/०७८"
-                        ),
-                      ]
-                    ),
+                    _c("a", { attrs: { href: "#table_18" } }, [
+                      _vm._v(
+                        " सुदूरपश्चिममा बार्षिक मासु उत्पादनको अवस्था मे.ट. ०७७/०७८"
+                      ),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/state-of-agricultural-sector/#table_19",
-                        },
-                      },
-                      [
-                        _vm._v(
-                          "सुदूरपश्चिममा बार्षिक अण्डा उत्पादनको अवस्था ०७७/०७८"
-                        ),
-                      ]
-                    ),
+                    _c("a", { attrs: { href: "#table_19" } }, [
+                      _vm._v(
+                        "सुदूरपश्चिममा बार्षिक अण्डा उत्पादनको अवस्था ०७७/०७८"
+                      ),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/state-of-agricultural-sector/#table_20",
-                        },
-                      },
-                      [
-                        _vm._v(
-                          "सुदूरपश्चिममा बार्षिक उन उत्पादनको अवस्था ०७७/०७८"
-                        ),
-                      ]
-                    ),
+                    _c("a", { attrs: { href: "#table_20" } }, [
+                      _vm._v(
+                        "सुदूरपश्चिममा बार्षिक उन उत्पादनको अवस्था ०७७/०७८"
+                      ),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/state-of-agricultural-sector/#table_21",
-                        },
-                      },
-                      [
-                        _vm._v(
-                          "सुदूरपश्चिममा पशुपंक्षीजन्य पदार्थको बार्षिक उत्पादनको अवस्था ०७७/०७८"
-                        ),
-                      ]
-                    ),
+                    _c("a", { attrs: { href: "#table_21" } }, [
+                      _vm._v(
+                        "सुदूरपश्चिममा पशुपंक्षीजन्य पदार्थको बार्षिक उत्पादनको अवस्था ०७७/०७८"
+                      ),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/state-of-agricultural-sector/#table_22",
-                        },
-                      },
-                      [_vm._v("सुदूरपश्चिममा खाद्य सुरक्षाको अवस्था")]
-                    ),
+                    _c("a", { attrs: { href: "#table_22" } }, [
+                      _vm._v("सुदूरपश्चिममा खाद्य सुरक्षाको अवस्था"),
+                    ]),
                   ]),
                 ]
               ),

@@ -9,56 +9,56 @@
             <div class="list-set">
               <ul class="table-list ">
                 <li class="my-3">
-                  <a href="http://localhost:3000/geographical-political-situation/#table_1">सुदूरपश्चिम प्रदेशको भौगोलिक
+                  <a href="#table_1">सुदूरपश्चिम प्रदेशको भौगोलिक
                     क्षेत्रगत क्षेत्रफल</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/geographical-political-situation/#table_2">प्रदेशगत भौगोलिक
+                  <a href="#table_2">प्रदेशगत भौगोलिक
                     क्षेत्रफल</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/geographical-political-situation/#table_3">प्रदेशको जिल्लागत
+                  <a href="#table_3">प्रदेशको जिल्लागत
                     क्षेत्रफल</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/geographical-political-situation/#table_4">भू – उपयोगको अवस्था</a>
+                  <a href="#table_4">भू – उपयोगको अवस्था</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/geographical-political-situation/#table_5">स्थानीय तहको जिल्लागत
+                  <a href="#table_5">स्थानीय तहको जिल्लागत
                     संख्या</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/geographical-political-situation/#table_6">प्रदेशमा भौगोलिक विभाजन
+                  <a href="#table_6">प्रदेशमा भौगोलिक विभाजन
                     अनुसार निर्वाचन क्षेत्रको विवरण</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="http://localhost:3000/geographical-political-situation/#table_7">प्रदेशका जिल्लाहरुमा रहेका
+                  <a href="#table_7">प्रदेशका जिल्लाहरुमा रहेका
                     निर्वाचन क्षेत्रको विवरण</a>
                 </li>
                 
                 <li class="my-3">
-                  <a href="http://localhost:3000/geographical-political-situation/#table_8">हालसम्म भएका प्रदेश
+                  <a href="#table_8">हालसम्म भएका प्रदेश
                     प्रमुखहरुको नामावली र मिति</a>
                 </li>
                 
                 <li class="my-3">
-                  <a href="http://localhost:3000/geographical-political-situation/#table_9">सुदूरपश्चिम प्रदेशको पहिलो
+                  <a href="#table_9">सुदूरपश्चिम प्रदेशको पहिलो
                     मन्त्रिपरिषद्</a>
                 </li>
                 
                 <li class="my-3">
-                  <a href="http://localhost:3000/geographical-political-situation/#table_10">सुदूरपश्चिम प्रदेशमा हालको
+                  <a href="#table_10">सुदूरपश्चिम प्रदेशमा हालको
                     मन्त्रिपरिषद्</a>
                 </li>
                 
                 <li class="my-3">
-                  <a href="http://localhost:3000/geographical-political-situation/#table_11">प्रदेश सभा सदस्यहरुको
+                  <a href="#table_11">प्रदेश सभा सदस्यहरुको
                     नामावली</a>
                 </li>
 

@@ -397,103 +397,55 @@ var staticRenderFns = [
                 "ul",
                 {
                   staticClass: "table-list ",
-                  staticStyle: { overflow: "scroll" },
+                  staticStyle: { overflow: "auto" },
                 },
                 [
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/miscellaneous/#table_1",
-                        },
-                      },
-                      [
-                        _vm._v(
-                          "सुदूरपश्चिम प्रदेशसभाद्धारा हालसम्म पारित भएका विधेयकहरु"
-                        ),
-                      ]
-                    ),
+                    _c("a", { attrs: { href: "#table_1" } }, [
+                      _vm._v(
+                        "सुदूरपश्चिम प्रदेशसभाद्धारा हालसम्म पारित भएका विधेयकहरु"
+                      ),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/miscellaneous/#table_2",
-                        },
-                      },
-                      [_vm._v("सुदूरपश्चिममा रहेका स्थानीय तहको विवरण")]
-                    ),
+                    _c("a", { attrs: { href: "#table_2" } }, [
+                      _vm._v("सुदूरपश्चिममा रहेका स्थानीय तहको विवरण"),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/miscellaneous/#supa_police",
-                        },
-                      },
-                      [
-                        _vm._v(
-                          "सुदूरपश्चिम प्रदेश प्रहरी कार्यालयहरु तथा मातहतका प्रहरी ईकाई कार्यालयहरु"
-                        ),
-                      ]
-                    ),
+                    _c("a", { attrs: { href: "#supa_police" } }, [
+                      _vm._v(
+                        "सुदूरपश्चिम प्रदेश प्रहरी कार्यालयहरु तथा मातहतका प्रहरी ईकाई कार्यालयहरु"
+                      ),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/miscellaneous/#table_4",
-                        },
-                      },
-                      [_vm._v("स्थायी युनिट (दरबन्दी स्वीकृत भएको)")]
-                    ),
+                    _c("a", { attrs: { href: "#table_4" } }, [
+                      _vm._v("स्थायी युनिट (दरबन्दी स्वीकृत भएको)"),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/miscellaneous/#table_5",
-                        },
-                      },
-                      [_vm._v("अस्थायी युनिट (दरबन्दी स्वीकृत नभएको)")]
-                    ),
+                    _c("a", { attrs: { href: "#table_5" } }, [
+                      _vm._v("अस्थायी युनिट (दरबन्दी स्वीकृत नभएको)"),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/miscellaneous/#table_5",
-                        },
-                      },
-                      [_vm._v("FOB को बिवरण")]
-                    ),
+                    _c("a", { attrs: { href: "#table_5" } }, [
+                      _vm._v("FOB को बिवरण"),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "my-3" }, [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "http://localhost:3000/miscellaneous/#table_5",
-                        },
-                      },
-                      [
-                        _vm._v(
-                          "प्रदेश सरकार मातहतका मन्त्रालय, आयोग, निर्देशनालय र कार्यालयको विवरण"
-                        ),
-                      ]
-                    ),
+                    _c("a", { attrs: { href: "#table_5" } }, [
+                      _vm._v(
+                        "प्रदेश सरकार मातहतका मन्त्रालय, आयोग, निर्देशनालय र कार्यालयको विवरण"
+                      ),
+                    ]),
                   ]),
                 ]
               ),

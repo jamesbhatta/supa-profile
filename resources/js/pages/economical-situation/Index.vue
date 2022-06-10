@@ -9,31 +9,31 @@
                         <div class="list-set">
                             <ul class="table-list ">
                                 <li class="my-3">
-                                    <a href="http://localhost:3000/economical-situation/#table_1">प्रदेशको आर्थिक सूचकहरु</a>
+                                    <a href="#table_1">प्रदेशको आर्थिक सूचकहरु</a>
                                 </li>
 
                                 <li class="my-3">
-                                    <a href="http://localhost:3000/economical-situation/#table_2">राजश्व बाँडफाँड (रु.दश लाखमा)</a>
+                                    <a href="#table_2">राजश्व बाँडफाँड (रु.दश लाखमा)</a>
                                 </li>
 
                                 <li class="my-3">
-                                    <a href="http://localhost:3000/economical-situation/#table_3">प्रदेशमा प्राप्त हुने राजश्वको शिर्षकगत विवरण</a>
+                                    <a href="#table_3">प्रदेशमा प्राप्त हुने राजश्वको शिर्षकगत विवरण</a>
                                 </li>
 
                                 <li class="my-3">
-                                    <a href="http://localhost:3000/economical-situation/#table_4">बजेटको स्रोतको अवस्था</a>
+                                    <a href="#table_4">बजेटको स्रोतको अवस्था</a>
                                 </li>
 
                                 <li class="my-3">
-                                    <a href="http://localhost:3000/economical-situation/#table_5">सुदूरपश्चिम प्रदेशको कूल बजेट र खर्चको अवस्था</a>
+                                    <a href="#table_5">सुदूरपश्चिम प्रदेशको कूल बजेट र खर्चको अवस्था</a>
                                 </li>
 
                                 <li class="my-3">
-                                    <a href="http://localhost:3000/economical-situation/#table_6">श्रम तथा रोजगारको अवस्था</a>
+                                    <a href="#table_6">श्रम तथा रोजगारको अवस्था</a>
                                 </li>
 
                                 <li class="my-3">
-                                    <a href="http://localhost:3000/economical-situation/#table_7">प्रदेशमा दर्ता भएका सहकारीहरुको विवरण</a>
+                                    <a href="#table_7">प्रदेशमा दर्ता भएका सहकारीहरुको विवरण</a>
                                 </li>
 
                               
