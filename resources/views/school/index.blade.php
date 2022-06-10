@@ -8,7 +8,7 @@
 <div class="container">
     <div class="card z-depth-0">
         <div class="col-12">
-            <label class="col-12 text-center font-weight-bold h4 my-5">जम्मा विद्यालय वििरण २०७७</label>
+            <label class="col-12 text-center font-weight-bold h4 my-5">जम्मा विद्यालय विवरण २०७७</label>
             <hr>
         </div>
         <div class="card-body">
@@ -83,8 +83,8 @@
 
     <div class="card z-depth-0">
         <div class="card-header">
-            <h1 class="h3-responsive d-inline-block">न.पा./गा.वि.स. हरु</h1>
-            {{-- <small>(हाल {{ count($municipalities)  }}  न.पा./गा.वि.स. {{ count($municipalities) > 1 ? 'हरु छन्' : 'छ' }} )</small> --}}
+            <h1 class="h3-responsive d-inline-block">विद्यालय विवरण हरु</h1>
+            <small>(हाल {{ count($schools)  }}  विद्यालय {{ count($schools) > 1 ? 'हरु छन्' : 'छ' }} )</small>
             
         </div>
         <div class="card-body">
