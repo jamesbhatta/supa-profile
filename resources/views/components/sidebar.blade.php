@@ -298,9 +298,10 @@
             </ul>
         </li>
 
-        <li class="nav-item {{ setActive('dashboard') }}">
-            <a class="nav-link" href="{{ route('dashboard') }}">
-                <span class="text-warning"><i class="fa fa-tachometer-alt"></i></span>@lang('navigation.dashboard')
+        <li class="nav-item">
+            <a class="nav-link" href="{{ route('info-card.create') }}">
+                <span class="text-warning"><i class="fa fa-id-card" aria-hidden="true"></i>
+                </span>@lang('navigation.card_info')
             </a>
         </li>
 

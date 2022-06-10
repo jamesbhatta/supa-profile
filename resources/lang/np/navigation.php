@@ -34,5 +34,6 @@ return [
     'school_detail'=>"विद्यालय वििरण २०७७",
     'feeder_hostel'=>"Feeder Hostel",
     'kamlari_hostel'=>"मुक्त कमलरी छात्रावास",
-    'goverment_student'=>"सामूदायिक विद्यालयमा विद्यार्थीको विवरण"
+    'goverment_student'=>"सामूदायिक विद्यालयमा विद्यार्थीको विवरण",
+    'card_info'=>"कार्ड जानकारी",
 ];
