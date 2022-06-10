@@ -68,7 +68,7 @@
     @media only screen and (max-width:2000px) {
 
         .side-client-menus {
-            min-width: 380px;
+            min-width: 330px;
         }
     }
 

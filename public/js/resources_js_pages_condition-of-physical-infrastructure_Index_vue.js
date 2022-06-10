@@ -187,11 +187,91 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
       //To be develop
       FarWestOperatedNationalPrideProgram: {
+        id: 'table_1',
         title: "सुदूरपश्चिम संचालित राष्ट्रिय गौरवका आयोजनाहरु",
         labels: ["क्र.स.", "आयोजनाको नाम", "जिल्ला", "विवरण"],
         data: [[{
@@ -225,6 +305,7 @@ __webpack_require__.r(__webpack_exports__);
       },
       // start प्रदेश गौरबका आयोजाहरु
       OrganizingStatePride: {
+        id: 'table_2',
         title: "प्रदेश गौरबका आयोजाहरु",
         labels: ["क्र.स.", "सडक", "जिल्ला", "ठेक्का लागेको लम्बाइ", "रकम (रु.लाखमा)", "सम्पन्न हुने अवधि"],
         data: [[1, "खप्तड - मार्तडी सडक", "बाजुरा", '१५ किमि', '६३०', '२०७८/२/१६'], [2, "सतबाँझ श्रीभावर –हाट–दार्चुला सडक", "बैतडी दार्चुला", '१६.५ किमि', '२४४२', '२०८०/०३/२'], [3, "चिसापानी–ऋषिदह–बडिमालिका", "कैलाली अछाम बाजुरा", '२५', '९४८', '२०८०/०२/१६'], [4, "दैजी जोगबुडा सलौन चिरकिट्टे पोखरा बझाङ्ग", "डडेलधुरा", '३५', '५११४', '२०८०/०३/२९'], [5, "देथाना-खार-खलंगा-बटुले-पारीबगर-खण्डेश्वरी सडक", "दार्चुला", '२०', '३३८८', '२०८०/०२/५'], [6, "देथाना-खार-खलंगा-बटुले-पारीबगर-खण्डेश्वरी सडक", "बझांग", '१४ किमि', '९५८', '२०७९/०१/३१'], [7, "सिजपरु-बोगटान-हदपायल सडक", "डोटी", '२७', '२१४६', '२०८०/०३/२९'], [8, "बेलौरी-कलुवापुर-नाइल-बुडर सडक", "कंचनपुर", '९१', '११६५', '२०८०/०३/२९'], [9, "भजनी छोटीभन्सार-खखमडी-ठुलीगाड सडक (भजनी छोटी भन्सार-लालबोखझ-भजनी-जोिीपुर-फल्लेबबसौनी-सल्लेरी-रक्सा-कोल्तडी-खखमडी-ठुलीगाड)", "कैलाली", '४', '७७५', '२०७९/१०/१७'], [{
@@ -252,6 +333,7 @@ __webpack_require__.r(__webpack_exports__);
       },
       //End प्रदेश गौरबका आयोजाहरु
       DescriptionofServiceNetworkInTheFarWest: {
+        id: 'table_3',
         title: "सुदूरपश्चिममा सेवा सञ्जालको विवरण",
         labels: ["क्र.स.", "सडक सञ्जाल", "सुदूरपश्चिममा लम्बाई (कि.मि)", "नेपाल (कि.मि.)"],
         data: [[1, "कूल सडक सञ्जाल ", '५,३२६', '६३५७७'], [2, "कालोपत्रे", '२१४', '४२७४'], [3, "ग्रावेल", '११५८', '१३३९७'], [4, "कच्ची", '३९५४', '४५९०६']]
@@ -264,6 +346,7 @@ __webpack_require__.r(__webpack_exports__);
         }]
       },
       StateAndLocalLevelRoadDetails: {
+        id: 'table_4',
         title: "प्रदेश अनुसार प्रदेश र स्थानीय तहको सडक विवरण (कि.मि.)",
         labels: ["सडकको विवरण", "प्रदेश १", "मधेश", "बागमती", "गण्डकी", "लुम्बीनी", "कर्णाली", "सुदूरपश्चिम", "जम्मा"],
         data: [["प्रादेशिक सडक(कि.मि.)", '६३७४', '३३४४', '६४०७', '४३५५', '६२७४', '११६२', '४१४९', '३१,९६५'], ["स्थानीय सडक(कि.मि.)", '६५०८', '२६२१', '९२८५', '७१३९', '२७७७', '२१०५', '११७७', '३१६१२'], ["जम्मा (कि.मि.)", '१२७८२', '५९६५', '१५६९२', '११४९४', '९०५१', '३२६६', '५३२६', '६३५७७']]
@@ -276,6 +359,7 @@ __webpack_require__.r(__webpack_exports__);
         }]
       },
       RoadtypeDetails: {
+        id: 'table_5',
         title: "प्रदेश अनुसार सडकको प्रकार विवरण (कि.मि.)",
         labels: ["प्रदेश", "धुले/कच्ची", "ग्राबेल", "कालोपत्रे", "जम्मा सडक", "प्रदेशको हिस्सा प्रतिशत", "सडक घनत्व"],
         data: [["प्रदेश १", 9492, 2522, 768, 12782, 20.11, 0.49], ["मधेश", 2733, 2854, 378, 5965, 9.38, 0.62], ["बागमती", 11734, 2690, 1268, 15692, 24.68, 0.77], ["गण्डकी", 9596, 1252, 646, 11494, 18.08, 0.53], ["लुम्बीनी", 5428, 2712, 911, 9051, 14.24, 0.41], ["कर्णाली", 2969, 209, 89, 3266, 5.14, 0.12], ["सुदूरपश्चिम", 3954, 1158, 214, 5326, 8.38, 0.27], ["जम्मा", 45906, 13397, 4274, 63577, 100, 0.43]]
@@ -288,6 +372,7 @@ __webpack_require__.r(__webpack_exports__);
         }]
       },
       yatayatdata: {
+        id: 'table_6',
         title: "सवारी साधनको संख्या विवरण",
         labels: ["विवरण", "२०७७ असार मसान्तसम्म", "२०७८ असार मसान्तसम्म", "बृद्धि प्रतिशत"],
         data: [["मोटरसाइकल", 101897, 120729, 18.48], ["अन्य", 20718, 24863, 20.01], ["यातायात साधनको संख्या", 122615, 145592, 18.74]]
@@ -301,12 +386,14 @@ __webpack_require__.r(__webpack_exports__);
       },
       // 6.7
       airportdata: {
+        id: 'table_7',
         title: "विमानस्थलको सञ्चालन अवस्था",
         labels: ["क्र.स.", "विमानस्थल", "जिल्ला", "पालिका", "स्थान", "अवस्था"],
         data: [[1, "धनगढी", "कैलाली", "धनगढी उपमहानगर", "गेटा", "सञ्चालनमा"], [2, "साँफेबगर", "अछाम", "साँफेबगर नगरपालिका", "साँफेबगर", "सञ्चालनमा"], [3, "दिपायल", "डोटी", "दीपायल शिलगढी नगरपालिका", "दीपायल", "सञ्चालनमा"], [4, "बाजुरा", "बाजुरा", "बुढीनन्दा नगरपालिका", "कोल्टी", "सञ्चालनमा"], [5, "बैतडी", "बैतडी", "पाटन नगरपालिका", "पाटन", "सञ्चालनमा"], [6, "बझाङ", "बझाङ", "जयपृथ्वी नगरपालिका", "देवल", "सञ्चालनमा"], [7, "महेन्द्रनगर", "कञ्चनपुर", "भीमदत्त नगरपालिका", "मझगाउँ", "पुनर्निर्माणका क्रममा"], [8, "टीकापुर", "कैलाली", "टीकापुर नगरपालिका", "टीकापुर", "बन्द"], [9, "कमल बजार", "अछाम", "कमलबजार नगरपालिका", "कमलबजार", "बन्द अवस्थामा"], [10, "दार्चुला", "दार्चुला", "शैल्यशिखर नगरपालिका", "गोकुलेश्वर", "पुनर्निर्माणका क्रममा"]]
       },
       // 6.8
       khanepanikashrot: {
+        id: 'table_8',
         title: "खानेपानीका मुख्य श्रोत अनुसार स्थानीय तहगत घरपरिवार संख्या",
         labels: ["क्रस", "बाजुरा", "धारा", "ट्युबेल", "संरक्षित कुवा", "असंरक्षित कुवा", "थोपा पानी", "नदीको धारा", "अन्य"],
         data: [[1, "बडिमालिका नगरपालिका", 2641, 0, 20, 115, 429, 211, 12], [2, "बुढीगंगा नगरपालिका", 2404, 0, 2, 235, 1568, 17, 5], [3, "बुढीगंगा नगरपालिका", 2430, 1, 12, 43, 792, 156, 1], [4, "छेडेदह गाउँपालिका", 2384, 0, 3, 225, 470, 46, 4], [5, "गौमूल गाउँपालिका", 1102, 0, 2, 88, 272, 88, 2], [6, "हिमाली गाउँपालिका", 752, 0, 1, 19, 855, 67, 0], [7, "जगन्नाथ गाउँपालिका", 1358, 0, 1, 3, 179, 138, 1], [8, "स्वामीकार्तिक गाउँपालिका", 1439, 1, 6, 18, 572, 110, 0], [9, "त्रिबेणी नगरपालिका", 2474, 0, 17, 121, 721, 5, 0], [{
@@ -337,6 +424,7 @@ __webpack_require__.r(__webpack_exports__);
       },
       // indhan
       indhankoshrot: {
+        id: 'table_9',
         title: "खाना पकाउनका लागि प्रयोग हुने इन्धनको स्रोत",
         labels: ["क्रस", "बाजुरा", "काठ दाउरा", "मट्टितेल", "एलपी ग्यास", "गुइँठा, गोबर", "बायोग्यास", "विधुत", "अन्य"],
         data: [[1, "बडिमालिका नगरपालिका", 3421, 0, 0, 0, 3, 3, 0], [2, "बुढीगंगा नगरपालिका", 4208, 3, 4, 0, 15, 0, 0], [3, "बुढीगंगा नगरपालिका", 3426, 6, 0, 1, 0, 0, 1], [4, "छेडेदह गाउँपालिका", 3121, 1, 1, 1, 8, 0, 0], [5, "गौमूल गाउँपालिका", 1554, 0, 0, 0, 0, 0, 0], [6, "हिमाली गाउँपालिका", 1691, 0, 0, 0, 3, 0, 0], [7, "जगन्नाथ गाउँपालिका", 1678, 1, 0, 0, 1, 0, 0], [8, "स्वामीकार्तिक गाउँपालिका", 2191, 2, 1, 0, 6, 0, 0], [9, "त्रिबेणी नगरपालिका", 3332, 0, 0, 0, 6, 0, 0], [{
@@ -367,6 +455,7 @@ __webpack_require__.r(__webpack_exports__);
       },
       // electricity
       electricity: {
+        id: 'table_10',
         title: "घरपरिवारमा उज्यालोका लागि प्रयोग हुने स्रोत",
         labels: ["क्रस", "बाजुरा", "विजुली", "मट्टितेल", "ब्यायो ग्यास", "सोलार", "अन्य"],
         data: [[1, "बडिमालिका नगरपालिका", 1938, 53, 0, 277, 1159], [2, "बुढीगंगा नगरपालिका", 367, 7, 0, 1218, 2639], [3, "बुढीगंगा नगरपालिका", 1208, 158, 0, 380, 168], [4, "छेडेदह गाउँपालिका", 608, 9, 0, 579, 1935], [5, "गौमूल गाउँपालिका", 520, 0, 0, 621, 413], [6, "हिमाली गाउँपालिका", 147, 29, 0, 608, 190], [7, "जगन्नाथ गाउँपालिका", 7, 1, 0, 614, 1059], [8, "स्वामीकार्तिक गाउँपालिका", 6, 4, 0, 742, 1449], [9, "त्रिबेणी नगरपालिका", 866, 12, 0, 543, 1971], [{
@@ -397,6 +486,7 @@ __webpack_require__.r(__webpack_exports__);
       },
       // 6.10
       provinceelectricitypahuch: {
+        id: 'table_11',
         title: "विधुत सेवामा पहुँचको प्रदेशगत अवस्था",
         labels: ["प्रदेश", "पहुँच (प्रतिशत)"],
         data: [["प्रदेश १", 82.43], ["मधेश", 99.05], ["बागमती", 94.44], ["गण्डकी", 92.79], ["लुम्बीनी", 91], ["कर्णाली", 34.75], ["सुदूरपश्चिम", 64.69], ["बैकल्पिक उर्जा", 3], ["जम्मा", 93]]
@@ -409,6 +499,7 @@ __webpack_require__.r(__webpack_exports__);
         }]
       },
       produceelectricitydata: {
+        id: 'table_12',
         title: "विधुत उत्पादनको प्रदेशगत अवस्था",
         labels: ["प्रदेश", "०७७ सम्म (मे.वा.)"],
         data: [["प्रदेश १", 280.0], ["मधेश", 13.0], ["बागमती", 272.0], ["गण्डकी", 527.0], ["लुम्बीनी", 31.0], ["कर्णाली", 11.0], ["सुदूरपश्चिम", 52.0], ["जम्मा", 1386]]
@@ -421,6 +512,7 @@ __webpack_require__.r(__webpack_exports__);
         }]
       },
       telecomunicationdata: {
+        id: 'table_13',
         title: "सुदूरपश्चिममा सञ्चार सेवा उपभोगकर्ताका संख्या विवरण",
         labels: ["विवरण", "२०७७ असार मसान्तसम्म", "२०७८ असार मसान्तसम्म", "बृद्धि प्रतिशत"],
         data: [["प्जिएसएम मोबाइलसहित सम्पूण टेलिफोन संख्या", 2055760, 2324444, 13.09], ["कूल वितरित इन्टरनेट सेवा", 1040662, 1379326, 32.54]]
@@ -433,6 +525,7 @@ __webpack_require__.r(__webpack_exports__);
         }]
       },
       newspaperdata: {
+        id: 'table_14',
         title: "प्रेस काउन्सिलमा दर्ता भएका सुदूरपश्चिमका पत्रपत्रिकाहरु",
         labels: ["जिल्ला", "दैनिक", "अर्ध साप्ताहिक", "साप्ताहिक", "पाक्षिक", "मासिक", "द्धैमासिक", "त्रैमासिक", "जम्मा"],
         data: [["कैलाली", 29, 4, 39, 3, 0, 2, 1, 78], ["बझाङ", 0, 1, 3, 0, 0, 1, 0, 5], ["बाजुरा", 0, 0, 5, 0, 0, 0, 0, 5], ["डोटी", 0, 0, 12, 0, 0, 0, 0, 12], ["अछाम", 3, 0, 5, 1,, 0, 0, 9], ["कञ्चनपुर", 29, 2, 37, 0, 2, 1, 1, 72], ["दार्चुला", 2, 1, 3, 0, 0, 0, 0, 6], ["बैतडी", 1, 0, 4, 0, 0, 0, 0, 5], ["डडेलधुरा", 4, 1, 11, 0, 0, 0, 0, 16], ["जम्मा", 68, 9, 119, 4, 2, 4, 1, 208]]
@@ -445,6 +538,7 @@ __webpack_require__.r(__webpack_exports__);
         }]
       },
       fmdata: {
+        id: 'table_15',
         title: "प्रदेशमा रहेका एफएम रेडियोको विवरण",
         labels: ["जिल्ला", "एफएम रेडियोको संख्या"],
         data: [["बाजुरा", 4], ["बझाङ", 9], ["अछाम", 12], ["डोटी", 5], ["डडेलधुरा", 6], ["बैतडी", 7], ["दार्चुला", 10], ["कैलाली", 22], ["कञ्चनपुर", 10], ["जम्मा", 85]]
@@ -546,427 +640,651 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { staticClass: "container py-5" },
-    [
-      _c("h1", { staticClass: "page-title" }, [_vm._v("पूर्वाधार विकास")]),
-      _vm._v(" "),
-      _c("data-viewer", {
-        attrs: { data: _vm.FarWestOperatedNationalPrideProgram },
-      }),
-      _vm._v(" "),
-      _c("div", { staticClass: "my-5" }),
-      _vm._v(" "),
-      _c("data-viewer", { attrs: { data: _vm.OrganizingStatePride } }),
-      _vm._v(" "),
-      _c("div", { staticClass: "my-5" }),
-      _vm._v(" "),
-      _c(
-        "data-viewer",
-        { attrs: { data: _vm.DescriptionofServiceNetworkInTheFarWest } },
-        [
-          _c("template", { slot: "chart" }, [
-            _c("div", { staticClass: "row" }, [
-              _c(
-                "div",
-                { staticClass: "col-md-6" },
-                [
-                  _c("pie-chart", {
-                    attrs: {
-                      "chart-data":
-                        _vm.DescriptionofServiceNetworkInTheFarWestChartData,
-                    },
-                  }),
-                ],
-                1
-              ),
+  return _c("div", { staticClass: "container-fluid my-div" }, [
+    _c("div", { staticClass: "container-fluid py-5" }, [
+      _c("div", { staticClass: "row" }, [
+        _vm._m(0),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-xl-8 col-lg-7 col-md-12" }, [
+          _c(
+            "div",
+            { staticClass: "container py-5" },
+            [
+              _c("h1", { staticClass: "page-title" }, [
+                _vm._v("पूर्वाधार विकास"),
+              ]),
+              _vm._v(" "),
+              _c("data-viewer", {
+                attrs: { data: _vm.FarWestOperatedNationalPrideProgram },
+              }),
+              _vm._v(" "),
+              _c("data-viewer", { attrs: { data: _vm.OrganizingStatePride } }),
               _vm._v(" "),
               _c(
-                "div",
-                { staticClass: "col-md-6" },
-                [
-                  _c("bar-chart", {
-                    attrs: {
-                      "chart-data":
-                        _vm.DescriptionofServiceNetworkInTheFarWestChartData,
-                    },
-                  }),
-                ],
-                1
-              ),
-            ]),
-          ]),
-        ],
-        2
-      ),
-      _vm._v(" "),
-      _c("div", { staticClass: "my-5" }),
-      _vm._v(" "),
-      _c(
-        "data-viewer",
-        { attrs: { data: _vm.StateAndLocalLevelRoadDetails } },
-        [
-          _c("template", { slot: "chart" }, [
-            _c("div", { staticClass: "row" }, [
-              _c(
-                "div",
-                { staticClass: "col-md-6" },
-                [
-                  _c("pie-chart", {
-                    attrs: {
-                      "chart-data": _vm.StateAndLocalLevelRoadDetailsChartData,
-                    },
-                  }),
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "col-md-6" },
-                [
-                  _c("bar-chart", {
-                    attrs: {
-                      "chart-data": _vm.StateAndLocalLevelRoadDetailsChartData,
-                    },
-                  }),
-                ],
-                1
-              ),
-            ]),
-          ]),
-        ],
-        2
-      ),
-      _vm._v(" "),
-      _c("div", { staticClass: "my-5" }),
-      _vm._v(" "),
-      _c(
-        "data-viewer",
-        { attrs: { data: _vm.RoadtypeDetails } },
-        [
-          _c("template", { slot: "chart" }, [
-            _c("div", { staticClass: "row" }, [
-              _c(
-                "div",
-                { staticClass: "col-md-6" },
-                [
-                  _c("pie-chart", {
-                    attrs: { "chart-data": _vm.RoadtypeDetailsChartData },
-                  }),
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "col-md-6" },
-                [
-                  _c("bar-chart", {
-                    attrs: { "chart-data": _vm.RoadtypeDetailsChartData },
-                  }),
-                ],
-                1
-              ),
-            ]),
-          ]),
-        ],
-        2
-      ),
-      _vm._v(" "),
-      _c("div", { staticClass: "my-5" }),
-      _vm._v(" "),
-      _c(
-        "data-viewer",
-        { attrs: { data: _vm.yatayatdata } },
-        [
-          _c("template", { slot: "chart" }, [
-            _c("div", { staticClass: "row" }, [
-              _c(
-                "div",
-                { staticClass: "col-md-6" },
-                [
-                  _c("pie-chart", {
-                    attrs: { "chart-data": _vm.yatayatdataChartData },
-                  }),
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "col-md-6" },
-                [
-                  _c("bar-chart", {
-                    attrs: { "chart-data": _vm.yatayatdataChartData },
-                  }),
-                ],
-                1
-              ),
-            ]),
-          ]),
-        ],
-        2
-      ),
-      _vm._v(" "),
-      _c("div", { staticClass: "my-5" }),
-      _vm._v(" "),
-      _c("data-viewer", { attrs: { data: _vm.airportdata } }),
-      _vm._v(" "),
-      _c("div", { staticClass: "my-5" }),
-      _vm._v(" "),
-      _c(
-        "data-viewer",
-        { attrs: { data: _vm.khanepanikashrot } },
-        [
-          _c("template", { slot: "thead-top" }, [
-            _c("tr", [
-              _c(
-                "th",
+                "data-viewer",
                 {
-                  staticClass: "bg-light text-center font-weight-bold",
-                  attrs: { colspan: "2" },
+                  attrs: { data: _vm.DescriptionofServiceNetworkInTheFarWest },
                 },
-                [_vm._v("जिल्ला")]
-              ),
-            ]),
-          ]),
-        ],
-        2
-      ),
-      _vm._v(" "),
-      _c("div", { staticClass: "my-5" }),
-      _vm._v(" "),
-      _c(
-        "data-viewer",
-        { attrs: { data: _vm.indhankoshrot } },
-        [
-          _c("template", { slot: "thead-top" }, [
-            _c("tr", [
-              _c(
-                "th",
-                {
-                  staticClass: "bg-light text-center font-weight-bold",
-                  attrs: { colspan: "2" },
-                },
-                [_vm._v("जिल्ला")]
-              ),
-            ]),
-          ]),
-        ],
-        2
-      ),
-      _vm._v(" "),
-      _c("div", { staticClass: "my-5" }),
-      _vm._v(" "),
-      _c(
-        "data-viewer",
-        { attrs: { data: _vm.electricity } },
-        [
-          _c("template", { slot: "thead-top" }, [
-            _c("tr", [
-              _c(
-                "th",
-                {
-                  staticClass: "bg-light text-center font-weight-bold",
-                  attrs: { colspan: "2" },
-                },
-                [_vm._v("जिल्ला")]
-              ),
-            ]),
-          ]),
-        ],
-        2
-      ),
-      _vm._v(" "),
-      _c("div", { staticClass: "my-5" }),
-      _vm._v(" "),
-      _c(
-        "data-viewer",
-        { attrs: { data: _vm.provinceelectricitypahuch } },
-        [
-          _c("template", { slot: "chart" }, [
-            _c("div", { staticClass: "row" }, [
-              _c(
-                "div",
-                { staticClass: "col-md-6" },
                 [
-                  _c("pie-chart", {
-                    attrs: {
-                      "chart-data": _vm.provinceelectricitypahuchChartData,
-                    },
-                  }),
+                  _c("template", { slot: "chart" }, [
+                    _c("div", { staticClass: "row" }, [
+                      _c(
+                        "div",
+                        { staticClass: "col-md-6" },
+                        [
+                          _c("pie-chart", {
+                            attrs: {
+                              "chart-data":
+                                _vm.DescriptionofServiceNetworkInTheFarWestChartData,
+                            },
+                          }),
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "col-md-6" },
+                        [
+                          _c("bar-chart", {
+                            attrs: {
+                              "chart-data":
+                                _vm.DescriptionofServiceNetworkInTheFarWestChartData,
+                            },
+                          }),
+                        ],
+                        1
+                      ),
+                    ]),
+                  ]),
                 ],
-                1
+                2
               ),
               _vm._v(" "),
               _c(
-                "div",
-                { staticClass: "col-md-6" },
+                "data-viewer",
+                { attrs: { data: _vm.StateAndLocalLevelRoadDetails } },
                 [
-                  _c("bar-chart", {
-                    attrs: {
-                      "chart-data": _vm.provinceelectricitypahuchChartData,
-                    },
-                  }),
+                  _c("template", { slot: "chart" }, [
+                    _c("div", { staticClass: "row" }, [
+                      _c(
+                        "div",
+                        { staticClass: "col-md-6" },
+                        [
+                          _c("pie-chart", {
+                            attrs: {
+                              "chart-data":
+                                _vm.StateAndLocalLevelRoadDetailsChartData,
+                            },
+                          }),
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "col-md-6" },
+                        [
+                          _c("bar-chart", {
+                            attrs: {
+                              "chart-data":
+                                _vm.StateAndLocalLevelRoadDetailsChartData,
+                            },
+                          }),
+                        ],
+                        1
+                      ),
+                    ]),
+                  ]),
                 ],
-                1
-              ),
-            ]),
-          ]),
-        ],
-        2
-      ),
-      _vm._v(" "),
-      _c("div", { staticClass: "my-5" }),
-      _vm._v(" "),
-      _c(
-        "data-viewer",
-        { attrs: { data: _vm.produceelectricitydata } },
-        [
-          _c("template", { slot: "chart" }, [
-            _c("div", { staticClass: "row" }, [
-              _c(
-                "div",
-                { staticClass: "col-md-6" },
-                [
-                  _c("pie-chart", {
-                    attrs: {
-                      "chart-data": _vm.produceelectricitydataChartData,
-                    },
-                  }),
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "col-md-6" },
-                [
-                  _c("bar-chart", {
-                    attrs: {
-                      "chart-data": _vm.produceelectricitydataChartData,
-                    },
-                  }),
-                ],
-                1
-              ),
-            ]),
-          ]),
-        ],
-        2
-      ),
-      _vm._v(" "),
-      _c("div", { staticClass: "my-5" }),
-      _vm._v(" "),
-      _c(
-        "data-viewer",
-        { attrs: { data: _vm.telecomunicationdata } },
-        [
-          _c("template", { slot: "chart" }, [
-            _c("div", { staticClass: "row" }, [
-              _c(
-                "div",
-                { staticClass: "col-md-6" },
-                [
-                  _c("pie-chart", {
-                    attrs: { "chart-data": _vm.telecomunicationdataChartData },
-                  }),
-                ],
-                1
+                2
               ),
               _vm._v(" "),
               _c(
-                "div",
-                { staticClass: "col-md-6" },
+                "data-viewer",
+                { attrs: { data: _vm.RoadtypeDetails } },
                 [
-                  _c("bar-chart", {
-                    attrs: { "chart-data": _vm.telecomunicationdataChartData },
-                  }),
+                  _c("template", { slot: "chart" }, [
+                    _c("div", { staticClass: "row" }, [
+                      _c(
+                        "div",
+                        { staticClass: "col-md-6" },
+                        [
+                          _c("pie-chart", {
+                            attrs: {
+                              "chart-data": _vm.RoadtypeDetailsChartData,
+                            },
+                          }),
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "col-md-6" },
+                        [
+                          _c("bar-chart", {
+                            attrs: {
+                              "chart-data": _vm.RoadtypeDetailsChartData,
+                            },
+                          }),
+                        ],
+                        1
+                      ),
+                    ]),
+                  ]),
                 ],
-                1
-              ),
-            ]),
-          ]),
-        ],
-        2
-      ),
-      _vm._v(" "),
-      _c("div", { staticClass: "my-5" }),
-      _vm._v(" "),
-      _c(
-        "data-viewer",
-        { attrs: { data: _vm.newspaperdata } },
-        [
-          _c("template", { slot: "chart" }, [
-            _c("div", { staticClass: "row" }, [
-              _c(
-                "div",
-                { staticClass: "col-md-6" },
-                [
-                  _c("pie-chart", {
-                    attrs: { "chart-data": _vm.newspaperdataChartData },
-                  }),
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "col-md-6" },
-                [
-                  _c("bar-chart", {
-                    attrs: { "chart-data": _vm.newspaperdataChartData },
-                  }),
-                ],
-                1
-              ),
-            ]),
-          ]),
-        ],
-        2
-      ),
-      _vm._v(" "),
-      _c("div", { staticClass: "my-5" }),
-      _vm._v(" "),
-      _c(
-        "data-viewer",
-        { attrs: { data: _vm.fmdata } },
-        [
-          _c("template", { slot: "chart" }, [
-            _c("div", { staticClass: "row" }, [
-              _c(
-                "div",
-                { staticClass: "col-md-6" },
-                [
-                  _c("pie-chart", {
-                    attrs: { "chart-data": _vm.fmdataChartData },
-                  }),
-                ],
-                1
+                2
               ),
               _vm._v(" "),
               _c(
-                "div",
-                { staticClass: "col-md-6" },
+                "data-viewer",
+                { attrs: { data: _vm.yatayatdata } },
                 [
-                  _c("bar-chart", {
-                    attrs: { "chart-data": _vm.fmdataChartData },
-                  }),
+                  _c("template", { slot: "chart" }, [
+                    _c("div", { staticClass: "row" }, [
+                      _c(
+                        "div",
+                        { staticClass: "col-md-6" },
+                        [
+                          _c("pie-chart", {
+                            attrs: { "chart-data": _vm.yatayatdataChartData },
+                          }),
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "col-md-6" },
+                        [
+                          _c("bar-chart", {
+                            attrs: { "chart-data": _vm.yatayatdataChartData },
+                          }),
+                        ],
+                        1
+                      ),
+                    ]),
+                  ]),
                 ],
-                1
+                2
               ),
-            ]),
-          ]),
-        ],
-        2
-      ),
-    ],
-    1
-  )
+              _vm._v(" "),
+              _c("data-viewer", { attrs: { data: _vm.airportdata } }),
+              _vm._v(" "),
+              _c(
+                "data-viewer",
+                { attrs: { data: _vm.khanepanikashrot } },
+                [
+                  _c("template", { slot: "thead-top" }, [
+                    _c("tr", [
+                      _c(
+                        "th",
+                        {
+                          staticClass: "bg-light text-center font-weight-bold",
+                          attrs: { colspan: "2" },
+                        },
+                        [_vm._v("जिल्ला")]
+                      ),
+                    ]),
+                  ]),
+                ],
+                2
+              ),
+              _vm._v(" "),
+              _c(
+                "data-viewer",
+                { attrs: { data: _vm.indhankoshrot } },
+                [
+                  _c("template", { slot: "thead-top" }, [
+                    _c("tr", [
+                      _c(
+                        "th",
+                        {
+                          staticClass: "bg-light text-center font-weight-bold",
+                          attrs: { colspan: "2" },
+                        },
+                        [_vm._v("जिल्ला")]
+                      ),
+                    ]),
+                  ]),
+                ],
+                2
+              ),
+              _vm._v(" "),
+              _c(
+                "data-viewer",
+                { attrs: { data: _vm.electricity } },
+                [
+                  _c("template", { slot: "thead-top" }, [
+                    _c("tr", [
+                      _c(
+                        "th",
+                        {
+                          staticClass: "bg-light text-center font-weight-bold",
+                          attrs: { colspan: "2" },
+                        },
+                        [_vm._v("जिल्ला")]
+                      ),
+                    ]),
+                  ]),
+                ],
+                2
+              ),
+              _vm._v(" "),
+              _c(
+                "data-viewer",
+                { attrs: { data: _vm.provinceelectricitypahuch } },
+                [
+                  _c("template", { slot: "chart" }, [
+                    _c("div", { staticClass: "row" }, [
+                      _c(
+                        "div",
+                        { staticClass: "col-md-6" },
+                        [
+                          _c("pie-chart", {
+                            attrs: {
+                              "chart-data":
+                                _vm.provinceelectricitypahuchChartData,
+                            },
+                          }),
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "col-md-6" },
+                        [
+                          _c("bar-chart", {
+                            attrs: {
+                              "chart-data":
+                                _vm.provinceelectricitypahuchChartData,
+                            },
+                          }),
+                        ],
+                        1
+                      ),
+                    ]),
+                  ]),
+                ],
+                2
+              ),
+              _vm._v(" "),
+              _c(
+                "data-viewer",
+                { attrs: { data: _vm.produceelectricitydata } },
+                [
+                  _c("template", { slot: "chart" }, [
+                    _c("div", { staticClass: "row" }, [
+                      _c(
+                        "div",
+                        { staticClass: "col-md-6" },
+                        [
+                          _c("pie-chart", {
+                            attrs: {
+                              "chart-data": _vm.produceelectricitydataChartData,
+                            },
+                          }),
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "col-md-6" },
+                        [
+                          _c("bar-chart", {
+                            attrs: {
+                              "chart-data": _vm.produceelectricitydataChartData,
+                            },
+                          }),
+                        ],
+                        1
+                      ),
+                    ]),
+                  ]),
+                ],
+                2
+              ),
+              _vm._v(" "),
+              _c(
+                "data-viewer",
+                { attrs: { data: _vm.telecomunicationdata } },
+                [
+                  _c("template", { slot: "chart" }, [
+                    _c("div", { staticClass: "row" }, [
+                      _c(
+                        "div",
+                        { staticClass: "col-md-6" },
+                        [
+                          _c("pie-chart", {
+                            attrs: {
+                              "chart-data": _vm.telecomunicationdataChartData,
+                            },
+                          }),
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "col-md-6" },
+                        [
+                          _c("bar-chart", {
+                            attrs: {
+                              "chart-data": _vm.telecomunicationdataChartData,
+                            },
+                          }),
+                        ],
+                        1
+                      ),
+                    ]),
+                  ]),
+                ],
+                2
+              ),
+              _vm._v(" "),
+              _c(
+                "data-viewer",
+                { attrs: { data: _vm.newspaperdata } },
+                [
+                  _c("template", { slot: "chart" }, [
+                    _c("div", { staticClass: "row" }, [
+                      _c(
+                        "div",
+                        { staticClass: "col-md-6" },
+                        [
+                          _c("pie-chart", {
+                            attrs: { "chart-data": _vm.newspaperdataChartData },
+                          }),
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "col-md-6" },
+                        [
+                          _c("bar-chart", {
+                            attrs: { "chart-data": _vm.newspaperdataChartData },
+                          }),
+                        ],
+                        1
+                      ),
+                    ]),
+                  ]),
+                ],
+                2
+              ),
+              _vm._v(" "),
+              _c(
+                "data-viewer",
+                { attrs: { data: _vm.fmdata } },
+                [
+                  _c("template", { slot: "chart" }, [
+                    _c("div", { staticClass: "row" }, [
+                      _c(
+                        "div",
+                        { staticClass: "col-md-6" },
+                        [
+                          _c("pie-chart", {
+                            attrs: { "chart-data": _vm.fmdataChartData },
+                          }),
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "col-md-6" },
+                        [
+                          _c("bar-chart", {
+                            attrs: { "chart-data": _vm.fmdataChartData },
+                          }),
+                        ],
+                        1
+                      ),
+                    ]),
+                  ]),
+                ],
+                2
+              ),
+            ],
+            1
+          ),
+        ]),
+      ]),
+    ]),
+  ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "col-xl-2 col-lg-3 col-md-4 side-client-menus" },
+      [
+        _c(
+          "div",
+          { staticClass: "col-xl-12 col-lg-12 col-md-12 main-content" },
+          [
+            _c("div", { staticStyle: { height: "80px" } }),
+            _vm._v(" "),
+            _c("div", { staticClass: "list-set" }, [
+              _c(
+                "ul",
+                {
+                  staticClass: "table-list ",
+                  staticStyle: { overflow: "scroll" },
+                },
+                [
+                  _c("li", { staticClass: "my-3" }, [
+                    _c(
+                      "a",
+                      {
+                        attrs: {
+                          href: "http://localhost:3000/condition-of-physical-infrastructure/#table_1",
+                        },
+                      },
+                      [_vm._v("सुदूरपश्चिम संचालित राष्ट्रिय गौरवका आयोजनाहरु")]
+                    ),
+                  ]),
+                  _vm._v(" "),
+                  _c("li", { staticClass: "my-3" }, [
+                    _c(
+                      "a",
+                      {
+                        attrs: {
+                          href: "http://localhost:3000/condition-of-physical-infrastructure/#table_2",
+                        },
+                      },
+                      [_vm._v("प्रदेश गौरबका आयोजाहरु")]
+                    ),
+                  ]),
+                  _vm._v(" "),
+                  _c("li", { staticClass: "my-3" }, [
+                    _c(
+                      "a",
+                      {
+                        attrs: {
+                          href: "http://localhost:3000/condition-of-physical-infrastructure/#table_3",
+                        },
+                      },
+                      [_vm._v("सुदूरपश्चिममा सेवा सञ्जालको विवरण")]
+                    ),
+                  ]),
+                  _vm._v(" "),
+                  _c("li", { staticClass: "my-3" }, [
+                    _c(
+                      "a",
+                      {
+                        attrs: {
+                          href: "http://localhost:3000/condition-of-physical-infrastructure/#table_4",
+                        },
+                      },
+                      [
+                        _vm._v(
+                          "प्रदेश अनुसार प्रदेश र स्थानीय तहको सडक विवरण (कि.मि.)"
+                        ),
+                      ]
+                    ),
+                  ]),
+                  _vm._v(" "),
+                  _c("li", { staticClass: "my-3" }, [
+                    _c(
+                      "a",
+                      {
+                        attrs: {
+                          href: "http://localhost:3000/condition-of-physical-infrastructure/#table_5",
+                        },
+                      },
+                      [_vm._v("प्रदेश अनुसार सडकको प्रकार विवरण (कि.मि.)")]
+                    ),
+                  ]),
+                  _vm._v(" "),
+                  _c("li", { staticClass: "my-3" }, [
+                    _c(
+                      "a",
+                      {
+                        attrs: {
+                          href: "http://localhost:3000/condition-of-physical-infrastructure/#table_6",
+                        },
+                      },
+                      [_vm._v("सवारी साधनको संख्या विवरण")]
+                    ),
+                  ]),
+                  _vm._v(" "),
+                  _c("li", { staticClass: "my-3" }, [
+                    _c(
+                      "a",
+                      {
+                        attrs: {
+                          href: "http://localhost:3000/condition-of-physical-infrastructure/#table_7",
+                        },
+                      },
+                      [_vm._v("विमानस्थलको सञ्चालन अवस्था")]
+                    ),
+                  ]),
+                  _vm._v(" "),
+                  _c("li", { staticClass: "my-3" }, [
+                    _c(
+                      "a",
+                      {
+                        attrs: {
+                          href: "http://localhost:3000/condition-of-physical-infrastructure/#table_8",
+                        },
+                      },
+                      [
+                        _vm._v(
+                          "खानेपानीका मुख्य श्रोत अनुसार स्थानीय तहगत घरपरिवार संख्या"
+                        ),
+                      ]
+                    ),
+                  ]),
+                  _vm._v(" "),
+                  _c("li", { staticClass: "my-3" }, [
+                    _c(
+                      "a",
+                      {
+                        attrs: {
+                          href: "http://localhost:3000/condition-of-physical-infrastructure/#table_9",
+                        },
+                      },
+                      [_vm._v("खाना पकाउनका लागि प्रयोग हुने इन्धनको स्रोत")]
+                    ),
+                  ]),
+                  _vm._v(" "),
+                  _c("li", { staticClass: "my-3" }, [
+                    _c(
+                      "a",
+                      {
+                        attrs: {
+                          href: "http://localhost:3000/condition-of-physical-infrastructure/#table_10",
+                        },
+                      },
+                      [_vm._v("घरपरिवारमा उज्यालोका लागि प्रयोग हुने स्रोत")]
+                    ),
+                  ]),
+                  _vm._v(" "),
+                  _c("li", { staticClass: "my-3" }, [
+                    _c(
+                      "a",
+                      {
+                        attrs: {
+                          href: "http://localhost:3000/condition-of-physical-infrastructure/#table_11",
+                        },
+                      },
+                      [_vm._v("विधुत सेवामा पहुँचको प्रदेशगत अवस्था")]
+                    ),
+                  ]),
+                  _vm._v(" "),
+                  _c("li", { staticClass: "my-3" }, [
+                    _c(
+                      "a",
+                      {
+                        attrs: {
+                          href: "http://localhost:3000/condition-of-physical-infrastructure/#table_12",
+                        },
+                      },
+                      [_vm._v("विधुत उत्पादनको प्रदेशगत अवस्था")]
+                    ),
+                  ]),
+                  _vm._v(" "),
+                  _c("li", { staticClass: "my-3" }, [
+                    _c(
+                      "a",
+                      {
+                        attrs: {
+                          href: "http://localhost:3000/condition-of-physical-infrastructure/#table_13",
+                        },
+                      },
+                      [
+                        _vm._v(
+                          "सुदूरपश्चिममा सञ्चार सेवा उपभोगकर्ताका संख्या विवरण"
+                        ),
+                      ]
+                    ),
+                  ]),
+                  _vm._v(" "),
+                  _c("li", { staticClass: "my-3" }, [
+                    _c(
+                      "a",
+                      {
+                        attrs: {
+                          href: "http://localhost:3000/condition-of-physical-infrastructure/#table_14",
+                        },
+                      },
+                      [
+                        _vm._v(
+                          "प्रेस काउन्सिलमा दर्ता भएका सुदूरपश्चिमका पत्रपत्रिकाहरु"
+                        ),
+                      ]
+                    ),
+                  ]),
+                  _vm._v(" "),
+                  _c("li", { staticClass: "my-3" }, [
+                    _c(
+                      "a",
+                      {
+                        attrs: {
+                          href: "http://localhost:3000/condition-of-physical-infrastructure/#table_15",
+                        },
+                      },
+                      [_vm._v("प्रदेशमा रहेका एफएम रेडियोको विवरण")]
+                    ),
+                  ]),
+                ]
+              ),
+            ]),
+          ]
+        ),
+      ]
+    )
+  },
+]
 render._withStripped = true
 
 

@@ -1,23 +1,55 @@
 <template>
-  <div class="container py-5">
-    <h1 class="page-title">उद्योग ब्यवसाय</h1>
-    <data-viewer :data="businessindustrydata"></data-viewer>
-    <div class="my-5"></div>
-    <data-viewer :data="SmallBusinessData">
-      <template slot="thead-top">
-        <tr>
-          <th colspan="2"></th>
-          <th colspan="2" class="bg-light text-center font-weight-bold">लघु</th>
-          <th colspan="2" class="bg-light text-center font-weight-bold">घरेलु</th>
-          <th colspan="2" class="bg-light text-center font-weight-bold">साना</th>
-          <th colspan="2" class="bg-light text-center font-weight-bold">जम्मा</th>
-        </tr>
-      </template>
-    </data-viewer>
-    <div class="my-5"></div>
-    <data-viewer :data="minesdata"></data-viewer>
-    <div class="my-5"></div>
-    <data-viewer :data="districtWiseAreaOfStateData"></data-viewer>
+  <div class="container-fluid my-div">
+    <div class="container-fluid py-5">
+      <div class="row">
+        <div class="col-xl-2 col-lg-3 col-md-4 side-client-menus">
+
+          <div class="col-xl-12 col-lg-12 col-md-12 main-content">
+            <div style="height: 80px;"></div>
+            <div class="list-set">
+              <ul class="table-list " style="overflow: scroll;">
+                <li class="my-3">
+                  <a href="http://localhost:3000/industry-business/#table_1">ठूला तथा मझौला उद्योगहरुको प्रदेशगत विवरण</a>
+                </li>
+
+                <li class="my-3">
+                  <a href="http://localhost:3000/industry-business/#table_2">सुदूरपश्चिमका दर्ता भएका कूल साना उद्योगहरुको विवरण</a>
+                </li>
+
+                <li class="my-3">
+                  <a href="http://localhost:3000/industry-business/#table_3">सुदूरपश्चिममा रहेका मुख्य खानीको विवरण</a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-xl-8 col-lg-7 col-md-12">
+          <div class="container py-5">
+            <h1 class="page-title">उद्योग ब्यवसाय</h1>
+            <data-viewer :data="businessindustrydata"></data-viewer>
+            <div class="my-5"></div>
+            <data-viewer :data="SmallBusinessData">
+              <template slot="thead-top">
+                <tr>
+                  <th colspan="2"></th>
+                  <th colspan="2" class="bg-light text-center font-weight-bold">लघु</th>
+                  <th colspan="2" class="bg-light text-center font-weight-bold">घरेलु</th>
+                  <th colspan="2" class="bg-light text-center font-weight-bold">साना</th>
+                  <th colspan="2" class="bg-light text-center font-weight-bold">जम्मा</th>
+                </tr>
+              </template>
+            </data-viewer>
+            <div class="my-5"></div>
+            <data-viewer :data="minesdata"></data-viewer>
+            <div class="my-5"></div>
+            <data-viewer :data="districtWiseAreaOfStateData"></data-viewer>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -26,6 +58,7 @@ export default {
   data() {
     return {
       businessindustrydata: {
+        id:'table_1',
         title: "ठूला तथा मझौला उद्योगहरुको प्रदेशगत विवरण",
         labels: ["प्रदेश", "कृषि र वन", "निर्माण", "उर्जा", "सञ्चार", "उत्पादनमा आधारित", "खानी", "सेवा", "पर्यटन", "उद्योगका संख्या", "कूल लगानी (रु.दश लाखमा)", "रोजगारी"],
         data: [
@@ -41,6 +74,7 @@ export default {
       },
 
       SmallBusinessData: {
+        id:'table_2',
         title: "सुदूरपश्चिमका दर्ता भएका कूल साना उद्योगहरुको विवरण",
         labels: ["क्र.स.", "संख्या", "कुलपुँजी", "संख्या", "कुलपुँजी", "संख्या", "कुलपुँजी", "संख्या", "कुलपुँजी"],
         data: [
@@ -57,6 +91,7 @@ export default {
       },
 
       minesdata: {
+        id:'table_3',
         title: "सुदूरपश्चिममा रहेका मुख्य खानीको विवरण",
         labels: ["क्र.स.", "खानी", "जिल्ला", "अवस्था"],
         data: [
