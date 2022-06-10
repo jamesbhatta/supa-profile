@@ -47,9 +47,15 @@ export default {
       activeDataType: "table",
     };
   },
-
+  mounted(){
+    // this.hasChartSlot ? 'chart':
+  },
   computed: {
     hasChartSlot() {
+      if(this.$slots.chart) {
+        this.activeDataType = 'chart';
+      }
+        
       return !!this.$slots.chart;
     },
   },
