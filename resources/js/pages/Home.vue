@@ -272,14 +272,10 @@
         </div>
       </div>
     </div>
-
-    <div class="card">
-      <div class="row">
-        <div class="col-md-3">
-
-        </div>
-
-        <div class="col-md-3">
+    <!-- ================ -->
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
           <bar :chart-options="{ plugins: { legend: { display: false } } }" :chart-data="{
             labels: ['अस्पताल', 'प्रास्वाक', 'स्वास्थ्य चौकी', 'सा.स्वा.इकाई.', 'आ.स्वा.के.', 'पोषण गृह'],
             datasets: [
@@ -292,9 +288,11 @@
 
           <label class="col-12 text-center">स्वास्थ्य संस्था संख्या</label>
         </div>
+      </div>
 
-        <div class="col-md-3">
-          <pie :chart-options="{ responsive: true }" :chart-data="{
+      <div class="col-md-4">
+        <div class="card">
+           <pie :chart-options="{ responsive: true }" :chart-data="{
             labels: ['कालोपत्रे', 'ग्राभेल', 'कच्ची'],
             datasets: [
               {
@@ -306,9 +304,11 @@
 
           <label class="col-12 text-center">सडक</label>
         </div>
+      </div>
 
-        <div class="col-md-3">
-          <bar :chart-options="{ responsive: true }" :chart-data="{
+      <div class="col-md-4">
+        <div class="card">
+           <bar :chart-options="{ responsive: true }" :chart-data="{
             labels: ['खना पकाउने', 'वत्तीवाल्ने'],
             datasets: [
               {
@@ -338,6 +338,26 @@
               },
             ],
           }" />
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="row">
+        <div class="col-md-3">
+           
+        </div>
+
+        <div class="col-md-3">
+         
+        </div>
+
+        <div class="col-md-3">
+         
+        </div>
+
+        <div class="col-md-3">
+         
         </div>
       </div>
     </div>

@@ -430,6 +430,26 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 chart_js__WEBPACK_IMPORTED_MODULE_0__.Chart.register(chart_js__WEBPACK_IMPORTED_MODULE_0__.Title, chart_js__WEBPACK_IMPORTED_MODULE_0__.Tooltip, chart_js__WEBPACK_IMPORTED_MODULE_0__.Legend, chart_js__WEBPACK_IMPORTED_MODULE_0__.BarElement, chart_js__WEBPACK_IMPORTED_MODULE_0__.CategoryScale, chart_js__WEBPACK_IMPORTED_MODULE_0__.LinearScale, chart_js__WEBPACK_IMPORTED_MODULE_0__.ArcElement);
@@ -992,13 +1012,11 @@ var render = function () {
       _vm._m(4),
     ]),
     _vm._v(" "),
-    _c("div", { staticClass: "card" }, [
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-md-3" }),
-        _vm._v(" "),
+    _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-md-4" }, [
         _c(
           "div",
-          { staticClass: "col-md-3" },
+          { staticClass: "card" },
           [
             _c("bar", {
               attrs: {
@@ -1035,10 +1053,12 @@ var render = function () {
           ],
           1
         ),
-        _vm._v(" "),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-md-4" }, [
         _c(
           "div",
-          { staticClass: "col-md-3" },
+          { staticClass: "card" },
           [
             _c("pie", {
               attrs: {
@@ -1059,10 +1079,12 @@ var render = function () {
           ],
           1
         ),
-        _vm._v(" "),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-md-4" }, [
         _c(
           "div",
-          { staticClass: "col-md-3" },
+          { staticClass: "card" },
           [
             _c("bar", {
               attrs: {
@@ -1104,6 +1126,8 @@ var render = function () {
         ),
       ]),
     ]),
+    _vm._v(" "),
+    _vm._m(5),
     _vm._v(" "),
     _c("div", { staticClass: "row mt-5" }, [
       _c("div", { staticClass: "col-md-12" }, [
@@ -1274,6 +1298,22 @@ var staticRenderFns = [
           _vm._v(" "),
           _c("div", { staticClass: "col-md-5" }),
         ]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "card" }, [
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-md-3" }),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-3" }),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-3" }),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-3" }),
       ]),
     ])
   },
