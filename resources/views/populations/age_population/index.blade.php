@@ -74,7 +74,7 @@
     <div class="card z-depth-0">
         <div class="card-header">
             <h1 class="h3-responsive d-inline-block">उमेर अनुसारको जनसंख्या विवरण</h1>
-            {{-- <small>(हाल {{ count($municipalities)  }}  न.पा./गा.वि.स. {{ count($municipalities) > 1 ? 'हरु छन्' : 'छ' }} )</small> --}}
+            <small>(हाल {{ count($population)  }}  जनसंख्या विवरण {{ count($population) > 1 ? 'हरु छन्' : 'छ' }} )</small>
             
         </div>
         <div class="card-body">

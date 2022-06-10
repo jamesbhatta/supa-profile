@@ -74,7 +74,7 @@
     <div class="card z-depth-0">
         <div class="card-header">
             <h1 class="h3-responsive d-inline-block">सुदूरपश्चिममा अपांगताको संख्यात्मक विवरण हरु</h1>
-            {{-- <small>(हाल {{ count($municipalities)  }}  न.पा./गा.वि.स. {{ count($municipalities) > 1 ? 'हरु छन्' : 'छ' }} )</small> --}}
+            <small>(हाल {{ count($disability_details)  }}  अपांगताको संख्यात्मक विवरण {{ count($disability_details) > 1 ? 'हरु छन्' : 'छ' }} )</small>
             
         </div>
         <div class="card-body">
