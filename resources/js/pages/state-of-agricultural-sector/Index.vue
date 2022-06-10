@@ -5,15 +5,56 @@
       <div class="row">
         <div class="col-xl-2 col-lg-3 col-md-4 side-client-menus">
 
-          <div class="col-xl-12 col-lg-12 col-md-12 main-content">
-            <div style="height: 80px;"></div>
-            <div class="list-set">
-              <ul class="table-list " style="overflow: auto;">
-                <li class="my-3">
-                  <a href="#table_1">प्रदेशमा भू – स्वामित्वको अवस्था</a>
-                </li>
-
-                <li class="my-3">
+    <data-viewer :data="utpadanmaagadibadhekabali"></data-viewer>
+    <div class="my-5"></div>
+    <data-viewer :data="parmukhkhadiyennebali">
+      <template slot="thead-top">
+        <tr>
+          <th colspan="1"></th>
+        </tr>
+        <tr>
+          <th colspan="1"></th>
+          <th colspan="2" class="bg-light text-center font-weight-bold">२०७५/२०७६</th>
+          <th colspan="2" class="bg-light text-center font-weight-bold">२०७६/२०७७</th>
+        </tr>
+      </template>
+    </data-viewer>
+    <div class="my-5"></div>
+    <data-viewer :data="hiudebalidata"></data-viewer>
+    <div class="my-5"></div>
+    <data-viewer :data="barsebalidata"></data-viewer>
+    <div class="my-5"></div>
+    <data-viewer :data="dalhandata"></data-viewer>
+    <div class="my-5"></div>
+    <data-viewer :data="telhanbalidata"></data-viewer>
+    <div class="my-5"></div>
+    <data-viewer :data="barsetarkaribalidata"></data-viewer>
+    <div class="my-5"></div>
+    <data-viewer :data="khadyannabibaran"></data-viewer>
+    <div class="my-5"></div>
+    <data-viewer :data="jillaanusarkhadyannautpadanbibaran"></data-viewer>
+    <div class="my-5"></div>
+    <data-viewer :data="khadyannautpadanbibaran"></data-viewer>
+    <div class="my-5"></div>
+    <data-viewer :data="LivestockandPoultryStatisticsintheFarWest"></data-viewer>
+    <div class="my-5"></div>
+    <data-viewer :data="dudhalupasu">
+      
+       <template slot="chart">
+        <div class="row">
+          <div class="col-md-6">
+            <pie-chart :chart-data="dudhalupasuChartData"></pie-chart>
+          </div>
+          <div class="col-md-6">
+            <bar-chart :chart-data="dudhalupasuChartData"></bar-chart>
+          </div>
+        </div>
+      </template>
+    </data-viewer>
+    <div class="my-5"></div>
+    <data-viewer :data="meatproduction"></data-viewer>
+                   <ul>
+                   <li class="my-3">
                   <a href="#table_2">भू – उपयोगको अवस्था</a>
                 </li>
 
@@ -275,8 +316,6 @@
           </div>
         </div>
       </div>
-    </div>
-  </div>
 
 
 
@@ -317,7 +356,7 @@ export default {
           [1, "खेती गरिएको जमिन", 3031, 318 + "(" + 10.3 + "प्रतिशत)"],
           [2, "खेती नगरिएको जमिन", 1030, 39 + "(" + 3.8 + "प्रतिशत)"],
           [3, "वन जंगल", 5828, 297 + "(" + 5.1 + "प्रतिशत)"],
-          [4, "चरन", 1766, 15.3, ""],
+          [4, "चरन", 1766, '', ""],
           [5, "पानी", 383, ""],
           [6, "अन्य", 2620, ""],
           [7, "जम्मा", 14718, ""],
@@ -377,7 +416,7 @@ export default {
           [4, "अछाम", 169200, 56347, 42413, 3683, 6593, 10276],
           [5, "डोटी", 196018, 22276, 25500, 9521, 1760, 11281],
           [6, "बैतडी", 145113, 31485, 25700, 3027, 7623, 10650],
-          [7, "डडेलधुरा", 153800, 11618, 106676, 3091, 1806, 7897],
+          [7, "डडेलधुरा", 153800, 11618, 10667.6, 3091, 1806, 7897],
           [8, "कैलाली", 233500, 89935, 86450, 42700, 27800, 70500],
           [9, "कञ्चनपुर", 161741, 59602, 56602, 15874, 23811, 39685],
           ["", "जम्मा", 1749417, 363549, 324532, 95161, 76671, 171832]
@@ -588,7 +627,7 @@ export default {
         title: "सुदूरपश्चिमका प्रमुख तेलहन बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व",
         labels: ["क्रस", "बाली", "क्षेत्रफल हे.", "उत्पादन/अनुमानित मे.ट.", "उत्पादकत्व मे.ट.", "क्षेत्रफल", "उत्पादन/अनुमानित मे.ट.", "उत्पादकत्व मे.ट."],
         data: [
-          [1, "ब्दाम", 622, 608, 0.89, 679, 660, 0.97],
+          [1, "ब्दाम", 622, 608, 0.98, 679, 660, 0.97],
           [2, "तिल", 2183, 2081, 0.95, 2185, 2215, 1.01],
           [3, "सुर्यमूखी", 144, 171, 1.19, 145, 178, 1.22],
 
@@ -666,8 +705,7 @@ export default {
         ],
       },
       // 10.20
-      jillaanusarkhadyannautpadanbibaran: {
-        id:'table_16',
+      LivestockandPoultryStatisticsintheFarWest: {
         title: "सुदूरपश्चिममा पशुपंक्षीको तथ्यांक ०७७/०७८",
         labels: ["जिल्ला", "गाइ", "भैसी", "भेडा", "बाख्रा", "बंगुर", "कुखुरा", "हाँस"],
         data: [
