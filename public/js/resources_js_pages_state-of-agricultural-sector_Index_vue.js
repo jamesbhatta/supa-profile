@@ -295,6 +295,45 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -310,7 +349,7 @@ __webpack_require__.r(__webpack_exports__);
         id: 'table_2',
         title: "भू – उपयोगको अवस्था",
         labels: ["क्र.स.", "क्षेत्र", "नेपालको क्षेत्रफल (हे. हजारमा)", "सुदूरपश्चिमको क्षेत्रफल(हे.हजारमा)"],
-        data: [[1, "खेती गरिएको जमिन", 3031, 318 + "(" + 10.3 + "प्रतिशत)"], [2, "खेती नगरिएको जमिन", 1030, 39 + "(" + 3.8 + "प्रतिशत)"], [3, "वन जंगल", 5828, 297 + "(" + 5.1 + "प्रतिशत)"], [4, "चरन", 1766, 15.3, ""], [5, "पानी", 383, ""], [6, "अन्य", 2620, ""], [7, "जम्मा", 14718, ""], [{
+        data: [[1, "खेती गरिएको जमिन", 3031, 318 + "(" + 10.3 + "प्रतिशत)"], [2, "खेती नगरिएको जमिन", 1030, 39 + "(" + 3.8 + "प्रतिशत)"], [3, "वन जंगल", 5828, 297 + "(" + 5.1 + "प्रतिशत)"], [4, "चरन", 1766, '', ""], [5, "पानी", 383, ""], [6, "अन्य", 2620, ""], [7, "जम्मा", 14718, ""], [{
           colspan: 2,
           value: "सुदूरपश्चिममा कृषि पेशामा निर्भर जनसंख्या"
         }, 84 + "प्रतिशत", ""], [{
@@ -337,7 +376,7 @@ __webpack_require__.r(__webpack_exports__);
         id: 'table_4',
         title: "सुदूरपश्चिम प्रदेशको जिल्लागत क्षेत्रफल र सिंचाई स्थिति",
         labels: ["क्रस", "जिल्ला", "कूल क्षेत्रफल (हे.)", "खेतीयोग्य जमिन (हे.)", "खेती गरिएको जमिन (हे.)", "बर्षभरि", "आंशिक", "जम्मा"],
-        data: [[1, "बाजुरा", 230037, 28135, 26160, 3475, 1760, 5235], [2, "बझाङ", 367845, 34607, 28214, 8295, 3555, 11850], [3, "दार्चुला", 232200, 29544, 22825, 5495, 1963, 7458], [4, "अछाम", 169200, 56347, 42413, 3683, 6593, 10276], [5, "डोटी", 196018, 22276, 25500, 9521, 1760, 11281], [6, "बैतडी", 145113, 31485, 25700, 3027, 7623, 10650], [7, "डडेलधुरा", 153800, 11618, 106676, 3091, 1806, 7897], [8, "कैलाली", 233500, 89935, 86450, 42700, 27800, 70500], [9, "कञ्चनपुर", 161741, 59602, 56602, 15874, 23811, 39685], ["", "जम्मा", 1749417, 363549, 324532, 95161, 76671, 171832]]
+        data: [[1, "बाजुरा", 230037, 28135, 26160, 3475, 1760, 5235], [2, "बझाङ", 367845, 34607, 28214, 8295, 3555, 11850], [3, "दार्चुला", 232200, 29544, 22825, 5495, 1963, 7458], [4, "अछाम", 169200, 56347, 42413, 3683, 6593, 10276], [5, "डोटी", 196018, 22276, 25500, 9521, 1760, 11281], [6, "बैतडी", 145113, 31485, 25700, 3027, 7623, 10650], [7, "डडेलधुरा", 153800, 11618, 10667.6, 3091, 1806, 7897], [8, "कैलाली", 233500, 89935, 86450, 42700, 27800, 70500], [9, "कञ्चनपुर", 161741, 59602, 56602, 15874, 23811, 39685], ["", "जम्मा", 1749417, 363549, 324532, 95161, 76671, 171832]]
       },
       supasichaiChartData: {
         labels: ["बाजुरा", "बझाङ", "दार्चुला", "अछाम", "डोटी", "बैतडी", "डडेलधुरा", "कैलाली", "कञ्चनपुर"],
@@ -426,7 +465,7 @@ __webpack_require__.r(__webpack_exports__);
         id: 'table_11',
         title: "सुदूरपश्चिमका प्रमुख तेलहन बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व",
         labels: ["क्रस", "बाली", "क्षेत्रफल हे.", "उत्पादन/अनुमानित मे.ट.", "उत्पादकत्व मे.ट.", "क्षेत्रफल", "उत्पादन/अनुमानित मे.ट.", "उत्पादकत्व मे.ट."],
-        data: [[1, "ब्दाम", 622, 608, 0.89, 679, 660, 0.97], [2, "तिल", 2183, 2081, 0.95, 2185, 2215, 1.01], [3, "सुर्यमूखी", 144, 171, 1.19, 145, 178, 1.22], ["", "जम्मा", 2949, 2860, "", 3009, 3052, ""]]
+        data: [[1, "ब्दाम", 622, 608, 0.98, 679, 660, 0.97], [2, "तिल", 2183, 2081, 0.95, 2185, 2215, 1.01], [3, "सुर्यमूखी", 144, 171, 1.19, 145, 178, 1.22], ["", "जम्मा", 2949, 2860, "", 3009, 3052, ""]]
       },
       // 10.12
       barsetarkaribalidata: {
@@ -457,8 +496,7 @@ __webpack_require__.r(__webpack_exports__);
         data: [["बाजुरा", 153449, 6232, 4415, 4390, 146, 6072, 475, 21733, 29308, -7575], ["बझाङ", 219593, 6943, 4157, 1847, 0.8, 9518, 869, 23337, 41942, -18604], ["दार्चुला", 144438, 4817, 7438, 847, 66, 8880, 295, 22391, 27587, -5196], ["उच्च पहाडी जम्मा", 517479, 17993, 16056, 7085, 214, 24471, 1640, 67462, 98838, -31376], ["अछाम", 285156, 18373, 14315, 3319, 0.0, 15484, 137, 51630, 57216, -5686], ["डोटी", 219702, 15943, 7709, 4315, 1, 19558, 52, 47580, 44160, 3420], ["बैतडी", 267673, 9044, 16847, 383, 0.0, 17047, 260, 43583, 53802, -10218], ["डडेलधुरा", 157869, 10536, 9319, 457, 0.0, 21606, 85, 42006, 31731, 10274], ["मध्य पहाडी जम्मा", 930401, 53896, 48191, 8476, 1.6, 73697, 537, 184800, 187010, -2209], ["कैलाली", 933862, 169255, 10478, 98, 0.0, 92034, 112, 271980, 169029, 102951], ["कञ्चनपुर", 527593, 99075, 4051, 0.0, 0.0, 69736, 0.0, 172862, 95494, 77368], ["तराई जम्मा", 1461455, 268331, 14529, 98, 0.0, 161770, 112, 444842, 264523, 180319], ["एकमुष्ट जम्मा", 2909336, 340221, 78777, 15660, 215, 259939, 2290, 697105, 550372, 146732]]
       },
       // 10.20
-      jillaanusarkhadyannautpadanbibaran: {
-        id: 'table_16',
+      LivestockandPoultryStatisticsintheFarWest: {
         title: "सुदूरपश्चिममा पशुपंक्षीको तथ्यांक ०७७/०७८",
         labels: ["जिल्ला", "गाइ", "भैसी", "भेडा", "बाख्रा", "बंगुर", "कुखुरा", "हाँस"],
         data: [["अछाम", "४८९१६", "३६१५२", "३११५", "१०६७७१", "४४५", "१००१९६", "३२६"], ["बैतडी", "१२७११२", "५३४९९", "७५२", "१३२९१३", "६३७", "२८६६१", "२३०"], ["बाजुरा", "८४५५१", "२३९४६", "२३७३५", "७६९००", "१६१८", "५०५३४", "४५६"], ["बझाङ्ग", "१४२३८१", "३३५५२", "२४४५३", "८०२६६", "१८९३", "५७८७९", "४३८"], ["डडेिधूरा", "९११६३", "२२५०३", "४७२", "१३९२४२", "११६६", "७७२१५", "२०३"], ["दार्चुला", "६९५५९", "३१३९५", "२२३०९", "६७५०६", "५८५", "३४५०९", "२४५"], ["डोटी", "१२४९७२", "४९६५२", "७३९", "११२३०८", "२५४५", "१४९३३६", "१७८"], ["कैलाली", "२१२६३९", "१७०२४३", "२१२०६", "१३६०६२", "२२६५४", "१४५६३९९", "७६५४"], ["कञ्चनपुर", "१४४०२९", "११५७५८", "८०३२", "१३१७७३", "१२७६५", "९९८७८२", "४६५४"], ["जम्मा", "१०४५३२२", "५३६७००", "१०४८१३", "९८३७४१", "४४३०८", "२९५३५११", "१४३८४"]]
@@ -633,426 +671,539 @@ var render = function () {
   return _c("div", { staticClass: "container-fluid my-div" }, [
     _c("div", { staticClass: "container-fluid py-5" }, [
       _c("div", { staticClass: "row" }, [
-        _vm._m(0),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-xl-8 col-lg-7 col-md-12" }, [
-          _c(
-            "div",
-            { staticClass: "container py-5" },
-            [
-              _c("h1", { staticClass: "page-title" }, [_vm._v("कृषि क्षेत्र")]),
-              _vm._v(" "),
-              _c("data-viewer", { attrs: { data: _vm.vuswamitwadata } }),
-              _vm._v(" "),
-              _c(
-                "data-viewer",
-                { attrs: { data: _vm.vuupyogkoData } },
-                [
-                  _c("template", { slot: "chart" }, [
-                    _c("div", { staticClass: "row" }, [
-                      _c(
-                        "div",
-                        { staticClass: "col-md-6" },
-                        [
-                          _c("pie-chart", {
-                            attrs: { "chart-data": _vm.vuupyogkoChartData },
-                          }),
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        { staticClass: "col-md-6" },
-                        [
-                          _c("bar-chart", {
-                            attrs: { "chart-data": _vm.vuupyogkoChartData },
-                          }),
-                        ],
-                        1
-                      ),
-                    ]),
-                  ]),
-                ],
-                2
-              ),
-              _vm._v(" "),
-              _c(
-                "data-viewer",
-                { attrs: { data: _vm.supakirsiipaj } },
-                [
-                  _c("template", { slot: "thead-top" }, [
-                    _c("tr", [
-                      _c(
-                        "th",
-                        {
-                          staticClass: "bg-light text-center font-weight-bold",
-                          attrs: { colspan: "7" },
-                        },
-                        [_vm._v("कृषि उपजले ढाकेको भू – क्षेत्र")]
-                      ),
-                    ]),
-                    _vm._v(" "),
-                    _c("tr", [
-                      _c("th", { attrs: { colspan: "1" } }),
-                      _vm._v(" "),
-                      _c(
-                        "th",
-                        {
-                          staticClass: "bg-light text-center font-weight-bold",
-                          attrs: { colspan: "3" },
-                        },
-                        [_vm._v("क्षेत्रफल (हेक्टर)")]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "th",
-                        {
-                          staticClass: "bg-light text-center font-weight-bold",
-                          attrs: { colspan: "3" },
-                        },
-                        [_vm._v("हिस्सा (प्रतिशत)")]
-                      ),
-                    ]),
-                  ]),
-                ],
-                2
-              ),
-              _vm._v(" "),
-              _c(
-                "data-viewer",
-                { attrs: { data: _vm.supasichai } },
-                [
-                  _c("template", { slot: "thead-top" }, [
-                    _c("tr", [
-                      _c("th", { attrs: { colspan: "5" } }),
-                      _vm._v(" "),
-                      _c(
-                        "th",
-                        {
-                          staticClass: "bg-light text-center font-weight-bold",
-                          attrs: { colspan: "3" },
-                        },
-                        [_vm._v("सिंचित (हे.)")]
-                      ),
-                    ]),
-                  ]),
+        _c(
+          "div",
+          { staticClass: "col-xl-2 col-lg-3 col-md-4 side-client-menus" },
+          [
+            _c("data-viewer", {
+              attrs: { data: _vm.utpadanmaagadibadhekabali },
+            }),
+            _vm._v(" "),
+            _c("div", { staticClass: "my-5" }),
+            _vm._v(" "),
+            _c(
+              "data-viewer",
+              { attrs: { data: _vm.parmukhkhadiyennebali } },
+              [
+                _c("template", { slot: "thead-top" }, [
+                  _c("tr", [_c("th", { attrs: { colspan: "1" } })]),
                   _vm._v(" "),
-                  _c("template", { slot: "chart" }, [
-                    _c("div", { staticClass: "row" }, [
-                      _c(
-                        "div",
-                        { staticClass: "col-md-6" },
-                        [
-                          _c("pie-chart", {
-                            attrs: { "chart-data": _vm.supasichaiChartData },
-                          }),
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        { staticClass: "col-md-6" },
-                        [
-                          _c("bar-chart", {
-                            attrs: { "chart-data": _vm.supasichaiChartData },
-                          }),
-                        ],
-                        1
-                      ),
-                    ]),
-                  ]),
-                ],
-                2
-              ),
-              _vm._v(" "),
-              _c(
-                "data-viewer",
-                { attrs: { data: _vm.supabaliutpadan } },
-                [
-                  _c("template", { slot: "thead-top" }, [
-                    _c("tr", [
-                      _c(
-                        "th",
-                        {
-                          staticClass: "bg-light text-center font-weight-bold",
-                          attrs: { colspan: "7" },
-                        },
-                        [_vm._v("कृषि बालीको उत्पादन")]
-                      ),
-                    ]),
+                  _c("tr", [
+                    _c("th", { attrs: { colspan: "1" } }),
                     _vm._v(" "),
-                    _c("tr", [
-                      _c("th", { attrs: { colspan: "1" } }),
-                      _vm._v(" "),
-                      _c(
-                        "th",
-                        {
-                          staticClass: "bg-light text-center font-weight-bold",
-                          attrs: { colspan: "3" },
-                        },
-                        [_vm._v("उत्पादन (मे. ट.)")]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "th",
-                        {
-                          staticClass: "bg-light text-center font-weight-bold",
-                          attrs: { colspan: "3" },
-                        },
-                        [_vm._v("हिस्सा (प्रतिशत)")]
-                      ),
-                    ]),
-                  ]),
-                ],
-                2
-              ),
-              _vm._v(" "),
-              _c("data-viewer", {
-                attrs: { data: _vm.utpadanmaagadibadhekabali },
-              }),
-              _vm._v(" "),
-              _c(
-                "data-viewer",
-                { attrs: { data: _vm.parmukhkhadiyennebali } },
-                [
-                  _c("template", { slot: "thead-top" }, [
-                    _c("tr", [_c("th", { attrs: { colspan: "1" } })]),
+                    _c(
+                      "th",
+                      {
+                        staticClass: "bg-light text-center font-weight-bold",
+                        attrs: { colspan: "2" },
+                      },
+                      [_vm._v("२०७५/२०७६")]
+                    ),
                     _vm._v(" "),
-                    _c("tr", [
-                      _c("th", { attrs: { colspan: "1" } }),
-                      _vm._v(" "),
-                      _c(
-                        "th",
-                        {
-                          staticClass: "bg-light text-center font-weight-bold",
-                          attrs: { colspan: "2" },
-                        },
-                        [_vm._v("२०७५/२०७६")]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "th",
-                        {
-                          staticClass: "bg-light text-center font-weight-bold",
-                          attrs: { colspan: "2" },
-                        },
-                        [_vm._v("२०७६/२०७७")]
-                      ),
-                    ]),
+                    _c(
+                      "th",
+                      {
+                        staticClass: "bg-light text-center font-weight-bold",
+                        attrs: { colspan: "2" },
+                      },
+                      [_vm._v("२०७६/२०७७")]
+                    ),
                   ]),
-                ],
-                2
-              ),
-              _vm._v(" "),
-              _c("data-viewer", { attrs: { data: _vm.hiudebalidata } }),
-              _vm._v(" "),
-              _c("data-viewer", { attrs: { data: _vm.barsebalidata } }),
-              _vm._v(" "),
-              _c("data-viewer", { attrs: { data: _vm.dalhandata } }),
-              _vm._v(" "),
-              _c("data-viewer", { attrs: { data: _vm.telhanbalidata } }),
-              _vm._v(" "),
-              _c("data-viewer", { attrs: { data: _vm.barsetarkaribalidata } }),
-              _vm._v(" "),
-              _c("data-viewer", { attrs: { data: _vm.khadyannabibaran } }),
-              _vm._v(" "),
-              _c("data-viewer", {
-                attrs: { data: _vm.khadyannautpadanbibaran },
-              }),
-              _vm._v(" "),
-              _c("data-viewer", {
-                attrs: { data: _vm.jillaanusarkhadyannautpadanbibaranData },
-              }),
-              _vm._v(" "),
-              _c("data-viewer", {
-                attrs: { data: _vm.jillaanusarkhadyannautpadanbibaran },
-              }),
-              _vm._v(" "),
-              _c(
-                "data-viewer",
-                { attrs: { data: _vm.dudhalupasu } },
-                [
-                  _c("template", { slot: "chart" }, [
-                    _c("div", { staticClass: "row" }, [
-                      _c(
-                        "div",
-                        { staticClass: "col-md-6" },
-                        [
-                          _c("pie-chart", {
-                            attrs: { "chart-data": _vm.dudhalupasuChartData },
-                          }),
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        { staticClass: "col-md-6" },
-                        [
-                          _c("bar-chart", {
-                            attrs: { "chart-data": _vm.dudhalupasuChartData },
-                          }),
-                        ],
-                        1
-                      ),
-                    ]),
+                ]),
+              ],
+              2
+            ),
+            _vm._v(" "),
+            _c("div", { staticClass: "my-5" }),
+            _vm._v(" "),
+            _c("data-viewer", { attrs: { data: _vm.hiudebalidata } }),
+            _vm._v(" "),
+            _c("div", { staticClass: "my-5" }),
+            _vm._v(" "),
+            _c("data-viewer", { attrs: { data: _vm.barsebalidata } }),
+            _vm._v(" "),
+            _c("div", { staticClass: "my-5" }),
+            _vm._v(" "),
+            _c("data-viewer", { attrs: { data: _vm.dalhandata } }),
+            _vm._v(" "),
+            _c("div", { staticClass: "my-5" }),
+            _vm._v(" "),
+            _c("data-viewer", { attrs: { data: _vm.telhanbalidata } }),
+            _vm._v(" "),
+            _c("div", { staticClass: "my-5" }),
+            _vm._v(" "),
+            _c("data-viewer", { attrs: { data: _vm.barsetarkaribalidata } }),
+            _vm._v(" "),
+            _c("div", { staticClass: "my-5" }),
+            _vm._v(" "),
+            _c("data-viewer", { attrs: { data: _vm.khadyannabibaran } }),
+            _vm._v(" "),
+            _c("div", { staticClass: "my-5" }),
+            _vm._v(" "),
+            _c("data-viewer", {
+              attrs: { data: _vm.jillaanusarkhadyannautpadanbibaran },
+            }),
+            _vm._v(" "),
+            _c("div", { staticClass: "my-5" }),
+            _vm._v(" "),
+            _c("data-viewer", { attrs: { data: _vm.khadyannautpadanbibaran } }),
+            _vm._v(" "),
+            _c("div", { staticClass: "my-5" }),
+            _vm._v(" "),
+            _c("data-viewer", {
+              attrs: { data: _vm.LivestockandPoultryStatisticsintheFarWest },
+            }),
+            _vm._v(" "),
+            _c("div", { staticClass: "my-5" }),
+            _vm._v(" "),
+            _c(
+              "data-viewer",
+              { attrs: { data: _vm.dudhalupasu } },
+              [
+                _c("template", { slot: "chart" }, [
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      { staticClass: "col-md-6" },
+                      [
+                        _c("pie-chart", {
+                          attrs: { "chart-data": _vm.dudhalupasuChartData },
+                        }),
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "col-md-6" },
+                      [
+                        _c("bar-chart", {
+                          attrs: { "chart-data": _vm.dudhalupasuChartData },
+                        }),
+                      ],
+                      1
+                    ),
                   ]),
-                ],
-                2
-              ),
-              _vm._v(" "),
-              _c(
-                "data-viewer",
-                { attrs: { data: _vm.meatproduction } },
-                [
-                  _c("template", { slot: "chart" }, [
-                    _c("div", { staticClass: "row" }, [
-                      _c(
-                        "div",
-                        { staticClass: "col-md-6" },
-                        [
-                          _c("pie-chart", {
-                            attrs: {
-                              "chart-data": _vm.meatproductionChartData,
-                            },
-                          }),
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        { staticClass: "col-md-6" },
-                        [
-                          _c("bar-chart", {
-                            attrs: {
-                              "chart-data": _vm.meatproductionChartData,
-                            },
-                          }),
-                        ],
-                        1
-                      ),
-                    ]),
-                  ]),
-                ],
-                2
-              ),
-              _vm._v(" "),
-              _c(
-                "data-viewer",
-                { attrs: { data: _vm.eggproduction } },
-                [
-                  _c("template", { slot: "chart" }, [
-                    _c("div", { staticClass: "row" }, [
-                      _c(
-                        "div",
-                        { staticClass: "col-md-6" },
-                        [
-                          _c("pie-chart", {
-                            attrs: { "chart-data": _vm.eggproductionChartData },
-                          }),
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        { staticClass: "col-md-6" },
-                        [
-                          _c("bar-chart", {
-                            attrs: { "chart-data": _vm.eggproductionChartData },
-                          }),
-                        ],
-                        1
-                      ),
-                    ]),
-                  ]),
-                ],
-                2
-              ),
-              _vm._v(" "),
-              _c(
-                "data-viewer",
-                { attrs: { data: _vm.woolproduction } },
-                [
-                  _c("template", { slot: "chart" }, [
-                    _c("div", { staticClass: "row" }, [
-                      _c(
-                        "div",
-                        { staticClass: "col-md-6" },
-                        [
-                          _c("pie-chart", {
-                            attrs: {
-                              "chart-data": _vm.woolproductionChartData,
-                            },
-                          }),
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        { staticClass: "col-md-6" },
-                        [
-                          _c("bar-chart", {
-                            attrs: {
-                              "chart-data": _vm.woolproductionChartData,
-                            },
-                          }),
-                        ],
-                        1
-                      ),
-                    ]),
-                  ]),
-                ],
-                2
-              ),
-              _vm._v(" "),
-              _c(
-                "data-viewer",
-                { attrs: { data: _vm.supapasujanyepadarth } },
-                [
-                  _c("template", { slot: "chart" }, [
-                    _c("div", { staticClass: "row" }, [
-                      _c(
-                        "div",
-                        { staticClass: "col-md-6" },
-                        [
-                          _c("pie-chart", {
-                            attrs: {
-                              "chart-data": _vm.supapasujanyepadarthChartData,
-                            },
-                          }),
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        { staticClass: "col-md-6" },
-                        [
-                          _c("bar-chart", {
-                            attrs: {
-                              "chart-data": _vm.supapasujanyepadarthChartData,
-                            },
-                          }),
-                        ],
-                        1
-                      ),
-                    ]),
-                  ]),
-                ],
-                2
-              ),
-              _vm._v(" "),
-              _c("data-viewer", { attrs: { data: _vm.khadhyesuraxa } }),
-            ],
-            1
-          ),
-        ]),
+                ]),
+              ],
+              2
+            ),
+            _vm._v(" "),
+            _c("div", { staticClass: "my-5" }),
+            _vm._v(" "),
+            _c("data-viewer", { attrs: { data: _vm.meatproduction } }),
+            _vm._v(" "),
+            _vm._m(0),
+          ],
+          1
+        ),
       ]),
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "col-xl-8 col-lg-7 col-md-12" }, [
+      _c(
+        "div",
+        { staticClass: "container py-5" },
+        [
+          _c("h1", { staticClass: "page-title" }, [_vm._v("कृषि क्षेत्र")]),
+          _vm._v(" "),
+          _c("data-viewer", { attrs: { data: _vm.vuswamitwadata } }),
+          _vm._v(" "),
+          _c(
+            "data-viewer",
+            { attrs: { data: _vm.vuupyogkoData } },
+            [
+              _c("template", { slot: "chart" }, [
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    { staticClass: "col-md-6" },
+                    [
+                      _c("pie-chart", {
+                        attrs: { "chart-data": _vm.vuupyogkoChartData },
+                      }),
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "col-md-6" },
+                    [
+                      _c("bar-chart", {
+                        attrs: { "chart-data": _vm.vuupyogkoChartData },
+                      }),
+                    ],
+                    1
+                  ),
+                ]),
+              ]),
+            ],
+            2
+          ),
+          _vm._v(" "),
+          _c(
+            "data-viewer",
+            { attrs: { data: _vm.supakirsiipaj } },
+            [
+              _c("template", { slot: "thead-top" }, [
+                _c("tr", [
+                  _c(
+                    "th",
+                    {
+                      staticClass: "bg-light text-center font-weight-bold",
+                      attrs: { colspan: "7" },
+                    },
+                    [_vm._v("कृषि उपजले ढाकेको भू – क्षेत्र")]
+                  ),
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("th", { attrs: { colspan: "1" } }),
+                  _vm._v(" "),
+                  _c(
+                    "th",
+                    {
+                      staticClass: "bg-light text-center font-weight-bold",
+                      attrs: { colspan: "3" },
+                    },
+                    [_vm._v("क्षेत्रफल (हेक्टर)")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "th",
+                    {
+                      staticClass: "bg-light text-center font-weight-bold",
+                      attrs: { colspan: "3" },
+                    },
+                    [_vm._v("हिस्सा (प्रतिशत)")]
+                  ),
+                ]),
+              ]),
+            ],
+            2
+          ),
+          _vm._v(" "),
+          _c(
+            "data-viewer",
+            { attrs: { data: _vm.supasichai } },
+            [
+              _c("template", { slot: "thead-top" }, [
+                _c("tr", [
+                  _c("th", { attrs: { colspan: "5" } }),
+                  _vm._v(" "),
+                  _c(
+                    "th",
+                    {
+                      staticClass: "bg-light text-center font-weight-bold",
+                      attrs: { colspan: "3" },
+                    },
+                    [_vm._v("सिंचित (हे.)")]
+                  ),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("template", { slot: "chart" }, [
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    { staticClass: "col-md-6" },
+                    [
+                      _c("pie-chart", {
+                        attrs: { "chart-data": _vm.supasichaiChartData },
+                      }),
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "col-md-6" },
+                    [
+                      _c("bar-chart", {
+                        attrs: { "chart-data": _vm.supasichaiChartData },
+                      }),
+                    ],
+                    1
+                  ),
+                ]),
+              ]),
+            ],
+            2
+          ),
+          _vm._v(" "),
+          _c(
+            "data-viewer",
+            { attrs: { data: _vm.supabaliutpadan } },
+            [
+              _c("template", { slot: "thead-top" }, [
+                _c("tr", [
+                  _c(
+                    "th",
+                    {
+                      staticClass: "bg-light text-center font-weight-bold",
+                      attrs: { colspan: "7" },
+                    },
+                    [_vm._v("कृषि बालीको उत्पादन")]
+                  ),
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("th", { attrs: { colspan: "1" } }),
+                  _vm._v(" "),
+                  _c(
+                    "th",
+                    {
+                      staticClass: "bg-light text-center font-weight-bold",
+                      attrs: { colspan: "3" },
+                    },
+                    [_vm._v("उत्पादन (मे. ट.)")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "th",
+                    {
+                      staticClass: "bg-light text-center font-weight-bold",
+                      attrs: { colspan: "3" },
+                    },
+                    [_vm._v("हिस्सा (प्रतिशत)")]
+                  ),
+                ]),
+              ]),
+            ],
+            2
+          ),
+          _vm._v(" "),
+          _c("data-viewer", { attrs: { data: _vm.utpadanmaagadibadhekabali } }),
+          _vm._v(" "),
+          _c(
+            "data-viewer",
+            { attrs: { data: _vm.parmukhkhadiyennebali } },
+            [
+              _c("template", { slot: "thead-top" }, [
+                _c("tr", [_c("th", { attrs: { colspan: "1" } })]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("th", { attrs: { colspan: "1" } }),
+                  _vm._v(" "),
+                  _c(
+                    "th",
+                    {
+                      staticClass: "bg-light text-center font-weight-bold",
+                      attrs: { colspan: "2" },
+                    },
+                    [_vm._v("२०७५/२०७६")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "th",
+                    {
+                      staticClass: "bg-light text-center font-weight-bold",
+                      attrs: { colspan: "2" },
+                    },
+                    [_vm._v("२०७६/२०७७")]
+                  ),
+                ]),
+              ]),
+            ],
+            2
+          ),
+          _vm._v(" "),
+          _c("data-viewer", { attrs: { data: _vm.hiudebalidata } }),
+          _vm._v(" "),
+          _c("data-viewer", { attrs: { data: _vm.barsebalidata } }),
+          _vm._v(" "),
+          _c("data-viewer", { attrs: { data: _vm.dalhandata } }),
+          _vm._v(" "),
+          _c("data-viewer", { attrs: { data: _vm.telhanbalidata } }),
+          _vm._v(" "),
+          _c("data-viewer", { attrs: { data: _vm.barsetarkaribalidata } }),
+          _vm._v(" "),
+          _c("data-viewer", { attrs: { data: _vm.khadyannabibaran } }),
+          _vm._v(" "),
+          _c("data-viewer", { attrs: { data: _vm.khadyannautpadanbibaran } }),
+          _vm._v(" "),
+          _c("data-viewer", {
+            attrs: { data: _vm.jillaanusarkhadyannautpadanbibaranData },
+          }),
+          _vm._v(" "),
+          _c("data-viewer", {
+            attrs: { data: _vm.jillaanusarkhadyannautpadanbibaran },
+          }),
+          _vm._v(" "),
+          _c(
+            "data-viewer",
+            { attrs: { data: _vm.dudhalupasu } },
+            [
+              _c("template", { slot: "chart" }, [
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    { staticClass: "col-md-6" },
+                    [
+                      _c("pie-chart", {
+                        attrs: { "chart-data": _vm.dudhalupasuChartData },
+                      }),
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "col-md-6" },
+                    [
+                      _c("bar-chart", {
+                        attrs: { "chart-data": _vm.dudhalupasuChartData },
+                      }),
+                    ],
+                    1
+                  ),
+                ]),
+              ]),
+            ],
+            2
+          ),
+          _vm._v(" "),
+          _c(
+            "data-viewer",
+            { attrs: { data: _vm.meatproduction } },
+            [
+              _c("template", { slot: "chart" }, [
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    { staticClass: "col-md-6" },
+                    [
+                      _c("pie-chart", {
+                        attrs: { "chart-data": _vm.meatproductionChartData },
+                      }),
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "col-md-6" },
+                    [
+                      _c("bar-chart", {
+                        attrs: { "chart-data": _vm.meatproductionChartData },
+                      }),
+                    ],
+                    1
+                  ),
+                ]),
+              ]),
+            ],
+            2
+          ),
+          _vm._v(" "),
+          _c(
+            "data-viewer",
+            { attrs: { data: _vm.eggproduction } },
+            [
+              _c("template", { slot: "chart" }, [
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    { staticClass: "col-md-6" },
+                    [
+                      _c("pie-chart", {
+                        attrs: { "chart-data": _vm.eggproductionChartData },
+                      }),
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "col-md-6" },
+                    [
+                      _c("bar-chart", {
+                        attrs: { "chart-data": _vm.eggproductionChartData },
+                      }),
+                    ],
+                    1
+                  ),
+                ]),
+              ]),
+            ],
+            2
+          ),
+          _vm._v(" "),
+          _c(
+            "data-viewer",
+            { attrs: { data: _vm.woolproduction } },
+            [
+              _c("template", { slot: "chart" }, [
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    { staticClass: "col-md-6" },
+                    [
+                      _c("pie-chart", {
+                        attrs: { "chart-data": _vm.woolproductionChartData },
+                      }),
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "col-md-6" },
+                    [
+                      _c("bar-chart", {
+                        attrs: { "chart-data": _vm.woolproductionChartData },
+                      }),
+                    ],
+                    1
+                  ),
+                ]),
+              ]),
+            ],
+            2
+          ),
+          _vm._v(" "),
+          _c(
+            "data-viewer",
+            { attrs: { data: _vm.supapasujanyepadarth } },
+            [
+              _c("template", { slot: "chart" }, [
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    { staticClass: "col-md-6" },
+                    [
+                      _c("pie-chart", {
+                        attrs: {
+                          "chart-data": _vm.supapasujanyepadarthChartData,
+                        },
+                      }),
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "col-md-6" },
+                    [
+                      _c("bar-chart", {
+                        attrs: {
+                          "chart-data": _vm.supapasujanyepadarthChartData,
+                        },
+                      }),
+                    ],
+                    1
+                  ),
+                ]),
+              ]),
+            ],
+            2
+          ),
+          _vm._v(" "),
+          _c("data-viewer", { attrs: { data: _vm.khadhyesuraxa } }),
+        ],
+        1
+      ),
     ]),
   ])
 }
@@ -1061,194 +1212,151 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "col-xl-2 col-lg-3 col-md-4 side-client-menus" },
-      [
-        _c(
-          "div",
-          { staticClass: "col-xl-12 col-lg-12 col-md-12 main-content" },
-          [
-            _c("div", { staticStyle: { height: "80px" } }),
-            _vm._v(" "),
-            _c("div", { staticClass: "list-set" }, [
-              _c(
-                "ul",
-                {
-                  staticClass: "table-list ",
-                  staticStyle: { overflow: "auto" },
-                },
-                [
-                  _c("li", { staticClass: "my-3" }, [
-                    _c("a", { attrs: { href: "#table_1" } }, [
-                      _vm._v("प्रदेशमा भू – स्वामित्वको अवस्था"),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("li", { staticClass: "my-3" }, [
-                    _c("a", { attrs: { href: "#table_2" } }, [
-                      _vm._v("भू – उपयोगको अवस्था"),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("li", { staticClass: "my-3" }, [
-                    _c("a", { attrs: { href: "#table_3" } }, [
-                      _vm._v(
-                        "सुदूरपश्चिममा कृषि उपजले ढाकेको जिल्लागत भू – क्षेत्र"
-                      ),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("li", { staticClass: "my-3" }, [
-                    _c("a", { attrs: { href: "#table_4" } }, [
-                      _vm._v(
-                        "सुदूरपश्चिम प्रदेशको जिल्लागत क्षेत्रफल र सिंचाई स्थिति"
-                      ),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("li", { staticClass: "my-3" }, [
-                    _c("a", { attrs: { href: "#table_5" } }, [
-                      _vm._v("कृषि बालीको जिल्लागत उत्पादन अवस्था"),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("li", { staticClass: "my-3" }, [
-                    _c("a", { attrs: { href: "#table_6" } }, [
-                      _vm._v(
-                        "व्यवसायिक उत्पादनमा अगाडी बढेका बाली र पकेट क्षेत्रहरुको जिल्लागत विवरण"
-                      ),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("li", { staticClass: "my-3" }, [
-                    _c("a", { attrs: { href: "#table_7" } }, [
-                      _vm._v(
-                        "प्रमुख खाद्यान्न बालीहरुको तुलनात्मक क्षेत्रफल तथा उत्पादन विवरण"
-                      ),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("li", { staticClass: "my-3" }, [
-                    _c("a", { attrs: { href: "#table_8" } }, [
-                      _vm._v(
-                        "सुदूरपश्चिमका प्रमुख हिउँदे बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व"
-                      ),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("li", { staticClass: "my-3" }, [
-                    _c("a", { attrs: { href: "#table_9" } }, [
-                      _vm._v(
-                        "सुदूरपश्चिमका प्रमुख बर्षे बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व"
-                      ),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("li", { staticClass: "my-3" }, [
-                    _c("a", { attrs: { href: "#table_10" } }, [
-                      _vm._v(
-                        "सुदूरपश्चिमका प्रमुख दलहन बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व"
-                      ),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("li", { staticClass: "my-3" }, [
-                    _c("a", { attrs: { href: "#table_11" } }, [
-                      _vm._v(
-                        "सुदूरपश्चिमका प्रमुख तेलहन बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व"
-                      ),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("li", { staticClass: "my-3" }, [
-                    _c("a", { attrs: { href: "#table_12" } }, [
-                      _vm._v(
-                        "प्रमुख बर्षे तरकारी बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व"
-                      ),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("li", { staticClass: "my-3" }, [
-                    _c("a", { attrs: { href: "#table_13" } }, [
-                      _vm._v(
-                        " उपभोग्य खाद्यान्नको स्थिति प्रदेशगत विवरण प्रक्षेपित जनसंख्यामा (मे.ट.) २०७५/२०७६"
-                      ),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("li", { staticClass: "my-3" }, [
-                    _c("a", { attrs: { href: "#table_14" } }, [
-                      _vm._v("वाली अनुसार विभिन्न आर्थिक वर्षहरुका खाद्यान्न"),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("li", { staticClass: "my-3" }, [
-                    _c("a", { attrs: { href: "#table_15" } }, [
-                      _vm._v("जिल्ला अनुसार खाद्यान्न उत्पादन"),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("li", { staticClass: "my-3" }, [
-                    _c("a", { attrs: { href: "#table_16" } }, [
-                      _vm._v(
-                        "सुदूरपश्चिममा पशुपंक्षीको तथ्यांक ०७७/०७८\n                "
-                      ),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("li", { staticClass: "my-3" }, [
-                    _c("a", { attrs: { href: "#table_17" } }, [
-                      _vm._v(
-                        " सुदूरपश्चिममा दुधालु पशु र दुग्ध उत्पादनको अवस्था (मे.ट. ०७७/०७८)"
-                      ),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("li", { staticClass: "my-3" }, [
-                    _c("a", { attrs: { href: "#table_18" } }, [
-                      _vm._v(
-                        " सुदूरपश्चिममा बार्षिक मासु उत्पादनको अवस्था मे.ट. ०७७/०७८"
-                      ),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("li", { staticClass: "my-3" }, [
-                    _c("a", { attrs: { href: "#table_19" } }, [
-                      _vm._v(
-                        "सुदूरपश्चिममा बार्षिक अण्डा उत्पादनको अवस्था ०७७/०७८"
-                      ),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("li", { staticClass: "my-3" }, [
-                    _c("a", { attrs: { href: "#table_20" } }, [
-                      _vm._v(
-                        "सुदूरपश्चिममा बार्षिक उन उत्पादनको अवस्था ०७७/०७८"
-                      ),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("li", { staticClass: "my-3" }, [
-                    _c("a", { attrs: { href: "#table_21" } }, [
-                      _vm._v(
-                        "सुदूरपश्चिममा पशुपंक्षीजन्य पदार्थको बार्षिक उत्पादनको अवस्था ०७७/०७८"
-                      ),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("li", { staticClass: "my-3" }, [
-                    _c("a", { attrs: { href: "#table_22" } }, [
-                      _vm._v("सुदूरपश्चिममा खाद्य सुरक्षाको अवस्था"),
-                    ]),
-                  ]),
-                ]
-              ),
-            ]),
-          ]
-        ),
-      ]
-    )
+    return _c("ul", [
+      _c("li", { staticClass: "my-3" }, [
+        _c("a", { attrs: { href: "#table_2" } }, [
+          _vm._v("भू – उपयोगको अवस्था"),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("li", { staticClass: "my-3" }, [
+        _c("a", { attrs: { href: "#table_3" } }, [
+          _vm._v("सुदूरपश्चिममा कृषि उपजले ढाकेको जिल्लागत भू – क्षेत्र"),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("li", { staticClass: "my-3" }, [
+        _c("a", { attrs: { href: "#table_4" } }, [
+          _vm._v("सुदूरपश्चिम प्रदेशको जिल्लागत क्षेत्रफल र सिंचाई स्थिति"),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("li", { staticClass: "my-3" }, [
+        _c("a", { attrs: { href: "#table_5" } }, [
+          _vm._v("कृषि बालीको जिल्लागत उत्पादन अवस्था"),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("li", { staticClass: "my-3" }, [
+        _c("a", { attrs: { href: "#table_6" } }, [
+          _vm._v(
+            "व्यवसायिक उत्पादनमा अगाडी बढेका बाली र पकेट क्षेत्रहरुको जिल्लागत विवरण"
+          ),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("li", { staticClass: "my-3" }, [
+        _c("a", { attrs: { href: "#table_7" } }, [
+          _vm._v(
+            "प्रमुख खाद्यान्न बालीहरुको तुलनात्मक क्षेत्रफल तथा उत्पादन विवरण"
+          ),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("li", { staticClass: "my-3" }, [
+        _c("a", { attrs: { href: "#table_8" } }, [
+          _vm._v(
+            "सुदूरपश्चिमका प्रमुख हिउँदे बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व"
+          ),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("li", { staticClass: "my-3" }, [
+        _c("a", { attrs: { href: "#table_9" } }, [
+          _vm._v(
+            "सुदूरपश्चिमका प्रमुख बर्षे बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व"
+          ),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("li", { staticClass: "my-3" }, [
+        _c("a", { attrs: { href: "#table_10" } }, [
+          _vm._v(
+            "सुदूरपश्चिमका प्रमुख दलहन बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व"
+          ),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("li", { staticClass: "my-3" }, [
+        _c("a", { attrs: { href: "#table_11" } }, [
+          _vm._v(
+            "सुदूरपश्चिमका प्रमुख तेलहन बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व"
+          ),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("li", { staticClass: "my-3" }, [
+        _c("a", { attrs: { href: "#table_12" } }, [
+          _vm._v("प्रमुख बर्षे तरकारी बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व"),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("li", { staticClass: "my-3" }, [
+        _c("a", { attrs: { href: "#table_13" } }, [
+          _vm._v(
+            " उपभोग्य खाद्यान्नको स्थिति प्रदेशगत विवरण प्रक्षेपित जनसंख्यामा (मे.ट.) २०७५/२०७६"
+          ),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("li", { staticClass: "my-3" }, [
+        _c("a", { attrs: { href: "#table_14" } }, [
+          _vm._v("वाली अनुसार विभिन्न आर्थिक वर्षहरुका खाद्यान्न"),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("li", { staticClass: "my-3" }, [
+        _c("a", { attrs: { href: "#table_15" } }, [
+          _vm._v("जिल्ला अनुसार खाद्यान्न उत्पादन"),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("li", { staticClass: "my-3" }, [
+        _c("a", { attrs: { href: "#table_16" } }, [
+          _vm._v("सुदूरपश्चिममा पशुपंक्षीको तथ्यांक ०७७/०७८\n                "),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("li", { staticClass: "my-3" }, [
+        _c("a", { attrs: { href: "#table_17" } }, [
+          _vm._v(
+            " सुदूरपश्चिममा दुधालु पशु र दुग्ध उत्पादनको अवस्था (मे.ट. ०७७/०७८)"
+          ),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("li", { staticClass: "my-3" }, [
+        _c("a", { attrs: { href: "#table_18" } }, [
+          _vm._v(" सुदूरपश्चिममा बार्षिक मासु उत्पादनको अवस्था मे.ट. ०७७/०७८"),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("li", { staticClass: "my-3" }, [
+        _c("a", { attrs: { href: "#table_19" } }, [
+          _vm._v("सुदूरपश्चिममा बार्षिक अण्डा उत्पादनको अवस्था ०७७/०७८"),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("li", { staticClass: "my-3" }, [
+        _c("a", { attrs: { href: "#table_20" } }, [
+          _vm._v("सुदूरपश्चिममा बार्षिक उन उत्पादनको अवस्था ०७७/०७८"),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("li", { staticClass: "my-3" }, [
+        _c("a", { attrs: { href: "#table_21" } }, [
+          _vm._v(
+            "सुदूरपश्चिममा पशुपंक्षीजन्य पदार्थको बार्षिक उत्पादनको अवस्था ०७७/०७८"
+          ),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("li", { staticClass: "my-3" }, [
+        _c("a", { attrs: { href: "#table_22" } }, [
+          _vm._v("सुदूरपश्चिममा खाद्य सुरक्षाको अवस्था"),
+        ]),
+      ]),
+    ])
   },
 ]
 render._withStripped = true

@@ -45,14 +45,14 @@
 .data2068 div{
     height: 10px;
     width: 40px;
-    margin-left: 220px;
+    margin-left: 180px;
     margin-top: 10px;
     background-color: #007bff;
 }
 .data2068 div::after{
     content: "2068";
     position: absolute;
-    left: 275px;
+    left: 240px;
     top: 5px;
     font-size: 12px;
 }
@@ -60,14 +60,14 @@
 .data2078 div{
     height: 10px;
     width: 40px;
-    margin-left: 1px;
+    margin-left: 25px;
     margin-top: 10px;
     background-color: #dc3545;
 }
 .data2078 div::after{
     content: "2078";
     position: absolute;
-    left: 60px;
+    left: 85px;
     top: 5px;
     font-size: 12px;
 }
