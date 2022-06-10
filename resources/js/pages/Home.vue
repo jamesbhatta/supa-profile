@@ -213,24 +213,26 @@
         </div>
 
       </div>
-      <div class="col-md-6">
+      <div class="col-md-3">
         <div class="card ">
-          <div class="row">
-            <div class="col-1"></div>
-            <div class="col-5">
-              <bar :chart-options="{ plugins: { legend: { display: false } } }" :chart-data="{
-                labels: ['कृषि क्षेत्र', 'उद्योग क्षेत्र', 'सेवा क्षेत्र'],
-                datasets: [
-                  {
-                    backgroundColor: ['#007bff', '#dc3545', 'green'],
-                    data: [36.1, 13.2, 50.7],
-                  },
-                ],
-              }" />
-              <label class="col-12 text-center">कूलगार्हस्थ उत्पादन</label>
-            </div>
 
-            <div class="col-5">
+          <div class="col-11">
+            <bar :chart-options="{ plugins: { legend: { display: false } } }" :chart-data="{
+              labels: ['कृषि क्षेत्र', 'उद्योग क्षेत्र', 'सेवा क्षेत्र'],
+              datasets: [
+                {
+                  backgroundColor: ['#007bff', '#dc3545', 'green'],
+                  data: [36.1, 13.2, 50.7],
+                },
+              ],
+            }" />
+            <label class="col-12 text-center">कूलगार्हस्थ उत्पादन</label>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <div class="col-11">
               <bar :chart-options="{ plugins: { legend: { display: false } } }" :chart-data="{
                 labels: ['महिला', 'पुरुष', 'जम्मा'],
                 datasets: [
@@ -243,9 +245,6 @@
 
               <label class="col-12 text-center">साक्षरता दर</label>
             </div>
-          </div>
-
-
         </div>
       </div>
       <div class="col-md-12">
@@ -274,7 +273,7 @@
     </div>
     <!-- ================ -->
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-3">
         <div class="card">
           <bar :chart-options="{ plugins: { legend: { display: false } } }" :chart-data="{
             labels: ['अस्पताल', 'प्रास्वाक', 'स्वास्थ्य चौकी', 'सा.स्वा.इकाई.', 'आ.स्वा.के.', 'पोषण गृह'],
@@ -290,9 +289,9 @@
         </div>
       </div>
 
-      <div class="col-md-4">
+      <div class="col-md-3">
         <div class="card">
-           <pie :chart-options="{ responsive: true }" :chart-data="{
+          <pie :chart-options="{ responsive: true }" :chart-data="{
             labels: ['कालोपत्रे', 'ग्राभेल', 'कच्ची'],
             datasets: [
               {
@@ -306,9 +305,9 @@
         </div>
       </div>
 
-      <div class="col-md-4">
+      <div class="col-md-3">
         <div class="card">
-           <bar :chart-options="{ responsive: true }" :chart-data="{
+          <bar :chart-options="{ responsive: true }" :chart-data="{
             labels: ['खना पकाउने', 'वत्तीवाल्ने'],
             datasets: [
               {
@@ -338,29 +337,28 @@
               },
             ],
           }" />
+          <label class="col-12 text-center">उर्जा उपयोग</label>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card">
+          <pie :chart-options="{ responsive: true }" :chart-data="{
+            labels: ['प्रदेश', 'प्रतिनिधिसभा'],
+            datasets: [
+              {
+                backgroundColor: ['#007bff', '#dc3545', 'green'],
+                data: [32, 16],
+              },
+            ],
+          }" />
+
+          <label class="col-12 text-center">निर्वाचन क्षेत्र</label>
         </div>
       </div>
     </div>
 
-    <div class="card">
-      <div class="row">
-        <div class="col-md-3">
-           
-        </div>
 
-        <div class="col-md-3">
-         
-        </div>
-
-        <div class="col-md-3">
-         
-        </div>
-
-        <div class="col-md-3">
-         
-        </div>
-      </div>
-    </div>
 
     <!-- ================= -->
     <div class="row mt-5">

@@ -448,8 +448,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 
 
 chart_js__WEBPACK_IMPORTED_MODULE_0__.Chart.register(chart_js__WEBPACK_IMPORTED_MODULE_0__.Title, chart_js__WEBPACK_IMPORTED_MODULE_0__.Tooltip, chart_js__WEBPACK_IMPORTED_MODULE_0__.Legend, chart_js__WEBPACK_IMPORTED_MODULE_0__.BarElement, chart_js__WEBPACK_IMPORTED_MODULE_0__.CategoryScale, chart_js__WEBPACK_IMPORTED_MODULE_0__.LinearScale, chart_js__WEBPACK_IMPORTED_MODULE_0__.ArcElement);
@@ -941,71 +939,63 @@ var render = function () {
         _c("div", { staticClass: "col-md-4" }),
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "col-md-6" }, [
+      _c("div", { staticClass: "col-md-3" }, [
         _c("div", { staticClass: "card " }, [
-          _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col-1" }),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "col-5" },
-              [
-                _c("bar", {
-                  attrs: {
-                    "chart-options": {
-                      plugins: { legend: { display: false } },
-                    },
-                    "chart-data": {
-                      labels: [
-                        "कृषि क्षेत्र",
-                        "उद्योग क्षेत्र",
-                        "सेवा क्षेत्र",
-                      ],
-                      datasets: [
-                        {
-                          backgroundColor: ["#007bff", "#dc3545", "green"],
-                          data: [36.1, 13.2, 50.7],
-                        },
-                      ],
-                    },
+          _c(
+            "div",
+            { staticClass: "col-11" },
+            [
+              _c("bar", {
+                attrs: {
+                  "chart-options": { plugins: { legend: { display: false } } },
+                  "chart-data": {
+                    labels: ["कृषि क्षेत्र", "उद्योग क्षेत्र", "सेवा क्षेत्र"],
+                    datasets: [
+                      {
+                        backgroundColor: ["#007bff", "#dc3545", "green"],
+                        data: [36.1, 13.2, 50.7],
+                      },
+                    ],
                   },
-                }),
-                _vm._v(" "),
-                _c("label", { staticClass: "col-12 text-center" }, [
-                  _vm._v("कूलगार्हस्थ उत्पादन"),
-                ]),
-              ],
-              1
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "col-5" },
-              [
-                _c("bar", {
-                  attrs: {
-                    "chart-options": {
-                      plugins: { legend: { display: false } },
-                    },
-                    "chart-data": {
-                      labels: ["महिला", "पुरुष", "जम्मा"],
-                      datasets: [
-                        {
-                          backgroundColor: ["#007bff", "#dc3545", "green"],
-                          data: [51.93, 76.4, 63.48],
-                        },
-                      ],
-                    },
+                },
+              }),
+              _vm._v(" "),
+              _c("label", { staticClass: "col-12 text-center" }, [
+                _vm._v("कूलगार्हस्थ उत्पादन"),
+              ]),
+            ],
+            1
+          ),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-md-3" }, [
+        _c("div", { staticClass: "card" }, [
+          _c(
+            "div",
+            { staticClass: "col-11" },
+            [
+              _c("bar", {
+                attrs: {
+                  "chart-options": { plugins: { legend: { display: false } } },
+                  "chart-data": {
+                    labels: ["महिला", "पुरुष", "जम्मा"],
+                    datasets: [
+                      {
+                        backgroundColor: ["#007bff", "#dc3545", "green"],
+                        data: [51.93, 76.4, 63.48],
+                      },
+                    ],
                   },
-                }),
-                _vm._v(" "),
-                _c("label", { staticClass: "col-12 text-center" }, [
-                  _vm._v("साक्षरता दर"),
-                ]),
-              ],
-              1
-            ),
-          ]),
+                },
+              }),
+              _vm._v(" "),
+              _c("label", { staticClass: "col-12 text-center" }, [
+                _vm._v("साक्षरता दर"),
+              ]),
+            ],
+            1
+          ),
         ]),
       ]),
       _vm._v(" "),
@@ -1013,7 +1003,7 @@ var render = function () {
     ]),
     _vm._v(" "),
     _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-md-4" }, [
+      _c("div", { staticClass: "col-md-3" }, [
         _c(
           "div",
           { staticClass: "card" },
@@ -1055,7 +1045,7 @@ var render = function () {
         ),
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "col-md-4" }, [
+      _c("div", { staticClass: "col-md-3" }, [
         _c(
           "div",
           { staticClass: "card" },
@@ -1081,7 +1071,7 @@ var render = function () {
         ),
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "col-md-4" }, [
+      _c("div", { staticClass: "col-md-3" }, [
         _c(
           "div",
           { staticClass: "card" },
@@ -1121,13 +1111,43 @@ var render = function () {
                 },
               },
             }),
+            _vm._v(" "),
+            _c("label", { staticClass: "col-12 text-center" }, [
+              _vm._v("उर्जा उपयोग"),
+            ]),
+          ],
+          1
+        ),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-md-3" }, [
+        _c(
+          "div",
+          { staticClass: "card" },
+          [
+            _c("pie", {
+              attrs: {
+                "chart-options": { responsive: true },
+                "chart-data": {
+                  labels: ["प्रदेश", "प्रतिनिधिसभा"],
+                  datasets: [
+                    {
+                      backgroundColor: ["#007bff", "#dc3545", "green"],
+                      data: [32, 16],
+                    },
+                  ],
+                },
+              },
+            }),
+            _vm._v(" "),
+            _c("label", { staticClass: "col-12 text-center" }, [
+              _vm._v("निर्वाचन क्षेत्र"),
+            ]),
           ],
           1
         ),
       ]),
     ]),
-    _vm._v(" "),
-    _vm._m(5),
     _vm._v(" "),
     _c("div", { staticClass: "row mt-5" }, [
       _c("div", { staticClass: "col-md-12" }, [
@@ -1298,22 +1318,6 @@ var staticRenderFns = [
           _vm._v(" "),
           _c("div", { staticClass: "col-md-5" }),
         ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card" }, [
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-md-3" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-md-3" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-md-3" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-md-3" }),
       ]),
     ])
   },
