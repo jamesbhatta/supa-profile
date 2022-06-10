@@ -34,4 +34,5 @@ return [
     'feeder_hostel'=>"Feeder Hostel",
     'kamlari_hostel'=>"Kamlari Hostel",
     'goverment_student'=>"Student detail",
+    'card_info'=>"Card Info",
 ];

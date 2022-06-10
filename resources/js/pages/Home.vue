@@ -66,7 +66,7 @@
                 <div class="chart-body">
                   <div class="chart-title mb-3">भौगोलिक क्षेत्रगत क्षेत्रफल</div>
                   <bar
-                    :chart-options="{ responsive: true }"
+                  :chart-options="{ plugins: { legend: { display: false } } }"
                     :chart-data="{
                       labels: ['हिमाली', 'पहाडी', 'तराई'],
                       datasets: [
@@ -214,7 +214,7 @@
                   <div class="row">
                     <div class="col-md-4">
                       <bar
-                        :chart-options="{ responsive: true }"
+                      :chart-options="{ plugins: { legend: { display: false } } }"
                         :chart-data="{
                           labels: ['2068'],
                           datasets: [
@@ -231,7 +231,7 @@
 
                     <div class="col-md-4">
                       <bar
-                        :chart-options="{ responsive: true }"
+                      :chart-options="{ plugins: { legend: { display: false } } }"
                         :chart-data="{
                           labels: ['2068'],
                           datasets: [
@@ -248,7 +248,7 @@
 
                     <div class="col-md-4">
                       <Pie
-                        :chart-options="{ responsive: true }"
+                      :chart-options="{ plugins: { legend: { display: false } } }"
                         :chart-data="{
                           labels: ['सामुदायिक', 'संस्थागत'],
                           datasets: [
@@ -315,7 +315,7 @@
 
         <div class="col-md-3">
           <bar
-            :chart-options="{ responsive: true }"
+          :chart-options="{ plugins: { legend: { display: false } } }"
             :chart-data="{
               labels: ['अस्पताल', 'प्रास्वाक', 'स्वास्थ्य चौकी', 'सा.स्वा.इकाई.', 'आ.स्वा.के.', 'पोषण गृह'],
               datasets: [

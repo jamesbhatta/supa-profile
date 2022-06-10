@@ -298,7 +298,11 @@
             </ul>
         </li>
 
-
+        <li class="nav-item {{ setActive('dashboard') }}">
+            <a class="nav-link" href="{{ route('dashboard') }}">
+                <span class="text-warning"><i class="fa fa-tachometer-alt"></i></span>@lang('navigation.dashboard')
+            </a>
+        </li>
 
 
         @hasanyrole('super-admin')

@@ -765,7 +765,9 @@ var render = function () {
                     _vm._v(" "),
                     _c("bar", {
                       attrs: {
-                        "chart-options": { responsive: true },
+                        "chart-options": {
+                          plugins: { legend: { display: false } },
+                        },
                         "chart-data": {
                           labels: ["हिमाली", "पहाडी", "तराई"],
                           datasets: [
@@ -949,7 +951,9 @@ var render = function () {
                       [
                         _c("bar", {
                           attrs: {
-                            "chart-options": { responsive: true },
+                            "chart-options": {
+                              plugins: { legend: { display: false } },
+                            },
                             "chart-data": {
                               labels: ["2068"],
                               datasets: [
@@ -975,7 +979,9 @@ var render = function () {
                       [
                         _c("bar", {
                           attrs: {
-                            "chart-options": { responsive: true },
+                            "chart-options": {
+                              plugins: { legend: { display: false } },
+                            },
                             "chart-data": {
                               labels: ["2068"],
                               datasets: [
@@ -1001,7 +1007,9 @@ var render = function () {
                       [
                         _c("Pie", {
                           attrs: {
-                            "chart-options": { responsive: true },
+                            "chart-options": {
+                              plugins: { legend: { display: false } },
+                            },
                             "chart-data": {
                               labels: ["सामुदायिक", "संस्थागत"],
                               datasets: [
@@ -1105,7 +1113,7 @@ var render = function () {
           [
             _c("bar", {
               attrs: {
-                "chart-options": { responsive: true },
+                "chart-options": { plugins: { legend: { display: false } } },
                 "chart-data": {
                   labels: [
                     "अस्पताल",
