@@ -80,8 +80,8 @@
 
     <div class="card z-depth-0">
         <div class="card-header">
-            <h1 class="h3-responsive d-inline-block">न.पा./गा.वि.स. हरु</h1>
-            {{-- <small>(हाल {{ count($municipalities)  }}  न.पा./गा.वि.स. {{ count($municipalities) > 1 ? 'हरु छन्' : 'छ' }} )</small> --}}
+            <h1 class="h3-responsive d-inline-block">सामूदायिक विद्यालयमा विद्यार्थीको जिल्लागत संख्या विवरण हरु</h1>
+            <small>(हाल {{ count($govermentstudent)  }}  विवरण {{ count($govermentstudent) > 1 ? 'हरु छन्' : 'छ' }} )</small>
             
         </div>
         <div class="card-body">
