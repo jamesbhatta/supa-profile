@@ -5,8 +5,6 @@
     <div class="container-fluid py-5">
       <div class="row">
         <div class="col-xl-2 col-lg-3 col-md-4 side-client-menus">
-
-          <div class="col-xl-12 col-lg-12 col-md-12 main-content">
             <div style="height: 80px;"></div>
             <div class="list-set">
               <ul class="table-list ">
@@ -66,7 +64,6 @@
 
               </ul>
             </div>
-          </div>
         </div>
         <!-- ================================== -->
         <div class="col-xl-9 col-lg-8 col-md-12">

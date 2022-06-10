@@ -31,6 +31,11 @@ export default {
       default: () => {
         return {
           responsive: true,
+          plugins: {
+            legend: {
+              display: false
+            }
+          }
         };
       },
     },

@@ -12,7 +12,7 @@
           <button type="button" v-on:click="printData()" class="switch-data-type-btn">Print</button>
         </div>
       </div>
-      <table v-if="activeDataType == 'table'" class="table table-responsive-sm table-striped" ref="exportable_table">
+      <table v-if="activeDataType == 'table'" class="table table-responsive-sm table-bordered table-striped" ref="exportable_table">
         <!-- <h4 id="tabletitle">{{ data.title }}</h4> -->
         <thead>
           <slot name="thead-top"></slot>
