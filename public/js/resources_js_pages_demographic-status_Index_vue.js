@@ -258,6 +258,60 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -484,6 +538,21 @@ __webpack_require__.r(__webpack_exports__);
         }], [1, "बेदकोट नगरपालिका", '१२७८०', '५८२५०', '२७०५५', '३११९५'], [2, "बेल्डाँडी गाउँपालिका", '४७२७', '२२०४१', '९९३९', '१२१०२'], [3, "बेलौरी नगरपालिका", '१११५४', '५३९१८', '२५५२६', '२९३९२'], [4, "भिमदत्त नगरपालिका", '२७६९१', '१२३३१६', '५९४००', '६३९१६'], [5, "कृष्णपुर नगरपालिका", '१५२७२', '७२५०१', '३४३४७', '३८१५४'], [6, "लालझाडी गाउँपालिका", '४८२२', '२५२७१', '१२२८२', '१२९८९'], [7, "दोधारा चाँदनी नगरपालिका", '९६५७', '४३४८६', '१९२५४', '२४२३२'], [8, "पुनर्वास नगरपालिका", '१३६७६', '६१६२८', '२८२८६', '३३३४२'], [9, "शुक्लाफाँटा नरपालिका", '१२१२०', '५४३७९', '२४९४८', '२९४३३']]
       }
     };
+  },
+  mounted: function mounted() {
+    this.fetchDatas();
+  },
+  methods: {
+    fetchDatas: function fetchDatas() {
+      var _this = this;
+
+      axios.get("/api/local-level-population").then(function (response) {
+        _this.infoDatas = response.data;
+        console.log(response.data);
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    }
   }
 });
 
@@ -889,6 +958,42 @@ var render = function () {
                 2
               ),
               _vm._v(" "),
+              _vm.infoDatas
+                ? _c("section", { attrs: { id: "profile-summary" } }, [
+                    _c(
+                      "div",
+                      { staticClass: "info-grid" },
+                      _vm._l(_vm.infoDatas, function (item) {
+                        return _c(
+                          "a",
+                          {
+                            key: item.id,
+                            staticClass: "info-card",
+                            class: item.card_theme,
+                            attrs: { href: item.link || "#" },
+                          },
+                          [
+                            _c("div", { staticClass: "value" }, [
+                              _vm._v(_vm._s(item.value)),
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "label" }, [
+                              _vm._v(_vm._s(item.label)),
+                            ]),
+                            _vm._v(" "),
+                            item.icon
+                              ? _c("div", { staticClass: "icon" }, [
+                                  _c("i", { class: item.icon }),
+                                ])
+                              : _vm._e(),
+                          ]
+                        )
+                      }),
+                      0
+                    ),
+                  ])
+                : _vm._e(),
+              _vm._v(" "),
               _c(
                 "data-viewer",
                 { attrs: { data: _vm.languagedata } },
@@ -921,6 +1026,45 @@ var render = function () {
                 ],
                 2
               ),
+              _vm._v(" "),
+              _c("div", [
+                _c("div", { staticClass: "heights" }),
+                _vm._v(" "),
+                _c("div", { staticClass: "data-card" }, [
+                  _c("div", { staticClass: "data-card-body" }, [
+                    _c(
+                      "div",
+                      { staticClass: "d-md-flex mb-2" },
+                      [
+                        _c(
+                          "h3",
+                          {
+                            ref: "exportable_table_title",
+                            staticClass: "h3-responsive data-title",
+                          },
+                          [
+                            _vm._v(
+                              "स्थानीय तहको जनसंख्या, औषत घरपरिवार सदस्य संख्या र लैङ्गिक अनुपात विवरण\n                  "
+                            ),
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _vm._l(_vm.infoDatas, function (item) {
+                          return _c(
+                            "a",
+                            {
+                              staticClass: "info-card",
+                              attrs: { href: "item.link || '#'" },
+                            },
+                            [_vm._v(_vm._s(_vm.infoDatas))]
+                          )
+                        }),
+                      ],
+                      2
+                    ),
+                  ]),
+                ]),
+              ]),
               _vm._v(" "),
               _c(
                 "data-viewer",

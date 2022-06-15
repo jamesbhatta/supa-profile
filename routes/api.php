@@ -19,3 +19,4 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('info-cards', 'InfoCardController@listingApi');
+Route::get('local-level-population', 'LocalPopulationController@listingLocalPopulation');

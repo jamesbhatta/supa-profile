@@ -13,6 +13,13 @@ class LocalPopulationController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    public function listingLocalPopulation()
+    {
+        $infoCards = LocalPopulation::all();
+
+        return response()->json($infoCards, 200);
+    }
     public function index()
     {
         $district=District::all();

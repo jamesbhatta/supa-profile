@@ -331,6 +331,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     var _ref;
@@ -761,6 +762,20 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         value: "बाजुरा"
       }, "स्थानीय तह /निकाय", "संचालन गने संस्थाको नाम", "संचालन गने संस्थाको सम्पर्क नम्बर"], [1, "बुढिगंगा नगरपालिका", "टाटे स्वास्थ्य चौकी", "९८६५६०९२४३,९८००५४८२७३"], [2, "हिमाली गाउँपालिका", "हिमाली गाउँपालिका", "९८६०१७६३८४"], [3, "स्वमिकार्तिक गाउँपालिका", "स्वमिकार्तिक गाउँपालिका", "९८४५००५५४२"]]
     }), _ref;
+  },
+  mounted: function mounted() {
+    this.fetchDatas();
+  },
+  methods: {
+    fetchDatas: function fetchDatas() {
+      var _this = this;
+
+      axios.get("/api/info-cards").then(function (response) {
+        _this.infoCards = response.data;
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    }
   }
 });
 
@@ -1438,7 +1453,7 @@ var staticRenderFns = [
                 staticStyle: { "overflow-y": "scroll" },
               },
               [
-                _c("ul", { staticClass: "table-list " }, [
+                _c("ul", { staticClass: "table-list ", attrs: { ul: "" } }, [
                   _c("li", { staticClass: "my-3" }, [
                     _c("a", { attrs: { href: "#table_1" } }, [
                       _vm._v("सुदूरपश्चिममा रहेका कूल विद्यार्थी संख्या विवरण"),
@@ -1554,7 +1569,7 @@ var staticRenderFns = [
                   _c("li", { staticClass: "my-3" }, [
                     _c("a", { attrs: { href: "#table_18" } }, [
                       _vm._v(
-                        "कूल प्रजनन् दर, जन्मको अबस्थाको सरदर आयु,मृत्यूदर (Mortality) बारे मा संक्षिप्त क्षबबरण"
+                        "कूल प्रजनन् दर, जन्मको अबस्थाको सरदर आयु,मृत्यूदर (Mortality) बारे मा संक्षिप्त\n                  क्षबबरण"
                       ),
                     ]),
                   ]),

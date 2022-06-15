@@ -52,12 +52,12 @@
                 <li class="my-3">
                   <a href="#table_11">सुराष्ट्रिय जनगणना २०७८ को प्रारम्भिक तथ्यांक अनुसार स्थानीय तहको जनसंख्या</a>
                 </li>
-              
+
               </ul>
             </div>
           </div>
         </div>
-        
+
         <div class="col-xl-8 col-lg-7 col-md-12">
           <div class="container py-5">
             <h1 class="page-title">जनसांख्यिक स्थिति</h1>
@@ -78,7 +78,7 @@
             </data-viewer>
 
             <data-viewer :data="nationalcenses"></data-viewer>
-            
+
             <data-viewer :data="beginingcenses">
               <template slot="thead-top">
                 <tr>
@@ -126,7 +126,7 @@
               </template>
 
             </data-viewer>
-            
+
             <data-viewer :data="districtpopulation">
               <template slot="thead-top">
                 <tr>
@@ -152,7 +152,7 @@
 
 
             </data-viewer>
-            
+
             <data-viewer :data="religionpopulationData">
               <template slot="chart">
                 <div class="row">
@@ -167,7 +167,7 @@
                 </div>
               </template>
             </data-viewer>
-            
+
             <data-viewer :data="supaandotherprovincedata">
               <template slot="chart">
                 <div class="row">
@@ -183,7 +183,7 @@
               </template>
 
             </data-viewer>
-            
+
             <data-viewer :data="jatjatidata">
 
               <template slot="chart">
@@ -200,7 +200,18 @@
               </template>
 
             </data-viewer>
-           
+
+            <section v-if="infoDatas" id="profile-summary">
+              <div class="info-grid">
+                <a v-for="item in infoDatas" class="info-card" v-bind:key="item.id" :href="item.link || '#'"
+                  :class="item.card_theme">
+                  <div class="value">{{ item.value }}</div>
+                  <div class="label">{{ item.label }}</div>
+                  <div v-if="item.icon" class="icon"><i :class="item.icon"></i></div>
+                </a>
+              </div>
+            </section>
+
             <data-viewer :data="languagedata">
 
               <template slot="chart">
@@ -216,7 +227,50 @@
                 </div>
               </template>
             </data-viewer>
-            
+            <div>
+              
+              <div class="heights"></div>
+              <div class="data-card">
+                <div class="data-card-body">
+                  <div class="d-md-flex mb-2">
+                    <h3  class="h3-responsive data-title" ref="exportable_table_title">स्थानीय तहको जनसंख्या, औषत घरपरिवार सदस्य संख्या र लैङ्गिक अनुपात विवरण
+                    </h3>
+                    <a v-for="item in infoDatas" class="info-card" href="item.link || '#'">{{infoDatas}}</a>
+                    <!-- <div class="ml-auto switch-type-btn-group">
+                      <button type="button" v-on:click="setActive('table')" class="switch-data-type-btn"
+                        v-bind:class="{ active: activeDataType == 'table' }">Table</button>
+                      <button v-if="hasChartSlot" type="button" v-on:click="setActive('chart')"
+                        class="switch-data-type-btn" v-bind:class="{ active: activeDataType == 'chart' }">Chart</button>
+                      <button type="button" v-on:click="exportToExcel()" class="switch-data-type-btn">Export</button>
+                      <button type="button" v-on:click="printData()" class="switch-data-type-btn">Print</button>
+                    </div> -->
+                  </div>
+                  <!-- <table v-if="activeDataType == 'table'" class="table table-responsive-sm table-bordered table-striped"
+                    ref="exportable_table">
+                    <thead>
+                      <slot name="thead-top"></slot>
+                      <tr>
+                        <th v-for="(label, index) in data.labels" v-bind:key="index" class="font-weight-bold">{{ label
+                        }}</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr v-for="(row, index) in data.data" v-bind:key="index">
+                        <template v-for="(item, index) in row">
+                          <td v-if="typeof item == 'object'" v-bind:key="index" :colspan="item.colspan"
+                            :rowspan="item.rowspan">{{ item.value }}</td>
+                        </template>
+                      </tr>
+                      <slot name="tbody-bottom"></slot>
+                    </tbody>
+                  </table> -->
+
+                  <!-- <div v-show="activeDataType == 'chart'">
+                    <slot name="chart" ref="exportable_chart"></slot>
+                  </div> -->
+                </div>
+              </div>
+            </div>
             <data-viewer :data="laingikanupat">
               <template slot="thead-top">
                 <tr>
@@ -251,7 +305,7 @@ export default {
     return {
       // 3.1
       geographicalPopulationData: {
-        id:'table_1',
+        id: 'table_1',
         title: "सुदूरपश्चिम प्रदेशका भौगोलिक क्षेत्रगत जनसंख्या तथा जनघनत्व विवरण",
         labels: ["क्षेत्र", "जनसङ्ख्या", "क्षेत्रफल (वर्ग कि.मि.)", "जनघनत्व(जना/वर्ग कि.मि.)"],
         data: [
@@ -282,7 +336,7 @@ export default {
 
       // 3.1.1
       nationalcenses: {
-        id:'table_2',
+        id: 'table_2',
         title: "राष्ट्रिय जनगणना २०७८ को प्रारम्भिक तथ्याङ्क अनुसार",
         labels: ["क्र.स.", "क्षेत्र", "2078", "2068"],
         data: [
@@ -300,7 +354,7 @@ export default {
 
       // 3.1.2
       beginingcenses: {
-        id:'table_3',
+        id: 'table_3',
         title: "राष्ट्रिय जनगणना २०७८ को प्रारम्भिक तथ्याङ्क अनुसार जिल्लागत जनसंख्या विवरण",
         labels: ["क्षेत्र", "कुल जनसंख्या(२०६८)", "जनगणना घरसंख्या", "घरपरिवार संख्या", "जम्मा", "पुरुष", "महिला", "लैंगिक अनुपात", "औषत परिवार आकार", "वार्षिक वृद्धिदर(%)", "जनघनत्व र(प्रतिवग कि.मि.)"],
         data: [
@@ -332,7 +386,7 @@ export default {
       },
 
       beginingcenses1: {
-        id:'table_4',
+        id: 'table_4',
         title: "राष्ट्रिय जनगणना २०७८ को प्रारम्भिक तथ्याङ्क अनुसार जिल्लागत जनसंख्या विवरण",
         labels: ["क्षेत्र", "जम्मा", "पुरुष", "महिला", "प्रतिशत"],
         data: [
@@ -371,7 +425,7 @@ export default {
 
       // 3.2
       districtpopulation: {
-        id:'table_5',
+        id: 'table_5',
         title: "जिल्लागत जनसंख्या वितरण",
         labels: ["जिल्ला", "घरपरिवार संख्या", "औषत परिवार संख्या", "महिला जनसङ्ख्या", "पुरुष जनसङ्ख्या", "जम्मा जनसङ्ख्या", "प्रदेशको कुल जनसंख्याका प्रतिशत", "लैङ्गिक अनुपात", "जनसंख्या बृद्धिदर", "जनघनत्व( प्रति वग कि.मि.)"],
         data: [
@@ -404,7 +458,7 @@ export default {
 
       // 3.4
       religionpopulationData: {
-        id:'table_6',
+        id: 'table_6',
         title: "धर्मावलम्वीका आधारमा जिल्लागत विवरण",
         labels: ["जिल्ला", "जम्मा", "हिन्दु", "बौद्ध", "इश्लाम", "किराँत", "क्रिश्चियन", "प्रकृति", "अन्य"],
         data: [
@@ -442,7 +496,7 @@ export default {
 
       // 3.5
       supaandotherprovincedata: {
-        id:'table_7',
+        id: 'table_7',
         title: "सुदूरपश्चिम प्रदेश र अन्य प्रदेशमा रहेको जनसांख्यिक स्थिति",
         labels: ["प्रदेश", "जनसङ्ख्या", "प्रतिशत", "जनसंख्या बृद्धिदर"],
         data: [
@@ -470,7 +524,7 @@ export default {
       },
       // 3.6
       jatjatidata: {
-        id:'table_8',
+        id: 'table_8',
         title: "जातजाती आधारमा रहेको जनसंख्या",
         labels: ["क्र.स.", "प्रदेश", "सङ्ख्या", "प्रतिशत"],
         data: [
@@ -503,7 +557,7 @@ export default {
 
       // 3.7
       languagedata: {
-        id:'table_9',
+        id: 'table_9',
         title: "प्रखुम दश भाषाभाषी विवरण",
         labels: ["क्र.स.", "भाषा", "जनसंख्या", "प्रतिशत"],
         data: [
@@ -533,7 +587,7 @@ export default {
 
       // 3.8
       laingikanupat: {
-        id:'table_10',
+        id: 'table_10',
         title: "स्थानीय तहको जनसंख्या, औषत घरपरिवार सदस्य संख्या र लैङ्गिक अनुपात विवरण",
         labels: ["क्र.स.", "बाजुरा", "घरपरिवार संख्या", "जम्मा", "पुरुष", "महिला", "औषत घरपरिवार सदस्य संख्या", "लैगिंक अनुपात", "महिला", "पुरुष", "जम्मा"],
         data: [
@@ -771,7 +825,7 @@ export default {
 
       // 3.8.1
       AccordingtothePreliminaryDataofNationalCensus: {
-        id:'table_11',
+        id: 'table_11',
         title: "सुराष्ट्रिय जनगणना २०७८ को प्रारम्भिक तथ्यांक अनुसार स्थानीय तहको जनसंख्या",
         labels: ["क्र.स.", "बाजुरा", "परिवार संख्या", "जम्मा", "पुरुष", "महिला",],
         data: [
@@ -923,7 +977,25 @@ export default {
       },
     };
   },
+
+  mounted() {
+    this.fetchDatas();
+  },
+
+  methods: {
+    fetchDatas() {
+      axios
+        .get("/api/local-level-population")
+        .then((response) => {
+          this.infoDatas = response.data;
+          console.log(response.data);
+        })
+        .catch((error) => console.log(error));
+    },
+  },
 };
+
+
 </script>
 
 

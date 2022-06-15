@@ -491,9 +491,9 @@ export default {
     };
   },
 
-  mounted() {
-    this.fetchInfoCards();
-  },
+    mounted() {
+      this.fetchInfoCards();
+    },
 
   methods: {
     fetchInfoCards() {
