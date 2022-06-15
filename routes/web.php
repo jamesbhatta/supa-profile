@@ -123,6 +123,13 @@ Route::delete('economic-indicator/{economicIndicator}', 'EconomicIndicatorContro
 Route::get('economic-indicator/{economicIndicator}/edit', 'EconomicIndicatorController@edit')->name('economic-indicator.edit');
 Route::put('economic-indicator/{economicIndicator}', 'EconomicIndicatorController@update')->name('economic-indicator.update');
 
+// 
+Route::get('revenue', 'RevenueController@index')->name('revenue.index');
+Route::post('revenue', 'RevenueController@store')->name('revenue.store');
+Route::delete('revenue/{revenue}', 'RevenueController@destroy')->name('revenue.destroy');
+Route::get('revenue/{revenue}/edit', 'RevenueController@edit')->name('revenue.edit');
+Route::put('revenue/{revenue}', 'RevenueController@update')->name('revenue.update');
+
 Route::any('/{all}', function () {
     return view('app');
 })->where(['all' => '.*']);

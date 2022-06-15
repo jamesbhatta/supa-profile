@@ -267,6 +267,12 @@
                         <span class="mx-3"><i class="fa fa-circle"></i></span>आर्थिक सूचकहरु
                     </a>
                 </li>
+
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('revenue.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span>राजश्वको विवरण
+                    </a>
+                </li>
                
             </ul>
         </li>

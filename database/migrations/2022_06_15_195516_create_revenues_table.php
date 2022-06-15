@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateEconomicIndicatorsTable extends Migration
+class CreateRevenuesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateEconomicIndicatorsTable extends Migration
      */
     public function up()
     {
-        Schema::create('economic_indicators', function (Blueprint $table) {
+        Schema::create('revenues', function (Blueprint $table) {
             $table->id();
             $table->string('title');
             $table->string('price');
@@ -28,6 +28,6 @@ class CreateEconomicIndicatorsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('economic_indicators');
+        Schema::dropIfExists('revenues');
     }
 }
