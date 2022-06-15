@@ -92,6 +92,15 @@ Route::post('current-ministry', 'CurrentMinistryController@store')->name('curren
 Route::delete('current-ministry/{currentMinistry}', 'CurrentMinistryController@destroy')->name('current-ministry.destroy');
 Route::get('current-ministry/{currentMinistry}/edit', 'CurrentMinistryController@edit')->name('current-ministry.edit');
 Route::put('current-ministry/{currentMinistry}', 'CurrentMinistryController@update')->name('current-ministry.update');
+
+//
+Route::get('province-head', 'PrivinceHeadController@index')->name('province-head.index');
+Route::post('province-head', 'PrivinceHeadController@store')->name('province-head.store');
+Route::delete('province-head/{provinceHead}', 'PrivinceHeadController@destroy')->name('province-head.destroy');
+Route::get('province-head/{provinceHead}/edit', 'PrivinceHeadController@edit')->name('province-head.edit');
+Route::put('province-head/{provinceHead}', 'PrivinceHeadController@update')->name('province-head.update');
+
+
 Route::any('/{all}', function () {
     return view('app');
 })->where(['all' => '.*']);

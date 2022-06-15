@@ -168,6 +168,13 @@
                                     class="fas fa-circle"></i></span>हालको मन्त्रिपरिषद्</a>
                     </li>
                 @endhasanyrole
+
+                @hasanyrole('super-admin|admin')
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('province-head.index') }}"><span class="mx-3"><i
+                                class="fas fa-circle"></i></span>प्रदेश प्रमुखहरु</a>
+                </li>
+            @endhasanyrole
                 
             </ul>
         </li>
