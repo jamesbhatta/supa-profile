@@ -273,6 +273,12 @@
                         <span class="mx-3"><i class="fa fa-circle"></i></span>राजश्वको विवरण
                     </a>
                 </li>
+
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('budget-resource.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span>बजेट स्रोतको अवस्था
+                    </a>
+                </li>
                
             </ul>
         </li>

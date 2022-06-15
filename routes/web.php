@@ -130,6 +130,13 @@ Route::delete('revenue/{revenue}', 'RevenueController@destroy')->name('revenue.d
 Route::get('revenue/{revenue}/edit', 'RevenueController@edit')->name('revenue.edit');
 Route::put('revenue/{revenue}', 'RevenueController@update')->name('revenue.update');
 
+// 
+Route::get('budget-resource', 'BudgetResourceStatusController@index')->name('budget-resource.index');
+Route::post('budget-resource', 'BudgetResourceStatusController@store')->name('budget-resource.store');
+Route::delete('budget-resource/{budgetResource}', 'BudgetResourceStatusController@destroy')->name('budget-resource.destroy');
+Route::get('budget-resource/{budgetResource}/edit', 'BudgetResourceStatusController@edit')->name('budget-resource.edit');
+Route::put('budget-resource/{budgetResource}', 'BudgetResourceStatusController@update')->name('budget-resource.update');
+
 Route::any('/{all}', function () {
     return view('app');
 })->where(['all' => '.*']);
