@@ -86,7 +86,12 @@ Route::put('info-card/{infocard}', 'InfoCardController@update')->name('info-card
 
 // Route::get('info-card/create','InfoCardController@create')->name('info-card.create');
 // 
-
+// ministry
+Route::get('current-ministry', 'CurrentMinistryController@index')->name('current-ministry.index');
+Route::post('current-ministry', 'CurrentMinistryController@store')->name('current-ministry.store');
+Route::delete('current-ministry/{currentMinistry}', 'CurrentMinistryController@destroy')->name('current-ministry.destroy');
+Route::get('current-ministry/{currentMinistry}/edit', 'CurrentMinistryController@edit')->name('current-ministry.edit');
+Route::put('current-ministry/{currentMinistry}', 'CurrentMinistryController@update')->name('current-ministry.update');
 Route::any('/{all}', function () {
     return view('app');
 })->where(['all' => '.*']);

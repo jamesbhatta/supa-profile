@@ -156,6 +156,22 @@
         </li>
         @endhasrole --}}
 
+          {{-- ============Unit 1=========== --}}
+          <li class="nav-item">
+            <a href="#unit1" data-toggle="collapse" aria-expanded="false"
+                class="dropdown-toggle collapsed nav-link"><span class="text-default"><i
+                        class="fas fa-tools"></i></span>भौगोलिक तथा राजनीतिक अवस्था</a>
+            <ul class="list-unstyled collapse" id="unit1" style="">
+                @hasanyrole('super-admin|admin')
+                    <li class="nav-item sub-nav">
+                        <a class="nav-link" href="{{ route('current-ministry.index') }}"><span class="mx-3"><i
+                                    class="fas fa-circle"></i></span>हालको मन्त्रिपरिषद्</a>
+                    </li>
+                @endhasanyrole
+                
+            </ul>
+        </li>
+
         {{-- ============configrations=========== --}}
         <li class="nav-item">
             <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"
