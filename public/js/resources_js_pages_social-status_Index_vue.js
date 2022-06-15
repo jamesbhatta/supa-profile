@@ -1431,14 +1431,14 @@ var staticRenderFns = [
           [
             _c("div", { staticStyle: { height: "80px" } }),
             _vm._v(" "),
-            _c("div", { staticClass: "list-set" }, [
-              _c(
-                "ul",
-                {
-                  staticClass: "table-list ",
-                  staticStyle: { overflow: "auto" },
-                },
-                [
+            _c(
+              "div",
+              {
+                staticClass: "list-set",
+                staticStyle: { "overflow-y": "scroll" },
+              },
+              [
+                _c("ul", { staticClass: "table-list " }, [
                   _c("li", { staticClass: "my-3" }, [
                     _c("a", { attrs: { href: "#table_1" } }, [
                       _vm._v("सुदूरपश्चिममा रहेका कूल विद्यार्थी संख्या विवरण"),
@@ -1590,9 +1590,9 @@ var staticRenderFns = [
                       _vm._v("एम्बुलेन्स वििरण"),
                     ]),
                   ]),
-                ]
-              ),
-            ]),
+                ]),
+              ]
+            ),
           ]
         ),
       ]

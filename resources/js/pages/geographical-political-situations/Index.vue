@@ -7,7 +7,7 @@
         <div class="col-xl-2 col-lg-3 col-md-4 side-client-menus">
             <div style="height: 80px;"></div>
             <div class="list-set">
-              <ul class="table-list ">
+              <ul class="table-list " style="overflow: auto;">
                 <li class="my-3">
                   <a href="#table_1">सुदूरपश्चिम प्रदेशको भौगोलिक
                     क्षेत्रगत क्षेत्रफल</a>

@@ -6,8 +6,8 @@
 
           <div class="col-xl-12 col-lg-12 col-md-12 main-content" >
             <div style="height: 80px;"></div>
-            <div class="list-set" >
-              <ul class="table-list " style="overflow: auto;" >
+            <div class="list-set"  style="overflow-y: scroll;">
+              <ul class="table-list " >
                 <li class="my-3">
                   <a href="#table_1">सुदूरपश्चिममा रहेका कूल विद्यार्थी संख्या विवरण</a>
                 </li>

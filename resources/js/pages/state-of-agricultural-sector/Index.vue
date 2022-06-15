@@ -4,57 +4,14 @@
     <div class="container-fluid py-5">
       <div class="row">
         <div class="col-xl-2 col-lg-3 col-md-4 side-client-menus">
-
-    <data-viewer :data="utpadanmaagadibadhekabali"></data-viewer>
-    <div class="my-5"></div>
-    <data-viewer :data="parmukhkhadiyennebali">
-      <template slot="thead-top">
-        <tr>
-          <th colspan="1"></th>
-        </tr>
-        <tr>
-          <th colspan="1"></th>
-          <th colspan="2" class="bg-light text-center font-weight-bold">२०७५/२०७६</th>
-          <th colspan="2" class="bg-light text-center font-weight-bold">२०७६/२०७७</th>
-        </tr>
-      </template>
-    </data-viewer>
-    <div class="my-5"></div>
-    <data-viewer :data="hiudebalidata"></data-viewer>
-    <div class="my-5"></div>
-    <data-viewer :data="barsebalidata"></data-viewer>
-    <div class="my-5"></div>
-    <data-viewer :data="dalhandata"></data-viewer>
-    <div class="my-5"></div>
-    <data-viewer :data="telhanbalidata"></data-viewer>
-    <div class="my-5"></div>
-    <data-viewer :data="barsetarkaribalidata"></data-viewer>
-    <div class="my-5"></div>
-    <data-viewer :data="khadyannabibaran"></data-viewer>
-    <div class="my-5"></div>
-    <data-viewer :data="jillaanusarkhadyannautpadanbibaran"></data-viewer>
-    <div class="my-5"></div>
-    <data-viewer :data="khadyannautpadanbibaran"></data-viewer>
-    <div class="my-5"></div>
-    <data-viewer :data="LivestockandPoultryStatisticsintheFarWest"></data-viewer>
-    <div class="my-5"></div>
-    <data-viewer :data="dudhalupasu">
-      
-       <template slot="chart">
-        <div class="row">
-          <div class="col-md-6">
-            <pie-chart :chart-data="dudhalupasuChartData"></pie-chart>
-          </div>
-          <div class="col-md-6">
-            <bar-chart :chart-data="dudhalupasuChartData"></bar-chart>
-          </div>
-        </div>
-      </template>
-    </data-viewer>
-    <div class="my-5"></div>
-    <data-viewer :data="meatproduction"></data-viewer>
-                   <ul>
-                   <li class="my-3">
+          <div class="col-xl-12 col-lg-12 col-md-12 main-content">
+            <div style="height: 80px;"></div>
+            <div class="list-set">
+              <ul class="table-list " style="overflow: auto;">
+              <li class="my-3">
+                <a href="#table_1">प्रदेशमा भू – स्वामित्वको अवस्था</a>
+              </li>
+                <li class="my-3">
                   <a href="#table_2">भू – उपयोगको अवस्था</a>
                 </li>
 
@@ -77,23 +34,23 @@
                 <li class="my-3">
                   <a href="#table_7">प्रमुख खाद्यान्न बालीहरुको तुलनात्मक क्षेत्रफल तथा उत्पादन विवरण</a>
                 </li>
-
+      
                 <li class="my-3">
                   <a href="#table_8">सुदूरपश्चिमका प्रमुख हिउँदे बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व</a>
                 </li>
-
+      
                 <li class="my-3">
                   <a href="#table_9">सुदूरपश्चिमका प्रमुख बर्षे बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व</a>
                 </li>
-
+      
                 <li class="my-3">
                   <a href="#table_10">सुदूरपश्चिमका प्रमुख दलहन बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व</a>
                 </li>
-
+      
                 <li class="my-3">
                   <a href="#table_11">सुदूरपश्चिमका प्रमुख तेलहन बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व</a>
                 </li>
-
+      
                 <li class="my-3">
                   <a href="#table_12">प्रमुख बर्षे तरकारी बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व</a>
                 </li>
@@ -101,7 +58,7 @@
                 <li class="my-3">
                   <a href="#table_13"> उपभोग्य खाद्यान्नको स्थिति प्रदेशगत विवरण प्रक्षेपित जनसंख्यामा (मे.ट.) २०७५/२०७६</a>
                 </li>
-                  
+
                 <li class="my-3">
                   <a href="#table_14">वाली अनुसार विभिन्न आर्थिक वर्षहरुका खाद्यान्न</a>
                 </li>
@@ -139,7 +96,7 @@
                   <a href="#table_22">सुदूरपश्चिममा खाद्य सुरक्षाको अवस्था</a>
                 </li>
 
-               
+
               </ul>
             </div>
           </div>
@@ -150,7 +107,7 @@
           <div class="container py-5">
             <h1 class="page-title">कृषि क्षेत्र</h1>
             <data-viewer :data="vuswamitwadata"></data-viewer>
-            
+
             <data-viewer :data="vuupyogkoData">
               <template slot="chart">
                 <div class="row">
@@ -163,7 +120,7 @@
                 </div>
               </template>
             </data-viewer>
-            
+
             <data-viewer :data="supakirsiipaj">
               <template slot="thead-top">
                 <tr>
@@ -176,7 +133,7 @@
                 </tr>
               </template>
             </data-viewer>
-            
+
             <data-viewer :data="supasichai">
               <template slot="thead-top">
                 <tr>
@@ -196,7 +153,7 @@
                 </div>
               </template>
             </data-viewer>
-           
+
             <data-viewer :data="supabaliutpadan">
               <template slot="thead-top">
                 <tr>
@@ -209,9 +166,9 @@
                 </tr>
               </template>
             </data-viewer>
-           
+
             <data-viewer :data="utpadanmaagadibadhekabali"></data-viewer>
-            
+
             <data-viewer :data="parmukhkhadiyennebali">
               <template slot="thead-top">
                 <tr>
@@ -224,25 +181,25 @@
                 </tr>
               </template>
             </data-viewer>
-            
+
             <data-viewer :data="hiudebalidata"></data-viewer>
-            
+
             <data-viewer :data="barsebalidata"></data-viewer>
-            
+
             <data-viewer :data="dalhandata"></data-viewer>
-            
+
             <data-viewer :data="telhanbalidata"></data-viewer>
-            
+
             <data-viewer :data="barsetarkaribalidata"></data-viewer>
-            
+
             <data-viewer :data="khadyannabibaran"></data-viewer>
-            
-            <data-viewer :data="khadyannautpadanbibaran"></data-viewer> 
-            
+
+            <data-viewer :data="khadyannautpadanbibaran"></data-viewer>
+
             <data-viewer :data="jillaanusarkhadyannautpadanbibaranData"></data-viewer>
-            
+
             <data-viewer :data="jillaanusarkhadyannautpadanbibaran"></data-viewer>
-            
+
             <data-viewer :data="dudhalupasu">
 
               <template slot="chart">
@@ -256,7 +213,7 @@
                 </div>
               </template>
             </data-viewer>
-            
+
             <data-viewer :data="meatproduction">
 
 
@@ -271,7 +228,7 @@
                 </div>
               </template>
             </data-viewer>
-            
+
             <data-viewer :data="eggproduction">
               <template slot="chart">
                 <div class="row">
@@ -284,7 +241,7 @@
                 </div>
               </template>
             </data-viewer>
-          
+
             <data-viewer :data="woolproduction">
               <template slot="chart">
                 <div class="row">
@@ -297,7 +254,7 @@
                 </div>
               </template>
             </data-viewer>
-           
+
             <data-viewer :data="supapasujanyepadarth">
               <template slot="chart">
                 <div class="row">
@@ -310,12 +267,18 @@
                 </div>
               </template>
             </data-viewer>
-           
+
             <data-viewer :data="khadhyesuraxa"></data-viewer>
 
           </div>
         </div>
+
       </div>
+    </div>
+
+
+
+  </div>
 
 
 
@@ -328,7 +291,7 @@ export default {
 
       // 10.1
       vuswamitwadata: {
-        id:'table_1',
+        id: 'table_1',
         title: "प्रदेशमा भू – स्वामित्वको अवस्था",
         labels: ["जग्गाको स्वामित्व सम्बन्धि विवरण", "घरपरिवार संख्या"],
         data: [
@@ -349,7 +312,7 @@ export default {
       },
       // 10.2
       vuupyogkoData: {
-        id:'table_2',
+        id: 'table_2',
         title: "भू – उपयोगको अवस्था",
         labels: ["क्र.स.", "क्षेत्र", "नेपालको क्षेत्रफल (हे. हजारमा)", "सुदूरपश्चिमको क्षेत्रफल(हे.हजारमा)"],
         data: [
@@ -388,7 +351,7 @@ export default {
 
       // 10.3
       supakirsiipaj: {
-        id:'table_3',
+        id: 'table_3',
         title: "सुदूरपश्चिममा कृषि उपजले ढाकेको जिल्लागत भू – क्षेत्र",
         labels: ["जिल्ला", "खाद्य तथा अन्य बाली हे.", "तरकारी तथा बागवानी", "फलफुल तथा मसला", "खाद्य तथा अन्य बाली", "तरकारी तथा बागवानी", "फलफुल तथा मसला"],
         data: [
@@ -406,7 +369,7 @@ export default {
       },
       // 10.4
       supasichai: {
-        id:'table_4',
+        id: 'table_4',
         title: "सुदूरपश्चिम प्रदेशको जिल्लागत क्षेत्रफल र सिंचाई स्थिति",
         labels: ["क्रस", "जिल्ला", "कूल क्षेत्रफल (हे.)", "खेतीयोग्य जमिन (हे.)", "खेती गरिएको जमिन (हे.)", "बर्षभरि", "आंशिक", "जम्मा"],
         data: [
@@ -435,7 +398,7 @@ export default {
 
       // 10.5
       supabaliutpadan: {
-        id:'table_5',
+        id: 'table_5',
         title: "कृषि बालीको जिल्लागत उत्पादन अवस्था",
         labels: ["जिल्ला", "खाद्य तथा अन्य बाली हे.", "तरकारी तथा बागवानी हे.", "फलफुल तथा मसला हे.", "खाद्य तथा अन्य बाली हे.", "तरकारी तथा बागवानी हे.", "फलफुल तथा मसला हे."],
         data: [
@@ -453,7 +416,7 @@ export default {
 
       // 10.6
       utpadanmaagadibadhekabali: {
-        id:'table_6',
+        id: 'table_6',
         title: "व्यवसायिक उत्पादनमा अगाडी बढेका बाली र पकेट क्षेत्रहरुको जिल्लागत विवरण",
         labels: ["जिल्लाको नाम", "बालीको नाम", "स्थानीय तह, क्षेत्र"],
         data: [
@@ -554,7 +517,7 @@ export default {
 
       // 10.7
       parmukhkhadiyennebali: {
-        id:'table_7',
+        id: 'table_7',
         title: "प्रमुख खाद्यान्न बालीहरुको तुलनात्मक क्षेत्रफल तथा उत्पादन विवरण",
         labels: ["बाली", "क्षेत्रफल हे.", "उत्पादन", "क्षेत्रफल हे.", "उत्पादन"],
         data: [
@@ -568,7 +531,7 @@ export default {
       },
       // 10.8
       hiudebalidata: {
-        id:'table_8',
+        id: 'table_8',
         title: "सुदूरपश्चिमका प्रमुख हिउँदे बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व",
         labels: ["क्रस", "बाली", "क्षेत्रफल हे.", "उत्पादन/अनुमानित मे.ट.", "उत्पादकत्व मे.ट.", "क्षेत्रफल", "उत्पादन/अनुमानित मे.ट.", "उत्पादकत्व मे.ट."],
         data: [
@@ -593,7 +556,7 @@ export default {
       // 10.9
 
       barsebalidata: {
-        id:'table_9',
+        id: 'table_9',
         title: "सुदूरपश्चिमका प्रमुख बर्षे बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व",
         labels: ["क्रस", "बाली", "क्षेत्रफल हे.", "उत्पादन/अनुमानित मे.ट.", "उत्पादकत्व मे.ट.", "क्षेत्रफल", "उत्पादन/अनुमानित मे.ट.", "उत्पादकत्व मे.ट."],
         data: [
@@ -608,7 +571,7 @@ export default {
       },
       // 10.10
       dalhandata: {
-        id:'table_10',
+        id: 'table_10',
         title: "सुदूरपश्चिमका प्रमुख दलहन बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व",
         labels: ["क्रस", "बाली", "क्षेत्रफल हे.", "उत्पादन/अनुमानित मे.ट.", "उत्पादकत्व मे.ट.", "क्षेत्रफल", "उत्पादन/अनुमानित मे.ट.", "उत्पादकत्व मे.ट."],
         data: [
@@ -623,7 +586,7 @@ export default {
       },
       // 10.11
       telhanbalidata: {
-        id:'table_11',
+        id: 'table_11',
         title: "सुदूरपश्चिमका प्रमुख तेलहन बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व",
         labels: ["क्रस", "बाली", "क्षेत्रफल हे.", "उत्पादन/अनुमानित मे.ट.", "उत्पादकत्व मे.ट.", "क्षेत्रफल", "उत्पादन/अनुमानित मे.ट.", "उत्पादकत्व मे.ट."],
         data: [
@@ -637,7 +600,7 @@ export default {
 
       // 10.12
       barsetarkaribalidata: {
-        id:'table_12',
+        id: 'table_12',
         title: "प्रमुख बर्षे तरकारी बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व",
         labels: ["क्रस", "बाली", "क्षेत्रफल हे.", "उत्पादन/अनुमानित मे.ट.", "उत्पादकत्व मे.ट.", "क्षेत्रफल", "उत्पादन/अनुमानित मे.ट.", "उत्पादकत्व मे.ट."],
         data: [
@@ -651,7 +614,7 @@ export default {
       },
       // 10.13
       khadyannabibaran: {
-        id:'table_13',
+        id: 'table_13',
         title: "उपभोग्य खाद्यान्नको स्थिति प्रदेशगत विवरण प्रक्षेपित जनसंख्यामा (मे.ट.) २०७५/२०७६",
         labels: ["प्रदेश", "जनसंख्या", "चामल", "मकै", "कोदो", "फापर", "गहुँ", "जौ", "उपभोग्य खाद्यान्न उत्पादन", "आवश्यक खाद्यान्न", "बचत वा न्यून"],
         data: [
@@ -667,7 +630,7 @@ export default {
       },
       // 10.14
       khadyannautpadanbibaran: {
-        id:'table_14',
+        id: 'table_14',
         title: "वाली अनुसार विभिन्न आर्थिक वर्षहरुका खाद्यान्न उत्पादन तथा आवश्यकताको स्थिति आर्थिक वर्ष २०७२÷०७३ देखी २०७५/०७६ सम्म (मे. टन)",
         labels: ["खाद्यान्न बालीहरु", "2072/073", "2073/074", "2074/075", "2075/076", "2076/077"],
         data: [
@@ -685,7 +648,7 @@ export default {
 
       // 10.15
       jillaanusarkhadyannautpadanbibaranData: {
-        id:'table_15',
+        id: 'table_15',
         title: "जिल्ला अनुसार खाद्यान्न उत्पादन तथा आवश्यकताको स्थितिको जिल्लागत विवरण, आर्थिक वर्ष २०७६/०७७ (प्रारम्भिक अनुमान (मे. टन)",
         labels: ["जिल्ला", "मध्यावधि जनसंख्या", "चमल", "मकै", "कोदो", "फाँपर", "गहुँ", "जौ", "उपभोग्य खाद्यान्न", "आवश्यक खाद्यान्न", "वचत वा न्यून"],
         data: [
@@ -723,7 +686,7 @@ export default {
       },
       // 10.21
       dudhalupasu: {
-        id:'table_17',
+        id: 'table_17',
         title: "सुदूरपश्चिममा दुधालु पशु र दुग्ध उत्पादनको अवस्था (मे.ट. ०७७/०७८)",
         labels: ["जिल्ला", "दुधालु गाइ सख्या", "गाइको दुध", "दुधालु भैसी सख्या", "भैसीको दुध", "जम्मा दुध उत्पादन"],
         data: [
@@ -750,7 +713,7 @@ export default {
       },
       // 10.22
       meatproduction: {
-        id:'table_18',
+        id: 'table_18',
         title: "सुदूरपश्चिममा बार्षिक मासु उत्पादनको अवस्था मे.ट. ०७७/०७८",
         labels: ["जिल्ला", "बफ", "मटन", "चेवन", "पोर्क", "चिकेन", "डक मिट", "जम्मा मासु"],
         data: [
@@ -778,7 +741,7 @@ export default {
       },
       // 10.23
       eggproduction: {
-        id:'table_19',
+        id: 'table_19',
         title: "सुदूरपश्चिममा बार्षिक अण्डा उत्पादनको अवस्था ०७७/०७८",
         labels: ["जिल्ला", "लेयर्स", "हास", "कुखुरा अण्डा", "हास अण्डा", "जम्मा"],
         data: [
@@ -806,7 +769,7 @@ export default {
       },
       // 10.24
       woolproduction: {
-        id:'table_20',
+        id: 'table_20',
         title: "सुदूरपश्चिममा बार्षिक उन उत्पादनको अवस्था ०७७/०७८",
         labels: ["जिल्ला", "भेडा", "उन उत्पादन किले"],
         data: [
@@ -833,7 +796,7 @@ export default {
       },
       // 10.26
       supapasujanyepadarth: {
-        id:'table_21',
+        id: 'table_21',
         title: "सुदूरपश्चिममा पशुपंक्षीजन्य पदार्थको बार्षिक उत्पादनको अवस्था ०७७/०७८",
         labels: ["सि.न.", "उत्पादन", "प्रादेसिक उत्पादन", "प्रादेसिक उपलव्धता", "उपलव्धता राष्ट्रिय ", "प्रती व्यक्ति प्रती बर्ष आवश्यकता", "राष्ट्रिय उत्पादनमा योगदान"],
         data: [
@@ -853,7 +816,7 @@ export default {
       },
       // 10.28
       khadhyesuraxa: {
-        id:'table_22',
+        id: 'table_22',
         title: "सुदूरपश्चिममा खाद्य सुरक्षाको अवस्था",
         labels: ["जिल्ला", "उपभोग्य खाद्यान्न", "आवश्यक खाद्यान्न", "वचत वा न्यून"],
         data: [

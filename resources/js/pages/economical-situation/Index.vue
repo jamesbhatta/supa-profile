@@ -7,7 +7,7 @@
                     <div class="col-xl-12 col-lg-12 col-md-12 main-content">
                         <div style="height: 80px;"></div>
                         <div class="list-set">
-                            <ul class="table-list ">
+                            <ul class="table-list " style="overflow: auto;">
                                 <li class="my-3">
                                     <a href="#table_1">प्रदेशको आर्थिक सूचकहरु</a>
                                 </li>

@@ -830,85 +830,89 @@ var staticRenderFns = [
         _c("div", { staticStyle: { height: "80px" } }),
         _vm._v(" "),
         _c("div", { staticClass: "list-set" }, [
-          _c("ul", { staticClass: "table-list " }, [
-            _c("li", { staticClass: "my-3" }, [
-              _c("a", { attrs: { href: "#table_1" } }, [
-                _vm._v(
-                  "सुदूरपश्चिम प्रदेशको भौगोलिक\n                  क्षेत्रगत क्षेत्रफल"
-                ),
+          _c(
+            "ul",
+            { staticClass: "table-list ", staticStyle: { overflow: "auto" } },
+            [
+              _c("li", { staticClass: "my-3" }, [
+                _c("a", { attrs: { href: "#table_1" } }, [
+                  _vm._v(
+                    "सुदूरपश्चिम प्रदेशको भौगोलिक\n                  क्षेत्रगत क्षेत्रफल"
+                  ),
+                ]),
               ]),
-            ]),
-            _vm._v(" "),
-            _c("li", { staticClass: "my-3" }, [
-              _c("a", { attrs: { href: "#table_2" } }, [
-                _vm._v("प्रदेशगत भौगोलिक\n                  क्षेत्रफल"),
+              _vm._v(" "),
+              _c("li", { staticClass: "my-3" }, [
+                _c("a", { attrs: { href: "#table_2" } }, [
+                  _vm._v("प्रदेशगत भौगोलिक\n                  क्षेत्रफल"),
+                ]),
               ]),
-            ]),
-            _vm._v(" "),
-            _c("li", { staticClass: "my-3" }, [
-              _c("a", { attrs: { href: "#table_3" } }, [
-                _vm._v("प्रदेशको जिल्लागत\n                  क्षेत्रफल"),
+              _vm._v(" "),
+              _c("li", { staticClass: "my-3" }, [
+                _c("a", { attrs: { href: "#table_3" } }, [
+                  _vm._v("प्रदेशको जिल्लागत\n                  क्षेत्रफल"),
+                ]),
               ]),
-            ]),
-            _vm._v(" "),
-            _c("li", { staticClass: "my-3" }, [
-              _c("a", { attrs: { href: "#table_4" } }, [
-                _vm._v("भू – उपयोगको अवस्था"),
+              _vm._v(" "),
+              _c("li", { staticClass: "my-3" }, [
+                _c("a", { attrs: { href: "#table_4" } }, [
+                  _vm._v("भू – उपयोगको अवस्था"),
+                ]),
               ]),
-            ]),
-            _vm._v(" "),
-            _c("li", { staticClass: "my-3" }, [
-              _c("a", { attrs: { href: "#table_5" } }, [
-                _vm._v("स्थानीय तहको जिल्लागत\n                  संख्या"),
+              _vm._v(" "),
+              _c("li", { staticClass: "my-3" }, [
+                _c("a", { attrs: { href: "#table_5" } }, [
+                  _vm._v("स्थानीय तहको जिल्लागत\n                  संख्या"),
+                ]),
               ]),
-            ]),
-            _vm._v(" "),
-            _c("li", { staticClass: "my-3" }, [
-              _c("a", { attrs: { href: "#table_6" } }, [
-                _vm._v(
-                  "प्रदेशमा भौगोलिक विभाजन\n                  अनुसार निर्वाचन क्षेत्रको विवरण"
-                ),
+              _vm._v(" "),
+              _c("li", { staticClass: "my-3" }, [
+                _c("a", { attrs: { href: "#table_6" } }, [
+                  _vm._v(
+                    "प्रदेशमा भौगोलिक विभाजन\n                  अनुसार निर्वाचन क्षेत्रको विवरण"
+                  ),
+                ]),
               ]),
-            ]),
-            _vm._v(" "),
-            _c("li", { staticClass: "my-3" }, [
-              _c("a", { attrs: { href: "#table_7" } }, [
-                _vm._v(
-                  "प्रदेशका जिल्लाहरुमा रहेका\n                  निर्वाचन क्षेत्रको विवरण"
-                ),
+              _vm._v(" "),
+              _c("li", { staticClass: "my-3" }, [
+                _c("a", { attrs: { href: "#table_7" } }, [
+                  _vm._v(
+                    "प्रदेशका जिल्लाहरुमा रहेका\n                  निर्वाचन क्षेत्रको विवरण"
+                  ),
+                ]),
               ]),
-            ]),
-            _vm._v(" "),
-            _c("li", { staticClass: "my-3" }, [
-              _c("a", { attrs: { href: "#table_8" } }, [
-                _vm._v(
-                  "हालसम्म भएका प्रदेश\n                  प्रमुखहरुको नामावली र मिति"
-                ),
+              _vm._v(" "),
+              _c("li", { staticClass: "my-3" }, [
+                _c("a", { attrs: { href: "#table_8" } }, [
+                  _vm._v(
+                    "हालसम्म भएका प्रदेश\n                  प्रमुखहरुको नामावली र मिति"
+                  ),
+                ]),
               ]),
-            ]),
-            _vm._v(" "),
-            _c("li", { staticClass: "my-3" }, [
-              _c("a", { attrs: { href: "#table_9" } }, [
-                _vm._v(
-                  "सुदूरपश्चिम प्रदेशको पहिलो\n                  मन्त्रिपरिषद्"
-                ),
+              _vm._v(" "),
+              _c("li", { staticClass: "my-3" }, [
+                _c("a", { attrs: { href: "#table_9" } }, [
+                  _vm._v(
+                    "सुदूरपश्चिम प्रदेशको पहिलो\n                  मन्त्रिपरिषद्"
+                  ),
+                ]),
               ]),
-            ]),
-            _vm._v(" "),
-            _c("li", { staticClass: "my-3" }, [
-              _c("a", { attrs: { href: "#table_10" } }, [
-                _vm._v(
-                  "सुदूरपश्चिम प्रदेशमा हालको\n                  मन्त्रिपरिषद्"
-                ),
+              _vm._v(" "),
+              _c("li", { staticClass: "my-3" }, [
+                _c("a", { attrs: { href: "#table_10" } }, [
+                  _vm._v(
+                    "सुदूरपश्चिम प्रदेशमा हालको\n                  मन्त्रिपरिषद्"
+                  ),
+                ]),
               ]),
-            ]),
-            _vm._v(" "),
-            _c("li", { staticClass: "my-3" }, [
-              _c("a", { attrs: { href: "#table_11" } }, [
-                _vm._v("प्रदेश सभा सदस्यहरुको\n                  नामावली"),
+              _vm._v(" "),
+              _c("li", { staticClass: "my-3" }, [
+                _c("a", { attrs: { href: "#table_11" } }, [
+                  _vm._v("प्रदेश सभा सदस्यहरुको\n                  नामावली"),
+                ]),
               ]),
-            ]),
-          ]),
+            ]
+          ),
         ]),
       ]
     )
