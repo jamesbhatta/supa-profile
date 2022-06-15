@@ -115,6 +115,14 @@ Route::delete('geographical-population/{geographicalPopulation}', 'GeographicalA
 Route::get('geographical-population/{geographicalPopulation}/edit', 'GeographicalAreaPopulationController@edit')->name('geographical-population.edit');
 Route::put('geographical-population/{geographicalPopulation}', 'GeographicalAreaPopulationController@update')->name('geographical-population.update');
 
+// ==============unit 3=========
+// 
+Route::get('economic-indicator', 'EconomicIndicatorController@index')->name('economic-indicator.index');
+Route::post('economic-indicator', 'EconomicIndicatorController@store')->name('economic-indicator.store');
+Route::delete('economic-indicator/{economicIndicator}', 'EconomicIndicatorController@destroy')->name('economic-indicator.destroy');
+Route::get('economic-indicator/{economicIndicator}/edit', 'EconomicIndicatorController@edit')->name('economic-indicator.edit');
+Route::put('economic-indicator/{economicIndicator}', 'EconomicIndicatorController@update')->name('economic-indicator.update');
+
 Route::any('/{all}', function () {
     return view('app');
 })->where(['all' => '.*']);
