@@ -100,6 +100,12 @@ Route::delete('province-head/{provinceHead}', 'PrivinceHeadController@destroy')-
 Route::get('province-head/{provinceHead}/edit', 'PrivinceHeadController@edit')->name('province-head.edit');
 Route::put('province-head/{provinceHead}', 'PrivinceHeadController@update')->name('province-head.update');
 
+// 
+Route::get('assembly-member', 'StateAssemblyMembersController@index')->name('assembly-member.index');
+Route::post('assembly-member', 'StateAssemblyMembersController@store')->name('assembly-member.store');
+Route::delete('assembly-member/{assemblyMember}', 'StateAssemblyMembersController@destroy')->name('assembly-member.destroy');
+Route::get('assembly-member/{assemblyMember}/edit', 'StateAssemblyMembersController@edit')->name('assembly-member.edit');
+Route::put('assembly-member/{assemblyMember}', 'StateAssemblyMembersController@update')->name('assembly-member.update');
 
 Route::any('/{all}', function () {
     return view('app');

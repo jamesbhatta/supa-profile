@@ -156,26 +156,33 @@
         </li>
         @endhasrole --}}
 
-          {{-- ============Unit 1=========== --}}
-          <li class="nav-item">
+        {{-- ============Unit 1=========== --}}
+        <li class="nav-item">
             <a href="#unit1" data-toggle="collapse" aria-expanded="false"
                 class="dropdown-toggle collapsed nav-link"><span class="text-default"><i
                         class="fas fa-tools"></i></span>भौगोलिक तथा राजनीतिक अवस्था</a>
             <ul class="list-unstyled collapse" id="unit1" style="">
                 @hasanyrole('super-admin|admin')
                     <li class="nav-item sub-nav">
-                        <a class="nav-link" href="{{ route('current-ministry.index') }}"><span class="mx-3"><i
-                                    class="fas fa-circle"></i></span>हालको मन्त्रिपरिषद्</a>
+                        <a class="nav-link" href="{{ route('current-ministry.index') }}"><span
+                                class="mx-3"><i class="fas fa-circle"></i></span>हालको मन्त्रिपरिषद्</a>
                     </li>
                 @endhasanyrole
 
                 @hasanyrole('super-admin|admin')
-                <li class="nav-item sub-nav">
-                    <a class="nav-link" href="{{ route('province-head.index') }}"><span class="mx-3"><i
-                                class="fas fa-circle"></i></span>प्रदेश प्रमुखहरु</a>
-                </li>
-            @endhasanyrole
-                
+                    <li class="nav-item sub-nav">
+                        <a class="nav-link" href="{{ route('province-head.index') }}"><span
+                                class="mx-3"><i class="fas fa-circle"></i></span>प्रदेश प्रमुखहरु</a>
+                    </li>
+                @endhasanyrole
+
+                @hasanyrole('super-admin|admin')
+                    <li class="nav-item sub-nav">
+                        <a class="nav-link" href="{{ route('assembly-member.index') }}"><span
+                                class="mx-3"><i class="fas fa-circle"></i></span>प्रदेश सभा सदस्यहरु</a>
+                    </li>
+                @endhasanyrole
+
             </ul>
         </li>
 
@@ -222,7 +229,8 @@
         {{-- ==========populations============ --}}
         <li class="nav-item">
             <a href="#population" data-toggle="collapse" aria-expanded="false"
-                class="dropdown-toggle collapsed nav-link"><span class="text-default"><i class="fas fa-users"></i></span>@lang('navigation.populations')</a>
+                class="dropdown-toggle collapsed nav-link"><span class="text-default"><i
+                        class="fas fa-users"></i></span>@lang('navigation.populations')</a>
             <ul class="list-unstyled collapse" id="population" style="">
 
                 <li class="nav-item sub-nav">
@@ -248,7 +256,8 @@
 
         <li class="nav-item">
             <a href="#disability" data-toggle="collapse" aria-expanded="false"
-                class="dropdown-toggle collapsed nav-link"><span class="text-default"><i class="fas fa-wheelchair"></i></span>@lang('navigation.disability')</a>
+                class="dropdown-toggle collapsed nav-link"><span class="text-default"><i
+                        class="fas fa-wheelchair"></i></span>@lang('navigation.disability')</a>
             <ul class="list-unstyled collapse" id="disability" style="">
                 <li class="nav-item sub-nav">
                     <a class="nav-link" href="{{ route('disability.index') }}">
@@ -269,7 +278,8 @@
 
         <li class="nav-item">
             <a href="#bank" data-toggle="collapse" aria-expanded="false"
-                class="dropdown-toggle collapsed nav-link"><span class="text-default"><i class="fa fa-home"></i></span>@lang('navigation.bank')</a>
+                class="dropdown-toggle collapsed nav-link"><span class="text-default"><i
+                        class="fa fa-home"></i></span>@lang('navigation.bank')</a>
             <ul class="list-unstyled collapse" id="bank" style="">
                 <li class="nav-item sub-nav">
                     <a class="nav-link" href="{{ route('bank-detail.index') }}">
@@ -293,7 +303,8 @@
 
         <li class="nav-item">
             <a href="#school" data-toggle="collapse" aria-expanded="false"
-                class="dropdown-toggle collapsed nav-link"><span class="text-default"><i class="fa fa-school"></i></span>@lang('navigation.school')</a>
+                class="dropdown-toggle collapsed nav-link"><span class="text-default"><i
+                        class="fa fa-school"></i></span>@lang('navigation.school')</a>
             <ul class="list-unstyled collapse" id="school" style="">
                 <li class="nav-item sub-nav">
                     <a class="nav-link" href="{{ route('school.index') }}">
