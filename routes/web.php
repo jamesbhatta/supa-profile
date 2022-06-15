@@ -107,6 +107,14 @@ Route::delete('assembly-member/{assemblyMember}', 'StateAssemblyMembersControlle
 Route::get('assembly-member/{assemblyMember}/edit', 'StateAssemblyMembersController@edit')->name('assembly-member.edit');
 Route::put('assembly-member/{assemblyMember}', 'StateAssemblyMembersController@update')->name('assembly-member.update');
 
+
+// 
+Route::get('geographical-population', 'GeographicalAreaPopulationController@index')->name('geographical-population.index');
+Route::post('geographical-population', 'GeographicalAreaPopulationController@store')->name('geographical-population.store');
+Route::delete('geographical-population/{geographicalPopulation}', 'GeographicalAreaPopulationController@destroy')->name('geographical-population.destroy');
+Route::get('geographical-population/{geographicalPopulation}/edit', 'GeographicalAreaPopulationController@edit')->name('geographical-population.edit');
+Route::put('geographical-population/{geographicalPopulation}', 'GeographicalAreaPopulationController@update')->name('geographical-population.update');
+
 Route::any('/{all}', function () {
     return view('app');
 })->where(['all' => '.*']);
