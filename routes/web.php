@@ -167,6 +167,13 @@ Route::delete('road-network/{roadNetwork}', 'RoadNetworkController@destroy')->na
 Route::get('road-network/{roadNetwork}/edit', 'RoadNetworkController@edit')->name('road-network.edit');
 Route::put('road-network/{roadNetwork}', 'RoadNetworkController@update')->name('road-network.update');
 
+// 
+Route::get('airport', 'AirportController@index')->name('airport.index');
+Route::post('airport', 'AirportController@store')->name('airport.store');
+Route::delete('airport/{airport}', 'AirportController@destroy')->name('airport.destroy');
+Route::get('airport/{airport}/edit', 'AirportController@edit')->name('airport.edit');
+Route::put('airport/{airport}', 'AirportController@update')->name('airport.update');
+
 Route::any('/{all}', function () {
     return view('app');
 })->where(['all' => '.*']);

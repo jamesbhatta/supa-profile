@@ -309,6 +309,11 @@
                         <span class="mx-3"><i class="fa fa-circle"></i></span>सडक सञ्जाल
                     </a>
                 </li>
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('airport.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span>विमानस्थल
+                    </a>
+                </li>
                 
             </ul>
         </li>
