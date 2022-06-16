@@ -293,6 +293,21 @@
             </ul>
         </li>
 
+        {{-- ==========unit 5============ --}}
+        <li class="nav-item">
+            <a href="#infrastructure" data-toggle="collapse" aria-expanded="false"
+                class="dropdown-toggle collapsed nav-link"><span class="text-default"><i
+                        class="fas fa-users"></i></span>पूर्वाधार विकास</a>
+            <ul class="list-unstyled collapse" id="infrastructure" style="">
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('proud-project.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span>गौरबका आयोजाहरु
+                    </a>
+                </li>
+                
+            </ul>
+        </li>
+
         {{-- ============Disability============ --}}
 
         <li class="nav-item">

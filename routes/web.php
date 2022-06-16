@@ -152,6 +152,13 @@ Route::delete('cooperative/{cooperative}', 'CooperativeController@destroy')->nam
 Route::get('cooperative/{cooperative}/edit', 'CooperativeController@edit')->name('cooperative.edit');
 Route::put('cooperative/{cooperative}', 'CooperativeController@update')->name('cooperative.update');
 
+// 
+Route::get('proud-project', 'ProudProjectController@index')->name('proud-project.index');
+Route::post('proud-project', 'ProudProjectController@store')->name('proud-project.store');
+Route::delete('proud-project/{proudProject}', 'ProudProjectController@destroy')->name('proud-project.destroy');
+Route::get('proud-project/{proudProject}/edit', 'ProudProjectController@edit')->name('proud-project.edit');
+Route::put('proud-project/{proudProject}', 'ProudProjectController@update')->name('proud-project.update');
+
 Route::any('/{all}', function () {
     return view('app');
 })->where(['all' => '.*']);
