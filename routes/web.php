@@ -152,12 +152,20 @@ Route::delete('cooperative/{cooperative}', 'CooperativeController@destroy')->nam
 Route::get('cooperative/{cooperative}/edit', 'CooperativeController@edit')->name('cooperative.edit');
 Route::put('cooperative/{cooperative}', 'CooperativeController@update')->name('cooperative.update');
 
+// Unit 5
 // 
 Route::get('proud-project', 'ProudProjectController@index')->name('proud-project.index');
 Route::post('proud-project', 'ProudProjectController@store')->name('proud-project.store');
 Route::delete('proud-project/{proudProject}', 'ProudProjectController@destroy')->name('proud-project.destroy');
 Route::get('proud-project/{proudProject}/edit', 'ProudProjectController@edit')->name('proud-project.edit');
 Route::put('proud-project/{proudProject}', 'ProudProjectController@update')->name('proud-project.update');
+
+// 
+Route::get('road-network', 'RoadNetworkController@index')->name('road-network.index');
+Route::post('road-network', 'RoadNetworkController@store')->name('road-network.store');
+Route::delete('road-network/{roadNetwork}', 'RoadNetworkController@destroy')->name('road-network.destroy');
+Route::get('road-network/{roadNetwork}/edit', 'RoadNetworkController@edit')->name('road-network.edit');
+Route::put('road-network/{roadNetwork}', 'RoadNetworkController@update')->name('road-network.update');
 
 Route::any('/{all}', function () {
     return view('app');
