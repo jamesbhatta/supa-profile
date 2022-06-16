@@ -279,6 +279,16 @@
                         <span class="mx-3"><i class="fa fa-circle"></i></span>बजेट स्रोतको अवस्था
                     </a>
                 </li>
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('employeement-status.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span>रोजगारको अवस्था
+                    </a>
+                </li>
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('cooperative.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span>सहकारीहरुको विवरण
+                    </a>
+                </li>
                
             </ul>
         </li>
@@ -301,6 +311,7 @@
                         <span class="mx-3"><i class="fa fa-circle"></i></span>@lang('navigation.disability_detail')
                     </a>
                 </li>
+                
 
             </ul>
         </li>

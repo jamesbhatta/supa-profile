@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 Auth::routes(['register' => false]);
 Route::get('/registration', 'FrontendController@index')->name('organization.new');
@@ -143,6 +144,14 @@ Route::post('employeement-status', 'EmployeementStatusController@store')->name('
 Route::delete('employeement-status/{employeementStatus}', 'EmployeementStatusController@destroy')->name('employeement-status.destroy');
 Route::get('employeement-status/{employeementStatus}/edit', 'EmployeementStatusController@edit')->name('employeement-status.edit');
 Route::put('employeement-status/{employeementStatus}', 'EmployeementStatusController@update')->name('employeement-status.update');
+
+// 
+Route::get('cooperative', 'CooperativeController@index')->name('cooperative.index');
+Route::post('cooperative', 'CooperativeController@store')->name('cooperative.store');
+Route::delete('cooperative/{cooperative}', 'CooperativeController@destroy')->name('cooperative.destroy');
+Route::get('cooperative/{cooperative}/edit', 'CooperativeController@edit')->name('cooperative.edit');
+Route::put('cooperative/{cooperative}', 'CooperativeController@update')->name('cooperative.update');
+
 Route::any('/{all}', function () {
     return view('app');
 })->where(['all' => '.*']);
