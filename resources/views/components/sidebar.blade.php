@@ -314,6 +314,11 @@
                         <span class="mx-3"><i class="fa fa-circle"></i></span>विमानस्थल
                     </a>
                 </li>
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('electricity-access.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span>विधुत पहुँच
+                    </a>
+                </li>
                 
             </ul>
         </li>

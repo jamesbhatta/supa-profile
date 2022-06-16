@@ -174,6 +174,13 @@ Route::delete('airport/{airport}', 'AirportController@destroy')->name('airport.d
 Route::get('airport/{airport}/edit', 'AirportController@edit')->name('airport.edit');
 Route::put('airport/{airport}', 'AirportController@update')->name('airport.update');
 
+// 
+Route::get('electricity-access', 'ElectricityAccessController@index')->name('electricity-access.index');
+Route::post('electricity-access', 'ElectricityAccessController@store')->name('electricity-access.store');
+Route::delete('electricity-access/{electricityAccess}', 'ElectricityAccessController@destroy')->name('electricity-access.destroy');
+Route::get('electricity-access/{electricityAccess}/edit', 'ElectricityAccessController@edit')->name('electricity-access.edit');
+Route::put('electricity-access/{electricityAccess}', 'ElectricityAccessController@update')->name('electricity-access.update');
+
 Route::any('/{all}', function () {
     return view('app');
 })->where(['all' => '.*']);
