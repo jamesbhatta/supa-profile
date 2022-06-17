@@ -15,8 +15,8 @@ class CreateEconomicIndicatorsTable extends Migration
     {
         Schema::create('economic_indicators', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
-            $table->string('price');
+            $table->string('detail');
+            $table->string('indicator');
             $table->timestamps();
         });
     }

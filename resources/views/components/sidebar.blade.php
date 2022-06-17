@@ -286,7 +286,7 @@
                     </a>
                 </li>
                 <li class="nav-item sub-nav">
-                    <a class="nav-link" href="{{ route('budget-resource.index') }}">
+                    <a class="nav-link" href="{{ route('total-budget.index') }}">
                         <span class="mx-3"><i class="fa fa-circle"></i></span>कूल बजेट र खर्च
                     </a>
                 </li>
