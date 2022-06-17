@@ -8,7 +8,7 @@
 <div class="container">
     <div class="card z-depth-0">
         <div class="col-12">
-            <label class="col-12 text-center font-weight-bold h4 my-5">सुदूरपश्चिम प्रदेशको पहिलो मन्त्रिपरिषद्</label>
+            <label class="col-12 text-center font-weight-bold h4 my-5">सुदूरपश्चिम प्रदेशमा हालको मन्त्रिपरिषद्</label>
             <hr>
         </div>
         <div class="card-body">

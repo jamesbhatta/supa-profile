@@ -178,6 +178,13 @@ Route::delete('total-student/{totalStudent}', 'TotalStudentController@destroy')-
 Route::get('total-student/{totalStudent}/edit', 'TotalStudentController@edit')->name('total-student.edit');
 Route::put('total-student/{totalStudent}', 'TotalStudentController@update')->name('total-student.update');
 
+// 
+Route::get('district-student', 'DistrictStudentController@index')->name('district-student.index');
+Route::post('district-student', 'DistrictStudentController@store')->name('district-student.store');
+Route::delete('districtl-student/{districtStudent}', 'DistrictStudentController@destroy')->name('district-student.destroy');
+Route::get('district-student/{districtStudent}/edit', 'DistrictStudentController@edit')->name('district-student.edit');
+Route::put('district-student/{districtStudent}', 'DistrictStudentController@update')->name('district-student.update');
+
 // Unit 5
 // 
 Route::get('proud-project', 'ProudProjectController@index')->name('proud-project.index');

@@ -16,9 +16,9 @@ class LocalPopulationController extends Controller
 
     public function listingLocalPopulation()
     {
-        $infoCards = LocalPopulation::all();
+        $infoDatas = LocalPopulation::all();
 
-        return response()->json($infoCards, 200);
+        return response()->json($infoDatas, 200);
     }
     public function index()
     {

@@ -7,9 +7,15 @@ use Illuminate\Http\Request;
 
 class CurrentMinistryController extends Controller
 {
+    public function listingCurrentMinistry()
+    {
+        $infoDatas = CurrentMinistry::get();
+
+        return response()->json($infoDatas, 200);
+    }
     public function index(CurrentMinistry $currentMinistry)
     {
-        $currentMinistries=CurrentMinistry::all();
+        $currentMinistries=CurrentMinistry::get();
         return view('currentMinistry.index',compact(['currentMinistries','currentMinistry']));
     }
     public function store(Request $request)
@@ -20,12 +26,12 @@ class CurrentMinistryController extends Controller
             'ministry'=>"required",
             'team'=>"required"
         ]));
-        return redirect()->back()->with('success',"Added");
+        return redirect()->back()->with('success',"हालको मन्त्रिपरिषद् सफलतापूर्वक थपियो");
     }
     public function destroy(CurrentMinistry $currentMinistry)
     {
         $currentMinistry->delete();
-        return redirect()->back()->with('success','deleted');
+        return redirect()->back()->with('success','हालको मन्त्रिपरिषद् सफलतापूर्वक हटाइयो');
     }
     public function edit(CurrentMinistry $currentMinistry)
     {
@@ -41,6 +47,6 @@ class CurrentMinistryController extends Controller
             'team'=>"required"
         ]);
         $currentMinistry->update($data);
-        return redirect()->route('current-ministry.index')->with('success',"Updated");
+        return redirect()->route('current-ministry.index')->with('success',"हालको मन्त्रिपरिषद् सफलतापूर्वक परिवर्तन भयो");
     }
 }

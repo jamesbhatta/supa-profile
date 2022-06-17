@@ -327,6 +327,21 @@ __webpack_require__.r(__webpack_exports__);
         }, 9.09, 11.95, 11.73, 10.88]]
       }
     };
+  },
+  mounted: function mounted() {
+    this.fetchDatas();
+  },
+  methods: {
+    fetchDatas: function fetchDatas() {
+      var _this = this;
+
+      axios.get("/api/current-ministry").then(function (response) {
+        _this.infoDatas = response.data;
+        console.log(response.data);
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    }
   }
 });
 

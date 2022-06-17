@@ -482,6 +482,22 @@ export default {
       },
     };
   },
+
+    mounted() {
+    this.fetchDatas();
+  },
+
+  methods: {
+    fetchDatas() {
+      axios
+        .get("/api/current-ministry")
+        .then((response) => {
+          this.infoDatas = response.data;
+          console.log(response.data);
+        })
+        .catch((error) => console.log(error));
+    },
+  },
 };
 </script>
 
