@@ -21,3 +21,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('info-cards', 'InfoCardController@listingApi');
 Route::get('local-level-population', 'LocalPopulationController@listingLocalPopulation');
 Route::get('current-ministry', 'CurrentMinistryController@listingCurrentMinistry');
+Route::get('province-head', 'PrivinceHeadController@listingProvinceHead');
+Route::get('state-assembly-member', 'StateAssemblyMembersController@listingStateAssemblyMember');

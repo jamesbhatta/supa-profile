@@ -7,6 +7,22 @@ use Illuminate\Http\Request;
 
 class StateAssemblyMembersController extends Controller
 {
+    public function listingStateAssemblyMember()
+    {
+        $data = StateAssemblyMembers::get();
+        $dataset['labels'] = ["क्र.स.", "नाम थर", "निर्वाचन क्षेत्र", "हालको राजनीतिक दल"];
+        $dataset['data'] = [];
+        foreach ($data as $key => $item) {
+            $dataset['data'][] = [
+                $key + 1,
+                $item->name,
+                $item->constituency,
+                $item->political_parties
+            ];
+        }
+
+        return response()->json($dataset, 200);
+    }
     public function index(StateAssemblyMembers $assemblyMember)
     {
         $assemplyMembers=StateAssemblyMembers::all();
@@ -19,13 +35,13 @@ class StateAssemblyMembersController extends Controller
             'constituency'=>"required",
             'political_parties'=>"required",
         ]));
-        return redirect()->back()->with('success',"Added");
+        return redirect()->back()->with('success',"प्रदेश सभा सदस्यहरुको नामावली सफलतापूर्वक थपियो");
     }
 
     public function destroy(StateAssemblyMembers $assemblyMember)
     {
         $assemblyMember->delete();
-        return redirect()->back()->with('success','Deleted');
+        return redirect()->back()->with('success','प्रदेश सभा सदस्यहरुको नामावली सफलतापूर्वक हटाइयो');
     }
 
     public function edit(StateAssemblyMembers $assemblyMember)
@@ -40,6 +56,6 @@ class StateAssemblyMembersController extends Controller
             'constituency'=>"required",
             'political_parties'=>"required",
         ]));
-        return redirect()->route('assembly-member.index')->with('success',"Update successfully");
+        return redirect()->route('assembly-member.index')->with('success',"प्रदेश सभा सदस्यहरुको नामावली सफलतापूर्वक परिवर्तन भयो");
     }
 }

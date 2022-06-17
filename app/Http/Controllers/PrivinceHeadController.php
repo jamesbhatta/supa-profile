@@ -7,6 +7,22 @@ use Illuminate\Http\Request;
 
 class PrivinceHeadController extends Controller
 {
+    public function listingProvinceHead()
+    {
+        $data = PrivinceHead::get();
+        $dataset['labels'] = ["क्र.स.", "प्रदेश प्रमुख", "देखि", "सम्म"];
+        $dataset['data'] = [];
+        foreach ($data as $key => $item) {
+            $dataset['data'][] = [
+                $key + 1,
+                $item->province_head,
+                $item->from,
+                $item->to
+            ];
+        }
+
+        return response()->json($dataset, 200);
+    }
     public function index(PrivinceHead $provinceHead)
     {
         $provinceheads=PrivinceHead::all();
@@ -19,13 +35,13 @@ class PrivinceHeadController extends Controller
             'from'=>"required",
             'to'=>"required",
         ]));
-        return redirect()->back()->with('success',"added");
+        return redirect()->back()->with('success',"हालसम्म भएका प्रदेश प्रमुखहरुको नामावली र मिति सफलतापूर्वक थपियो");
     }
 
     public function destroy(PrivinceHead $provinceHead)
     {
         $provinceHead->delete();
-        return redirect()->back()->with('success',"deleted");
+        return redirect()->back()->with('success',"हालसम्म भएका प्रदेश प्रमुखहरुको नामावली र मिति सफलतापूर्वक हटाइयो");
     }
     public function edit(PrivinceHead $provinceHead)
     {
@@ -39,6 +55,6 @@ class PrivinceHeadController extends Controller
             'from'=>"required",
             'to'=>"required",
         ]));
-        return redirect()->route('province-head.index')->with('success','Updated');
+        return redirect()->route('province-head.index')->with('success','हालसम्म भएका प्रदेश प्रमुखहरुको नामावली र मिति सफलतापूर्वक परिवर्तन भयो');
     }
 }
