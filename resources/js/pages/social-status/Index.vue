@@ -1944,15 +1944,18 @@ export default {
   },
 
   mounted() {
-    this.fetchDatas();
+    this.fetchTotalStudents();
   },
 
   methods: {
-    fetchDatas() {
+    fetchTotalStudents() {
       axios
-        .get("/api/info-cards")
-        .then((response) => {
-          this.infoCards = response.data;
+        .get("/api/total-student")
+        
+         .then((response) => {
+          this.supastudents.labels = response.data.labels;
+          this.supastudents.data = response.data.data
+          this.infoDatas = response.data;
         })
         .catch((error) => console.log(error));
     },

@@ -7,6 +7,24 @@ use Illuminate\Http\Request;
 
 class TotalStudentController extends Controller
 {
+    public function listingTotalStudent()
+    {
+        $data = TotalStudent::get();
+        $dataset['labels'] = ["कक्षा ", "छात्रा", "छात्र", "जम्मा", "छात्रा", "छात्र", "जम्मा", "छात्रा", "छात्र", "जम्मा"];
+        $dataset['data'] = [];
+        foreach ($data as $key => $item) {
+            $dataset['data'][] = [
+                $key + 1,
+                $item->class,
+                $item->g_male,
+                $item->g_fmale,
+                $item->p_male,
+                $item->p_fmale
+            ];
+        }
+
+        return response()->json($dataset, 200);
+    }
     public function index(TotalStudent $totalStudent)
     {
         $totalStudents=TotalStudent::all();
@@ -21,13 +39,13 @@ class TotalStudentController extends Controller
             'p_male'=>"required",
             'p_fmale'=>"required",
         ]));
-        return redirect()->back()->with('success',"Added");
+        return redirect()->back()->with('success',"कूल विद्यार्थी संख्या विवरण सफलतापूर्वक थपियो");
     }
 
     public function destroy(TotalStudent $totalStudent)
     {
         $totalStudent->delete();
-        return redirect()->back()->with('success',"Delete");
+        return redirect()->back()->with('success',"कूल विद्यार्थी संख्या विवरण सफलतापूर्वक हटाइयो");
     }
     public function edit(TotalStudent $totalStudent)
     {
@@ -43,6 +61,6 @@ class TotalStudentController extends Controller
             'p_male'=>"required",
             'p_fmale'=>"required",
         ]));
-        return redirect()->route("total-student.index")->with('success',"Updated");
+        return redirect()->route("total-student.index")->with('success',"कूल विद्यार्थी संख्या विवरण सफलतापूर्वक परिवर्तन भयो");
     }
 }

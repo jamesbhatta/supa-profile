@@ -978,7 +978,23 @@ export default {
     };
   },
 
-
+ mounted() {
+            this.fetchTotalStudents();
+        },
+    
+        methods: {
+            fetchTotalStudents() {
+                axios
+                    .get("/api/geographical-area-population")
+    
+                    .then((response) => {
+                        this.geographicalPopulationData.labels = response.data.labels;
+                        this.geographicalPopulationData.data = response.data.data
+                        this.infoDatas = response.data;
+                    })
+                    .catch((error) => console.log(error));
+            },
+        },
 };
 
 

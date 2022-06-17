@@ -764,14 +764,16 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     }), _ref;
   },
   mounted: function mounted() {
-    this.fetchDatas();
+    this.fetchTotalStudents();
   },
   methods: {
-    fetchDatas: function fetchDatas() {
+    fetchTotalStudents: function fetchTotalStudents() {
       var _this = this;
 
-      axios.get("/api/info-cards").then(function (response) {
-        _this.infoCards = response.data;
+      axios.get("/api/total-student").then(function (response) {
+        _this.supastudents.labels = response.data.labels;
+        _this.supastudents.data = response.data.data;
+        _this.infoDatas = response.data;
       })["catch"](function (error) {
         return console.log(error);
       });

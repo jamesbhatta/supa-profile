@@ -551,6 +551,22 @@ __webpack_require__.r(__webpack_exports__);
         }]
       }
     };
+  },
+  mounted: function mounted() {
+    this.fetchTotalStudents();
+  },
+  methods: {
+    fetchTotalStudents: function fetchTotalStudents() {
+      var _this = this;
+
+      axios.get("/api/total-student").then(function (response) {
+        _this.supastudents.labels = response.data.labels;
+        _this.supastudents.data = response.data.data;
+        _this.infoDatas = response.data;
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    }
   }
 });
 

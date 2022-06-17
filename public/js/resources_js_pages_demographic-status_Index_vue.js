@@ -538,6 +538,22 @@ __webpack_require__.r(__webpack_exports__);
         }], [1, "बेदकोट नगरपालिका", '१२७८०', '५८२५०', '२७०५५', '३११९५'], [2, "बेल्डाँडी गाउँपालिका", '४७२७', '२२०४१', '९९३९', '१२१०२'], [3, "बेलौरी नगरपालिका", '१११५४', '५३९१८', '२५५२६', '२९३९२'], [4, "भिमदत्त नगरपालिका", '२७६९१', '१२३३१६', '५९४००', '६३९१६'], [5, "कृष्णपुर नगरपालिका", '१५२७२', '७२५०१', '३४३४७', '३८१५४'], [6, "लालझाडी गाउँपालिका", '४८२२', '२५२७१', '१२२८२', '१२९८९'], [7, "दोधारा चाँदनी नगरपालिका", '९६५७', '४३४८६', '१९२५४', '२४२३२'], [8, "पुनर्वास नगरपालिका", '१३६७६', '६१६२८', '२८२८६', '३३३४२'], [9, "शुक्लाफाँटा नरपालिका", '१२१२०', '५४३७९', '२४९४८', '२९४३३']]
       }
     };
+  },
+  mounted: function mounted() {
+    this.fetchTotalStudents();
+  },
+  methods: {
+    fetchTotalStudents: function fetchTotalStudents() {
+      var _this = this;
+
+      axios.get("/api/geographical-area-population").then(function (response) {
+        _this.geographicalPopulationData.labels = response.data.labels;
+        _this.geographicalPopulationData.data = response.data.data;
+        _this.infoDatas = response.data;
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    }
   }
 });
 

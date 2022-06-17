@@ -312,7 +312,7 @@
             <ul class="list-unstyled collapse" id="socialDevelopment" style="">
                 <li class="nav-item sub-nav">
                     <a class="nav-link" href="{{ route('total-student.index') }}">
-                        <span class="mx-3"><i class="fa fa-circle"></i></span> कूल बजेट र खर्च
+                        <span class="mx-3"><i class="fa fa-circle"></i></span> कूल विद्यार्थी संख्या
                     </a>
                 </li>
 

@@ -29,3 +29,7 @@ Route::get('revenue', 'RevenueController@listingRevenue');
 Route::get('budget-resource', 'BudgetResourceStatusController@listingBudgetResource');
 Route::get('total-budget', 'TotalBudgetController@listingTotalBudget');
 Route::get('employeement-status', 'EmployeementStatusController@listingEmployeementStatus');
+Route::get('total-student', 'TotalStudentController@listingTotalStudent');
+
+// unit-2 
+Route::get('geographical-area-population', 'GeographicalAreaPopulationController@listingGeographicalAreaPopulation');
