@@ -124,6 +124,13 @@ Route::delete('revenue-sharing/{revenueSharing}', 'RevenueSharingController@dest
 Route::get('revenue-sharing/{revenueSharing}/edit', 'RevenueSharingController@edit')->name('revenue-sharing.edit');
 Route::put('revenue-sharing/{revenueSharing}', 'RevenueSharingController@update')->name('revenue-sharing.update');
 
+// 
+Route::get('total-budget', 'TotalBudgetController@index')->name('total-budget.index');
+Route::post('total-budget', 'TotalBudgetController@store')->name('total-budget.store');
+Route::delete('total-budget/{totalBudget}', 'TotalBudgetController@destroy')->name('total-budget.destroy');
+Route::get('total-budget/{totalBudget}/edit', 'TotalBudgetController@edit')->name('total-budget.edit');
+Route::put('total-budget/{totalBudget}', 'TotalBudgetController@update')->name('total-budget.update');
+
 
 // ==============unit 3=========
 // 
