@@ -28,3 +28,4 @@ Route::get('revenue-sharing', 'RevenueSharingController@listingRevenueSharing');
 Route::get('revenue', 'RevenueController@listingRevenue');
 Route::get('budget-resource', 'BudgetResourceStatusController@listingBudgetResource');
 Route::get('total-budget', 'TotalBudgetController@listingTotalBudget');
+Route::get('employeement-status', 'EmployeementStatusController@listingEmployeementStatus');

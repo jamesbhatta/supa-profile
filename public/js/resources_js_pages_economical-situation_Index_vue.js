@@ -366,6 +366,7 @@ __webpack_require__.r(__webpack_exports__);
     this.fetchRevenue();
     this.fetchBudgetResource();
     this.fetchTotalBudget();
+    this.fetchEmployeementStatus();
   },
   methods: {
     fetchEconomicIndicator: function fetchEconomicIndicator() {
@@ -420,6 +421,18 @@ __webpack_require__.r(__webpack_exports__);
         _this5.supabudget.labels = response.data.labels;
         _this5.supabudget.data = response.data.data;
         _this5.infoDatas = response.data;
+        console.log(response.data);
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchEmployeementStatus: function fetchEmployeementStatus() {
+      var _this6 = this;
+
+      axios.get("/api/employeement-status").then(function (response) {
+        _this6.LaborandEmploymentStatus.labels = response.data.labels;
+        _this6.LaborandEmploymentStatus.data = response.data.data;
+        _this6.infoDatas = response.data;
         console.log(response.data);
       })["catch"](function (error) {
         return console.log(error);

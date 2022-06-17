@@ -422,6 +422,7 @@ export default {
         this.fetchRevenue();
         this.fetchBudgetResource();
         this.fetchTotalBudget();
+        this.fetchEmployeementStatus();
     },
 
     methods: {
@@ -474,6 +475,17 @@ export default {
                 .then((response) => {
                     this.supabudget.labels = response.data.labels;
                     this.supabudget.data = response.data.data
+                    this.infoDatas = response.data;
+                    console.log(response.data);
+                })
+                .catch((error) => console.log(error));
+        },
+        fetchEmployeementStatus() {
+            axios
+                .get("/api/employeement-status")
+                .then((response) => {
+                    this.LaborandEmploymentStatus.labels = response.data.labels;
+                    this.LaborandEmploymentStatus.data = response.data.data
                     this.infoDatas = response.data;
                     console.log(response.data);
                 })
