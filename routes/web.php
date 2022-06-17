@@ -116,6 +116,15 @@ Route::delete('geographical-population/{geographicalPopulation}', 'GeographicalA
 Route::get('geographical-population/{geographicalPopulation}/edit', 'GeographicalAreaPopulationController@edit')->name('geographical-population.edit');
 Route::put('geographical-population/{geographicalPopulation}', 'GeographicalAreaPopulationController@update')->name('geographical-population.update');
 
+
+// 
+Route::get('revenue-sharing', 'RevenueSharingController@index')->name('revenue-sharing.index');
+Route::post('revenue-sharing', 'RevenueSharingController@store')->name('revenue-sharing.store');
+Route::delete('revenue-sharing/{revenueSharing}', 'RevenueSharingController@destroy')->name('revenue-sharing.destroy');
+Route::get('revenue-sharing/{revenueSharing}/edit', 'RevenueSharingController@edit')->name('revenue-sharing.edit');
+Route::put('revenue-sharing/{revenueSharing}', 'RevenueSharingController@update')->name('revenue-sharing.update');
+
+
 // ==============unit 3=========
 // 
 Route::get('economic-indicator', 'EconomicIndicatorController@index')->name('economic-indicator.index');
