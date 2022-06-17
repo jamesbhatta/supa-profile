@@ -342,6 +342,11 @@
                     </a>
                 </li>
                 <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('province-road-type.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span>सडकको प्रकार विवरण
+                    </a>
+                </li>
+                <li class="nav-item sub-nav">
                     <a class="nav-link" href="{{ route('airport.index') }}">
                         <span class="mx-3"><i class="fa fa-circle"></i></span>विमानस्थल
                     </a>

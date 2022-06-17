@@ -221,6 +221,13 @@ Route::delete('province-road/{provinceRoad}', 'ProvinceRoadController@destroy')-
 Route::get('province-road/{provinceRoad}/edit', 'ProvinceRoadController@edit')->name('province-road.edit');
 Route::put('province-road/{provinceRoad}', 'ProvinceRoadController@update')->name('province-road.update');
 
+// 
+Route::get('province-road-type', 'ProvinceRoadTypeController@index')->name('province-road-type.index');
+Route::post('province-road-type', 'ProvinceRoadTypeController@store')->name('province-road-type.store');
+Route::delete('province-road-type/{provinceRoadType}', 'ProvinceRoadTypeController@destroy')->name('province-road-type.destroy');
+Route::get('province-road-type/{provinceRoadType}/edit', 'ProvinceRoadTypeController@edit')->name('province-road-type.edit');
+Route::put('province-road-type/{provinceRoadType}', 'ProvinceRoadTypeController@update')->name('province-road-type.update');
+
 Route::any('/{all}', function () {
     return view('app');
 })->where(['all' => '.*']);
