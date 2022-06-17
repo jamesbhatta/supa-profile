@@ -553,16 +553,28 @@ __webpack_require__.r(__webpack_exports__);
     };
   },
   mounted: function mounted() {
-    this.fetchTotalStudents();
+    this.fetchProudProject();
+    this.fetchRoadNetwork();
   },
   methods: {
-    fetchTotalStudents: function fetchTotalStudents() {
+    fetchProudProject: function fetchProudProject() {
       var _this = this;
 
-      axios.get("/api/total-student").then(function (response) {
-        _this.supastudents.labels = response.data.labels;
-        _this.supastudents.data = response.data.data;
+      axios.get("/api/proud-project").then(function (response) {
+        _this.OrganizingStatePride.labels = response.data.labels;
+        _this.OrganizingStatePride.data = response.data.data;
         _this.infoDatas = response.data;
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchRoadNetwork: function fetchRoadNetwork() {
+      var _this2 = this;
+
+      axios.get("/api/road-network").then(function (response) {
+        _this2.DescriptionofServiceNetworkInTheFarWest.labels = response.data.labels;
+        _this2.DescriptionofServiceNetworkInTheFarWest.data = response.data.data;
+        _this2.infoDatas = response.data;
       })["catch"](function (error) {
         return console.log(error);
       });

@@ -299,61 +299,13 @@
                         [7, "सिजपरु-बोगटान-हदपायल सडक", "डोटी", '२७', '२१४६', '२०८०/०३/२९'],
                         [8, "बेलौरी-कलुवापुर-नाइल-बुडर सडक", "कंचनपुर", '९१', '११६५', '२०८०/०३/२९'],
                         [9, "भजनी छोटीभन्सार-खखमडी-ठुलीगाड सडक (भजनी छोटी भन्सार-लालबोखझ-भजनी-जोिीपुर-फल्लेबबसौनी-सल्लेरी-रक्सा-कोल्तडी-खखमडी-ठुलीगाड)", "कैलाली", '४', '७७५', '२०७९/१०/१७'],
-                        [
-                            {
-                                colspan: 3,
-                                value: "जम्मा",
-                            },
-                            '१६८',
-                            '',
-                            ''
-                        ],
-                        [
-                            {
-                                colspan: 6,
-                                value: "प्रैदेशका अन्य मुख्य आयोजनाहरु"
-                            }
-                        ],
-                        [
-                            '',
-                            " गेटा मेडिकल कलेज",
-                            {
-                                colspan: 2,
-                                value: " "
-                            }, "", "",
-                        ],
-                        [
-                            '',
-                            " मोहना अत्तरिया ६ लेन सडक",
-                            {
-                                colspan: 2,
-                                value: " "
-                            }, "", ""
-                        ],
-                        [
-                            '',
-                            " दोधारा–चाँदनीमा सुख्खा बन्दरगाह",
-                            {
-                                colspan: 2,
-                                value: " "
-                            }, "", "",
-                        ],
-                        [
-                            '',
-                            " महाकाली नदीमा निर्माणाधीन पक्की पुल",
-                            {
-                                colspan: 2,
-                                value: " "
-                            }, "", "",
-                        ],
-                        [
-                            '',
-                            "धनगढी विमानस्थलको स्तरोन्नती",
-                            {
-                                colspan: 2,
-                                value: " "
-                            }, "", "",
-                        ],
+                        [    {        colspan: 3,        value: "जम्मा",    },    '१६८',    '',    ''],
+                        [    {        colspan: 6,        value: "प्रैदेशका अन्य मुख्य आयोजनाहरु"    }],
+                        [    '',    " गेटा मेडिकल कलेज",    {        colspan: 2,        value: " "    }, "", "",],
+                        [    '',    " मोहना अत्तरिया ६ लेन सडक",    {        colspan: 2,        value: " "    }, "", ""],
+                        [    '',    " दोधारा–चाँदनीमा सुख्खा बन्दरगाह",    {        colspan: 2,        value: " "    }, "", "",],
+                        [    '',    " महाकाली नदीमा निर्माणाधीन पक्की पुल",    {        colspan: 2,        value: " "    }, "", "",],
+                        ['',"धनगढी विमानस्थलको स्तरोन्नती",{colspan: 2,value: " "}, "", "",],
                     ],
                 },
                 //End प्रदेश गौरबका आयोजाहरु
@@ -1072,17 +1024,29 @@
             };
         },
         mounted() {
-            this.fetchTotalStudents();
+            this.fetchProudProject();
+            this.fetchRoadNetwork();
         },
     
         methods: {
-            fetchTotalStudents() {
+            fetchProudProject() {
                 axios
-                    .get("/api/total-student")
+                    .get("/api/proud-project")
     
                     .then((response) => {
-                        this.supastudents.labels = response.data.labels;
-                        this.supastudents.data = response.data.data
+                        this.OrganizingStatePride.labels = response.data.labels;
+                        this.OrganizingStatePride.data = response.data.data
+                        this.infoDatas = response.data;
+                    })
+                    .catch((error) => console.log(error));
+            },
+            fetchRoadNetwork() {
+                axios
+                    .get("/api/road-network")
+    
+                    .then((response) => {
+                        this.DescriptionofServiceNetworkInTheFarWest.labels = response.data.labels;
+                        this.DescriptionofServiceNetworkInTheFarWest.data = response.data.data
                         this.infoDatas = response.data;
                     })
                     .catch((error) => console.log(error));

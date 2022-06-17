@@ -214,6 +214,13 @@ Route::delete('electricity-access/{electricityAccess}', 'ElectricityAccessContro
 Route::get('electricity-access/{electricityAccess}/edit', 'ElectricityAccessController@edit')->name('electricity-access.edit');
 Route::put('electricity-access/{electricityAccess}', 'ElectricityAccessController@update')->name('electricity-access.update');
 
+// 
+Route::get('province-road', 'ProvinceRoadController@index')->name('province-road.index');
+Route::post('province-road', 'ProvinceRoadController@store')->name('province-road.store');
+Route::delete('province-road/{provinceRoad}', 'ProvinceRoadController@destroy')->name('province-road.destroy');
+Route::get('province-road/{provinceRoad}/edit', 'ProvinceRoadController@edit')->name('province-road.edit');
+Route::put('province-road/{provinceRoad}', 'ProvinceRoadController@update')->name('province-road.update');
+
 Route::any('/{all}', function () {
     return view('app');
 })->where(['all' => '.*']);

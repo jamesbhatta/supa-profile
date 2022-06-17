@@ -33,3 +33,7 @@ Route::get('total-student', 'TotalStudentController@listingTotalStudent');
 
 // unit-2 
 Route::get('geographical-area-population', 'GeographicalAreaPopulationController@listingGeographicalAreaPopulation');
+
+// unit 5
+Route::get('proud-project', 'ProudProjectController@listingProudProject');
+Route::get('road-network', 'RoadNetworkController@listingRoadNetwork');
