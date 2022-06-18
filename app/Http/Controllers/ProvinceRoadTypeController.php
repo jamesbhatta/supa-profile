@@ -8,6 +8,26 @@ use Illuminate\Http\Request;
 
 class ProvinceRoadTypeController extends Controller
 {
+    public function listingProvinceRoadType()
+    {
+        $data = ProvinceRoadType::get();
+        $dataset['labels'] = ["प्रदेश", "धुले/कच्ची", "ग्राबेल", "कालोपत्रे", "जम्मा सडक", "प्रदेशको हिस्सा प्रतिशत", "सडक घनत्व"];
+        $dataset['data'] = [];
+        foreach ($data as $key => $item) {
+            $dataset['data'][] = [
+                $key + 1,
+                $item->province,
+                $item->normal_road,
+                $item->garvel_road,
+                $item->black_road,
+                $item->total_road,
+                $item->province_percentage,
+                $item->road_density,
+            ];
+        }
+
+        return response()->json($dataset, 200);
+    }
     public function index(ProvinceRoadType $provinceRoadType)
     {
         $provinceRoadTypes = ProvinceRoadType::get();

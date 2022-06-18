@@ -37,3 +37,8 @@ Route::get('geographical-area-population', 'GeographicalAreaPopulationController
 // unit 5
 Route::get('proud-project', 'ProudProjectController@listingProudProject');
 Route::get('road-network', 'RoadNetworkController@listingRoadNetwork');
+Route::get('province-road-type', 'ProvinceRoadTypeController@listingProvinceRoadType');
+Route::get('airport', 'AirportController@listingAirport');
+Route::get('electricity-access', 'ElectricityAccessController@listingElectricityAccess');
+Route::get('electricity-generate', 'ElectricityGenerateController@listingElectricityGenerate');
+Route::get('telecomunication', 'TelecomunicationController@listingTelecomunication');

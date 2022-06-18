@@ -228,6 +228,20 @@ Route::delete('province-road-type/{provinceRoadType}', 'ProvinceRoadTypeControll
 Route::get('province-road-type/{provinceRoadType}/edit', 'ProvinceRoadTypeController@edit')->name('province-road-type.edit');
 Route::put('province-road-type/{provinceRoadType}', 'ProvinceRoadTypeController@update')->name('province-road-type.update');
 
+// 
+Route::get('elecricity-generate', 'ElectricityGenerateController@index')->name('elecricity-generate.index');
+Route::post('elecricity-generate', 'ElectricityGenerateController@store')->name('elecricity-generate.store');
+Route::delete('elecricity-generate/{electricityGenerate}', 'ElectricityGenerateController@destroy')->name('elecricity-generate.destroy');
+Route::get('elecricity-generate/{electricityGenerate}/edit', 'ElectricityGenerateController@edit')->name('elecricity-generate.edit');
+Route::put('elecricity-generate/{electricityGenerate}', 'ElectricityGenerateController@update')->name('elecricity-generate.update');
+
+// 
+Route::get('telecomunication', 'TelecomunicationController@index')->name('telecomunication.index');
+Route::post('telecomunication', 'TelecomunicationController@store')->name('telecomunication.store');
+Route::delete('telecomunication/{telecomunication}', 'TelecomunicationController@destroy')->name('telecomunication.destroy');
+Route::get('telecomunication/{telecomunication}/edit', 'TelecomunicationController@edit')->name('telecomunication.edit');
+Route::put('telecomunication/{telecomunication}', 'TelecomunicationController@update')->name('telecomunication.update');
+
 Route::any('/{all}', function () {
     return view('app');
 })->where(['all' => '.*']);

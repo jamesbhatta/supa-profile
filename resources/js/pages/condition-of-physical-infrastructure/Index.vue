@@ -1026,6 +1026,11 @@
         mounted() {
             this.fetchProudProject();
             this.fetchRoadNetwork();
+            this.fetchProvinceRoadType();
+            this.fetchAirport();
+            this.fetchElectricityAccess();
+            this.fetchElectricityGenerate();
+            this.fetchTelecomunication();
         },
     
         methods: {
@@ -1048,6 +1053,62 @@
                         this.DescriptionofServiceNetworkInTheFarWest.labels = response.data.labels;
                         this.DescriptionofServiceNetworkInTheFarWest.data = response.data.data
                         this.infoDatas = response.data;
+                    })
+                    .catch((error) => console.log(error));
+            },
+             fetchProvinceRoadType() {
+                axios
+                    .get("/api/province-road-type")
+    
+                    .then((response) => {
+                        this.RoadtypeDetails.labels = response.data.labels;
+                        this.RoadtypeDetails.data = response.data.data
+                        this.infoDatas = response.data;
+                    })
+                    .catch((error) => console.log(error));
+            },
+            fetchAirport() {
+                axios
+                    .get("/api/airport")
+    
+                    .then((response) => {
+                        this.airportdata.labels = response.data.labels;
+                        this.airportdata.data = response.data.data
+                        this.infoDatas = response.data;
+                    })
+                    .catch((error) => console.log(error));
+            },
+            fetchElectricityAccess() {
+                axios
+                    .get("/api/electricity-access")
+    
+                    .then((response) => {
+                        this.provinceelectricitypahuch.labels = response.data.labels;
+                        this.provinceelectricitypahuch.data = response.data.data
+                        this.infoDatas = response.data;
+                    })
+                    .catch((error) => console.log(error));
+            },
+             fetchElectricityGenerate() {
+                axios
+                    .get("/api/electricity-generate")
+    
+                    .then((response) => {
+                        this.produceelectricitydata.labels = response.data.labels;
+                        this.produceelectricitydata.data = response.data.data
+                        this.infoDatas = response.data;
+                    })
+                    .catch((error) => console.log(error));
+            },
+            fetchTelecomunication() {
+                axios
+                    .get("/api/telecomunication")
+    
+                    .then((response) => {
+                        this.telecomunicationdata.labels = response.data.labels;
+                        this.telecomunicationdata.data = response.data.data
+                        this.infoDatas = response.data;
+                        console.log('wrwer');
                     })
                     .catch((error) => console.log(error));
             },

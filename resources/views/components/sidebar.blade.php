@@ -356,6 +356,16 @@
                         <span class="mx-3"><i class="fa fa-circle"></i></span>विधुत पहुँच
                     </a>
                 </li>
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('elecricity-generate.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span>विधुत उत्पादन
+                    </a>
+                </li>
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('telecomunication.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span>सञ्चार सेवा उपभोगकर्ता
+                    </a>
+                </li>
                 
             </ul>
         </li>

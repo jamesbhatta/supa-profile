@@ -9,6 +9,24 @@ use Illuminate\Http\Request;
 
 class AirportController extends Controller
 {
+    public function listingAirport()
+    {
+        $data = Airport::get();
+        $dataset['labels'] = ["क्र.स.", "विमानस्थल", "जिल्ला", "पालिका", "स्थान", "अवस्था"];
+        $dataset['data'] = [];
+        foreach ($data as $key => $item) {
+            $dataset['data'][] = [
+                $key + 1,
+                $item->airport,
+                $item->district,
+                $item->minicipality,
+                $item->place,
+                $item->status,
+            ];
+        }
+
+        return response()->json($dataset, 200);
+    }
     public function index(Airport $airport)
     {
         $airports=Airport::all();

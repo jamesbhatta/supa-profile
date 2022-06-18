@@ -8,6 +8,21 @@ use Illuminate\Http\Request;
 
 class ElectricityAccessController extends Controller
 {
+    public function listingElectricityAccess()
+    {
+        $data = ElectricityAccess::get();
+        $dataset['labels'] = ["प्रदेश", "पहुँच (प्रतिशत)"];
+        $dataset['data'] = [];
+        foreach ($data as $key => $item) {
+            $dataset['data'][] = [
+                $key + 1,
+                $item->province,
+                $item->accessability,
+            ];
+        }
+
+        return response()->json($dataset, 200);
+    }
     public function index(ElectricityAccess $electricityAccess)
     {
         $electricityAccesses=ElectricityAccess::all();
@@ -20,12 +35,12 @@ class ElectricityAccessController extends Controller
             'province'=>"required",
             'accessability'=>"required",
         ]));
-        return redirect()->back()->with('success',"Added");
+        return redirect()->back()->with('success',"विधुत सेवाको पहुँच सफलतापूर्वक थपियो");
     }
     public function destroy(ElectricityAccess $electricityAccess)
     {
         $electricityAccess->delete();
-        return redirect()->back()->with('success',"deleted");
+        return redirect()->back()->with('success',"विधुत सेवाको पहुँच सफलतापूर्वक हटाइयो");
     }
     public function edit(ElectricityAccess $electricityAccess)
     {
@@ -39,6 +54,6 @@ class ElectricityAccessController extends Controller
             'province'=>"required",
             'accessability'=>"required",
         ]));
-        return redirect()->route('electricity-access.index')->with('success',"updated");
+        return redirect()->route('electricity-access.index')->with('success',"विधुत सेवाको पहुँच सफलतापूर्वक परिवर्तन भयो");
     }
 }
