@@ -366,6 +366,16 @@
                         <span class="mx-3"><i class="fa fa-circle"></i></span>सञ्चार सेवा उपभोगकर्ता
                     </a>
                 </li>
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('news-paper.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span>पत्रपत्रिका
+                    </a>
+                </li>
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('radio.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span>एफएम रेडियो
+                    </a>
+                </li>
                 
             </ul>
         </li>

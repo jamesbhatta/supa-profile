@@ -42,3 +42,5 @@ Route::get('airport', 'AirportController@listingAirport');
 Route::get('electricity-access', 'ElectricityAccessController@listingElectricityAccess');
 Route::get('electricity-generate', 'ElectricityGenerateController@listingElectricityGenerate');
 Route::get('telecomunication', 'TelecomunicationController@listingTelecomunication');
+Route::get('news-paper', 'NewsPaperController@listingNewsPaper');
+Route::get('radio', 'RadioController@listingRadio');

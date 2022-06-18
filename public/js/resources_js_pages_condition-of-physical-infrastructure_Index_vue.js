@@ -560,6 +560,8 @@ __webpack_require__.r(__webpack_exports__);
     this.fetchElectricityAccess();
     this.fetchElectricityGenerate();
     this.fetchTelecomunication();
+    this.fetchNewsPaper();
+    this.fetchRadio();
   },
   methods: {
     fetchProudProject: function fetchProudProject() {
@@ -635,7 +637,28 @@ __webpack_require__.r(__webpack_exports__);
         _this7.telecomunicationdata.labels = response.data.labels;
         _this7.telecomunicationdata.data = response.data.data;
         _this7.infoDatas = response.data;
-        console.log('wrwer');
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchNewsPaper: function fetchNewsPaper() {
+      var _this8 = this;
+
+      axios.get("/api/news-paper").then(function (response) {
+        _this8.newspaperdata.labels = response.data.labels;
+        _this8.newspaperdata.data = response.data.data;
+        _this8.infoDatas = response.data;
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchRadio: function fetchRadio() {
+      var _this9 = this;
+
+      axios.get("/api/radio").then(function (response) {
+        _this9.fmdata.labels = response.data.labels;
+        _this9.fmdata.data = response.data.data;
+        _this9.infoDatas = response.data;
       })["catch"](function (error) {
         return console.log(error);
       });

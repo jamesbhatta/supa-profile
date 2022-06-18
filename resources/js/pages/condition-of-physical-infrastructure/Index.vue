@@ -1031,6 +1031,8 @@
             this.fetchElectricityAccess();
             this.fetchElectricityGenerate();
             this.fetchTelecomunication();
+            this.fetchNewsPaper();
+            this.fetchRadio();
         },
     
         methods: {
@@ -1108,7 +1110,31 @@
                         this.telecomunicationdata.labels = response.data.labels;
                         this.telecomunicationdata.data = response.data.data
                         this.infoDatas = response.data;
-                        console.log('wrwer');
+                        
+                    })
+                    .catch((error) => console.log(error));
+            },
+            fetchNewsPaper() {
+                axios
+                    .get("/api/news-paper")
+    
+                    .then((response) => {
+                        this.newspaperdata.labels = response.data.labels;
+                        this.newspaperdata.data = response.data.data
+                        this.infoDatas = response.data;
+                       
+                    })
+                    .catch((error) => console.log(error));
+            },
+            fetchRadio() {
+                axios
+                    .get("/api/radio")
+    
+                    .then((response) => {
+                        this.fmdata.labels = response.data.labels;
+                        this.fmdata.data = response.data.data
+                        this.infoDatas = response.data;
+                        
                     })
                     .catch((error) => console.log(error));
             },

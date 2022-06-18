@@ -242,6 +242,20 @@ Route::delete('telecomunication/{telecomunication}', 'TelecomunicationController
 Route::get('telecomunication/{telecomunication}/edit', 'TelecomunicationController@edit')->name('telecomunication.edit');
 Route::put('telecomunication/{telecomunication}', 'TelecomunicationController@update')->name('telecomunication.update');
 
+// 
+Route::get('news-paper', 'NewsPaperController@index')->name('news-paper.index');
+Route::post('news-paper', 'NewsPaperController@store')->name('news-paper.store');
+Route::delete('news-paper/{newsPaper}', 'NewsPaperController@destroy')->name('news-paper.destroy');
+Route::get('news-paper/{newsPaper}/edit', 'NewsPaperController@edit')->name('news-paper.edit');
+Route::put('news-paper/{newsPaper}', 'NewsPaperController@update')->name('news-paper.update');
+
+// 
+Route::get('radio', 'RadioController@index')->name('radio.index');
+Route::post('radio', 'RadioController@store')->name('radio.store');
+Route::delete('radio/{radio}', 'RadioController@destroy')->name('radio.destroy');
+Route::get('radio/{radio}/edit', 'RadioController@edit')->name('radio.edit');
+Route::put('radio/{radio}', 'RadioController@update')->name('radio.update');
+
 Route::any('/{all}', function () {
     return view('app');
 })->where(['all' => '.*']);
