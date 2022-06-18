@@ -83,7 +83,7 @@
 
         <div class="card z-depth-0">
             <div class="card-header">
-                <h1 class="h3-responsive d-inline-block">आर्थिक वर्षहरु</h1>
+                <h1 class="h3-responsive d-inline-block">सुदूरपश्चिममा रहेका कूल विद्यार्थी संख्या विवरण</h1>
                 {{-- <small>(हाल {{ $fiscalYears->count() }} आर्थिक वर्षहरु छन्)</small> --}}
             </div>
             <div class="card-body">

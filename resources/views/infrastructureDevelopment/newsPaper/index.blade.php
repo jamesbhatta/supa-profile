@@ -105,7 +105,7 @@
 
         <div class="card z-depth-0">
             <div class="card-header">
-                <h1 class="h3-responsive d-inline-block">सुदूरपश्चिम प्रदेशको पहिलो मन्त्रिपरिषद्</h1>
+                <h1 class="h3-responsive d-inline-block">प्रेस काउन्सिलमा दर्ता भएका सुदूरपश्चिमका पत्रपत्रिकाहरु</h1>
                 {{-- <small>(हाल {{ count($schools)  }}  विद्यालय {{ count($schools) > 1 ? 'हरु छन्' : 'छ' }} )</small> --}}
 
             </div>

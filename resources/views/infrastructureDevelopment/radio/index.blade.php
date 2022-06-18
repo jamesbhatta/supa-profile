@@ -7,8 +7,7 @@
     <div class="container">
         <div class="card z-depth-0">
             <div class="col-12">
-                <label class="col-12 text-center font-weight-bold h4 my-5">प्रेस काउन्सिलमा दर्ता भएका सुदूरपश्चिमका
-                    पत्रपत्रिकाहरु</label>
+                <label class="col-12 text-center font-weight-bold h4 my-5">प्रदेशमा रहेका एफएम रेडियोको विवरण</label>
                 <hr>
             </div>
             <div class="card-body">
@@ -73,7 +72,7 @@
 
         <div class="card z-depth-0">
             <div class="card-header">
-                <h1 class="h3-responsive d-inline-block">सुदूरपश्चिम प्रदेशको पहिलो मन्त्रिपरिषद्</h1>
+                <h1 class="h3-responsive d-inline-block">प्रदेशमा रहेका एफएम रेडियोको विवरण</h1>
                 {{-- <small>(हाल {{ count($schools)  }}  विद्यालय {{ count($schools) > 1 ? 'हरु छन्' : 'छ' }} )</small> --}}
 
             </div>
@@ -83,7 +82,7 @@
                         <tr>
                             <th>क्र.स.</th>
                             <th>जिल्ला</th>
-                            <th>दैनिक</th>
+                            <th>एफएम रेडियोको संख्या</th>
                             <th></th>
                         </tr>
                     </thead>
