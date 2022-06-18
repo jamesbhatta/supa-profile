@@ -273,6 +273,22 @@ Route::get('supa-business/{supaBusiness}/edit', 'SupaBusinessController@edit')->
 Route::put('supa-business/{supaBusiness}', 'SupaBusinessController@update')->name('supa-business.update');
 
 
+// Unit 7
+
+// 
+Route::get('ownership', 'OwnershipController@index')->name('ownership.index');
+Route::post('ownership', 'OwnershipController@store')->name('ownership.store');
+Route::delete('ownership/{ownership}', 'OwnershipController@destroy')->name('ownership.destroy');
+Route::get('ownership/{ownership}/edit', 'OwnershipController@edit')->name('ownership.edit');
+Route::put('ownership/{ownership}', 'OwnershipController@update')->name('ownership.update');
+
+// 
+Route::get('land-uses', 'LandUsesController@index')->name('land-uses.index');
+Route::post('land-uses', 'LandUsesController@store')->name('land-uses.store');
+Route::delete('land-uses/{landUses}', 'LandUsesController@destroy')->name('land-uses.destroy');
+Route::get('land-uses/{landUses}/edit', 'LandUsesController@edit')->name('land-uses.edit');
+Route::put('land-uses/{landUses}', 'LandUsesController@update')->name('land-uses.update');
+
 Route::any('/{all}', function () {
     return view('app');
 })->where(['all' => '.*']);

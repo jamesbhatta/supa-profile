@@ -400,6 +400,26 @@
             </ul>
         </li>
 
+         {{-- ==========unit 7============ --}}
+         <li class="nav-item">
+            <a href="#agriculture" data-toggle="collapse" aria-expanded="false"
+                class="dropdown-toggle collapsed nav-link"><span class="text-default"><i
+                        class="fas fa-users"></i></span>कृषि क्षेत्र</a>
+            <ul class="list-unstyled collapse" id="agriculture" style="">
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('ownership.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span>भू – स्वामित्वको अवस्था
+                    </a>
+                </li>
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('land-uses.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span> भू – उपयोगको अवस्था
+                    </a>
+                </li>
+                
+            </ul>
+        </li>
+
         {{-- ============Disability============ --}}
 
         <li class="nav-item">
