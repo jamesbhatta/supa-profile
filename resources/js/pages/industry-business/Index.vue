@@ -112,6 +112,34 @@ export default {
       },
     };
   },
+  mounted() {
+    this.fetchProvinceBusiness();
+    this.fetchSupaBusiness();
+  },
+
+  methods: {
+    fetchProvinceBusiness() {
+      axios
+        .get("/api/province-business")
+        .then((response) => {
+          this.businessindustrydata.labels = response.data.labels;
+          this.businessindustrydata.data = response.data.data
+          this.infoDatas = response.data;
+        })
+        .catch((error) => console.log(error));
+    },
+     fetchSupaBusiness() {
+      axios
+        .get("/api/supa-business")
+        .then((response) => {
+          this.SmallBusinessData.labels = response.data.labels;
+          this.SmallBusinessData.data = response.data.data
+          this.infoDatas = response.data;
+        })
+        .catch((error) => console.log(error));
+    },
+    
+  },
 };
 </script>
 

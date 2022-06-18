@@ -380,6 +380,26 @@
             </ul>
         </li>
 
+         {{-- ==========unit 6============ --}}
+         <li class="nav-item">
+            <a href="#business" data-toggle="collapse" aria-expanded="false"
+                class="dropdown-toggle collapsed nav-link"><span class="text-default"><i
+                        class="fas fa-users"></i></span>उद्योग ब्यवसाय</a>
+            <ul class="list-unstyled collapse" id="business" style="">
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('province-business.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span>ठूला तथा मझौला उद्योग
+                    </a>
+                </li>
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('supa-business.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span> कूल साना उद्योग
+                    </a>
+                </li>
+                
+            </ul>
+        </li>
+
         {{-- ============Disability============ --}}
 
         <li class="nav-item">

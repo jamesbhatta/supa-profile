@@ -88,6 +88,34 @@ __webpack_require__.r(__webpack_exports__);
         data: [[1, "तामा", "दार्चुला, डडेलधुरा, बझाङ र बाजुरा", "देखिएको, परम्परागत रुपमा निकालिएको, भेटिएको"], [2, "सुन", "डोटी र बैतडी,बझाङ, दार्चुला,डडेलधुरा, कैलाली, बाजुरा, अछाम", "प्रारम्भिर रुपमा देखिएको,संकलन तथा सम्भावना परीक्षण"], [3, "फलाम", "बैतडी, बझाङ र दार्चुला", "परम्परागत रुपमा निकालिएको,देखिएका"], [4, "सिसा", "बझाङ, बैतडी, अछाम, बाजुरा र डडेलधुरा", "	देखिएको"], [5, "लिथियम", "डोटी र बझाङ", "देखिएको"], [6, "टिन", "डडेलधुरा, डोटी र बझाङ", "देखिएको, भेटिएको"], [7, "युरेनियम", "बैतडी, दार्चुला, बझाङ, बाजुरा", "देखिएको"], [8, "जिंक", "बझाङ, बैतडी र डडेलधुरा", "देखिएको"], [9, "आर्सेनिक", "डेडेलधुरा र बझाङ", "देखिएको"], [10, "क्रोमियम", "बझाङ", "देखिएको"], [11, "कोबाल्ट", "बझाङ", "देखिएको"], [12, "चुनढुंगा", "बैतडी", " "]]
       }
     };
+  },
+  mounted: function mounted() {
+    this.fetchProvinceBusiness();
+    this.fetchSupaBusiness();
+  },
+  methods: {
+    fetchProvinceBusiness: function fetchProvinceBusiness() {
+      var _this = this;
+
+      axios.get("/api/province-business").then(function (response) {
+        _this.businessindustrydata.labels = response.data.labels;
+        _this.businessindustrydata.data = response.data.data;
+        _this.infoDatas = response.data;
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchSupaBusiness: function fetchSupaBusiness() {
+      var _this2 = this;
+
+      axios.get("/api/supa-business").then(function (response) {
+        _this2.SmallBusinessData.labels = response.data.labels;
+        _this2.SmallBusinessData.data = response.data.data;
+        _this2.infoDatas = response.data;
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    }
   }
 });
 

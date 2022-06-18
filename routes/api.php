@@ -44,3 +44,8 @@ Route::get('electricity-generate', 'ElectricityGenerateController@listingElectri
 Route::get('telecomunication', 'TelecomunicationController@listingTelecomunication');
 Route::get('news-paper', 'NewsPaperController@listingNewsPaper');
 Route::get('radio', 'RadioController@listingRadio');
+
+// Unit -6
+Route::get('province-business', 'ProvinceBusinesslController@listingProvinceBusinessl');
+Route::get('supa-business', 'SupaBusinessController@listingSupaBusiness');
+

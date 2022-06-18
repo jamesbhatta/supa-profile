@@ -256,6 +256,23 @@ Route::delete('radio/{radio}', 'RadioController@destroy')->name('radio.destroy')
 Route::get('radio/{radio}/edit', 'RadioController@edit')->name('radio.edit');
 Route::put('radio/{radio}', 'RadioController@update')->name('radio.update');
 
+
+// Unit 6
+// 
+Route::get('province-business', 'ProvinceBusinesslController@index')->name('province-business.index');
+Route::post('province-business', 'ProvinceBusinesslController@store')->name('province-business.store');
+Route::delete('province-business/{provinceBusiness}', 'ProvinceBusinesslController@destroy')->name('province-business.destroy');
+Route::get('province-business/{provinceBusiness}/edit', 'ProvinceBusinesslController@edit')->name('province-business.edit');
+Route::put('province-business/{provinceBusiness}', 'ProvinceBusinesslController@update')->name('province-business.update');
+
+// 
+Route::get('supa-business', 'SupaBusinessController@index')->name('supa-business.index');
+Route::post('supa-business', 'SupaBusinessController@store')->name('supa-business.store');
+Route::delete('supa-business/{supaBusiness}', 'SupaBusinessController@destroy')->name('supa-business.destroy');
+Route::get('supa-business/{supaBusiness}/edit', 'SupaBusinessController@edit')->name('supa-business.edit');
+Route::put('supa-business/{supaBusiness}', 'SupaBusinessController@update')->name('supa-business.update');
+
+
 Route::any('/{all}', function () {
     return view('app');
 })->where(['all' => '.*']);

@@ -5,71 +5,71 @@
     <div class="container-fluid py-5">
       <div class="row">
         <div class="col-xl-2 col-lg-3 col-md-4 side-client-menus">
-            <div style="height: 80px;"></div>
-            <div class="list-set">
-              <ul class="table-list " style="overflow: auto;">
-                <li class="my-3">
-                  <a href="#table_1">सुदूरपश्चिम प्रदेशको भौगोलिक
-                    क्षेत्रगत क्षेत्रफल</a>
-                </li>
+          <div style="height: 80px;"></div>
+          <div class="list-set">
+            <ul class="table-list " style="overflow: auto;">
+              <li class="my-3">
+                <a href="#table_1">सुदूरपश्चिम प्रदेशको भौगोलिक
+                  क्षेत्रगत क्षेत्रफल</a>
+              </li>
 
-                <li class="my-3">
-                  <a href="#table_2">प्रदेशगत भौगोलिक
-                    क्षेत्रफल</a>
-                </li>
+              <li class="my-3">
+                <a href="#table_2">प्रदेशगत भौगोलिक
+                  क्षेत्रफल</a>
+              </li>
 
-                <li class="my-3">
-                  <a href="#table_3">प्रदेशको जिल्लागत
-                    क्षेत्रफल</a>
-                </li>
+              <li class="my-3">
+                <a href="#table_3">प्रदेशको जिल्लागत
+                  क्षेत्रफल</a>
+              </li>
 
-                <li class="my-3">
-                  <a href="#table_4">भू – उपयोगको अवस्था</a>
-                </li>
+              <li class="my-3">
+                <a href="#table_4">भू – उपयोगको अवस्था</a>
+              </li>
 
-                <li class="my-3">
-                  <a href="#table_5">स्थानीय तहको जिल्लागत
-                    संख्या</a>
-                </li>
+              <li class="my-3">
+                <a href="#table_5">स्थानीय तहको जिल्लागत
+                  संख्या</a>
+              </li>
 
-                <li class="my-3">
-                  <a href="#table_6">प्रदेशमा भौगोलिक विभाजन
-                    अनुसार निर्वाचन क्षेत्रको विवरण</a>
-                </li>
+              <li class="my-3">
+                <a href="#table_6">प्रदेशमा भौगोलिक विभाजन
+                  अनुसार निर्वाचन क्षेत्रको विवरण</a>
+              </li>
 
-                <li class="my-3">
-                  <a href="#table_7">प्रदेशका जिल्लाहरुमा रहेका
-                    निर्वाचन क्षेत्रको विवरण</a>
-                </li>
-                
-                <li class="my-3">
-                  <a href="#table_8">हालसम्म भएका प्रदेश
-                    प्रमुखहरुको नामावली र मिति</a>
-                </li>
-                
-                <li class="my-3">
-                  <a href="#table_9">सुदूरपश्चिम प्रदेशको पहिलो
-                    मन्त्रिपरिषद्</a>
-                </li>
-                
-                <li class="my-3">
-                  <a href="#table_10">सुदूरपश्चिम प्रदेशमा हालको
-                    मन्त्रिपरिषद्</a>
-                </li>
-                
-                <li class="my-3">
-                  <a href="#table_11">प्रदेश सभा सदस्यहरुको
-                    नामावली</a>
-                </li>
+              <li class="my-3">
+                <a href="#table_7">प्रदेशका जिल्लाहरुमा रहेका
+                  निर्वाचन क्षेत्रको विवरण</a>
+              </li>
 
-              </ul>
-            </div>
+              <li class="my-3">
+                <a href="#table_8">हालसम्म भएका प्रदेश
+                  प्रमुखहरुको नामावली र मिति</a>
+              </li>
+
+              <li class="my-3">
+                <a href="#table_9">सुदूरपश्चिम प्रदेशको पहिलो
+                  मन्त्रिपरिषद्</a>
+              </li>
+
+              <li class="my-3">
+                <a href="#table_10">सुदूरपश्चिम प्रदेशमा हालको
+                  मन्त्रिपरिषद्</a>
+              </li>
+
+              <li class="my-3">
+                <a href="#table_11">प्रदेश सभा सदस्यहरुको
+                  नामावली</a>
+              </li>
+
+            </ul>
+          </div>
         </div>
         <!-- ================================== -->
         <div class="col-xl-8 col-lg-7 col-md-12">
           <div class="container">
             <h1 class="page-title">भौगोलिक तथा राजनीतिक अवस्था</h1>
-            
+
             <data-viewer :data="geographicalAreaData">
               <template slot="chart">
                 <div class="row">
@@ -120,7 +120,7 @@
                 </tr>
               </template>
             </data-viewer>
-            
+
             <data-viewer :data="nirbachanchhetra">
               <template slot="chart">
                 <div class="row">
@@ -134,18 +134,18 @@
                 </div>
               </template>
             </data-viewer>
-            
+
             <data-viewer :data="jillanirbachanchhetra"></data-viewer>
-            
+
             <data-viewer :data="parmukhharukonaamwali"></data-viewer>
-           
+
             <data-viewer :data="pahilomantriparisadh"></data-viewer>
-            
+
             <data-viewer :data="supaparisadh"></data-viewer>
-           
+
             <data-viewer :data="pardeshsavanamawali"></data-viewer>
             <data-viewer :data="districtWiseNumberOfLocalLevel"></data-viewer>
-            
+
           </div>
         </div>
       </div>
@@ -364,7 +364,7 @@ export default {
       //   ],
       // },
 
-       parmukhharukonaamwali: {
+      parmukhharukonaamwali: {
         id: "table_8",
         title: " हालसम्म भएका प्रदेश प्रमुखहरुको नामावली र मिति",
         labels: ["क्र.स.", "प्रदेश प्रमुख", "देखि", "सम्म"],
@@ -387,7 +387,7 @@ export default {
         ],
       },
 
-    
+
       // 2.11
       // supaparisadh: {
       //   id: "table_10",
@@ -506,7 +506,7 @@ export default {
     };
   },
 
-    mounted() {
+  mounted() {
     this.fetchDatas();
     this.fetchProvinceHeadData();
     this.fetchAssemblyMember();
