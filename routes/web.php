@@ -94,6 +94,13 @@ Route::delete('current-ministry/{currentMinistry}', 'CurrentMinistryController@d
 Route::get('current-ministry/{currentMinistry}/edit', 'CurrentMinistryController@edit')->name('current-ministry.edit');
 Route::put('current-ministry/{currentMinistry}', 'CurrentMinistryController@update')->name('current-ministry.update');
 
+// 
+Route::get('district-national-census', 'DistrictNationalCensusController@index')->name('district-national-census.index');
+Route::post('district-national-census', 'DistrictNationalCensusController@store')->name('district-national-census.store');
+Route::delete('district-national-census/{districtNationalCensus}', 'DistrictNationalCensusController@destroy')->name('district-national-census.destroy');
+Route::get('district-national-census/{districtNationalCensus}/edit', 'DistrictNationalCensusController@edit')->name('district-national-census.edit');
+Route::put('district-national-census/{districtNationalCensus}', 'DistrictNationalCensusController@update')->name('district-national-census.update');
+
 //
 Route::get('province-head', 'PrivinceHeadController@index')->name('province-head.index');
 Route::post('province-head', 'PrivinceHeadController@store')->name('province-head.store');

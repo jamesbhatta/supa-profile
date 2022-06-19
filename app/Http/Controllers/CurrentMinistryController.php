@@ -13,14 +13,17 @@ class CurrentMinistryController extends Controller
         $dataset['labels'] = ["क्र.स.", "नाम थर", "पद", "मन्त्रालय", "दल"];
         $dataset['data'] = [];
         foreach ($data as $key => $item) {
+            
             $dataset['data'][] = [
                 $key + 1,
+
                 $item->name,
                 $item->post,
                 $item->ministry,
                 $item->team
             ];
         }
+        
 
         return response()->json($dataset, 200);
     }
