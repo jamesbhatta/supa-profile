@@ -19,6 +19,9 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('info-cards', 'InfoCardController@listingApi');
+
+Route::get('land-uses', 'LandUsesController@listingLandUses');
+
 Route::get('local-level-population', 'LocalPopulationController@listingLocalPopulation');
 Route::get('current-ministry', 'CurrentMinistryController@listingCurrentMinistry');
 Route::get('province-head', 'PrivinceHeadController@listingProvinceHead');

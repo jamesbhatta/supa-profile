@@ -510,6 +510,7 @@ export default {
     this.fetchDatas();
     this.fetchProvinceHeadData();
     this.fetchAssemblyMember();
+    this.fetchLandUses();
   },
 
   methods: {
@@ -539,6 +540,16 @@ export default {
         .then((response) => {
           this.pardeshsavanamawali.labels = response.data.labels;
           this.pardeshsavanamawali.data = response.data.data
+          this.infoDatas = response.data;
+        })
+        .catch((error) => console.log(error));
+    },
+    fetchLandUses() {
+      axios
+        .get("/api/land-uses")
+        .then((response) => {
+          this.vuupyogkoData.labels = response.data.labels;
+          this.vuupyogkoData.data = response.data.data
           this.infoDatas = response.data;
         })
         .catch((error) => console.log(error));

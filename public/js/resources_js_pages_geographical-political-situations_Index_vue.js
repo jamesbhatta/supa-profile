@@ -422,6 +422,7 @@ __webpack_require__.r(__webpack_exports__);
     this.fetchDatas();
     this.fetchProvinceHeadData();
     this.fetchAssemblyMember();
+    this.fetchLandUses();
   },
   methods: {
     fetchDatas: function fetchDatas() {
@@ -453,6 +454,17 @@ __webpack_require__.r(__webpack_exports__);
         _this3.pardeshsavanamawali.labels = response.data.labels;
         _this3.pardeshsavanamawali.data = response.data.data;
         _this3.infoDatas = response.data;
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchLandUses: function fetchLandUses() {
+      var _this4 = this;
+
+      axios.get("/api/land-uses").then(function (response) {
+        _this4.vuupyogkoData.labels = response.data.labels;
+        _this4.vuupyogkoData.data = response.data.data;
+        _this4.infoDatas = response.data;
       })["catch"](function (error) {
         return console.log(error);
       });

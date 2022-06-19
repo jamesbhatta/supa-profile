@@ -7,6 +7,22 @@ use Illuminate\Http\Request;
 
 class LandUsesController extends Controller
 {
+    public function listingLandUses()
+    {
+        $data = LandUses::get();
+        $dataset['labels'] = ["क्र.स.", "क्षेत्र", "नेपालको क्षेत्रफल (हे.हजारमा)", "सुदूरपश्चिमको क्षेत्रफल (हे.हजारमा)"];
+        $dataset['data'] = [];
+        foreach ($data as $key => $item) {
+            $dataset['data'][] = [
+                $key + 1,
+                $item->sector,
+                $item->npl_area,
+                $item->supa_area
+            ];
+        }
+
+        return response()->json($dataset, 200);
+    }
     public function index(LandUses $landUses)
     {
         # code...

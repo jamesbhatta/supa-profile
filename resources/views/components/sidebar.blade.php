@@ -162,6 +162,11 @@
                 class="dropdown-toggle collapsed nav-link"><span class="text-default"><i
                         class="fas fa-tools"></i></span>भौगोलिक तथा राजनीतिक अवस्था</a>
             <ul class="list-unstyled collapse" id="unit1" style="">
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('land-uses.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span> भू – उपयोगको अवस्था
+                    </a>
+                </li>
                 @hasanyrole('super-admin|admin')
                     <li class="nav-item sub-nav">
                         <a class="nav-link" href="{{ route('current-ministry.index') }}"><span
