@@ -11,6 +11,7 @@ class LandUsesController extends Controller
     {
         $data = LandUses::get();
         $dataset['labels'] = ["क्र.स.", "क्षेत्र", "नेपालको क्षेत्रफल (हे.हजारमा)", "सुदूरपश्चिमको क्षेत्रफल (हे.हजारमा)"];
+        $dataset['backgroundColor']=["red","green","blue"];
         $dataset['data'] = [];
         foreach ($data as $key => $item) {
             $dataset['data'][] = [

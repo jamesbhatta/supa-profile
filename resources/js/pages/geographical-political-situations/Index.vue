@@ -551,6 +551,11 @@ export default {
           this.vuupyogkoData.labels = response.data.labels;
           this.vuupyogkoData.data = response.data.data
           this.infoDatas = response.data;
+          this.vuupyogkoChartData.datasets.backgroundColor=response.data.backgroundColor;
+          this.vuupyogkoChartData.datasets.data=response.data.data;
+
+          console.log(response.data.backgroundColor);
+          console.log(response.data.data);
         })
         .catch((error) => console.log(error));
     },

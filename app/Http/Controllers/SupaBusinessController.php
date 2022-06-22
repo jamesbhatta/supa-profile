@@ -22,6 +22,8 @@ class SupaBusinessController extends Controller
                 $item->gharelu_capital,
                 $item->sana_quantity,
                 $item->sana_capital,
+                $item->laghu_quantity+$item->gahrelu_quantity+$item->sana_quantity,
+                $item->laghu_capital+$item->gharelu_capital+$item->sana_capital,
             ];
         }
 

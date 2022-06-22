@@ -24,6 +24,7 @@ class NewsPaperController extends Controller
                 $item->monthly,
                 $item->monthly_twise,
                 $item->monthly_thirds,
+                $item->daily+$item->half_weakly+$item->weakly+$item->fortnightly+$item->monthly+$item->monthly_twise+$item->monthly_thirds,
             ];
         }
 

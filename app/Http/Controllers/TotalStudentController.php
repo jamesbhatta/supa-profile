@@ -14,12 +14,17 @@ class TotalStudentController extends Controller
         $dataset['data'] = [];
         foreach ($data as $key => $item) {
             $dataset['data'][] = [
-                $key + 1,
+                // $key + 1,
                 $item->class,
-                $item->g_male,
                 $item->g_fmale,
+                $item->g_male,
+                $item->g_male+$item->g_fmale,
+                $item->p_fmale,
                 $item->p_male,
-                $item->p_fmale
+                $item->p_male+$item->p_fmale,
+                $item->g_fmale+$item->p_fmale,
+                $item->g_male+$item->p_male,
+                $item->g_fmale+$item->p_fmale+$item->g_male+$item->p_male,
             ];
         }
 

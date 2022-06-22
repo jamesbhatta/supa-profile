@@ -19,10 +19,12 @@ class TotalBudgetController extends Controller
                 $item->fiscal_year,
                 $item->running_budget,
                 $item->capitalize_budget,
+                $item->running_budget+$item->capitalize_budget,
                 $item->running_expenses,
                 $item->running_expenses_percentage,
                 $item->capitalize_expenses,
-                $item->capitalize_expenses_percentage
+                $item->capitalize_expenses_percentage,
+                $item->running_expenses+$item->capitalize_expenses,
             ];
         }
 

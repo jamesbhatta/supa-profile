@@ -465,6 +465,10 @@ __webpack_require__.r(__webpack_exports__);
         _this4.vuupyogkoData.labels = response.data.labels;
         _this4.vuupyogkoData.data = response.data.data;
         _this4.infoDatas = response.data;
+        _this4.vuupyogkoChartData.datasets.backgroundColor = response.data.backgroundColor;
+        _this4.vuupyogkoChartData.datasets.data = response.data.data;
+        console.log(response.data.backgroundColor);
+        console.log(response.data.data);
       })["catch"](function (error) {
         return console.log(error);
       });
