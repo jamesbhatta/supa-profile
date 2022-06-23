@@ -296,6 +296,13 @@ Route::delete('land-uses/{landUses}', 'LandUsesController@destroy')->name('land-
 Route::get('land-uses/{landUses}/edit', 'LandUsesController@edit')->name('land-uses.edit');
 Route::put('land-uses/{landUses}', 'LandUsesController@update')->name('land-uses.update');
 
+// 
+Route::get('agriculture-produce', 'AgricultureProduceController@index')->name('agriculture-produce.index');
+Route::post('agriculture-produce', 'AgricultureProduceController@store')->name('agriculture-produce.store');
+Route::delete('agriculture-produce/{landUses}', 'AgricultureProduceController@destroy')->name('agriculture-produce.destroy');
+Route::get('agriculture-produce/{landUses}/edit', 'AgricultureProduceController@edit')->name('agriculture-produce.edit');
+Route::put('agriculture-produce/{landUses}', 'AgricultureProduceController@update')->name('agriculture-produce.update');
+
 Route::any('/{all}', function () {
     return view('app');
 })->where(['all' => '.*']);
