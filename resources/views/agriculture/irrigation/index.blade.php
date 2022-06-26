@@ -108,28 +108,27 @@
                 <div class="card-body">
                     <table class="table table-striped table-hover">
                         <thead>
+                           
                             <tr class="thead-light">
-                                <th colspan="7" class="text-center">कृषि उपजले ढाकेको भू – क्षेत्र</th>
-                            </tr>
-                            <tr class="thead-light">
-                                <th colspan="1"></th>
-                                <th colspan="3">क्षेत्रफल (हेक्टर)</th>
-                                <th colspan="3">हिस्सा (प्रतिशत)</th>
+                                <th colspan="5"></th>
+                                <th colspan="3" class="border-left border-white">सिंचित (हे.)</th>
                             </tr>
                             <tr>
+                                <th>#</th>
                                 <th>जिल्ला</th>
-                                <th>खाद्य तथा अन्य बाली हे.</th>
-                                <th>तरकारी तथा बागवानी</th>
-                                <th>फलफुल तथा मसला</th>
-                                <th>खाद्य तथा अन्य बाली हे.</th>
-                                <th>तरकारी तथा बागवानी</th>
-                                <th>फलफुल तथा मसला</th>
+                                <th>कूल क्षेत्रफल (हे.)</th>
+                                <th>खेतीयोग्य जमिन (हे.)</th>
+                                <th>खेती गरिएको जमिन (हे.)</th>
+                                <th>बर्षभरि</th>
+                                <th>आंशिक</th>
+                                <th>जम्मा</th>
                                 <th></th>
                             </tr>
                         </thead>
                         <tbody>
                             @forelse ($irrigations as $item)
                                 <tr>
+                                    <td>{{$loop->iteration}}</td>
                                     <td>{{ $item->district }}</td>
                                     <td>{{ $item->area }}</td>
                                     <td>{{ $item->arable_land }}</td>
