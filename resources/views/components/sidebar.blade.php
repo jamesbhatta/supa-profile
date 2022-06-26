@@ -311,6 +311,12 @@
                     </a>
                 </li>
 
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('agricultural-production.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span> कृषि बालीको उत्पादन अवस्था
+                    </a>
+                </li>
+
             </ul>
         </li>
 
