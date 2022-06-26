@@ -335,6 +335,12 @@
                     </a>
                 </li>
 
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('telhan.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span> तेलहन बालीको उत्पादन 
+                    </a>
+                </li>
+
             </ul>
         </li>
 

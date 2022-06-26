@@ -334,6 +334,12 @@ Route::delete('dalhan/{bali}', 'DalhanController@destroy')->name('dalhan.destroy
 Route::get('dalhan/{bali}/edit', 'DalhanController@edit')->name('dalhan.edit');
 Route::put('dalhan/{bali}', 'DalhanController@update')->name('dalhan.update');
 
+Route::get('telhan', 'TelhanController@index')->name('telhan.index');
+Route::post('telhan', 'TelhanController@store')->name('telhan.store');
+Route::delete('telhan/{bali}', 'TelhanController@destroy')->name('telhan.destroy');
+Route::get('telhan/{bali}/edit', 'TelhanController@edit')->name('telhan.edit');
+Route::put('telhan/{bali}', 'TelhanController@update')->name('telhan.update');
+
 
 Route::any('/{all}', function () {
     return view('app');
