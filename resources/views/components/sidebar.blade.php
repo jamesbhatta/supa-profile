@@ -323,6 +323,12 @@
                     </a>
                 </li>
 
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('rainy-crop.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span> बर्षे बालीको उत्पादन
+                    </a>
+                </li>
+
             </ul>
         </li>
 

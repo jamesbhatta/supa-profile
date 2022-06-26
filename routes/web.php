@@ -322,6 +322,12 @@ Route::delete('winter-crop/{bali}', 'WinterCropController@destroy')->name('winte
 Route::get('winter-crop/{bali}/edit', 'WinterCropController@edit')->name('winter-crop.edit');
 Route::put('winter-crop/{bali}', 'WinterCropController@update')->name('winter-crop.update');
 
+Route::get('rainy-crop', 'RainyCropsController@index')->name('rainy-crop.index');
+Route::post('rainy-crop', 'RainyCropsController@store')->name('rainy-crop.store');
+Route::delete('rainy-crop/{bali}', 'RainyCropsController@destroy')->name('rainy-crop.destroy');
+Route::get('rainy-crop/{bali}/edit', 'RainyCropsController@edit')->name('rainy-crop.edit');
+Route::put('rainy-crop/{bali}', 'RainyCropsController@update')->name('rainy-crop.update');
+
 Route::any('/{all}', function () {
     return view('app');
 })->where(['all' => '.*']);

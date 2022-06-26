@@ -9,7 +9,7 @@ class WinterCropController extends Controller
 {
     public function index(Bali $bali)
     {
-        $balis=Bali::get();
+        $balis=Bali::where('type',"hiudeBali")->get();
        return view('agriculture.winter_crops.index',compact(['bali','balis']));
     }
 
@@ -30,7 +30,7 @@ class WinterCropController extends Controller
 
     public function edit(Bali $bali)
     {
-        $balis=Bali::get();
+        $balis=Bali::where('type',"hiudeBali")->get();
        return view('agriculture.winter_crops.index',compact(['bali','balis']));
     }
 
