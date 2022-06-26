@@ -303,6 +303,12 @@ Route::delete('agriculture-produce/{agricultureProduce}', 'AgricultureProduceCon
 Route::get('agriculture-produce/{agricultureProduce}/edit', 'AgricultureProduceController@edit')->name('agriculture-produce.edit');
 Route::put('agriculture-produce/{agricultureProduce}', 'AgricultureProduceController@update')->name('agriculture-produce.update');
 
+Route::get('irrigation', 'IrrigationController@index')->name('irrigation.index');
+Route::post('irrigation', 'IrrigationController@store')->name('irrigation.store');
+Route::delete('irrigation/{irrigation}', 'IrrigationController@destroy')->name('irrigation.destroy');
+Route::get('irrigation/{irrigation}/edit', 'IrrigationController@edit')->name('irrigation.edit');
+Route::put('irrigation/{irrigation}', 'IrrigationController@update')->name('irrigation.update');
+
 Route::any('/{all}', function () {
     return view('app');
 })->where(['all' => '.*']);
