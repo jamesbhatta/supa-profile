@@ -341,6 +341,13 @@ Route::get('telhan/{bali}/edit', 'TelhanController@edit')->name('telhan.edit');
 Route::put('telhan/{bali}', 'TelhanController@update')->name('telhan.update');
 
 
+
+Route::get('vegitable', 'VegitableController@index')->name('vegitable.index');
+Route::post('vegitable', 'VegitableController@store')->name('vegitable.store');
+Route::delete('vegitable/{bali}', 'VegitableController@destroy')->name('vegitable.destroy');
+Route::get('vegitable/{bali}/edit', 'VegitableController@edit')->name('vegitable.edit');
+Route::put('vegitable/{bali}', 'VegitableController@update')->name('vegitable.update');
+
 Route::any('/{all}', function () {
     return view('app');
 })->where(['all' => '.*']);
