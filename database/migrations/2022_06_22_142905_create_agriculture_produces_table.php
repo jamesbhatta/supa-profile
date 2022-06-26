@@ -15,6 +15,14 @@ class CreateAgricultureProducesTable extends Migration
     {
         Schema::create('agriculture_produces', function (Blueprint $table) {
             $table->id();
+            $table->string('district');
+            $table->string('food_area');
+            $table->string('vegetable_area');
+            $table->string('fruits_area');
+
+            $table->string('food_percentage');
+            $table->string('vegetable_percentage');
+            $table->string('fruits_percentage');
             $table->timestamps();
         });
     }
