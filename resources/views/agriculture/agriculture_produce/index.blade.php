@@ -54,45 +54,47 @@
                         <div class="col-lg-12 border">
                             <h5 class="py-4">क्षेत्रफल (हेक्टर)</h5>
                             <div class="row">
-                                <div class="form-group col-lg-6">
+                                <div class="form-group col-lg-4">
                                     <label for="input-fiscal-year-start">खाद्य तथा अन्य बाली हे.</label>
                                     <input type="text" name="sector" class="form-control"
                                         value="{{ old('sector', $agricultureProduce->sector) }}">
                                 </div>
         
-                                <div class="form-group col-lg-6">
+                                <div class="form-group col-lg-4">
                                     <label for="input-fiscal-year-start">तरकारी तथा बागवानी </label>
                                     <input type="text" name="npl_area" class="form-control"
                                         value="{{ old('npl_area', $agricultureProduce->npl_area) }}">
                                 </div>
+                                <div class="form-group col-lg-4">
+                                    <label for="input-fiscal-year-start">फलफुल तथा मसला</label>
+                                    <input type="text" name="supa_area" class="form-control"
+                                        value="{{ old('supa_area', $agricultureProduce->supa_area) }}">
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label for="input-fiscal-year-start">फलफुल तथा मसला</label>
-                                <input type="text" name="supa_area" class="form-control"
-                                    value="{{ old('supa_area', $agricultureProduce->supa_area) }}">
-                            </div>
+                           
                         </div>
 
                         <div class="col-lg-12 border">
                             <h5 class="py-4">हिस्सा (प्रतिशत)</h5>
                             <div class="row">
-                                <div class="form-group col-lg-6">
+                                <div class="form-group col-lg-4">
                                     <label for="input-fiscal-year-start">खाद्य तथा अन्य बाली हे.</label>
                                     <input type="text" name="sector" class="form-control"
                                         value="{{ old('sector', $agricultureProduce->sector) }}">
                                 </div>
         
-                                <div class="form-group col-lg-6">
+                                <div class="form-group col-lg-4">
                                     <label for="input-fiscal-year-start">तरकारी तथा बागवानी </label>
                                     <input type="text" name="npl_area" class="form-control"
                                         value="{{ old('npl_area', $agricultureProduce->npl_area) }}">
                                 </div>
+                                <div class="form-group col-lg-4">
+                                    <label for="input-fiscal-year-start">फलफुल तथा मसला</label>
+                                    <input type="text" name="supa_area" class="form-control"
+                                        value="{{ old('supa_area', $agricultureProduce->supa_area) }}">
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label for="input-fiscal-year-start">फलफुल तथा मसला</label>
-                                <input type="text" name="supa_area" class="form-control"
-                                    value="{{ old('supa_area', $agricultureProduce->supa_area) }}">
-                            </div>
+                           
                         </div>
                     </div>
                     
