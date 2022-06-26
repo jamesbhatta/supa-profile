@@ -3,7 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
-
+ 
 Auth::routes(['register' => false]);
 Route::get('/registration', 'FrontendController@index')->name('organization.new');
 Route::get('/dashboard', 'HomeController@index')->name('dashboard');
@@ -347,6 +347,12 @@ Route::post('vegitable', 'VegitableController@store')->name('vegitable.store');
 Route::delete('vegitable/{bali}', 'VegitableController@destroy')->name('vegitable.destroy');
 Route::get('vegitable/{bali}/edit', 'VegitableController@edit')->name('vegitable.edit');
 Route::put('vegitable/{bali}', 'VegitableController@update')->name('vegitable.update');
+
+Route::get('consumable-food', 'ConsumableFoodController@index')->name('consumable-food.index');
+Route::post('consumable-food', 'ConsumableFoodController@store')->name('consumable-food.store');
+Route::delete('consumable-food/{consumableFood}', 'ConsumableFoodController@destroy')->name('consumable-food.destroy');
+Route::get('consumable-food/{consumableFood}/edit', 'ConsumableFoodController@edit')->name('consumable-food.edit');
+Route::put('consumable-food/{consumableFood}', 'ConsumableFoodController@update')->name('consumable-food.update');
 
 Route::any('/{all}', function () {
     return view('app');
