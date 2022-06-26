@@ -315,6 +315,13 @@ Route::delete('agricultural-production/{agriculturalProduction}', 'AgriculturalP
 Route::get('agricultural-production/{agriculturalProduction}/edit', 'AgriculturalProductionController@edit')->name('agricultural-production.edit');
 Route::put('agricultural-production/{agriculturalProduction}', 'AgriculturalProductionController@update')->name('agricultural-production.update');
 
+
+Route::get('winter-crop', 'WinterCropController@index')->name('winter-crop.index');
+Route::post('winter-crop', 'WinterCropController@store')->name('winter-crop.store');
+Route::delete('winter-crop/{bali}', 'WinterCropController@destroy')->name('winter-crop.destroy');
+Route::get('winter-crop/{bali}/edit', 'WinterCropController@edit')->name('winter-crop.edit');
+Route::put('winter-crop/{bali}', 'WinterCropController@update')->name('winter-crop.update');
+
 Route::any('/{all}', function () {
     return view('app');
 })->where(['all' => '.*']);
