@@ -328,6 +328,13 @@ Route::delete('rainy-crop/{bali}', 'RainyCropsController@destroy')->name('rainy-
 Route::get('rainy-crop/{bali}/edit', 'RainyCropsController@edit')->name('rainy-crop.edit');
 Route::put('rainy-crop/{bali}', 'RainyCropsController@update')->name('rainy-crop.update');
 
+Route::get('dalhan', 'DalhanController@index')->name('dalhan.index');
+Route::post('dalhan', 'DalhanController@store')->name('dalhan.store');
+Route::delete('dalhan/{bali}', 'DalhanController@destroy')->name('dalhan.destroy');
+Route::get('dalhan/{bali}/edit', 'DalhanController@edit')->name('dalhan.edit');
+Route::put('dalhan/{bali}', 'DalhanController@update')->name('dalhan.update');
+
+
 Route::any('/{all}', function () {
     return view('app');
 })->where(['all' => '.*']);
