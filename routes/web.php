@@ -354,6 +354,12 @@ Route::delete('consumable-food/{consumableFood}', 'ConsumableFoodController@dest
 Route::get('consumable-food/{consumableFood}/edit', 'ConsumableFoodController@edit')->name('consumable-food.edit');
 Route::put('consumable-food/{consumableFood}', 'ConsumableFoodController@update')->name('consumable-food.update');
 
+Route::get('required-food', 'RequireFoodController@index')->name('required-food.index');
+Route::post('required-food', 'RequireFoodController@store')->name('required-food.store');
+Route::delete('required-food/{requireFood}', 'RequireFoodController@destroy')->name('required-food.destroy');
+Route::get('required-food/{requireFood}/edit', 'RequireFoodController@edit')->name('required-food.edit');
+Route::put('required-food/{requireFood}', 'RequireFoodController@update')->name('required-food.update');
+
 Route::any('/{all}', function () {
     return view('app');
 })->where(['all' => '.*']);

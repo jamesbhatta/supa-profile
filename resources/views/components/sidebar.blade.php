@@ -353,6 +353,12 @@
                     </a>
                 </li>
 
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('required-food.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span>  खाद्यान्न आवश्यकताको स्थिति
+                    </a>
+                </li>
+
             </ul>
         </li>
 
