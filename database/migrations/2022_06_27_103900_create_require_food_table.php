@@ -15,7 +15,7 @@ class CreateRequireFoodTable extends Migration
     {
         Schema::create('require_food', function (Blueprint $table) {
             $table->id();
-            $table->string('province');
+            $table->string('district');
             $table->integer('population');
             $table->integer('rice');
             $table->integer('maize');

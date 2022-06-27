@@ -19,7 +19,7 @@ class RequireFoodController extends Controller
     public function store(Request $request)
     {
         RequireFood::create($request->validate([
-            'province' => "required",
+            'district' => "required",
             'population' => "required",
             'rice' => "required",
             'maize' => "required",
@@ -44,7 +44,7 @@ class RequireFoodController extends Controller
     public function update(Request $request, RequireFood $requireFood)
     {
         $requireFood->update($request->validate([
-            'province' => "required",
+            'district' => "required",
             'population' => "required",
             'rice' => "required",
             'maize' => "required",

@@ -7,7 +7,8 @@
     <div class="container">
         <div class="card z-depth-0">
             <div class="col-12">
-                <label class="col-12 text-center font-weight-bold h4 my-5">जिल्ला अनुसार खाद्यान्न उत्पादन तथा आवश्यकताको स्थितिको जिल्लागत विवरण, आर्थिक वर्ष २०७६/०७७ (प्रारम्भिक अनुमान (मे. टन))</label>
+                <label class="col-12 text-center font-weight-bold h4 my-5">जिल्ला अनुसार खाद्यान्न उत्पादन तथा आवश्यकताको
+                    स्थितिको जिल्लागत विवरण, आर्थिक वर्ष २०७६/०७७ (प्रारम्भिक अनुमान (मे. टन))</label>
                 <hr>
             </div>
             <div class="card-body">
@@ -21,16 +22,29 @@
                     <div class="row">
                         <div class="form-group col-lg-4">
                             <label for="select-province-id">प्रदेशको नाम</label>
-                            <select id="select-province-id" name="province" class="custom-select">
+                            <select id="select-province-id" class="custom-select">
+
+                                <option value="" selected>प्रदेश छान्नुहोस्</option>
+                                @foreach ($provinces as $province)
+                                    <option value="{{ $province->id }}">{{ $province->name }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                        <div class="form-group col-lg-4">
+                            <label for="select-district-id">जिल्लाको नाम</label>
+                            <select name="district" id="select-district-id" class="custom-select">
                                 @isset($requireFood->id)
-                                    <option value="{{ $requireFood->province }}" selected>
-                                        {{ $requireFood->province }}</option>
+                                    <option value="{{ $requireFood->district }}" selected>
+                                        {{ $requireFood->district }}</option>
                                 @else
-                                    <option value="" selected>प्रदेश छान्नुहोस्</option>
+                                    <option value="" selected>जिल्ला छान्नुहोस्</option>
                                 @endisset
 
                                 @foreach ($provinces as $province)
-                                    <option value="{{ $province->name }}">{{ $province->name }}</option>
+                                    @foreach ($province->districts as $district)
+                                        <option value="{{ $district->name }}" data-province-id="{{ $province->id }}">
+                                            {{ $district->name }}</option>
+                                    @endforeach
                                 @endforeach
                             </select>
                         </div>
@@ -90,7 +104,7 @@
                                 value="{{ old('required_food', $requireFood->required_food) }}">
                         </div>
 
-                        <div class="form-group col-lg-8">
+                        <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">बचत वा न्यून</label>
                             <input type="text" name="saving" class="form-control"
                                 value="{{ old('saving', $requireFood->saving) }}">
@@ -117,7 +131,8 @@
         <div class="container">
             <div class="card z-depth-0">
                 <div class="card-header">
-                    <h1 class="h3-responsive d-inline-block">जिल्ला अनुसार खाद्यान्न उत्पादन तथा आवश्यकताको स्थितिको जिल्लागत विवरण, आर्थिक वर्ष २०७६/०७७ (प्रारम्भिक अनुमान (मे. टन))</h1>
+                    <h1 class="h3-responsive d-inline-block">जिल्ला अनुसार खाद्यान्न उत्पादन तथा आवश्यकताको स्थितिको
+                        जिल्लागत विवरण, आर्थिक वर्ष २०७६/०७७ (प्रारम्भिक अनुमान (मे. टन))</h1>
                     {{-- <small>(हाल {{ count($schools)  }}  विद्यालय {{ count($schools) > 1 ? 'हरु छन्' : 'छ' }} )</small> --}}
 
                 </div>
@@ -126,7 +141,7 @@
                         <thead>
 
                             <tr>
-                                <th>प्रदेश</th>
+                                <th>जिल्ला</th>
                                 <th> जनसंख्या</th>
                                 <th>चामल</th>
                                 <th>मकै</th>
@@ -143,7 +158,7 @@
                         <tbody>
                             @forelse ($requireFoods as $item)
                                 <tr>
-                                    <td>{{ $item->province }}</td>
+                                    <td>{{ $item->district }}</td>
                                     <td>{{ $item->population }}</td>
                                     <td>{{ $item->rice }}</td>
                                     <td>{{ $item->maize }}</td>
