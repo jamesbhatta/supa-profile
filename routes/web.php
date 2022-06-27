@@ -360,6 +360,12 @@ Route::delete('required-food/{requireFood}', 'RequireFoodController@destroy')->n
 Route::get('required-food/{requireFood}/edit', 'RequireFoodController@edit')->name('required-food.edit');
 Route::put('required-food/{requireFood}', 'RequireFoodController@update')->name('required-food.update');
 
+Route::get('milk-production', 'MilkProductionController@index')->name('milk-production.index');
+Route::post('milk-production', 'MilkProductionController@store')->name('milk-production.store');
+Route::delete('milk-production/{milkProduction}', 'MilkProductionController@destroy')->name('milk-production.destroy');
+Route::get('milk-production/{milkProduction}/edit', 'MilkProductionController@edit')->name('milk-production.edit');
+Route::put('milk-production/{milkProduction}', 'MilkProductionController@update')->name('milk-production.update');
+
 Route::any('/{all}', function () {
     return view('app');
 })->where(['all' => '.*']);

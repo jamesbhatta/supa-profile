@@ -139,7 +139,6 @@
                 <div class="card-body">
                     <table class="table table-striped table-hover">
                         <thead>
-
                             <tr>
                                 <th>जिल्ला</th>
                                 <th> जनसंख्या</th>

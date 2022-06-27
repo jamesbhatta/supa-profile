@@ -359,6 +359,12 @@
                     </a>
                 </li>
 
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('milk-production.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span>  दुधालु पशु र दुग्ध उत्पादन 
+                    </a>
+                </li>
+
             </ul>
         </li>
 
