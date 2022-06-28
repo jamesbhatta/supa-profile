@@ -2,10 +2,10 @@
 <div class="container-fluid dashboard-container">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+            <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
         </ol>
-      </nav>
-      <div class="my-5"></div>
+    </nav>
+    <div class="my-5"></div>
     <div class="row">
         {{-- =======Card1=============== --}}
         <div class="col-lg-4">
@@ -21,13 +21,14 @@
                         </div>
                     </div>
                 </div>
-                
-                    <a href="{{ $link ?? '#' }}">
-                        <div class="col-12 cards-footer">
-                            <label class="m-2 col-12 text-center text-white" >थप जानकारी<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></label>
-                        </div>
-                        
-                    </a>
+
+                <a href="{{ $link ?? '#' }}">
+                    <div class="col-12 cards-footer">
+                        <label class="m-2 col-12 text-center text-white">थप जानकारी<i class="fa fa-arrow-circle-right"
+                                aria-hidden="true"></i></label>
+                    </div>
+
+                </a>
             </div>
         </div>
 
@@ -45,13 +46,14 @@
                         </div>
                     </div>
                 </div>
-                
-                    <a href="{{ $link ?? '#' }}">
-                        <div class="col-12 cards-footer">
-                            <label class="m-2 col-12 text-center text-white" >थप जानकारी<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></label>
-                        </div>
-                        
-                    </a>
+
+                <a href="{{ $link ?? '#' }}">
+                    <div class="col-12 cards-footer">
+                        <label class="m-2 col-12 text-center text-white">थप जानकारी<i class="fa fa-arrow-circle-right"
+                                aria-hidden="true"></i></label>
+                    </div>
+
+                </a>
             </div>
         </div>
         {{-- ==========Card3==================== --}}
@@ -68,18 +70,19 @@
                         </div>
                     </div>
                 </div>
-                
-                    <a href="{{ $link ?? '#' }}">
-                        <div class="col-12 cards-footer">
-                            <label class="m-2 col-12 text-center text-white" >थप जानकारी<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></label>
-                        </div>
-                        
-                    </a>
+
+                <a href="{{ $link ?? '#' }}">
+                    <div class="col-12 cards-footer">
+                        <label class="m-2 col-12 text-center text-white">थप जानकारी<i class="fa fa-arrow-circle-right"
+                                aria-hidden="true"></i></label>
+                    </div>
+
+                </a>
             </div>
         </div>
 
-         {{-- ==========Card4==================== --}}
-         <div class="col-lg-4 my-4">
+        {{-- ==========Card4==================== --}}
+        <div class="col-lg-4 my-4">
             <div class="card bg-danger">
                 <div class="card-body">
                     <div class="row">
@@ -92,13 +95,14 @@
                         </div>
                     </div>
                 </div>
-                
-                    <a href="{{ $link ?? '#' }}">
-                        <div class="col-12 cards-footer">
-                            <label class="m-2 col-12 text-center text-white" >थप जानकारी<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></label>
-                        </div>
-                        
-                    </a>
+
+                <a href="{{ $link ?? '#' }}">
+                    <div class="col-12 cards-footer">
+                        <label class="m-2 col-12 text-center text-white">थप जानकारी<i class="fa fa-arrow-circle-right"
+                                aria-hidden="true"></i></label>
+                    </div>
+
+                </a>
             </div>
         </div>
 
@@ -116,13 +120,14 @@
                         </div>
                     </div>
                 </div>
-                
-                    <a href="{{ $link ?? '#' }}">
-                        <div class="col-12 cards-footer">
-                            <label class="m-2 col-12 text-center text-white" >थप जानकारी <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></label>
-                        </div>
-                        
-                    </a>
+
+                <a href="{{ $link ?? '#' }}">
+                    <div class="col-12 cards-footer">
+                        <label class="m-2 col-12 text-center text-white">थप जानकारी <i class="fa fa-arrow-circle-right"
+                                aria-hidden="true"></i></label>
+                    </div>
+
+                </a>
             </div>
         </div>
         {{-- ==========Card6==================== --}}
@@ -139,13 +144,14 @@
                         </div>
                     </div>
                 </div>
-                
-                    <a href="{{ $link ?? '#' }}">
-                        <div class="col-12 cards-footer">
-                            <label class="m-2 col-12 text-center text-white" >थप जानकारी <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></label>
-                        </div>
-                        
-                    </a>
+
+                <a href="{{ $link ?? '#' }}">
+                    <div class="col-12 cards-footer">
+                        <label class="m-2 col-12 text-center text-white">थप जानकारी <i
+                                class="fa fa-arrow-circle-right" aria-hidden="true"></i></label>
+                    </div>
+
+                </a>
             </div>
         </div>
     </div>

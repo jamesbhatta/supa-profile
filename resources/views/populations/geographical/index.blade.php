@@ -1,15 +1,28 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
-        @include('alerts.all')
-    </div>
-    <div class="container">
+    <div class="container-fluid">
+        <h3 class="font-weight-bold">सुदूरपश्चिम प्रदेशका भौगोलिक क्षेत्रगत जनसंख्या तथा जनघनत्व विवरण</h3>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                <li class="breadcrumb-item active" aria-current="page">जनसंख्या</li>
+                <li class="breadcrumb-item active" aria-current="page">सुदूरपश्चिम प्रदेशका भौगोलिक क्षेत्रगत जनसंख्या तथा
+                    जनघनत्व विवरण</li>
+            </ol>
+        </nav>
+        <div class="container">
+            @include('alerts.all')
+        </div>
         <div class="card z-depth-0">
-            <div class="col-12">
-                <label class="col-12 text-center font-weight-bold h4 my-5">सुदूरपश्चिम प्रदेशका भौगोलिक क्षेत्रगत जनसंख्या
-                    तथा जनघनत्व विवरण</label>
-                <hr>
+            <div class="card-header">
+                <div style="overflow: auto;scrollbar-width: none;">
+                    <div>
+                        <nav class="nav nav-pills" id="pills-tab" role="tablist">
+                            <h4>भौगोलिक क्षेत्रगत जनसंख्या थप्नुहोस्</h4>
+                        </nav>
+                    </div>
+                </div>
             </div>
             <div class="card-body">
                 <form
@@ -19,32 +32,35 @@
                     @isset($geographicalPopulation->id)
                         @method('PUT')
                     @endisset
-                    <div class="form-group">
-                        <label for="input-name">क्षेत्र</label>
-                        <select name="sector" id="" class="form-control">
-                            <option value="">कृपया क्षेत्र चयन गर्नुहोस्</option>
-                            @isset($geographicalPopulation->id)
-                                <option value="{{$geographicalPopulation->sector}}" selected>{{$geographicalPopulation->sector}}</option>
-                            @endisset
-                            <option value="हिमाली">हिमाली</option>
-                            <option value="हिमाली">पहाडी</option>
-                            <option value="हिमाली">तराई</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="input-name">जनसङ्ख्या</label>
-                        <input type="text" id="input-name" name="population" class="form-control" autocomplete="off"
-                            value="{{ old('population', $geographicalPopulation->population) }}">
-                    </div>
-                    <div class="form-group">
-                        <label for="input-name">क्षेत्रफल (वर्ग कि.मि.)</label>
-                        <input type="text" id="input-name" name="area" class="form-control" autocomplete="off"
-                            value="{{ old('area', $geographicalPopulation->area) }}">
-                    </div>
-                    <div class="form-group">
-                        <label for="input-name">जनघनत्व(जना/वर्ग कि.मि.)</label>
-                        <input type="text" id="input-name" name="density" class="form-control" autocomplete="off"
-                            value="{{ old('density', $geographicalPopulation->density) }}">
+                    <div class="row">
+                        <div class="form-group col-lg-3">
+                            <label for="input-name">क्षेत्र</label>
+                            <select name="sector" id="" class="form-control">
+                                <option value="">कृपया क्षेत्र चयन गर्नुहोस्</option>
+                                @isset($geographicalPopulation->id)
+                                    <option value="{{ $geographicalPopulation->sector }}" selected>
+                                        {{ $geographicalPopulation->sector }}</option>
+                                @endisset
+                                <option value="हिमाली">हिमाली</option>
+                                <option value="हिमाली">पहाडी</option>
+                                <option value="हिमाली">तराई</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-lg-3">
+                            <label for="input-name">जनसङ्ख्या</label>
+                            <input type="text" id="input-name" name="population" class="form-control" autocomplete="off"
+                                value="{{ old('population', $geographicalPopulation->population) }}">
+                        </div>
+                        <div class="form-group col-lg-3">
+                            <label for="input-name">क्षेत्रफल (वर्ग कि.मि.)</label>
+                            <input type="text" id="input-name" name="area" class="form-control" autocomplete="off"
+                                value="{{ old('area', $geographicalPopulation->area) }}">
+                        </div>
+                        <div class="form-group col-lg-3">
+                            <label for="input-name">जनघनत्व(जना/वर्ग कि.मि.)</label>
+                            <input type="text" id="input-name" name="density" class="form-control" autocomplete="off"
+                                value="{{ old('density', $geographicalPopulation->density) }}">
+                        </div>
                     </div>
 
 
