@@ -365,9 +365,15 @@
                     </a>
                 </li>
 
-                <li class="nav-item sub-nav">
+                 <li class="nav-item sub-nav">
                     <a class="nav-link" href="{{ route('meat-production.index') }}">
-                        <span class="mx-3"><i class="fa fa-circle"></i></span> मासु उत्पादनको अवस्था
+                        <span class="mx-3"><i class="fa fa-circle"></i></span>  मासु उत्पादनको अवस्था
+                    </a>
+                </li>
+
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('egg-production.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span>  अण्डा उत्पादनको अवस्था
                     </a>
                 </li>
 
