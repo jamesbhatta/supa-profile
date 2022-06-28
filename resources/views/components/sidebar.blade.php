@@ -377,6 +377,12 @@
                     </a>
                 </li>
 
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('wool-production.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span>उन उत्पादनको अवस्था
+                    </a>
+                </li>
+
             </ul>
         </li>
 

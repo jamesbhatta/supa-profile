@@ -381,6 +381,14 @@ Route::get('egg-production/{eggProduction}/edit', 'EggProductionController@edit'
 Route::put('egg-production/{eggProduction}', 'EggProductionController@update')->name('egg-production.update');
 
 
+// WoolController
+Route::get('wool-production', 'WoolController@index')->name('wool-production.index');
+Route::post('wool-production', 'WoolController@store')->name('wool-production.store');
+Route::delete('wool-production/{wool}', 'WoolController@destroy')->name('wool-production.destroy');
+Route::get('wool-production/{wool}/edit', 'WoolController@edit')->name('wool-production.edit');
+Route::put('wool-production/{wool}', 'WoolController@update')->name('wool-production.update');
+
+
 Route::any('/{all}', function () {
     return view('app');
 })->where(['all' => '.*']);
