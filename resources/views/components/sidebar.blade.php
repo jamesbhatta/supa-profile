@@ -383,6 +383,12 @@
                     </a>
                 </li>
 
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('animal.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span>पशुपंक्षीजन्य पदार्थ
+                    </a>
+                </li>
+
             </ul>
         </li>
 

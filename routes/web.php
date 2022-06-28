@@ -388,6 +388,13 @@ Route::delete('wool-production/{wool}', 'WoolController@destroy')->name('wool-pr
 Route::get('wool-production/{wool}/edit', 'WoolController@edit')->name('wool-production.edit');
 Route::put('wool-production/{wool}', 'WoolController@update')->name('wool-production.update');
 
+// CreateAnimalsTable
+Route::get('animal', 'AnimalController@index')->name('animal.index');
+Route::post('animal', 'AnimalController@store')->name('animal.store');
+Route::delete('animal/{animal}', 'AnimalController@destroy')->name('animal.destroy');
+Route::get('animal/{animal}/edit', 'AnimalController@edit')->name('animal.edit');
+Route::put('animal/{animal}', 'AnimalController@update')->name('animal.update');
+
 
 Route::any('/{all}', function () {
     return view('app');
