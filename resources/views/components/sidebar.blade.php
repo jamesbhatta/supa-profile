@@ -389,6 +389,12 @@
                     </a>
                 </li>
 
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('food-safety.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span>खाद्य सुरक्षाको अवस्था
+                    </a>
+                </li>
+
             </ul>
         </li>
 

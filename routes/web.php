@@ -395,6 +395,13 @@ Route::delete('animal/{animal}', 'AnimalController@destroy')->name('animal.destr
 Route::get('animal/{animal}/edit', 'AnimalController@edit')->name('animal.edit');
 Route::put('animal/{animal}', 'AnimalController@update')->name('animal.update');
 
+// 
+Route::get('food-safety', 'FoodSaftyController@index')->name('food-safety.index');
+Route::post('food-safety', 'FoodSaftyController@store')->name('food-safety.store');
+Route::delete('food-safety/{foodSafty}', 'FoodSaftyController@destroy')->name('food-safety.destroy');
+Route::get('food-safety/{foodSafty}/edit', 'FoodSaftyController@edit')->name('food-safety.edit');
+Route::put('food-safety/{foodSafty}', 'FoodSaftyController@update')->name('food-safety.update');
+
 
 Route::any('/{all}', function () {
     return view('app');
