@@ -461,6 +461,7 @@ __webpack_require__.r(__webpack_exports__);
       },
       // 10.20
       LivestockandPoultryStatisticsintheFarWest: {
+        id: 'table_16',
         title: "सुदूरपश्चिममा पशुपंक्षीको तथ्यांक ०७७/०७८",
         labels: ["जिल्ला", "गाइ", "भैसी", "भेडा", "बाख्रा", "बंगुर", "कुखुरा", "हाँस"],
         data: [["अछाम", "४८९१६", "३६१५२", "३११५", "१०६७७१", "४४५", "१००१९६", "३२६"], ["बैतडी", "१२७११२", "५३४९९", "७५२", "१३२९१३", "६३७", "२८६६१", "२३०"], ["बाजुरा", "८४५५१", "२३९४६", "२३७३५", "७६९००", "१६१८", "५०५३४", "४५६"], ["बझाङ्ग", "१४२३८१", "३३५५२", "२४४५३", "८०२६६", "१८९३", "५७८७९", "४३८"], ["डडेिधूरा", "९११६३", "२२५०३", "४७२", "१३९२४२", "११६६", "७७२१५", "२०३"], ["दार्चुला", "६९५५९", "३१३९५", "२२३०९", "६७५०६", "५८५", "३४५०९", "२४५"], ["डोटी", "१२४९७२", "४९६५२", "७३९", "११२३०८", "२५४५", "१४९३३६", "१७८"], ["कैलाली", "२१२६३९", "१७०२४३", "२१२०६", "१३६०६२", "२२६५४", "१४५६३९९", "७६५४"], ["कञ्चनपुर", "१४४०२९", "११५७५८", "८०३२", "१३१७७३", "१२७६५", "९९८७८२", "४६५४"], ["जम्मा", "१०४५३२२", "५३६७००", "१०४८१३", "९८३७४१", "४४३०८", "२९५३५११", "१४३८४"]]
@@ -555,6 +556,9 @@ __webpack_require__.r(__webpack_exports__);
     this.fetchDalhan();
     this.fetchTelhan();
     this.fetchVegitable();
+    this.fetchConsumableFood();
+    this.fetchRequiredFood();
+    this.fetchMilkProduction();
   },
   methods: {
     fetchOwnership: function fetchOwnership() {
@@ -664,6 +668,42 @@ __webpack_require__.r(__webpack_exports__);
         _this10.barsetarkaribali.labels = response.data.labels;
         _this10.barsetarkaribali.data = response.data.data;
         _this10.infoDatas = response.data;
+        console.log(response.data);
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchConsumableFood: function fetchConsumableFood() {
+      var _this11 = this;
+
+      axios.get("/api/consumable-food").then(function (response) {
+        _this11.khadyannabibaran.labels = response.data.labels;
+        _this11.khadyannabibaran.data = response.data.data;
+        _this11.infoDatas = response.data;
+        console.log(response.data);
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchRequiredFood: function fetchRequiredFood() {
+      var _this12 = this;
+
+      axios.get("/api/require-food").then(function (response) {
+        _this12.jillaanusarkhadyannautpadanbibaranData.labels = response.data.labels;
+        _this12.jillaanusarkhadyannautpadanbibaranData.data = response.data.data;
+        _this12.infoDatas = response.data;
+        console.log(response.data);
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchMilkProduction: function fetchMilkProduction() {
+      var _this13 = this;
+
+      axios.get("/api/milk-production").then(function (response) {
+        _this13.dudhalupasu.labels = response.data.labels;
+        _this13.dudhalupasu.data = response.data.data;
+        _this13.infoDatas = response.data;
         console.log(response.data);
       })["catch"](function (error) {
         return console.log(error);

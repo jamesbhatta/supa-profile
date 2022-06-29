@@ -8,6 +8,33 @@ use Illuminate\Http\Request;
 
 class RequireFoodController extends Controller
 {
+
+    public function listingRequireFood()
+    {
+        $data = RequireFood::get();
+        $dataset['labels'] = ["जिल्ला", "मध्यावधि जनसंख्या", "चमल", "मकै", "कोदो", "फाँपर", "गहुँ", "जौ", "उपभोग्य खाद्यान्न", "आवश्यक खाद्यान्न", "वचत वा न्यून"];
+        // $dataset['backgroundColor'] = ["red", "green", "blue"];
+        $dataset['data'] = [];
+        foreach ($data as $key => $item) {
+            $dataset['data'][] = [
+                
+                $item->district,
+                $item->population,
+                $item->rice,
+                $item->maize,
+                $item->kodo,
+                $item->phppar,
+                $item->wheat,
+                $item->Barley,
+                $item->production,
+                $item->required_food,
+                $item->saving,
+            ];
+        }
+
+        return response()->json($dataset, 200);
+    }
+
     public function index(RequireFood $requireFood)
     {
         $provinces = Province::get();

@@ -671,6 +671,7 @@ export default {
       },
       // 10.20
       LivestockandPoultryStatisticsintheFarWest: {
+        id: 'table_16',
         title: "सुदूरपश्चिममा पशुपंक्षीको तथ्यांक ०७७/०७८",
         labels: ["जिल्ला", "गाइ", "भैसी", "भेडा", "बाख्रा", "बंगुर", "कुखुरा", "हाँस"],
         data: [
@@ -851,6 +852,9 @@ export default {
     this.fetchDalhan();
     this.fetchTelhan();
     this.fetchVegitable();
+    this.fetchConsumableFood();
+    this.fetchRequiredFood();
+    this.fetchMilkProduction();
   },
   methods: {
     fetchOwnership() {
@@ -965,6 +969,42 @@ export default {
         .then((response) => {
           this.barsetarkaribali.labels = response.data.labels;
           this.barsetarkaribali.data = response.data.data
+          this.infoDatas = response.data;
+          console.log(response.data);
+        })
+        .catch((error) => console.log(error));
+    },
+    fetchConsumableFood() {
+      axios
+        .get("/api/consumable-food")
+
+        .then((response) => {
+          this.khadyannabibaran.labels = response.data.labels;
+          this.khadyannabibaran.data = response.data.data
+          this.infoDatas = response.data;
+          console.log(response.data);
+        })
+        .catch((error) => console.log(error));
+    },
+    fetchRequiredFood() {
+      axios
+        .get("/api/require-food")
+
+        .then((response) => {
+          this.jillaanusarkhadyannautpadanbibaranData.labels = response.data.labels;
+          this.jillaanusarkhadyannautpadanbibaranData.data = response.data.data
+          this.infoDatas = response.data;
+          console.log(response.data);
+        })
+        .catch((error) => console.log(error));
+    },
+    fetchMilkProduction() {
+      axios
+        .get("/api/milk-production")
+
+        .then((response) => {
+          this.dudhalupasu.labels = response.data.labels;
+          this.dudhalupasu.data = response.data.data
           this.infoDatas = response.data;
           console.log(response.data);
         })
