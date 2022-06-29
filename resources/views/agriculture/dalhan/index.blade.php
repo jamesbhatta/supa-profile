@@ -1,15 +1,29 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
-        @include('alerts.all')
-    </div>
-    <div class="container">
+    <div class="container-fluid">
+        <h3 class="font-weight-bold">सुदूरपश्चिमका प्रमुख दलहन बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व</h3>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                <li class="breadcrumb-item active" aria-current="page">कृषि क्षेत्र</li>
+                <li class="breadcrumb-item active" aria-current="page">सुदूरपश्चिमका प्रमुख दलहन बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व</li>
+            </ol>
+        </nav>
+        <div class="container">
+            @include('alerts.all')
+        </div>
         <div class="card z-depth-0">
-            <div class="col-12">
-                <label class="col-12 text-center font-weight-bold h4 my-5">सुदूरपश्चिमका प्रमुख दलहन बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व</label>
-                <hr>
+            <div class="card-header">
+                <div style="overflow: auto;scrollbar-width: none;">
+                    <div>
+                        <nav class="nav nav-pills" id="pills-tab" role="tablist">
+                            <h4>सुदूरपश्चिमका प्रमुख दलहन बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व</h4>
+                        </nav>
+                    </div>
+                </div>
             </div>
+            
             <div class="card-body">
                 <form action="{{ $bali->id ? route('dalhan.update', $bali) : route('dalhan.store') }}" method="POST"
                     class="form">

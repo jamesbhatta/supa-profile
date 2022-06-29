@@ -1,15 +1,29 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
-        @include('alerts.all')
-    </div>
-    <div class="container">
+    <div class="container-fluid">
+        <h3 class="font-weight-bold">सुदूरपश्चिममा खाद्य सुरक्षाको अवस्था</h3>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                <li class="breadcrumb-item active" aria-current="page">कृषि क्षेत्र</li>
+                <li class="breadcrumb-item active" aria-current="page">सुदूरपश्चिममा खाद्य सुरक्षाको अवस्था</li>
+            </ol>
+        </nav>
+        <div class="container">
+            @include('alerts.all')
+        </div>
         <div class="card z-depth-0">
-            <div class="col-12">
-                <label class="col-12 text-center font-weight-bold h4 my-5">सुदूरपश्चिममा खाद्य सुरक्षाको अवस्था</label>
-                <hr>
+            <div class="card-header">
+                <div style="overflow: auto;scrollbar-width: none;">
+                    <div>
+                        <nav class="nav nav-pills" id="pills-tab" role="tablist">
+                            <h4>सुदूरपश्चिममा खाद्य सुरक्षाको अवस्था</h4>
+                        </nav>
+                    </div>
+                </div>
             </div>
+            
             <div class="card-body">
                 <form action="{{ $foodSafty->id ? route('food-safety.update', $foodSafty) : route('food-safety.store') }}"
                     method="POST" class="form">
@@ -18,7 +32,7 @@
                         @method('PUT')
                     @endisset
                     <div class="row">
-                        <div class="form-group col-lg-4">
+                        <div class="form-group col-lg-12">
                             <label for="select-province-id">प्रदेशको नाम</label>
                             <select id="select-province-id" class="custom-select">
                                 @isset($municipality->district->province)
@@ -32,11 +46,11 @@
                                 @endforeach
                             </select>
                         </div>
-                        <div class="form-group col-lg-4">
+                        <div class="form-group col-lg-12">
                             <label for="select-district-id">जिल्लाको नाम</label>
                             <select name="district" id="select-district-id" class="custom-select">
                                 @isset($foodSafty->district)
-                                    <option value="{{ $foodSafty->district}}" selected>
+                                    <option value="{{ $foodSafty->district }}" selected>
                                         {{ $foodSafty->district }}</option>
                                 @else
                                     <option value="">जिल्ला छान्नुहोस्</option>
@@ -67,7 +81,7 @@
                                 value="{{ old('safe_food', $foodSafty->safe_food) }}">
                         </div>
 
-                       
+
                     </div>
                     <div class="form-group">
                         <button type="submit"
@@ -79,7 +93,7 @@
         </div>
 
         <div class="my-4"></div>
-        <div class="container">
+        <div class="container-fluid">
             <div class="card z-depth-0">
                 <div class="card-header">
                     <h1 class="h3-responsive d-inline-block">सुदूरपश्चिममा खाद्य सुरक्षाको अवस्था</h1>
@@ -109,8 +123,8 @@
                                     <td>{{ $item->safe_food }}</td>
                                     <td></td>
                                     <td>
-                                        <a class="action-btn text-primary" href="{{ route('food-safety.edit', $item) }}"><i
-                                                class="far fa-edit"></i></a>
+                                        <a class="action-btn text-primary"
+                                            href="{{ route('food-safety.edit', $item) }}"><i class="far fa-edit"></i></a>
                                         <form action="{{ route('food-safety.destroy', $item) }}" method="post"
                                             onsubmit="return confirm('के तपाईँ निश्चित हुनुहुन्छ?')"
                                             class="form-inline d-inline">

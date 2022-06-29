@@ -1,19 +1,32 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
-        @include('alerts.all')
-    </div>
-    <div class="container">
+    <div class="container-fluid">
+        <h3 class="font-weight-bold">सुदूरपश्चिममा कृषि उपजले ढाकेको जिल्लागत भू –क्षेत्र</h3>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                <li class="breadcrumb-item active" aria-current="page">कृषि क्षेत्र</li>
+                <li class="breadcrumb-item active" aria-current="page">सुदूरपश्चिममा कृषि उपजले ढाकेको जिल्लागत भू –क्षेत्र
+                </li>
+            </ol>
+        </nav>
+        <div class="container">
+            @include('alerts.all')
+        </div>
         <div class="card z-depth-0">
-            <div class="col-12">
-                <label class="col-12 text-center font-weight-bold h4 my-5">सुदूरपश्चिममा कृषि उपजले ढाकेको जिल्लागत भू –
-                    क्षेत्र</label>
-                <hr>
+            <div class="card-header">
+                <div style="overflow: auto;scrollbar-width: none;">
+                    <div>
+                        <nav class="nav nav-pills" id="pills-tab" role="tablist">
+                            <h4>सुदूरपश्चिममा कृषि उपजले ढाकेको जिल्लागत भू –क्षेत्र</h4>
+                        </nav>
+                    </div>
+                </div>
             </div>
+
             <div class="card-body">
-                <form
-                    action="{{ $irrigation->id ? route('irrigation.update', $irrigation) : route('irrigation.store') }}"
+                <form action="{{ $irrigation->id ? route('irrigation.update', $irrigation) : route('irrigation.store') }}"
                     method="POST" class="form">
                     @csrf
                     @isset($irrigation->id)
@@ -23,8 +36,8 @@
                         <div class="form-group col-lg-4">
                             <label for="select-province-id">प्रदेशको नाम</label>
                             <select id="select-province-id" class="custom-select">
-                               
-                                    <option value="" selected>प्रदेश छान्नुहोस्</option>
+
+                                <option value="" selected>प्रदेश छान्नुहोस्</option>
                                 @foreach ($provinces as $province)
                                     <option value="{{ $province->id }}">{{ $province->name }}</option>
                                 @endforeach
@@ -34,12 +47,12 @@
                             <label for="select-district-id">जिल्लाको नाम</label>
                             <select name="district" id="select-district-id" class="custom-select">
                                 @isset($irrigation->id)
-                                    <option value="{{ $irrigation->district}}" selected>
-                                        {{ $irrigation->district}}</option>
+                                    <option value="{{ $irrigation->district }}" selected>
+                                        {{ $irrigation->district }}</option>
                                 @else
                                     <option value="" selected>जिल्ला छान्नुहोस्</option>
                                 @endisset
-                               
+
                                 @foreach ($provinces as $province)
                                     @foreach ($province->districts as $district)
                                         <option value="{{ $district->name }}" data-province-id="{{ $province->id }}">
@@ -78,16 +91,8 @@
                                 value="{{ old('half_yearly', $irrigation->half_yearly) }}">
                         </div>
 
-                       
+
                     </div>
-
-
-
-
-
-
-
-
                     <div class="form-group">
                         <button type="submit"
                             class="btn btn-success z-depth-0">{{ $irrigation->id ? 'Update' : 'सेभ गर्नुहोस्' }}
@@ -98,7 +103,7 @@
         </div>
 
         <div class="my-4"></div>
-        <div class="container">
+        <div class="container-fluid">
             <div class="card z-depth-0">
                 <div class="card-header">
                     <h1 class="h3-responsive d-inline-block">सुदूरपश्चिममा कृषि उपजले ढाकेको जिल्लागत भू – क्षेत्र</h1>
@@ -108,7 +113,7 @@
                 <div class="card-body">
                     <table class="table table-striped table-hover">
                         <thead>
-                           
+
                             <tr class="thead-light">
                                 <th colspan="5"></th>
                                 <th colspan="3" class="border-left border-white">सिंचित (हे.)</th>
@@ -128,7 +133,7 @@
                         <tbody>
                             @forelse ($irrigations as $item)
                                 <tr>
-                                    <td>{{$loop->iteration}}</td>
+                                    <td>{{ $loop->iteration }}</td>
                                     <td>{{ $item->district }}</td>
                                     <td>{{ $item->area }}</td>
                                     <td>{{ $item->arable_land }}</td>
@@ -136,8 +141,8 @@
                                     <td>{{ $item->yearly }}</td>
                                     <td>{{ $item->half_yearly }}</td>
                                     <td>
-                                        <a class="action-btn text-primary" href="{{ route('irrigation.edit', $item) }}"><i
-                                                class="far fa-edit"></i></a>
+                                        <a class="action-btn text-primary"
+                                            href="{{ route('irrigation.edit', $item) }}"><i class="far fa-edit"></i></a>
                                         <form action="{{ route('irrigation.destroy', $item) }}" method="post"
                                             onsubmit="return confirm('के तपाईँ निश्चित हुनुहुन्छ?')"
                                             class="form-inline d-inline">

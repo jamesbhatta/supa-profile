@@ -1,16 +1,30 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
-        @include('alerts.all')
-    </div>
-    <div class="container">
+   
+    <div class="container-fluid">
+        <h3 class="font-weight-bold">सुदूरपश्चिममा पशुपंक्षीजन्य पदार्थको बार्षिक उत्पादनको अवस्था ०७७/०७८</h3>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                <li class="breadcrumb-item active" aria-current="page">कृषि क्षेत्र</li>
+                <li class="breadcrumb-item active" aria-current="page">सुदूरपश्चिममा पशुपंक्षीजन्य पदार्थको बार्षिक उत्पादनको अवस्था ०७७/०७८</li>
+            </ol>
+        </nav>
+        <div class="container">
+            @include('alerts.all')
+        </div>
         <div class="card z-depth-0">
-            <div class="col-12">
-                <label class="col-12 text-center font-weight-bold h4 my-5">सुदूरपश्चिममा पशुपंक्षीजन्य पदार्थको बार्षिक
-                    उत्पादनको अवस्था ०७७/०७८</label>
-                <hr>
+            <div class="card-header">
+                <div style="overflow: auto;scrollbar-width: none;">
+                    <div>
+                        <nav class="nav nav-pills" id="pills-tab" role="tablist">
+                            <h4>सुदूरपश्चिममा पशुपंक्षीजन्य पदार्थको बार्षिक उत्पादनको अवस्था ०७७/०७८</h4>
+                        </nav>
+                    </div>
+                </div>
             </div>
+            
             <div class="card-body">
                 <form
                     action="{{ $animal->id ? route('animal.update', $animal) : route('animal.store') }}"
@@ -67,7 +81,7 @@
         </div>
 
         <div class="my-4"></div>
-        <div class="container">
+        <div class="container-fluid">
             <div class="card z-depth-0">
                 <div class="card-header">
                     <h1 class="h3-responsive d-inline-block">सुदूरपश्चिममा पशुपंक्षीजन्य पदार्थको बार्षिक उत्पादनको अवस्था

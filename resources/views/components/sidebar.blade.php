@@ -313,7 +313,7 @@
 
                 <li class="nav-item sub-nav">
                     <a class="nav-link" href="{{ route('irrigation.index') }}">
-                        <span class="mx-3"><i class="fa fa-circle"></i></span> जिल्लागत क्सिंचाई स्थिति
+                        <span class="mx-3"><i class="fa fa-circle"></i></span> जिल्लागत सिचाई स्थिति
                     </a>
                 </li>
 

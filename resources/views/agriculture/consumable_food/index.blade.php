@@ -1,15 +1,29 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
-        @include('alerts.all')
-    </div>
-    <div class="container">
+    <div class="container-fluid">
+        <h3 class="font-weight-bold">उपभोग्य खाद्यान्नको स्थिति प्रदेशगत विवरण प्रक्षेपित जनसंख्यामा (मे.ट.) २०७५/२०७६</h3>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                <li class="breadcrumb-item active" aria-current="page">कृषि क्षेत्र</li>
+                <li class="breadcrumb-item active" aria-current="page">उपभोग्य खाद्यान्नको स्थिति प्रदेशगत विवरण प्रक्षेपित जनसंख्यामा (मे.ट.) २०७५/२०७६</li>
+            </ol>
+        </nav>
+        <div class="container">
+            @include('alerts.all')
+        </div>
         <div class="card z-depth-0">
-            <div class="col-12">
-                <label class="col-12 text-center font-weight-bold h4 my-5">उपभोग्य खाद्यान्नको स्थिति प्रदेशगत विवरण प्रक्षेपित जनसंख्यामा (मे.ट.) २०७५/२०७६</label>
-                <hr>
+            <div class="card-header">
+                <div style="overflow: auto;scrollbar-width: none;">
+                    <div>
+                        <nav class="nav nav-pills" id="pills-tab" role="tablist">
+                            <h4>उपभोग्य खाद्यान्नको स्थिति प्रदेशगत विवरण प्रक्षेपित जनसंख्यामा (मे.ट.) २०७५/२०७६</h4>
+                        </nav>
+                    </div>
+                </div>
             </div>
+            
             <div class="card-body">
                 <form
                     action="{{ $consumableFood->id ? route('consumable-food.update', $consumableFood) : route('consumable-food.store') }}"
@@ -114,10 +128,11 @@
         </div>
 
         <div class="my-4"></div>
-        <div class="container">
+        <div class="container-fluid">
             <div class="card z-depth-0">
                 <div class="card-header">
-                    <h1 class="h3-responsive d-inline-block">उपभोग्य खाद्यान्नको स्थिति प्रदेशगत विवरण प्रक्षेपित जनसंख्यामा (मे.ट.) २०७५/२०७६</h1>
+                    <h1 class="h3-responsive d-inline-block">उपभोग्य खाद्यान्नको स्थिति प्रदेशगत विवरण प्रक्षेपित जनसंख्यामा
+                        (मे.ट.) २०७५/२०७६</h1>
                     {{-- <small>(हाल {{ count($schools)  }}  विद्यालय {{ count($schools) > 1 ? 'हरु छन्' : 'छ' }} )</small> --}}
 
                 </div>

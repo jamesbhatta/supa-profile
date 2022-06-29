@@ -1,16 +1,29 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
-        @include('alerts.all')
-    </div>
-    <div class="container">
+    <div class="container-fluid">
+        <h3 class="font-weight-bold">जिल्ला अनुसार खाद्यान्न उत्पादन तथा आवश्यकताको स्थितिको जिल्लागत विवरण, आर्थिक वर्ष २०७६/०७७ (प्रारम्भिक अनुमान (मे. टन))</h3>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                <li class="breadcrumb-item active" aria-current="page">कृषि क्षेत्र</li>
+                <li class="breadcrumb-item active" aria-current="page">जिल्ला अनुसार खाद्यान्न उत्पादन तथा आवश्यकताको स्थितिको जिल्लागत विवरण, आर्थिक वर्ष २०७६/०७७ (प्रारम्भिक अनुमान (मे. टन))</li>
+            </ol>
+        </nav>
+        <div class="container">
+            @include('alerts.all')
+        </div>
         <div class="card z-depth-0">
-            <div class="col-12">
-                <label class="col-12 text-center font-weight-bold h4 my-5">जिल्ला अनुसार खाद्यान्न उत्पादन तथा आवश्यकताको
-                    स्थितिको जिल्लागत विवरण, आर्थिक वर्ष २०७६/०७७ (प्रारम्भिक अनुमान (मे. टन))</label>
-                <hr>
+            <div class="card-header">
+                <div style="overflow: auto;scrollbar-width: none;">
+                    <div>
+                        <nav class="nav nav-pills" id="pills-tab" role="tablist">
+                            <h4>जिल्ला अनुसार खाद्यान्न उत्पादन तथा आवश्यकताको स्थितिको जिल्लागत विवरण, आर्थिक वर्ष २०७६/०७७ (प्रारम्भिक अनुमान (मे. टन))</h4>
+                        </nav>
+                    </div>
+                </div>
             </div>
+           
             <div class="card-body">
                 <form
                     action="{{ $requireFood->id ? route('required-food.update', $requireFood) : route('required-food.store') }}"
@@ -128,7 +141,7 @@
         </div>
 
         <div class="my-4"></div>
-        <div class="container">
+        <div class="container-fluid">
             <div class="card z-depth-0">
                 <div class="card-header">
                     <h1 class="h3-responsive d-inline-block">जिल्ला अनुसार खाद्यान्न उत्पादन तथा आवश्यकताको स्थितिको

@@ -1,16 +1,29 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
-        @include('alerts.all')
-    </div>
-    <div class="container">
+    <div class="container-fluid">
+        <h3 class="font-weight-bold">सुदूरपश्चिममा बार्षिक अण्डा उत्पादनको अवस्था ०७७/०७८</h3>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                <li class="breadcrumb-item active" aria-current="page">कृषि क्षेत्र</li>
+                <li class="breadcrumb-item active" aria-current="page">सुदूरपश्चिममा बार्षिक अण्डा उत्पादनको अवस्था ०७७/०७८</li>
+            </ol>
+        </nav>
+        <div class="container">
+            @include('alerts.all')
+        </div>
         <div class="card z-depth-0">
-            <div class="col-12">
-                <label class="col-12 text-center font-weight-bold h4 my-5">सुदूरपश्चिममा बार्षिक अण्डा उत्पादनको अवस्था
-                    ०७७/०७८</label>
-                <hr>
+            <div class="card-header">
+                <div style="overflow: auto;scrollbar-width: none;">
+                    <div>
+                        <nav class="nav nav-pills" id="pills-tab" role="tablist">
+                            <h4>सुदूरपश्चिममा बार्षिक अण्डा उत्पादनको अवस्था ०७७/०७८</h4>
+                        </nav>
+                    </div>
+                </div>
             </div>
+           
             <div class="card-body">
                 <form
                     action="{{ $eggProduction->id ? route('egg-production.update', $eggProduction) : route('egg-production.store') }}"
@@ -23,8 +36,8 @@
                         <div class="form-group col-lg-4">
                             <label for="select-province-id">प्रदेशको नाम</label>
                             <select id="select-province-id" class="custom-select">
-                               
-                                    <option value="">प्रदेश छान्नुहोस्</option>
+
+                                <option value="">प्रदेश छान्नुहोस्</option>
                                 @foreach ($provinces as $province)
                                     <option value="{{ $province->id }}">{{ $province->name }}</option>
                                 @endforeach
@@ -34,8 +47,8 @@
                             <label for="select-district-id">जिल्लाको नाम</label>
                             <select name="district" id="select-district-id" class="custom-select">
                                 @isset($eggProduction->id)
-                                    <option value="{{ $eggProduction->district}}" selected>
-                                        {{ $eggProduction->district}}</option>
+                                    <option value="{{ $eggProduction->district }}" selected>
+                                        {{ $eggProduction->district }}</option>
                                 @else
                                     <option value="">जिल्ला छान्नुहोस्</option>
                                 @endisset
@@ -112,10 +125,10 @@
                                 <td>{{ $item->duck }}</td>
                                 <td>{{ $item->chicken_egg }}</td>
                                 <td>{{ $item->duck_egg }}</td>
-                                <td>{{$item->layers+$item->duck+$item->chicken_egg+$item->duck_egg}}</td>
+                                <td>{{ $item->layers + $item->duck + $item->chicken_egg + $item->duck_egg }}</td>
                                 <td>
-                                    <a class="action-btn text-primary" href="{{ route('egg-production.edit', $item) }}"><i
-                                            class="far fa-edit"></i></a>
+                                    <a class="action-btn text-primary"
+                                        href="{{ route('egg-production.edit', $item) }}"><i class="far fa-edit"></i></a>
                                     <form action="{{ route('egg-production.destroy', $item) }}" method="post"
                                         onsubmit="return confirm('के तपाईँ निश्चित हुनुहुन्छ?')"
                                         class="form-inline d-inline">

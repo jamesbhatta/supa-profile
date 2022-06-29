@@ -1,18 +1,31 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
-        @include('alerts.all')
-    </div>
-    <div class="container">
+    <div class="container-fluid">
+        <h3 class="font-weight-bold">सुदूरपश्चिमका प्रमुख बर्षे बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व</h3>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                <li class="breadcrumb-item active" aria-current="page">कृषि क्षेत्र</li>
+                <li class="breadcrumb-item active" aria-current="page">सुदूरपश्चिमका प्रमुख बर्षे बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व</li>
+            </ol>
+        </nav>
+        <div class="container">
+            @include('alerts.all')
+        </div>
         <div class="card z-depth-0">
-            <div class="col-12">
-                <label class="col-12 text-center font-weight-bold h4 my-5">सुदूरपश्चिमका प्रमुख बर्षे बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व</label>
-                <hr>
+            <div class="card-header">
+                <div style="overflow: auto;scrollbar-width: none;">
+                    <div>
+                        <nav class="nav nav-pills" id="pills-tab" role="tablist">
+                            <h4>सुदूरपश्चिमका प्रमुख बर्षे बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व</h4>
+                        </nav>
+                    </div>
+                </div>
             </div>
             <div class="card-body">
-                <form action="{{ $bali->id ? route('rainy-crop.update', $bali) : route('rainy-crop.store') }}" method="POST"
-                    class="form">
+                <form action="{{ $bali->id ? route('rainy-crop.update', $bali) : route('rainy-crop.store') }}"
+                    method="POST" class="form">
                     @csrf
                     @isset($bali->id)
                         @method('PUT')
@@ -78,7 +91,8 @@
 
         <div class="card z-depth-0">
             <div class="card-header">
-                <h1 class="h3-responsive d-inline-block">सुदूरपश्चिमका प्रमुख बर्षे बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व</h1>
+                <h1 class="h3-responsive d-inline-block">सुदूरपश्चिमका प्रमुख बर्षे बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व
+                </h1>
                 {{-- <small>(हाल {{ count($schools)  }}  विद्यालय {{ count($schools) > 1 ? 'हरु छन्' : 'छ' }} )</small> --}}
 
             </div>
@@ -98,16 +112,15 @@
                     <tbody>
                         @forelse ($balis as $item)
                             <tr>
-                                <td>{{ $item->crops}}</td>
-                                <td>{{ $item->area1}}</td>
-                                <td>{{ $item->production1}}</td>
-                                <td>{{ $item->productivity1}}</td>
-                                <td>{{ $item->area2}}</td>
-                                <td>{{ $item->production2}}</td>
-                                <td>{{ $item->productivity2}}</td>
+                                <td>{{ $item->crops }}</td>
+                                <td>{{ $item->area1 }}</td>
+                                <td>{{ $item->production1 }}</td>
+                                <td>{{ $item->productivity1 }}</td>
+                                <td>{{ $item->area2 }}</td>
+                                <td>{{ $item->production2 }}</td>
+                                <td>{{ $item->productivity2 }}</td>
                                 <td>
-                                    <a class="action-btn text-primary"
-                                        href="{{ route('rainy-crop.edit', $item) }}"><i
+                                    <a class="action-btn text-primary" href="{{ route('rainy-crop.edit', $item) }}"><i
                                             class="far fa-edit"></i></a>
                                     <form action="{{ route('rainy-crop.destroy', $item) }}" method="post"
                                         onsubmit="return confirm('के तपाईँ निश्चित हुनुहुन्छ?')"
