@@ -52,3 +52,8 @@ Route::get('radio', 'RadioController@listingRadio');
 Route::get('province-business', 'ProvinceBusinesslController@listingProvinceBusinessl');
 Route::get('supa-business', 'SupaBusinessController@listingSupaBusiness');
 
+// unit 8
+Route::get('ownership', 'OwnershipController@listingOwnership');
+Route::get('agriculture-produce', 'AgricultureProduceController@listofAgricultureProduce');
+
+

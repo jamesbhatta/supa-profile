@@ -8,6 +8,26 @@ use Illuminate\Http\Request;
 
 class AgricultureProduceController extends Controller
 {
+    public function listofAgricultureProduce()
+    {
+        $data = AgricultureProduce::get();
+        $dataset['labels'] = ["जिल्ला", "खाद्य तथा अन्य बाली हे.", "तरकारी तथा बागवानी", "फलफुल तथा मसला", "खाद्य तथा अन्य बाली", "तरकारी तथा बागवानी", "फलफुल तथा मसला"];
+        $dataset['data'] = [];
+        foreach ($data as $key => $item) {
+            $dataset['data'][] = [
+                $item->district,
+                $item->food_area,
+                $item->vegetable_area,
+                $item->fruits_area,
+                $item->food_percentage,
+                $item->vegetable_percentage,
+                $item->fruits_percentage,
+            ];
+        }
+
+        return response()->json($dataset, 200);
+    }
+
     public function index(AgricultureProduce $agricultureProduce)
     {
         $provinces=Province::get();

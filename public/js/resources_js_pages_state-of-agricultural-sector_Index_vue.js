@@ -297,6 +297,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -542,6 +543,119 @@ __webpack_require__.r(__webpack_exports__);
         data: [["बाजुरा", 21733, 29308, -7575], ["बझाङ्ग", 23337, 41942, -18604], ["दार्चुला", 22391, 27587, -5196], ["उच्च पहाडी जम्मा", 67462, 98838, -31376], ["अछाम", 51630, 57216, -5686], ["डोटी", 47580, 44160, 3420], ["बैतडी", 43583, 53802, -10218], ["डडेिधूरा", 42006, 31731, 10274], ["मध्य पहाडी जम्मा", 184800, 187010, -2209], ["कैलाली", 271980, 169029, 102951], ["कञ्चनपुर", 172862, 95494, 77368], ["तराई जम्मा", 444842, 264523, 180319], ["एकमुष्ट जम्मा", 697105, 550372, 146732]]
       }
     };
+  },
+  mounted: function mounted() {
+    this.fetchOwnership();
+    this.fetchLandUses();
+    this.fetchSupaKirsiipaj();
+    this.fetchAirport();
+    this.fetchElectricityAccess();
+    this.fetchElectricityGenerate();
+    this.fetchTelecomunication();
+    this.fetchNewsPaper();
+    this.fetchRadio();
+  },
+  methods: {
+    fetchOwnership: function fetchOwnership() {
+      var _this = this;
+
+      axios.get("/api/ownership").then(function (response) {
+        _this.vuswamitwadata.labels = response.data.labels;
+        _this.vuswamitwadata.data = response.data.data;
+        _this.infoDatas = response.data;
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchLandUses: function fetchLandUses() {
+      var _this2 = this;
+
+      axios.get("/api/land-uses").then(function (response) {
+        _this2.vuupyogkoData.labels = response.data.labels;
+        _this2.vuupyogkoData.data = response.data.data;
+        _this2.infoDatas = response.data;
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchSupaKirsiipaj: function fetchSupaKirsiipaj() {
+      var _this3 = this;
+
+      axios.get("/api/agriculture-produce").then(function (response) {
+        _this3.supakirsiipaj.labels = response.data.labels;
+        _this3.supakirsiipaj.data = response.data.data;
+        _this3.infoDatas = response.data;
+        console.log(response.data);
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchAirport: function fetchAirport() {
+      var _this4 = this;
+
+      axios.get("/api/airport").then(function (response) {
+        _this4.airportdata.labels = response.data.labels;
+        _this4.airportdata.data = response.data.data;
+        _this4.infoDatas = response.data;
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchElectricityAccess: function fetchElectricityAccess() {
+      var _this5 = this;
+
+      axios.get("/api/electricity-access").then(function (response) {
+        _this5.provinceelectricitypahuch.labels = response.data.labels;
+        _this5.provinceelectricitypahuch.data = response.data.data;
+        _this5.infoDatas = response.data;
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchElectricityGenerate: function fetchElectricityGenerate() {
+      var _this6 = this;
+
+      axios.get("/api/electricity-generate").then(function (response) {
+        _this6.produceelectricitydata.labels = response.data.labels;
+        _this6.produceelectricitydata.data = response.data.data;
+        _this6.infoDatas = response.data;
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchTelecomunication: function fetchTelecomunication() {
+      var _this7 = this;
+
+      axios.get("/api/telecomunication").then(function (response) {
+        _this7.telecomunicationdata.labels = response.data.labels;
+        _this7.telecomunicationdata.data = response.data.data;
+        _this7.infoDatas = response.data;
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchNewsPaper: function fetchNewsPaper() {
+      var _this8 = this;
+
+      axios.get("/api/news-paper").then(function (response) {
+        _this8.newspaperdata.labels = response.data.labels;
+        _this8.newspaperdata.data = response.data.data;
+        _this8.infoDatas = response.data;
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchRadio: function fetchRadio() {
+      var _this9 = this;
+
+      axios.get("/api/radio").then(function (response) {
+        _this9.fmdata.labels = response.data.labels;
+        _this9.fmdata.data = response.data.data;
+        _this9.infoDatas = response.data;
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    }
   }
 });
 
@@ -1173,7 +1287,7 @@ var staticRenderFns = [
                   _c("li", { staticClass: "my-3" }, [
                     _c("a", { attrs: { href: "#table_13" } }, [
                       _vm._v(
-                        " उपभोग्य खाद्यान्नको स्थिति प्रदेशगत विवरण प्रक्षेपित जनसंख्यामा (मे.ट.) २०७५/२०७६"
+                        " उपभोग्य खाद्यान्नको स्थिति प्रदेशगत विवरण प्रक्षेपित जनसंख्यामा (मे.ट.)\n                  २०७५/२०७६"
                       ),
                     ]),
                   ]),

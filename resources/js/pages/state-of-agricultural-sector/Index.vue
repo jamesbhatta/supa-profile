@@ -8,9 +8,9 @@
             <div style="height: 80px;"></div>
             <div class="list-set">
               <ul class="table-list " style="overflow: auto;">
-              <li class="my-3">
-                <a href="#table_1">प्रदेशमा भू – स्वामित्वको अवस्था</a>
-              </li>
+                <li class="my-3">
+                  <a href="#table_1">प्रदेशमा भू – स्वामित्वको अवस्था</a>
+                </li>
                 <li class="my-3">
                   <a href="#table_2">भू – उपयोगको अवस्था</a>
                 </li>
@@ -34,29 +34,30 @@
                 <li class="my-3">
                   <a href="#table_7">प्रमुख खाद्यान्न बालीहरुको तुलनात्मक क्षेत्रफल तथा उत्पादन विवरण</a>
                 </li>
-      
+
                 <li class="my-3">
                   <a href="#table_8">सुदूरपश्चिमका प्रमुख हिउँदे बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व</a>
                 </li>
-      
+
                 <li class="my-3">
                   <a href="#table_9">सुदूरपश्चिमका प्रमुख बर्षे बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व</a>
                 </li>
-      
+
                 <li class="my-3">
                   <a href="#table_10">सुदूरपश्चिमका प्रमुख दलहन बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व</a>
                 </li>
-      
+
                 <li class="my-3">
                   <a href="#table_11">सुदूरपश्चिमका प्रमुख तेलहन बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व</a>
                 </li>
-      
+
                 <li class="my-3">
                   <a href="#table_12">प्रमुख बर्षे तरकारी बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व</a>
                 </li>
 
                 <li class="my-3">
-                  <a href="#table_13"> उपभोग्य खाद्यान्नको स्थिति प्रदेशगत विवरण प्रक्षेपित जनसंख्यामा (मे.ट.) २०७५/२०७६</a>
+                  <a href="#table_13"> उपभोग्य खाद्यान्नको स्थिति प्रदेशगत विवरण प्रक्षेपित जनसंख्यामा (मे.ट.)
+                    २०७५/२०७६</a>
                 </li>
 
                 <li class="my-3">
@@ -837,6 +838,124 @@ export default {
       },
 
     };
+  },
+  mounted() {
+    this.fetchOwnership();
+    this.fetchLandUses();
+    this.fetchSupaKirsiipaj();
+    this.fetchAirport();
+    this.fetchElectricityAccess();
+    this.fetchElectricityGenerate();
+    this.fetchTelecomunication();
+    this.fetchNewsPaper();
+    this.fetchRadio();
+  },
+  methods: {
+    fetchOwnership() {
+      axios
+        .get("/api/ownership")
+
+        .then((response) => {
+          this.vuswamitwadata.labels = response.data.labels;
+          this.vuswamitwadata.data = response.data.data
+          this.infoDatas = response.data;
+          
+        })
+        .catch((error) => console.log(error));
+    },
+    fetchLandUses() {
+      axios
+        .get("/api/land-uses")
+
+        .then((response) => {
+          this.vuupyogkoData.labels = response.data.labels;
+          this.vuupyogkoData.data = response.data.data
+          this.infoDatas = response.data;
+        })
+        .catch((error) => console.log(error));
+    },
+    fetchSupaKirsiipaj() {
+      axios
+        .get("/api/agriculture-produce")
+
+        .then((response) => {
+          this.supakirsiipaj.labels = response.data.labels;
+          this.supakirsiipaj.data = response.data.data
+          this.infoDatas = response.data;
+          console.log(response.data);
+        })
+
+        .catch((error) => console.log(error));
+    },
+    fetchAirport() {
+      axios
+        .get("/api/airport")
+
+        .then((response) => {
+          this.airportdata.labels = response.data.labels;
+          this.airportdata.data = response.data.data
+          this.infoDatas = response.data;
+        })
+        .catch((error) => console.log(error));
+    },
+    fetchElectricityAccess() {
+      axios
+        .get("/api/electricity-access")
+
+        .then((response) => {
+          this.provinceelectricitypahuch.labels = response.data.labels;
+          this.provinceelectricitypahuch.data = response.data.data
+          this.infoDatas = response.data;
+        })
+        .catch((error) => console.log(error));
+    },
+    fetchElectricityGenerate() {
+      axios
+        .get("/api/electricity-generate")
+
+        .then((response) => {
+          this.produceelectricitydata.labels = response.data.labels;
+          this.produceelectricitydata.data = response.data.data
+          this.infoDatas = response.data;
+        })
+        .catch((error) => console.log(error));
+    },
+    fetchTelecomunication() {
+      axios
+        .get("/api/telecomunication")
+
+        .then((response) => {
+          this.telecomunicationdata.labels = response.data.labels;
+          this.telecomunicationdata.data = response.data.data
+          this.infoDatas = response.data;
+
+        })
+        .catch((error) => console.log(error));
+    },
+    fetchNewsPaper() {
+      axios
+        .get("/api/news-paper")
+
+        .then((response) => {
+          this.newspaperdata.labels = response.data.labels;
+          this.newspaperdata.data = response.data.data
+          this.infoDatas = response.data;
+
+        })
+        .catch((error) => console.log(error));
+    },
+    fetchRadio() {
+      axios
+        .get("/api/radio")
+
+        .then((response) => {
+          this.fmdata.labels = response.data.labels;
+          this.fmdata.data = response.data.data
+          this.infoDatas = response.data;
+
+        })
+        .catch((error) => console.log(error));
+    },
   },
 };
 </script>
