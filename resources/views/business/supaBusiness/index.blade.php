@@ -1,15 +1,28 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
-        @include('alerts.all')
-    </div>
-    <div class="container">
+    <div class="container-fluid">
+        <h3 class="font-weight-bold">ठूला तथा मझौला उद्योगहरुको प्रदेशगत विवरण</h3>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                <li class="breadcrumb-item active" aria-current="page">उद्योग ब्यवसाय</li>
+                <li class="breadcrumb-item active" aria-current="page">ठूला तथा मझौला उद्योगहरुको प्रदेशगत विवरण
+                </li>
+            </ol>
+        </nav>
+        <div class="container">
+            @include('alerts.all')
+        </div>
         <div class="card z-depth-0">
-            <div class="col-12">
-                <label class="col-12 text-center font-weight-bold h4 my-5">सुदूरपश्चिमका दर्ता भएका कूल साना उद्योगहरुको
-                    विवरण</label>
-                <hr>
+            <div class="card-header">
+                <div style="overflow: auto;scrollbar-width: none;">
+                    <div>
+                        <nav class="nav nav-pills" id="pills-tab" role="tablist">
+                            <h4>ठूला तथा मझौला उद्योगहरुको प्रदेशगत विवरण</h4>
+                        </nav>
+                    </div>
+                </div>
             </div>
             <div class="card-body">
                 <form
@@ -27,8 +40,8 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-md-4 border">
-                            <h5 class="text-center p-3 font-weight-bold border-bottom">लघु</h5>
+                        <div class="col-lg-4 border">
+                            <label style="position: relative;top:-10px" class="bg-white px-4">लघु</label>
                             <div class="form-group">
                                 <label for="input-fiscal-year-start">संख्या</label>
                                 <input type="text" name="laghu_quantity" class="form-control"
@@ -41,8 +54,9 @@
                                     value="{{ old('laghu_capital', $supaBusiness->laghu_capital) }}">
                             </div>
                         </div>
-                        <div class="col-md-4 border">
-                            <h5 class="text-center p-3 font-weight-bold border-bottom">घरेलु</h5>
+
+                        <div class="col-lg-4 border">
+                            <label style="position: relative;top:-10px" class="bg-white px-4">घरेलु</label>
                             <div class="form-group">
                                 <label for="input-fiscal-year-start">संख्या</label>
                                 <input type="text" name="gahrelu_quantity" class="form-control"
@@ -55,8 +69,9 @@
                                     value="{{ old('gharelu_capital', $supaBusiness->gharelu_capital) }}">
                             </div>
                         </div>
-                        <div class="col-md-4 border">
-                            <h5 class="text-center p-3 font-weight-bold border-bottom">साना</h5>
+
+                        <div class="col-lg-4 border">
+                            <label style="position: relative;top:-10px" class="bg-white px-4">साना</label>
                             <div class="form-group">
                                 <label for="input-fiscal-year-start">संख्या</label>
                                 <input type="text" name="sana_quantity" class="form-control"
@@ -69,8 +84,6 @@
                                     value="{{ old('sana_capital', $supaBusiness->sana_capital) }}">
                             </div>
                         </div>
-
-
 
 
                     </div>
@@ -110,7 +123,7 @@
                             <th>कुलपुँजी</th>
                             <th>संख्या</th>
                             <th>कुलपुँजी</th>
-                           
+
                             <th></th>
                         </tr>
                     </thead>
