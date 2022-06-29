@@ -432,7 +432,7 @@ __webpack_require__.r(__webpack_exports__);
         data: [[1, "ब्दाम", 622, 608, 0.98, 679, 660, 0.97], [2, "तिल", 2183, 2081, 0.95, 2185, 2215, 1.01], [3, "सुर्यमूखी", 144, 171, 1.19, 145, 178, 1.22], ["", "जम्मा", 2949, 2860, "", 3009, 3052, ""]]
       },
       // 10.12
-      barsetarkaribalidata: {
+      barsetarkaribali: {
         id: 'table_12',
         title: "प्रमुख बर्षे तरकारी बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व",
         labels: ["क्रस", "बाली", "क्षेत्रफल हे.", "उत्पादन/अनुमानित मे.ट.", "उत्पादकत्व मे.ट.", "क्षेत्रफल", "उत्पादन/अनुमानित मे.ट.", "उत्पादकत्व मे.ट."],
@@ -548,12 +548,13 @@ __webpack_require__.r(__webpack_exports__);
     this.fetchOwnership();
     this.fetchLandUses();
     this.fetchSupaKirsiipaj();
-    this.fetchAirport();
-    this.fetchElectricityAccess();
-    this.fetchElectricityGenerate();
-    this.fetchTelecomunication();
-    this.fetchNewsPaper();
-    this.fetchRadio();
+    this.fetchIrregation();
+    this.fetchAgriculturalProduction();
+    this.fetchWinterCrops();
+    this.fetchRainyCrops();
+    this.fetchDalhan();
+    this.fetchTelhan();
+    this.fetchVegitable();
   },
   methods: {
     fetchOwnership: function fetchOwnership() {
@@ -590,68 +591,80 @@ __webpack_require__.r(__webpack_exports__);
         return console.log(error);
       });
     },
-    fetchAirport: function fetchAirport() {
+    fetchIrregation: function fetchIrregation() {
       var _this4 = this;
 
-      axios.get("/api/airport").then(function (response) {
-        _this4.airportdata.labels = response.data.labels;
-        _this4.airportdata.data = response.data.data;
+      axios.get("/api/irrigation").then(function (response) {
+        _this4.supasichai.labels = response.data.labels;
+        _this4.supasichai.data = response.data.data;
         _this4.infoDatas = response.data;
       })["catch"](function (error) {
         return console.log(error);
       });
     },
-    fetchElectricityAccess: function fetchElectricityAccess() {
+    fetchAgriculturalProduction: function fetchAgriculturalProduction() {
       var _this5 = this;
 
-      axios.get("/api/electricity-access").then(function (response) {
-        _this5.provinceelectricitypahuch.labels = response.data.labels;
-        _this5.provinceelectricitypahuch.data = response.data.data;
+      axios.get("/api/agricultural-production").then(function (response) {
+        _this5.supabaliutpadan.labels = response.data.labels;
+        _this5.supabaliutpadan.data = response.data.data;
         _this5.infoDatas = response.data;
       })["catch"](function (error) {
         return console.log(error);
       });
     },
-    fetchElectricityGenerate: function fetchElectricityGenerate() {
+    fetchWinterCrops: function fetchWinterCrops() {
       var _this6 = this;
 
-      axios.get("/api/electricity-generate").then(function (response) {
-        _this6.produceelectricitydata.labels = response.data.labels;
-        _this6.produceelectricitydata.data = response.data.data;
+      axios.get("/api/winter-crops").then(function (response) {
+        _this6.hiudebalidata.labels = response.data.labels;
+        _this6.hiudebalidata.data = response.data.data;
         _this6.infoDatas = response.data;
       })["catch"](function (error) {
         return console.log(error);
       });
     },
-    fetchTelecomunication: function fetchTelecomunication() {
+    fetchRainyCrops: function fetchRainyCrops() {
       var _this7 = this;
 
-      axios.get("/api/telecomunication").then(function (response) {
-        _this7.telecomunicationdata.labels = response.data.labels;
-        _this7.telecomunicationdata.data = response.data.data;
+      axios.get("/api/rainy-crops").then(function (response) {
+        _this7.barsebalidata.labels = response.data.labels;
+        _this7.barsebalidata.data = response.data.data;
         _this7.infoDatas = response.data;
       })["catch"](function (error) {
         return console.log(error);
       });
     },
-    fetchNewsPaper: function fetchNewsPaper() {
+    fetchDalhan: function fetchDalhan() {
       var _this8 = this;
 
-      axios.get("/api/news-paper").then(function (response) {
-        _this8.newspaperdata.labels = response.data.labels;
-        _this8.newspaperdata.data = response.data.data;
+      axios.get("/api/dalhan").then(function (response) {
+        _this8.dalhandata.labels = response.data.labels;
+        _this8.dalhandata.data = response.data.data;
         _this8.infoDatas = response.data;
       })["catch"](function (error) {
         return console.log(error);
       });
     },
-    fetchRadio: function fetchRadio() {
+    fetchTelhan: function fetchTelhan() {
       var _this9 = this;
 
-      axios.get("/api/radio").then(function (response) {
-        _this9.fmdata.labels = response.data.labels;
-        _this9.fmdata.data = response.data.data;
+      axios.get("/api/telhan").then(function (response) {
+        _this9.telhanbalidata.labels = response.data.labels;
+        _this9.telhanbalidata.data = response.data.data;
         _this9.infoDatas = response.data;
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchVegitable: function fetchVegitable() {
+      var _this10 = this;
+
+      axios.get("/api/vegitable").then(function (response) {
+        _this10.barsetarkaribali.labels = response.data.labels;
+        _this10.barsetarkaribali.data = response.data.data;
+        _this10.infoDatas = response.data;
+        console.log(response.data);
       })["catch"](function (error) {
         return console.log(error);
       });
@@ -969,7 +982,7 @@ var render = function () {
               _vm._v(" "),
               _c("data-viewer", { attrs: { data: _vm.telhanbalidata } }),
               _vm._v(" "),
-              _c("data-viewer", { attrs: { data: _vm.barsetarkaribalidata } }),
+              _c("data-viewer", { attrs: { data: _vm.barsetarkaribali } }),
               _vm._v(" "),
               _c("data-viewer", { attrs: { data: _vm.khadyannabibaran } }),
               _vm._v(" "),

@@ -191,7 +191,7 @@
 
             <data-viewer :data="telhanbalidata"></data-viewer>
 
-            <data-viewer :data="barsetarkaribalidata"></data-viewer>
+            <data-viewer :data="barsetarkaribali"></data-viewer>
 
             <data-viewer :data="khadyannabibaran"></data-viewer>
 
@@ -599,8 +599,9 @@ export default {
         ],
       },
 
+      
       // 10.12
-      barsetarkaribalidata: {
+      barsetarkaribali: {
         id: 'table_12',
         title: "प्रमुख बर्षे तरकारी बालीको क्षेत्रफल, उत्पादन र उत्पादकत्व",
         labels: ["क्रस", "बाली", "क्षेत्रफल हे.", "उत्पादन/अनुमानित मे.ट.", "उत्पादकत्व मे.ट.", "क्षेत्रफल", "उत्पादन/अनुमानित मे.ट.", "उत्पादकत्व मे.ट."],
@@ -843,12 +844,13 @@ export default {
     this.fetchOwnership();
     this.fetchLandUses();
     this.fetchSupaKirsiipaj();
-    this.fetchAirport();
-    this.fetchElectricityAccess();
-    this.fetchElectricityGenerate();
-    this.fetchTelecomunication();
-    this.fetchNewsPaper();
-    this.fetchRadio();
+    this.fetchIrregation();
+    this.fetchAgriculturalProduction();
+    this.fetchWinterCrops();
+    this.fetchRainyCrops();
+    this.fetchDalhan();
+    this.fetchTelhan();
+    this.fetchVegitable();
   },
   methods: {
     fetchOwnership() {
@@ -887,76 +889,89 @@ export default {
 
         .catch((error) => console.log(error));
     },
-    fetchAirport() {
+    fetchIrregation() {
       axios
-        .get("/api/airport")
+        .get("/api/irrigation")
 
         .then((response) => {
-          this.airportdata.labels = response.data.labels;
-          this.airportdata.data = response.data.data
+          this.supasichai.labels = response.data.labels;
+          this.supasichai.data = response.data.data
           this.infoDatas = response.data;
         })
         .catch((error) => console.log(error));
     },
-    fetchElectricityAccess() {
+    fetchAgriculturalProduction() {
       axios
-        .get("/api/electricity-access")
+        .get("/api/agricultural-production")
 
         .then((response) => {
-          this.provinceelectricitypahuch.labels = response.data.labels;
-          this.provinceelectricitypahuch.data = response.data.data
+          this.supabaliutpadan.labels = response.data.labels;
+          this.supabaliutpadan.data = response.data.data
           this.infoDatas = response.data;
         })
         .catch((error) => console.log(error));
     },
-    fetchElectricityGenerate() {
+    fetchWinterCrops() {
       axios
-        .get("/api/electricity-generate")
+        .get("/api/winter-crops")
 
         .then((response) => {
-          this.produceelectricitydata.labels = response.data.labels;
-          this.produceelectricitydata.data = response.data.data
+          this.hiudebalidata.labels = response.data.labels;
+          this.hiudebalidata.data = response.data.data
           this.infoDatas = response.data;
         })
         .catch((error) => console.log(error));
     },
-    fetchTelecomunication() {
+    fetchRainyCrops() {
       axios
-        .get("/api/telecomunication")
+        .get("/api/rainy-crops")
 
         .then((response) => {
-          this.telecomunicationdata.labels = response.data.labels;
-          this.telecomunicationdata.data = response.data.data
-          this.infoDatas = response.data;
-
-        })
-        .catch((error) => console.log(error));
-    },
-    fetchNewsPaper() {
-      axios
-        .get("/api/news-paper")
-
-        .then((response) => {
-          this.newspaperdata.labels = response.data.labels;
-          this.newspaperdata.data = response.data.data
+          this.barsebalidata.labels = response.data.labels;
+          this.barsebalidata.data = response.data.data
           this.infoDatas = response.data;
 
         })
         .catch((error) => console.log(error));
     },
-    fetchRadio() {
+    fetchDalhan() {
       axios
-        .get("/api/radio")
+        .get("/api/dalhan")
 
         .then((response) => {
-          this.fmdata.labels = response.data.labels;
-          this.fmdata.data = response.data.data
+          this.dalhandata.labels = response.data.labels;
+          this.dalhandata.data = response.data.data
           this.infoDatas = response.data;
 
+        })
+        .catch((error) => console.log(error));
+    },
+    fetchTelhan() {
+      axios
+        .get("/api/telhan")
+
+        .then((response) => {
+          this.telhanbalidata.labels = response.data.labels;
+          this.telhanbalidata.data = response.data.data
+          this.infoDatas = response.data;
+
+        })
+        .catch((error) => console.log(error));
+    },
+    fetchVegitable() {
+      axios
+        .get("/api/vegitable")
+
+        .then((response) => {
+          this.barsetarkaribali.labels = response.data.labels;
+          this.barsetarkaribali.data = response.data.data
+          this.infoDatas = response.data;
+          console.log(response.data);
         })
         .catch((error) => console.log(error));
     },
   },
+  
 };
 </script>
 

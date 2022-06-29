@@ -7,9 +7,32 @@ use Illuminate\Http\Request;
 
 class DalhanController extends Controller
 {
+
+    public function listingDalhan()
+    {
+        $data = Bali::where('type', "dalhan")->get();
+        $dataset['labels'] = ["क्रस", "बाली", "क्षेत्रफल हे.", "उत्पादन/अनुमानित मे.ट.", "उत्पादकत्व मे.ट.", "क्षेत्रफल", "उत्पादन/अनुमानित मे.ट.", "उत्पादकत्व मे.ट."];
+        // $dataset['backgroundColor'] = ["red", "green", "blue"];
+        $dataset['data'] = [];
+        foreach ($data as $key => $item) {
+            $dataset['data'][] = [
+                $item->$item + 1,
+                $item->crops,
+                $item->area1,
+                $item->production1,
+                $item->productivity1,
+                $item->area2,
+                $item->production2,
+                $item->productivity2,
+            ];
+        }
+
+        return response()->json($dataset, 200);
+    }
+
     public function index(Bali $bali)
     {
-        $balis=Bali::where('type',"dalhan")->get();
+        $balis = Bali::where('type', "dalhan")->get();
         return view('agriculture.dalhan.index', compact(['bali', 'balis']));
     }
 
@@ -30,7 +53,7 @@ class DalhanController extends Controller
 
     public function edit(Bali $bali)
     {
-        $balis=Bali::where('type',"dalhan")->get();
+        $balis = Bali::where('type', "dalhan")->get();
         return view('agriculture.dalhan.index', compact(['bali', 'balis']));
     }
 

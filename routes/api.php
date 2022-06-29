@@ -55,5 +55,12 @@ Route::get('supa-business', 'SupaBusinessController@listingSupaBusiness');
 // unit 8
 Route::get('ownership', 'OwnershipController@listingOwnership');
 Route::get('agriculture-produce', 'AgricultureProduceController@listofAgricultureProduce');
+Route::get('irrigation', 'IrrigationController@listingIrrigation');
+Route::get('agricultural-production', 'AgriculturalProductionController@listingAgriculturalProduction');
+Route::get('winter-crops', 'WinterCropController@listingWinterCrop');
+Route::get('rainy-crops', 'RainyCropsController@listingRainyCrops');
+Route::get('dalhan', 'DalhanController@listingDalhan');
+Route::get('telhan', 'TelhanController@listingTelhan');
+Route::get('vegitable', 'VegitableController@listingVegitable');
 
 
