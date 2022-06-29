@@ -1,17 +1,30 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
-        @include('alerts.all')
-    </div>
-
-    <div class="container">
+    <div class="container-fluid">
+        <h3 class="font-weight-bold">सुदूरपश्चिममा रहेका कूल विद्यार्थी संख्या विवरण</h3>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                <li class="breadcrumb-item active" aria-current="page">सामाजिक विकास</li>
+                <li class="breadcrumb-item active" aria-current="page">सुदूरपश्चिममा रहेका कूल विद्यार्थी संख्या विवरण</li>
+            </ol>
+        </nav>
+        <div class="container">
+            @include('alerts.all')
+        </div>
         <div class="card z-depth-0">
-            <div class="card-body">
-                <div class="col-12">
-                    <label class="col-12 text-center font-weight-bold h4 my-5">सुदूरपश्चिममा रहेका कूल विद्यार्थी संख्या विवरण</label>
-                    <hr>
+            <div class="card-header">
+                <div style="overflow: auto;scrollbar-width: none;">
+                    <div>
+                        <nav class="nav nav-pills" id="pills-tab" role="tablist">
+                            <h4>सुदूरपश्चिममा रहेका कूल विद्यार्थी संख्या विवरण</h4>
+                        </nav>
+                    </div>
                 </div>
+            </div>
+            <div class="card-body">
+
                 <form
                     action="{{ $govermentSchoolStudent->id ? route('total-student.update', $govermentSchoolStudent) : route('total-student.store') }}"
                     method="POST" class="form">
@@ -26,7 +39,8 @@
                             <select name="class" class="form-control" id="">
                                 <option value="">कृपया कक्षा चयन गर्नुहोस्</option>
                                 @if ($govermentSchoolStudent->id)
-                                    <option value="{{ $govermentSchoolStudent->class }}">{{ $govermentSchoolStudent->class }}</option>
+                                    <option value="{{ $govermentSchoolStudent->class }}">
+                                        {{ $govermentSchoolStudent->class }}</option>
                                 @endif
                                 <option value="०–१ कक्षा">०–१ कक्षा</option>
                                 <option value="१–५ कक्षा">१–५ कक्षा</option>
@@ -81,8 +95,8 @@
                             </div>
                         </div>
 
-                        
-                        
+
+
                     </div>
                     <div class="form-group">
                         <button type="submit"

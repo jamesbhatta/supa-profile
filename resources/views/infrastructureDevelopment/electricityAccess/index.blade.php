@@ -1,44 +1,61 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
-        @include('alerts.all')
-    </div>
-    <div class="container">
+    
+    <div class="container-fluid">
+        <h3 class="font-weight-bold">विधुत सेवामा पहुँचको प्रदेशगत अवस्था</h3>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                <li class="breadcrumb-item active" aria-current="page">पूर्वाधार विकास</li>
+                <li class="breadcrumb-item active" aria-current="page">विधुत सेवामा पहुँचको प्रदेशगत अवस्था
+                </li>
+            </ol>
+        </nav>
+        <div class="container">
+            @include('alerts.all')
+        </div>
         <div class="card z-depth-0">
-            <div class="card-body">
-                <div class="col-12">
-                    <label class="col-12 text-center font-weight-bold h4 my-5">विधुत सेवामा पहुँचको प्रदेशगत अवस्था</label>
-                    <hr>
+            <div class="card-header">
+                <div style="overflow: auto;scrollbar-width: none;">
+                    <div>
+                        <nav class="nav nav-pills" id="pills-tab" role="tablist">
+                            <h4>विधुत सेवामा पहुँचको प्रदेशगत अवस्था</h4>
+                        </nav>
+                    </div>
                 </div>
+            </div>
+            <div class="card-body">
+                
                 <form action="{{ $electricityAccess->id ? route('electricity-access.update', $electricityAccess) : route('electricity-access.store') }}"
                     method="POST" class="form">
                     @csrf
                     @isset($electricityAccess->id)
                         @method('put')
                     @endisset
-                    <div class="form-group">
-                        <label for="select-province-id">प्रदेशको नाम</label>
-                        <select id="select-province-id" name="province" class="custom-select">
-                            
-                            @isset($electricityAccess->id)
-                            <option value="{{$electricityAccess->province}}">{{$electricityAccess->province}}</option>
-                            @else
-                            <option value="">प्रदेश छान्नुहोस्</option>
-                            @endisset
-                            @foreach ($provinces as $province)
-                                <option value="{{ $province->name }}">{{ $province->name }}</option>
-                            @endforeach
-                        </select>
+                    
+                    <div class="row">
+                        <div class="form-group col-lg-6">
+                            <label for="select-province-id">प्रदेशको नाम</label>
+                            <select id="select-province-id" name="province" class="custom-select">
+                                
+                                @isset($electricityAccess->id)
+                                <option value="{{$electricityAccess->province}}">{{$electricityAccess->province}}</option>
+                                @else
+                                <option value="">प्रदेश छान्नुहोस्</option>
+                                @endisset
+                                @foreach ($provinces as $province)
+                                    <option value="{{ $province->name }}">{{ $province->name }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                        <div class="form-group col-lg-6">
+                            <label for="input-name-en"> पहुँच (प्रतिशत)</label>
+                            <input type="text" id="input-name-en" name="accessability" class="form-control" autocomplete="off"
+                                value="{{ old('accessability', $electricityAccess->accessability) }}">
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="input-name-en"> पहुँच (प्रतिशत)</label>
-                        <input type="text" id="input-name-en" name="accessability" class="form-control" autocomplete="off"
-                            value="{{ old('accessability', $electricityAccess->accessability) }}">
-                    </div>
-
-
-
+                    
                     <div class="form-group">
                         <button type="submit"
                             class="btn btn-success z-depth-0">{{ $electricityAccess->id ? 'अपडेट गर्नुहोस्' : 'सेभ गर्नुहोस्' }}</button>

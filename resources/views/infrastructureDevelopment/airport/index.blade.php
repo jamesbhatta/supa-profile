@@ -1,11 +1,29 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
-        @include('alerts.all')
-    </div>
-    <div class="container">
+    <div class="container-fluid">
+        <h3 class="font-weight-bold">विमानस्थल</h3>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                <li class="breadcrumb-item active" aria-current="page">पूर्वाधार विकास</li>
+                <li class="breadcrumb-item active" aria-current="page">विमानस्थल
+                </li>
+            </ol>
+        </nav>
+        <div class="container">
+            @include('alerts.all')
+        </div>
         <div class="card z-depth-0">
+            <div class="card-header">
+                <div style="overflow: auto;scrollbar-width: none;">
+                    <div>
+                        <nav class="nav nav-pills" id="pills-tab" role="tablist">
+                            <h4>विमानस्थल</h4>
+                        </nav>
+                    </div>
+                </div>
+            </div>
             <div class="card-body">
                 <form action="{{ $airport->id ? route('airport.update', $airport) : route('airport.store') }}"
                     method="POST" class="form">
@@ -13,63 +31,65 @@
                     @isset($airport->id)
                         @method('put')
                     @endisset
-                    <div class="form-group">
-                        <label for="input-name">विमानस्थल</label>
-                        <input type="text" id="input-name" name="airport" class="form-control" autocomplete="off"
-                            value="{{ old('airport', $airport->airport) }}">
-                    </div>
-                    <div class="form-group">
-                        <label for="select-province-id">प्रदेशको नाम</label>
-                        <select id="select-province-id" class="custom-select">
-                            <option value="">प्रदेश छान्नुहोस्</option>
-                            @foreach ($provinces as $province)
-                                <option value="{{ $province->id }}">{{ $province->name }}</option>
-                            @endforeach
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="select-district-id">जिल्लाको नाम</label>
-                        <select name="district" id="select-district-id" class="custom-select">
-                            {{-- @isset($municipality->district)
-                        <option value="{{ $municipality->district->id }}" selected>{{ $municipality->district->name }}</option>
-                        @else --}}
-                            <option value="">जिल्ला छान्नुहोस्</option>
-                            @isset($airport->id)
-                                <option value="{{ $airport->district }}" selected>{{ $airport->district }}</option>
-                            @endisset
-                            {{-- @endisset --}}
-                            @foreach ($provinces as $province)
-                                @foreach ($province->districts as $district)
-                                    <option value="{{ $district->name }}" data-province-id="{{ $province->id }}">
-                                        {{ $district->name }}</option>
+
+                    <div class="row">
+                        <div class="form-group col-lg-4">
+                            <label for="input-name">विमानस्थल</label>
+                            <input type="text" id="input-name" name="airport" class="form-control" autocomplete="off"
+                                value="{{ old('airport', $airport->airport) }}">
+                        </div>
+                        <div class="form-group col-lg-4">
+                            <label for="select-province-id">प्रदेशको नाम</label>
+                            <select id="select-province-id" class="custom-select">
+                                <option value="">प्रदेश छान्नुहोस्</option>
+                                @foreach ($provinces as $province)
+                                    <option value="{{ $province->id }}">{{ $province->name }}</option>
                                 @endforeach
-                            @endforeach
-                        </select>
+                            </select>
+                        </div>
+                        <div class="form-group col-lg-4">
+                            <label for="select-district-id">जिल्लाको नाम</label>
+                            <select name="district" id="select-district-id" class="custom-select">
+                                {{-- @isset($municipality->district)
+                            <option value="{{ $municipality->district->id }}" selected>{{ $municipality->district->name }}</option>
+                            @else --}}
+                                <option value="">जिल्ला छान्नुहोस्</option>
+                                @isset($airport->id)
+                                    <option value="{{ $airport->district }}" selected>{{ $airport->district }}</option>
+                                @endisset
+                                {{-- @endisset --}}
+                                @foreach ($provinces as $province)
+                                    @foreach ($province->districts as $district)
+                                        <option value="{{ $district->name }}" data-province-id="{{ $province->id }}">
+                                            {{ $district->name }}</option>
+                                    @endforeach
+                                @endforeach
+                            </select>
+                        </div>
+                        <div class="form-group col-lg-4">
+                            <label for="input-name-en"> पालिका</label>
+                            <select name="minicipality" class="form-control" id="">
+                                <option value="">पालिका छान्नुहोस्</option>
+                                @isset($airport->id)
+                                    <option value="{{ $airport->minicipality }}" selected>{{ $airport->minicipality }}
+                                    </option>
+                                @endisset
+                                @foreach ($municipalities as $item)
+                                    <option value="{{ $item->name }}">{{ $item->name }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                        <div class="form-group col-lg-4">
+                            <label for="input-name-en"> स्थान</label>
+                            <input type="text" id="input-name-en" name="place" class="form-control" autocomplete="off"
+                                value="{{ old('place', $airport->place) }}">
+                        </div>
+                        <div class="form-group col-lg-4">
+                            <label for="input-name-en"> अवस्था</label>
+                            <input type="text" id="input-name-en" name="status" class="form-control" autocomplete="off"
+                                value="{{ old('status', $airport->status) }}">
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="input-name-en"> पालिका</label>
-                        <select name="minicipality" class="form-control" id="">
-                            <option value="">पालिका छान्नुहोस्</option>
-                            @isset($airport->id)
-                                <option value="{{ $airport->minicipality}}" selected>{{ $airport->minicipality}}</option>
-                            @endisset
-                            @foreach ($municipalities as $item)
-                                <option value="{{ $item->name }}">{{ $item->name }}</option>
-                            @endforeach
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="input-name-en"> स्थान</label>
-                        <input type="text" id="input-name-en" name="place" class="form-control" autocomplete="off"
-                            value="{{ old('place', $airport->place) }}">
-                    </div>
-                    <div class="form-group">
-                        <label for="input-name-en"> अवस्था</label>
-                        <input type="text" id="input-name-en" name="status" class="form-control" autocomplete="off"
-                            value="{{ old('status', $airport->status) }}">
-                    </div>
-
-
 
                     <div class="form-group">
                         <button type="submit"

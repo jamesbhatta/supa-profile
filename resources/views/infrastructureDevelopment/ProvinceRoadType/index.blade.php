@@ -1,14 +1,28 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
-        @include('alerts.all')
-    </div>
-    <div class="container">
+    <div class="container-fluid">
+        <h3 class="font-weight-bold">प्रदेश अनुसार सडकको प्रकार विवरण (कि.मि.)</h3>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                <li class="breadcrumb-item active" aria-current="page">पूर्वाधार विकास</li>
+                <li class="breadcrumb-item active" aria-current="page">प्रदेश अनुसार सडकको प्रकार विवरण (कि.मि.)
+                </li>
+            </ol>
+        </nav>
+        <div class="container">
+            @include('alerts.all')
+        </div>
         <div class="card z-depth-0">
-            <div class="col-12">
-                <label class="col-12 text-center font-weight-bold h4 my-5">प्रदेश अनुसार सडकको प्रकार विवरण (कि.मि.)</label>
-                <hr>
+            <div class="card-header">
+                <div style="overflow: auto;scrollbar-width: none;">
+                    <div>
+                        <nav class="nav nav-pills" id="pills-tab" role="tablist">
+                            <h4>प्रदेश अनुसार सडकको प्रकार विवरण (कि.मि.)</h4>
+                        </nav>
+                    </div>
+                </div>
             </div>
             <div class="card-body">
                 <form
@@ -115,7 +129,8 @@
                                 <td>{{ $item->province_percentage }}</td>
                                 <td>{{ $item->road_density }}</td>
                                 <td>
-                                    <a class="action-btn text-primary" href="{{ route('province-road-type.edit', $item) }}"><i
+                                    <a class="action-btn text-primary"
+                                        href="{{ route('province-road-type.edit', $item) }}"><i
                                             class="far fa-edit"></i></a>
                                     <form action="{{ route('province-road-type.destroy', $item) }}" method="post"
                                         onsubmit="return confirm('के तपाईँ निश्चित हुनुहुन्छ?')"

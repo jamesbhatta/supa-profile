@@ -1,15 +1,28 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
-        @include('alerts.all')
-    </div>
-    <div class="container">
+    <div class="container-fluid">
+        <h3 class="font-weight-bold">सुदूरपश्चिममा सञ्चार सेवा उपभोगकर्ताका संख्याविवरण</h3>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                <li class="breadcrumb-item active" aria-current="page">पूर्वाधार विकास</li>
+                <li class="breadcrumb-item active" aria-current="page">सुदूरपश्चिममा सञ्चार सेवा उपभोगकर्ताका संख्याविवरण
+                </li>
+            </ol>
+        </nav>
+        <div class="container">
+            @include('alerts.all')
+        </div>
         <div class="card z-depth-0">
-            <div class="col-12">
-                <label class="col-12 text-center font-weight-bold h4 my-5">सुदूरपश्चिममा सञ्चार सेवा उपभोगकर्ताका संख्या
-                    विवरण<label>
-                        <hr>
+            <div class="card-header">
+                <div style="overflow: auto;scrollbar-width: none;">
+                    <div>
+                        <nav class="nav nav-pills" id="pills-tab" role="tablist">
+                            <h4>सुदूरपश्चिममा सञ्चार सेवा उपभोगकर्ताका संख्याविवरण</h4>
+                        </nav>
+                    </div>
+                </div>
             </div>
             <div class="card-body">
                 <form
@@ -36,13 +49,18 @@
                     <div class="row">
                         <div class="form-group col-md-6">
                             <label for="input-fiscal-year-start">सुरुको मिति</label>
-                            <input type="text" name="date_from" id="input-fiscal-year-start" class="form-control fiscal-year-date" value="{{ old('date_from', $telecomunication->date_from) }}" placeholder="Nepali YYYY-MM-DD">
+                            <input type="text" name="date_from" id="input-fiscal-year-start"
+                                class="form-control fiscal-year-date"
+                                value="{{ old('date_from', $telecomunication->date_from) }}"
+                                placeholder="Nepali YYYY-MM-DD">
 
-                           
+
                         </div>
                         <div class="form-group col-md-6">
                             <label for="input-fiscal-year-start">अन्तिम मिति</label>
-                            <input type="text" name="date_to" id="input-fiscal-year-end" class="form-control fiscal-year-date" value="{{ old('date_to', $telecomunication->date_to) }}" placeholder="Nepali YYYY-MM-DD">
+                            <input type="text" name="date_to" id="input-fiscal-year-end"
+                                class="form-control fiscal-year-date"
+                                value="{{ old('date_to', $telecomunication->date_to) }}" placeholder="Nepali YYYY-MM-DD">
 
                         </div>
                     </div>
@@ -126,13 +144,12 @@
 @endsection
 
 @push('scripts')
-<script>
-    $(function() {
-        if ($('.fiscal-year-date')[0]) {
-            $('.fiscal-year-date').nepaliDatePicker({});
-        }
+    <script>
+        $(function() {
+            if ($('.fiscal-year-date')[0]) {
+                $('.fiscal-year-date').nepaliDatePicker({});
+            }
 
-    })
-
-</script>
+        })
+    </script>
 @endpush

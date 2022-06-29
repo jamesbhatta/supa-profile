@@ -1,15 +1,28 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
-        @include('alerts.all')
-    </div>
-    <div class="container">
+    <div class="container-fluid">
+        <h3 class="font-weight-bold">प्रदेश अनुसार प्रदेश र स्थानीय तहको सडक विवरण (कि.मि.)</h3>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                <li class="breadcrumb-item active" aria-current="page">पूर्वाधार विकास</li>
+                <li class="breadcrumb-item active" aria-current="page">प्रदेश अनुसार प्रदेश र स्थानीय तहको सडक विवरण (कि.मि.)
+                </li>
+            </ol>
+        </nav>
+        <div class="container">
+            @include('alerts.all')
+        </div>
         <div class="card z-depth-0">
-            <div class="col-12">
-                <label class="col-12 text-center font-weight-bold h4 my-5">प्रदेश अनुसार प्रदेश र स्थानीय तहको सडक विवरण
-                    (कि.मि.)</label>
-                <hr>
+            <div class="card-header">
+                <div style="overflow: auto;scrollbar-width: none;">
+                    <div>
+                        <nav class="nav nav-pills" id="pills-tab" role="tablist">
+                            <h4>प्रदेश अनुसार प्रदेश र स्थानीय तहको सडक विवरण (कि.मि.)</h4>
+                        </nav>
+                    </div>
+                </div>
             </div>
             <div class="card-body">
                 <form
@@ -20,27 +33,30 @@
                         @method('PUT')
                     @endisset
 
-                    <div class="form-group">
-                        <label for="input-name">सडकको विवरण</label>
-                        <input type="text" name="road_detail" class="form-control"
-                            value="{{ old('road_detail', $provinceRoad->road_detail) }}">
-                    </div>
-                    <div class="form-group">
-                        <label for="select-province-id">प्रदेश</label>
-                        <select id="select-province-id" name="province" class="custom-select">
-                            <option value="">प्रदेश छान्नुहोस्</option>
-                            @isset($provinceRoad->id)
-                                <option value="{{$provinceRoad->province}}" selected>{{$provinceRoad->province}}</option>
-                            @endisset
-                            @foreach ($provinces as $province)
-                                <option value="{{ $province->name }}">{{ $province->name }}</option>
-                            @endforeach
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="input-fiscal-year-start">लम्बाइ</label>
-                        <input type="text" name="lenght" class="form-control"
-                            value="{{ old('lenght', $provinceRoad->lenght) }}">
+                    <div class="row">
+                        <div class="form-group col-lg-4">
+                            <label for="input-name">सडकको विवरण</label>
+                            <input type="text" name="road_detail" class="form-control"
+                                value="{{ old('road_detail', $provinceRoad->road_detail) }}">
+                        </div>
+                        <div class="form-group col-lg-4">
+                            <label for="select-province-id">प्रदेश</label>
+                            <select id="select-province-id" name="province" class="custom-select">
+                                <option value="">प्रदेश छान्नुहोस्</option>
+                                @isset($provinceRoad->id)
+                                    <option value="{{ $provinceRoad->province }}" selected>{{ $provinceRoad->province }}
+                                    </option>
+                                @endisset
+                                @foreach ($provinces as $province)
+                                    <option value="{{ $province->name }}">{{ $province->name }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                        <div class="form-group col-lg-4">
+                            <label for="input-fiscal-year-start">लम्बाइ</label>
+                            <input type="text" name="lenght" class="form-control"
+                                value="{{ old('lenght', $provinceRoad->lenght) }}">
+                        </div>
                     </div>
 
                     <div class="form-group">
