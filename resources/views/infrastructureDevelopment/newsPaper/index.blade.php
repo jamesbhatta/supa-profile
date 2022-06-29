@@ -1,19 +1,31 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
-        @include('alerts.all')
-    </div>
-    <div class="container">
+    <div class="container-fluid">
+        <h3 class="font-weight-bold">प्रेस काउन्सिलमा दर्ता भएका सुदूरपश्चिमका पत्रपत्रिकाहरु</h3>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                <li class="breadcrumb-item active" aria-current="page">पूर्वाधार विकास</li>
+                <li class="breadcrumb-item active" aria-current="page">प्रेस काउन्सिलमा दर्ता भएका सुदूरपश्चिमका पत्रपत्रिकाहरु
+                </li>
+            </ol>
+        </nav>
+        <div class="container">
+            @include('alerts.all')
+        </div>
         <div class="card z-depth-0">
-            <div class="col-12">
-                <label class="col-12 text-center font-weight-bold h4 my-5">प्रेस काउन्सिलमा दर्ता भएका सुदूरपश्चिमका
-                    पत्रपत्रिकाहरु</label>
-                <hr>
+            <div class="card-header">
+                <div style="overflow: auto;scrollbar-width: none;">
+                    <div>
+                        <nav class="nav nav-pills" id="pills-tab" role="tablist">
+                            <h4>प्रेस काउन्सिलमा दर्ता भएका सुदूरपश्चिमका पत्रपत्रिकाहरु</h4>
+                        </nav>
+                    </div>
+                </div>
             </div>
             <div class="card-body">
-                <form
-                    action="{{ $newsPaper->id ? route('news-paper.update', $newsPaper) : route('news-paper.store') }}"
+                <form action="{{ $newsPaper->id ? route('news-paper.update', $newsPaper) : route('news-paper.store') }}"
                     method="POST" class="form">
                     @csrf
                     @isset($newsPaper->id)
@@ -138,8 +150,7 @@
                                 <td>{{ $item->monthly_twise }}</td>
                                 <td>{{ $item->monthly_thirds }}</td>
                                 <td>
-                                    <a class="action-btn text-primary"
-                                        href="{{ route('news-paper.edit', $item) }}"><i
+                                    <a class="action-btn text-primary" href="{{ route('news-paper.edit', $item) }}"><i
                                             class="far fa-edit"></i></a>
                                     <form action="{{ route('news-paper.destroy', $item) }}" method="post"
                                         onsubmit="return confirm('के तपाईँ निश्चित हुनुहुन्छ?')"
