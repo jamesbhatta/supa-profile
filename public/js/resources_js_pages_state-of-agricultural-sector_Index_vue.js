@@ -559,6 +559,11 @@ __webpack_require__.r(__webpack_exports__);
     this.fetchConsumableFood();
     this.fetchRequiredFood();
     this.fetchMilkProduction();
+    this.fetchMeatProduction();
+    this.fetchEggProduction();
+    this.fetchWoolProduction();
+    this.fetchAnimal();
+    this.fetchFoodSafty();
   },
   methods: {
     fetchOwnership: function fetchOwnership() {
@@ -704,6 +709,66 @@ __webpack_require__.r(__webpack_exports__);
         _this13.dudhalupasu.labels = response.data.labels;
         _this13.dudhalupasu.data = response.data.data;
         _this13.infoDatas = response.data;
+        console.log(response.data);
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchMeatProduction: function fetchMeatProduction() {
+      var _this14 = this;
+
+      axios.get("/api/meat-production").then(function (response) {
+        _this14.meatproduction.labels = response.data.labels;
+        _this14.meatproduction.data = response.data.data;
+        _this14.infoDatas = response.data;
+        console.log(response.data);
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchEggProduction: function fetchEggProduction() {
+      var _this15 = this;
+
+      axios.get("/api/egg-production").then(function (response) {
+        _this15.eggproduction.labels = response.data.labels;
+        _this15.eggproduction.data = response.data.data;
+        _this15.infoDatas = response.data;
+        console.log(response.data);
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchWoolProduction: function fetchWoolProduction() {
+      var _this16 = this;
+
+      axios.get("/api/wool-production").then(function (response) {
+        _this16.woolproduction.labels = response.data.labels;
+        _this16.woolproduction.data = response.data.data;
+        _this16.infoDatas = response.data;
+        console.log(response.data);
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchAnimal: function fetchAnimal() {
+      var _this17 = this;
+
+      axios.get("/api/animal").then(function (response) {
+        _this17.supapasujanyepadarth.labels = response.data.labels;
+        _this17.supapasujanyepadarth.data = response.data.data;
+        _this17.infoDatas = response.data;
+        console.log(response.data);
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchFoodSafty: function fetchFoodSafty() {
+      var _this18 = this;
+
+      axios.get("/api/food-safety").then(function (response) {
+        _this18.khadhyesuraxa.labels = response.data.labels;
+        _this18.khadhyesuraxa.data = response.data.data;
+        _this18.infoDatas = response.data;
         console.log(response.data);
       })["catch"](function (error) {
         return console.log(error);

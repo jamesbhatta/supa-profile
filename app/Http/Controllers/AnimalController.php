@@ -8,6 +8,27 @@ use Illuminate\Http\Request;
 
 class AnimalController extends Controller
 {
+    public function listingAnimal()
+    {
+        $data = Animal::get();
+        $dataset['labels'] = ["सि.न.", "उत्पादन", "प्रादेसिक उत्पादन", "प्रादेसिक उपलव्धता", "उपलव्धता राष्ट्रिय ", "प्रती व्यक्ति प्रती बर्ष आवश्यकता", "राष्ट्रिय उत्पादनमा योगदान"];
+        // $dataset['backgroundColor'] = ["red", "green", "blue"];
+        $dataset['data'] = [];
+        foreach ($data as $key => $item) {
+            $dataset['data'][] = [
+                $item->$item+1,
+                $item->production,
+                $item->province_production,
+                $item->province_availability,
+                $item->availability,
+                $item->pbr,
+                $item->npc,
+                
+            ];
+        }
+
+        return response()->json($dataset, 200);
+    }
     public function index(Animal $animal)
     {
         $animals=Animal::get();

@@ -12,18 +12,20 @@ class MeatProductionController extends Controller
     public function listingMeatProduction()
     {
         $data = MeatProduction::get();
-        $dataset['labels'] = ["जिल्ला", "दुधालु गाइ सख्या", "गाइको दुध", "दुधालु भैसी सख्या", "भैसीको दुध", "जम्मा दुध उत्पादन"];
+        $dataset['labels'] = ["जिल्ला", "बफ", "मटन", "चेवन", "पोर्क", "चिकेन", "डक मिट", "जम्मा मासु"];
         // $dataset['backgroundColor'] = ["red", "green", "blue"];
         $dataset['data'] = [];
         foreach ($data as $key => $item) {
             $dataset['data'][] = [
 
                 $item->district,
-                $item->cow,
-                $item->cow_milk,
-                $item->buffalo,
-                $item->buffalo_milk,
-                $item->buffalo_milk + $item->cow_milk,
+                $item->buff,
+                $item->mutton,
+                $item->chewan,
+                $item->pork,
+                $item->chicken,
+                $item->duck,
+                $item->buff+$item->mutton+$item->chewan+$item->pork+$item->chicken+$item->duck
             ];
         }
 

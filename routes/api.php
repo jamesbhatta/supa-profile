@@ -65,5 +65,10 @@ Route::get('vegitable', 'VegitableController@listingVegitable');
 Route::get('consumable-food', 'ConsumableFoodController@listingConsumableFood');
 Route::get('require-food', 'RequireFoodController@listingRequireFood');
 Route::get('milk-production', 'MilkProductionController@listingMilkProduction');
+Route::get('meat-production', 'MeatProductionController@listingMeatProduction');
+Route::get('egg-production', 'EggProductionController@listingEggProduction');
+Route::get('wool-production', 'WoolController@listingWool');
+Route::get('animal', 'AnimalController@listingAnimal');
+Route::get('food-safety', 'FoodSaftyController@listingFoodSafty');
 
 

@@ -855,6 +855,11 @@ export default {
     this.fetchConsumableFood();
     this.fetchRequiredFood();
     this.fetchMilkProduction();
+    this.fetchMeatProduction();
+    this.fetchEggProduction();
+    this.fetchWoolProduction();
+    this.fetchAnimal();
+    this.fetchFoodSafty();
   },
   methods: {
     fetchOwnership() {
@@ -1005,6 +1010,66 @@ export default {
         .then((response) => {
           this.dudhalupasu.labels = response.data.labels;
           this.dudhalupasu.data = response.data.data
+          this.infoDatas = response.data;
+          console.log(response.data);
+        })
+        .catch((error) => console.log(error));
+    },
+    fetchMeatProduction() {
+      axios
+        .get("/api/meat-production")
+
+        .then((response) => {
+          this.meatproduction.labels = response.data.labels;
+          this.meatproduction.data = response.data.data
+          this.infoDatas = response.data;
+          console.log(response.data);
+        })
+        .catch((error) => console.log(error));
+    },
+    fetchEggProduction() {
+      axios
+        .get("/api/egg-production")
+
+        .then((response) => {
+          this.eggproduction.labels = response.data.labels;
+          this.eggproduction.data = response.data.data
+          this.infoDatas = response.data;
+          console.log(response.data);
+        })
+        .catch((error) => console.log(error));
+    },
+    fetchWoolProduction() {
+      axios
+        .get("/api/wool-production")
+
+        .then((response) => {
+          this.woolproduction.labels = response.data.labels;
+          this.woolproduction.data = response.data.data
+          this.infoDatas = response.data;
+          console.log(response.data);
+        })
+        .catch((error) => console.log(error));
+    },
+    fetchAnimal() {
+      axios
+        .get("/api/animal")
+
+        .then((response) => {
+          this.supapasujanyepadarth.labels = response.data.labels;
+          this.supapasujanyepadarth.data = response.data.data
+          this.infoDatas = response.data;
+          console.log(response.data);
+        })
+        .catch((error) => console.log(error));
+    },
+    fetchFoodSafty() {
+      axios
+        .get("/api/food-safety")
+
+        .then((response) => {
+          this.khadhyesuraxa.labels = response.data.labels;
+          this.khadhyesuraxa.data = response.data.data
           this.infoDatas = response.data;
           console.log(response.data);
         })

@@ -8,6 +8,28 @@ use Illuminate\Http\Request;
 
 class FoodSaftyController extends Controller
 {
+
+    public function listingFoodSafty()
+    {
+        $data = FoodSafty::get();
+        $dataset['labels'] = ["जिल्ला", "उपभोग्य खाद्यान्न", "आवश्यक खाद्यान्न", "वचत वा न्यून"];
+        // $dataset['backgroundColor'] = ["red", "green", "blue"];
+        $dataset['data'] = [];
+        foreach ($data as $key => $item) {
+            $dataset['data'][] = [
+                // $item->$item+1,
+                $item->district,
+                $item->usable_food,
+                $item->required_food,
+                $item->safe_food,
+                
+                
+            ];
+        }
+
+        return response()->json($dataset, 200);
+    }
+
     public function index(FoodSafty $foodSafty)
     {
         $foodSaftys=FoodSafty::get();
