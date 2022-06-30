@@ -141,6 +141,11 @@
                         <span class="mx-3"><i class="fa fa-circle"></i></span>धर्मावलम्वीका आधारमा जिल्लागत विवरण
                     </a>
                 </li>
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('province-population.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span>प्रदेशको जनसांख्यिक स्थिति
+                    </a>
+                </li>
                 {{-- <li class="nav-item sub-nav">
                     <a class="nav-link" href="{{ route('local-population.index') }}">
                         <span class="mx-3"><i class="fa fa-circle"></i></span>@lang('navigation.local_population')

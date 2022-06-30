@@ -312,6 +312,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -545,6 +546,7 @@ __webpack_require__.r(__webpack_exports__);
     this.fetchDistrictWisePopulation();
     this.fetchDistrictPopulation();
     this.fetchReligionPopulation();
+    this.fetchProvincePopulation();
   },
   methods: {
     fetchTotalStudents: function fetchTotalStudents() {
@@ -598,6 +600,17 @@ __webpack_require__.r(__webpack_exports__);
         _this5.religionpopulationData.labels = response.data.labels;
         _this5.religionpopulationData.data = response.data.data;
         _this5.infoDatas = response.data;
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchProvincePopulation: function fetchProvincePopulation() {
+      var _this6 = this;
+
+      axios.get("/api/province-population").then(function (response) {
+        _this6.supaandotherprovincedata.labels = response.data.labels;
+        _this6.supaandotherprovincedata.data = response.data.data;
+        _this6.infoDatas = response.data;
       })["catch"](function (error) {
         return console.log(error);
       });
@@ -1093,7 +1106,7 @@ var render = function () {
                           },
                           [
                             _vm._v(
-                              "स्थानीय तहको जनसंख्या, औषत घरपरिवार सदस्य संख्या र लैङ्गिक अनुपात विवरण\n                  "
+                              "स्थानीय तहको जनसंख्या, औषत\n                    घरपरिवार सदस्य संख्या र लैङ्गिक अनुपात विवरण\n                  "
                             ),
                           ]
                         ),

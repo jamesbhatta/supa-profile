@@ -228,14 +228,15 @@
               </template>
             </data-viewer>
             <div>
-              
+
               <div class="heights"></div>
               <div class="data-card">
                 <div class="data-card-body">
                   <div class="d-md-flex mb-2">
-                    <h3  class="h3-responsive data-title" ref="exportable_table_title">स्थानीय तहको जनसंख्या, औषत घरपरिवार सदस्य संख्या र लैङ्गिक अनुपात विवरण
+                    <h3 class="h3-responsive data-title" ref="exportable_table_title">स्थानीय तहको जनसंख्या, औषत
+                      घरपरिवार सदस्य संख्या र लैङ्गिक अनुपात विवरण
                     </h3>
-                    <a v-for="item in infoDatas" class="info-card" href="item.link || '#'">{{infoDatas}}</a>
+                    <a v-for="item in infoDatas" class="info-card" href="item.link || '#'">{{ infoDatas }}</a>
                     <!-- <div class="ml-auto switch-type-btn-group">
                       <button type="button" v-on:click="setActive('table')" class="switch-data-type-btn"
                         v-bind:class="{ active: activeDataType == 'table' }">Table</button>
@@ -978,71 +979,84 @@ export default {
     };
   },
 
- mounted() {
-            this.fetchTotalStudents();
-            this.fetchNationalPopulation();
-            this.fetchDistrictWisePopulation();
-            this.fetchDistrictPopulation();
-            this.fetchReligionPopulation();
-        },
-    
-        methods: {
-            fetchTotalStudents() {
-                axios
-                    .get("/api/geographical-area-population")
-    
-                    .then((response) => {
-                        this.geographicalPopulationData.labels = response.data.labels;
-                        this.geographicalPopulationData.data = response.data.data
-                        this.infoDatas = response.data;
-                    })
-                    .catch((error) => console.log(error));
-            },
-            fetchNationalPopulation() {
-                axios
-                    .get("/api/national-population")
-    
-                    .then((response) => {
-                        this.nationalcenses.labels = response.data.labels;
-                        this.nationalcenses.data = response.data.data
-                        this.infoDatas = response.data;
-                    })
-                    .catch((error) => console.log(error));
-            },
-            fetchDistrictWisePopulation() {
-                axios
-                    .get("/api/district-wise-population")
-    
-                    .then((response) => {
-                        this.beginingcenses1.labels = response.data.labels;
-                        this.beginingcenses1.data = response.data.data
-                        this.infoDatas = response.data;
-                    })
-                    .catch((error) => console.log(error));
-            },
-            fetchDistrictPopulation() {
-                axios
-                    .get("/api/district-population")
-    
-                    .then((response) => {
-                        this.districtpopulation.labels = response.data.labels;
-                        this.districtpopulation.data = response.data.data
-                        this.infoDatas = response.data;
-                    })
-                    .catch((error) => console.log(error));
-            },
-            fetchReligionPopulation() {
-                axios
-                    .get("/api/religion-population")
-    
-                    .then((response) => {
-                        this.religionpopulationData.labels = response.data.labels;
-                        this.religionpopulationData.data = response.data.data
-                        this.infoDatas = response.data;
-                    })
-                    .catch((error) => console.log(error));
-            },
-        },
+  mounted() {
+    this.fetchTotalStudents();
+    this.fetchNationalPopulation();
+    this.fetchDistrictWisePopulation();
+    this.fetchDistrictPopulation();
+    this.fetchReligionPopulation();
+    this.fetchProvincePopulation();
+  },
+
+  methods: {
+    fetchTotalStudents() {
+      axios
+        .get("/api/geographical-area-population")
+
+        .then((response) => {
+          this.geographicalPopulationData.labels = response.data.labels;
+          this.geographicalPopulationData.data = response.data.data
+          this.infoDatas = response.data;
+        })
+        .catch((error) => console.log(error));
+    },
+    fetchNationalPopulation() {
+      axios
+        .get("/api/national-population")
+
+        .then((response) => {
+          this.nationalcenses.labels = response.data.labels;
+          this.nationalcenses.data = response.data.data
+          this.infoDatas = response.data;
+        })
+        .catch((error) => console.log(error));
+    },
+    fetchDistrictWisePopulation() {
+      axios
+        .get("/api/district-wise-population")
+
+        .then((response) => {
+          this.beginingcenses1.labels = response.data.labels;
+          this.beginingcenses1.data = response.data.data
+          this.infoDatas = response.data;
+        })
+        .catch((error) => console.log(error));
+    },
+    fetchDistrictPopulation() {
+      axios
+        .get("/api/district-population")
+
+        .then((response) => {
+          this.districtpopulation.labels = response.data.labels;
+          this.districtpopulation.data = response.data.data
+          this.infoDatas = response.data;
+        })
+        .catch((error) => console.log(error));
+    },
+    fetchReligionPopulation() {
+      axios
+        .get("/api/religion-population")
+
+        .then((response) => {
+          this.religionpopulationData.labels = response.data.labels;
+          this.religionpopulationData.data = response.data.data
+          this.infoDatas = response.data;
+        })
+        .catch((error) => console.log(error));
+    },
+
+    fetchProvincePopulation() {
+      axios
+        .get("/api/province-population")
+
+        .then((response) => {
+          this.supaandotherprovincedata.labels = response.data.labels;
+          this.supaandotherprovincedata.data = response.data.data
+          this.infoDatas = response.data;
+        })
+        .catch((error) => console.log(error));
+    },
+  },
 };
 
 
