@@ -983,6 +983,7 @@ export default {
             this.fetchNationalPopulation();
             this.fetchDistrictWisePopulation();
             this.fetchDistrictPopulation();
+            this.fetchReligionPopulation();
         },
     
         methods: {
@@ -1026,6 +1027,17 @@ export default {
                     .then((response) => {
                         this.districtpopulation.labels = response.data.labels;
                         this.districtpopulation.data = response.data.data
+                        this.infoDatas = response.data;
+                    })
+                    .catch((error) => console.log(error));
+            },
+            fetchReligionPopulation() {
+                axios
+                    .get("/api/religion-population")
+    
+                    .then((response) => {
+                        this.religionpopulationData.labels = response.data.labels;
+                        this.religionpopulationData.data = response.data.data
                         this.infoDatas = response.data;
                     })
                     .catch((error) => console.log(error));

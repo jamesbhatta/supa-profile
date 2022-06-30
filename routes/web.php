@@ -148,6 +148,13 @@ Route::delete('district-population/{districtPopulation}', 'DistrictPopulationCon
 Route::get('district-population/{districtPopulation}/edit', 'DistrictPopulationController@edit')->name('district-population.edit');
 Route::put('district-population/{districtPopulation}', 'DistrictPopulationController@update')->name('district-population.update');
 
+// 
+Route::get('religion-population', 'ReligionPopulationController@index')->name('religion-population.index');
+Route::post('religion-population', 'ReligionPopulationController@store')->name('religion-population.store');
+Route::delete('religion-population/{religionPopulation}', 'ReligionPopulationController@destroy')->name('religion-population.destroy');
+Route::get('religion-population/{religionPopulation}/edit', 'ReligionPopulationController@edit')->name('religion-population.edit');
+Route::put('religion-population/{religionPopulation}', 'ReligionPopulationController@update')->name('religion-population.update');
+
 
 // ==============unit 3=========
 // 

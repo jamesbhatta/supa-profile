@@ -544,6 +544,7 @@ __webpack_require__.r(__webpack_exports__);
     this.fetchNationalPopulation();
     this.fetchDistrictWisePopulation();
     this.fetchDistrictPopulation();
+    this.fetchReligionPopulation();
   },
   methods: {
     fetchTotalStudents: function fetchTotalStudents() {
@@ -586,6 +587,17 @@ __webpack_require__.r(__webpack_exports__);
         _this4.districtpopulation.labels = response.data.labels;
         _this4.districtpopulation.data = response.data.data;
         _this4.infoDatas = response.data;
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchReligionPopulation: function fetchReligionPopulation() {
+      var _this5 = this;
+
+      axios.get("/api/religion-population").then(function (response) {
+        _this5.religionpopulationData.labels = response.data.labels;
+        _this5.religionpopulationData.data = response.data.data;
+        _this5.infoDatas = response.data;
       })["catch"](function (error) {
         return console.log(error);
       });
