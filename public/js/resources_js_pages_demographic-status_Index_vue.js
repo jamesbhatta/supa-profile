@@ -548,6 +548,7 @@ __webpack_require__.r(__webpack_exports__);
     this.fetchReligionPopulation();
     this.fetchProvincePopulation();
     this.fetchCastPopulation();
+    this.fetchLanguagePopulation();
   },
   methods: {
     fetchTotalStudents: function fetchTotalStudents() {
@@ -623,6 +624,17 @@ __webpack_require__.r(__webpack_exports__);
         _this7.jatjatidata.labels = response.data.labels;
         _this7.jatjatidata.data = response.data.data;
         _this7.infoDatas = response.data;
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchLanguagePopulation: function fetchLanguagePopulation() {
+      var _this8 = this;
+
+      axios.get("/api/language-population").then(function (response) {
+        _this8.languagedata.labels = response.data.labels;
+        _this8.languagedata.data = response.data.data;
+        _this8.infoDatas = response.data;
       })["catch"](function (error) {
         return console.log(error);
       });

@@ -170,6 +170,15 @@ Route::get('cast-population/{castPopulation}/edit', 'CastPopulationController@ed
 Route::put('cast-population/{castPopulation}', 'CastPopulationController@update')->name('cast-population.update');
 
 
+
+// 
+Route::get('language-population', 'LanguagePopulationController@index')->name('language-population.index');
+Route::post('language-population', 'LanguagePopulationController@store')->name('language-population.store');
+Route::delete('language-population/{languagePopulation}', 'LanguagePopulationController@destroy')->name('language-population.destroy');
+Route::get('language-population/{languagePopulation}/edit', 'LanguagePopulationController@edit')->name('language-population.edit');
+Route::put('language-population/{languagePopulation}', 'LanguagePopulationController@update')->name('language-population.update');
+
+
 // ==============unit 3=========
 // 
 Route::get('economic-indicator', 'EconomicIndicatorController@index')->name('economic-indicator.index');

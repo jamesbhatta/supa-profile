@@ -987,6 +987,7 @@ export default {
     this.fetchReligionPopulation();
     this.fetchProvincePopulation();
     this.fetchCastPopulation();
+    this.fetchLanguagePopulation();
   },
 
   methods: {
@@ -1064,6 +1065,17 @@ export default {
         .then((response) => {
           this.jatjatidata.labels = response.data.labels;
           this.jatjatidata.data = response.data.data
+          this.infoDatas = response.data;
+        })
+        .catch((error) => console.log(error));
+    },
+    fetchLanguagePopulation() {
+      axios
+        .get("/api/language-population")
+
+        .then((response) => {
+          this.languagedata.labels = response.data.labels;
+          this.languagedata.data = response.data.data
           this.infoDatas = response.data;
         })
         .catch((error) => console.log(error));
