@@ -37,6 +37,7 @@ Route::get('total-student', 'TotalStudentController@listingTotalStudent');
 // unit-2 
 Route::get('geographical-area-population', 'GeographicalAreaPopulationController@listingGeographicalAreaPopulation');
 Route::get('national-population', 'NationalPopulationController@listingNationalPopulation');
+Route::get('district-wise-population', 'DistrictWisePopulationController@listing');
 
 // unit 5
 Route::get('proud-project', 'ProudProjectController@listingProudProject');

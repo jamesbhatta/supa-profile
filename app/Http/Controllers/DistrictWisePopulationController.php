@@ -8,6 +8,24 @@ use Illuminate\Http\Request;
 
 class DistrictWisePopulationController extends Controller
 {
+    public function listing()
+    {
+        $data = DistrictWisePopulation::get();
+        $dataset['labels'] = ["क्षेत्र", "जम्मा", "पुरुष", "महिला", "प्रतिशत"];
+        $dataset['data'] = [];
+        foreach ($data as $key => $item) {
+            $dataset['data'][] = [
+                
+                $item->district,
+                $item->male+$item->female,
+                $item->male,
+                $item->female,
+                $item->percentage,
+            ];
+        }
+
+        return response()->json($dataset, 200);
+    }
     public function index(DistrictWisePopulation $districtWisePopulation)
     {
         $provinces=Province::get();

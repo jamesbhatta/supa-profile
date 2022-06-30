@@ -981,6 +981,7 @@ export default {
  mounted() {
             this.fetchTotalStudents();
             this.fetchNationalPopulation();
+            this.fetchDistrictWisePopulation();
         },
     
         methods: {
@@ -1002,6 +1003,17 @@ export default {
                     .then((response) => {
                         this.nationalcenses.labels = response.data.labels;
                         this.nationalcenses.data = response.data.data
+                        this.infoDatas = response.data;
+                    })
+                    .catch((error) => console.log(error));
+            },
+            fetchDistrictWisePopulation() {
+                axios
+                    .get("/api/district-wise-population")
+    
+                    .then((response) => {
+                        this.beginingcenses1.labels = response.data.labels;
+                        this.beginingcenses1.data = response.data.data
                         this.infoDatas = response.data;
                     })
                     .catch((error) => console.log(error));

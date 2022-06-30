@@ -100,7 +100,7 @@
         <div class="container-fluid">
             <div class="card z-depth-0">
                 <div class="card-header">
-                    <h1 class="h3-responsive d-inline-block">राष्ट्रिय जनगणना २०७८ को प्रारम्भिक तथ्याङ्क अनुसार</h1>
+                    <h1 class="h3-responsive d-inline-block">राष्ट्रिय जनगणना २०७८ को प्रारम्भिक तथ्याङ्क अनुसार जिल्लागत जनसंख्या विवरण</h1>
                     {{-- <small>(हाल {{ count($schools)  }}  विद्यालय {{ count($schools) > 1 ? 'हरु छन्' : 'छ' }} )</small> --}}
 
                 </div>
