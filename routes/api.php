@@ -41,6 +41,7 @@ Route::get('district-wise-population', 'DistrictWisePopulationController@listing
 Route::get('district-population', 'DistrictPopulationController@listing');
 Route::get('religion-population', 'ReligionPopulationController@listing');
 Route::get('province-population', 'ProvincePopulationController@listing');
+Route::get('cast-population', 'CastPopulationController@listing');
 
 // unit 5
 Route::get('proud-project', 'ProudProjectController@listingProudProject');

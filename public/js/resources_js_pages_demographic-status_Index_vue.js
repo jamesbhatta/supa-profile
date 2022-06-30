@@ -547,6 +547,7 @@ __webpack_require__.r(__webpack_exports__);
     this.fetchDistrictPopulation();
     this.fetchReligionPopulation();
     this.fetchProvincePopulation();
+    this.fetchCastPopulation();
   },
   methods: {
     fetchTotalStudents: function fetchTotalStudents() {
@@ -611,6 +612,17 @@ __webpack_require__.r(__webpack_exports__);
         _this6.supaandotherprovincedata.labels = response.data.labels;
         _this6.supaandotherprovincedata.data = response.data.data;
         _this6.infoDatas = response.data;
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchCastPopulation: function fetchCastPopulation() {
+      var _this7 = this;
+
+      axios.get("/api/cast-population").then(function (response) {
+        _this7.jatjatidata.labels = response.data.labels;
+        _this7.jatjatidata.data = response.data.data;
+        _this7.infoDatas = response.data;
       })["catch"](function (error) {
         return console.log(error);
       });

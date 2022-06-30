@@ -162,6 +162,13 @@ Route::delete('province-population/{provincePopulation}', 'ProvincePopulationCon
 Route::get('province-population/{provincePopulation}/edit', 'ProvincePopulationController@edit')->name('province-population.edit');
 Route::put('province-population/{provincePopulation}', 'ProvincePopulationController@update')->name('province-population.update');
 
+// 
+Route::get('cast-population', 'CastPopulationController@index')->name('cast-population.index');
+Route::post('cast-population', 'CastPopulationController@store')->name('cast-population.store');
+Route::delete('cast-population/{castPopulation}', 'CastPopulationController@destroy')->name('cast-population.destroy');
+Route::get('cast-population/{castPopulation}/edit', 'CastPopulationController@edit')->name('cast-population.edit');
+Route::put('cast-population/{castPopulation}', 'CastPopulationController@update')->name('cast-population.update');
+
 
 // ==============unit 3=========
 // 

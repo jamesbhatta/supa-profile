@@ -146,6 +146,12 @@
                         <span class="mx-3"><i class="fa fa-circle"></i></span>प्रदेशको जनसांख्यिक स्थिति
                     </a>
                 </li>
+
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('cast-population.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span>जातजातीको आधारमा जनसंख्या
+                    </a>
+                </li>
                 {{-- <li class="nav-item sub-nav">
                     <a class="nav-link" href="{{ route('local-population.index') }}">
                         <span class="mx-3"><i class="fa fa-circle"></i></span>@lang('navigation.local_population')

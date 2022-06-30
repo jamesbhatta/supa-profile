@@ -986,6 +986,7 @@ export default {
     this.fetchDistrictPopulation();
     this.fetchReligionPopulation();
     this.fetchProvincePopulation();
+    this.fetchCastPopulation();
   },
 
   methods: {
@@ -1052,6 +1053,17 @@ export default {
         .then((response) => {
           this.supaandotherprovincedata.labels = response.data.labels;
           this.supaandotherprovincedata.data = response.data.data
+          this.infoDatas = response.data;
+        })
+        .catch((error) => console.log(error));
+    },
+    fetchCastPopulation() {
+      axios
+        .get("/api/cast-population")
+
+        .then((response) => {
+          this.jatjatidata.labels = response.data.labels;
+          this.jatjatidata.data = response.data.data
           this.infoDatas = response.data;
         })
         .catch((error) => console.log(error));
