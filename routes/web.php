@@ -140,6 +140,15 @@ Route::post('district-wise-population', 'DistrictWisePopulationController@store'
 Route::delete('district-wise-population/{districtWisePopulation}', 'DistrictWisePopulationController@destroy')->name('district-wise-population.destroy');
 Route::get('district-wise-population/{districtWisePopulation}/edit', 'DistrictWisePopulationController@edit')->name('district-wise-population.edit');
 Route::put('district-wise-population/{districtWisePopulation}', 'DistrictWisePopulationController@update')->name('district-wise-population.update');
+
+// 
+Route::get('district-population', 'DistrictPopulationController@index')->name('district-population.index');
+Route::post('district-population', 'DistrictPopulationController@store')->name('district-population.store');
+Route::delete('district-population/{districtPopulation}', 'DistrictPopulationController@destroy')->name('district-population.destroy');
+Route::get('district-population/{districtPopulation}/edit', 'DistrictPopulationController@edit')->name('district-population.edit');
+Route::put('district-population/{districtPopulation}', 'DistrictPopulationController@update')->name('district-population.update');
+
+
 // ==============unit 3=========
 // 
 Route::get('economic-indicator', 'EconomicIndicatorController@index')->name('economic-indicator.index');

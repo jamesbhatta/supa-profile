@@ -543,6 +543,7 @@ __webpack_require__.r(__webpack_exports__);
     this.fetchTotalStudents();
     this.fetchNationalPopulation();
     this.fetchDistrictWisePopulation();
+    this.fetchDistrictPopulation();
   },
   methods: {
     fetchTotalStudents: function fetchTotalStudents() {
@@ -574,6 +575,17 @@ __webpack_require__.r(__webpack_exports__);
         _this3.beginingcenses1.labels = response.data.labels;
         _this3.beginingcenses1.data = response.data.data;
         _this3.infoDatas = response.data;
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchDistrictPopulation: function fetchDistrictPopulation() {
+      var _this4 = this;
+
+      axios.get("/api/district-population").then(function (response) {
+        _this4.districtpopulation.labels = response.data.labels;
+        _this4.districtpopulation.data = response.data.data;
+        _this4.infoDatas = response.data;
       })["catch"](function (error) {
         return console.log(error);
       });
