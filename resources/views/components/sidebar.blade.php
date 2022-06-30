@@ -141,7 +141,8 @@
         {{-- ==========unit 3============ --}}
         <li class="nav-item">
             <a href="#economiccondition" data-toggle="collapse" aria-expanded="false"
-                class="dropdown-toggle collapsed nav-link"><span class="text-default"><i class="fa fa-credit-card"></i></span>आर्थिक अवस्था</a>
+                class="dropdown-toggle collapsed nav-link"><span class="text-default"><i
+                        class="fa fa-credit-card"></i></span>आर्थिक अवस्था</a>
             <ul class="list-unstyled collapse" id="economiccondition" style="">
                 <li class="nav-item sub-nav">
                     <a class="nav-link" href="{{ route('economic-indicator.index') }}">
@@ -306,7 +307,7 @@
 
                 <li class="nav-item sub-nav">
                     <a class="nav-link" href="{{ route('agriculture-produce.index') }}">
-                        <span class="mx-3"><i class="fa fa-circle"></i></span> कृषि उपजले ढाकेको  क्षेत्र
+                        <span class="mx-3"><i class="fa fa-circle"></i></span> कृषि उपजले ढाकेको क्षेत्र
                     </a>
                 </li>
 
@@ -318,7 +319,7 @@
 
                 <li class="nav-item sub-nav">
                     <a class="nav-link" href="{{ route('agricultural-production.index') }}">
-                        <span class="mx-3"><i class="fa fa-circle"></i></span> कृषि बालीको उत्पादन अवस्था
+                        <span class="mx-3"><i class="fa fa-circle"></i></span> कृषि बाली उत्पादन अवस्था
                     </a>
                 </li>
 
@@ -336,19 +337,20 @@
 
                 <li class="nav-item sub-nav">
                     <a class="nav-link" href="{{ route('dalhan.index') }}">
-                        <span class="mx-3"><i class="fa fa-circle"></i></span> दलहन बालीको उत्पादन 
+                        <span class="mx-3"><i class="fa fa-circle"></i></span> दलहन बालीको उत्पादन
                     </a>
                 </li>
 
                 <li class="nav-item sub-nav">
                     <a class="nav-link" href="{{ route('telhan.index') }}">
-                        <span class="mx-3"><i class="fa fa-circle"></i></span> तेलहन बालीको उत्पादन 
+                        <span class="mx-3"><i class="fa fa-circle"></i></span> तेलहन बालीको उत्पादन
                     </a>
                 </li>
+                
 
                 <li class="nav-item sub-nav">
                     <a class="nav-link" href="{{ route('vegitable.index') }}">
-                        <span class="mx-3"><i class="fa fa-circle"></i></span> बर्षे तरकारी बालीको उत्पादन 
+                        <span class="mx-3"><i class="fa fa-circle"></i></span> बर्षे तरकारी बाली उत्पादन
                     </a>
                 </li>
 
@@ -360,25 +362,25 @@
 
                 <li class="nav-item sub-nav">
                     <a class="nav-link" href="{{ route('required-food.index') }}">
-                        <span class="mx-3"><i class="fa fa-circle"></i></span>  खाद्यान्न आवश्यकताको स्थिति
+                        <span class="mx-3"><i class="fa fa-circle"></i></span> खाद्यान्न आवश्यकता स्थिति
                     </a>
                 </li>
 
                 <li class="nav-item sub-nav">
                     <a class="nav-link" href="{{ route('milk-production.index') }}">
-                        <span class="mx-3"><i class="fa fa-circle"></i></span>  दुधालु पशु र दुग्ध उत्पादन 
+                        <span class="mx-3"><i class="fa fa-circle"></i></span> दुधालु पशु र दुग्ध उत्पादन
                     </a>
                 </li>
 
-                 <li class="nav-item sub-nav">
+                <li class="nav-item sub-nav">
                     <a class="nav-link" href="{{ route('meat-production.index') }}">
-                        <span class="mx-3"><i class="fa fa-circle"></i></span>  मासु उत्पादनको अवस्था
+                        <span class="mx-3"><i class="fa fa-circle"></i></span> मासु उत्पादनको अवस्था
                     </a>
                 </li>
 
                 <li class="nav-item sub-nav">
                     <a class="nav-link" href="{{ route('egg-production.index') }}">
-                        <span class="mx-3"><i class="fa fa-circle"></i></span>  अण्डा उत्पादनको अवस्था
+                        <span class="mx-3"><i class="fa fa-circle"></i></span> अण्डा उत्पादनको अवस्था
                     </a>
                 </li>
 

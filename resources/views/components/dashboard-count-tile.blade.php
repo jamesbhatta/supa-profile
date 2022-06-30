@@ -96,7 +96,7 @@
                     </div>
                 </div>
 
-                <a href="{{ $link ?? '#' }}">
+                <a href="{{ route('geographical-population.index') }}">
                     <div class="col-12 cards-footer">
                         <label class="m-2 col-12 text-center text-white">थप जानकारी<i class="fa fa-arrow-circle-right"
                                 aria-hidden="true"></i></label>
