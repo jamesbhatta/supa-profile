@@ -541,6 +541,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   mounted: function mounted() {
     this.fetchTotalStudents();
+    this.fetchNationalPopulation();
   },
   methods: {
     fetchTotalStudents: function fetchTotalStudents() {
@@ -550,6 +551,17 @@ __webpack_require__.r(__webpack_exports__);
         _this.geographicalPopulationData.labels = response.data.labels;
         _this.geographicalPopulationData.data = response.data.data;
         _this.infoDatas = response.data;
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchNationalPopulation: function fetchNationalPopulation() {
+      var _this2 = this;
+
+      axios.get("/api/national-population").then(function (response) {
+        _this2.nationalcenses.labels = response.data.labels;
+        _this2.nationalcenses.data = response.data.data;
+        _this2.infoDatas = response.data;
       })["catch"](function (error) {
         return console.log(error);
       });

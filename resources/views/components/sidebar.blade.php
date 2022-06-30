@@ -112,11 +112,17 @@
         <li class="nav-item">
             <a href="#population" data-toggle="collapse" aria-expanded="false"
                 class="dropdown-toggle collapsed nav-link"><span class="text-default"><i
-                        class="fas fa-users"></i></span>@lang('navigation.populations')</a>
+                        class="fas fa-users"></i></span>जनसांख्यिक स्थिति
+                    </a>
             <ul class="list-unstyled collapse" id="population" style="">
                 <li class="nav-item sub-nav">
                     <a class="nav-link" href="{{ route('geographical-population.index') }}">
                         <span class="mx-3"><i class="fa fa-circle"></i></span>भौगोलिक क्षेत्रगत जनसंख्या
+                    </a>
+                </li>
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('national-population.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span>राष्ट्रिय जनगणना
                     </a>
                 </li>
                 {{-- <li class="nav-item sub-nav">

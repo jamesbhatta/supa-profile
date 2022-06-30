@@ -980,6 +980,7 @@ export default {
 
  mounted() {
             this.fetchTotalStudents();
+            this.fetchNationalPopulation();
         },
     
         methods: {
@@ -990,6 +991,17 @@ export default {
                     .then((response) => {
                         this.geographicalPopulationData.labels = response.data.labels;
                         this.geographicalPopulationData.data = response.data.data
+                        this.infoDatas = response.data;
+                    })
+                    .catch((error) => console.log(error));
+            },
+            fetchNationalPopulation() {
+                axios
+                    .get("/api/national-population")
+    
+                    .then((response) => {
+                        this.nationalcenses.labels = response.data.labels;
+                        this.nationalcenses.data = response.data.data
                         this.infoDatas = response.data;
                     })
                     .catch((error) => console.log(error));

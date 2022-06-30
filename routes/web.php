@@ -116,6 +116,9 @@ Route::get('assembly-member/{assemblyMember}/edit', 'StateAssemblyMembersControl
 Route::put('assembly-member/{assemblyMember}', 'StateAssemblyMembersController@update')->name('assembly-member.update');
 
 
+
+
+// unit -2
 // 
 Route::get('geographical-population', 'GeographicalAreaPopulationController@index')->name('geographical-population.index');
 Route::post('geographical-population', 'GeographicalAreaPopulationController@store')->name('geographical-population.store');
@@ -124,7 +127,12 @@ Route::get('geographical-population/{geographicalPopulation}/edit', 'Geographica
 Route::put('geographical-population/{geographicalPopulation}', 'GeographicalAreaPopulationController@update')->name('geographical-population.update');
 
 
-
+// 
+Route::get('national-population', 'NationalPopulationController@index')->name('national-population.index');
+Route::post('national-population', 'NationalPopulationController@store')->name('national-population.store');
+Route::delete('national-population/{nationalPopulation}', 'NationalPopulationController@destroy')->name('national-population.destroy');
+Route::get('national-population/{nationalPopulation}/edit', 'NationalPopulationController@edit')->name('national-population.edit');
+Route::put('national-population/{nationalPopulation}', 'NationalPopulationController@update')->name('national-population.update');
 // ==============unit 3=========
 // 
 Route::get('economic-indicator', 'EconomicIndicatorController@index')->name('economic-indicator.index');
