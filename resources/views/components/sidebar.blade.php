@@ -141,8 +141,7 @@
         {{-- ==========unit 3============ --}}
         <li class="nav-item">
             <a href="#economiccondition" data-toggle="collapse" aria-expanded="false"
-                class="dropdown-toggle collapsed nav-link"><span class="text-default"><i
-                        class="fas fa-users"></i></span>आर्थिक अवस्था</a>
+                class="dropdown-toggle collapsed nav-link"><span class="text-default"><i class="fa fa-credit-card"></i></span>आर्थिक अवस्था</a>
             <ul class="list-unstyled collapse" id="economiccondition" style="">
                 <li class="nav-item sub-nav">
                     <a class="nav-link" href="{{ route('economic-indicator.index') }}">
@@ -190,7 +189,7 @@
         <li class="nav-item">
             <a href="#socialDevelopment" data-toggle="collapse" aria-expanded="false"
                 class="dropdown-toggle collapsed nav-link"><span class="text-default"><i
-                        class="fas fa-users"></i></span>सामाजिक विकास</a>
+                        class="fas fa-object-group"></i></span>सामाजिक विकास</a>
             <ul class="list-unstyled collapse" id="socialDevelopment" style="">
                 <li class="nav-item sub-nav">
                     <a class="nav-link" href="{{ route('total-student.index') }}">
@@ -212,7 +211,7 @@
         <li class="nav-item">
             <a href="#infrastructure" data-toggle="collapse" aria-expanded="false"
                 class="dropdown-toggle collapsed nav-link"><span class="text-default"><i
-                        class="fas fa-users"></i></span>पूर्वाधार विकास</a>
+                        class="fas fa-arrow-up"></i></span>पूर्वाधार विकास</a>
             <ul class="list-unstyled collapse" id="infrastructure" style="">
                 <li class="nav-item sub-nav">
                     <a class="nav-link" href="{{ route('proud-project.index') }}">
@@ -272,7 +271,7 @@
         <li class="nav-item">
             <a href="#business" data-toggle="collapse" aria-expanded="false"
                 class="dropdown-toggle collapsed nav-link"><span class="text-default"><i
-                        class="fas fa-users"></i></span>उद्योग ब्यवसाय</a>
+                        class="fas fa-building"></i></span>उद्योग ब्यवसाय</a>
             <ul class="list-unstyled collapse" id="business" style="">
                 <li class="nav-item sub-nav">
                     <a class="nav-link" href="{{ route('province-business.index') }}">
@@ -292,7 +291,7 @@
         <li class="nav-item">
             <a href="#agriculture" data-toggle="collapse" aria-expanded="false"
                 class="dropdown-toggle collapsed nav-link"><span class="text-default"><i
-                        class="fas fa-users"></i></span>कृषि क्षेत्र</a>
+                        class="fas fa-tree"></i></span>कृषि क्षेत्र</a>
             <ul class="list-unstyled collapse" id="agriculture" style="">
                 <li class="nav-item sub-nav">
                     <a class="nav-link" href="{{ route('ownership.index') }}">
