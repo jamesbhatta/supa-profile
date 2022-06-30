@@ -15,6 +15,14 @@ class CreateReligionPopulationsTable extends Migration
     {
         Schema::create('religion_populations', function (Blueprint $table) {
             $table->id();
+             $table->string('district');
+            $table->integer('hindu');
+            $table->integer('baudha');
+            $table->integer('islam');
+            $table->integer('kirat');
+            $table->integer('christian');
+            $table->integer('prakirty');
+            $table->integer('other');
             $table->timestamps();
         });
     }
