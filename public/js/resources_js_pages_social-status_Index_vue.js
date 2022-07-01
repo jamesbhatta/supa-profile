@@ -770,6 +770,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     this.fetchGovermentSchoolStudent();
     this.fetchBalbikash();
     this.fetchDalitStudent();
+    this.fetchJanjatiStudent();
   },
   methods: {
     fetchTotalStudents: function fetchTotalStudents() {
@@ -813,6 +814,18 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         _this4.dalitbidyarthi.labels = response.data.labels;
         _this4.dalitbidyarthi.data = response.data.data;
         _this4.infoDatas = response.data;
+        console.log(response.data);
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchJanjatiStudent: function fetchJanjatiStudent() {
+      var _this5 = this;
+
+      axios.get("/api/janjati-student").then(function (response) {
+        _this5.janjatibidyarthi.labels = response.data.labels;
+        _this5.janjatibidyarthi.data = response.data.data;
+        _this5.infoDatas = response.data;
         console.log(response.data);
       })["catch"](function (error) {
         return console.log(error);
@@ -1007,63 +1020,7 @@ var render = function () {
               _vm._v(" "),
               _c("data-viewer", { attrs: { data: _vm.dalitbidyarthi } }),
               _vm._v(" "),
-              _c(
-                "data-viewer",
-                { attrs: { data: _vm.janjatibidyarthi } },
-                [
-                  _c("template", { slot: "thead-top" }, [
-                    _c("tr", [
-                      _c("th", { attrs: { colspan: "1" } }),
-                      _vm._v(" "),
-                      _c(
-                        "th",
-                        {
-                          staticClass: "bg-light text-center font-weight-bold",
-                          attrs: { colspan: "3" },
-                        },
-                        [_vm._v("१–१२ कक्षा")]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "th",
-                        {
-                          staticClass: "bg-light text-center font-weight-bold",
-                          attrs: { colspan: "3" },
-                        },
-                        [_vm._v("१–५ कक्षा")]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "th",
-                        {
-                          staticClass: "bg-light text-center font-weight-bold",
-                          attrs: { colspan: "3" },
-                        },
-                        [_vm._v("६–८ कक्षा")]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "th",
-                        {
-                          staticClass: "bg-light text-center font-weight-bold",
-                          attrs: { colspan: "3" },
-                        },
-                        [_vm._v("९–१० कक्षा")]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "th",
-                        {
-                          staticClass: "bg-light text-center font-weight-bold",
-                          attrs: { colspan: "3" },
-                        },
-                        [_vm._v("११–१२ कक्षा")]
-                      ),
-                    ]),
-                  ]),
-                ],
-                2
-              ),
+              _c("data-viewer", { attrs: { data: _vm.janjatibidyarthi } }),
               _vm._v(" "),
               _c(
                 "data-viewer",

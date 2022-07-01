@@ -162,7 +162,7 @@
             </data-viewer>
 
             <data-viewer :data="janjatibidyarthi">
-              <template slot="thead-top">
+              <!-- <template slot="thead-top">
                 <tr>
                   <th colspan="1"></th>
                   <th colspan="3" class="bg-light text-center font-weight-bold">१–१२ कक्षा</th>
@@ -171,7 +171,7 @@
                   <th colspan="3" class="bg-light text-center font-weight-bold">९–१० कक्षा</th>
                   <th colspan="3" class="bg-light text-center font-weight-bold">११–१२ कक्षा</th>
                 </tr>
-              </template>
+              </template> -->
             </data-viewer>
 
             <data-viewer :data="samudaikvidyalayateacher">
@@ -1950,6 +1950,7 @@ export default {
     this.fetchGovermentSchoolStudent();
     this.fetchBalbikash();
     this.fetchDalitStudent();
+    this.fetchJanjatiStudent();
   },
 
   methods: {
@@ -1995,6 +1996,19 @@ export default {
          .then((response) => {
           this.dalitbidyarthi.labels = response.data.labels;
           this.dalitbidyarthi.data = response.data.data
+          this.infoDatas = response.data;
+
+          console.log(response.data);
+        })
+        .catch((error) => console.log(error));
+    },
+    fetchJanjatiStudent() {
+      axios
+        .get("/api/janjati-student")
+        
+         .then((response) => {
+          this.janjatibidyarthi.labels = response.data.labels;
+          this.janjatibidyarthi.data = response.data.data
           this.infoDatas = response.data;
 
           console.log(response.data);

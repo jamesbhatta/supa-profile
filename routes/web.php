@@ -270,6 +270,14 @@ Route::get('dalit-student/{dalitStudent}/edit', 'DalitStudentController@edit')->
 Route::put('dalit-student/{dalitStudent}', 'DalitStudentController@update')->name('dalit-student.update');
 
 
+// 
+Route::get('janjati-student', 'JanjatiStudentController@index')->name('janjati-student.index');
+Route::post('janjati-student', 'JanjatiStudentController@store')->name('janjati-student.store');
+Route::delete('janjatil-student/{janjatiStudent}', 'JanjatiStudentController@destroy')->name('janjati-student.destroy');
+Route::get('janjati-student/{janjatiStudent}/edit', 'JanjatiStudentController@edit')->name('janjati-student.edit');
+Route::put('janjati-student/{janjatiStudent}', 'JanjatiStudentController@update')->name('janjati-student.update');
+
+
 // Unit 5
 // 
 Route::get('proud-project', 'ProudProjectController@index')->name('proud-project.index');
