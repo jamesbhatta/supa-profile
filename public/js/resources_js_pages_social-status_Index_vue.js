@@ -766,6 +766,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
   mounted: function mounted() {
     this.fetchTotalStudents();
     this.fetchGovermentSchoolStudent();
+    this.fetchBalbikash();
   },
   methods: {
     fetchTotalStudents: function fetchTotalStudents() {
@@ -786,6 +787,18 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         _this2.samudaikvidyalayastudent.labels = response.data.labels;
         _this2.samudaikvidyalayastudent.data = response.data.data;
         _this2.infoDatas = response.data;
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchBalbikash: function fetchBalbikash() {
+      var _this3 = this;
+
+      axios.get("/api/balbikash").then(function (response) {
+        _this3.balbikashkendra.labels = response.data.labels;
+        _this3.balbikashkendra.data = response.data.data;
+        _this3.infoDatas = response.data;
+        console.log(response.data);
       })["catch"](function (error) {
         return console.log(error);
       });

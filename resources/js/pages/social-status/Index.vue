@@ -1946,6 +1946,7 @@ export default {
   mounted() {
     this.fetchTotalStudents();
     this.fetchGovermentSchoolStudent();
+    this.fetchBalbikash();
   },
 
   methods: {
@@ -1968,6 +1969,19 @@ export default {
           this.samudaikvidyalayastudent.labels = response.data.labels;
           this.samudaikvidyalayastudent.data = response.data.data
           this.infoDatas = response.data;
+        })
+        .catch((error) => console.log(error));
+    },
+    fetchBalbikash() {
+      axios
+        .get("/api/balbikash")
+        
+         .then((response) => {
+          this.balbikashkendra.labels = response.data.labels;
+          this.balbikashkendra.data = response.data.data
+          this.infoDatas = response.data;
+
+          console.log(response.data);
         })
         .catch((error) => console.log(error));
     },

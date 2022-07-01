@@ -239,12 +239,20 @@ Route::delete('total-student/{totalStudent}', 'TotalStudentController@destroy')-
 Route::get('total-student/{totalStudent}/edit', 'TotalStudentController@edit')->name('total-student.edit');
 Route::put('total-student/{totalStudent}', 'TotalStudentController@update')->name('total-student.update');
 
-
+// 
 Route::get('goverment-school-student', 'GovermentSchoolStudentController@index')->name('goverment-school-student.index');
 Route::post('goverment-school-student', 'GovermentSchoolStudentController@store')->name('goverment-school-student.store');
 Route::delete('goverment-school-student/{govermentSchoolStudent}', 'GovermentSchoolStudentController@destroy')->name('goverment-school-student.destroy');
 Route::get('goverment-school-student/{govermentSchoolStudent}/edit', 'GovermentSchoolStudentController@edit')->name('goverment-school-student.edit');
 Route::put('goverment-school-student/{govermentSchoolStudent}', 'GovermentSchoolStudentController@update')->name('goverment-school-student.update');
+
+
+// 
+Route::get('balbikash', 'BalbikasController@index')->name('balbikash.index');
+Route::post('balbikash', 'BalbikasController@store')->name('balbikash.store');
+Route::delete('balbikash/{balbikas}', 'BalbikasController@destroy')->name('balbikash.destroy');
+Route::get('balbikash/{balbikas}/edit', 'BalbikasController@edit')->name('balbikash.edit');
+Route::put('balbikash/{balbikas}', 'BalbikasController@update')->name('balbikash.update');
 
 // 
 Route::get('district-student', 'DistrictStudentController@index')->name('district-student.index');

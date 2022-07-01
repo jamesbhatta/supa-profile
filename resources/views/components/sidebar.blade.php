@@ -242,6 +242,11 @@
                         <span class="mx-3"><i class="fa fa-circle"></i></span> सामूदायिक विद्यालयमा विद्यार्थी
                     </a>
                 </li>
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('balbikash.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span> बालविकास केन्द्रका विद्यार्थी
+                    </a>
+                </li>
 
 
             </ul>
