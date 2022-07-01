@@ -277,6 +277,13 @@ Route::delete('janjatil-student/{janjatiStudent}', 'JanjatiStudentController@des
 Route::get('janjati-student/{janjatiStudent}/edit', 'JanjatiStudentController@edit')->name('janjati-student.edit');
 Route::put('janjati-student/{janjatiStudent}', 'JanjatiStudentController@update')->name('janjati-student.update');
 
+// 
+Route::get('college', 'CollegeController@index')->name('college.index');
+Route::post('college', 'CollegeController@store')->name('college.store');
+Route::delete('college/{college}', 'CollegeController@destroy')->name('college.destroy');
+Route::get('college/{college}/edit', 'CollegeController@edit')->name('college.edit');
+Route::put('college/{college}', 'CollegeController@update')->name('college.update');
+
 
 // Unit 5
 // 

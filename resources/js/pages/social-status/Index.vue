@@ -1951,6 +1951,7 @@ export default {
     this.fetchBalbikash();
     this.fetchDalitStudent();
     this.fetchJanjatiStudent();
+    this.fetchCollege();
   },
 
   methods: {
@@ -2009,6 +2010,19 @@ export default {
          .then((response) => {
           this.janjatibidyarthi.labels = response.data.labels;
           this.janjatibidyarthi.data = response.data.data
+          this.infoDatas = response.data;
+
+          console.log(response.data);
+        })
+        .catch((error) => console.log(error));
+    },
+     fetchCollege() {
+      axios
+        .get("/api/college")
+        
+         .then((response) => {
+          this.supacampus.labels = response.data.labels;
+          this.supacampus.data = response.data.data
           this.infoDatas = response.data;
 
           console.log(response.data);

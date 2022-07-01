@@ -771,6 +771,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     this.fetchBalbikash();
     this.fetchDalitStudent();
     this.fetchJanjatiStudent();
+    this.fetchCollege();
   },
   methods: {
     fetchTotalStudents: function fetchTotalStudents() {
@@ -826,6 +827,18 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         _this5.janjatibidyarthi.labels = response.data.labels;
         _this5.janjatibidyarthi.data = response.data.data;
         _this5.infoDatas = response.data;
+        console.log(response.data);
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchCollege: function fetchCollege() {
+      var _this6 = this;
+
+      axios.get("/api/college").then(function (response) {
+        _this6.supacampus.labels = response.data.labels;
+        _this6.supacampus.data = response.data.data;
+        _this6.infoDatas = response.data;
         console.log(response.data);
       })["catch"](function (error) {
         return console.log(error);

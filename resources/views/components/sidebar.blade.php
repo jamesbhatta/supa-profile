@@ -260,6 +260,12 @@
                     </a>
                 </li>
 
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('college.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span>  क्याम्पस विवरण
+                    </a>
+                </li>
+
 
             </ul>
         </li>

@@ -49,6 +49,7 @@ Route::get('goverment-school-student', 'GovermentSchoolStudentController@listing
 Route::get('balbikash', 'BalbikasController@listing');
 Route::get('dalit-student','DalitStudentController@listing');
 Route::get('janjati-student','JanjatiStudentController@listing');
+Route::get('college','CollegeController@listing');
 
 
 // unit 5
