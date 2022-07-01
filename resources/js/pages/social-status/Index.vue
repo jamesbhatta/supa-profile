@@ -125,7 +125,7 @@
             </data-viewer>
 
             <data-viewer :data="samudaikvidyalayastudent">
-              <template slot="thead-top">
+              <!-- <template slot="thead-top">
                 <tr>
                   <th colspan="1"></th>
                   <th colspan="3" class="bg-light text-center font-weight-bold">१–१२ कक्षा</th>
@@ -134,7 +134,7 @@
                   <th colspan="3" class="bg-light text-center font-weight-bold">९–१० कक्षा</th>
                   <th colspan="3" class="bg-light text-center font-weight-bold">११–१२ कक्षा</th>
                 </tr>
-              </template>
+              </template> -->
             </data-viewer>
 
             <data-viewer :data="balbikashkendra">
@@ -1945,6 +1945,7 @@ export default {
 
   mounted() {
     this.fetchTotalStudents();
+    this.fetchGovermentSchoolStudent();
   },
 
   methods: {
@@ -1955,6 +1956,17 @@ export default {
          .then((response) => {
           this.supastudents.labels = response.data.labels;
           this.supastudents.data = response.data.data
+          this.infoDatas = response.data;
+        })
+        .catch((error) => console.log(error));
+    },
+    fetchGovermentSchoolStudent() {
+      axios
+        .get("/api/goverment-school-student")
+        
+         .then((response) => {
+          this.samudaikvidyalayastudent.labels = response.data.labels;
+          this.samudaikvidyalayastudent.data = response.data.data
           this.infoDatas = response.data;
         })
         .catch((error) => console.log(error));

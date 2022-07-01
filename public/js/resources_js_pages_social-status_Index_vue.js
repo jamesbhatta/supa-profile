@@ -765,6 +765,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
   },
   mounted: function mounted() {
     this.fetchTotalStudents();
+    this.fetchGovermentSchoolStudent();
   },
   methods: {
     fetchTotalStudents: function fetchTotalStudents() {
@@ -774,6 +775,17 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         _this.supastudents.labels = response.data.labels;
         _this.supastudents.data = response.data.data;
         _this.infoDatas = response.data;
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchGovermentSchoolStudent: function fetchGovermentSchoolStudent() {
+      var _this2 = this;
+
+      axios.get("/api/goverment-school-student").then(function (response) {
+        _this2.samudaikvidyalayastudent.labels = response.data.labels;
+        _this2.samudaikvidyalayastudent.data = response.data.data;
+        _this2.infoDatas = response.data;
       })["catch"](function (error) {
         return console.log(error);
       });
@@ -921,63 +933,9 @@ var render = function () {
                 2
               ),
               _vm._v(" "),
-              _c(
-                "data-viewer",
-                { attrs: { data: _vm.samudaikvidyalayastudent } },
-                [
-                  _c("template", { slot: "thead-top" }, [
-                    _c("tr", [
-                      _c("th", { attrs: { colspan: "1" } }),
-                      _vm._v(" "),
-                      _c(
-                        "th",
-                        {
-                          staticClass: "bg-light text-center font-weight-bold",
-                          attrs: { colspan: "3" },
-                        },
-                        [_vm._v("१–१२ कक्षा")]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "th",
-                        {
-                          staticClass: "bg-light text-center font-weight-bold",
-                          attrs: { colspan: "3" },
-                        },
-                        [_vm._v("१–५ कक्षा")]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "th",
-                        {
-                          staticClass: "bg-light text-center font-weight-bold",
-                          attrs: { colspan: "3" },
-                        },
-                        [_vm._v("६–८ कक्षा")]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "th",
-                        {
-                          staticClass: "bg-light text-center font-weight-bold",
-                          attrs: { colspan: "3" },
-                        },
-                        [_vm._v("९–१० कक्षा")]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "th",
-                        {
-                          staticClass: "bg-light text-center font-weight-bold",
-                          attrs: { colspan: "3" },
-                        },
-                        [_vm._v("११–१२ कक्षा")]
-                      ),
-                    ]),
-                  ]),
-                ],
-                2
-              ),
+              _c("data-viewer", {
+                attrs: { data: _vm.samudaikvidyalayastudent },
+              }),
               _vm._v(" "),
               _c(
                 "data-viewer",

@@ -26,7 +26,7 @@
             <div class="card-body">
 
                 <form
-                    action="{{ $govermentSchoolStudent->id ? route('total-student.update', $govermentSchoolStudent) : route('total-student.store') }}"
+                    action="{{ $govermentSchoolStudent->id ? route('goverment-school-student.update', $govermentSchoolStudent) : route('goverment-school-student.store') }}"
                     method="POST" class="form">
                     @csrf
                     @if ($govermentSchoolStudent->id)
@@ -34,13 +34,40 @@
                     @endif
                     <div class="row">
                         <div class="form-group col-12">
+                            <label for="select-province-id">प्रदेशको नाम</label>
+                            <select id="select-province-id" class="custom-select">
+
+                                <option value="">प्रदेश छान्नुहोस्</option>
+                                @foreach ($provinces as $province)
+                                    <option value="{{ $province->id }}">{{ $province->name }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                        <div class="form-group col-12">
+                            <label for="select-district-id">जिल्लाको नाम</label>
+                            <select name="district" id="select-district-id" class="custom-select">
+                                @isset($govermentSchoolStudent->id)
+                                    <option value="{{ $govermentSchoolStudent->district }}" selected>
+                                        {{ $govermentSchoolStudent->district }}</option>
+                                @else
+                                    <option value="">जिल्ला छान्नुहोस्</option>
+                                @endisset
+                                @foreach ($provinces as $province)
+                                    @foreach ($province->districts as $district)
+                                        <option value="{{ $district->name }}" data-province-id="{{ $province->id }}">
+                                            {{ $district->name }}</option>
+                                    @endforeach
+                                @endforeach
+                            </select>
+                        </div>
+                        <div class="form-group col-12">
                             <label for="input-fiscal-year">कक्षा</label>
 
-                            <select name="class" class="form-control" id="">
+                            <select name="classes" class="form-control" id="">
                                 <option value="">कृपया कक्षा चयन गर्नुहोस्</option>
                                 @if ($govermentSchoolStudent->id)
-                                    <option value="{{ $govermentSchoolStudent->class }}">
-                                        {{ $govermentSchoolStudent->class }}</option>
+                                    <option value="{{ $govermentSchoolStudent->classes }}" selected>
+                                        {{ $govermentSchoolStudent->classes }}</option>
                                 @endif
                                 <option value="०–१ कक्षा">०–१ कक्षा</option>
                                 <option value="१–५ कक्षा">१–५ कक्षा</option>
@@ -50,49 +77,15 @@
                             </select>
                         </div>
 
-                        <div class="col-md-4 border">
-                            <label class="mt-2">१–१२ कक्षा</label>
-                            <hr>
-                            <div class="form-group">
-                                <label for="input-fiscal-year-start">छात्रा </label>
-                                <input type="text" id="input-fiscal-year" name="g_fmale" class="form-control font-roboto"
-                                    value="{{ old('g_fmale', $govermentSchoolStudent->g_fmale) }}">
-                            </div>
-                            <div class="form-group">
-                                <label for="input-fiscal-year-start">छात्र</label>
-                                <input type="text" id="input-fiscal-year" name="g_male" class="form-control font-roboto"
-                                    value="{{ old('g_male', $govermentSchoolStudent->g_male) }}">
-                            </div>
+                        <div class="form-group col-lg-6">
+                            <label for="input-fiscal-year-start">छात्रा </label>
+                            <input type="text" id="input-fiscal-year" name="female" class="form-control font-roboto"
+                                value="{{ old('female', $govermentSchoolStudent->female) }}">
                         </div>
-
-                        <div class="col-md-4 border">
-                            <label class="mt-2">१–५ कक्षा</label>
-                            <hr>
-                            <div class="form-group">
-                                <label for="input-fiscal-year-start">छात्रा </label>
-                                <input type="text" id="input-fiscal-year" name="g_fmale" class="form-control font-roboto"
-                                    value="{{ old('g_fmale', $govermentSchoolStudent->g_fmale) }}">
-                            </div>
-                            <div class="form-group">
-                                <label for="input-fiscal-year-start">छात्र</label>
-                                <input type="text" id="input-fiscal-year" name="g_male" class="form-control font-roboto"
-                                    value="{{ old('g_male', $govermentSchoolStudent->g_male) }}">
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 border">
-                            <label class="mt-2">६–८ कक्षा</label>
-                            <hr>
-                            <div class="form-group">
-                                <label for="input-fiscal-year-start">छात्रा </label>
-                                <input type="text" id="input-fiscal-year" name="g_fmale" class="form-control font-roboto"
-                                    value="{{ old('g_fmale', $govermentSchoolStudent->g_fmale) }}">
-                            </div>
-                            <div class="form-group">
-                                <label for="input-fiscal-year-start">छात्र</label>
-                                <input type="text" id="input-fiscal-year" name="g_male" class="form-control font-roboto"
-                                    value="{{ old('g_male', $govermentSchoolStudent->g_male) }}">
-                            </div>
+                        <div class="form-group col-lg-6">
+                            <label for="input-fiscal-year-start">छात्र</label>
+                            <input type="text" id="input-fiscal-year" name="male" class="form-control font-roboto"
+                                value="{{ old('male', $govermentSchoolStudent->male) }}">
                         </div>
 
 
@@ -119,9 +112,8 @@
                     <thead>
                         <tr>
                             <th>क्र.स.</th>
+                            <th>जिल्ला</th>
                             <th>कक्षा</th>
-                            <th>छात्रा</th>
-                            <th>छात्र</th>
                             <th>छात्रा</th>
                             <th>छात्र</th>
                         </tr>
@@ -130,15 +122,15 @@
                         @forelse ($govermentSchoolStudents as $item)
                             <tr>
                                 <td>{{ $loop->iteration }}</td>
-                                <td class="font-roboto">{{ $item->class }}</td>
-                                <td class="font-roboto">{{ $item->g_fmale }}</td>
-                                <td class="font-roboto">{{ $item->g_male }}</td>
-                                <td class="font-roboto">{{ $item->p_fmale }}</td>
-                                <td class="font-roboto">{{ $item->p_male }}</td>
+                                <td class="font-roboto">{{ $item->district }}</td>
+                                <td class="font-roboto">{{ $item->classes }}</td>
+                                <td class="font-roboto">{{ $item->female }}</td>
+                                <td class="font-roboto">{{ $item->male }}</td>
                                 <td>
-                                    <a class="action-btn text-primary" href="{{ route('total-student.edit', $item) }}"><i
+                                    <a class="action-btn text-primary"
+                                        href="{{ route('goverment-school-student.edit', $item) }}"><i
                                             class="far fa-edit"></i></a>
-                                    <form action="{{ route('total-student.destroy', $item) }}" method="post"
+                                    <form action="{{ route('goverment-school-student.destroy', $item) }}" method="post"
                                         onsubmit="return confirm('के तपाईँ निश्चित हुनुहुन्छ?')"
                                         class="form-inline d-inline">
                                         @csrf
@@ -179,6 +171,10 @@
             if ($('.fiscal-year-date')[0]) {
                 $('.fiscal-year-date').nepaliDatePicker({});
             }
+
+            $('#select-province-id').change(function() {
+                filterOptions($(this).val(), '#select-district-id option', 'province-id');
+            });
 
         })
     </script>

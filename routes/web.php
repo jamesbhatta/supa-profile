@@ -244,7 +244,7 @@ Route::get('goverment-school-student', 'GovermentSchoolStudentController@index')
 Route::post('goverment-school-student', 'GovermentSchoolStudentController@store')->name('goverment-school-student.store');
 Route::delete('goverment-school-student/{govermentSchoolStudent}', 'GovermentSchoolStudentController@destroy')->name('goverment-school-student.destroy');
 Route::get('goverment-school-student/{govermentSchoolStudent}/edit', 'GovermentSchoolStudentController@edit')->name('goverment-school-student.edit');
-Route::put('goverment-school-student/{govermentSchoolStudent}', 'GovermentSchoolStudentController@update')->name('total-student.update');
+Route::put('goverment-school-student/{govermentSchoolStudent}', 'GovermentSchoolStudentController@update')->name('goverment-school-student.update');
 
 // 
 Route::get('district-student', 'DistrictStudentController@index')->name('district-student.index');

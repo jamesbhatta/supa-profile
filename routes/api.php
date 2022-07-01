@@ -44,6 +44,10 @@ Route::get('province-population', 'ProvincePopulationController@listing');
 Route::get('cast-population', 'CastPopulationController@listing');
 Route::get('language-population', 'LanguagePopulationController@listing');
 
+// Unit 4
+Route::get('goverment-school-student', 'GovermentSchoolStudentController@listing');
+
+
 // unit 5
 Route::get('proud-project', 'ProudProjectController@listingProudProject');
 Route::get('road-network', 'RoadNetworkController@listingRoadNetwork');
