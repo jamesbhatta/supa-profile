@@ -261,6 +261,15 @@ Route::delete('districtl-student/{districtStudent}', 'DistrictStudentController@
 Route::get('district-student/{districtStudent}/edit', 'DistrictStudentController@edit')->name('district-student.edit');
 Route::put('district-student/{districtStudent}', 'DistrictStudentController@update')->name('district-student.update');
 
+
+// 
+Route::get('dalit-student', 'DalitStudentController@index')->name('dalit-student.index');
+Route::post('dalit-student', 'DalitStudentController@store')->name('dalit-student.store');
+Route::delete('dalitl-student/{dalitStudent}', 'DalitStudentController@destroy')->name('dalit-student.destroy');
+Route::get('dalit-student/{dalitStudent}/edit', 'DalitStudentController@edit')->name('dalit-student.edit');
+Route::put('dalit-student/{dalitStudent}', 'DalitStudentController@update')->name('dalit-student.update');
+
+
 // Unit 5
 // 
 Route::get('proud-project', 'ProudProjectController@index')->name('proud-project.index');

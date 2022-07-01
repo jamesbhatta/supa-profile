@@ -149,7 +149,7 @@
             </data-viewer>
 
             <data-viewer :data="dalitbidyarthi">
-              <template slot="thead-top">
+              <!-- <template slot="thead-top">
                 <tr>
                   <th colspan="1"></th>
                   <th colspan="3" class="bg-light text-center font-weight-bold">१–१२ कक्षा</th>
@@ -158,7 +158,7 @@
                   <th colspan="3" class="bg-light text-center font-weight-bold">९–१० कक्षा</th>
                   <th colspan="3" class="bg-light text-center font-weight-bold">११–१२ कक्षा</th>
                 </tr>
-              </template>
+              </template> -->
             </data-viewer>
 
             <data-viewer :data="janjatibidyarthi">
@@ -376,6 +376,7 @@ export default {
       },
       // 5.7
       dalitbidyarthi: {
+        id: "table_4",
         title: "दलित विद्यार्थीहरुको जिल्लागत संख्या विवरण",
         labels: ["जिल्ला ", "छात्रा", "छात्र", "जम्मा", "छात्रा", "छात्र", "जम्मा", "छात्रा", "छात्र", "जम्मा", "छात्रा", "छात्र", "जम्मा", "छात्रा", "छात्र", "जम्मा"],
         data: [
@@ -395,6 +396,7 @@ export default {
       },
       // 5.8
       janjatibidyarthi: {
+        id: "table_5",
         title: "जिल्लागत जनजाती विद्यार्थी संख्या विवरण",
         labels: ["जिल्ला ", "छात्रा", "छात्र", "जम्मा", "छात्रा", "छात्र", "जम्मा", "छात्रा", "छात्र", "जम्मा", "छात्रा", "छात्र", "जम्मा", "छात्रा", "छात्र", "जम्मा"],
         data: [
@@ -1947,6 +1949,7 @@ export default {
     this.fetchTotalStudents();
     this.fetchGovermentSchoolStudent();
     this.fetchBalbikash();
+    this.fetchDalitStudent();
   },
 
   methods: {
@@ -1979,6 +1982,19 @@ export default {
          .then((response) => {
           this.balbikashkendra.labels = response.data.labels;
           this.balbikashkendra.data = response.data.data
+          this.infoDatas = response.data;
+
+          console.log(response.data);
+        })
+        .catch((error) => console.log(error));
+    },
+    fetchDalitStudent() {
+      axios
+        .get("/api/dalit-student")
+        
+         .then((response) => {
+          this.dalitbidyarthi.labels = response.data.labels;
+          this.dalitbidyarthi.data = response.data.data
           this.infoDatas = response.data;
 
           console.log(response.data);

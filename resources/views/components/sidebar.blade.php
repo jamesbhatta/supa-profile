@@ -248,6 +248,12 @@
                     </a>
                 </li>
 
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('dalit-student.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span> दलित विद्यार्थीहरु
+                    </a>
+                </li>
+
 
             </ul>
         </li>

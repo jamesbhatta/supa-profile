@@ -47,6 +47,7 @@ Route::get('language-population', 'LanguagePopulationController@listing');
 // Unit 4
 Route::get('goverment-school-student', 'GovermentSchoolStudentController@listing');
 Route::get('balbikash', 'BalbikasController@listing');
+Route::get('dalit-student','DalitStudentController@listing');
 
 
 // unit 5
