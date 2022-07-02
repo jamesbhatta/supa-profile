@@ -422,6 +422,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       },
       // 5.12
       TechnicalStreamProgramRunSchools: {
+        id: "table_9",
         title: "सुदूरपश्चिममा रहेका स्थानीय तहको विवरण",
         labels: ["क्र.स.", "जिल्ला", "क्र.स.", "विद्यालयको नाम", "सञ्चालित कार्यक्रम"],
         data: [// Bajura start
@@ -784,6 +785,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     this.fetchHelthFlow();
     this.fetchNutrition();
     this.fetchSampleSchool();
+    this.fetchLocalSchool();
   },
   methods: {
     fetchTotalStudents: function fetchTotalStudents() {
@@ -995,6 +997,18 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         _this18.sampleschools.labels = response.data.labels;
         _this18.sampleschools.data = response.data.data;
         _this18.infoDatas = response.data;
+        console.log(response.data);
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchLocalSchool: function fetchLocalSchool() {
+      var _this19 = this;
+
+      axios.get("/api/local-school").then(function (response) {
+        _this19.TechnicalStreamProgramRunSchools.labels = response.data.labels;
+        _this19.TechnicalStreamProgramRunSchools.data = response.data.data;
+        _this19.infoDatas = response.data;
         console.log(response.data);
       })["catch"](function (error) {
         return console.log(error);

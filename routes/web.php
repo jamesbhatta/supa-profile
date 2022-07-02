@@ -389,6 +389,14 @@ Route::delete('sample-school/{sampleSchool}', 'SampleSchoolController@destroy')-
 Route::get('sample-school/{sampleSchool}/edit', 'SampleSchoolController@edit')->name('sample-school.edit');
 Route::put('sample-school/{sampleSchool}', 'SampleSchoolController@update')->name('sample-school.update');
 
+
+// 
+Route::get('local-school', 'LocalSchoolController@index')->name('local-school.index');
+Route::post('local-school', 'LocalSchoolController@store')->name('local-school.store');
+Route::delete('local-school/{localSchool}', 'LocalSchoolController@destroy')->name('local-school.destroy');
+Route::get('local-school/{localSchool}/edit', 'LocalSchoolController@edit')->name('local-school.edit');
+Route::put('local-school/{localSchool}', 'LocalSchoolController@update')->name('local-school.update');
+
 // Unit 5
 // 
 Route::get('proud-project', 'ProudProjectController@index')->name('proud-project.index');

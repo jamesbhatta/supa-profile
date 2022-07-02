@@ -569,6 +569,7 @@ export default {
       },
       // 5.12
       TechnicalStreamProgramRunSchools: {
+        id: "table_9",
         title: "सुदूरपश्चिममा रहेका स्थानीय तहको विवरण",
         labels: [
           "क्र.स.",
@@ -1964,6 +1965,7 @@ export default {
     this.fetchHelthFlow();
     this.fetchNutrition();
     this.fetchSampleSchool();
+    this.fetchLocalSchool();
   },
 
   methods: {
@@ -2194,6 +2196,20 @@ export default {
          .then((response) => {
           this.sampleschools.labels = response.data.labels;
           this.sampleschools.data = response.data.data
+          this.infoDatas = response.data;
+
+          console.log(response.data);
+        })
+        .catch((error) => console.log(error));
+    },
+
+    fetchLocalSchool() {
+      axios
+        .get("/api/local-school")
+        
+         .then((response) => {
+          this.TechnicalStreamProgramRunSchools.labels = response.data.labels;
+          this.TechnicalStreamProgramRunSchools.data = response.data.data
           this.infoDatas = response.data;
 
           console.log(response.data);
