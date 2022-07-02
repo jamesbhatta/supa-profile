@@ -20,10 +20,10 @@
                 <div class="row">
                     <div class="form-group col-md-12">
                         <label for="input-name">जिल्ला को नाम</label>
-                        <select name="district_id" class="form-control" id="">
+                        <select name="district" class="form-control" id="">
                             <option value="">जिल्ला छान्नुहोस्</option>
                             @foreach($district as $item)
-                            <option value="{{$item->id}}" data-province-id="">{{$item->name}}</option>
+                            <option value="{{$item->name}}" data-province-id="">{{$item->name}}</option>
                             @endforeach
                         </select>
                     </div>
@@ -108,7 +108,7 @@
                     @forelse ($population as $item)
                     <tr>
                         <td>{{ $loop->iteration }}</td>
-                        <td>{{ $item->districts[0]->name }}</td>
+                        <td>{{ $item->district }}</td>
                         <td>{{ $item->municipality_name }}</td>
                         <td>{{$item->house_number}}</td>
                         <td>{{$item->female_number+$item->male_number}}</td>

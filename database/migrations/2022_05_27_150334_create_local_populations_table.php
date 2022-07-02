@@ -15,8 +15,7 @@ class CreateLocalPopulationsTable extends Migration
     {
         Schema::create('local_populations', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('district_id');
-            $table->foreign('district_id')->references('id')->on('districts')->onDelete('cascade');
+            $table->string('district');
             $table->string('municipality_name');
             $table->integer('house_number');
             $table->integer('male_number');

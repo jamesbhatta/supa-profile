@@ -550,6 +550,8 @@ __webpack_require__.r(__webpack_exports__);
     this.fetchProvincePopulation();
     this.fetchCastPopulation();
     this.fetchLanguagePopulation();
+    this.fetchLocalPopulation();
+    this.fetchPopulation();
   },
   methods: {
     fetchTotalStudents: function fetchTotalStudents() {
@@ -647,6 +649,28 @@ __webpack_require__.r(__webpack_exports__);
         _this9.languagedata.labels = response.data.labels;
         _this9.languagedata.data = response.data.data;
         _this9.infoDatas = response.data;
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchLocalPopulation: function fetchLocalPopulation() {
+      var _this10 = this;
+
+      axios.get("/api/local-population").then(function (response) {
+        _this10.laingikanupat.labels = response.data.labels;
+        _this10.laingikanupat.data = response.data.data;
+        _this10.infoDatas = response.data;
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchPopulation: function fetchPopulation() {
+      var _this11 = this;
+
+      axios.get("/api/population").then(function (response) {
+        _this11.AccordingtothePreliminaryDataofNationalCensus.labels = response.data.labels;
+        _this11.AccordingtothePreliminaryDataofNationalCensus.data = response.data.data;
+        _this11.infoDatas = response.data;
       })["catch"](function (error) {
         return console.log(error);
       });
@@ -1195,29 +1219,11 @@ var render = function () {
                 2
               ),
               _vm._v(" "),
-              _c(
-                "data-viewer",
-                {
-                  attrs: {
-                    data: _vm.AccordingtothePreliminaryDataofNationalCensus,
-                  },
+              _c("data-viewer", {
+                attrs: {
+                  data: _vm.AccordingtothePreliminaryDataofNationalCensus,
                 },
-                [
-                  _c("template", { slot: "thead-top" }, [
-                    _c("tr", [
-                      _c(
-                        "th",
-                        {
-                          staticClass: "bg-light text-center font-weight-bold",
-                          attrs: { colspan: "2" },
-                        },
-                        [_vm._v("जिल्ला ")]
-                      ),
-                    ]),
-                  ]),
-                ],
-                2
-              ),
+              }),
             ],
             1
           ),

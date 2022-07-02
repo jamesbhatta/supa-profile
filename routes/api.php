@@ -43,6 +43,8 @@ Route::get('religion-population', 'ReligionPopulationController@listing');
 Route::get('province-population', 'ProvincePopulationController@listing');
 Route::get('cast-population', 'CastPopulationController@listing');
 Route::get('language-population', 'LanguagePopulationController@listing');
+Route::get('local-population', 'LocalPopulationController@listing');
+Route::get('population', 'PopulationController@listing');
 
 // Unit 4
 Route::get('goverment-school-student', 'GovermentSchoolStudentController@listing');

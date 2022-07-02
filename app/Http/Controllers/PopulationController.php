@@ -13,6 +13,29 @@ class PopulationController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+
+    public function listing()
+    {
+        $data = Population::with('districts')->with('municipalities')->get();
+        $dataset['labels'] = ["क्र.स.", "जिल्ला", "परिवार संख्या", "जम्मा", "पुरुष", "महिला"];
+        $dataset['data'] = [];
+        foreach ($data as $key => $item) {
+            $dataset['data'][] = [
+                $key + 1,
+                $item->districts->name,
+                $item->municipalities->name,
+                $item->family_num,
+                $item->male_num,
+                $item->female_num,
+               
+            ];
+        }
+
+        return response()->json($dataset, 200);
+    }
+
+
     public function index()
     {
         $districts=District::all();

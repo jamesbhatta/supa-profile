@@ -14,17 +14,34 @@ class LocalPopulationController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-    public function listingLocalPopulation()
+    public function listing()
     {
-        $infoDatas = LocalPopulation::all();
+        $data = LocalPopulation::get();
+        $dataset['labels'] = ["क्र.स.", "बाजुरा", "घरपरिवार संख्या", "जम्मा", "पुरुष", "महिला", "औषत घरपरिवार सदस्य संख्या", "लैगिंक अनुपात", "महिला", "पुरुष", "जम्मा"];
+        $dataset['data'] = [];
+        foreach ($data as $key => $item) {
+            $dataset['data'][] = [
+                $key + 1,
+                $item->district,
+                $item->municipality_name,
+                $item->house_number,
+                $item->male_number,
+                $item->female_number,
+                $item->avg_house_number,
+                $item->anupat,
+                $item->fml_edu_percentage,
+                $item->ml_edu_percentage,
+               
+            ];
+        }
 
-        return response()->json($infoDatas, 200);
+        return response()->json($dataset, 200);
     }
     public function index()
     {
         $district=District::all();
         $municipality=Municipality::all();
-        $population = LocalPopulation::with('districts')->get();
+        $population = LocalPopulation::get();
         $populations= new LocalPopulation;
         
         return view('populations.local_population.index',compact(['district','municipality','population','populations']));
@@ -49,7 +66,7 @@ class LocalPopulationController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'district_id'=>'required',
+            'district'=>'required',
             'municipality_name'=>'required',
             'house_number'=>'required',
             'male_number'=>'required',
@@ -83,11 +100,11 @@ class LocalPopulationController extends Controller
      */
     public function edit($id)
     {
-        $populations=LocalPopulation::with('districts')->where('id',$id)->get();
+        $populations=LocalPopulation::where('id',$id)->get();
         
         $municipality=Municipality::all();
         $district=District::all();
-        $population = LocalPopulation::with('districts')->get();
+        $population = LocalPopulation::get();
         return view('populations.local_population.edit',compact(['district','municipality','population','populations']));
     }
 
@@ -101,7 +118,7 @@ class LocalPopulationController extends Controller
     public function update(Request $request, $id)
     {
         $request->validate([
-            'district_id'=>'required',
+            'district'=>'required',
             'municipality_name'=>'required',
             'house_number'=>'required',
             'male_number'=>'required',

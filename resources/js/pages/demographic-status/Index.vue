@@ -283,11 +283,11 @@
             </data-viewer>
 
             <data-viewer :data="AccordingtothePreliminaryDataofNationalCensus">
-              <template slot="thead-top">
+              <!-- <template slot="thead-top">
                 <tr>
                   <th colspan="2" class="bg-light text-center font-weight-bold">जिल्ला </th>
                 </tr>
-              </template>
+              </template> -->
             </data-viewer>
 
           </div>
@@ -989,6 +989,8 @@ export default {
     this.fetchProvincePopulation();
     this.fetchCastPopulation();
     this.fetchLanguagePopulation();
+    this.fetchLocalPopulation();
+    this.fetchPopulation();
   },
 
   methods: {
@@ -1088,6 +1090,29 @@ export default {
         .then((response) => {
           this.languagedata.labels = response.data.labels;
           this.languagedata.data = response.data.data
+          this.infoDatas = response.data;
+        })
+        .catch((error) => console.log(error));
+    },
+    fetchLocalPopulation() {
+      axios
+        .get("/api/local-population")
+
+        .then((response) => {
+          this.laingikanupat.labels = response.data.labels;
+          this.laingikanupat.data = response.data.data
+          this.infoDatas = response.data;
+        })
+        .catch((error) => console.log(error));
+    },
+
+    fetchPopulation() {
+      axios
+        .get("/api/population")
+
+        .then((response) => {
+          this.AccordingtothePreliminaryDataofNationalCensus.labels = response.data.labels;
+          this.AccordingtothePreliminaryDataofNationalCensus.data = response.data.data
           this.infoDatas = response.data;
         })
         .catch((error) => console.log(error));

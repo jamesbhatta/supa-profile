@@ -170,16 +170,16 @@
                     </a>
                 </li>
 
-                {{-- <li class="nav-item sub-nav">
+                 <li class="nav-item sub-nav">
                     <a class="nav-link" href="{{ route('population.index') }}">
                         <span class="mx-3"><i class="fa fa-circle"></i></span>@lang('navigation.population')
                     </a>
                 </li>
-                <li class="nav-item sub-nav">
+                {{-- <li class="nav-item sub-nav">
                     <a class="nav-link" href="{{ route('age-population.index') }}">
                         <span class="mx-3"><i class="fa fa-circle"></i></span>@lang('navigation.age_population')
                     </a>
-                </li> --}}
+                </li>  --}}
             </ul>
         </li>
 

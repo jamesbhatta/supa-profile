@@ -23,12 +23,10 @@
                 <div class="row">
                     <div class="form-group col-md-12">
                         <label for="input-name">जिल्ला को नाम</label>
-                        <select name="district_id" class="form-control" id="">
-                            @isset($populations[0]->districts[0]->name)
-                                <option value="{{$populations[0]->districts[0]->id}}">{{$populations[0]->districts[0]->name}}</option>
-                            @else
+                        <select name="district" class="form-control" id="">
+                           
+                                <option value="{{$populations[0]->district}}" selected>{{$populations[0]->district}}</option>
                                 <option value="">जिल्ला छान्नुहोस्</option>
-                            @endisset
                             @foreach($district as $district)
                             <option value="{{$district->id}}" data-province-id="">{{$district->name}}</option>
                             @endforeach
