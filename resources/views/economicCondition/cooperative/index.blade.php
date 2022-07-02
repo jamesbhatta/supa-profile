@@ -26,10 +26,10 @@
 
             <div class="card-body">
                 <form
-                    action="{{ $cooperative->id ? route('cooperative.update', $cooperative) : route('cooperative.store') }}"
+                    action="{{ $sahakari->id ? route('sahakari.update', $sahakari) : route('sahakari.store') }}"
                     method="POST" class="form">
                     @csrf
-                    @isset($cooperative->id)
+                    @isset($sahakari->id)
                         @method('PUT')
                     @endisset
 
@@ -38,8 +38,8 @@
                             <label for="input-name">जिल्ला</label>
                             <select name="district" class="form-control" id="">
                                 <option value="">कृपया जिल्ला चयन गर्नुहोस्</option>
-                                @isset($cooperative->id)
-                                    <option value="{{ $cooperative->district }}" selected>{{ $cooperative->district }}
+                                @isset($sahakari->id)
+                                    <option value="{{ $sahakari->district }}" selected>{{ $sahakari->district }}
                                     </option>
                                 @endisset
                                 @foreach ($districts as $item)
@@ -47,36 +47,68 @@
                                 @endforeach
                             </select>
                         </div>
-                        <div class="form-group col-lg-4">
-                            <label for="input-name">संगठन</label>
-                            <select name="org" class="form-control" id="">
-                                <option value="">कृपया संगठन चयन गर्नुहोस्</option>
-                                @isset($cooperative->id)
-                                    <option value="{{ $cooperative->org }}" selected>{{ $cooperative->org }}</option>
-                                @endisset
-                                <option value="बहुउद्देश्यीय">बहुउद्देश्यीय</option>
-                                <option value="कृषि">कृषि</option>
-                                <option value="ऋण तथा बचत">ऋण तथा बचत</option>
-                                <option value="स्वास्थ्य">स्वास्थ्य</option>
-                                <option value="सञ्चार">सञ्चार</option>
-                                <option value="विधुत">विधुत</option>
-                                <option value="जडिबुटी">जडिबुटी</option>
-                                <option value="वतावरण संरक्षण">वतावरण संरक्षण</option>
-                                <option value="प्रकाशन">प्रकाशन</option>
-                                <option value="अन्य">अन्य</option>
-                            </select>
-                        </div>
+                        
 
+                        {{-- <div class="form-group col-lg-4">
+                            <label for="input-name">बेरोजगारी</label>
+                            <input type="number" name="bahu_udesye" class="form-control"
+                                value="{{ old('bahu_udesye', $sahakari->bahu_udesye) }}">
+                        </div> --}}
                         <div class="form-group col-lg-4">
-                            <label for="input-name">संख्या</label>
-                            <input type="number" name="number" class="form-control"
-                                value="{{ old('number', $cooperative->number) }}">
+                            <label for="input-name">बहुउद्देश्यीय</label>
+                            <input type="number" name="bahu_udesye" class="form-control"
+                                value="{{ old('bahu_udesye', $sahakari->bahu_udesye) }}">
+                        </div>
+                        <div class="form-group col-lg-4">
+                            <label for="input-name">कृषि</label>
+                            <input type="number" name="agriculture" class="form-control"
+                                value="{{ old('agriculture', $sahakari->agriculture) }}">
+                        </div>
+                        <div class="form-group col-lg-4">
+                            <label for="input-name">ऋण तथा बचत</label>
+                            <input type="number" name="loan" class="form-control"
+                                value="{{ old('loan', $sahakari->loan) }}">
+                        </div>
+                        <div class="form-group col-lg-4">
+                            <label for="input-name">स्वास्थ्य</label>
+                            <input type="number" name="helth" class="form-control"
+                                value="{{ old('helth', $sahakari->helth) }}">
+                        </div>
+                        <div class="form-group col-lg-4">
+                            <label for="input-name">सञ्चार</label>
+                            <input type="number" name="tele_comunication" class="form-control"
+                                value="{{ old('tele_comunication', $sahakari->tele_comunication) }}">
+                        </div>
+                        <div class="form-group col-lg-4">
+                            <label for="input-name">विधुत</label>
+                            <input type="number" name="electricity" class="form-control"
+                                value="{{ old('electricity', $sahakari->electricity) }}">
+                        </div>
+                        <div class="form-group col-lg-4">
+                            <label for="input-name">जडिबुटी</label>
+                            <input type="number" name="jadibuti" class="form-control"
+                                value="{{ old('jadibuti', $sahakari->jadibuti) }}">
+                        </div>
+                        <div class="form-group col-lg-4">
+                            <label for="input-name">वतावरण संरक्षण</label>
+                            <input type="number" name="batabaran" class="form-control"
+                                value="{{ old('batabaran', $sahakari->batabaran) }}">
+                        </div>
+                        <div class="form-group col-lg-4">
+                            <label for="input-name">प्रकाशन</label>
+                            <input type="number" name="prakasan" class="form-control"
+                                value="{{ old('prakasan', $sahakari->prakasan) }}">
+                        </div>
+                        <div class="form-group col-lg-4">
+                            <label for="input-name">अन्य</label>
+                            <input type="number" name="other" class="form-control"
+                                value="{{ old('other', $sahakari->other) }}">
                         </div>
                     </div>
 
                     <div class="form-group">
                         <button type="submit"
-                            class="btn btn-success z-depth-0">{{ $cooperative->id ? 'Update' : 'सेभ गर्नुहोस्' }}
+                            class="btn btn-success z-depth-0">{{ $sahakari->id ? 'Update' : 'सेभ गर्नुहोस्' }}
                         </button>
                     </div>
                 </form>
@@ -97,22 +129,39 @@
                         <tr>
                             <th>क्र.स.</th>
                             <th>जिल्ला</th>
-                            <th>संगठन</th>
-                            <th>संख्या</th>
+                            <th>बहुउद्देश्यीय</th>
+                            <th>कृषि</th>
+                            <th>ऋण तथा बचत</th>
+                            <th>स्वास्थ्य</th>
+                            <th>सञ्चार</th>
+                            <th>विधुत</th>
+                            <th>जडिबुटी</th>
+                            <th>वतावरण संरक्षण</th>
+                            <th>प्रकाशन</th>
+                            <th>अन्य</th>
+                            <th>जम्मा</th>
                             <th></th>
                         </tr>
                     </thead>
                     <tbody>
-                        @forelse ($cooperatives as $item)
+                        @forelse ($sahakaris as $item)
                             <tr>
                                 <td>{{ $loop->iteration }}</td>
                                 <td>{{ $item->district }}</td>
-                                <td>{{ $item->org }}</td>
-                                <td>{{ $item->number }}</td>
+                                <td>{{ $item->bahu_udesye}}</td>
+                                <td>{{ $item->agriculture }}</td>
+                                <td>{{ $item->loan }}</td>
+                                <td>{{ $item->helth }}</td>
+                                <td>{{ $item->tele_comunication }}</td>
+                                <td>{{ $item->electricity }}</td>
+                                <td>{{ $item->jadibuti }}</td>
+                                <td>{{ $item->batabaran }}</td>
+                                <td>{{ $item->prakasan }}</td>
+                                <td>{{ $item->other }}</td>
                                 <td>
-                                    <a class="action-btn text-primary" href="{{ route('cooperative.edit', $item) }}"><i
+                                    <a class="action-btn text-primary" href="{{ route('sahakari.edit', $item) }}"><i
                                             class="far fa-edit"></i></a>
-                                    <form action="{{ route('cooperative.destroy', $item) }}" method="post"
+                                    <form action="{{ route('sahakari.destroy', $item) }}" method="post"
                                         onsubmit="return confirm('के तपाईँ निश्चित हुनुहुन्छ?')"
                                         class="form-inline d-inline">
                                         @csrf
