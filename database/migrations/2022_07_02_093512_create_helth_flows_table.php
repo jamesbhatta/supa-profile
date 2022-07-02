@@ -15,6 +15,11 @@ class CreateHelthFlowsTable extends Migration
     {
         Schema::create('helth_flows', function (Blueprint $table) {
             $table->id();
+             $table->string('detail');
+            $table->integer('national_from');
+            $table->integer('national_to');
+            $table->integer('provincinal_from');
+            $table->integer('provincinal_to');
             $table->timestamps();
         });
     }
