@@ -367,6 +367,7 @@ __webpack_require__.r(__webpack_exports__);
     this.fetchBudgetResource();
     this.fetchTotalBudget();
     this.fetchEmployeementStatus();
+    this.fetchSahakari();
   },
   methods: {
     fetchEconomicIndicator: function fetchEconomicIndicator() {
@@ -433,6 +434,18 @@ __webpack_require__.r(__webpack_exports__);
         _this6.LaborandEmploymentStatus.labels = response.data.labels;
         _this6.LaborandEmploymentStatus.data = response.data.data;
         _this6.infoDatas = response.data;
+        console.log(response.data);
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchSahakari: function fetchSahakari() {
+      var _this7 = this;
+
+      axios.get("/api/sahakari").then(function (response) {
+        _this7.StateGovernmentHarukoDetails.labels = response.data.labels;
+        _this7.StateGovernmentHarukoDetails.data = response.data.data;
+        _this7.infoDatas = response.data;
         console.log(response.data);
       })["catch"](function (error) {
         return console.log(error);

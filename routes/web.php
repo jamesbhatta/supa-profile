@@ -239,6 +239,14 @@ Route::get('total-budget/{totalBudget}/edit', 'TotalBudgetController@edit')->nam
 Route::put('total-budget/{totalBudget}', 'TotalBudgetController@update')->name('total-budget.update');
 
 
+// 
+Route::get('sahakari', 'SahakariController@index')->name('sahakari.index');
+Route::post('sahakari', 'SahakariController@store')->name('sahakari.store');
+Route::delete('sahakari/{sahakari}', 'SahakariController@destroy')->name('sahakari.destroy');
+Route::get('sahakari/{sahakari}/edit', 'SahakariController@edit')->name('sahakari.edit');
+Route::put('sahakari/{sahakari}', 'SahakariController@update')->name('sahakari.update');
+
+
 // unit 4
 // 
 Route::get('total-student', 'TotalStudentController@index')->name('total-student.index');

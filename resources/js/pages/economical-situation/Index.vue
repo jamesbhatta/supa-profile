@@ -423,6 +423,7 @@ export default {
         this.fetchBudgetResource();
         this.fetchTotalBudget();
         this.fetchEmployeementStatus();
+        this.fetchSahakari();
     },
 
     methods: {
@@ -486,6 +487,18 @@ export default {
                 .then((response) => {
                     this.LaborandEmploymentStatus.labels = response.data.labels;
                     this.LaborandEmploymentStatus.data = response.data.data
+                    this.infoDatas = response.data;
+                    console.log(response.data);
+                })
+                .catch((error) => console.log(error));
+        },
+
+        fetchSahakari() {
+            axios
+                .get("/api/sahakari")
+                .then((response) => {
+                    this.StateGovernmentHarukoDetails.labels = response.data.labels;
+                    this.StateGovernmentHarukoDetails.data = response.data.data
                     this.infoDatas = response.data;
                     console.log(response.data);
                 })
