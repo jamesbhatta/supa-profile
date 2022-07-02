@@ -382,6 +382,13 @@ Route::delete('nutrition/{nutrition}', 'NutritionController@destroy')->name('nut
 Route::get('nutrition/{nutrition}/edit', 'NutritionController@edit')->name('nutrition.edit');
 Route::put('nutrition/{nutrition}', 'NutritionController@update')->name('nutrition.update');
 
+
+Route::get('sample-school', 'SampleSchoolController@index')->name('sample-school.index');
+Route::post('sample-school', 'SampleSchoolController@store')->name('sample-school.store');
+Route::delete('sample-school/{sampleSchool}', 'SampleSchoolController@destroy')->name('sample-school.destroy');
+Route::get('sample-school/{sampleSchool}/edit', 'SampleSchoolController@edit')->name('sample-school.edit');
+Route::put('sample-school/{sampleSchool}', 'SampleSchoolController@update')->name('sample-school.update');
+
 // Unit 5
 // 
 Route::get('proud-project', 'ProudProjectController@index')->name('proud-project.index');

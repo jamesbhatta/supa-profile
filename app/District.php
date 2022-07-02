@@ -17,4 +17,9 @@ class District extends Model
     {
         return $this->hasMany(Municipality::class);
     }
+
+    public function sampleSchools()
+    {
+        return $this->belongsToMany(SampleSchool::class);
+    }
 }

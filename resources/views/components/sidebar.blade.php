@@ -275,6 +275,11 @@
                         <span class="mx-3"><i class="fa fa-circle"></i></span> सामूदायिक विद्यालय शिक्षक
                     </a>
                 </li>
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('sample-school.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span> नमूना विद्यालय 
+                    </a>
+                </li>
 
                 <li class="nav-item sub-nav">
                     <a class="nav-link" href="{{ route('teacher-ratio.index') }}">

@@ -1963,6 +1963,7 @@ export default {
     this.fetchInsurance();
     this.fetchHelthFlow();
     this.fetchNutrition();
+    this.fetchSampleSchool();
   },
 
   methods: {
@@ -2179,6 +2180,20 @@ export default {
          .then((response) => {
           this.balbalikatathamahilaposan.labels = response.data.labels;
           this.balbalikatathamahilaposan.data = response.data.data
+          this.infoDatas = response.data;
+
+          console.log(response.data);
+        })
+        .catch((error) => console.log(error));
+    },
+
+    fetchSampleSchool() {
+      axios
+        .get("/api/sample-school")
+        
+         .then((response) => {
+          this.sampleschools.labels = response.data.labels;
+          this.sampleschools.data = response.data.data
           this.infoDatas = response.data;
 
           console.log(response.data);

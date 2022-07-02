@@ -68,6 +68,7 @@ Route::get('health-insurance','HealthInsuranceController@listing');
 Route::get('health-flow','HelthFlowController@listing');
 Route::get('nutrition','NutritionController@listing');
 Route::get('national-population-census','NationalPopulationCensusController@listing');
+Route::get('sample-school','SampleSchoolController@listing');
 
 
 // unit 5
