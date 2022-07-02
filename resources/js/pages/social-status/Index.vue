@@ -175,7 +175,7 @@
             </data-viewer>
 
             <data-viewer :data="samudaikvidyalayateacher">
-              <template slot="thead-top">
+              <!-- <template slot="thead-top">
                 <tr>
                   <th colspan="1"></th>
                   <th colspan="3" class="bg-light text-center font-weight-bold">प्राथमिक</th>
@@ -184,7 +184,7 @@
                   <th colspan="3" class="bg-light text-center font-weight-bold">माध्यमिक (११–१२कक्षा)</th>
                   <th colspan="3" class="bg-light text-center font-weight-bold">कूल जम्मा</th>
                 </tr>
-              </template>
+              </template> -->
             </data-viewer>
 
             <data-viewer :data="samudaikvid"></data-viewer>
@@ -1951,7 +1951,16 @@ export default {
     this.fetchBalbikash();
     this.fetchDalitStudent();
     this.fetchJanjatiStudent();
+    this.fetchGovermentTeacher();
     this.fetchCollege();
+    this.fetchTeacherRatio();
+    this.fetchHospital();
+    this.fetchGovHospital();
+    this.fetchPrivateHospital();
+    this.fetchAyourbedHospital();
+    this.fetchmortality();
+    this.fetchDiseas();
+    this.fetchInsurance();
   },
 
   methods: {
@@ -2016,6 +2025,19 @@ export default {
         })
         .catch((error) => console.log(error));
     },
+    fetchGovermentTeacher() {
+      axios
+        .get("/api/goverment-teacher")
+        
+         .then((response) => {
+          this.samudaikvidyalayateacher.labels = response.data.labels;
+          this.samudaikvidyalayateacher.data = response.data.data
+          this.infoDatas = response.data;
+
+          console.log(response.data);
+        })
+        .catch((error) => console.log(error));
+    },
      fetchCollege() {
       axios
         .get("/api/college")
@@ -2029,7 +2051,113 @@ export default {
         })
         .catch((error) => console.log(error));
     },
+    fetchTeacherRatio() {
+      axios
+        .get("/api/teacher-ratio")
+        
+         .then((response) => {
+          this.samudaikvid.labels = response.data.labels;
+          this.samudaikvid.data = response.data.data
+          this.infoDatas = response.data;
+
+          console.log(response.data);
+        })
+        .catch((error) => console.log(error));
+    },
+    fetchHospital() {
+      axios
+        .get("/api/hospital")
+        
+         .then((response) => {
+          this.supahospital.labels = response.data.labels;
+          this.supahospital.data = response.data.data
+          this.infoDatas = response.data;
+
+          console.log(response.data);
+        })
+        .catch((error) => console.log(error));
+    },
+    fetchGovHospital() {
+      axios
+        .get("/api/goverment-hospital")
+        
+         .then((response) => {
+          this.supagovermenthospital.labels = response.data.labels;
+          this.supagovermenthospital.data = response.data.data
+          this.infoDatas = response.data;
+
+          console.log(response.data);
+        })
+        .catch((error) => console.log(error));
+    },
+    fetchPrivateHospital() {
+      axios
+        .get("/api/private-hospital")
+        
+         .then((response) => {
+          this.privatehospital.labels = response.data.labels;
+          this.privatehospital.data = response.data.data
+          this.infoDatas = response.data;
+
+          console.log(response.data);
+        })
+        .catch((error) => console.log(error));
+    },
+    fetchAyourbedHospital() {
+      axios
+        .get("/api/ayourbed-hospital")
+        
+         .then((response) => {
+          this.aurbedic.labels = response.data.labels;
+          this.aurbedic.data = response.data.data
+          this.infoDatas = response.data;
+
+          console.log(response.data);
+        })
+        .catch((error) => console.log(error));
+    },
+
+    fetchmortality() {
+      axios
+        .get("/api/mortality")
+        
+         .then((response) => {
+          this.supajanswastheawasthakopardesiktulna.labels = response.data.labels;
+          this.supajanswastheawasthakopardesiktulna.data = response.data.data
+          this.infoDatas = response.data;
+
+          console.log(response.data);
+        })
+        .catch((error) => console.log(error));
+    },
+    fetchDiseas() {
+      axios
+        .get("/api/diseas")
+        
+         .then((response) => {
+          this.toptendiseases.labels = response.data.labels;
+          this.toptendiseases.data = response.data.data
+          this.infoDatas = response.data;
+
+          console.log(response.data);
+        })
+        .catch((error) => console.log(error));
+    },
+    fetchInsurance() {
+      axios
+        .get("/api/health-insurance")
+        
+         .then((response) => {
+          this.supahelthinsurancedata.labels = response.data.labels;
+          this.supahelthinsurancedata.data = response.data.data
+          this.infoDatas = response.data;
+
+          console.log(response.data);
+        })
+        .catch((error) => console.log(error));
+    },
   },
+
 };
 
 

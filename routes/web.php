@@ -278,6 +278,74 @@ Route::get('janjati-student/{janjatiStudent}/edit', 'JanjatiStudentController@ed
 Route::put('janjati-student/{janjatiStudent}', 'JanjatiStudentController@update')->name('janjati-student.update');
 
 // 
+Route::get('goverment-teacher', 'GovermentTeacherController@index')->name('goverment-teacher.index');
+Route::post('goverment-teacher', 'GovermentTeacherController@store')->name('goverment-teacher.store');
+Route::delete('goverment-teacher/{govermentTeacher}', 'GovermentTeacherController@destroy')->name('goverment-teacher.destroy');
+Route::get('goverment-teacher/{govermentTeacher}/edit', 'GovermentTeacherController@edit')->name('goverment-teacher.edit');
+Route::put('goverment-teacher/{govermentTeacher}', 'GovermentTeacherController@update')->name('goverment-teacher.update');
+
+// 
+Route::get('teacher-ratio', 'TeacherRatioController@index')->name('teacher-ratio.index');
+Route::post('teacher-ratio', 'TeacherRatioController@store')->name('teacher-ratio.store');
+Route::delete('teacher-ratio/{teacherRatio}', 'TeacherRatioController@destroy')->name('teacher-ratio.destroy');
+Route::get('teacher-ratio/{teacherRatio}/edit', 'TeacherRatioController@edit')->name('teacher-ratio.edit');
+Route::put('teacher-ratio/{teacherRatio}', 'TeacherRatioController@update')->name('teacher-ratio.update');
+
+
+// 
+Route::get('hospital', 'HospitalController@index')->name('hospital.index');
+Route::post('hospital', 'HospitalController@store')->name('hospital.store');
+Route::delete('hospital/{hospital}', 'HospitalController@destroy')->name('hospital.destroy');
+Route::get('hospital/{hospital}/edit', 'HospitalController@edit')->name('hospital.edit');
+Route::put('hospital/{hospital}', 'HospitalController@update')->name('hospital.update');
+
+
+// GovermentHospitalController
+Route::get('goverment-hospital', 'GovermentHospitalController@index')->name('goverment-hospital.index');
+Route::post('goverment-hospital', 'GovermentHospitalController@store')->name('goverment-hospital.store');
+Route::delete('goverment-hospital/{govermentHospital}', 'GovermentHospitalController@destroy')->name('goverment-hospital.destroy');
+Route::get('goverment-hospital/{govermentHospital}/edit', 'GovermentHospitalController@edit')->name('goverment-hospital.edit');
+Route::put('goverment-hospital/{govermentHospital}', 'GovermentHospitalController@update')->name('goverment-hospital.update');
+
+
+// 
+
+Route::get('private-hospital', 'PrivateHospitalController@index')->name('private-hospital.index');
+Route::post('private-hospital', 'PrivateHospitalController@store')->name('private-hospital.store');
+Route::delete('private-hospital/{privateHospital}', 'PrivateHospitalController@destroy')->name('private-hospital.destroy');
+Route::get('private-hospital/{privateHospital}/edit', 'PrivateHospitalController@edit')->name('private-hospital.edit');
+Route::put('private-hospital/{privateHospital}', 'PrivateHospitalController@update')->name('private-hospital.update');
+
+
+// AyourbedController
+Route::get('ayourbed-hospital', 'AyourbedController@index')->name('ayourbed-hospital.index');
+Route::post('ayourbed-hospital', 'AyourbedController@store')->name('ayourbed-hospital.store');
+Route::delete('ayourbed-hospital/{ayourbed}', 'AyourbedController@destroy')->name('ayourbed-hospital.destroy');
+Route::get('ayourbed-hospital/{ayourbed}/edit', 'AyourbedController@edit')->name('ayourbed-hospital.edit');
+Route::put('ayourbed-hospital/{ayourbed}', 'AyourbedController@update')->name('ayourbed-hospital.update');
+
+// MortalityController
+Route::get('mortality', 'MortalityController@index')->name('mortality.index');
+Route::post('mortality', 'MortalityController@store')->name('mortality.store');
+Route::delete('mortality/{mortality}', 'MortalityController@destroy')->name('mortality.destroy');
+Route::get('mortality/{mortality}/edit', 'MortalityController@edit')->name('mortality.edit');
+Route::put('mortality/{mortality}', 'MortalityController@update')->name('mortality.update');
+
+// DiseasController
+Route::get('diseas', 'DiseasController@index')->name('diseas.index');
+Route::post('diseas', 'DiseasController@store')->name('diseas.store');
+Route::delete('diseas/{diseas}', 'DiseasController@destroy')->name('diseas.destroy');
+Route::get('diseas/{diseas}/edit', 'DiseasController@edit')->name('diseas.edit');
+Route::put('diseas/{diseas}', 'DiseasController@update')->name('diseas.update');
+
+// HealthInsuranceController
+Route::get('helth-insurance', 'HealthInsuranceController@index')->name('helth-insurance.index');
+Route::post('helth-insurance', 'HealthInsuranceController@store')->name('helth-insurance.store');
+Route::delete('helth-insurance/{healthInsurance}', 'HealthInsuranceController@destroy')->name('helth-insurance.destroy');
+Route::get('helth-insurance/{healthInsurance}/edit', 'HealthInsuranceController@edit')->name('helth-insurance.edit');
+Route::put('helth-insurance/{healthInsurance}', 'HealthInsuranceController@update')->name('helth-insurance.update');
+
+// 
 Route::get('college', 'CollegeController@index')->name('college.index');
 Route::post('college', 'CollegeController@store')->name('college.store');
 Route::delete('college/{college}', 'CollegeController@destroy')->name('college.destroy');

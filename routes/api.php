@@ -49,7 +49,16 @@ Route::get('goverment-school-student', 'GovermentSchoolStudentController@listing
 Route::get('balbikash', 'BalbikasController@listing');
 Route::get('dalit-student','DalitStudentController@listing');
 Route::get('janjati-student','JanjatiStudentController@listing');
+Route::get('goverment-teacher','GovermentTeacherController@listing');
+Route::get('teacher-ratio','TeacherRatioController@listing');
 Route::get('college','CollegeController@listing');
+Route::get('hospital','HospitalController@listing');
+Route::get('goverment-hospital','GovermentHospitalController@listing');
+Route::get('private-hospital','PrivateHospitalController@listing');
+Route::get('ayourbed-hospital','AyourbedController@listing');
+Route::get('mortality','MortalityController@listing');
+Route::get('diseas','DiseasController@listing');
+Route::get('health-insurance','HealthInsuranceController@listing');
 
 
 // unit 5

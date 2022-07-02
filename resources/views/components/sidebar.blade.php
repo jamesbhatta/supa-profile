@@ -259,13 +259,59 @@
                         <span class="mx-3"><i class="fa fa-circle"></i></span> जिल्लागत जनजाती विद्यार्थी
                     </a>
                 </li>
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('goverment-teacher.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span>  सामूदायिक विद्यालय शिक्षक
+                    </a>
+                </li>
+
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('teacher-ratio.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span> शिक्षक अनुपात
+                    </a>
+                </li>
 
                 <li class="nav-item sub-nav">
                     <a class="nav-link" href="{{ route('college.index') }}">
                         <span class="mx-3"><i class="fa fa-circle"></i></span>  क्याम्पस विवरण
                     </a>
                 </li>
-
+                
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('hospital.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span>  सरकारी स्वास्थ्य संस्था
+                    </a>
+                </li>
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('goverment-hospital.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span>  सरकारी अस्पताल
+                    </a>
+                </li>
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('private-hospital.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span>  नीजि अस्पताल
+                    </a>
+                </li>
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('ayourbed-hospital.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span>आयुर्वेद स्वास्थ्य संस्था
+                    </a>
+                </li>
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('mortality.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span>Mortality
+                    </a>
+                </li>
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('diseas.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span>रोगहरु अनुसार विरामी संख्या
+                    </a>
+                </li>
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('helth-insurance.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span>स्वास्थ्य बीमा
+                    </a>
+                </li>   
 
             </ul>
         </li>

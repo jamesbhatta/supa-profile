@@ -771,7 +771,16 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     this.fetchBalbikash();
     this.fetchDalitStudent();
     this.fetchJanjatiStudent();
+    this.fetchGovermentTeacher();
     this.fetchCollege();
+    this.fetchTeacherRatio();
+    this.fetchHospital();
+    this.fetchGovHospital();
+    this.fetchPrivateHospital();
+    this.fetchAyourbedHospital();
+    this.fetchmortality();
+    this.fetchDiseas();
+    this.fetchInsurance();
   },
   methods: {
     fetchTotalStudents: function fetchTotalStudents() {
@@ -832,13 +841,121 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         return console.log(error);
       });
     },
-    fetchCollege: function fetchCollege() {
+    fetchGovermentTeacher: function fetchGovermentTeacher() {
       var _this6 = this;
 
-      axios.get("/api/college").then(function (response) {
-        _this6.supacampus.labels = response.data.labels;
-        _this6.supacampus.data = response.data.data;
+      axios.get("/api/goverment-teacher").then(function (response) {
+        _this6.samudaikvidyalayateacher.labels = response.data.labels;
+        _this6.samudaikvidyalayateacher.data = response.data.data;
         _this6.infoDatas = response.data;
+        console.log(response.data);
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchCollege: function fetchCollege() {
+      var _this7 = this;
+
+      axios.get("/api/college").then(function (response) {
+        _this7.supacampus.labels = response.data.labels;
+        _this7.supacampus.data = response.data.data;
+        _this7.infoDatas = response.data;
+        console.log(response.data);
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchTeacherRatio: function fetchTeacherRatio() {
+      var _this8 = this;
+
+      axios.get("/api/teacher-ratio").then(function (response) {
+        _this8.samudaikvid.labels = response.data.labels;
+        _this8.samudaikvid.data = response.data.data;
+        _this8.infoDatas = response.data;
+        console.log(response.data);
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchHospital: function fetchHospital() {
+      var _this9 = this;
+
+      axios.get("/api/hospital").then(function (response) {
+        _this9.supahospital.labels = response.data.labels;
+        _this9.supahospital.data = response.data.data;
+        _this9.infoDatas = response.data;
+        console.log(response.data);
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchGovHospital: function fetchGovHospital() {
+      var _this10 = this;
+
+      axios.get("/api/goverment-hospital").then(function (response) {
+        _this10.supagovermenthospital.labels = response.data.labels;
+        _this10.supagovermenthospital.data = response.data.data;
+        _this10.infoDatas = response.data;
+        console.log(response.data);
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchPrivateHospital: function fetchPrivateHospital() {
+      var _this11 = this;
+
+      axios.get("/api/private-hospital").then(function (response) {
+        _this11.privatehospital.labels = response.data.labels;
+        _this11.privatehospital.data = response.data.data;
+        _this11.infoDatas = response.data;
+        console.log(response.data);
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchAyourbedHospital: function fetchAyourbedHospital() {
+      var _this12 = this;
+
+      axios.get("/api/ayourbed-hospital").then(function (response) {
+        _this12.aurbedic.labels = response.data.labels;
+        _this12.aurbedic.data = response.data.data;
+        _this12.infoDatas = response.data;
+        console.log(response.data);
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchmortality: function fetchmortality() {
+      var _this13 = this;
+
+      axios.get("/api/mortality").then(function (response) {
+        _this13.supajanswastheawasthakopardesiktulna.labels = response.data.labels;
+        _this13.supajanswastheawasthakopardesiktulna.data = response.data.data;
+        _this13.infoDatas = response.data;
+        console.log(response.data);
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchDiseas: function fetchDiseas() {
+      var _this14 = this;
+
+      axios.get("/api/diseas").then(function (response) {
+        _this14.toptendiseases.labels = response.data.labels;
+        _this14.toptendiseases.data = response.data.data;
+        _this14.infoDatas = response.data;
+        console.log(response.data);
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchInsurance: function fetchInsurance() {
+      var _this15 = this;
+
+      axios.get("/api/health-insurance").then(function (response) {
+        _this15.supahelthinsurancedata.labels = response.data.labels;
+        _this15.supahelthinsurancedata.data = response.data.data;
+        _this15.infoDatas = response.data;
         console.log(response.data);
       })["catch"](function (error) {
         return console.log(error);
@@ -1035,63 +1152,9 @@ var render = function () {
               _vm._v(" "),
               _c("data-viewer", { attrs: { data: _vm.janjatibidyarthi } }),
               _vm._v(" "),
-              _c(
-                "data-viewer",
-                { attrs: { data: _vm.samudaikvidyalayateacher } },
-                [
-                  _c("template", { slot: "thead-top" }, [
-                    _c("tr", [
-                      _c("th", { attrs: { colspan: "1" } }),
-                      _vm._v(" "),
-                      _c(
-                        "th",
-                        {
-                          staticClass: "bg-light text-center font-weight-bold",
-                          attrs: { colspan: "3" },
-                        },
-                        [_vm._v("प्राथमिक")]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "th",
-                        {
-                          staticClass: "bg-light text-center font-weight-bold",
-                          attrs: { colspan: "3" },
-                        },
-                        [_vm._v("निम्न माध्यमिक")]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "th",
-                        {
-                          staticClass: "bg-light text-center font-weight-bold",
-                          attrs: { colspan: "3" },
-                        },
-                        [_vm._v("माध्यमिक")]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "th",
-                        {
-                          staticClass: "bg-light text-center font-weight-bold",
-                          attrs: { colspan: "3" },
-                        },
-                        [_vm._v("माध्यमिक (११–१२कक्षा)")]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "th",
-                        {
-                          staticClass: "bg-light text-center font-weight-bold",
-                          attrs: { colspan: "3" },
-                        },
-                        [_vm._v("कूल जम्मा")]
-                      ),
-                    ]),
-                  ]),
-                ],
-                2
-              ),
+              _c("data-viewer", {
+                attrs: { data: _vm.samudaikvidyalayateacher },
+              }),
               _vm._v(" "),
               _c("data-viewer", { attrs: { data: _vm.samudaikvid } }),
               _vm._v(" "),
