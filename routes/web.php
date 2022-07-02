@@ -359,6 +359,12 @@ Route::delete('college/{college}', 'CollegeController@destroy')->name('college.d
 Route::get('college/{college}/edit', 'CollegeController@edit')->name('college.edit');
 Route::put('college/{college}', 'CollegeController@update')->name('college.update');
 
+// NutritionController
+Route::get('nutrition', 'NutritionController@index')->name('nutrition.index');
+Route::post('nutrition', 'NutritionController@store')->name('nutrition.store');
+Route::delete('nutrition/{nutrition}', 'NutritionController@destroy')->name('nutrition.destroy');
+Route::get('nutrition/{nutrition}/edit', 'NutritionController@edit')->name('nutrition.edit');
+Route::put('nutrition/{nutrition}', 'NutritionController@update')->name('nutrition.update');
 
 // Unit 5
 // 

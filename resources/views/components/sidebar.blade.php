@@ -113,7 +113,7 @@
             <a href="#population" data-toggle="collapse" aria-expanded="false"
                 class="dropdown-toggle collapsed nav-link"><span class="text-default"><i
                         class="fas fa-users"></i></span>जनसांख्यिक स्थिति
-                    </a>
+            </a>
             <ul class="list-unstyled collapse" id="population" style="">
                 <li class="nav-item sub-nav">
                     <a class="nav-link" href="{{ route('geographical-population.index') }}">
@@ -261,7 +261,7 @@
                 </li>
                 <li class="nav-item sub-nav">
                     <a class="nav-link" href="{{ route('goverment-teacher.index') }}">
-                        <span class="mx-3"><i class="fa fa-circle"></i></span>  सामूदायिक विद्यालय शिक्षक
+                        <span class="mx-3"><i class="fa fa-circle"></i></span> सामूदायिक विद्यालय शिक्षक
                     </a>
                 </li>
 
@@ -273,23 +273,23 @@
 
                 <li class="nav-item sub-nav">
                     <a class="nav-link" href="{{ route('college.index') }}">
-                        <span class="mx-3"><i class="fa fa-circle"></i></span>  क्याम्पस विवरण
+                        <span class="mx-3"><i class="fa fa-circle"></i></span> क्याम्पस विवरण
                     </a>
                 </li>
-                
+
                 <li class="nav-item sub-nav">
                     <a class="nav-link" href="{{ route('hospital.index') }}">
-                        <span class="mx-3"><i class="fa fa-circle"></i></span>  सरकारी स्वास्थ्य संस्था
+                        <span class="mx-3"><i class="fa fa-circle"></i></span> सरकारी स्वास्थ्य संस्था
                     </a>
                 </li>
                 <li class="nav-item sub-nav">
                     <a class="nav-link" href="{{ route('goverment-hospital.index') }}">
-                        <span class="mx-3"><i class="fa fa-circle"></i></span>  सरकारी अस्पताल
+                        <span class="mx-3"><i class="fa fa-circle"></i></span> सरकारी अस्पताल
                     </a>
                 </li>
                 <li class="nav-item sub-nav">
                     <a class="nav-link" href="{{ route('private-hospital.index') }}">
-                        <span class="mx-3"><i class="fa fa-circle"></i></span>  नीजि अस्पताल
+                        <span class="mx-3"><i class="fa fa-circle"></i></span> नीजि अस्पताल
                     </a>
                 </li>
                 <li class="nav-item sub-nav">
@@ -311,13 +311,19 @@
                     <a class="nav-link" href="{{ route('helth-insurance.index') }}">
                         <span class="mx-3"><i class="fa fa-circle"></i></span>स्वास्थ्य बीमा
                     </a>
-                </li>   
+                </li>
 
                 <li class="nav-item sub-nav">
                     <a class="nav-link" href="{{ route('helth-flow.index') }}">
                         <span class="mx-3"><i class="fa fa-circle"></i></span>वास्थ्य सेवा प्रवाह
                     </a>
-                </li>   
+                </li>
+
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('nutrition.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span>पोषण अबस्था
+                    </a>
+                </li>
 
             </ul>
         </li>
@@ -460,7 +466,7 @@
                         <span class="mx-3"><i class="fa fa-circle"></i></span> तेलहन बालीको उत्पादन
                     </a>
                 </li>
-                
+
 
                 <li class="nav-item sub-nav">
                     <a class="nav-link" href="{{ route('vegitable.index') }}">

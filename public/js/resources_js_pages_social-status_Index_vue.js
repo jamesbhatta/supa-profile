@@ -782,6 +782,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     this.fetchDiseas();
     this.fetchInsurance();
     this.fetchHelthFlow();
+    this.fetchNutrition();
   },
   methods: {
     fetchTotalStudents: function fetchTotalStudents() {
@@ -969,6 +970,18 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         _this16.swastheysewaparwah.labels = response.data.labels;
         _this16.swastheysewaparwah.data = response.data.data;
         _this16.infoDatas = response.data;
+        console.log(response.data);
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchNutrition: function fetchNutrition() {
+      var _this17 = this;
+
+      axios.get("/api/nutrition").then(function (response) {
+        _this17.balbalikatathamahilaposan.labels = response.data.labels;
+        _this17.balbalikatathamahilaposan.data = response.data.data;
+        _this17.infoDatas = response.data;
         console.log(response.data);
       })["catch"](function (error) {
         return console.log(error);

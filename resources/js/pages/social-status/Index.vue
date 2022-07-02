@@ -1962,6 +1962,7 @@ export default {
     this.fetchDiseas();
     this.fetchInsurance();
     this.fetchHelthFlow();
+    this.fetchNutrition();
   },
 
   methods: {
@@ -2164,6 +2165,20 @@ export default {
          .then((response) => {
           this.swastheysewaparwah.labels = response.data.labels;
           this.swastheysewaparwah.data = response.data.data
+          this.infoDatas = response.data;
+
+          console.log(response.data);
+        })
+        .catch((error) => console.log(error));
+    },
+
+    fetchNutrition() {
+      axios
+        .get("/api/nutrition")
+        
+         .then((response) => {
+          this.balbalikatathamahilaposan.labels = response.data.labels;
+          this.balbalikatathamahilaposan.data = response.data.data
           this.infoDatas = response.data;
 
           console.log(response.data);
