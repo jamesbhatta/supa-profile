@@ -46,7 +46,7 @@ class LocalSchoolController extends Controller
 
     public function edit(LocalSchool $localSchool)
     {
-        $localSchools=LocalSchool::get();
+        $localSchools=LocalSchool::with('district')->get();
         $provinces=Province::get();
         return view('socialStatus.local_school.index',compact(['localSchool','localSchools','provinces']));
     }

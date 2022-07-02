@@ -397,6 +397,14 @@ Route::delete('local-school/{localSchool}', 'LocalSchoolController@destroy')->na
 Route::get('local-school/{localSchool}/edit', 'LocalSchoolController@edit')->name('local-school.edit');
 Route::put('local-school/{localSchool}', 'LocalSchoolController@update')->name('local-school.update');
 
+
+// 
+Route::get('ambulence', 'AmbulenceController@index')->name('ambulence.index');
+Route::post('ambulence', 'AmbulenceController@store')->name('ambulence.store');
+Route::delete('ambulence/{ambulence}', 'AmbulenceController@destroy')->name('ambulence.destroy');
+Route::get('ambulence/{ambulence}/edit', 'AmbulenceController@edit')->name('ambulence.edit');
+Route::put('ambulence/{ambulence}', 'AmbulenceController@update')->name('ambulence.update');
+
 // Unit 5
 // 
 Route::get('proud-project', 'ProudProjectController@index')->name('proud-project.index');

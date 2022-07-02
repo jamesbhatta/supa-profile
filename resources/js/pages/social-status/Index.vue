@@ -1966,6 +1966,7 @@ export default {
     this.fetchNutrition();
     this.fetchSampleSchool();
     this.fetchLocalSchool();
+    this.fetchAmbulence1();
   },
 
   methods: {
@@ -2210,6 +2211,19 @@ export default {
          .then((response) => {
           this.TechnicalStreamProgramRunSchools.labels = response.data.labels;
           this.TechnicalStreamProgramRunSchools.data = response.data.data
+          this.infoDatas = response.data;
+
+          console.log(response.data);
+        })
+        .catch((error) => console.log(error));
+    },
+    fetchAmbulence1() {
+      axios
+        .get("/api/ambulence")
+        
+         .then((response) => {
+          this.ambulancedata1.labels = response.data.labels;
+          this.ambulancedata1.data = response.data.data
           this.infoDatas = response.data;
 
           console.log(response.data);

@@ -346,6 +346,11 @@
                         <span class="mx-3"><i class="fa fa-circle"></i></span>पोषण अबस्था
                     </a>
                 </li>
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('ambulence.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span>एम्बुलेन्स वििरण
+                    </a>
+                </li>
 
             </ul>
         </li>

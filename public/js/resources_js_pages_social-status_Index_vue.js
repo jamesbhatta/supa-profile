@@ -786,6 +786,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     this.fetchNutrition();
     this.fetchSampleSchool();
     this.fetchLocalSchool();
+    this.fetchAmbulence1();
   },
   methods: {
     fetchTotalStudents: function fetchTotalStudents() {
@@ -1009,6 +1010,18 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         _this19.TechnicalStreamProgramRunSchools.labels = response.data.labels;
         _this19.TechnicalStreamProgramRunSchools.data = response.data.data;
         _this19.infoDatas = response.data;
+        console.log(response.data);
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchAmbulence1: function fetchAmbulence1() {
+      var _this20 = this;
+
+      axios.get("/api/ambulence").then(function (response) {
+        _this20.ambulancedata1.labels = response.data.labels;
+        _this20.ambulancedata1.data = response.data.data;
+        _this20.infoDatas = response.data;
         console.log(response.data);
       })["catch"](function (error) {
         return console.log(error);
