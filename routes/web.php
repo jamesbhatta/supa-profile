@@ -134,6 +134,14 @@ Route::delete('national-population/{nationalPopulation}', 'NationalPopulationCon
 Route::get('national-population/{nationalPopulation}/edit', 'NationalPopulationController@edit')->name('national-population.edit');
 Route::put('national-population/{nationalPopulation}', 'NationalPopulationController@update')->name('national-population.update');
 
+
+// 
+Route::get('national-population-census', 'NationalPopulationCensusController@index')->name('national-population-census.index');
+Route::post('national-population-census', 'NationalPopulationCensusController@store')->name('national-population-census.store');
+Route::delete('national-population-census/{nationalPopulationCensus}', 'NationalPopulationCensusController@destroy')->name('national-population-census.destroy');
+Route::get('national-population-census/{nationalPopulationCensus}/edit', 'NationalPopulationCensusController@edit')->name('national-population-census.edit');
+Route::put('national-population-census/{nationalPopulationCensus}', 'NationalPopulationCensusController@update')->name('national-population-census.update');
+
 // 
 Route::get('district-wise-population', 'DistrictWisePopulationController@index')->name('district-wise-population.index');
 Route::post('district-wise-population', 'DistrictWisePopulationController@store')->name('district-wise-population.store');

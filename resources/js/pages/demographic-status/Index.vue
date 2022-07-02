@@ -982,6 +982,7 @@ export default {
   mounted() {
     this.fetchTotalStudents();
     this.fetchNationalPopulation();
+    this.fetchNationalPopulationCensus();
     this.fetchDistrictWisePopulation();
     this.fetchDistrictPopulation();
     this.fetchReligionPopulation();
@@ -1009,6 +1010,17 @@ export default {
         .then((response) => {
           this.nationalcenses.labels = response.data.labels;
           this.nationalcenses.data = response.data.data
+          this.infoDatas = response.data;
+        })
+        .catch((error) => console.log(error));
+    },
+    fetchNationalPopulationCensus() {
+      axios
+        .get("/api/national-population-census")
+
+        .then((response) => {
+          this.beginingcenses.labels = response.data.labels;
+          this.beginingcenses.data = response.data.data
           this.infoDatas = response.data;
         })
         .catch((error) => console.log(error));

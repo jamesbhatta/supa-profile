@@ -543,6 +543,7 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     this.fetchTotalStudents();
     this.fetchNationalPopulation();
+    this.fetchNationalPopulationCensus();
     this.fetchDistrictWisePopulation();
     this.fetchDistrictPopulation();
     this.fetchReligionPopulation();
@@ -573,68 +574,79 @@ __webpack_require__.r(__webpack_exports__);
         return console.log(error);
       });
     },
-    fetchDistrictWisePopulation: function fetchDistrictWisePopulation() {
+    fetchNationalPopulationCensus: function fetchNationalPopulationCensus() {
       var _this3 = this;
 
-      axios.get("/api/district-wise-population").then(function (response) {
-        _this3.beginingcenses1.labels = response.data.labels;
-        _this3.beginingcenses1.data = response.data.data;
+      axios.get("/api/national-population-census").then(function (response) {
+        _this3.beginingcenses.labels = response.data.labels;
+        _this3.beginingcenses.data = response.data.data;
         _this3.infoDatas = response.data;
       })["catch"](function (error) {
         return console.log(error);
       });
     },
-    fetchDistrictPopulation: function fetchDistrictPopulation() {
+    fetchDistrictWisePopulation: function fetchDistrictWisePopulation() {
       var _this4 = this;
 
-      axios.get("/api/district-population").then(function (response) {
-        _this4.districtpopulation.labels = response.data.labels;
-        _this4.districtpopulation.data = response.data.data;
+      axios.get("/api/district-wise-population").then(function (response) {
+        _this4.beginingcenses1.labels = response.data.labels;
+        _this4.beginingcenses1.data = response.data.data;
         _this4.infoDatas = response.data;
       })["catch"](function (error) {
         return console.log(error);
       });
     },
-    fetchReligionPopulation: function fetchReligionPopulation() {
+    fetchDistrictPopulation: function fetchDistrictPopulation() {
       var _this5 = this;
 
-      axios.get("/api/religion-population").then(function (response) {
-        _this5.religionpopulationData.labels = response.data.labels;
-        _this5.religionpopulationData.data = response.data.data;
+      axios.get("/api/district-population").then(function (response) {
+        _this5.districtpopulation.labels = response.data.labels;
+        _this5.districtpopulation.data = response.data.data;
         _this5.infoDatas = response.data;
       })["catch"](function (error) {
         return console.log(error);
       });
     },
-    fetchProvincePopulation: function fetchProvincePopulation() {
+    fetchReligionPopulation: function fetchReligionPopulation() {
       var _this6 = this;
 
-      axios.get("/api/province-population").then(function (response) {
-        _this6.supaandotherprovincedata.labels = response.data.labels;
-        _this6.supaandotherprovincedata.data = response.data.data;
+      axios.get("/api/religion-population").then(function (response) {
+        _this6.religionpopulationData.labels = response.data.labels;
+        _this6.religionpopulationData.data = response.data.data;
         _this6.infoDatas = response.data;
       })["catch"](function (error) {
         return console.log(error);
       });
     },
-    fetchCastPopulation: function fetchCastPopulation() {
+    fetchProvincePopulation: function fetchProvincePopulation() {
       var _this7 = this;
 
-      axios.get("/api/cast-population").then(function (response) {
-        _this7.jatjatidata.labels = response.data.labels;
-        _this7.jatjatidata.data = response.data.data;
+      axios.get("/api/province-population").then(function (response) {
+        _this7.supaandotherprovincedata.labels = response.data.labels;
+        _this7.supaandotherprovincedata.data = response.data.data;
         _this7.infoDatas = response.data;
       })["catch"](function (error) {
         return console.log(error);
       });
     },
-    fetchLanguagePopulation: function fetchLanguagePopulation() {
+    fetchCastPopulation: function fetchCastPopulation() {
       var _this8 = this;
 
-      axios.get("/api/language-population").then(function (response) {
-        _this8.languagedata.labels = response.data.labels;
-        _this8.languagedata.data = response.data.data;
+      axios.get("/api/cast-population").then(function (response) {
+        _this8.jatjatidata.labels = response.data.labels;
+        _this8.jatjatidata.data = response.data.data;
         _this8.infoDatas = response.data;
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchLanguagePopulation: function fetchLanguagePopulation() {
+      var _this9 = this;
+
+      axios.get("/api/language-population").then(function (response) {
+        _this9.languagedata.labels = response.data.labels;
+        _this9.languagedata.data = response.data.data;
+        _this9.infoDatas = response.data;
       })["catch"](function (error) {
         return console.log(error);
       });

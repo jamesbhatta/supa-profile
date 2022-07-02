@@ -127,6 +127,12 @@
                 </li>
 
                 <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('national-population-census.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span>जिल्लागत जनसंख्या
+                    </a>
+                </li>
+
+                <li class="nav-item sub-nav">
                     <a class="nav-link" href="{{ route('district-wise-population.index') }}">
                         <span class="mx-3"><i class="fa fa-circle"></i></span>प्जिल्लागत जनसंख्या 2078
                     </a>
@@ -158,13 +164,13 @@
                         <span class="mx-3"><i class="fa fa-circle"></i></span>प्रखुम भाषाभाषी विवरण
                     </a>
                 </li>
-                {{-- <li class="nav-item sub-nav">
+                <li class="nav-item sub-nav">
                     <a class="nav-link" href="{{ route('local-population.index') }}">
                         <span class="mx-3"><i class="fa fa-circle"></i></span>@lang('navigation.local_population')
                     </a>
                 </li>
 
-                <li class="nav-item sub-nav">
+                {{-- <li class="nav-item sub-nav">
                     <a class="nav-link" href="{{ route('population.index') }}">
                         <span class="mx-3"><i class="fa fa-circle"></i></span>@lang('navigation.population')
                     </a>
