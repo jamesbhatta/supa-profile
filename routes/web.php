@@ -345,6 +345,13 @@ Route::delete('helth-insurance/{healthInsurance}', 'HealthInsuranceController@de
 Route::get('helth-insurance/{healthInsurance}/edit', 'HealthInsuranceController@edit')->name('helth-insurance.edit');
 Route::put('helth-insurance/{healthInsurance}', 'HealthInsuranceController@update')->name('helth-insurance.update');
 
+// HelthFlowController
+Route::get('helth-flow', 'HelthFlowController@index')->name('helth-flow.index');
+Route::post('helth-flow', 'HelthFlowController@store')->name('helth-flow.store');
+Route::delete('helth-flow/{helthFlow}', 'HelthFlowController@destroy')->name('helth-flow.destroy');
+Route::get('helth-flow/{helthFlow}/edit', 'HelthFlowController@edit')->name('helth-flow.edit');
+Route::put('helth-flow/{helthFlow}', 'HelthFlowController@update')->name('helth-flow.update');
+
 // 
 Route::get('college', 'CollegeController@index')->name('college.index');
 Route::post('college', 'CollegeController@store')->name('college.store');

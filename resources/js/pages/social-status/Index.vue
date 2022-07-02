@@ -1961,6 +1961,7 @@ export default {
     this.fetchmortality();
     this.fetchDiseas();
     this.fetchInsurance();
+    this.fetchHelthFlow();
   },
 
   methods: {
@@ -2150,6 +2151,19 @@ export default {
          .then((response) => {
           this.supahelthinsurancedata.labels = response.data.labels;
           this.supahelthinsurancedata.data = response.data.data
+          this.infoDatas = response.data;
+
+          console.log(response.data);
+        })
+        .catch((error) => console.log(error));
+    },
+    fetchHelthFlow() {
+      axios
+        .get("/api/health-flow")
+        
+         .then((response) => {
+          this.swastheysewaparwah.labels = response.data.labels;
+          this.swastheysewaparwah.data = response.data.data
           this.infoDatas = response.data;
 
           console.log(response.data);

@@ -313,6 +313,12 @@
                     </a>
                 </li>   
 
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('helth-flow.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span>वास्थ्य सेवा प्रवाह
+                    </a>
+                </li>   
+
             </ul>
         </li>
 

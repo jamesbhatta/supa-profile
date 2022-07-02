@@ -781,6 +781,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     this.fetchmortality();
     this.fetchDiseas();
     this.fetchInsurance();
+    this.fetchHelthFlow();
   },
   methods: {
     fetchTotalStudents: function fetchTotalStudents() {
@@ -956,6 +957,18 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         _this15.supahelthinsurancedata.labels = response.data.labels;
         _this15.supahelthinsurancedata.data = response.data.data;
         _this15.infoDatas = response.data;
+        console.log(response.data);
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchHelthFlow: function fetchHelthFlow() {
+      var _this16 = this;
+
+      axios.get("/api/health-flow").then(function (response) {
+        _this16.swastheysewaparwah.labels = response.data.labels;
+        _this16.swastheysewaparwah.data = response.data.data;
+        _this16.infoDatas = response.data;
         console.log(response.data);
       })["catch"](function (error) {
         return console.log(error);
