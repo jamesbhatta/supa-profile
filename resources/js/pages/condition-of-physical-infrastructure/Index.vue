@@ -1033,6 +1033,8 @@
             this.fetchTelecomunication();
             this.fetchNewsPaper();
             this.fetchRadio();
+            this.fetchRoadDetail();
+            this.fetchVehicle();
         },
     
         methods: {
@@ -1133,6 +1135,32 @@
                     .then((response) => {
                         this.fmdata.labels = response.data.labels;
                         this.fmdata.data = response.data.data
+                        this.infoDatas = response.data;
+                        
+                    })
+                    .catch((error) => console.log(error));
+            },
+
+            fetchRoadDetail() {
+                axios
+                    .get("/api/road-detail")
+    
+                    .then((response) => {
+                        this.StateAndLocalLevelRoadDetails.labels = response.data.labels;
+                        this.StateAndLocalLevelRoadDetails.data = response.data.data
+                        this.infoDatas = response.data;
+                        
+                    })
+                    .catch((error) => console.log(error));
+            },
+
+            fetchVehicle() {
+                axios
+                    .get("/api/vehicle")
+    
+                    .then((response) => {
+                        this.yatayatdata.labels = response.data.labels;
+                        this.yatayatdata.data = response.data.data
                         this.infoDatas = response.data;
                         
                     })

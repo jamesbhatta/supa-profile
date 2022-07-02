@@ -562,6 +562,8 @@ __webpack_require__.r(__webpack_exports__);
     this.fetchTelecomunication();
     this.fetchNewsPaper();
     this.fetchRadio();
+    this.fetchRoadDetail();
+    this.fetchVehicle();
   },
   methods: {
     fetchProudProject: function fetchProudProject() {
@@ -659,6 +661,28 @@ __webpack_require__.r(__webpack_exports__);
         _this9.fmdata.labels = response.data.labels;
         _this9.fmdata.data = response.data.data;
         _this9.infoDatas = response.data;
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchRoadDetail: function fetchRoadDetail() {
+      var _this10 = this;
+
+      axios.get("/api/road-detail").then(function (response) {
+        _this10.StateAndLocalLevelRoadDetails.labels = response.data.labels;
+        _this10.StateAndLocalLevelRoadDetails.data = response.data.data;
+        _this10.infoDatas = response.data;
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchVehicle: function fetchVehicle() {
+      var _this11 = this;
+
+      axios.get("/api/vehicle").then(function (response) {
+        _this11.yatayatdata.labels = response.data.labels;
+        _this11.yatayatdata.data = response.data.data;
+        _this11.infoDatas = response.data;
       })["catch"](function (error) {
         return console.log(error);
       });

@@ -476,6 +476,20 @@ Route::delete('radio/{radio}', 'RadioController@destroy')->name('radio.destroy')
 Route::get('radio/{radio}/edit', 'RadioController@edit')->name('radio.edit');
 Route::put('radio/{radio}', 'RadioController@update')->name('radio.update');
 
+// 
+Route::get('road-detail', 'RoadDetailController@index')->name('road-detail.index');
+Route::post('road-detail', 'RoadDetailController@store')->name('road-detail.store');
+Route::delete('road-detail/{roadDetail}', 'RoadDetailController@destroy')->name('road-detail.destroy');
+Route::get('road-detail/{roadDetail}/edit', 'RoadDetailController@edit')->name('road-detail.edit');
+Route::put('road-detail/{roadDetail}', 'RoadDetailController@update')->name('road-detail.update');
+
+// 
+Route::get('vehicle', 'VehicleController@index')->name('vehicle.index');
+Route::post('vehicle', 'VehicleController@store')->name('vehicle.store');
+Route::delete('vehicle/{vehicle}', 'VehicleController@destroy')->name('vehicle.destroy');
+Route::get('vehicle/{vehicle}/edit', 'VehicleController@edit')->name('vehicle.edit');
+Route::put('vehicle/{vehicle}', 'VehicleController@update')->name('vehicle.update');
+
 
 // Unit 6
 // 
