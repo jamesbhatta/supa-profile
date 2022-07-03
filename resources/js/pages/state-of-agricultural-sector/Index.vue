@@ -861,6 +861,7 @@ export default {
     this.fetchAnimal();
     this.fetchFoodSafty();
     this.fetchCrops();
+    this.fetchMainCrops();
   },
   methods: {
     fetchOwnership() {
@@ -1084,6 +1085,18 @@ export default {
         .then((response) => {
           this.utpadanmaagadibadhekabali.labels = response.data.labels;
           this.utpadanmaagadibadhekabali.data = response.data.data
+          this.infoDatas = response.data;
+          console.log(response.data);
+        })
+        .catch((error) => console.log(error));
+    },
+    fetchMainCrops() {
+      axios
+        .get("/api/main-crop")
+
+        .then((response) => {
+          this.parmukhkhadiyennebali.labels = response.data.labels;
+          this.parmukhkhadiyennebali.data = response.data.data
           this.infoDatas = response.data;
           console.log(response.data);
         })

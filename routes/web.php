@@ -553,6 +553,13 @@ Route::get('crop/{crop}/edit', 'CropController@edit')->name('crop.edit');
 Route::put('crop/{crop}', 'CropController@update')->name('crop.update');
 
 // 
+Route::get('main-crop', 'MainCropController@index')->name('main-crop.index');
+Route::post('main-crop', 'MainCropController@store')->name('main-crop.store');
+Route::delete('main-crop/{mainCrop}', 'MainCropController@destroy')->name('main-crop.destroy');
+Route::get('main-crop/{mainCrop}/edit', 'MainCropController@edit')->name('main-crop.edit');
+Route::put('main-crop/{mainCrop}', 'MainCropController@update')->name('main-crop.update');
+
+// 
 Route::get('land-uses', 'LandUsesController@index')->name('land-uses.index');
 Route::post('land-uses', 'LandUsesController@store')->name('land-uses.store');
 Route::delete('land-uses/{landUses}', 'LandUsesController@destroy')->name('land-uses.destroy');

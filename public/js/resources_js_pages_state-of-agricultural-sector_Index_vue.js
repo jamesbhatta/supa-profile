@@ -565,6 +565,7 @@ __webpack_require__.r(__webpack_exports__);
     this.fetchAnimal();
     this.fetchFoodSafty();
     this.fetchCrops();
+    this.fetchMainCrops();
   },
   methods: {
     fetchOwnership: function fetchOwnership() {
@@ -782,6 +783,18 @@ __webpack_require__.r(__webpack_exports__);
         _this19.utpadanmaagadibadhekabali.labels = response.data.labels;
         _this19.utpadanmaagadibadhekabali.data = response.data.data;
         _this19.infoDatas = response.data;
+        console.log(response.data);
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchMainCrops: function fetchMainCrops() {
+      var _this20 = this;
+
+      axios.get("/api/main-crop").then(function (response) {
+        _this20.parmukhkhadiyennebali.labels = response.data.labels;
+        _this20.parmukhkhadiyennebali.data = response.data.data;
+        _this20.infoDatas = response.data;
         console.log(response.data);
       })["catch"](function (error) {
         return console.log(error);

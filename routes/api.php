@@ -99,6 +99,7 @@ Route::get('ownership', 'OwnershipController@listingOwnership');
 Route::get('agriculture-produce', 'AgricultureProduceController@listofAgricultureProduce');
 Route::get('irrigation', 'IrrigationController@listingIrrigation');
 Route::get('crop', 'CropController@listing');
+Route::get('main-crop', 'MainCropController@listing');
 Route::get('agricultural-production', 'AgriculturalProductionController@listingAgriculturalProduction');
 Route::get('winter-crops', 'WinterCropController@listingWinterCrop');
 Route::get('rainy-crops', 'RainyCropsController@listingRainyCrops');

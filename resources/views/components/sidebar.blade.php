@@ -504,6 +504,11 @@
                         <span class="mx-3"><i class="fa fa-circle"></i></span> बाली र पकेट क्षेत्रहरु
                     </a>
                 </li>
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('main-crop.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span>प्रमुख खाद्यान्न बालीहरु
+                    </a>
+                </li>
 
                 <li class="nav-item sub-nav">
                     <a class="nav-link" href="{{ route('winter-crop.index') }}">
