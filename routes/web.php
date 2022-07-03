@@ -504,6 +504,13 @@ Route::delete('light-source/{lightSource}', 'LightSourceController@destroy')->na
 Route::get('light-source/{lightSource}/edit', 'LightSourceController@edit')->name('light-source.edit');
 Route::put('light-source/{lightSource}', 'LightSourceController@update')->name('light-source.update');
 
+// 
+Route::get('water', 'WaterController@index')->name('water.index');
+Route::post('water', 'WaterController@store')->name('water.store');
+Route::delete('water/{water}', 'WaterController@destroy')->name('water.destroy');
+Route::get('water/{water}/edit', 'WaterController@edit')->name('water.edit');
+Route::put('water/{water}', 'WaterController@update')->name('water.update');
+
 // Unit 6
 // 
 Route::get('province-business', 'ProvinceBusinesslController@index')->name('province-business.index');

@@ -566,6 +566,7 @@ __webpack_require__.r(__webpack_exports__);
     this.fetchVehicle();
     this.fetchFuel();
     this.fetchLightSource();
+    this.fetchWater();
   },
   methods: {
     fetchProudProject: function fetchProudProject() {
@@ -707,6 +708,17 @@ __webpack_require__.r(__webpack_exports__);
         _this13.electricity.labels = response.data.labels;
         _this13.electricity.data = response.data.data;
         _this13.infoDatas = response.data;
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchWater: function fetchWater() {
+      var _this14 = this;
+
+      axios.get("/api/water").then(function (response) {
+        _this14.khanepanikashrot.labels = response.data.labels;
+        _this14.khanepanikashrot.data = response.data.data;
+        _this14.infoDatas = response.data;
       })["catch"](function (error) {
         return console.log(error);
       });
@@ -972,25 +984,7 @@ var render = function () {
               _vm._v(" "),
               _c("data-viewer", { attrs: { data: _vm.airportdata } }),
               _vm._v(" "),
-              _c(
-                "data-viewer",
-                { attrs: { data: _vm.khanepanikashrot } },
-                [
-                  _c("template", { slot: "thead-top" }, [
-                    _c("tr", [
-                      _c(
-                        "th",
-                        {
-                          staticClass: "bg-light text-center font-weight-bold",
-                          attrs: { colspan: "2" },
-                        },
-                        [_vm._v("जिल्ला")]
-                      ),
-                    ]),
-                  ]),
-                ],
-                2
-              ),
+              _c("data-viewer", { attrs: { data: _vm.khanepanikashrot } }),
               _vm._v(" "),
               _c("data-viewer", { attrs: { data: _vm.indhankoshrot } }),
               _vm._v(" "),

@@ -427,6 +427,11 @@
                     </a>
                 </li>
                 <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('water.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span>खानेपानीका मुख्य श्रोत
+                    </a>
+                </li>
+                <li class="nav-item sub-nav">
                     <a class="nav-link" href="{{ route('radio.index') }}">
                         <span class="mx-3"><i class="fa fa-circle"></i></span>एफएम रेडियो
                     </a>

@@ -146,12 +146,12 @@
 
                         <!-- 6.8 -->
                         <data-viewer :data="khanepanikashrot">
-                            <template slot="thead-top">
+                            <!-- <template slot="thead-top">
                                 <tr>
                                     <th colspan="2" class="bg-light text-center font-weight-bold">जिल्ला</th>
 
                                 </tr>
-                            </template>
+                            </template> -->
                         </data-viewer>
 
 
@@ -1037,6 +1037,7 @@
             this.fetchVehicle();
             this.fetchFuel();
             this.fetchLightSource();
+            this.fetchWater();
         },
     
         methods: {
@@ -1188,6 +1189,18 @@
                     .then((response) => {
                         this.electricity.labels = response.data.labels;
                         this.electricity.data = response.data.data
+                        this.infoDatas = response.data;
+                        
+                    })
+                    .catch((error) => console.log(error));
+            },
+            fetchWater() {
+                axios
+                    .get("/api/water")
+    
+                    .then((response) => {
+                        this.khanepanikashrot.labels = response.data.labels;
+                        this.khanepanikashrot.data = response.data.data
                         this.infoDatas = response.data;
                         
                     })
