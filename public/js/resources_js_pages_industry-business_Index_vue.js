@@ -92,6 +92,7 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     this.fetchProvinceBusiness();
     this.fetchSupaBusiness();
+    this.fetchMiles();
   },
   methods: {
     fetchProvinceBusiness: function fetchProvinceBusiness() {
@@ -112,6 +113,17 @@ __webpack_require__.r(__webpack_exports__);
         _this2.SmallBusinessData.labels = response.data.labels;
         _this2.SmallBusinessData.data = response.data.data;
         _this2.infoDatas = response.data;
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchMiles: function fetchMiles() {
+      var _this3 = this;
+
+      axios.get("/api/miles").then(function (response) {
+        _this3.minesdata.labels = response.data.labels;
+        _this3.minesdata.data = response.data.data;
+        _this3.infoDatas = response.data;
       })["catch"](function (error) {
         return console.log(error);
       });

@@ -526,6 +526,13 @@ Route::delete('supa-business/{supaBusiness}', 'SupaBusinessController@destroy')-
 Route::get('supa-business/{supaBusiness}/edit', 'SupaBusinessController@edit')->name('supa-business.edit');
 Route::put('supa-business/{supaBusiness}', 'SupaBusinessController@update')->name('supa-business.update');
 
+// 
+Route::get('miles', 'MilesController@index')->name('miles.index');
+Route::post('miles', 'MilesController@store')->name('miles.store');
+Route::delete('miles/{miles}', 'MilesController@destroy')->name('miles.destroy');
+Route::get('miles/{miles}/edit', 'MilesController@edit')->name('miles.edit');
+Route::put('miles/{miles}', 'MilesController@update')->name('miles.update');
+
 
 // Unit 7
 

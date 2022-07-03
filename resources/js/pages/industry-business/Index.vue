@@ -115,6 +115,7 @@ export default {
   mounted() {
     this.fetchProvinceBusiness();
     this.fetchSupaBusiness();
+    this.fetchMiles();
   },
 
   methods: {
@@ -134,6 +135,18 @@ export default {
         .then((response) => {
           this.SmallBusinessData.labels = response.data.labels;
           this.SmallBusinessData.data = response.data.data
+          this.infoDatas = response.data;
+        })
+        .catch((error) => console.log(error));
+    },
+    
+
+    fetchMiles() {
+      axios
+        .get("/api/miles")
+        .then((response) => {
+          this.minesdata.labels = response.data.labels;
+          this.minesdata.data = response.data.data
           this.infoDatas = response.data;
         })
         .catch((error) => console.log(error));

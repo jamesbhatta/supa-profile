@@ -92,6 +92,7 @@ Route::get('water', 'WaterController@listing');
 // Unit -6
 Route::get('province-business', 'ProvinceBusinesslController@listingProvinceBusinessl');
 Route::get('supa-business', 'SupaBusinessController@listingSupaBusiness');
+Route::get('miles', 'MilesController@listing');
 
 // unit 8
 Route::get('ownership', 'OwnershipController@listingOwnership');
