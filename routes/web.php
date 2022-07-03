@@ -534,6 +534,8 @@ Route::get('miles/{miles}/edit', 'MilesController@edit')->name('miles.edit');
 Route::put('miles/{miles}', 'MilesController@update')->name('miles.update');
 
 
+
+
 // Unit 7
 
 // 
@@ -542,6 +544,13 @@ Route::post('ownership', 'OwnershipController@store')->name('ownership.store');
 Route::delete('ownership/{ownership}', 'OwnershipController@destroy')->name('ownership.destroy');
 Route::get('ownership/{ownership}/edit', 'OwnershipController@edit')->name('ownership.edit');
 Route::put('ownership/{ownership}', 'OwnershipController@update')->name('ownership.update');
+
+// 
+Route::get('crop', 'CropController@index')->name('crop.index');
+Route::post('crop', 'CropController@store')->name('crop.store');
+Route::delete('crop/{crop}', 'CropController@destroy')->name('crop.destroy');
+Route::get('crop/{crop}/edit', 'CropController@edit')->name('crop.edit');
+Route::put('crop/{crop}', 'CropController@update')->name('crop.update');
 
 // 
 Route::get('land-uses', 'LandUsesController@index')->name('land-uses.index');

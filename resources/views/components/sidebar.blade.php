@@ -499,6 +499,11 @@
                         <span class="mx-3"><i class="fa fa-circle"></i></span> कृषि बाली उत्पादन अवस्था
                     </a>
                 </li>
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('crop.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span> बाली र पकेट क्षेत्रहरु
+                    </a>
+                </li>
 
                 <li class="nav-item sub-nav">
                     <a class="nav-link" href="{{ route('winter-crop.index') }}">
