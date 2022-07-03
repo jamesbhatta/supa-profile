@@ -157,22 +157,22 @@
 
                         <!-- indhan -->
                         <data-viewer :data="indhankoshrot">
-                            <template slot="thead-top">
+                            <!-- <template slot="thead-top">
                                 <tr>
                                     <th colspan="2" class="bg-light text-center font-weight-bold">जिल्ला</th>
 
                                 </tr>
-                            </template>
+                            </template> -->
                         </data-viewer>
 
                         <!-- electricity -->
                         <data-viewer :data="electricity">
-                            <template slot="thead-top">
+                            <!-- <template slot="thead-top">
                                 <tr>
                                     <th colspan="2" class="bg-light text-center font-weight-bold">जिल्ला</th>
 
                                 </tr>
-                            </template>
+                            </template> -->
                         </data-viewer>
 
                         <data-viewer :data="provinceelectricitypahuch">
@@ -1035,6 +1035,8 @@
             this.fetchRadio();
             this.fetchRoadDetail();
             this.fetchVehicle();
+            this.fetchFuel();
+            this.fetchLightSource();
         },
     
         methods: {
@@ -1161,6 +1163,31 @@
                     .then((response) => {
                         this.yatayatdata.labels = response.data.labels;
                         this.yatayatdata.data = response.data.data
+                        this.infoDatas = response.data;
+                        
+                    })
+                    .catch((error) => console.log(error));
+            },
+
+            fetchFuel() {
+                axios
+                    .get("/api/fuel")
+    
+                    .then((response) => {
+                        this.indhankoshrot.labels = response.data.labels;
+                        this.indhankoshrot.data = response.data.data
+                        this.infoDatas = response.data;
+                        
+                    })
+                    .catch((error) => console.log(error));
+            },
+            fetchLightSource() {
+                axios
+                    .get("/api/light-source")
+    
+                    .then((response) => {
+                        this.electricity.labels = response.data.labels;
+                        this.electricity.data = response.data.data
                         this.infoDatas = response.data;
                         
                     })

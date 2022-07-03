@@ -490,6 +490,19 @@ Route::delete('vehicle/{vehicle}', 'VehicleController@destroy')->name('vehicle.d
 Route::get('vehicle/{vehicle}/edit', 'VehicleController@edit')->name('vehicle.edit');
 Route::put('vehicle/{vehicle}', 'VehicleController@update')->name('vehicle.update');
 
+// 
+Route::get('fuel', 'FuelController@index')->name('fuel.index');
+Route::post('fuel', 'FuelController@store')->name('fuel.store');
+Route::delete('fuel/{fuel}', 'FuelController@destroy')->name('fuel.destroy');
+Route::get('fuel/{fuel}/edit', 'FuelController@edit')->name('fuel.edit');
+Route::put('fuel/{fuel}', 'FuelController@update')->name('fuel.update');
+
+// 
+Route::get('light-source', 'LightSourceController@index')->name('light-source.index');
+Route::post('light-source', 'LightSourceController@store')->name('light-source.store');
+Route::delete('light-source/{lightSource}', 'LightSourceController@destroy')->name('light-source.destroy');
+Route::get('light-source/{lightSource}/edit', 'LightSourceController@edit')->name('light-source.edit');
+Route::put('light-source/{lightSource}', 'LightSourceController@update')->name('light-source.update');
 
 // Unit 6
 // 

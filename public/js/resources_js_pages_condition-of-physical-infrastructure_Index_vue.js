@@ -564,6 +564,8 @@ __webpack_require__.r(__webpack_exports__);
     this.fetchRadio();
     this.fetchRoadDetail();
     this.fetchVehicle();
+    this.fetchFuel();
+    this.fetchLightSource();
   },
   methods: {
     fetchProudProject: function fetchProudProject() {
@@ -683,6 +685,28 @@ __webpack_require__.r(__webpack_exports__);
         _this11.yatayatdata.labels = response.data.labels;
         _this11.yatayatdata.data = response.data.data;
         _this11.infoDatas = response.data;
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchFuel: function fetchFuel() {
+      var _this12 = this;
+
+      axios.get("/api/fuel").then(function (response) {
+        _this12.indhankoshrot.labels = response.data.labels;
+        _this12.indhankoshrot.data = response.data.data;
+        _this12.infoDatas = response.data;
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    },
+    fetchLightSource: function fetchLightSource() {
+      var _this13 = this;
+
+      axios.get("/api/light-source").then(function (response) {
+        _this13.electricity.labels = response.data.labels;
+        _this13.electricity.data = response.data.data;
+        _this13.infoDatas = response.data;
       })["catch"](function (error) {
         return console.log(error);
       });
@@ -968,45 +992,9 @@ var render = function () {
                 2
               ),
               _vm._v(" "),
-              _c(
-                "data-viewer",
-                { attrs: { data: _vm.indhankoshrot } },
-                [
-                  _c("template", { slot: "thead-top" }, [
-                    _c("tr", [
-                      _c(
-                        "th",
-                        {
-                          staticClass: "bg-light text-center font-weight-bold",
-                          attrs: { colspan: "2" },
-                        },
-                        [_vm._v("जिल्ला")]
-                      ),
-                    ]),
-                  ]),
-                ],
-                2
-              ),
+              _c("data-viewer", { attrs: { data: _vm.indhankoshrot } }),
               _vm._v(" "),
-              _c(
-                "data-viewer",
-                { attrs: { data: _vm.electricity } },
-                [
-                  _c("template", { slot: "thead-top" }, [
-                    _c("tr", [
-                      _c(
-                        "th",
-                        {
-                          staticClass: "bg-light text-center font-weight-bold",
-                          attrs: { colspan: "2" },
-                        },
-                        [_vm._v("जिल्ला")]
-                      ),
-                    ]),
-                  ]),
-                ],
-                2
-              ),
+              _c("data-viewer", { attrs: { data: _vm.electricity } }),
               _vm._v(" "),
               _c(
                 "data-viewer",

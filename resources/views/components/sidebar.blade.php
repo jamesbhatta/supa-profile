@@ -392,6 +392,16 @@
                     </a>
                 </li>
                 <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('fuel.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span>इन्धनको स्रोत
+                    </a>
+                </li>
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('light-source.index') }}">
+                        <span class="mx-3"><i class="fa fa-circle"></i></span>उज्यालोका स्रोत
+                    </a>
+                </li>
+                <li class="nav-item sub-nav">
                     <a class="nav-link" href="{{ route('airport.index') }}">
                         <span class="mx-3"><i class="fa fa-circle"></i></span>विमानस्थल
                     </a>

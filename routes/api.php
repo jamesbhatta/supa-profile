@@ -85,6 +85,8 @@ Route::get('news-paper', 'NewsPaperController@listingNewsPaper');
 Route::get('radio', 'RadioController@listingRadio');
 Route::get('road-detail', 'RoadDetailController@listing');
 Route::get('vehicle', 'VehicleController@listing');
+Route::get('fuel', 'FuelController@listing');
+Route::get('light-source', 'LightSourceController@listing');
 
 // Unit -6
 Route::get('province-business', 'ProvinceBusinesslController@listingProvinceBusinessl');
