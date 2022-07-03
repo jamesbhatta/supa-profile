@@ -12,7 +12,7 @@ class ElectricityGenerateController extends Controller
     public function listingElectricityGenerate()
     {
         $data = ElectricityGenerate::get();
-        $dataset['labels'] = ["प्रदेश", $data[0]->fiscal_year];
+        $dataset['labels'] = ["प्रदेश", "०७७ सम्म (मे.वा.)"];
         $dataset['data'] = [];
         foreach ($data as $key => $item) {
             $dataset['data'][] = [
