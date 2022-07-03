@@ -33,7 +33,7 @@
                         @method('PUT')
                     @endisset
                     <div class="row">
-                        <div class="form-group col-lg-12">
+                        <div class="form-group col-lg-6">
                             <label for="select-province-id">प्रदेशको नाम</label>
                             <select id="select-province-id" class="custom-select">
                                 @isset($municipality->district->province)
@@ -46,7 +46,7 @@
                                 @endforeach
                             </select>
                         </div>
-                        <div class="form-group col-lg-12">
+                        <div class="form-group col-lg-6">
                             <label for="select-district-id">जिल्लाको नाम</label>
                             <select name="district" id="select-district-id" class="custom-select">
                                 @isset($nationalPopulationCensus->id)
