@@ -71,6 +71,9 @@
             min-width: 330px;
         }
     }
+    .breadcrumb{
+        background: #fff
+    }
 
 
 </style>
