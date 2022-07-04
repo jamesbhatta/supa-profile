@@ -167,6 +167,7 @@ return [
         'avg_family_size'=>'औषत परिवार आकार',
         'increase_rate'=>'वार्षिक वृद्धिदर',
         'percentage'=>'प्रतिशत',
+        'npl_area'=>'नेपालको क्षेत्रफल'
     ],
 
 ];

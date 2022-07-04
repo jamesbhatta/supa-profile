@@ -46,7 +46,7 @@
 
                         <div class="form-group col-lg-4">
                             <label for="input-name">सम्म</label>
-                            <input type="text" name="to" id="input-fiscal-year-start"
+                            <input type="text" name="to" id="input-fiscal-year-second"
                                 class="form-control fiscal-year-date" value="{{ old('to', $provinceHead->to) }}"
                                 placeholder="Nepali YYYY-MM-DD">
                         </div>

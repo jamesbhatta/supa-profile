@@ -43,12 +43,12 @@
     
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">नेपालको क्षेत्रफल (हे. हजारमा) </label>
-                            <input type="text" name="npl_area" class="form-control"
+                            <input type="number" name="npl_area" class="form-control"
                                 value="{{ old('npl_area', $landUses->npl_area) }}">
                         </div>
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">सुदूरपश्चिमको क्षेत्रफल(हे.हजारमा)</label>
-                            <input type="text" name="supa_area" class="form-control"
+                            <input type="number" name="supa_area" class="form-control"
                                 value="{{ old('supa_area', $landUses->supa_area) }}">
                         </div>
                     </div>

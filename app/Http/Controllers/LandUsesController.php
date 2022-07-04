@@ -35,7 +35,7 @@ class LandUsesController extends Controller
         # code...
         LandUses::create($request->validate([
             'sector'=>"required|min:3|max:50",
-            'npl_area'=>"nullable|numeric",
+            'npl_area'=>"required|numeric",
             'supa_area'=>"nullable|numeric",
         ]));
         return redirect()->back()->with('success',"भू – उपयोगको अवस्था सफलतापूर्वक थपियो");
@@ -59,7 +59,7 @@ class LandUsesController extends Controller
         # code...
         $landUses->update($request->validate([
             'sector'=>"required|min:3|max:50",
-            'npl_area'=>"nullable|numeric",
+            'npl_area'=>"required|numeric",
             'supa_area'=>"nullable|numeric",
         ]));
         return redirect()->route("land-uses.index")->with('success',"भू – उपयोगको अवस्था सफलतापूर्वक परिवर्तन भयो");

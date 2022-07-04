@@ -448,6 +448,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 
 chart_js__WEBPACK_IMPORTED_MODULE_0__.Chart.register(chart_js__WEBPACK_IMPORTED_MODULE_0__.Title, chart_js__WEBPACK_IMPORTED_MODULE_0__.Tooltip, chart_js__WEBPACK_IMPORTED_MODULE_0__.Legend, chart_js__WEBPACK_IMPORTED_MODULE_0__.BarElement, chart_js__WEBPACK_IMPORTED_MODULE_0__.CategoryScale, chart_js__WEBPACK_IMPORTED_MODULE_0__.LinearScale, chart_js__WEBPACK_IMPORTED_MODULE_0__.ArcElement);
@@ -765,7 +767,7 @@ var render = function () {
                 _vm._v("भौगोलिक क्षेत्रगत क्षेत्रफल"),
               ]),
               _vm._v(" "),
-              _c("bar", {
+              _c("pie", {
                 attrs: {
                   "chart-options": { plugins: { legend: { display: false } } },
                   "chart-data": {
@@ -801,11 +803,11 @@ var render = function () {
                 "div",
                 { staticClass: "col-md-5" },
                 [
-                  _c("Pie", {
+                  _c("Bar", {
                     attrs: {
                       "chart-options": { responsive: true },
                       "chart-data": {
-                        // labels: ['पुरुष', 'महिला'],
+                        labels: ["पुरुष", "महिला"],
                         datasets: [
                           {
                             backgroundColor: ["#007bff", "#dc3545"],
@@ -825,11 +827,11 @@ var render = function () {
                 "div",
                 { staticClass: "col-md-5 my-pie" },
                 [
-                  _c("Pie", {
+                  _c("Bar", {
                     attrs: {
                       "chart-options": { responsive: true },
                       "chart-data": {
-                        // labels: ['पुरुष', 'महिला'],
+                        labels: ["पुरुष", "महिला"],
                         datasets: [
                           {
                             backgroundColor: ["#007bff", "#dc3545"],
