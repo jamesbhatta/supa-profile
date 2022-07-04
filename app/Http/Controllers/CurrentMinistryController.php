@@ -36,10 +36,10 @@ class CurrentMinistryController extends Controller
     public function store(Request $request)
     {
         CurrentMinistry::create($request->validate([
-            'name' => "required",
-            'post' => "required",
-            'ministry' => "required",
-            'team' => "required"
+            'name' => "required|min:3|max:50",
+            'post' => "required|min:3|max:50",
+            'ministry' => "required|min:10|max:50",
+            'team' => "required|min:10|max:50"
         ]));
         return redirect()->back()->with('success', "हालको मन्त्रिपरिषद् सफलतापूर्वक थपियो");
     }
@@ -56,10 +56,10 @@ class CurrentMinistryController extends Controller
     public function update(Request $request, CurrentMinistry $currentMinistry)
     {
         $data = $request->validate([
-            'name' => "required",
-            'post' => "required",
-            'ministry' => "required",
-            'team' => "required"
+            'name' => "required|min:3|max:50",
+            'post' => "required|min:3|max:50",
+            'ministry' => "required|min:10|max:50",
+            'team' => "required|min:10|max:50"
         ]);
         $currentMinistry->update($data);
         return redirect()->route('current-ministry.index')->with('success', "हालको मन्त्रिपरिषद् सफलतापूर्वक परिवर्तन भयो");

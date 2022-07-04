@@ -153,7 +153,8 @@ return [
         'district_id' => 'जिल्ला',
         'token_number' => 'टोकन नम्बर',
         'tokenNumber' => 'टोकन नम्बर',
-        'org_reg_no' => 'organization register number'
+        'org_reg_no' => 'organization register number',
+        'post'=>'पद',
     ],
 
 ];
