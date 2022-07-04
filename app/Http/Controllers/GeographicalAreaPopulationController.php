@@ -51,6 +51,7 @@ class GeographicalAreaPopulationController extends Controller
     }
     public function update(Request $request, GeographicalAreaPopulation $geographicalPopulation)
     {
+        // return $request;
         $geographicalPopulation->update($request->validate([
             'sector' => "required",
             'population' => "required|min:3|max:8",

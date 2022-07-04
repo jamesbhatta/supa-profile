@@ -15,7 +15,7 @@ class CreateNationalPopulationsTable extends Migration
     {
         Schema::create('national_populations', function (Blueprint $table) {
             $table->id();
-            $table->string('area');
+            $table->string('sector');
             $table->string('new_population');
             $table->string('old_population');
             $table->timestamps();

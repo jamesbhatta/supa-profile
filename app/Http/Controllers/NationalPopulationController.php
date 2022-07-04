@@ -33,7 +33,7 @@ class NationalPopulationController extends Controller
     public function store(Request $request)
     {
         NationalPopulation::create($request->validate([
-            'area'=>"required",
+            'sector'=>"required|min:50",
             'new_population'=>"required",
             'old_population'=>"required",
         ]));
@@ -50,7 +50,7 @@ class NationalPopulationController extends Controller
     public function update(Request $request, NationalPopulation $nationalPopulation)
     {
         $nationalPopulation->update($request->validate([
-            'area'=>"required",
+            'sector'=>"required",
             'new_population'=>"required",
             'old_population'=>"required",
         ]));

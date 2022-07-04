@@ -37,8 +37,8 @@
 
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">क्षेत्र</label>
-                            <input type="text" name="area" class="form-control"
-                                value="{{ old('area', $nationalPopulation->area) }}">
+                            <input type="text" name="sector" class="form-control"
+                                value="{{ old('sector', $nationalPopulation->sector) }}">
                         </div>
 
                         <div class="form-group col-lg-4">
@@ -89,7 +89,7 @@
                             @forelse ($nationalPopulations as $item)
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
-                                    <td>{{ $item->area }}</td>
+                                    <td>{{ $item->sector }}</td>
                                     <td>{{ $item->new_population }}</td>
                                     <td>{{ $item->old_population }}</td>
                                     

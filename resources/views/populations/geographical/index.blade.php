@@ -42,8 +42,8 @@
                                         {{ $geographicalPopulation->sector }}</option>
                                 @endisset
                                 <option value="हिमाली">हिमाली</option>
-                                <option value="हिमाली">पहाडी</option>
-                                <option value="हिमाली">तराई</option>
+                                <option value="पहाडी">पहाडी</option>
+                                <option value="तराई">तराई</option>
                             </select>
                         </div>
                         <div class="form-group col-lg-3">
