@@ -69,19 +69,19 @@
 
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">पुरुष</label>
-                            <input type="text" name="male" class="form-control"
+                            <input type="number" name="male" class="form-control"
                                 value="{{ old('male', $districtWisePopulation->male) }}">
                         </div>
 
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">महिला</label>
-                            <input type="text" name="female" class="form-control"
+                            <input type="number" name="female" class="form-control"
                                 value="{{ old('female', $districtWisePopulation->female) }}">
                         </div>
 
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">प्रतिशत</label>
-                            <input type="text" name="percentage" class="form-control"
+                            <input type="number" name="percentage" class="form-control"
                                 value="{{ old('percentage', $districtWisePopulation->percentage) }}">
                         </div>
 

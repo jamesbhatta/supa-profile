@@ -78,7 +78,7 @@ class NationalPopulationCensusController extends Controller
             'avg_family_size'=>"required",
             'increase_rate'=>"required",
         ]));
-        return redirect()->route("national-population-census.index")->with('success',"Saved");
+        return redirect()->route("national-population-census.index")->with('success',"Updated");
     }
 
     public function destroy(NationalPopulationCensus $nationalPopulationCensus)

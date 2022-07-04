@@ -66,54 +66,54 @@
                         </div>
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">कुल जनसंख्या</label>
-                            <input type="text" name="population" class="form-control"
+                            <input type="number" name="population" class="form-control"
                                 value="{{ old('population', $nationalPopulationCensus->population) }}">
                         </div>
 
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">जनगणना घरसंख्या</label>
-                            <input type="text" name="census_house_number" class="form-control"
+                            <input type="number" name="census_house_number" class="form-control"
                                 value="{{ old('census_house_number', $nationalPopulationCensus->census_house_number) }}">
                         </div>
 
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">घरपरिवार संख्या</label>
-                            <input type="text" name="house_number" class="form-control"
+                            <input type="number" name="house_number" class="form-control"
                                 value="{{ old('house_number', $nationalPopulationCensus->house_number) }}">
                         </div>
 
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">पुरुष</label>
-                            <input type="text" name="male" class="form-control"
+                            <input type="number" name="male" class="form-control"
                                 value="{{ old('male', $nationalPopulationCensus->male) }}">
                         </div>
 
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">महिला</label>
-                            <input type="text" name="female" class="form-control"
+                            <input type="number" name="female" class="form-control"
                                 value="{{ old('female', $nationalPopulationCensus->female) }}">
                         </div>
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">लैंगिक अनुपात</label>
-                            <input type="text" name="ratio" class="form-control"
+                            <input type="number" name="ratio" class="form-control"
                                 value="{{ old('ratio', $nationalPopulationCensus->ratio) }}">
                         </div>
 
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">औषत परिवार आकार</label>
-                            <input type="text" name="avg_family_size" class="form-control"
+                            <input type="number" name="avg_family_size" class="form-control"
                                 value="{{ old('avg_family_size', $nationalPopulationCensus->avg_family_size) }}">
                         </div>
 
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">वार्षिक वृद्धिदर(%)</label>
-                            <input type="text" name="increase_rate" class="form-control"
+                            <input type="number" name="increase_rate" class="form-control"
                                 value="{{ old('increase_rate', $nationalPopulationCensus->increase_rate) }}">
                         </div>
 
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">जनघनत्व र(प्रतिवग कि.मि.)</label>
-                            <input type="text" name="dencity" class="form-control"
+                            <input type="number" name="dencity" class="form-control"
                                 value="{{ old('dencity', $nationalPopulationCensus->dencity) }}">
                         </div>
                     </div>

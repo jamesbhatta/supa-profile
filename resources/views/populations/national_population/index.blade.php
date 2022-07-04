@@ -43,13 +43,13 @@
 
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">नयाँ जनसंख्या</label>
-                            <input type="text" name="new_population" class="form-control"
+                            <input type="number" name="new_population" class="form-control"
                                 value="{{ old('new_population', $nationalPopulation->new_population) }}">
                         </div>
 
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">पुरानो जनसंख्या</label>
-                            <input type="text" name="old_population" class="form-control"
+                            <input type="number" name="old_population" class="form-control"
                                 value="{{ old('old_population', $nationalPopulation->old_population) }}">
                         </div>
 

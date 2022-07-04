@@ -155,6 +155,18 @@ return [
         'tokenNumber' => 'टोकन नम्बर',
         'org_reg_no' => 'organization register number',
         'post'=>'पद',
+        'new_population'=>'नयाँ जनसंख्या',
+        'old_population'=>'पुरानो जनसंख्या',
+        'district'=>'जिल्लाको नाम',
+        'dencity'=>'जनघनत्व',
+        'census_house_number'=>'जनगणना घरसंख्या',
+        'house_number'=>'घरपरिवार संख्या',
+        'male'=>'पुरुष',
+        'female'=>'महिला',
+        'ratio'=>'लैंगिक अनुपात',
+        'avg_family_size'=>'औषत परिवार आकार',
+        'increase_rate'=>'वार्षिक वृद्धिदर',
+        'percentage'=>'प्रतिशत',
     ],
 
 ];
