@@ -48,17 +48,17 @@
                         </div>
                         <div class="form-group col-lg-3">
                             <label for="input-name">जनसङ्ख्या</label>
-                            <input type="text" id="input-name" name="population" class="form-control" autocomplete="off"
+                            <input type="number" id="input-name" name="population" class="form-control" autocomplete="off"
                                 value="{{ old('population', $geographicalPopulation->population) }}">
                         </div>
                         <div class="form-group col-lg-3">
                             <label for="input-name">क्षेत्रफल (वर्ग कि.मि.)</label>
-                            <input type="text" id="input-name" name="area" class="form-control" autocomplete="off"
+                            <input type="number" id="input-name" name="area" class="form-control" autocomplete="off"
                                 value="{{ old('area', $geographicalPopulation->area) }}">
                         </div>
                         <div class="form-group col-lg-3">
                             <label for="input-name">जनघनत्व(जना/वर्ग कि.मि.)</label>
-                            <input type="text" id="input-name" name="density" class="form-control" autocomplete="off"
+                            <input type="number" id="input-name" name="density" class="form-control" autocomplete="off"
                                 value="{{ old('density', $geographicalPopulation->density) }}">
                         </div>
                     </div>

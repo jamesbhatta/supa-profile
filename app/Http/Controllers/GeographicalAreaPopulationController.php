@@ -26,37 +26,37 @@ class GeographicalAreaPopulationController extends Controller
     }
     public function index(GeographicalAreaPopulation $geographicalPopulation)
     {
-        $geographicalpopulations=GeographicalAreaPopulation::all();
-        return view('populations.geographical.index',compact(['geographicalpopulations','geographicalPopulation']));
+        $geographicalpopulations = GeographicalAreaPopulation::all();
+        return view('populations.geographical.index', compact(['geographicalpopulations', 'geographicalPopulation']));
     }
     public function store(Request $request)
     {
-       GeographicalAreaPopulation::create( $request->validate([
-        'sector'=>"required",
-        'population'=>"required",
-        'area'=>"required",
-        'density'=>"required",
-       ]));
-       return redirect()->back()->with('success',"क्षेत्रगत जनसंख्या तथा जनघनत्व विवरण सफलतापूर्वक थपियो");  
+        GeographicalAreaPopulation::create($request->validate([
+            'sector' => "required",
+            'population' => "required|min:3|max:8",
+            'area' => "required|min:3|max:7",
+            'density' => "required|min:3|max:5",
+        ]));
+        return redirect()->back()->with('success', "क्षेत्रगत जनसंख्या तथा जनघनत्व विवरण सफलतापूर्वक थपियो");
     }
     public function destroy(GeographicalAreaPopulation $geographicalPopulation)
     {
         $geographicalPopulation->delete();
-        return redirect()->back()->with('success',"क्षेत्रगत जनसंख्या तथा जनघनत्व विवरण सफलतापूर्वक हटाइयो");
+        return redirect()->back()->with('success', "क्षेत्रगत जनसंख्या तथा जनघनत्व विवरण सफलतापूर्वक हटाइयो");
     }
     public function edit(GeographicalAreaPopulation $geographicalPopulation)
     {
-        $geographicalpopulations=GeographicalAreaPopulation::all();
-        return view('populations.geographical.index',compact(['geographicalpopulations','geographicalPopulation']));
+        $geographicalpopulations = GeographicalAreaPopulation::all();
+        return view('populations.geographical.index', compact(['geographicalpopulations', 'geographicalPopulation']));
     }
-    public function update(Request $request,GeographicalAreaPopulation $geographicalPopulation)
+    public function update(Request $request, GeographicalAreaPopulation $geographicalPopulation)
     {
         $geographicalPopulation->update($request->validate([
-            'sector'=>"required",
-            'population'=>"required",
-            'area'=>"required",
-            'density'=>"required",
+            'sector' => "required",
+            'population' => "required|min:3|max:8",
+            'area' => "required|min:3|max:7",
+            'density' => "required|min:3|max:5",
         ]));
-        return redirect()->route('geographical-population.index')->with('success',"क्षेत्रगत जनसंख्या तथा जनघनत्व विवरण सफलतापूर्वक परिवर्तन भयो");
+        return redirect()->route('geographical-population.index')->with('success', "क्षेत्रगत जनसंख्या तथा जनघनत्व विवरण सफलतापूर्वक परिवर्तन भयो");
     }
 }
