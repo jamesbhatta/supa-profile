@@ -31,9 +31,9 @@ class PrivinceHeadController extends Controller
     public function store(Request $request)
     {
         PrivinceHead::create($request->validate([
-            'province_head'=>"required",
-            'from'=>"required",
-            'to'=>"required",
+            'province_head'=>"required|min:3",
+            'from'=>"required|min:3|max:50|date",
+            'to'=>"required|min:3|max:50|date",
         ]));
         return redirect()->back()->with('success',"हालसम्म भएका प्रदेश प्रमुखहरुको नामावली र मिति सफलतापूर्वक थपियो");
     }
@@ -51,9 +51,9 @@ class PrivinceHeadController extends Controller
     public function update(Request $request, PrivinceHead $provinceHead)
     {
         $provinceHead->update($request->validate([
-            'province_head'=>"required",
-            'from'=>"required",
-            'to'=>"required",
+            'province_head'=>"required|min:3",
+            'from'=>"required|min:3|max:50|date",
+            'to'=>"required|min:3|max:50|date",
         ]));
         return redirect()->route('province-head.index')->with('success','हालसम्म भएका प्रदेश प्रमुखहरुको नामावली र मिति सफलतापूर्वक परिवर्तन भयो');
     }
