@@ -7,7 +7,8 @@
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
                 <li class="breadcrumb-item active" aria-current="page">कृषि क्षेत्र</li>
-                <li class="breadcrumb-item active" aria-current="page">राष्ट्रिय जनगणना २०७८ को प्रारम्भिक तथ्याङ्क अनुसार जिल्लागत जनसंख्या विवरण</li>
+                <li class="breadcrumb-item active" aria-current="page">राष्ट्रिय जनगणना २०७८ को प्रारम्भिक तथ्याङ्क अनुसार
+                    जिल्लागत जनसंख्या विवरण</li>
             </ol>
         </nav>
         <div class="container">
@@ -26,7 +27,7 @@
 
             <div class="card-body">
                 <form
-                    action="{{ $nationalPopulationCensus->id ? route('national-population-census.update',$nationalPopulationCensus) : route('national-population-census.store') }}"
+                    action="{{ $nationalPopulationCensus->id ? route('national-population-census.update', $nationalPopulationCensus) : route('national-population-census.store') }}"
                     method="POST" class="form">
                     @csrf
                     @isset($nationalPopulationCensus->id)
@@ -37,12 +38,13 @@
                             <label for="select-province-id">प्रदेशको नाम</label>
                             <select id="select-province-id" class="custom-select">
                                 @isset($municipality->district->province)
-                                <option value="{{ $municipality->district->province->id }}" selected>{{ $municipality->district->province->name }}</option>
+                                    <option value="{{ $municipality->district->province->id }}" selected>
+                                        {{ $municipality->district->province->name }}</option>
                                 @else
-                                <option value="">प्रदेश छान्नुहोस्</option>
+                                    <option value="">प्रदेश छान्नुहोस्</option>
                                 @endisset
-                                @foreach($provinces as $province)
-                                <option value="{{ $province->id }}">{{ $province->name }}</option>
+                                @foreach ($provinces as $province)
+                                    <option value="{{ $province->id }}">{{ $province->name }}</option>
                                 @endforeach
                             </select>
                         </div>
@@ -50,14 +52,16 @@
                             <label for="select-district-id">जिल्लाको नाम</label>
                             <select name="district" id="select-district-id" class="custom-select">
                                 @isset($nationalPopulationCensus->id)
-                                <option value="{{ $nationalPopulationCensus->district}}" selected>{{ $nationalPopulationCensus->district }}</option>
+                                    <option value="{{ $nationalPopulationCensus->district }}" selected>
+                                        {{ $nationalPopulationCensus->district }}</option>
                                 @else
-                                <option value="">जिल्ला छान्नुहोस्</option>
+                                    <option value="">जिल्ला छान्नुहोस्</option>
                                 @endisset
-                                @foreach($provinces as $province)
-                                @foreach($province->districts as $district)
-                                <option value="{{ $district->name }}" data-province-id="{{ $province->id }}">{{ $district->name }}</option>
-                                @endforeach
+                                @foreach ($provinces as $province)
+                                    @foreach ($province->districts as $district)
+                                        <option value="{{ $district->name }}" data-province-id="{{ $province->id }}">
+                                            {{ $district->name }}</option>
+                                    @endforeach
                                 @endforeach
                             </select>
                         </div>
@@ -127,7 +131,8 @@
         <div class="container-fluid">
             <div class="card z-depth-0">
                 <div class="card-header">
-                    <h1 class="h3-responsive d-inline-block">राष्ट्रिय जनगणना २०७८ को प्रारम्भिक तथ्याङ्क अनुसार जिल्लागत जनसंख्या विवरण</h1>
+                    <h1 class="h3-responsive d-inline-block">राष्ट्रिय जनगणना २०७८ को प्रारम्भिक तथ्याङ्क अनुसार जिल्लागत
+                        जनसंख्या विवरण</h1>
                     {{-- <small>(हाल {{ count($schools)  }}  विद्यालय {{ count($schools) > 1 ? 'हरु छन्' : 'छ' }} )</small> --}}
 
                 </div>
@@ -136,18 +141,19 @@
                         <thead>
                             <tr>
                                 <th colspan="4"></th>
-                                <th colspan="3" style="background: gray" class="text-white text-center">प्रारम्भिक जनसंख्या</th>
+                                <th colspan="3" style="background: gray" class="text-white text-center">प्रारम्भिक
+                                    जनसंख्या</th>
                             </tr>
-                           <tr>
+                            <tr>
                                 <th>क्षेत्र</th>
                                 <th>कुल जनसंख्या</th>
                                 <th>जनगणना घरसंख्या</th>
                                 <th>घरपरिवार संख्या</th>
-                               <th>जम्मा</th>
+                                <th>जम्मा</th>
                                 <th>पुरुष</th>
                                 <th>महिला</th>
                                 <th>लैंगिक अनुपात</th>
-                                <th>औषत परिवार आकार	</th>
+                                <th>औषत परिवार आकार </th>
                                 <th>वार्षिक वृद्धिदर(%)</th>
                                 <th>जनघनत्व र(प्रतिवग कि.मि.)</th>
                             </tr>
@@ -159,21 +165,21 @@
                                     <td>{{ $item->population }}</td>
                                     <td>{{ $item->census_house_number }}</td>
                                     <td>{{ $item->house_number }}</td>
-                                    <td>{{ $item->male+$item->female }}</td>
-                                    <td>{{ $item->male}}</td>
-                                    <td>{{ $item->female}}</td>
-                                    <td>{{ $item->ratio}}</td>
-                                    <td>{{ $item->avg_family_size}}</td>
-                                    <td>{{ $item->increase_rate}}</td>
-                                    <td>{{ $item->dencity}}</td>
-                                   
+                                    <td>{{ $item->male + $item->female }}</td>
+                                    <td>{{ $item->male }}</td>
+                                    <td>{{ $item->female }}</td>
+                                    <td>{{ $item->ratio }}</td>
+                                    <td>{{ $item->avg_family_size }}</td>
+                                    <td>{{ $item->increase_rate }}</td>
+                                    <td>{{ $item->dencity }}</td>
+
                                     <td></td>
                                     <td>
                                         <a class="action-btn text-primary"
                                             href="{{ route('national-population-census.edit', $item) }}"><i
                                                 class="far fa-edit"></i></a>
-                                        <form action="{{ route('national-population-census.destroy', $item) }}" method="post"
-                                            onsubmit="return confirm('के तपाईँ निश्चित हुनुहुन्छ?')"
+                                        <form action="{{ route('national-population-census.destroy', $item) }}"
+                                            method="post" onsubmit="return confirm('के तपाईँ निश्चित हुनुहुन्छ?')"
                                             class="form-inline d-inline">
                                             @csrf
                                             @method('delete')
