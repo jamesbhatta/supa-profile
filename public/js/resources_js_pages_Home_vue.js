@@ -988,9 +988,8 @@ var render = function () {
                 _vm._v(" "),
                 _c("pie", {
                   attrs: {
-                    "chart-options": {
-                      plugins: { legend: { display: false } },
-                    },
+                    "chart-options": { plugins: { legend: { display: true } } },
+                    plugins: _vm.pieChartPlugins,
                     "chart-data": {
                       labels: ["हिमाली", "पहाडी", "तराई"],
                       datasets: [
@@ -1026,7 +1025,9 @@ var render = function () {
                   [
                     _c("Bar", {
                       attrs: {
-                        "chart-options": { responsive: true },
+                        "chart-options": {
+                          plugins: { legend: { display: false } },
+                        },
                         "chart-data": {
                           labels: ["पुरुष", "महिला"],
                           datasets: [
@@ -1050,7 +1051,9 @@ var render = function () {
                   [
                     _c("Bar", {
                       attrs: {
-                        "chart-options": { responsive: true },
+                        "chart-options": {
+                          plugins: { legend: { display: false } },
+                        },
                         "chart-data": {
                           labels: ["पुरुष", "महिला"],
                           datasets: [
@@ -1086,6 +1089,7 @@ var render = function () {
                   _c("Pie", {
                     attrs: {
                       "chart-options": { responsive: true },
+                      plugins: _vm.pieChartPlugins,
                       "chart-data": {
                         // labels: ['2068', '2078'],
                         datasets: [
@@ -1112,6 +1116,7 @@ var render = function () {
                   _c("Pie", {
                     attrs: {
                       "chart-options": { responsive: true },
+                      plugins: _vm.pieChartPlugins,
                       "chart-data": {
                         // labels: ['2068', '2078'],
                         datasets: [
@@ -1138,6 +1143,7 @@ var render = function () {
                   _c("Pie", {
                     attrs: {
                       "chart-options": { responsive: true },
+                      plugins: _vm.pieChartPlugins,
                       "chart-data": {
                         // labels: ['2068', '2078'],
                         datasets: [
@@ -1284,6 +1290,7 @@ var render = function () {
               _c("pie", {
                 attrs: {
                   "chart-options": { responsive: true },
+                  plugins: _vm.pieChartPlugins,
                   "chart-data": {
                     labels: ["कालोपत्रे", "ग्राभेल", "कच्ची"],
                     datasets: [
@@ -1361,6 +1368,7 @@ var render = function () {
               _c("pie", {
                 attrs: {
                   "chart-options": { responsive: true },
+                  plugins: _vm.pieChartPlugins,
                   "chart-data": {
                     labels: ["प्रदेश", "प्रतिनिधिसभा"],
                     datasets: [

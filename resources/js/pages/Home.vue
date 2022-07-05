@@ -89,7 +89,7 @@
         <div class="chart-card">
           <div class="chart-body">
             <div class="chart-title mb-3">भौगोलिक क्षेत्रगत क्षेत्रफल</div>
-            <pie :chart-options="{ plugins: { legend: { display: false } } }" :chart-data="{
+            <pie :chart-options="{ plugins: { legend: { display: true } } }" :plugins="pieChartPlugins"  :chart-data="{
               labels: ['हिमाली', 'पहाडी', 'तराई'],
               datasets: [
                 {
@@ -120,7 +120,7 @@
             <div class="row">
               <div class="col-md-1"></div>
               <div class="col-md-5">
-                <Bar :chart-options="{ responsive: true }" :chart-data="{
+                <Bar :chart-options="{ plugins: { legend: { display: false } }}" :chart-data="{
                   labels: ['पुरुष', 'महिला'],
                   datasets: [
                     {
@@ -133,7 +133,7 @@
                 <div class="text-center year"><label>2068</label></div>
               </div>
               <div class="col-md-5 my-pie">
-                <Bar :chart-options="{ responsive: true }" :chart-data="{
+                <Bar :chart-options="{plugins: { legend: { display: false} } }" :chart-data="{
                   labels: ['पुरुष', 'महिला'],
                   datasets: [
                     {
@@ -171,7 +171,7 @@
               </div>
             </div>
             <div class="col-md-4">
-              <Pie :chart-options="{ responsive: true }" :chart-data="{
+              <Pie :chart-options="{ responsive: true }" :plugins="pieChartPlugins" :chart-data="{
                 // labels: ['2068', '2078'],
                 datasets: [
                   {
@@ -185,7 +185,7 @@
             </div>
 
             <div class="col-md-4">
-              <Pie :chart-options="{ responsive: true }" :chart-data="{
+              <Pie :chart-options="{ responsive: true }" :plugins="pieChartPlugins" :chart-data="{
                 // labels: ['2068', '2078'],
                 datasets: [
                   {
@@ -199,7 +199,7 @@
             </div>
 
             <div class="col-md-4">
-              <Pie :chart-options="{ responsive: true }" :chart-data="{
+              <Pie :chart-options="{ responsive: true }" :plugins="pieChartPlugins" :chart-data="{
                 // labels: ['2068', '2078'],
                 datasets: [
                   {
@@ -296,7 +296,7 @@
 
       <div class="col-md-3">
         <div class="card">
-          <pie :chart-options="{ responsive: true }" :chart-data="{
+          <pie :chart-options="{ responsive: true }" :plugins="pieChartPlugins" :chart-data="{
             labels: ['कालोपत्रे', 'ग्राभेल', 'कच्ची'],
             datasets: [
               {
@@ -348,7 +348,7 @@
 
       <div class="col-md-3">
         <div class="card">
-          <pie :chart-options="{ responsive: true }" :chart-data="{
+          <pie :chart-options="{ responsive: true }" :plugins="pieChartPlugins" :chart-data="{
             labels: ['प्रदेश', 'प्रतिनिधिसभा'],
             datasets: [
               {
