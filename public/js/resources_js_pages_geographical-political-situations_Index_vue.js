@@ -776,7 +776,7 @@ var render = function () {
                 { attrs: { data: _vm.geographicalAreaData } },
                 [
                   _c("template", { slot: "chart" }, [
-                    _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "row justify-content-center" }, [
                       _c(
                         "div",
                         { staticClass: "col-md-6" },
@@ -784,23 +784,6 @@ var render = function () {
                           _c("pie-chart", {
                             attrs: {
                               "chart-data": _vm.geographicalAreaChartData,
-                              width: 200,
-                              height: 200,
-                            },
-                          }),
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        { staticClass: "col-md-6" },
-                        [
-                          _c("bar-chart", {
-                            attrs: {
-                              "chart-data": _vm.geographicalAreaChartData,
-                              width: 200,
-                              height: 200,
                             },
                           }),
                         ],

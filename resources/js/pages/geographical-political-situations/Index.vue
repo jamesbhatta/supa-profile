@@ -72,13 +72,13 @@
 
             <data-viewer :data="geographicalAreaData">
               <template slot="chart">
-                <div class="row">
+                <div class="row justify-content-center">
                   <div class="col-md-6">
-                    <pie-chart :chart-data="geographicalAreaChartData" :width="200" :height="200"></pie-chart>
+                    <pie-chart :chart-data="geographicalAreaChartData"></pie-chart>
                   </div>
-                  <div class="col-md-6">
+                  <!-- <div class="col-md-6">
                     <bar-chart :chart-data="geographicalAreaChartData" :width="200" :height="200"></bar-chart>
-                  </div>
+                  </div> -->
                 </div>
               </template>
             </data-viewer>
