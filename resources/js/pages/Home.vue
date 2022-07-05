@@ -65,7 +65,7 @@
     </div>
     <div class="my-5"></div>
 
-  <gis-tile></gis-tile>
+    <gis-tile></gis-tile>
 
     <div class="row">
 
@@ -73,7 +73,7 @@
         <div class="chart-card">
           <div class="chart-body">
             <div class="chart-title mb-3">शैक्षिक संस्था संख्या</div>
-            <pie :chart-options="{ responsive: true}" :plugins="pieChartPlugins" :chart-data="{
+            <pie :chart-options="{ responsive: true }" :plugins="pieChartPlugins" :chart-data="{
               labels: ['सामुदायिक', 'संस्थागत'],
               datasets: [
                 {
@@ -89,14 +89,14 @@
         <div class="chart-card">
           <div class="chart-body">
             <div class="chart-title mb-3">भौगोलिक क्षेत्रगत क्षेत्रफल</div>
-            <pie :chart-options="{ plugins: { legend: { display: true } } }" :plugins="pieChartPlugins"  :chart-data="{
+            <pie :chart-options="{ plugins: { legend: { display: true } } }" :plugins="pieChartPlugins" :chart-data="{
               labels: ['हिमाली', 'पहाडी', 'तराई'],
               datasets: [
                 {
                   backgroundColor: ['#007bff', '#dc3545', 'green'],
                   data: [8393.11, 6748.78, 4857.39],
                 },
-
+            
               ],
             }" />
           </div>
@@ -120,20 +120,20 @@
             <div class="row">
               <div class="col-md-1"></div>
               <div class="col-md-5">
-                <Bar :chart-options="{ plugins: { legend: { display: false } }}" :chart-data="{
+                <Bar :chart-options="{ plugins: { legend: { display: false } } }" :chart-data="{
                   labels: ['पुरुष', 'महिला'],
                   datasets: [
                     {
                       backgroundColor: ['#007bff', '#dc3545'],
                       data: [1287997, 1423273],
                     },
-
+                
                   ],
                 }" />
                 <div class="text-center year"><label>2068</label></div>
               </div>
               <div class="col-md-5 my-pie">
-                <Bar :chart-options="{plugins: { legend: { display: false} } }" :chart-data="{
+                <Bar :chart-options="{ plugins: { legend: { display: false } } }" :chart-data="{
                   labels: ['पुरुष', 'महिला'],
                   datasets: [
                     {
@@ -368,52 +368,89 @@
 
     <!-- ================================================ -->
 
-    <div class="row my-4 ministries p-3">
-      <div class="col-lg-4 mt-3">
-        <a href="#" class="card text-dark text-center py-3 font-weight-bold">
-          <span style="align-items:center;" height="80px" width="90px">
+    <div class="p-3">
+      <div class="row my-4 ministries p-3">
+        <div class="col-lg-4 mt-3">
+          <a href="#" class="card text-dark text-center py-3 font-weight-bold">
+            <span style="align-items:center;" height="80px" width="90px">
 
-            <img src="https://img.icons8.com/dotty/80/000000/parliament.png" />
-          </span>
-          हालको मन्त्रिपरिषद्
-        </a>
-      </div>
+              <img src="https://img.icons8.com/dotty/80/000000/parliament.png" />
+            </span>
+            हालको मन्त्रिपरिषद्
+          </a>
+        </div>
 
-      <div class="col-lg-4 mt-3">
-        <a href="#" class="card text-dark text-center py-4 font-weight-bold">
-          <span style="align-items:center;" height="80px" width="90px">
-            <img
-              src="https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/64/000000/external-geography-back-to-school-xnimrodx-lineal-color-xnimrodx.png" />
-          </span>
-          हाम्रो भूगोल
+        <div class="col-lg-4 mt-3">
+          <a href="#" class="card text-dark text-center py-4 font-weight-bold">
+            <span style="align-items:center;" height="80px" width="90px">
+              <img
+                src="https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/64/000000/external-geography-back-to-school-xnimrodx-lineal-color-xnimrodx.png" />
+            </span>
+            हाम्रो भूगोल
 
-        </a>
-      </div>
-      <div class="col-lg-4 mt-3">
-        <a href="#" class="card text-dark text-center py-2 font-weight-bold">
-          <span style="align-items:center;" height="60px" width="70px">
-            <img src="https://img.icons8.com/clouds/100/000000/globe--v2.png" />
-          </span>
-          पर्यटक स्थल
-        </a>
-      </div>
-      <div class="col-lg-4 mt-3">
-        <router-link to="#" class="card text-dark text-center py-5 font-weight-bold">
-स्थानीय तहकाहरू वेबसाइट
-        </router-link>
-      </div>
+          </a>
+        </div>
+        <div class="col-lg-4 mt-3">
+          <a href="#" class="card text-dark text-center py-2 font-weight-bold">
+            <span style="align-items:center;" height="60px" width="70px">
+              <img src="https://img.icons8.com/clouds/100/000000/globe--v2.png" />
+            </span>
+            पर्यटक स्थल
+          </a>
+        </div>
+        <div class="col-lg-4 mt-3">
+          <router-link to="#" class="card text-dark text-center py-5 font-weight-bold">
+            स्थानीय तहकाहरू वेबसाइट
+          </router-link>
+        </div>
 
-      <div class="col-lg-4 mt-3">
-        <a href="#" class="card text-dark text-center py-5 font-weight-bold">
-          ई-पुस्तकालय
-        </a>
-      </div>
-      <div class="col-lg-4 mt-3">
-        <router-link to="#" class="card text-dark text-center py-5 font-weight-bold">
-          सामाजिक संजाल
-        </router-link>
-      </div>
+        <div class="col-lg-4 mt-3">
+          <a href="#" class="card text-dark text-center py-5 font-weight-bold">
+            ई-पुस्तकालय
+          </a>
+        </div>
+        <div class="col-lg-4 mt-3">
+          <router-link to="#" class="card text-dark text-center py-5 font-weight-bold">
+            सामाजिक संजाल
+          </router-link>
+        </div>
 
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Facebook</th>
+              <th scope="col">LinkedIn</th>
+              <th scope="col">twitter</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
   </div>
