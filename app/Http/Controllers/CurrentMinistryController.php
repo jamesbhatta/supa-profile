@@ -83,6 +83,7 @@ class CurrentMinistryController extends Controller
     }
     public function profile()
     {
+        
         return view('ministry-profile.index');
     }
 }
