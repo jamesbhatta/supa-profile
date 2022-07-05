@@ -6,6 +6,8 @@ import VueRouter from "vue-router";
 import routes from "./routes";
 
 window.Vue = Vue; //this is important! Do not use require('vue') for livewire-vue
+import VueIframe from 'vue-iframes'
+Vue.use(VueIframe);
 
 // Register Vue components
 Vue.component("navbar", require("./components/Navbar.vue").default);
@@ -17,6 +19,7 @@ Vue.component(
 Vue.component("data-viewer", require("./components/DataViewer.vue").default);
 Vue.component("pie-chart", require("./charts/PieChart.vue").default);
 Vue.component("bar-chart", require("./charts/BarChart.vue").default);
+// Vue.component("minister-profile",require("./components/MinisterProfile.vue"));
 // Vue.component("economical-situation", require("./pages/economical-situation/Index.vue").default);
 
 Vue.use(VueRouter);

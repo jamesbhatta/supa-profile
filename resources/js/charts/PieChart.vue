@@ -13,14 +13,16 @@
 </template>
 
 <script>
+import ChartDataLabels from 'chartjs-plugin-datalabels';
 import { Pie } from "vue-chartjs/legacy";
-
 import { Chart as ChartJS, Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale, ArcElement } from "chart.js";
 
-ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale, ArcElement);
-
+ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale, ArcElement); //, ChartDataLabels);
+ChartJS.defaults.set('plugins.datalabels', {
+  color: '#fff'
+});
 export default {
-  name: "BarChart",
+  name: "PieChart",
   components: { Pie },
   props: {
     chartData: {

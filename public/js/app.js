@@ -1888,8 +1888,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var vue_chartjs_legacy__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-chartjs/legacy */ "./node_modules/vue-chartjs/legacy/index.js");
-/* harmony import */ var chart_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! chart.js */ "./node_modules/chart.js/dist/chart.esm.js");
+Object(function webpackMissingModule() { var e = new Error("Cannot find module 'chartjs-plugin-datalabels'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+/* harmony import */ var vue_chartjs_legacy__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue-chartjs/legacy */ "./node_modules/vue-chartjs/legacy/index.js");
+/* harmony import */ var chart_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! chart.js */ "./node_modules/chart.js/dist/chart.esm.js");
 //
 //
 //
@@ -1906,11 +1907,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 
 
-chart_js__WEBPACK_IMPORTED_MODULE_0__.Chart.register(chart_js__WEBPACK_IMPORTED_MODULE_0__.Title, chart_js__WEBPACK_IMPORTED_MODULE_0__.Tooltip, chart_js__WEBPACK_IMPORTED_MODULE_0__.Legend, chart_js__WEBPACK_IMPORTED_MODULE_0__.BarElement, chart_js__WEBPACK_IMPORTED_MODULE_0__.CategoryScale, chart_js__WEBPACK_IMPORTED_MODULE_0__.LinearScale, chart_js__WEBPACK_IMPORTED_MODULE_0__.ArcElement);
+
+chart_js__WEBPACK_IMPORTED_MODULE_1__.Chart.register(chart_js__WEBPACK_IMPORTED_MODULE_1__.Title, chart_js__WEBPACK_IMPORTED_MODULE_1__.Tooltip, chart_js__WEBPACK_IMPORTED_MODULE_1__.Legend, chart_js__WEBPACK_IMPORTED_MODULE_1__.BarElement, chart_js__WEBPACK_IMPORTED_MODULE_1__.CategoryScale, chart_js__WEBPACK_IMPORTED_MODULE_1__.LinearScale, chart_js__WEBPACK_IMPORTED_MODULE_1__.ArcElement); //, ChartDataLabels);
+
+chart_js__WEBPACK_IMPORTED_MODULE_1__.Chart.defaults.set('plugins.datalabels', {
+  color: '#fff'
+});
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: "BarChart",
+  name: "PieChart",
   components: {
-    Pie: vue_chartjs_legacy__WEBPACK_IMPORTED_MODULE_1__.Pie
+    Pie: vue_chartjs_legacy__WEBPACK_IMPORTED_MODULE_2__.Pie
   },
   props: {
     chartData: {
@@ -2461,8 +2467,9 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
-/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
+/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
 /* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./routes */ "./resources/js/routes.js");
+Object(function webpackMissingModule() { var e = new Error("Cannot find module 'vue-iframes'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js"); // import { vue } from "laravel-mix";
 
 
@@ -2470,20 +2477,23 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js"); // import
 
 
 window.Vue = vue__WEBPACK_IMPORTED_MODULE_1__["default"]; //this is important! Do not use require('vue') for livewire-vue
-// Register Vue components
+
+
+vue__WEBPACK_IMPORTED_MODULE_1__["default"].use(Object(function webpackMissingModule() { var e = new Error("Cannot find module 'vue-iframes'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())); // Register Vue components
 
 vue__WEBPACK_IMPORTED_MODULE_1__["default"].component("navbar", (__webpack_require__(/*! ./components/Navbar.vue */ "./resources/js/components/Navbar.vue")["default"]));
 vue__WEBPACK_IMPORTED_MODULE_1__["default"].component("fields-form", (__webpack_require__(/*! ./components/FieldsForm.vue */ "./resources/js/components/FieldsForm.vue")["default"]));
 vue__WEBPACK_IMPORTED_MODULE_1__["default"].component("resource-data-form", (__webpack_require__(/*! ./components/ResourceDataForm.vue */ "./resources/js/components/ResourceDataForm.vue")["default"]));
 vue__WEBPACK_IMPORTED_MODULE_1__["default"].component("data-viewer", (__webpack_require__(/*! ./components/DataViewer.vue */ "./resources/js/components/DataViewer.vue")["default"]));
 vue__WEBPACK_IMPORTED_MODULE_1__["default"].component("pie-chart", (__webpack_require__(/*! ./charts/PieChart.vue */ "./resources/js/charts/PieChart.vue")["default"]));
-vue__WEBPACK_IMPORTED_MODULE_1__["default"].component("bar-chart", (__webpack_require__(/*! ./charts/BarChart.vue */ "./resources/js/charts/BarChart.vue")["default"])); // Vue.component("economical-situation", require("./pages/economical-situation/Index.vue").default);
+vue__WEBPACK_IMPORTED_MODULE_1__["default"].component("bar-chart", (__webpack_require__(/*! ./charts/BarChart.vue */ "./resources/js/charts/BarChart.vue")["default"])); // Vue.component("minister-profile",require("./components/MinisterProfile.vue"));
+// Vue.component("economical-situation", require("./pages/economical-situation/Index.vue").default);
 
-vue__WEBPACK_IMPORTED_MODULE_1__["default"].use(vue_router__WEBPACK_IMPORTED_MODULE_2__["default"]); // Initialize Vue
+vue__WEBPACK_IMPORTED_MODULE_1__["default"].use(vue_router__WEBPACK_IMPORTED_MODULE_3__["default"]); // Initialize Vue
 
 var app = new vue__WEBPACK_IMPORTED_MODULE_1__["default"]({
   el: "#app",
-  router: new vue_router__WEBPACK_IMPORTED_MODULE_2__["default"](_routes__WEBPACK_IMPORTED_MODULE_0__["default"])
+  router: new vue_router__WEBPACK_IMPORTED_MODULE_3__["default"](_routes__WEBPACK_IMPORTED_MODULE_0__["default"])
 });
 
 /***/ }),
@@ -2603,6 +2613,12 @@ var routes = {
     name: "miscellaneous",
     component: function component() {
       return __webpack_require__.e(/*! import() */ "resources_js_pages_miscellaneous_Index_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/miscellaneous/Index.vue */ "./resources/js/pages/miscellaneous/Index.vue"));
+    }
+  }, {
+    path: "/minister-profile",
+    name: "minister-profile",
+    component: function component() {
+      return __webpack_require__.e(/*! import() */ "resources_js_pages_MinisterProfile_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/MinisterProfile.vue */ "./resources/js/pages/MinisterProfile.vue"));
     }
   }]
 };
@@ -76749,7 +76765,7 @@ const version = XLSX.version;
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_pages_Home_vue":1,"resources_js_pages_About_vue":1,"resources_js_pages_geographical-political-situations_Index_vue":1,"resources_js_pages_demographic-status_Index_vue":1,"resources_js_pages_economical-situation_Index_vue":1,"resources_js_pages_social-status_Index_vue":1,"resources_js_pages_condition-of-physical-infrastructure_Index_vue":1,"resources_js_pages_status-of-tourism-development_Index_vue":1,"resources_js_pages_industry-business_Index_vue":1,"resources_js_pages_state-of-agricultural-sector_Index_vue":1,"resources_js_pages_forest-and-environment_Index_vue":1,"resources_js_pages_miscellaneous_Index_vue":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_pages_Home_vue":1,"resources_js_pages_About_vue":1,"resources_js_pages_geographical-political-situations_Index_vue":1,"resources_js_pages_demographic-status_Index_vue":1,"resources_js_pages_economical-situation_Index_vue":1,"resources_js_pages_social-status_Index_vue":1,"resources_js_pages_condition-of-physical-infrastructure_Index_vue":1,"resources_js_pages_status-of-tourism-development_Index_vue":1,"resources_js_pages_industry-business_Index_vue":1,"resources_js_pages_state-of-agricultural-sector_Index_vue":1,"resources_js_pages_forest-and-environment_Index_vue":1,"resources_js_pages_miscellaneous_Index_vue":1,"resources_js_pages_MinisterProfile_vue":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};
