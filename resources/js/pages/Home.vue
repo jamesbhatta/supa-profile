@@ -93,7 +93,7 @@
                   backgroundColor: ['#007bff', '#dc3545', 'green'],
                   data: [8393.11, 6748.78, 4857.39],
                 },
-                
+            
               ],
             }" />
           </div>
@@ -124,7 +124,7 @@
                       backgroundColor: ['#007bff', '#dc3545'],
                       data: [1287997, 1423273],
                     },
-                    
+                
                   ],
                 }" />
                 <div class="text-center year"><label>2068</label></div>
@@ -235,18 +235,18 @@
       <div class="col-md-3">
         <div class="card">
           <div class="col-11">
-              <bar :chart-options="{ plugins: { legend: { display: false } } }" :chart-data="{
-                labels: ['महिला', 'पुरुष', 'जम्मा'],
-                datasets: [
-                  {
-                    backgroundColor: ['#007bff', '#dc3545', 'green'],
-                    data: [51.93, 76.4, 63.48],
-                  },
-                ],
-              }" />
+            <bar :chart-options="{ plugins: { legend: { display: false } } }" :chart-data="{
+              labels: ['महिला', 'पुरुष', 'जम्मा'],
+              datasets: [
+                {
+                  backgroundColor: ['#007bff', '#dc3545', 'green'],
+                  data: [51.93, 76.4, 63.48],
+                },
+              ],
+            }" />
 
-              <label class="col-12 text-center">साक्षरता दर</label>
-            </div>
+            <label class="col-12 text-center">साक्षरता दर</label>
+          </div>
         </div>
       </div>
       <div class="col-md-12">
@@ -362,76 +362,24 @@
 
 
 
-    <!-- ================= -->
-    <div class="row mt-5">
-      <div class="col-md-12">
-        <div class="chart-card">
-          <div class="chart-body">
-            <div class="chart-title mb-3">श्रम सम्बन्धि सूचक</div>
-            <div class="row">
-              <div class="col-md-6 mybar">
-                <bar :chart-options="{ responsive: true }" :chart-data="{
-                  labels: ['बेरोजगारी दर', 'श्रम शक्ति सजभागिता दर', 'जनसंख्या अनुपातमा रोजगार', 'रोजगारको क्षेत्र', 'रोजगार'],
-                  datasets: [
-                    {
-                      label: 'पुरुष',
-                      data: [11.5, 45.6, 40.4],
-                      backgroundColor: '#007bff',
-                    },
-                    {
-                      label: 'महिला',
-                      data: [11.5, 15.7, 0],
-                      backgroundColor: '#dc3545',
-                    },
-                    {
-                      label: 'औपचारिक',
-                      data: [0, 0, 0, 33.3, 14.8],
-                      backgroundColor: 'pink',
-                    },
-                    {
-                      label: 'अनौपचारिक',
-                      data: [0, 0, 0, 66.7, 85.2],
-                      backgroundColor: '#00663d',
-                    },
-                  ],
-                }" />
 
-                <label class="col-12 text-center">(सुदुरपश्चिममा)</label>
-              </div>
-              <div class="col-md-6">
-                <bar :chart-options="{ responsive: true }" :chart-data="{
-                  labels: ['बेरोजगारी दर', 'श्रम शक्ति सजभागिता दर', 'जनसंख्या अनुपातमा रोजगार', 'रोजगारको क्षेत्र', 'रोजगार'],
-                  datasets: [
-                    {
-                      label: 'पुरुष',
-                      data: [10.3, 53.8, 48.3],
-                      backgroundColor: '#007bff',
-                    },
-                    {
-                      label: 'महिला',
-                      data: [13.1, 26.3, 0],
-                      backgroundColor: '#dc3545',
-                    },
-                    {
-                      label: 'औपचारिक',
-                      data: [0, 0, 0, 37.8, 15.4],
-                      backgroundColor: 'pink',
-                    },
-                    {
-                      label: 'अनौपचारिक',
-                      data: [0, 0, 0, 62.2, 84.6],
-                      backgroundColor: '#00663d',
-                    },
-                  ],
-                }" />
+    <!-- ================================================ -->
 
-                <label class="col-12 text-center">(नेपालमा)</label>
-              </div>
-            </div>
-          </div>
-        </div>
+    <div class="row my-4">
+      <div class="col-md-3">
+        <a href="#" class="card text-dark text-center py-5">
+          हालको मन्त्रिपरिषद्
+        </a>
       </div>
+
+      <div class="col-md-3">
+        <a href="#" class="card text-dark text-center py-5">
+          partakiye sthal
+        </a>
+      </div>
+
     </div>
+
   </div>
 </template>
 
@@ -493,9 +441,9 @@ export default {
     };
   },
 
-    mounted() {
-      this.fetchInfoCards();
-    },
+  mounted() {
+    this.fetchInfoCards();
+  },
 
   methods: {
     fetchInfoCards() {
