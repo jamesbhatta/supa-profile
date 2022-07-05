@@ -1,3 +1,4 @@
+
 <template>
   <div class="container py-4">
     <div class="row">
@@ -93,7 +94,7 @@
                   backgroundColor: ['#007bff', '#dc3545', 'green'],
                   data: [8393.11, 6748.78, 4857.39],
                 },
-            
+
               ],
             }" />
           </div>
@@ -124,7 +125,7 @@
                       backgroundColor: ['#007bff', '#dc3545'],
                       data: [1287997, 1423273],
                     },
-                
+
                   ],
                 }" />
                 <div class="text-center year"><label>2068</label></div>
@@ -367,20 +368,31 @@
 
     <div class="row my-4 ministries p-3">
       <div class="col-lg-4 mt-3">
-        <a href="#" class="card text-dark text-center py-4 font-weight-bold">
-          <i class="fas fa-crown fa-3x text-warning my-3"></i>
+        <a href="#" class="card text-dark text-center py-3 font-weight-bold">
+          <span style="align-items:center;" height="80px" width="90px">
+
+            <img src="https://img.icons8.com/dotty/80/000000/parliament.png" />
+          </span>
           हालको मन्त्रिपरिषद्
         </a>
       </div>
 
       <div class="col-lg-4 mt-3">
-        <a href="#" class="card text-dark text-center py-5 font-weight-bold">
-          पर्यटक स्थल
+        <a href="#" class="card text-dark text-center py-4 font-weight-bold">
+          <span style="align-items:center;" height="80px" width="90px">
+            <img
+              src="https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/64/000000/external-geography-back-to-school-xnimrodx-lineal-color-xnimrodx.png" />
+          </span>
+          हाम्रो भूगोल
+
         </a>
       </div>
       <div class="col-lg-4 mt-3">
-        <a href="#" class="card text-dark text-center py-5 font-weight-bold">
-          Hamro Bhugol
+        <a href="#" class="card text-dark text-center py-2 font-weight-bold">
+          <span style="align-items:center;" height="60px" width="70px">
+            <img src="https://img.icons8.com/clouds/100/000000/globe--v2.png" />
+          </span>
+          पर्यटक स्थल
         </a>
       </div>
       <div class="col-lg-4 mt-3">
@@ -405,7 +417,7 @@
   </div>
 </template>
 <style>
-.ministries{
+.ministries {
   background-color: #e1e1dd;
 }
 </style>
