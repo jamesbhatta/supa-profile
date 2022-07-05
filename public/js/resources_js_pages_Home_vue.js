@@ -477,6 +477,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 
 
 
@@ -582,7 +587,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.navigation-grid[data-v-b3c5cf30] {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  gap: 1.5rem;\n}\n.navigation-grid>a[data-v-b3c5cf30] {\n  background-color: #fff;\n  padding: 10px 15px;\n  border-radius: 6px;\n  min-height: 200px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  color: #2572bc;\n  font-size: 1.5rem;\n  font-weight: 600;\n  transition: 0.3s ease;\n}\n.navigation-grid>a[data-v-b3c5cf30]:hover {\n  background-color: #2572bc;\n  color: #fff;\n}\n.ministry-card[data-v-b3c5cf30]{\n  border-radius: 10px;\n}\n.ministry-card[data-v-b3c5cf30]:hover{\n  transform: translateY(-5px) scale(1.005) translateZ(0);\n  box-shadow: 0 24px 36px rgba(0,0,0,0.11),\n    0 24px 46px var(--box-shadow-color);\n  background-color: #2572bc;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.navigation-grid[data-v-b3c5cf30] {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  gap: 1.5rem;\n}\n.navigation-grid>a[data-v-b3c5cf30] {\n  background-color: #fff;\n  padding: 10px 15px;\n  border-radius: 6px;\n  min-height: 200px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  color: #2572bc;\n  font-size: 1.5rem;\n  font-weight: 600;\n  transition: 0.3s ease;\n}\n.navigation-grid>a[data-v-b3c5cf30]:hover {\n  background-color: #2572bc;\n  color: #fff;\n}\n.ministry-card[data-v-b3c5cf30] {\n  border-radius: 10px;\n}\n.ministry-card[data-v-b3c5cf30]:hover {\n  transform: translateY(-5px) scale(1.005) translateZ(0);\n  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),\n    0 24px 46px var(--box-shadow-color);\n  background-color: #2572bc;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1375,168 +1380,210 @@ var render = function () {
         ]),
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "row my-4 ministries p-3" }, [
-        _c(
-          "div",
-          { staticClass: "col-lg-4 mt-3" },
-          [
-            _c(
-              "router-link",
-              {
-                staticClass: "card text-dark text-center py-4 font-weight-bold",
-                attrs: { to: "/minister-profile" },
-              },
-              [
-                _c(
-                  "span",
-                  {
-                    staticStyle: { "align-items": "center" },
-                    attrs: { height: "80px", width: "90px" },
-                  },
-                  [
-                    _c("img", {
-                      attrs: {
-                        src: "https://img.icons8.com/ios-filled/50/000000/library.png",
-                      },
-                    }),
-                    _vm._v("\n          हालको मन्त्रिपरिषद्\n        "),
-                  ]
-                ),
-              ]
-            ),
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _vm._m(5),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "col-lg-4 mt-3" },
-          [
-            _c(
-              "router-link",
-              {
-                staticClass: "card text-dark text-center py-4 font-weight-bold",
-                attrs: { to: "#" },
-              },
-              [
-                _c(
-                  "span",
-                  {
-                    staticStyle: { "align-items": "center" },
-                    attrs: { height: "80px", width: "100px" },
-                  },
-                  [
-                    _c("img", {
-                      attrs: {
-                        src: "https://img.icons8.com/color/48/000000/earth-planet.png",
-                      },
-                    }),
-                    _vm._v("\n          पर्यटक स्थल\n        "),
-                  ]
-                ),
-              ]
-            ),
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "col-lg-4 mt-3" },
-          [
-            _c(
-              "router-link",
-              {
-                staticClass: "card text-dark text-center py-5 font-weight-bold",
-                attrs: { to: "#" },
-              },
-              [
-                _c(
-                  "span",
-                  {
-                    staticStyle: { "align-items": "center" },
-                    attrs: { height: "80px", width: "90px" },
-                  },
-                  [
-                    _c("img", {
-                      attrs: {
-                        src: "https://img.icons8.com/color/48/000000/domain--v1.png",
-                      },
-                    }),
-                    _vm._v("\n          स्थानीय तहकाहरू वेबसाइट\n        "),
-                  ]
-                ),
-              ]
-            ),
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "col-lg-4 mt-3" },
-          [
-            _c(
-              "router-link",
-              {
-                staticClass: "card text-dark text-center py-5 font-weight-bold",
-                attrs: { to: "#" },
-              },
-              [
-                _c(
-                  "span",
-                  {
-                    staticStyle: { "align-items": "center" },
-                    attrs: { height: "60px", width: "70px" },
-                  },
-                  [
-                    _c("img", {
-                      attrs: {
-                        src: "https://img.icons8.com/color-glass/48/000000/book-shelf.png",
-                      },
-                    }),
-                    _vm._v("\n          ई-पुस्तकालय\n        "),
-                  ]
-                ),
-              ]
-            ),
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "col-lg-4 mt-3" },
-          [
-            _c(
-              "router-link",
-              {
-                staticClass: "card text-dark text-center py-5 font-weight-bold",
-                attrs: { to: "#" },
-              },
-              [
-                _c(
-                  "span",
-                  {
-                    staticStyle: { "align-items": "center" },
-                    attrs: { height: "60px", width: "70px" },
-                  },
-                  [
-                    _c("img", {
-                      attrs: {
-                        src: "https://img.icons8.com/color/48/000000/myspace.png",
-                      },
-                    }),
-                    _vm._v("\n          सामाजिक संजाल\n        "),
-                  ]
-                ),
-              ]
-            ),
-          ],
-          1
-        ),
+      _c("div", { staticClass: "p-3" }, [
+        _c("div", { staticClass: "row my-4 ministries p-3" }, [
+          _c(
+            "div",
+            { staticClass: "col-lg-4 mt-3" },
+            [
+              _c(
+                "router-link",
+                {
+                  staticClass:
+                    "ministry-card card text-dark text-center py-5 font-weight-bold",
+                  attrs: { to: "/minister-profile" },
+                },
+                [
+                  _c(
+                    "span",
+                    {
+                      staticStyle: { "align-items": "center" },
+                      attrs: { height: "80px", width: "90px" },
+                    },
+                    [
+                      _c("img", {
+                        attrs: {
+                          src: "https://img.icons8.com/ios-filled/50/000000/library.png",
+                          height: "50px",
+                        },
+                      }),
+                      _vm._v("\n            हालको मन्त्रिपरिषद्\n          "),
+                    ]
+                  ),
+                ]
+              ),
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "col-lg-4 mt-3" },
+            [
+              _c(
+                "router-link",
+                {
+                  staticClass:
+                    " ministry-card card text-dark text-center py-5 font-weight-bold",
+                  attrs: { to: "#" },
+                },
+                [
+                  _c(
+                    "span",
+                    {
+                      staticStyle: { "align-items": "center" },
+                      attrs: { height: "80px", width: "90px" },
+                    },
+                    [
+                      _c("img", {
+                        attrs: {
+                          src: "https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/64/000000/external-geography-back-to-school-xnimrodx-lineal-color-xnimrodx.png",
+                          height: "50px",
+                        },
+                      }),
+                      _vm._v("\n            हाम्रो भूगोल\n          "),
+                    ]
+                  ),
+                ]
+              ),
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "col-lg-4 mt-3" },
+            [
+              _c(
+                "router-link",
+                {
+                  staticClass:
+                    " ministry-card card text-dark text-center py-5 font-weight-bold",
+                  attrs: { to: "#" },
+                },
+                [
+                  _c(
+                    "span",
+                    {
+                      staticStyle: { "align-items": "center" },
+                      attrs: { height: "80px", width: "90px" },
+                    },
+                    [
+                      _c("img", {
+                        attrs: {
+                          src: "https://img.icons8.com/color/48/000000/earth-planet.png",
+                        },
+                      }),
+                      _vm._v("\n            पर्यटक स्थल\n          "),
+                    ]
+                  ),
+                ]
+              ),
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "col-lg-4 mt-3" },
+            [
+              _c(
+                "router-link",
+                {
+                  staticClass:
+                    " ministry-card card text-dark text-center py-5 font-weight-bold",
+                  attrs: { to: "#" },
+                },
+                [
+                  _c(
+                    "span",
+                    {
+                      staticStyle: { "align-items": "center" },
+                      attrs: { height: "80px", width: "90px" },
+                    },
+                    [
+                      _c("img", {
+                        attrs: {
+                          src: "https://img.icons8.com/color/48/000000/domain--v1.png",
+                        },
+                      }),
+                      _vm._v(
+                        "\n            स्थानीय तहकाहरू वेबसाइट\n          "
+                      ),
+                    ]
+                  ),
+                ]
+              ),
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "col-lg-4 mt-3" },
+            [
+              _c(
+                "router-link",
+                {
+                  staticClass:
+                    " ministry-card card text-dark text-center py-5 font-weight-bold",
+                  attrs: { to: "#" },
+                },
+                [
+                  _c(
+                    "span",
+                    {
+                      staticStyle: { "align-items": "center" },
+                      attrs: { height: "60px", width: "70px" },
+                    },
+                    [
+                      _c("img", {
+                        attrs: {
+                          src: "https://img.icons8.com/color-glass/48/000000/book-shelf.png",
+                        },
+                      }),
+                      _vm._v("\n            ई-पुस्तकालय\n          "),
+                    ]
+                  ),
+                ]
+              ),
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "col-lg-4 mt-3" },
+            [
+              _c(
+                "router-link",
+                {
+                  staticClass:
+                    " ministry-card card text-dark text-center py-5 font-weight-bold",
+                  attrs: { to: "#" },
+                },
+                [
+                  _c(
+                    "span",
+                    {
+                      staticStyle: { "align-items": "center" },
+                      attrs: { height: "60px", width: "70px" },
+                    },
+                    [
+                      _c("img", {
+                        attrs: {
+                          src: "https://img.icons8.com/color/48/000000/myspace.png",
+                        },
+                      }),
+                      _vm._v("\n            सामाजिक संजाल\n          "),
+                    ]
+                  ),
+                ]
+              ),
+            ],
+            1
+          ),
+        ]),
       ]),
     ],
     1
@@ -1601,32 +1648,6 @@ var staticRenderFns = [
           _c("div", { staticClass: "col-md-5" }),
         ]),
       ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-lg-4 mt-3" }, [
-      _c(
-        "a",
-        {
-          staticClass: "card text-dark text-center py-4 font-weight-bold",
-          attrs: { href: "#" },
-        },
-        [
-          _c("span", { staticStyle: { "align-items": "center" } }, [
-            _c("img", {
-              attrs: {
-                src: "https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/64/000000/external-geography-back-to-school-xnimrodx-lineal-color-xnimrodx.png",
-                height: "50px",
-                width: "65px",
-              },
-            }),
-            _vm._v("\n          हाम्रो भूगोल\n        "),
-          ]),
-        ]
-      ),
     ])
   },
 ]

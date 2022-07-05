@@ -49,21 +49,31 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
-      infoCards: []
+      ministryDetails: []
     };
   },
   mounted: function mounted() {
-    this.fetchInfoCards();
+    this.fetchMinistryDetail();
   },
   methods: {
-    fetchInfoCards: function fetchInfoCards() {
+    fetchMinistryDetail: function fetchMinistryDetail() {
       var _this = this;
 
       axios.get("/api/display-ministry").then(function (response) {
-        _this.infoCards = response.data;
+        _this.ministryDetails = response.data;
         console.log(response.data);
       })["catch"](function (error) {
         return console.log(error);
@@ -90,7 +100,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.mycards{\n    height: 330px;\n}\n.mycards img{\n    height: 100%;\n    width: 100%;\n    -o-object-fit: fill;\n       object-fit: fill;\n}\n.box{\n    background-color: white;\n    border-radius: 10px;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.mycards {\n  height: 330px;\n}\n.mycards img {\n  height: 100%;\n  width: 100%;\n  -o-object-fit: fill;\n     object-fit: fill;\n}\n.box {\n  background-color: white;\n  border-radius: 10px;\n}\n.background {\n  background-color: white;\n  border-radius: 10px;\n}\n.profile-img {\n  border-radius: 10px;\n}\n.profile-img:hover {\n  transform: scale(1.1);\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -225,18 +235,48 @@ var render = function () {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "container" }, [
-    _vm.infoCards
+    _c("h2", { staticClass: "p-3 font-weight-bold" }, [
+      _vm._v("सुदूरपश्चिम प्रदेशमा हालको मन्त्रिपरिषद्"),
+    ]),
+    _vm._v(" "),
+    _vm.ministryDetails
       ? _c("section", { attrs: { id: "profile-summary" } }, [
           _c(
             "div",
-            { staticClass: "info-grid" },
-            _vm._l(_vm.infoCards, function (item) {
-              return _c("a", { staticClass: "info-card" }, [
-                _c("div", { staticClass: "value" }, [
-                  _vm._v(_vm._s(item.name)),
+            { staticClass: "row p-3 background" },
+            _vm._l(_vm.ministryDetails, function (item) {
+              return _c("div", { staticClass: "col-lg-6 mt-4" }, [
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-lg-6" }, [
+                    _c("img", {
+                      staticClass: "profile-img",
+                      attrs: {
+                        src: "/ministry/" + item.profile,
+                        alt: "img",
+                        height: "320px",
+                        width: "100%",
+                      },
+                    }),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-lg-6" }, [
+                    _c("h4", { staticClass: "font-weight-bold mt-3" }, [
+                      _vm._v(_vm._s(item.name)),
+                    ]),
+                    _vm._v(" "),
+                    _c("h5", { staticClass: "mt-3" }, [
+                      _vm._v(_vm._s(item.post)),
+                    ]),
+                    _vm._v(" "),
+                    _c("h5", { staticClass: "mt-3" }, [
+                      _vm._v(_vm._s(item.ministry)),
+                    ]),
+                    _vm._v(" "),
+                    _c("h5", { staticClass: "mt-3" }, [
+                      _vm._v(_vm._s(item.team)),
+                    ]),
+                  ]),
                 ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "label" }, [_vm._v(_vm._s(item))]),
               ])
             }),
             0

@@ -1,6 +1,6 @@
 <template>
-    <div class="container">
-        <!-- <div class="row box p-4" >
+  <div class="container">
+    <!-- <div class="row box p-4" >
             <div class="col-lg-3 mycards">
                 <img src="https://thehimalayantimes.com/uploads/imported_images/wp-content/uploads/2018/02/CPN-Maoist-Centre-leader-Trilochan-Bhatta.jpg"  alt="img" >
             </div>
@@ -21,58 +21,84 @@
                 <h4 class="">नेकपा (माओवादी केन्द्र)</h4>
             </div>
         </div> -->
-        
-        <section v-if="infoCards" id="profile-summary">
-        
-          <div class="info-grid">
-            <a v-for="item in infoCards" class="info-card" >
-              <div class="value">{{ item.name}}</div>
-              <div class="label">{{ item }}</div>
-            </a>
+    <h2 class="p-3 font-weight-bold">सुदूरपश्चिम प्रदेशमा हालको मन्त्रिपरिषद्</h2>
+    <section v-if="ministryDetails" id="profile-summary">
+
+      <div class="row p-3 background">
+        <div v-for="item in ministryDetails" class="col-lg-6 mt-4">
+          <div class="row">
+            <div class="col-lg-6">
+              <img class="profile-img" :src="'/ministry/' + item.profile" alt="img" :height="'320px'" :width="'100%'">
+            </div>
+            <div class="col-lg-6">
+              <h4 class="font-weight-bold mt-3">{{ item.name }}</h4>
+              <h5 class="mt-3">{{ item.post }}</h5>
+              <h5 class="mt-3">{{ item.ministry }}</h5>
+              <h5 class="mt-3">{{ item.team }}</h5>
+            </div>
           </div>
-        </section>
-    </div>
+        </div>
+      </div>
+
+    </section>
+  </div>
 </template>
 
 
 
 <script>
 export default {
-  
+
   data() {
     return {
-        infoCards:[
+      ministryDetails: [
 
-        ],
+      ],
     }
   },
-   mounted() {
-    this.fetchInfoCards();
+  mounted() {
+    this.fetchMinistryDetail();
   },
   methods: {
-    fetchInfoCards() {
+    fetchMinistryDetail() {
       axios
         .get("/api/display-ministry")
         .then((response) => {
-          this.infoCards = response.data;
+          this.ministryDetails = response.data;
           console.log(response.data);
         })
         .catch((error) => console.log(error));
     },
-  },};
+  },
+};
 </script>
 
 <style>
-    .mycards{
-        height: 330px;
-    }
-    .mycards img{
-        height: 100%;
-        width: 100%;
-        object-fit: fill;
-    }
-    .box{
-        background-color: white;
-        border-radius: 10px;
-    }
+.mycards {
+  height: 330px;
+}
+
+.mycards img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
+
+.box {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.background {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.profile-img {
+  border-radius: 10px;
+}
+
+.profile-img:hover {
+  transform: scale(1.1);
+}
 </style>

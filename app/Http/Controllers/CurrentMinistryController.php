@@ -10,6 +10,10 @@ class CurrentMinistryController extends Controller
     public function displayData()
     {
         $info=CurrentMinistry::get();
+        // $currentMinistry=[
+        //     'name'=>$info->name,
+        // ];
+        // return $currentMinistry;
         return response()->json($info, 200);
     }
     public function listingCurrentMinistry()
@@ -21,7 +25,6 @@ class CurrentMinistryController extends Controller
 
             $dataset['data'][] = [
                 $key + 1,
-
                 $item->name,
                 $item->post,
                 $item->ministry,
@@ -44,7 +47,8 @@ class CurrentMinistryController extends Controller
             'name' => "required|min:3|max:50",
             'post' => "required|min:3|max:50",
             'ministry' => "required|min:10|max:50",
-            'team' => "required|min:10|max:50"
+            'team' => "required|min:10|max:50",
+            'profile'=>'nullable'
         ]);
         if ($image = $request->file('profile')) {
             // return "hello";
@@ -73,7 +77,8 @@ class CurrentMinistryController extends Controller
             'name' => "required|min:3|max:50",
             'post' => "required|min:3|max:50",
             'ministry' => "required|min:10|max:50",
-            'team' => "required|min:10|max:50"
+            'team' => "required|min:10|max:50",
+            'profile'=>'nullable'
         ]);
         if ($image = $request->file('profile')) {
             // return "hello";
