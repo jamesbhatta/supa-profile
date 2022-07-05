@@ -13,7 +13,7 @@ class CurrentMinistryController extends Controller
         $dataset['labels'] = ["क्र.स.", "नाम थर", "पद", "मन्त्रालय", "दल"];
         $dataset['data'] = [];
         foreach ($data as $key => $item) {
-            
+
             $dataset['data'][] = [
                 $key + 1,
 
@@ -23,7 +23,7 @@ class CurrentMinistryController extends Controller
                 $item->team
             ];
         }
-        
+
 
         return response()->json($dataset, 200);
     }
@@ -63,5 +63,9 @@ class CurrentMinistryController extends Controller
         ]);
         $currentMinistry->update($data);
         return redirect()->route('current-ministry.index')->with('success', "हालको मन्त्रिपरिषद् सफलतापूर्वक परिवर्तन भयो");
+    }
+    public function profile()
+    {
+        return view('ministry-profile.index');
     }
 }
