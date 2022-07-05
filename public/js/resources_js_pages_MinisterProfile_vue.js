@@ -75,7 +75,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container mt-5" }, [
+    return _c("div", [
       _c("div", { staticClass: "row" }, [
         _c("div", { staticClass: "col-lg-3 h-50 img" }, [
           _c("img", {
