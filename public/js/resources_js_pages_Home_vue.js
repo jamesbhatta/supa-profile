@@ -477,98 +477,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 
@@ -956,8 +864,773 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render),
 /* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
 /* harmony export */ });
-var render = function () {}
-var staticRenderFns = []
+var render = function () {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "container py-4" },
+    [
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-md-3 d-none d-md-block" }, [
+          _c("nav", { staticClass: "dataset-links-card" }, [
+            _c("div", { staticClass: "heading" }, [_vm._v("डाटासेटहरु")]),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "content" },
+              _vm._l(_vm.links, function (item, index) {
+                return _c(
+                  "router-link",
+                  { key: index, staticClass: "link", attrs: { to: item.url } },
+                  [_c("span", [_vm._v(_vm._s(item.name))])]
+                )
+              }),
+              1
+            ),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-9" }, [
+          _vm.infoCards
+            ? _c("section", { attrs: { id: "profile-summary" } }, [
+                _c(
+                  "div",
+                  { staticClass: "info-grid" },
+                  _vm._l(_vm.infoCards, function (item) {
+                    return _c(
+                      "a",
+                      {
+                        key: item.id,
+                        staticClass: "info-card",
+                        class: item.card_theme,
+                        attrs: { href: item.link || "#" },
+                      },
+                      [
+                        _c("div", { staticClass: "value" }, [
+                          _vm._v(_vm._s(item.value)),
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "label" }, [
+                          _vm._v(_vm._s(item.label)),
+                        ]),
+                        _vm._v(" "),
+                        item.icon
+                          ? _c("div", { staticClass: "icon" }, [
+                              _c("i", { class: item.icon }),
+                            ])
+                          : _vm._e(),
+                      ]
+                    )
+                  }),
+                  0
+                ),
+              ])
+            : _vm._e(),
+          _vm._v(" "),
+          _c("div", { staticClass: "my-5" }),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "my-5" }),
+      _vm._v(" "),
+      _c("gis-tile"),
+      _vm._v(" "),
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-md-3 my-3" }, [
+          _c("div", { staticClass: "chart-card" }, [
+            _c(
+              "div",
+              { staticClass: "chart-body" },
+              [
+                _c("div", { staticClass: "chart-title mb-3" }, [
+                  _vm._v("शैक्षिक संस्था संख्या"),
+                ]),
+                _vm._v(" "),
+                _c("pie", {
+                  attrs: {
+                    "chart-options": { responsive: true },
+                    plugins: _vm.pieChartPlugins,
+                    "chart-data": {
+                      labels: ["सामुदायिक", "संस्थागत"],
+                      datasets: [
+                        {
+                          backgroundColor: ["#007bff", "#dc3545"],
+                          data: [4044, 599],
+                        },
+                      ],
+                    },
+                  },
+                }),
+              ],
+              1
+            ),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-3 my-3" }, [
+          _c("div", { staticClass: "chart-card" }, [
+            _c(
+              "div",
+              { staticClass: "chart-body" },
+              [
+                _c("div", { staticClass: "chart-title mb-3" }, [
+                  _vm._v("भौगोलिक क्षेत्रगत क्षेत्रफल"),
+                ]),
+                _vm._v(" "),
+                _c("pie", {
+                  attrs: {
+                    "chart-options": {
+                      plugins: { legend: { display: false } },
+                    },
+                    "chart-data": {
+                      labels: ["हिमाली", "पहाडी", "तराई"],
+                      datasets: [
+                        {
+                          backgroundColor: ["#007bff", "#dc3545", "green"],
+                          data: [8393.11, 6748.78, 4857.39],
+                        },
+                      ],
+                    },
+                  },
+                }),
+              ],
+              1
+            ),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-6 my-3" }, [
+          _c("div", { staticClass: "chart-card" }, [
+            _c("div", { staticClass: "chart-body" }, [
+              _c("div", { staticClass: "chart-title mb-3" }, [
+                _vm._v("जनसाङ्ख्यिक अवस्था"),
+              ]),
+              _vm._v(" "),
+              _vm._m(0),
+              _vm._v(" "),
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-md-1" }),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "col-md-5" },
+                  [
+                    _c("Bar", {
+                      attrs: {
+                        "chart-options": { responsive: true },
+                        "chart-data": {
+                          labels: ["पुरुष", "महिला"],
+                          datasets: [
+                            {
+                              backgroundColor: ["#007bff", "#dc3545"],
+                              data: [1287997, 1423273],
+                            },
+                          ],
+                        },
+                      },
+                    }),
+                    _vm._v(" "),
+                    _vm._m(1),
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "col-md-5 my-pie" },
+                  [
+                    _c("Bar", {
+                      attrs: {
+                        "chart-options": { responsive: true },
+                        "chart-data": {
+                          labels: ["पुरुष", "महिला"],
+                          datasets: [
+                            {
+                              backgroundColor: ["#007bff", "#dc3545"],
+                              data: [1217887, 1334630],
+                            },
+                          ],
+                        },
+                      },
+                    }),
+                    _vm._v(" "),
+                    _vm._m(2),
+                  ],
+                  1
+                ),
+              ]),
+            ]),
+          ]),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "row my-5" }, [
+        _c("div", { staticClass: "col-md-6" }, [
+          _c("div", { staticClass: "card" }, [
+            _c("div", { staticClass: "row" }, [
+              _vm._m(3),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "col-md-4" },
+                [
+                  _c("Pie", {
+                    attrs: {
+                      "chart-options": { responsive: true },
+                      "chart-data": {
+                        // labels: ['2068', '2078'],
+                        datasets: [
+                          {
+                            backgroundColor: ["#007bff", "#dc3545"],
+                            data: [91.25, 90.49],
+                          },
+                        ],
+                      },
+                    },
+                  }),
+                  _vm._v(" "),
+                  _c("label", { staticClass: "col-12 text-center" }, [
+                    _vm._v("लैङ्गिक अनुपात"),
+                  ]),
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "col-md-4" },
+                [
+                  _c("Pie", {
+                    attrs: {
+                      "chart-options": { responsive: true },
+                      "chart-data": {
+                        // labels: ['2068', '2078'],
+                        datasets: [
+                          {
+                            backgroundColor: ["#007bff", "#dc3545"],
+                            data: [1.53, 0.58],
+                          },
+                        ],
+                      },
+                    },
+                  }),
+                  _vm._v(" "),
+                  _c("label", { staticClass: "col-12 text-center" }, [
+                    _vm._v("जनसंख्या बृद्धिदर"),
+                  ]),
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "col-md-4" },
+                [
+                  _c("Pie", {
+                    attrs: {
+                      "chart-options": { responsive: true },
+                      "chart-data": {
+                        // labels: ['2068', '2078'],
+                        datasets: [
+                          {
+                            backgroundColor: ["#007bff", "#dc3545"],
+                            data: [5.43, 4.62],
+                          },
+                        ],
+                      },
+                    },
+                  }),
+                  _vm._v(" "),
+                  _c("label", { staticClass: "col-12 text-center" }, [
+                    _vm._v("औषत परिवारको आकार"),
+                  ]),
+                ],
+                1
+              ),
+            ]),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-4" }),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-3" }, [
+          _c("div", { staticClass: "card " }, [
+            _c(
+              "div",
+              { staticClass: "col-11" },
+              [
+                _c("bar", {
+                  attrs: {
+                    "chart-options": {
+                      plugins: { legend: { display: false } },
+                    },
+                    "chart-data": {
+                      labels: [
+                        "कृषि क्षेत्र",
+                        "उद्योग क्षेत्र",
+                        "सेवा क्षेत्र",
+                      ],
+                      datasets: [
+                        {
+                          backgroundColor: ["#007bff", "#dc3545", "green"],
+                          data: [36.1, 13.2, 50.7],
+                        },
+                      ],
+                    },
+                  },
+                }),
+                _vm._v(" "),
+                _c("label", { staticClass: "col-12 text-center" }, [
+                  _vm._v("कूलगार्हस्थ उत्पादन"),
+                ]),
+              ],
+              1
+            ),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-3" }, [
+          _c("div", { staticClass: "card" }, [
+            _c(
+              "div",
+              { staticClass: "col-11" },
+              [
+                _c("bar", {
+                  attrs: {
+                    "chart-options": {
+                      plugins: { legend: { display: false } },
+                    },
+                    "chart-data": {
+                      labels: ["महिला", "पुरुष", "जम्मा"],
+                      datasets: [
+                        {
+                          backgroundColor: ["#007bff", "#dc3545", "green"],
+                          data: [51.93, 76.4, 63.48],
+                        },
+                      ],
+                    },
+                  },
+                }),
+                _vm._v(" "),
+                _c("label", { staticClass: "col-12 text-center" }, [
+                  _vm._v("साक्षरता दर"),
+                ]),
+              ],
+              1
+            ),
+          ]),
+        ]),
+        _vm._v(" "),
+        _vm._m(4),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-md-3" }, [
+          _c(
+            "div",
+            { staticClass: "card" },
+            [
+              _c("bar", {
+                attrs: {
+                  "chart-options": { plugins: { legend: { display: false } } },
+                  "chart-data": {
+                    labels: [
+                      "अस्पताल",
+                      "प्रास्वाक",
+                      "स्वास्थ्य चौकी",
+                      "सा.स्वा.इकाई.",
+                      "आ.स्वा.के.",
+                      "पोषण गृह",
+                    ],
+                    datasets: [
+                      {
+                        backgroundColor: [
+                          "#007bff",
+                          "#dc3545",
+                          "green",
+                          "grey",
+                          "pink",
+                          "purple",
+                        ],
+                        data: [13, 16, 375, 135, 133],
+                      },
+                    ],
+                  },
+                },
+              }),
+              _vm._v(" "),
+              _c("label", { staticClass: "col-12 text-center" }, [
+                _vm._v("स्वास्थ्य संस्था संख्या"),
+              ]),
+            ],
+            1
+          ),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-3" }, [
+          _c(
+            "div",
+            { staticClass: "card" },
+            [
+              _c("pie", {
+                attrs: {
+                  "chart-options": { responsive: true },
+                  "chart-data": {
+                    labels: ["कालोपत्रे", "ग्राभेल", "कच्ची"],
+                    datasets: [
+                      {
+                        backgroundColor: ["#007bff", "#dc3545", "green"],
+                        data: [234, 1158, 3954],
+                      },
+                    ],
+                  },
+                },
+              }),
+              _vm._v(" "),
+              _c("label", { staticClass: "col-12 text-center" }, [
+                _vm._v("सडक"),
+              ]),
+            ],
+            1
+          ),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-3" }, [
+          _c(
+            "div",
+            { staticClass: "card" },
+            [
+              _c("bar", {
+                attrs: {
+                  "chart-options": { responsive: true },
+                  "chart-data": {
+                    labels: ["खना पकाउने", "वत्तीवाल्ने"],
+                    datasets: [
+                      {
+                        label: "दाउरा",
+                        data: [98.57],
+                        backgroundColor: "#007bff",
+                      },
+                      {
+                        label: "एलपिजीग्याँस",
+                        data: [1.07],
+                        backgroundColor: "#dc3545",
+                      },
+                      {
+                        label: "अन्यः",
+                        data: [0.36],
+                        backgroundColor: "pink",
+                      },
+                      {
+                        label: "विजुली",
+                        data: [0, 64.69],
+                        backgroundColor: "#00663d",
+                      },
+                      {
+                        label: "वैकल्पिक उर्जा",
+                        data: [0, 3],
+                        backgroundColor: "yellow",
+                      },
+                    ],
+                  },
+                },
+              }),
+              _vm._v(" "),
+              _c("label", { staticClass: "col-12 text-center" }, [
+                _vm._v("उर्जा उपयोग"),
+              ]),
+            ],
+            1
+          ),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-3" }, [
+          _c(
+            "div",
+            { staticClass: "card" },
+            [
+              _c("pie", {
+                attrs: {
+                  "chart-options": { responsive: true },
+                  "chart-data": {
+                    labels: ["प्रदेश", "प्रतिनिधिसभा"],
+                    datasets: [
+                      {
+                        backgroundColor: ["#007bff", "#dc3545", "green"],
+                        data: [32, 16],
+                      },
+                    ],
+                  },
+                },
+              }),
+              _vm._v(" "),
+              _c("label", { staticClass: "col-12 text-center" }, [
+                _vm._v("निर्वाचन क्षेत्र"),
+              ]),
+            ],
+            1
+          ),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "row my-4 ministries p-3" }, [
+        _c(
+          "div",
+          { staticClass: "col-lg-4 mt-3" },
+          [
+            _c(
+              "router-link",
+              {
+                staticClass: "card text-dark text-center py-4 font-weight-bold",
+                attrs: { to: "/minister-profile" },
+              },
+              [
+                _c(
+                  "span",
+                  {
+                    staticStyle: { "align-items": "center" },
+                    attrs: { height: "80px", width: "90px" },
+                  },
+                  [
+                    _c("img", {
+                      attrs: {
+                        src: "https://img.icons8.com/ios-filled/50/000000/library.png",
+                      },
+                    }),
+                    _vm._v("\n          हालको मन्त्रिपरिषद्\n        "),
+                  ]
+                ),
+              ]
+            ),
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _vm._m(5),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "col-lg-4 mt-3" },
+          [
+            _c(
+              "router-link",
+              {
+                staticClass: "card text-dark text-center py-4 font-weight-bold",
+                attrs: { to: "#" },
+              },
+              [
+                _c(
+                  "span",
+                  {
+                    staticStyle: { "align-items": "center" },
+                    attrs: { height: "80px", width: "100px" },
+                  },
+                  [
+                    _c("img", {
+                      attrs: {
+                        src: "https://img.icons8.com/color/48/000000/earth-planet.png",
+                      },
+                    }),
+                    _vm._v("\n          पर्यटक स्थल\n        "),
+                  ]
+                ),
+              ]
+            ),
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "col-lg-4 mt-3" },
+          [
+            _c(
+              "router-link",
+              {
+                staticClass: "card text-dark text-center py-5 font-weight-bold",
+                attrs: { to: "#" },
+              },
+              [
+                _c(
+                  "span",
+                  {
+                    staticStyle: { "align-items": "center" },
+                    attrs: { height: "80px", width: "90px" },
+                  },
+                  [
+                    _c("img", {
+                      attrs: {
+                        src: "https://img.icons8.com/color/48/000000/domain--v1.png",
+                      },
+                    }),
+                    _vm._v("\n          स्थानीय तहकाहरू वेबसाइट\n        "),
+                  ]
+                ),
+              ]
+            ),
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "col-lg-4 mt-3" },
+          [
+            _c(
+              "router-link",
+              {
+                staticClass: "card text-dark text-center py-5 font-weight-bold",
+                attrs: { to: "#" },
+              },
+              [
+                _c(
+                  "span",
+                  {
+                    staticStyle: { "align-items": "center" },
+                    attrs: { height: "60px", width: "70px" },
+                  },
+                  [
+                    _c("img", {
+                      attrs: {
+                        src: "https://img.icons8.com/color-glass/48/000000/book-shelf.png",
+                      },
+                    }),
+                    _vm._v("\n          ई-पुस्तकालय\n        "),
+                  ]
+                ),
+              ]
+            ),
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "col-lg-4 mt-3" },
+          [
+            _c(
+              "router-link",
+              {
+                staticClass: "card text-dark text-center py-5 font-weight-bold",
+                attrs: { to: "#" },
+              },
+              [
+                _c(
+                  "span",
+                  {
+                    staticStyle: { "align-items": "center" },
+                    attrs: { height: "60px", width: "70px" },
+                  },
+                  [
+                    _c("img", {
+                      attrs: {
+                        src: "https://img.icons8.com/color/48/000000/myspace.png",
+                      },
+                    }),
+                    _vm._v("\n          सामाजिक संजाल\n        "),
+                  ]
+                ),
+              ]
+            ),
+          ],
+          1
+        ),
+      ]),
+    ],
+    1
+  )
+}
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-12" }, [
+      _c("div", { staticClass: "row chart-datas" }, [
+        _c("div", { staticClass: "male_num" }, [_c("div")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "female_num" }, [_c("div")]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "text-center year" }, [
+      _c("label", [_vm._v("2068")]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "text-center year" }, [
+      _c("label", { attrs: { for: "" } }, [_vm._v("2078")]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "container" }, [
+      _c("div", { staticClass: "row col-12" }, [
+        _c("div", { staticClass: "data2068 col-6" }, [_c("div")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "data2078 col-6" }, [_c("div")]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-md-12" }, [
+      _c("div", { staticClass: "chart-body" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-md-7" }, [
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "card my-3" }, [
+                _c("div", { staticClass: "row" }),
+              ]),
+            ]),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-5" }),
+        ]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-lg-4 mt-3" }, [
+      _c(
+        "a",
+        {
+          staticClass: "card text-dark text-center py-4 font-weight-bold",
+          attrs: { href: "#" },
+        },
+        [
+          _c("span", { staticStyle: { "align-items": "center" } }, [
+            _c("img", {
+              attrs: {
+                src: "https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/64/000000/external-geography-back-to-school-xnimrodx-lineal-color-xnimrodx.png",
+                height: "50px",
+                width: "65px",
+              },
+            }),
+            _vm._v("\n          हाम्रो भूगोल\n        "),
+          ]),
+        ]
+      ),
+    ])
+  },
+]
+render._withStripped = true
 
 
 
