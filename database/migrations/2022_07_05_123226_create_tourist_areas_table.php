@@ -15,6 +15,9 @@ class CreateTouristAreasTable extends Migration
     {
         Schema::create('tourist_areas', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('address');
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }

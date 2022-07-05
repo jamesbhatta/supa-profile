@@ -65,6 +65,12 @@ Route::get('area/{municipalityArea}/edit','AreaofMunicipalityController@edit')->
 Route::put('area/{municipalityArea}','AreaofMunicipalityController@update')->name('area.update');
 Route::delete('area/{municipalityArea}','AreaofMunicipalityController@destroy')->name('area.destroy');
 
+Route::get('tourist-area', 'TouristAreaController@index')->name('tourist-area.index');
+Route::post('tourist-area', 'TouristAreaController@store')->name('tourist-area.store');
+Route::delete('tourist-area/{touristArea}', 'TouristAreaController@destroy')->name('tourist-area.destroy');
+Route::get('tourist-area/{touristArea}/edit', 'TouristAreaController@edit')->name('tourist-area.edit');
+Route::put('tourist-area/{touristArea}', 'TouristAreaController@update')->name('tourist-area.update');
+
 Route::resource('local-population', LocalPopulationController::class);
 Route::resource('population', PopulationController::class);
 Route::resource('age-population', AgePopulationController::class);
