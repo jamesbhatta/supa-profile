@@ -73,14 +73,14 @@ const routes = {
         {
             path: "/minister-profile",
             name: "minister-profile",
-            component: () => import("./pages/miscellaneous/Index.vue"),
+            component: () => import("./pages/MinisterProfile.vue"),
         },
 
-        {
-            path: "/tourist-place",
-            name: "tourist-place",
-            component: () => import("./pages/TouristPlace.vue"),
-        },
+        // {
+        //     path: "/tourist-place",
+        //     name: "tourist-place",
+        //     component: () => import("./pages/TouristPlace.vue"),
+        // },
     ],
 };
 
