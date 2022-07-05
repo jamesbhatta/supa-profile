@@ -376,7 +376,7 @@
             <img src="https://img.icons8.com/dotty/80/000000/parliament.png" />
           </span>
           हालको मन्त्रिपरिषद्
-        </router-link>
+        </a>
       </div>
 
       <div class="col-lg-4 mt-3">
@@ -398,20 +398,20 @@
         </a>
       </div>
       <div class="col-lg-4 mt-3">
-        <router-link to="/minister-profile" class="card text-dark text-center py-5 font-weight-bold">
-          हालको मन्त्रिपरिषद्
+        <router-link to="#" class="card text-dark text-center py-5 font-weight-bold">
+स्थानीय तहकाहरू वेबसाइट
         </router-link>
       </div>
 
       <div class="col-lg-4 mt-3">
         <a href="#" class="card text-dark text-center py-5 font-weight-bold">
-          partakiye sthal
+          ई-पुस्तकालय
         </a>
       </div>
       <div class="col-lg-4 mt-3">
-        <a href="#" class="card text-dark text-center py-5 font-weight-bold">
-          Hamro Bhugol
-        </a>
+        <router-link to="#" class="card text-dark text-center py-5 font-weight-bold">
+          सामाजिक संजाल
+        </router-link>
       </div>
 
     </div>
