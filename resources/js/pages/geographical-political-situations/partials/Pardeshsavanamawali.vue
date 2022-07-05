@@ -2,15 +2,15 @@
     
     <data-viewer :data="territorialGeographicalAreaData">
         <template slot="chart">
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="col-md-6">
                     <pie-chart :chart-data="territorialGeographicalAreaPieChartData" :width="200" :height="200">
                     </pie-chart>
                 </div>
-                <div class="col-md-6">
+                <!-- <div class="col-md-6">
                     <bar-chart :chart-data="territorialGeographicalAreaChartData" :width="200" :height="200">
                     </bar-chart>
-                </div>
+                </div> -->
             </div>
         </template>
     </data-viewer>
