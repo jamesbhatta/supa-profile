@@ -37,9 +37,9 @@ class DistrictWisePopulationController extends Controller
     {
         DistrictWisePopulation::create($request->validate([
             'district'=>"required",
-            'male'=>"required",
-            'female'=>"required",
-            'percentage'=>"required",
+            'male'=>"required|min:3|max:8",
+            'female'=>"required|min:3|max:8",
+            'percentage'=>"required|max:3",
         ]));
         return redirect()->back()->with('success',"Saved");
     }
@@ -55,9 +55,9 @@ class DistrictWisePopulationController extends Controller
     {
         $districtWisePopulation->update($request->validate([
             'district'=>"required",
-            'male'=>"required",
-            'female'=>"required",
-            'percentage'=>"required",
+            'male'=>"required|min:3|max:8",
+            'female'=>"required|min:3|max:8",
+            'percentage'=>"required|max:3",
         ]));
         return redirect()->route("district-wise-population.index")->with('success',"Updated");
     }

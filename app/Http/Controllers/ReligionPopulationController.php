@@ -43,13 +43,13 @@ class ReligionPopulationController extends Controller
     {
         ReligionPopulation::create($request->validate([
             'district' => "required",
-            'hindu' => "required",
-            'baudha' => "required",
-            'islam' => "required",
-            'kirat' => "required",
-            'christian' => "required",
-            'prakirty' => "required",
-            'other' => "required",
+            'hindu' => "required|min:2|max:7",
+            'baudha' => "required|min:2|max:7",
+            'islam' => "required|min:2|max:7",
+            'kirat' => "required|min:2|max:7",
+            'christian' => "required|min:2|max:7",
+            'prakirty' => "required|min:2|max:7",
+            'other' => "required|min:2|max:7",
         ]));
         return redirect()->back()->with('success', "Saved");
     }
@@ -65,13 +65,13 @@ class ReligionPopulationController extends Controller
     {
         $religionPopulation->update($request->validate([
             'district' => "required",
-            'hindu' => "required",
-            'baudha' => "required",
-            'islam' => "required",
-            'kirat' => "required",
-            'christian' => "required",
-            'prakirty' => "required",
-            'other' => "required",
+            'hindu' => "required|min:2|max:7",
+            'baudha' => "required|min:2|max:7",
+            'islam' => "required|min:2|max:7",
+            'kirat' => "required|min:2|max:7",
+            'christian' => "required|min:2|max:7",
+            'prakirty' => "required|min:2|max:7",
+            'other' => "required|min:2|max:7",
         ]));
         return redirect()->route("religion-population.index")->with('success', "Updated");
     }

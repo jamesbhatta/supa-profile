@@ -68,39 +68,39 @@
 
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">हिन्दु</label>
-                            <input type="text" name="hindu" class="form-control"
+                            <input type="number" name="hindu" class="form-control"
                                 value="{{ old('hindu', $religionPopulation->hindu) }}">
                         </div>
 
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">बौद्ध</label>
-                            <input type="text" name="baudha" class="form-control"
+                            <input type="number" name="baudha" class="form-control"
                                 value="{{ old('baudha', $religionPopulation->baudha) }}">
                         </div>
 
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">इश्लाम</label>
-                            <input type="text" name="islam" class="form-control"
+                            <input type="number" name="islam" class="form-control"
                                 value="{{ old('islam', $religionPopulation->islam) }}">
                         </div>
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">किराँत</label>
-                            <input type="text" name="kirat" class="form-control"
+                            <input type="number" name="kirat" class="form-control"
                                 value="{{ old('kirat', $religionPopulation->kirat) }}">
                         </div>
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">क्रिश्चियन</label>
-                            <input type="text" name="christian" class="form-control"
+                            <input type="number" name="christian" class="form-control"
                                 value="{{ old('christian', $religionPopulation->christian) }}">
                         </div>
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">प्रकृति</label>
-                            <input type="text" name="prakirty" class="form-control"
+                            <input type="number" name="prakirty" class="form-control"
                                 value="{{ old('prakirty', $religionPopulation->prakirty) }}">
                         </div>
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">अन्य</label>
-                            <input type="text" name="other" class="form-control"
+                            <input type="number" name="other" class="form-control"
                                 value="{{ old('other', $religionPopulation->other) }}">
                         </div>
 
@@ -143,6 +143,7 @@
                             @forelse ($religionPopulations as $item)
                                 <tr>
                                     <td>{{ $item->district }}</td>
+                                    <td>{{$item->hindu+$item->baudha+$item->islam+$item->kirat+$item->christian+$item->prakirty+$item->other}}</td>
                                     <td>{{ $item->hindu }}</td>
                                     <td>{{ $item->baudha }}</td>
                                     <td>{{ $item->islam }}</td>

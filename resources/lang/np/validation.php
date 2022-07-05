@@ -92,7 +92,7 @@ return [
     ],
     'not_in' => 'The selected :attribute is invalid.',
     'not_regex' => 'The :attribute format is invalid.',
-    'numeric' => 'The :attribute must be a number.',
+    'numeric' => ':attribute एउटा संख्या हुनुपर्छ',
     'password' => 'The password is incorrect.',
     'present' => 'The :attribute field must be present.',
     'regex' => 'The :attribute format is invalid.',
@@ -179,6 +179,13 @@ return [
         'population'=>'जनसङ्ख्या',
         'area'=>'क्षेत्रफल',
         'density'=>'जनघनत्व',
+        'hindu'=>'हिन्दु संख्या',
+        'baudha'=>'बौद्ध संख्या',
+        'islam'=>'इश्लाम संख्या',
+        'kirat'=>'किराँत संख्या',
+        'christian'=>'क्रिश्चियन संख्या',
+        'prakirty'=>'प्रकृति संख्या',
+        'other'=>'अन्य'
     ],
 
 ];
