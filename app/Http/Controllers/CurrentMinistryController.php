@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 
 class CurrentMinistryController extends Controller
 {
+    public function displayData()
+    {
+        $info=CurrentMinistry::get();
+        return response()->json($info, 200);
+    }
     public function listingCurrentMinistry()
     {
         $data = CurrentMinistry::get();
