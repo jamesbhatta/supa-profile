@@ -367,10 +367,10 @@
 
     <div class="row my-4 ministries p-3">
       <div class="col-lg-4 mt-3">
-        <a href="#" class="card text-dark text-center py-4 font-weight-bold">
+        <router-link to="/minister-profile" class="card text-dark text-center py-4 font-weight-bold">
           <i class="fas fa-crown fa-3x text-warning my-3"></i>
           हालको मन्त्रिपरिषद्
-        </a>
+        </router-link>
       </div>
 
       <div class="col-lg-4 mt-3">
@@ -384,9 +384,9 @@
         </a>
       </div>
       <div class="col-lg-4 mt-3">
-        <a href="#" class="card text-dark text-center py-5 font-weight-bold">
+        <router-link to="/minister-profile" class="card text-dark text-center py-5 font-weight-bold">
           हालको मन्त्रिपरिषद्
-        </a>
+        </router-link>
       </div>
 
       <div class="col-lg-4 mt-3">

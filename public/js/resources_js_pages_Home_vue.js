@@ -1191,7 +1191,50 @@ var render = function () {
       ]),
     ]),
     _vm._v(" "),
-    _vm._m(5),
+    _c("div", { staticClass: "row my-4 ministries p-3" }, [
+      _c(
+        "div",
+        { staticClass: "col-lg-4 mt-3" },
+        [
+          _c(
+            "router-link",
+            {
+              staticClass: "card text-dark text-center py-4 font-weight-bold",
+              attrs: { to: "/minister-profile" },
+            },
+            [
+              _c("i", { staticClass: "fas fa-crown fa-3x text-warning my-3" }),
+              _vm._v("\n        हालको मन्त्रिपरिषद्\n      "),
+            ]
+          ),
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _vm._m(5),
+      _vm._v(" "),
+      _vm._m(6),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "col-lg-4 mt-3" },
+        [
+          _c(
+            "router-link",
+            {
+              staticClass: "card text-dark text-center py-5 font-weight-bold",
+              attrs: { to: "/minister-profile" },
+            },
+            [_vm._v("\n        हालको मन्त्रिपरिषद्\n      ")]
+          ),
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _vm._m(7),
+      _vm._v(" "),
+      _vm._m(8),
+    ]),
   ])
 }
 var staticRenderFns = [
@@ -1259,75 +1302,60 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row my-4 ministries p-3" }, [
-      _c("div", { staticClass: "col-lg-4 mt-3" }, [
-        _c(
-          "a",
-          {
-            staticClass: "card text-dark text-center py-4 font-weight-bold",
-            attrs: { href: "#" },
-          },
-          [
-            _c("i", { staticClass: "fas fa-crown fa-3x text-warning my-3" }),
-            _vm._v("\n        हालको मन्त्रिपरिषद्\n      "),
-          ]
-        ),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-lg-4 mt-3" }, [
-        _c(
-          "a",
-          {
-            staticClass: "card text-dark text-center py-5 font-weight-bold",
-            attrs: { href: "#" },
-          },
-          [_vm._v("\n        पर्यटक स्थल\n      ")]
-        ),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-lg-4 mt-3" }, [
-        _c(
-          "a",
-          {
-            staticClass: "card text-dark text-center py-5 font-weight-bold",
-            attrs: { href: "#" },
-          },
-          [_vm._v("\n        Hamro Bhugol\n      ")]
-        ),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-lg-4 mt-3" }, [
-        _c(
-          "a",
-          {
-            staticClass: "card text-dark text-center py-5 font-weight-bold",
-            attrs: { href: "#" },
-          },
-          [_vm._v("\n        हालको मन्त्रिपरिषद्\n      ")]
-        ),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-lg-4 mt-3" }, [
-        _c(
-          "a",
-          {
-            staticClass: "card text-dark text-center py-5 font-weight-bold",
-            attrs: { href: "#" },
-          },
-          [_vm._v("\n        partakiye sthal\n      ")]
-        ),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-lg-4 mt-3" }, [
-        _c(
-          "a",
-          {
-            staticClass: "card text-dark text-center py-5 font-weight-bold",
-            attrs: { href: "#" },
-          },
-          [_vm._v("\n        Hamro Bhugol\n      ")]
-        ),
-      ]),
+    return _c("div", { staticClass: "col-lg-4 mt-3" }, [
+      _c(
+        "a",
+        {
+          staticClass: "card text-dark text-center py-5 font-weight-bold",
+          attrs: { href: "#" },
+        },
+        [_vm._v("\n        पर्यटक स्थल\n      ")]
+      ),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-lg-4 mt-3" }, [
+      _c(
+        "a",
+        {
+          staticClass: "card text-dark text-center py-5 font-weight-bold",
+          attrs: { href: "#" },
+        },
+        [_vm._v("\n        Hamro Bhugol\n      ")]
+      ),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-lg-4 mt-3" }, [
+      _c(
+        "a",
+        {
+          staticClass: "card text-dark text-center py-5 font-weight-bold",
+          attrs: { href: "#" },
+        },
+        [_vm._v("\n        partakiye sthal\n      ")]
+      ),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-lg-4 mt-3" }, [
+      _c(
+        "a",
+        {
+          staticClass: "card text-dark text-center py-5 font-weight-bold",
+          attrs: { href: "#" },
+        },
+        [_vm._v("\n        Hamro Bhugol\n      ")]
+      ),
     ])
   },
 ]

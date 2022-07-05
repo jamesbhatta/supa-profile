@@ -69,6 +69,12 @@ const routes = {
             name: "miscellaneous",
             component: () => import("./pages/miscellaneous/Index.vue"),
         },
+
+        {
+            path: "/minister-profile",
+            name: "minister-profile",
+            component: () => import("./pages/MinisterProfile.vue"),
+        },
     ],
 };
 

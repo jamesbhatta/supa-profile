@@ -17,6 +17,7 @@ Vue.component(
 Vue.component("data-viewer", require("./components/DataViewer.vue").default);
 Vue.component("pie-chart", require("./charts/PieChart.vue").default);
 Vue.component("bar-chart", require("./charts/BarChart.vue").default);
+// Vue.component("minister-profile",require("./components/MinisterProfile.vue"));
 // Vue.component("economical-situation", require("./pages/economical-situation/Index.vue").default);
 
 Vue.use(VueRouter);

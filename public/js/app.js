@@ -2477,7 +2477,8 @@ vue__WEBPACK_IMPORTED_MODULE_1__["default"].component("fields-form", (__webpack_
 vue__WEBPACK_IMPORTED_MODULE_1__["default"].component("resource-data-form", (__webpack_require__(/*! ./components/ResourceDataForm.vue */ "./resources/js/components/ResourceDataForm.vue")["default"]));
 vue__WEBPACK_IMPORTED_MODULE_1__["default"].component("data-viewer", (__webpack_require__(/*! ./components/DataViewer.vue */ "./resources/js/components/DataViewer.vue")["default"]));
 vue__WEBPACK_IMPORTED_MODULE_1__["default"].component("pie-chart", (__webpack_require__(/*! ./charts/PieChart.vue */ "./resources/js/charts/PieChart.vue")["default"]));
-vue__WEBPACK_IMPORTED_MODULE_1__["default"].component("bar-chart", (__webpack_require__(/*! ./charts/BarChart.vue */ "./resources/js/charts/BarChart.vue")["default"])); // Vue.component("economical-situation", require("./pages/economical-situation/Index.vue").default);
+vue__WEBPACK_IMPORTED_MODULE_1__["default"].component("bar-chart", (__webpack_require__(/*! ./charts/BarChart.vue */ "./resources/js/charts/BarChart.vue")["default"])); // Vue.component("minister-profile",require("./components/MinisterProfile.vue"));
+// Vue.component("economical-situation", require("./pages/economical-situation/Index.vue").default);
 
 vue__WEBPACK_IMPORTED_MODULE_1__["default"].use(vue_router__WEBPACK_IMPORTED_MODULE_2__["default"]); // Initialize Vue
 
@@ -2603,6 +2604,12 @@ var routes = {
     name: "miscellaneous",
     component: function component() {
       return __webpack_require__.e(/*! import() */ "resources_js_pages_miscellaneous_Index_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/miscellaneous/Index.vue */ "./resources/js/pages/miscellaneous/Index.vue"));
+    }
+  }, {
+    path: "/minister-profile",
+    name: "minister-profile",
+    component: function component() {
+      return __webpack_require__.e(/*! import() */ "resources_js_pages_MinisterProfile_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/MinisterProfile.vue */ "./resources/js/pages/MinisterProfile.vue"));
     }
   }]
 };
@@ -76749,7 +76756,7 @@ const version = XLSX.version;
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_pages_Home_vue":1,"resources_js_pages_About_vue":1,"resources_js_pages_geographical-political-situations_Index_vue":1,"resources_js_pages_demographic-status_Index_vue":1,"resources_js_pages_economical-situation_Index_vue":1,"resources_js_pages_social-status_Index_vue":1,"resources_js_pages_condition-of-physical-infrastructure_Index_vue":1,"resources_js_pages_status-of-tourism-development_Index_vue":1,"resources_js_pages_industry-business_Index_vue":1,"resources_js_pages_state-of-agricultural-sector_Index_vue":1,"resources_js_pages_forest-and-environment_Index_vue":1,"resources_js_pages_miscellaneous_Index_vue":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_pages_Home_vue":1,"resources_js_pages_About_vue":1,"resources_js_pages_geographical-political-situations_Index_vue":1,"resources_js_pages_demographic-status_Index_vue":1,"resources_js_pages_economical-situation_Index_vue":1,"resources_js_pages_social-status_Index_vue":1,"resources_js_pages_condition-of-physical-infrastructure_Index_vue":1,"resources_js_pages_status-of-tourism-development_Index_vue":1,"resources_js_pages_industry-business_Index_vue":1,"resources_js_pages_state-of-agricultural-sector_Index_vue":1,"resources_js_pages_forest-and-environment_Index_vue":1,"resources_js_pages_miscellaneous_Index_vue":1,"resources_js_pages_MinisterProfile_vue":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};
