@@ -365,15 +365,15 @@
 
     <!-- ================================================ -->
 
-    <div class="row my-4">
+    <div class="row my-4 ">
       <div class="col-md-3">
-        <a href="#" class="card text-dark text-center py-5">
+        <a href="#" class="card text-dark text-center py-5 font-weight-bold">
           हालको मन्त्रिपरिषद्
         </a>
       </div>
 
       <div class="col-md-3">
-        <a href="#" class="card text-dark text-center py-5">
+        <a href="#" class="card text-dark text-center py-5 font-weight-bold">
           partakiye sthal
         </a>
       </div>
