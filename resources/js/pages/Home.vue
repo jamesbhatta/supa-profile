@@ -359,6 +359,7 @@
         </div>
       </div>
     </div>
+<<<<<<< HEAD
     <div class="row my-4 ministries p-3">
       <div class="col-lg-4 mt-3">
         <router-link to="/minister-profile" class="card text-dark text-center py-4 font-weight-bold">
@@ -407,6 +408,96 @@
             सामाजिक संजाल
           </span>
         </router-link>
+=======
+
+
+
+
+    <!-- ================================================ -->
+
+    <div class="p-3">
+      <div class="row my-4 ministries p-3">
+        <div class="col-lg-4 mt-3">
+          <router-link to="/ministry-profile" class="card text-dark text-center py-3 font-weight-bold ministry-card">
+            <span style="align-items:center;" height="80px" width="90px">
+
+              <img src="https://img.icons8.com/dotty/80/000000/parliament.png" />
+            </span>
+            हालको मन्त्रिपरिषद्
+          </router-link>
+        </div>
+
+        <div class="col-lg-4 mt-3">
+          <a href="#" class="card text-dark text-center py-4 font-weight-bold ministry-card">
+            <span style="align-items:center;" height="80px" width="90px">
+              <img
+                src="https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/64/000000/external-geography-back-to-school-xnimrodx-lineal-color-xnimrodx.png" />
+            </span>
+            हाम्रो भूगोल
+
+          </a>
+        </div>
+        <div class="col-lg-4 mt-3">
+          <a href="#" class="card text-dark text-center py-2 font-weight-bold ministry-card">
+            <span style="align-items:center;" height="60px" width="70px">
+              <img src="https://img.icons8.com/clouds/100/000000/globe--v2.png" />
+            </span>
+            पर्यटक स्थल
+          </a>
+        </div>
+        <div class="col-lg-4 mt-3">
+          <router-link to="#" class="card text-dark text-center py-5 font-weight-bold ministry-card">
+            स्थानीय तहकाहरू वेबसाइट
+          </router-link>
+        </div>
+
+        <div class="col-lg-4 mt-3">
+          <a href="#" class="card text-dark text-center py-5 font-weight-bold ministry-card">
+            ई-पुस्तकालय
+          </a>
+        </div>
+        <div class="col-lg-4 mt-3">
+          <router-link to="#" class="card text-dark text-center py-5 font-weight-bold ministry-card">
+            सामाजिक संजाल
+          </router-link>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Facebook</th>
+              <th scope="col">LinkedIn</th>
+              <th scope="col">twitter</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+>>>>>>> 6936067ffee12e7a9688ebb2e5d45ba7c98dbbd4
       </div>
     </div>
   </div>
@@ -517,5 +608,15 @@ export default {
 .navigation-grid>a:hover {
   background-color: #2572bc;
   color: #fff;
+}
+.ministry-card{
+  border-radius: 10px;
+}
+
+.ministry-card:hover{
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+  box-shadow: 0 24px 36px rgba(0,0,0,0.11),
+    0 24px 46px var(--box-shadow-color);
+  background-color: #2572bc;
 }
 </style>

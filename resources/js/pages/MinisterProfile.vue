@@ -1,5 +1,5 @@
 <template>
-    <div class="container mt-5">
+    <div >
         <div class="row">
             <div class="col-lg-3 h-50 img">
                 <img src="https://d19h8kn98xvxar.cloudfront.net/images/_hero/connectwithnature.jpg" alt="img"
@@ -24,8 +24,3 @@
         </div>
     </div>
 </template>
-
-
- <Style scoped>
- img
- </Style>
