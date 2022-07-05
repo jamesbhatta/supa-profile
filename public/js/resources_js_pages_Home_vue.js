@@ -477,13 +477,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
 
 
 
@@ -1383,12 +1376,6 @@ var render = function () {
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "row my-4 ministries p-3" }, [
-        _vm._m(5),
-        _vm._v(" "),
-        _vm._m(6),
-        _vm._v(" "),
-        _vm._m(7),
-        _vm._v(" "),
         _c(
           "div",
           { staticClass: "col-lg-4 mt-3" },
@@ -1396,16 +1383,64 @@ var render = function () {
             _c(
               "router-link",
               {
-                staticClass: "card text-dark text-center py-5 font-weight-bold",
-                attrs: { to: "#" },
+                staticClass: "card text-dark text-center py-4 font-weight-bold",
+                attrs: { to: "/minister-profile" },
               },
-              [_vm._v("\nस्थानीय तहकाहरू वेबसाइट\n        ")]
+              [
+                _c(
+                  "span",
+                  {
+                    staticStyle: { "align-items": "center" },
+                    attrs: { height: "80px", width: "90px" },
+                  },
+                  [
+                    _c("img", {
+                      attrs: {
+                        src: "https://img.icons8.com/ios-filled/50/000000/library.png",
+                      },
+                    }),
+                    _vm._v("\n          हालको मन्त्रिपरिषद्\n        "),
+                  ]
+                ),
+              ]
             ),
           ],
           1
         ),
         _vm._v(" "),
-        _vm._m(8),
+        _vm._m(5),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "col-lg-4 mt-3" },
+          [
+            _c(
+              "router-link",
+              {
+                staticClass: "card text-dark text-center py-4 font-weight-bold",
+                attrs: { to: "#" },
+              },
+              [
+                _c(
+                  "span",
+                  {
+                    staticStyle: { "align-items": "center" },
+                    attrs: { height: "80px", width: "100px" },
+                  },
+                  [
+                    _c("img", {
+                      attrs: {
+                        src: "https://img.icons8.com/color/48/000000/earth-planet.png",
+                      },
+                    }),
+                    _vm._v("\n          पर्यटक स्थल\n        "),
+                  ]
+                ),
+              ]
+            ),
+          ],
+          1
+        ),
         _vm._v(" "),
         _c(
           "div",
@@ -1417,7 +1452,87 @@ var render = function () {
                 staticClass: "card text-dark text-center py-5 font-weight-bold",
                 attrs: { to: "#" },
               },
-              [_vm._v("\n          सामाजिक संजाल\n        ")]
+              [
+                _c(
+                  "span",
+                  {
+                    staticStyle: { "align-items": "center" },
+                    attrs: { height: "80px", width: "90px" },
+                  },
+                  [
+                    _c("img", {
+                      attrs: {
+                        src: "https://img.icons8.com/color/48/000000/domain--v1.png",
+                      },
+                    }),
+                    _vm._v("\n          स्थानीय तहकाहरू वेबसाइट\n        "),
+                  ]
+                ),
+              ]
+            ),
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "col-lg-4 mt-3" },
+          [
+            _c(
+              "router-link",
+              {
+                staticClass: "card text-dark text-center py-5 font-weight-bold",
+                attrs: { to: "#" },
+              },
+              [
+                _c(
+                  "span",
+                  {
+                    staticStyle: { "align-items": "center" },
+                    attrs: { height: "60px", width: "70px" },
+                  },
+                  [
+                    _c("img", {
+                      attrs: {
+                        src: "https://img.icons8.com/color-glass/48/000000/book-shelf.png",
+                      },
+                    }),
+                    _vm._v("\n          ई-पुस्तकालय\n        "),
+                  ]
+                ),
+              ]
+            ),
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "col-lg-4 mt-3" },
+          [
+            _c(
+              "router-link",
+              {
+                staticClass: "card text-dark text-center py-5 font-weight-bold",
+                attrs: { to: "#" },
+              },
+              [
+                _c(
+                  "span",
+                  {
+                    staticStyle: { "align-items": "center" },
+                    attrs: { height: "60px", width: "70px" },
+                  },
+                  [
+                    _c("img", {
+                      attrs: {
+                        src: "https://img.icons8.com/color/48/000000/myspace.png",
+                      },
+                    }),
+                    _vm._v("\n          सामाजिक संजाल\n        "),
+                  ]
+                ),
+              ]
             ),
           ],
           1
@@ -1496,103 +1611,21 @@ var staticRenderFns = [
       _c(
         "a",
         {
-          staticClass: "card text-dark text-center py-3 font-weight-bold",
-          attrs: { href: "#" },
-        },
-        [
-          _c(
-            "span",
-            {
-              staticStyle: { "align-items": "center" },
-              attrs: { height: "80px", width: "90px" },
-            },
-            [
-              _c("img", {
-                attrs: {
-                  src: "https://img.icons8.com/dotty/80/000000/parliament.png",
-                },
-              }),
-            ]
-          ),
-          _vm._v("\n          हालको मन्त्रिपरिषद्\n        "),
-        ]
-      ),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-lg-4 mt-3" }, [
-      _c(
-        "a",
-        {
           staticClass: "card text-dark text-center py-4 font-weight-bold",
           attrs: { href: "#" },
         },
         [
-          _c(
-            "span",
-            {
-              staticStyle: { "align-items": "center" },
-              attrs: { height: "80px", width: "90px" },
-            },
-            [
-              _c("img", {
-                attrs: {
-                  src: "https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/64/000000/external-geography-back-to-school-xnimrodx-lineal-color-xnimrodx.png",
-                },
-              }),
-            ]
-          ),
-          _vm._v("\n          हाम्रो भूगोल\n\n        "),
+          _c("span", { staticStyle: { "align-items": "center" } }, [
+            _c("img", {
+              attrs: {
+                src: "https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/64/000000/external-geography-back-to-school-xnimrodx-lineal-color-xnimrodx.png",
+                height: "50px",
+                width: "65px",
+              },
+            }),
+            _vm._v("\n          हाम्रो भूगोल\n        "),
+          ]),
         ]
-      ),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-lg-4 mt-3" }, [
-      _c(
-        "a",
-        {
-          staticClass: "card text-dark text-center py-2 font-weight-bold",
-          attrs: { href: "#" },
-        },
-        [
-          _c(
-            "span",
-            {
-              staticStyle: { "align-items": "center" },
-              attrs: { height: "60px", width: "70px" },
-            },
-            [
-              _c("img", {
-                attrs: {
-                  src: "https://img.icons8.com/clouds/100/000000/globe--v2.png",
-                },
-              }),
-            ]
-          ),
-          _vm._v("\n          पर्यटक स्थल\n        "),
-        ]
-      ),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-lg-4 mt-3" }, [
-      _c(
-        "a",
-        {
-          staticClass: "card text-dark text-center py-5 font-weight-bold",
-          attrs: { href: "#" },
-        },
-        [_vm._v("\n          ई-पुस्तकालय\n        ")]
       ),
     ])
   },

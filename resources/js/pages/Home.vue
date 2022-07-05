@@ -65,7 +65,7 @@
     </div>
     <div class="my-5"></div>
 
-  <gis-tile></gis-tile>
+    <gis-tile></gis-tile>
 
     <div class="row">
 
@@ -73,7 +73,7 @@
         <div class="chart-card">
           <div class="chart-body">
             <div class="chart-title mb-3">शैक्षिक संस्था संख्या</div>
-            <pie :chart-options="{ responsive: true}" :plugins="pieChartPlugins" :chart-data="{
+            <pie :chart-options="{ responsive: true }" :plugins="pieChartPlugins" :chart-data="{
               labels: ['सामुदायिक', 'संस्थागत'],
               datasets: [
                 {
@@ -154,8 +154,6 @@
       </div>
 
     </div>
-
-    <!-- ========================================== -->
     <div class="row my-5">
       <div class="col-md-6">
         <div class="card">
@@ -357,65 +355,60 @@
               },
             ],
           }" />
-
           <label class="col-12 text-center">निर्वाचन क्षेत्र</label>
         </div>
       </div>
     </div>
-
-
-
-
-    <!-- ================================================ -->
-
     <div class="row my-4 ministries p-3">
       <div class="col-lg-4 mt-3">
-        <a href="#" class="card text-dark text-center py-3 font-weight-bold">
+        <router-link to="/minister-profile" class="card text-dark text-center py-4 font-weight-bold">
           <span style="align-items:center;" height="80px" width="90px">
-
-            <img src="https://img.icons8.com/dotty/80/000000/parliament.png" />
+            <img src="https://img.icons8.com/ios-filled/50/000000/library.png" />
+            हालको मन्त्रिपरिषद्
           </span>
-          हालको मन्त्रिपरिषद्
-        </a>
+        </router-link>
       </div>
-
       <div class="col-lg-4 mt-3">
         <a href="#" class="card text-dark text-center py-4 font-weight-bold">
+          <span style="align-items:center;">
+            <img src="https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/64/000000/external-geography-back-to-school-xnimrodx-lineal-color-xnimrodx.png"  height="50px" width="65px"/>
+            हाम्रो भूगोल
+          </span>
+        </a>
+      </div>
+      <div class="col-lg-4 mt-3">
+        <router-link to="#" class="card text-dark text-center py-4 font-weight-bold">
+          <span style="align-items:center;" height="80px" width="100px">
+            <img src="https://img.icons8.com/color/48/000000/earth-planet.png" />
+            पर्यटक स्थल
+          </span>
+        </router-link>
+      </div>
+      <div class="col-lg-4 mt-3">
+        <router-link to="#" class="card text-dark text-center py-5 font-weight-bold">
           <span style="align-items:center;" height="80px" width="90px">
-            <img
-              src="https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/64/000000/external-geography-back-to-school-xnimrodx-lineal-color-xnimrodx.png" />
+            <img src="https://img.icons8.com/color/48/000000/domain--v1.png" />
+            स्थानीय तहकाहरू वेबसाइट
           </span>
-          हाम्रो भूगोल
-
-        </a>
+        </router-link>
       </div>
       <div class="col-lg-4 mt-3">
-        <a href="#" class="card text-dark text-center py-2 font-weight-bold">
+        <router-link to="#" class="card text-dark text-center py-5 font-weight-bold">
           <span style="align-items:center;" height="60px" width="70px">
-            <img src="https://img.icons8.com/clouds/100/000000/globe--v2.png" />
+            <img src="https://img.icons8.com/color-glass/48/000000/book-shelf.png" />
+            ई-पुस्तकालय
           </span>
-          पर्यटक स्थल
-        </a>
+        </router-link>
       </div>
       <div class="col-lg-4 mt-3">
         <router-link to="#" class="card text-dark text-center py-5 font-weight-bold">
-स्थानीय तहकाहरू वेबसाइट
+          <span style="align-items:center;" height="60px" width="70px">
+            <img src="https://img.icons8.com/color/48/000000/myspace.png" />
+            सामाजिक संजाल
+          </span>
         </router-link>
       </div>
-
-      <div class="col-lg-4 mt-3">
-        <a href="#" class="card text-dark text-center py-5 font-weight-bold">
-          ई-पुस्तकालय
-        </a>
-      </div>
-      <div class="col-lg-4 mt-3">
-        <router-link to="#" class="card text-dark text-center py-5 font-weight-bold">
-          सामाजिक संजाल
-        </router-link>
-      </div>
-
     </div>
-
   </div>
 </template>
 <style>

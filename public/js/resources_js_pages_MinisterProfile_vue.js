@@ -68,9 +68,66 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [_vm._v("\n    hjkhjkhj\n")])
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "container mt-5" }, [
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-lg-3 h-50 img" }, [
+          _c("img", {
+            staticStyle: {
+              height: "100px",
+              width: "100%",
+              "object-fit": "contain",
+            },
+            attrs: {
+              src: "https://d19h8kn98xvxar.cloudfront.net/images/_hero/connectwithnature.jpg",
+              alt: "img",
+            },
+          }),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-lg-3" }, [
+          _c("h3", [_vm._v("Bishal Chaudhary")]),
+          _vm._v(" "),
+          _c("h5", [_vm._v("बिशाल")]),
+          _vm._v(" "),
+          _c("h5", [_vm._v("मुख्यमन्त्री तथा मन्त्रीपरिषद")]),
+          _vm._v(" "),
+          _c("h5", [_vm._v("नेकपा (माओवादी केन्द्र)")]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-lg-3" }, [
+          _c("img", {
+            staticStyle: {
+              height: "100%",
+              width: "100%",
+              "object-fit": "contain",
+            },
+            attrs: {
+              src: "https://d19h8kn98xvxar.cloudfront.net/images/_hero/connectwithnature.jpg",
+              alt: "img",
+            },
+          }),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-lg-3" }, [
+          _c("h3", [_vm._v("Bishal Chaudhary")]),
+          _vm._v(" "),
+          _c("h5", [_vm._v("बिशाल")]),
+          _vm._v(" "),
+          _c("h5", [_vm._v("मुख्यमन्त्री तथा मन्त्रीपरिषद")]),
+          _vm._v(" "),
+          _c("h5", [_vm._v("नेकपा (माओवादी केन्द्र)")]),
+        ]),
+      ]),
+    ])
+  },
+]
 render._withStripped = true
 
 
