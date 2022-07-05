@@ -72,13 +72,13 @@
 
             <data-viewer :data="geographicalAreaData">
               <template slot="chart">
-                <div class="row">
+                <div class="row justify-content-center">
                   <div class="col-md-6">
-                    <pie-chart :chart-data="geographicalAreaChartData" :width="200" :height="200"></pie-chart>
+                    <pie-chart :chart-data="geographicalAreaChartData"></pie-chart>
                   </div>
-                  <div class="col-md-6">
+                  <!-- <div class="col-md-6">
                     <bar-chart :chart-data="geographicalAreaChartData" :width="200" :height="200"></bar-chart>
-                  </div>
+                  </div> -->
                 </div>
               </template>
             </data-viewer>
@@ -88,26 +88,26 @@
 
             <data-viewer :data="districtWiseAreaOfStateData">
               <template slot="chart">
-                <div class="row">
+                <div class="row justify-content-center">
                   <div class="col-md-6">
                     <pie-chart :chart-data="districtWiseAreaOfStateChartData"></pie-chart>
                   </div>
-                  <div class="col-md-6">
+                  <!-- <div class="col-md-6">
                     <bar-chart :chart-data="districtWiseAreaOfStateChartData"></bar-chart>
-                  </div>
+                  </div> -->
                 </div>
               </template>
             </data-viewer>
 
             <data-viewer :data="vuupyogkoData">
               <template slot="chart">
-                <div class="row">
+                <div class="row justify-content-center">
                   <div class="col-md-6">
                     <pie-chart :chart-data="vuupyogkoChartData"></pie-chart>
                   </div>
-                  <div class="col-md-6">
+                  <!-- <div class="col-md-6">
                     <bar-chart :chart-data="vuupyogkoChartData"></bar-chart>
-                  </div>
+                  </div> -->
                 </div>
               </template>
             </data-viewer>
@@ -123,14 +123,14 @@
 
             <data-viewer :data="nirbachanchhetra">
               <template slot="chart">
-                <div class="row">
+                <div class="row justify-content-center">
                   <div class="col-md-6">
                     <pie-chart :chart-data="nirbachanchhetraChartData"></pie-chart>
                   </div>
 
-                  <div class="col-md-6">
+                  <!-- <div class="col-md-6">
                     <bar-chart :chart-data="nirbachanchhetraChartData"></bar-chart>
-                  </div>
+                  </div> -->
                 </div>
               </template>
             </data-viewer>

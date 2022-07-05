@@ -776,7 +776,7 @@ var render = function () {
                 { attrs: { data: _vm.geographicalAreaData } },
                 [
                   _c("template", { slot: "chart" }, [
-                    _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "row justify-content-center" }, [
                       _c(
                         "div",
                         { staticClass: "col-md-6" },
@@ -784,23 +784,6 @@ var render = function () {
                           _c("pie-chart", {
                             attrs: {
                               "chart-data": _vm.geographicalAreaChartData,
-                              width: 200,
-                              height: 200,
-                            },
-                          }),
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        { staticClass: "col-md-6" },
-                        [
-                          _c("bar-chart", {
-                            attrs: {
-                              "chart-data": _vm.geographicalAreaChartData,
-                              width: 200,
-                              height: 200,
                             },
                           }),
                         ],
@@ -821,26 +804,12 @@ var render = function () {
                 { attrs: { data: _vm.districtWiseAreaOfStateData } },
                 [
                   _c("template", { slot: "chart" }, [
-                    _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "row justify-content-center" }, [
                       _c(
                         "div",
                         { staticClass: "col-md-6" },
                         [
                           _c("pie-chart", {
-                            attrs: {
-                              "chart-data":
-                                _vm.districtWiseAreaOfStateChartData,
-                            },
-                          }),
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        { staticClass: "col-md-6" },
-                        [
-                          _c("bar-chart", {
                             attrs: {
                               "chart-data":
                                 _vm.districtWiseAreaOfStateChartData,
@@ -860,23 +829,12 @@ var render = function () {
                 { attrs: { data: _vm.vuupyogkoData } },
                 [
                   _c("template", { slot: "chart" }, [
-                    _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "row justify-content-center" }, [
                       _c(
                         "div",
                         { staticClass: "col-md-6" },
                         [
                           _c("pie-chart", {
-                            attrs: { "chart-data": _vm.vuupyogkoChartData },
-                          }),
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        { staticClass: "col-md-6" },
-                        [
-                          _c("bar-chart", {
                             attrs: { "chart-data": _vm.vuupyogkoChartData },
                           }),
                         ],
@@ -915,25 +873,12 @@ var render = function () {
                 { attrs: { data: _vm.nirbachanchhetra } },
                 [
                   _c("template", { slot: "chart" }, [
-                    _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "row justify-content-center" }, [
                       _c(
                         "div",
                         { staticClass: "col-md-6" },
                         [
                           _c("pie-chart", {
-                            attrs: {
-                              "chart-data": _vm.nirbachanchhetraChartData,
-                            },
-                          }),
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        { staticClass: "col-md-6" },
-                        [
-                          _c("bar-chart", {
                             attrs: {
                               "chart-data": _vm.nirbachanchhetraChartData,
                             },
@@ -1094,7 +1039,7 @@ var render = function () {
     { attrs: { data: _vm.territorialGeographicalAreaData } },
     [
       _c("template", { slot: "chart" }, [
-        _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "row justify-content-center" }, [
           _c(
             "div",
             { staticClass: "col-md-6" },
@@ -1102,21 +1047,6 @@ var render = function () {
               _c("pie-chart", {
                 attrs: {
                   "chart-data": _vm.territorialGeographicalAreaPieChartData,
-                  width: 200,
-                  height: 200,
-                },
-              }),
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "col-md-6" },
-            [
-              _c("bar-chart", {
-                attrs: {
-                  "chart-data": _vm.territorialGeographicalAreaChartData,
                   width: 200,
                   height: 200,
                 },
