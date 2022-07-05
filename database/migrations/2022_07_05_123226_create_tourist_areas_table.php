@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCurrentMinistriesTable extends Migration
+class CreateTouristAreasTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,11 @@ class CreateCurrentMinistriesTable extends Migration
      */
     public function up()
     {
-        Schema::create('current_ministries', function (Blueprint $table) {
+        Schema::create('tourist_areas', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('post');
-            $table->string('ministry');
-            $table->string('team');
-            $table->string('profile')->nullable();
+            $table->string('address');
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }
@@ -31,6 +29,6 @@ class CreateCurrentMinistriesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('current_ministries');
+        Schema::dropIfExists('tourist_areas');
     }
 }
