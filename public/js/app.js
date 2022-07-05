@@ -2619,6 +2619,7 @@ var routes = {
     path: "/minister-profile",
     name: "minister-profile",
     component: function component() {
+<<<<<<< HEAD
       return __webpack_require__.e(/*! import() */ "resources_js_pages_MinisterProfile_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/MinisterProfile.vue */ "./resources/js/pages/MinisterProfile.vue"));
     }
   } // {
@@ -2627,6 +2628,17 @@ var routes = {
   //     component: () => import("./pages/TouristPlace.vue"),
   // },
   ]
+=======
+      return __webpack_require__.e(/*! import() */ "resources_js_pages_miscellaneous_Index_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/miscellaneous/Index.vue */ "./resources/js/pages/miscellaneous/Index.vue"));
+    }
+  }, {
+    path: "/tourist-place",
+    name: "tourist-place",
+    component: function component() {
+      return __webpack_require__.e(/*! import() */ "resources_js_pages_TouristPlace_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/TouristPlace.vue */ "./resources/js/pages/TouristPlace.vue"));
+    }
+  }]
+>>>>>>> deb2aabc69f534c1e8c1ebc2381dd911b14444b1
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (routes);
 
@@ -79988,7 +80000,11 @@ const version = XLSX.version;
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
+<<<<<<< HEAD
 /******/ 			if ({"resources_js_pages_Home_vue":1,"resources_js_pages_About_vue":1,"resources_js_pages_geographical-political-situations_Index_vue":1,"resources_js_pages_demographic-status_Index_vue":1,"resources_js_pages_economical-situation_Index_vue":1,"resources_js_pages_social-status_Index_vue":1,"resources_js_pages_condition-of-physical-infrastructure_Index_vue":1,"resources_js_pages_status-of-tourism-development_Index_vue":1,"resources_js_pages_industry-business_Index_vue":1,"resources_js_pages_state-of-agricultural-sector_Index_vue":1,"resources_js_pages_forest-and-environment_Index_vue":1,"resources_js_pages_miscellaneous_Index_vue":1,"resources_js_pages_MinisterProfile_vue":1}[chunkId]) return "js/" + chunkId + ".js";
+=======
+/******/ 			if ({"resources_js_pages_Home_vue":1,"resources_js_pages_About_vue":1,"resources_js_pages_geographical-political-situations_Index_vue":1,"resources_js_pages_demographic-status_Index_vue":1,"resources_js_pages_economical-situation_Index_vue":1,"resources_js_pages_social-status_Index_vue":1,"resources_js_pages_condition-of-physical-infrastructure_Index_vue":1,"resources_js_pages_status-of-tourism-development_Index_vue":1,"resources_js_pages_industry-business_Index_vue":1,"resources_js_pages_state-of-agricultural-sector_Index_vue":1,"resources_js_pages_forest-and-environment_Index_vue":1,"resources_js_pages_miscellaneous_Index_vue":1,"resources_js_pages_TouristPlace_vue":1}[chunkId]) return "js/" + chunkId + ".js";
+>>>>>>> deb2aabc69f534c1e8c1ebc2381dd911b14444b1
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};

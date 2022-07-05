@@ -89,14 +89,14 @@
         <div class="chart-card">
           <div class="chart-body">
             <div class="chart-title mb-3">भौगोलिक क्षेत्रगत क्षेत्रफल</div>
-            <pie :chart-options="{ plugins: { legend: { display: true } } }" :plugins="pieChartPlugins" :chart-data="{
+            <pie :chart-options="{ plugins: { legend: { display: false } } }" :chart-data="{
               labels: ['हिमाली', 'पहाडी', 'तराई'],
               datasets: [
                 {
                   backgroundColor: ['#007bff', '#dc3545', 'green'],
                   data: [8393.11, 6748.78, 4857.39],
                 },
-            
+
               ],
             }" />
           </div>
@@ -120,20 +120,20 @@
             <div class="row">
               <div class="col-md-1"></div>
               <div class="col-md-5">
-                <Bar :chart-options="{ plugins: { legend: { display: false } } }" :chart-data="{
+                <Bar :chart-options="{ responsive: true }" :chart-data="{
                   labels: ['पुरुष', 'महिला'],
                   datasets: [
                     {
                       backgroundColor: ['#007bff', '#dc3545'],
                       data: [1287997, 1423273],
                     },
-                
+
                   ],
                 }" />
                 <div class="text-center year"><label>2068</label></div>
               </div>
               <div class="col-md-5 my-pie">
-                <Bar :chart-options="{ plugins: { legend: { display: false } } }" :chart-data="{
+                <Bar :chart-options="{ responsive: true }" :chart-data="{
                   labels: ['पुरुष', 'महिला'],
                   datasets: [
                     {
@@ -169,7 +169,7 @@
               </div>
             </div>
             <div class="col-md-4">
-              <Pie :chart-options="{ responsive: true }" :plugins="pieChartPlugins" :chart-data="{
+              <Pie :chart-options="{ responsive: true }" :chart-data="{
                 // labels: ['2068', '2078'],
                 datasets: [
                   {
@@ -183,7 +183,7 @@
             </div>
 
             <div class="col-md-4">
-              <Pie :chart-options="{ responsive: true }" :plugins="pieChartPlugins" :chart-data="{
+              <Pie :chart-options="{ responsive: true }" :chart-data="{
                 // labels: ['2068', '2078'],
                 datasets: [
                   {
@@ -197,7 +197,7 @@
             </div>
 
             <div class="col-md-4">
-              <Pie :chart-options="{ responsive: true }" :plugins="pieChartPlugins" :chart-data="{
+              <Pie :chart-options="{ responsive: true }" :chart-data="{
                 // labels: ['2068', '2078'],
                 datasets: [
                   {
@@ -294,7 +294,7 @@
 
       <div class="col-md-3">
         <div class="card">
-          <pie :chart-options="{ responsive: true }" :plugins="pieChartPlugins" :chart-data="{
+          <pie :chart-options="{ responsive: true }" :chart-data="{
             labels: ['कालोपत्रे', 'ग्राभेल', 'कच्ची'],
             datasets: [
               {
@@ -346,7 +346,7 @@
 
       <div class="col-md-3">
         <div class="card">
-          <pie :chart-options="{ responsive: true }" :plugins="pieChartPlugins" :chart-data="{
+          <pie :chart-options="{ responsive: true }" :chart-data="{
             labels: ['प्रदेश', 'प्रतिनिधिसभा'],
             datasets: [
               {
@@ -359,94 +359,54 @@
         </div>
       </div>
     </div>
-
-
-
-
-    <!-- ================================================ -->
-
-    <div class="p-3">
-      <div class="row my-4 ministries p-3">
-        <div class="col-lg-4 mt-3">
-          <router-link to="/ministry-profile" class="card text-dark text-center py-3 font-weight-bold ministry-card">
-            <span style="align-items:center;" height="80px" width="90px">
-
-              <img src="https://img.icons8.com/dotty/80/000000/parliament.png" />
-            </span>
+    <div class="row my-4 ministries p-3">
+      <div class="col-lg-4 mt-3">
+        <router-link to="/minister-profile" class="card text-dark text-center py-4 font-weight-bold">
+          <span style="align-items:center;" height="80px" width="90px">
+            <img src="https://img.icons8.com/ios-filled/50/000000/library.png" />
             हालको मन्त्रिपरिषद्
-          </router-link>
-        </div>
-
-        <div class="col-lg-4 mt-3">
-          <a href="#" class="card text-dark text-center py-4 font-weight-bold ministry-card">
-            <span style="align-items:center;" height="80px" width="90px">
-              <img
-                src="https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/64/000000/external-geography-back-to-school-xnimrodx-lineal-color-xnimrodx.png" />
-            </span>
-            हाम्रो भूगोल
-
-          </a>
-        </div>
-        <div class="col-lg-4 mt-3">
-          <a href="#" class="card text-dark text-center py-2 font-weight-bold ministry-card">
-            <span style="align-items:center;" height="60px" width="70px">
-              <img src="https://img.icons8.com/clouds/100/000000/globe--v2.png" />
-            </span>
-            पर्यटक स्थल
-          </a>
-        </div>
-        <div class="col-lg-4 mt-3">
-          <router-link to="#" class="card text-dark text-center py-5 font-weight-bold ministry-card">
-            स्थानीय तहकाहरू वेबसाइट
-          </router-link>
-        </div>
-
-        <div class="col-lg-4 mt-3">
-          <a href="#" class="card text-dark text-center py-5 font-weight-bold ministry-card">
-            ई-पुस्तकालय
-          </a>
-        </div>
-        <div class="col-lg-4 mt-3">
-          <router-link to="#" class="card text-dark text-center py-5 font-weight-bold ministry-card">
-            सामाजिक संजाल
-          </router-link>
-        </div>
-
+          </span>
+        </router-link>
       </div>
-    </div>
-
-    <div class="card">
-      <div class="card-body">
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Facebook</th>
-              <th scope="col">LinkedIn</th>
-              <th scope="col">twitter</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Larry</td>
-              <td>the Bird</td>
-              <td>@twitter</td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="col-lg-4 mt-3">
+        <a href="#" class="card text-dark text-center py-4 font-weight-bold">
+          <span style="align-items:center;">
+            <img src="https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/64/000000/external-geography-back-to-school-xnimrodx-lineal-color-xnimrodx.png"  height="50px" width="65px"/>
+            हाम्रो भूगोल
+          </span>
+        </a>
+      </div>
+      <div class="col-lg-4 mt-3">
+        <router-link to="#" class="card text-dark text-center py-4 font-weight-bold">
+          <span style="align-items:center;" height="80px" width="100px">
+            <img src="https://img.icons8.com/color/48/000000/earth-planet.png" />
+            पर्यटक स्थल
+          </span>
+        </router-link>
+      </div>
+      <div class="col-lg-4 mt-3">
+        <router-link to="#" class="card text-dark text-center py-5 font-weight-bold">
+          <span style="align-items:center;" height="80px" width="90px">
+            <img src="https://img.icons8.com/color/48/000000/domain--v1.png" />
+            स्थानीय तहकाहरू वेबसाइट
+          </span>
+        </router-link>
+      </div>
+      <div class="col-lg-4 mt-3">
+        <router-link to="#" class="card text-dark text-center py-5 font-weight-bold">
+          <span style="align-items:center;" height="60px" width="70px">
+            <img src="https://img.icons8.com/color-glass/48/000000/book-shelf.png" />
+            ई-पुस्तकालय
+          </span>
+        </router-link>
+      </div>
+      <div class="col-lg-4 mt-3">
+        <router-link to="#" class="card text-dark text-center py-5 font-weight-bold">
+          <span style="align-items:center;" height="60px" width="70px">
+            <img src="https://img.icons8.com/color/48/000000/myspace.png" />
+            सामाजिक संजाल
+          </span>
+        </router-link>
       </div>
     </div>
   </div>
