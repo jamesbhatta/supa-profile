@@ -6,6 +6,8 @@ import VueRouter from "vue-router";
 import routes from "./routes";
 
 window.Vue = Vue; //this is important! Do not use require('vue') for livewire-vue
+import VueIframe from 'vue-iframes'
+Vue.use(VueIframe);
 
 // Register Vue components
 Vue.component("navbar", require("./components/Navbar.vue").default);

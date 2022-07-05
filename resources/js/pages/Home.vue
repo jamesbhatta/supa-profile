@@ -64,13 +64,15 @@
     </div>
     <div class="my-5"></div>
 
+  <gis-tile></gis-tile>
+
     <div class="row">
 
       <div class="col-md-3 my-3">
         <div class="chart-card">
           <div class="chart-body">
             <div class="chart-title mb-3">शैक्षिक संस्था संख्या</div>
-            <pie :chart-options="{ responsive: true }" :chart-data="{
+            <pie :chart-options="{ responsive: true}" :plugins="pieChartPlugins" :chart-data="{
               labels: ['सामुदायिक', 'संस्थागत'],
               datasets: [
                 {
@@ -385,17 +387,19 @@
 
 <script>
 import { Bar, Pie } from "vue-chartjs/legacy";
+import ChartDataLabels from 'chartjs-plugin-datalabels';
 
 import { Chart as ChartJS, Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale, ArcElement } from "chart.js";
-
+import GisTile from "./../components/GisTile.vue";
 ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale, ArcElement);
 
 export default {
-  components: { Bar, Pie },
+  components: { Bar, Pie, GisTile },
 
   data() {
     return {
       infoCards: [],
+      pieChartPlugins: [ChartDataLabels],
       links: [
         {
           url: "/geographical-political-situation",
