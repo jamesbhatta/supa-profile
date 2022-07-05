@@ -2263,6 +2263,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -39426,6 +39429,14 @@ var render = function () {
                 ]),
               ]
             ),
+            _vm._v(" "),
+            _c("img", {
+              attrs: {
+                src: "https://4.bp.blogspot.com/-xQiVfurjEqg/WzOeOJ4aTdI/AAAAAAAAol0/72y9ICam56shTYXRwaUL7vhqqbTDAM80ACLcBGAs/s1600/Flag_of_Nepal.gif",
+                alt: "Flag",
+                height: "60px",
+              },
+            }),
           ],
           1
         ),
