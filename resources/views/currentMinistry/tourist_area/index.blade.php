@@ -2,12 +2,12 @@
 
 @section('content')
     <div class="container-fluid">
-        <h3 class="font-weight-bold">सुदूरपश्चिम प्रदेशमा हालको मन्त्रिपरिषद्</h3>
+        <h3 class="font-weight-bold">पर्यटकीय क्षेत्र</h3>
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
                 <li class="breadcrumb-item active" aria-current="page">भौगोलिक तथा राजनीतिक अवस्था</li>
-                <li class="breadcrumb-item active" aria-current="page">सुदूरपश्चिम प्रदेशमा हालको मन्त्रिपरिषद्</li>
+                <li class="breadcrumb-item active" aria-current="page">पर्यटकीय क्षेत्र</li>
             </ol>
         </nav>
         <div class="container">
@@ -16,49 +16,40 @@
         <div class="row">
             <div class="card z-depth-0 col-lg-4">
                 <nav class="nav nav-pills p-3" id="pills-tab" role="tablist">
-                    <h4> नयाँ हालको मन्त्रिपरिषद् थप्नुहोस्</h4>
+                    <h4> पर्यटकीय क्षेत्र</h4>
                 </nav>
                 <div class="card-body">
                     <form
-                        action="{{ $currentMinistry->id ? route('current-ministry.update', $currentMinistry) : route('current-ministry.store') }}"
+                        action="{{ $touristArea->id ? route('tourist-area.update', $touristArea) : route('tourist-area.store') }}"
                         method="POST" class="form" enctype="multipart/form-data">
                         @csrf
-                        @isset($currentMinistry->id)
+                        @isset($touristArea->id)
                             @method('PUT')
                         @endisset
 
                         <div class="row">
                             <div class="form-group col-12">
-                                <label for="input-name">नाम थर</label>
+                                <label for="input-name">नाम</label>
                                 <input type="text" id="input-name" name="name" class="form-control" autocomplete="off"
-                                    value="{{ old('name', $currentMinistry->name) }}">
+                                    value="{{ old('name', $touristArea ->name) }}">
                             </div>
                             <div class="form-group col-12">
-                                <label for="input-name">पद</label>
-                                <input type="text" id="input-name" name="post" class="form-control" autocomplete="off"
-                                    value="{{ old('post', $currentMinistry->post) }}">
+                                <label for="input-name">ठेगाना</label>
+                                <input type="text" id="input-name" name="address" class="form-control" autocomplete="off"
+                                    value="{{ old('address', $touristArea ->address) }}">
                             </div>
                             <div class="form-group col-12">
-                                <label for="input-name">मन्त्रालय</label>
-                                <input type="text" id="input-name" name="ministry" class="form-control"
-                                    autocomplete="off" value="{{ old('ministry', $currentMinistry->ministry) }}">
+                                <label for="input-name">फोटो</label>
+                                <input type="file" id="input-name" name="image" class="form-control"
+                                    autocomplete="off" value="{{ old('image', $touristArea  ->image) }}">
                             </div>
-                            <div class="form-group col-12">
-                                <label for="input-name">दल</label>
-                                <input type="text" id="input-name" name="team" class="form-control" autocomplete="off"
-                                    value="{{ old('team', $currentMinistry->team) }}">
-                            </div>
-                            <div class="form-group col-12">
-                                <label for="input-name">प्रोफाइल</label>
-                                <input type="file" id="input-name" name="profile" class="form-control" autocomplete="off"
-                                    value="{{ old('team', $currentMinistry->team) }}">
-                            </div>
+                           
                         </div>
 
 
                         <div class="form-group">
                             <button type="submit"
-                                class="btn btn-success z-depth-0">{{ $currentMinistry->id ? 'Update' : 'सेभ गर्नुहोस्' }}
+                                class="btn btn-success z-depth-0">{{ $touristArea  ->id ? 'Update' : 'सेभ गर्नुहोस्' }}
                             </button>
                         </div>
                     </form>
@@ -72,26 +63,26 @@
                         <thead>
                             <tr>
                                 <th>क्र.स.</th>
-                                <th>नाम थर</th>
-                                <th>पद</th>
-                                <th>मन्त्रालय </th>
-                                <th>दल</th>
+                                <th>फोटो</th>
+                                <th>नाम</th>
+                                <th>ठेगाना</th>
                                 <th></th>
                             </tr>
                         </thead>
                         <tbody>
-                            @forelse ($currentMinistries as $item)
+                            @forelse ($touristAreas as $item)
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
+                                    <td>
+                                        <img class="rounded-circle" src="{{asset('/touristArea')}}/{{$item->image}}" alt="img" height="40px" width="40px">
+                                    </td>
                                     <td>{{ $item->name }}</td>
-                                    <td>{{ $item->post }}</td>
-                                    <td>{{ $item->ministry }}</td>
-                                    <td>{{ $item->team }}</td>
+                                    <td>{{ $item->address }}</td>
                                     <td>
                                         <a class="action-btn text-primary"
-                                            href="{{ route('current-ministry.edit', $item->id) }}"><i
+                                            href="{{ route('tourist-area.edit', $item->id) }}"><i
                                                 class="far fa-edit"></i></a>
-                                        <form action="{{ route('current-ministry.destroy', $item->id) }}" method="post"
+                                        <form action="{{ route('tourist-area.destroy', $item->id) }}" method="post"
                                             onsubmit="return confirm('के तपाईँ निश्चित हुनुहुन्छ?')"
                                             class="form-inline d-inline">
                                             @csrf

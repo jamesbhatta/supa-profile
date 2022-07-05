@@ -65,6 +65,13 @@
                     </li>
                 @endhasanyrole
 
+                @hasanyrole('super-admin|admin')
+                <li class="nav-item sub-nav">
+                    <a class="nav-link" href="{{ route('tourist-area.index') }}"><span class="mx-3"><i
+                                class="fas fa-circle"></i></span>Tour</a>
+                </li>
+            @endhasanyrole
+
             </ul>
         </li>
 

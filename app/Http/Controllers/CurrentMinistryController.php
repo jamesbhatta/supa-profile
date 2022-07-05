@@ -13,7 +13,7 @@ class CurrentMinistryController extends Controller
         $dataset['labels'] = ["क्र.स.", "नाम थर", "पद", "मन्त्रालय", "दल"];
         $dataset['data'] = [];
         foreach ($data as $key => $item) {
-            
+
             $dataset['data'][] = [
                 $key + 1,
 
@@ -23,7 +23,7 @@ class CurrentMinistryController extends Controller
                 $item->team
             ];
         }
-        
+
 
         return response()->json($dataset, 200);
     }
@@ -35,12 +35,21 @@ class CurrentMinistryController extends Controller
     }
     public function store(Request $request)
     {
-        CurrentMinistry::create($request->validate([
+        $datas=$request->validate([
             'name' => "required|min:3|max:50",
             'post' => "required|min:3|max:50",
             'ministry' => "required|min:10|max:50",
             'team' => "required|min:10|max:50"
-        ]));
+        ]);
+        if ($image = $request->file('profile')) {
+            // return "hello";
+            $imagePath = 'ministry/';
+            $profileImage = date('YmdHis') . "." . $image->getClientOriginalExtension();
+            $image->move($imagePath, $profileImage);
+            $datas['profile'] = "$profileImage";
+           
+        }
+        CurrentMinistry::create($datas);
         return redirect()->back()->with('success', "हालको मन्त्रिपरिषद् सफलतापूर्वक थपियो");
     }
     public function destroy(CurrentMinistry $currentMinistry)
@@ -55,13 +64,25 @@ class CurrentMinistryController extends Controller
     }
     public function update(Request $request, CurrentMinistry $currentMinistry)
     {
-        $data = $request->validate([
+        $datas = $request->validate([
             'name' => "required|min:3|max:50",
             'post' => "required|min:3|max:50",
             'ministry' => "required|min:10|max:50",
             'team' => "required|min:10|max:50"
         ]);
-        $currentMinistry->update($data);
+        if ($image = $request->file('profile')) {
+            // return "hello";
+            $imagePath = 'ministry/';
+            $profileImage = date('YmdHis') . "." . $image->getClientOriginalExtension();
+            $image->move($imagePath, $profileImage);
+            $datas['profile'] = "$profileImage";
+           
+        }
+        $currentMinistry->update($datas);
         return redirect()->route('current-ministry.index')->with('success', "हालको मन्त्रिपरिषद् सफलतापूर्वक परिवर्तन भयो");
+    }
+    public function profile()
+    {
+        return view('ministry-profile.index');
     }
 }
