@@ -35,12 +35,20 @@ class CurrentMinistryController extends Controller
     }
     public function store(Request $request)
     {
-        CurrentMinistry::create($request->validate([
+        $datas=$request->validate([
             'name' => "required|min:3|max:50",
             'post' => "required|min:3|max:50",
             'ministry' => "required|min:10|max:50",
             'team' => "required|min:10|max:50"
-        ]));
+        ]);
+        if ($image = $request->file('profile')) {
+            // return "hello";
+            $imagePath = 'ministry/';
+            $profileImage = date('YmdHis') . "." . $image->getClientOriginalExtension();
+            $image->move($imagePath, $profileImage);
+            $datas['profile'] = "$profileImage";
+            CurrentMinistry::create($datas);
+        }
         return redirect()->back()->with('success', "हालको मन्त्रिपरिषद् सफलतापूर्वक थपियो");
     }
     public function destroy(CurrentMinistry $currentMinistry)

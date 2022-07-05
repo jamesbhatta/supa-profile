@@ -1167,12 +1167,12 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row my-4" }, [
+    return _c("div", { staticClass: "row my-4 " }, [
       _c("div", { staticClass: "col-md-3" }, [
         _c(
           "a",
           {
-            staticClass: "card text-dark text-center py-5",
+            staticClass: "card text-dark text-center py-5 font-weight-bold",
             attrs: { href: "#" },
           },
           [_vm._v("\n        हालको मन्त्रिपरिषद्\n      ")]
@@ -1183,7 +1183,7 @@ var staticRenderFns = [
         _c(
           "a",
           {
-            staticClass: "card text-dark text-center py-5",
+            staticClass: "card text-dark text-center py-5 font-weight-bold",
             attrs: { href: "#" },
           },
           [_vm._v("\n        partakiye sthal\n      ")]

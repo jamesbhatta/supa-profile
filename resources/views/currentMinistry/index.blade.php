@@ -15,19 +15,13 @@
         </div>
         <div class="row">
             <div class="card z-depth-0 col-lg-4">
-                <div class="card-header">
-                    <div style="overflow: auto;scrollbar-width: none;">
-                        <div>
-                            <nav class="nav nav-pills" id="pills-tab" role="tablist">
-                                <h4> नयाँ हालको मन्त्रिपरिषद् थप्नुहोस्</h4>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
+                <nav class="nav nav-pills p-3" id="pills-tab" role="tablist">
+                    <h4> नयाँ हालको मन्त्रिपरिषद् थप्नुहोस्</h4>
+                </nav>
                 <div class="card-body">
                     <form
                         action="{{ $currentMinistry->id ? route('current-ministry.update', $currentMinistry) : route('current-ministry.store') }}"
-                        method="POST" class="form">
+                        method="POST" class="form" enctype="multipart/form-data">
                         @csrf
                         @isset($currentMinistry->id)
                             @method('PUT')
@@ -54,6 +48,11 @@
                                 <input type="text" id="input-name" name="team" class="form-control" autocomplete="off"
                                     value="{{ old('team', $currentMinistry->team) }}">
                             </div>
+                            <div class="form-group col-12">
+                                <label for="input-name">प्रोफाइल</label>
+                                <input type="file" id="input-name" name="profile" class="form-control" autocomplete="off"
+                                    value="{{ old('team', $currentMinistry->team) }}">
+                            </div>
                         </div>
     
     
@@ -67,47 +66,49 @@
             </div>
 
 
-            <div class="card-body col-lg-8">
-                <table class="table table-striped table-hover">
-                    <thead>
-                        <tr>
-                            <th>क्र.स.</th>
-                            <th>नाम थर</th>
-                            <th>पद</th>
-                            <th>मन्त्रालय </th>
-                            <th>दल</th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @forelse ($currentMinistries as $item)
+            <div class="card col-lg-7 ml-5 z-depth-0">
+                <div class="card-body">
+                    <table class="table table-striped table-hover">
+                        <thead>
                             <tr>
-                                <td>{{ $loop->iteration }}</td>
-                                <td>{{ $item->name }}</td>
-                                <td>{{ $item->post }}</td>
-                                <td>{{ $item->ministry }}</td>
-                                <td>{{ $item->team }}</td>
-                                <td>
-                                    <a class="action-btn text-primary"
-                                        href="{{ route('current-ministry.edit', $item->id) }}"><i
-                                            class="far fa-edit"></i></a>
-                                    <form action="{{ route('current-ministry.destroy', $item->id) }}" method="post"
-                                        onsubmit="return confirm('के तपाईँ निश्चित हुनुहुन्छ?')"
-                                        class="form-inline d-inline">
-                                        @csrf
-                                        @method('delete')
-                                        <button type="submit" class="action-btn text-danger"><i
-                                                class="far fa-trash-alt"></i></button>
-                                    </form>
-                                </td>
+                                <th>क्र.स.</th>
+                                <th>नाम थर</th>
+                                <th>पद</th>
+                                <th>मन्त्रालय </th>
+                                <th>दल</th>
+                                <th></th>
                             </tr>
-                        @empty
-                            <tr class="text-center font-italic">
-                                <td colspan="10">* * डाटाबेसमा कुनै डाटा छैन * *</td>
-                            </tr>
-                        @endforelse
-                    </tbody>
-                </table>
+                        </thead>
+                        <tbody>
+                            @forelse ($currentMinistries as $item)
+                                <tr>
+                                    <td>{{ $loop->iteration }}</td>
+                                    <td>{{ $item->name }}</td>
+                                    <td>{{ $item->post }}</td>
+                                    <td>{{ $item->ministry }}</td>
+                                    <td>{{ $item->team }}</td>
+                                    <td>
+                                        <a class="action-btn text-primary"
+                                            href="{{ route('current-ministry.edit', $item->id) }}"><i
+                                                class="far fa-edit"></i></a>
+                                        <form action="{{ route('current-ministry.destroy', $item->id) }}" method="post"
+                                            onsubmit="return confirm('के तपाईँ निश्चित हुनुहुन्छ?')"
+                                            class="form-inline d-inline">
+                                            @csrf
+                                            @method('delete')
+                                            <button type="submit" class="action-btn text-danger"><i
+                                                    class="far fa-trash-alt"></i></button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            @empty
+                                <tr class="text-center font-italic">
+                                    <td colspan="10">* * डाटाबेसमा कुनै डाटा छैन * *</td>
+                                </tr>
+                            @endforelse
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
         
