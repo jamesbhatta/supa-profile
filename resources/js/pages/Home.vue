@@ -359,57 +359,6 @@
         </div>
       </div>
     </div>
-<<<<<<< HEAD
-    <div class="row my-4 ministries p-3">
-      <div class="col-lg-4 mt-3">
-        <router-link to="/minister-profile" class="card text-dark text-center py-4 font-weight-bold">
-          <span style="align-items:center;" height="80px" width="90px">
-            <img src="https://img.icons8.com/ios-filled/50/000000/library.png" />
-            हालको मन्त्रिपरिषद्
-          </span>
-        </router-link>
-      </div>
-      <div class="col-lg-4 mt-3">
-        <a href="#" class="card text-dark text-center py-4 font-weight-bold">
-          <span style="align-items:center;">
-            <img src="https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/64/000000/external-geography-back-to-school-xnimrodx-lineal-color-xnimrodx.png"  height="50px" width="65px"/>
-            हाम्रो भूगोल
-          </span>
-        </a>
-      </div>
-      <div class="col-lg-4 mt-3">
-        <router-link to="#" class="card text-dark text-center py-4 font-weight-bold">
-          <span style="align-items:center;" height="80px" width="100px">
-            <img src="https://img.icons8.com/color/48/000000/earth-planet.png" />
-            पर्यटक स्थल
-          </span>
-        </router-link>
-      </div>
-      <div class="col-lg-4 mt-3">
-        <router-link to="#" class="card text-dark text-center py-5 font-weight-bold">
-          <span style="align-items:center;" height="80px" width="90px">
-            <img src="https://img.icons8.com/color/48/000000/domain--v1.png" />
-            स्थानीय तहकाहरू वेबसाइट
-          </span>
-        </router-link>
-      </div>
-      <div class="col-lg-4 mt-3">
-        <router-link to="#" class="card text-dark text-center py-5 font-weight-bold">
-          <span style="align-items:center;" height="60px" width="70px">
-            <img src="https://img.icons8.com/color-glass/48/000000/book-shelf.png" />
-            ई-पुस्तकालय
-          </span>
-        </router-link>
-      </div>
-      <div class="col-lg-4 mt-3">
-        <router-link to="#" class="card text-dark text-center py-5 font-weight-bold">
-          <span style="align-items:center;" height="60px" width="70px">
-            <img src="https://img.icons8.com/color/48/000000/myspace.png" />
-            सामाजिक संजाल
-          </span>
-        </router-link>
-      </div>
-=======
 
 
 
@@ -419,17 +368,17 @@
     <div class="p-3">
       <div class="row my-4 ministries p-3">
         <div class="col-lg-4 mt-3">
-          <a href="#" class="card text-dark text-center py-3 font-weight-bold">
+          <router-link to="/ministry-profile" class="card text-dark text-center py-3 font-weight-bold ministry-card">
             <span style="align-items:center;" height="80px" width="90px">
 
               <img src="https://img.icons8.com/dotty/80/000000/parliament.png" />
             </span>
             हालको मन्त्रिपरिषद्
-          </a>
+          </router-link>
         </div>
 
         <div class="col-lg-4 mt-3">
-          <a href="#" class="card text-dark text-center py-4 font-weight-bold">
+          <a href="#" class="card text-dark text-center py-4 font-weight-bold ministry-card">
             <span style="align-items:center;" height="80px" width="90px">
               <img
                 src="https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/64/000000/external-geography-back-to-school-xnimrodx-lineal-color-xnimrodx.png" />
@@ -439,7 +388,7 @@
           </a>
         </div>
         <div class="col-lg-4 mt-3">
-          <a href="#" class="card text-dark text-center py-2 font-weight-bold">
+          <a href="#" class="card text-dark text-center py-2 font-weight-bold ministry-card">
             <span style="align-items:center;" height="60px" width="70px">
               <img src="https://img.icons8.com/clouds/100/000000/globe--v2.png" />
             </span>
@@ -447,18 +396,18 @@
           </a>
         </div>
         <div class="col-lg-4 mt-3">
-          <router-link to="#" class="card text-dark text-center py-5 font-weight-bold">
+          <router-link to="#" class="card text-dark text-center py-5 font-weight-bold ministry-card">
             स्थानीय तहकाहरू वेबसाइट
           </router-link>
         </div>
 
         <div class="col-lg-4 mt-3">
-          <a href="#" class="card text-dark text-center py-5 font-weight-bold">
+          <a href="#" class="card text-dark text-center py-5 font-weight-bold ministry-card">
             ई-पुस्तकालय
           </a>
         </div>
         <div class="col-lg-4 mt-3">
-          <router-link to="#" class="card text-dark text-center py-5 font-weight-bold">
+          <router-link to="#" class="card text-dark text-center py-5 font-weight-bold ministry-card">
             सामाजिक संजाल
           </router-link>
         </div>
@@ -499,7 +448,6 @@
           </tbody>
         </table>
       </div>
->>>>>>> acb7e7bbc256f9350c7d876ee9844f69fbbe57dd
     </div>
   </div>
 </template>
@@ -609,5 +557,15 @@ export default {
 .navigation-grid>a:hover {
   background-color: #2572bc;
   color: #fff;
+}
+.ministry-card{
+  border-radius: 10px;
+}
+
+.ministry-card:hover{
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+  box-shadow: 0 24px 36px rgba(0,0,0,0.11),
+    0 24px 46px var(--box-shadow-color);
+  background-color: #2572bc;
 }
 </style>
