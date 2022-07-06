@@ -6,7 +6,7 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-                <li class="breadcrumb-item active" aria-current="page">जनसंख्या</li>
+                <li class="breadcrumb-item active" aria-current="page">जनसांख्यिक स्थिति</li>
                 <li class="breadcrumb-item active" aria-current="page">सुदूरपश्चिम प्रदेशका भौगोलिक क्षेत्रगत जनसंख्या तथा
                     जनघनत्व विवरण</li>
             </ol>

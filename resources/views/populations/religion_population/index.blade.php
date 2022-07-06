@@ -6,7 +6,7 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-                <li class="breadcrumb-item active" aria-current="page">कृषि क्षेत्र</li>
+                <li class="breadcrumb-item active" aria-current="page">जनसांख्यिक स्थिति</li>
                 <li class="breadcrumb-item active" aria-current="page">धर्मावलम्वीका आधारमा जिल्लागत विवरण
                 </li>
             </ol>
