@@ -57,7 +57,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -72,8 +71,7 @@ __webpack_require__.r(__webpack_exports__);
       var _this = this;
 
       axios.get("/api/tourist-area").then(function (response) {
-        _this.ministryDetails = response.data;
-        console.log(response.data);
+        _this.ministryDetails = response.data.data; // console.log(this.ministryDetails);
       })["catch"](function (error) {
         return console.log(error);
       });
@@ -244,14 +242,14 @@ var render = function () {
             "div",
             { staticClass: "row p-3 background" },
             _vm._l(_vm.ministryDetails, function (item) {
-              return _c("div", { staticClass: "col-lg-6 mt-4" }, [
+              return _c("div", { key: item.id, staticClass: "col-lg-6 mt-4" }, [
                 _c("div", { staticClass: "row" }, [
                   _c("div", { staticClass: "col-lg-12" }, [
                     _c("img", {
                       staticClass: "profile-img",
                       attrs: {
-                        src: "/touristArea/" + item.image,
-                        alt: "img",
+                        src: item.image_url,
+                        alt: item.name,
                         height: "320px",
                         width: "100%",
                       },

@@ -25,16 +25,15 @@
     <section v-if="ministryDetails" id="profile-summary">
 
       <div class="row p-3 background">
-        <div v-for="item in ministryDetails" class="col-lg-6 mt-4">
+        <div v-for="item in ministryDetails" class="col-lg-6 mt-4" :key="item.id">
           <div class="row">
             <div class="col-lg-12">
-              <img class="profile-img" :src="'/touristArea/' + item.image" alt="img" :height="'320px'" :width="'100%'">
+              <img class="profile-img" :src="item.image_url" :alt="item.name" height="320px" width="100%">
               <div class="name-tab">
                 <h4 class="font-weight-bold mt-3 text-center text-white text-uppercase">{{ item.name }}</h4>
                 <h5 class="mt-3 text-white text-center text-monospace">{{ item.address }}</h5>
               </div>
             </div>
-            
           </div>
         </div>
       </div>
@@ -50,9 +49,7 @@ export default {
 
   data() {
     return {
-      ministryDetails: [
-
-      ],
+      ministryDetails: [],
     }
   },
   mounted() {
@@ -63,8 +60,8 @@ export default {
       axios
         .get("/api/tourist-area")
         .then((response) => {
-          this.ministryDetails = response.data;
-          console.log(response.data);
+          this.ministryDetails = response.data.data;
+          // console.log(this.ministryDetails);
         })
         .catch((error) => console.log(error));
     },
