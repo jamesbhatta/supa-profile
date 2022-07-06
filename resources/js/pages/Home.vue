@@ -1,6 +1,7 @@
 
 <template>
-  <div class="container py-4">
+ <div class="container-fluid">
+   <div class="container py-4">
     <div class="row">
       <div class="col-md-3 d-none d-md-block">
         <nav class="dataset-links-card">
@@ -433,7 +434,12 @@
       </thead>
 
     </table>
+
+
+   
   </div>
+   
+ </div>
 </template>
 <style>
 .ministries {
@@ -597,4 +603,6 @@ export default {
 .ministry-card5:hover span{
   color: #fff;
 }
+
+
 </style>
