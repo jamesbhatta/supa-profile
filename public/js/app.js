@@ -2266,6 +2266,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -2629,6 +2630,12 @@ var routes = {
     name: "tourist-place",
     component: function component() {
       return __webpack_require__.e(/*! import() */ "resources_js_pages_TouristPlace_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/TouristPlace.vue */ "./resources/js/pages/TouristPlace.vue"));
+    }
+  }, {
+    path: "/bhugol",
+    name: "bhugol",
+    component: function component() {
+      return __webpack_require__.e(/*! import() */ "resources_js_pages_Bhugol_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/Bhugol.vue */ "./resources/js/pages/Bhugol.vue"));
     }
   }]
 };
@@ -39433,9 +39440,9 @@ var render = function () {
             _vm._v(" "),
             _c("img", {
               attrs: {
-                src: "https://4.bp.blogspot.com/-xQiVfurjEqg/WzOeOJ4aTdI/AAAAAAAAol0/72y9ICam56shTYXRwaUL7vhqqbTDAM80ACLcBGAs/s1600/Flag_of_Nepal.gif",
-                alt: "Flag",
-                height: "60px",
+                src: "/assets/img/animation-flag.gif",
+                alt: "flag",
+                height: "50px",
               },
             }),
           ],
@@ -80000,7 +80007,7 @@ const version = XLSX.version;
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_pages_Home_vue":1,"resources_js_pages_About_vue":1,"resources_js_pages_geographical-political-situations_Index_vue":1,"resources_js_pages_demographic-status_Index_vue":1,"resources_js_pages_economical-situation_Index_vue":1,"resources_js_pages_social-status_Index_vue":1,"resources_js_pages_condition-of-physical-infrastructure_Index_vue":1,"resources_js_pages_status-of-tourism-development_Index_vue":1,"resources_js_pages_industry-business_Index_vue":1,"resources_js_pages_state-of-agricultural-sector_Index_vue":1,"resources_js_pages_forest-and-environment_Index_vue":1,"resources_js_pages_miscellaneous_Index_vue":1,"resources_js_pages_MinisterProfile_vue":1,"resources_js_pages_TouristPlace_vue":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_pages_Home_vue":1,"resources_js_pages_About_vue":1,"resources_js_pages_geographical-political-situations_Index_vue":1,"resources_js_pages_demographic-status_Index_vue":1,"resources_js_pages_economical-situation_Index_vue":1,"resources_js_pages_social-status_Index_vue":1,"resources_js_pages_condition-of-physical-infrastructure_Index_vue":1,"resources_js_pages_status-of-tourism-development_Index_vue":1,"resources_js_pages_industry-business_Index_vue":1,"resources_js_pages_state-of-agricultural-sector_Index_vue":1,"resources_js_pages_forest-and-environment_Index_vue":1,"resources_js_pages_miscellaneous_Index_vue":1,"resources_js_pages_MinisterProfile_vue":1,"resources_js_pages_TouristPlace_vue":1,"resources_js_pages_Bhugol_vue":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};

@@ -501,20 +501,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 
@@ -620,7 +606,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.navigation-grid[data-v-b3c5cf30] {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  gap: 1.5rem;\n}\n.navigation-grid>a[data-v-b3c5cf30] {\n  background-color: #fff;\n  padding: 10px 15px;\n  border-radius: 6px;\n  min-height: 200px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  color: #2572bc;\n  font-size: 1.5rem;\n  font-weight: 600;\n  transition: 0.3s ease;\n}\n.navigation-grid>a[data-v-b3c5cf30]:hover {\n  background-color: #2572bc;\n  color: #fff;\n}\n.ministry-card[data-v-b3c5cf30] {\n  border-radius: 10px;\n}\n.ministry-card[data-v-b3c5cf30]:hover {\n  transform: translateY(-5px) scale(1.005) translateZ(0);\n  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),\n    0 24px 46px var(--box-shadow-color);\n  background-color: #2572bc;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.navigation-grid[data-v-b3c5cf30] {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  gap: 1.5rem;\n}\n.navigation-grid>a[data-v-b3c5cf30] {\n  background-color: #fff;\n  padding: 10px 15px;\n  border-radius: 6px;\n  min-height: 200px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  color: #2572bc;\n  font-size: 1.5rem;\n  font-weight: 600;\n  transition: 0.3s ease;\n}\n.navigation-grid>a[data-v-b3c5cf30]:hover {\n  background-color: #2572bc;\n  color: #fff;\n}\n.ministry-card[data-v-b3c5cf30] {\n  border-radius: 10px;\n}\n.ministry-card[data-v-b3c5cf30]:hover {\n  transform: translateY(-5px) scale(1.005) translateZ(0);\n    box-shadow:2px 2px 10px 3px rgba(51, 214, 19, 0.753);\n  background-color: #c6c915;\n}\n.ministry-card:hover span[data-v-b3c5cf30]{\n  color: #fff;\n}\n.ministry-card1[data-v-b3c5cf30]:hover {\n  transform: translateY(-2px) scale(1.005) translateZ(0);\n  box-shadow:2px 2px 10px 3px rgba(51, 214, 19, 0.753);\n  background-color: blue;\n  color: #fff;\n}\n.ministry-card1:hover span[data-v-b3c5cf30]{\n  color: #fff;\n}\n.ministry-card2[data-v-b3c5cf30]:hover {\n  transform: translateY(-5px) scale(1.005) translateZ(0);\n    box-shadow:2px 2px 10px 3px rgba(14, 90, 230, 0.945);\n  background-color: green;\n}\n.ministry-card2:hover span[data-v-b3c5cf30]{\n  color: #fff;\n}\n.ministry-card3[data-v-b3c5cf30]:hover {\n  transform: translateY(-5px) scale(1.005) translateZ(0);\n    box-shadow:2px 2px 10px 3px rgba(14, 90, 230, 0.945);\n  background-color: rgb(119, 43, 43);\n}\n.ministry-card3:hover span[data-v-b3c5cf30]{\n  color: #fff;\n}\n.ministry-card4[data-v-b3c5cf30]:hover {\n  transform: translateY(-5px) scale(1.005) translateZ(0);\n   box-shadow:2px 2px 10px 3px rgba(14, 90, 230, 0.945);\n  background-color: rgb(139, 50, 139);\n}\n.ministry-card4:hover span[data-v-b3c5cf30]{\n  color: #fff;\n}\n.ministry-card5[data-v-b3c5cf30]:hover {\n  transform: translateY(-5px) scale(1.005) translateZ(0);\n  box-shadow:2px 2px 10px 3px rgba(14, 90, 230, 0.945);\n  background-color: rgb(175, 106, 28);\n}\n.ministry-card5:hover span[data-v-b3c5cf30]{\n  color: #fff;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1019,9 +1005,8 @@ var render = function () {
                 _vm._v(" "),
                 _c("pie", {
                   attrs: {
-                    "chart-options": {
-                      plugins: { legend: { display: false } },
-                    },
+                    "chart-options": { plugins: { legend: { display: true } } },
+                    plugins: _vm.pieChartPlugins,
                     "chart-data": {
                       labels: ["हिमाली", "पहाडी", "तराई"],
                       datasets: [
@@ -1057,7 +1042,9 @@ var render = function () {
                   [
                     _c("Bar", {
                       attrs: {
-                        "chart-options": { responsive: true },
+                        "chart-options": {
+                          plugins: { legend: { display: false } },
+                        },
                         "chart-data": {
                           labels: ["पुरुष", "महिला"],
                           datasets: [
@@ -1081,7 +1068,9 @@ var render = function () {
                   [
                     _c("Bar", {
                       attrs: {
-                        "chart-options": { responsive: true },
+                        "chart-options": {
+                          plugins: { legend: { display: false } },
+                        },
                         "chart-data": {
                           labels: ["पुरुष", "महिला"],
                           datasets: [
@@ -1117,6 +1106,7 @@ var render = function () {
                   _c("Pie", {
                     attrs: {
                       "chart-options": { responsive: true },
+                      plugins: _vm.pieChartPlugins,
                       "chart-data": {
                         // labels: ['2068', '2078'],
                         datasets: [
@@ -1143,6 +1133,7 @@ var render = function () {
                   _c("Pie", {
                     attrs: {
                       "chart-options": { responsive: true },
+                      plugins: _vm.pieChartPlugins,
                       "chart-data": {
                         // labels: ['2068', '2078'],
                         datasets: [
@@ -1169,6 +1160,7 @@ var render = function () {
                   _c("Pie", {
                     attrs: {
                       "chart-options": { responsive: true },
+                      plugins: _vm.pieChartPlugins,
                       "chart-data": {
                         // labels: ['2068', '2078'],
                         datasets: [
@@ -1315,6 +1307,7 @@ var render = function () {
               _c("pie", {
                 attrs: {
                   "chart-options": { responsive: true },
+                  plugins: _vm.pieChartPlugins,
                   "chart-data": {
                     labels: ["कालोपत्रे", "ग्राभेल", "कच्ची"],
                     datasets: [
@@ -1392,6 +1385,7 @@ var render = function () {
               _c("pie", {
                 attrs: {
                   "chart-options": { responsive: true },
+                  plugins: _vm.pieChartPlugins,
                   "chart-data": {
                     labels: ["प्रदेश", "प्रतिनिधिसभा"],
                     datasets: [
@@ -1440,108 +1434,8 @@ var render = function () {
                           height: "50px",
                         },
                       }),
-                      _vm._v("\n            हालको मन्त्रिपरिषद्\n          "),
-                    ]
-                  ),
-                ]
-              ),
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "col-lg-4 mt-3" },
-            [
-              _c(
-                "router-link",
-                {
-                  staticClass:
-                    " ministry-card card text-dark text-center py-5 font-weight-bold",
-                  attrs: { to: "#" },
-                },
-                [
-                  _c(
-                    "span",
-                    {
-                      staticStyle: { "align-items": "center" },
-                      attrs: { height: "80px", width: "90px" },
-                    },
-                    [
-                      _c("img", {
-                        attrs: {
-                          src: "https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/64/000000/external-geography-back-to-school-xnimrodx-lineal-color-xnimrodx.png",
-                          height: "50px",
-                        },
-                      }),
-                      _vm._v("\n            हाम्रो भूगोल\n          "),
-                    ]
-                  ),
-                ]
-              ),
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "col-lg-4 mt-3" },
-            [
-              _c(
-                "router-link",
-                {
-                  staticClass:
-                    " ministry-card card text-dark text-center py-5 font-weight-bold",
-                  attrs: { to: "/tourist-place" },
-                },
-                [
-                  _c(
-                    "span",
-                    {
-                      staticStyle: { "align-items": "center" },
-                      attrs: { height: "80px", width: "90px" },
-                    },
-                    [
-                      _c("img", {
-                        attrs: {
-                          src: "https://img.icons8.com/color/48/000000/earth-planet.png",
-                        },
-                      }),
-                      _vm._v("\n            पर्यटक स्थल\n          "),
-                    ]
-                  ),
-                ]
-              ),
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "col-lg-4 mt-3" },
-            [
-              _c(
-                "router-link",
-                {
-                  staticClass:
-                    " ministry-card card text-dark text-center py-5 font-weight-bold",
-                  attrs: { to: "#" },
-                },
-                [
-                  _c(
-                    "span",
-                    {
-                      staticStyle: { "align-items": "center" },
-                      attrs: { height: "80px", width: "90px" },
-                    },
-                    [
-                      _c("img", {
-                        attrs: {
-                          src: "https://img.icons8.com/color/48/000000/domain--v1.png",
-                        },
-                      }),
                       _vm._v(
-                        "\n            स्थानीय तहकाहरू वेबसाइट\n          "
+                        "\n              हालको मन्त्रिपरिषद्\n            "
                       ),
                     ]
                   ),
@@ -1559,23 +1453,24 @@ var render = function () {
                 "router-link",
                 {
                   staticClass:
-                    " ministry-card card text-dark text-center py-5 font-weight-bold",
-                  attrs: { to: "#" },
+                    " ministry-card1 card text-dark text-center py-5 font-weight-bold",
+                  attrs: { to: "/bhugol" },
                 },
                 [
                   _c(
                     "span",
                     {
                       staticStyle: { "align-items": "center" },
-                      attrs: { height: "60px", width: "70px" },
+                      attrs: { height: "80px", width: "90px" },
                     },
                     [
                       _c("img", {
                         attrs: {
-                          src: "https://img.icons8.com/color-glass/48/000000/book-shelf.png",
+                          src: "https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/64/000000/external-geography-back-to-school-xnimrodx-lineal-color-xnimrodx.png",
+                          height: "50px",
                         },
                       }),
-                      _vm._v("\n            ई-पुस्तकालय\n          "),
+                      _vm._v("\nहाम्रो भूगोल             "),
                     ]
                   ),
                 ]
@@ -1592,7 +1487,108 @@ var render = function () {
                 "router-link",
                 {
                   staticClass:
-                    " ministry-card card text-dark text-center py-5 font-weight-bold",
+                    " ministry-card2 card text-dark text-center py-5 font-weight-bold",
+                  attrs: { to: "/tourist-place" },
+                },
+                [
+                  _c(
+                    "span",
+                    {
+                      staticStyle: { "align-items": "center" },
+                      attrs: { height: "80px", width: "90px" },
+                    },
+                    [
+                      _c("img", {
+                        attrs: {
+                          src: "https://img.icons8.com/color/48/000000/earth-planet.png",
+                        },
+                      }),
+                      _vm._v("\n              पर्यटक स्थल\n            "),
+                    ]
+                  ),
+                ]
+              ),
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "col-lg-4 mt-3" },
+            [
+              _c(
+                "router-link",
+                {
+                  staticClass:
+                    " ministry-card3 card text-dark text-center py-5 font-weight-bold",
+                  attrs: { to: "#" },
+                },
+                [
+                  _c(
+                    "span",
+                    {
+                      staticStyle: { "align-items": "center" },
+                      attrs: { height: "80px", width: "90px" },
+                    },
+                    [
+                      _c("img", {
+                        attrs: {
+                          src: "https://img.icons8.com/color/48/000000/domain--v1.png",
+                        },
+                      }),
+                      _vm._v(
+                        "\n              स्थानीय तहकाहरू वेबसाइट\n            "
+                      ),
+                    ]
+                  ),
+                ]
+              ),
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "col-lg-4 mt-3" },
+            [
+              _c(
+                "router-link",
+                {
+                  staticClass:
+                    " ministry-card4 card text-dark text-center py-5 font-weight-bold",
+                  attrs: { to: "#" },
+                },
+                [
+                  _c(
+                    "span",
+                    {
+                      staticStyle: { "align-items": "center" },
+                      attrs: { height: "60px", width: "70px" },
+                    },
+                    [
+                      _c("img", {
+                        attrs: {
+                          src: "https://img.icons8.com/color-glass/48/000000/book-shelf.png",
+                        },
+                      }),
+                      _vm._v("\n              ई-पुस्तकालय\n            "),
+                    ]
+                  ),
+                ]
+              ),
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "col-lg-4 mt-3" },
+            [
+              _c(
+                "router-link",
+                {
+                  staticClass:
+                    " ministry-card5 card text-dark text-center py-5 font-weight-bold",
                   attrs: { to: "#" },
                 },
                 [
@@ -1608,7 +1604,7 @@ var render = function () {
                           src: "https://img.icons8.com/color/48/000000/myspace.png",
                         },
                       }),
-                      _vm._v("\n            सामाजिक संजाल\n          "),
+                      _vm._v("\n              सामाजिक संजाल\n            "),
                     ]
                   ),
                 ]
@@ -1692,57 +1688,19 @@ var staticRenderFns = [
     return _c("table", { staticClass: "table bg-white" }, [
       _c("thead", [
         _c("tr", [
-          _c("th", { attrs: { scope: "col" } }, [
-            _c("label", { staticClass: "font-weight-bold" }, [_vm._v("#")]),
-          ]),
-          _vm._v(" "),
-          _c("th", { attrs: { scope: "col" } }, [
-            _c("label", { staticClass: "font-weight-bold" }, [
-              _vm._v("Facebook"),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("th", { attrs: { scope: "col" } }, [
-            _c("label", { staticClass: "font-weight-bold" }, [
-              _vm._v("LinkedIn"),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("th", { attrs: { scope: "col" } }, [
-            _c("label", { staticClass: "font-weight-bold" }, [
-              _vm._v("Twiter"),
-            ]),
-          ]),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("tbody", [
-        _c("tr", [
-          _c("th", { attrs: { scope: "row" } }, [_vm._v("1")]),
-          _vm._v(" "),
-          _c("td", [_vm._v("Mark")]),
-          _vm._v(" "),
-          _c("td", [_vm._v("Otto")]),
-          _vm._v(" "),
-          _c("td", [_vm._v("@mdo")]),
-        ]),
-        _vm._v(" "),
-        _c("tr", [
-          _c("th", { attrs: { scope: "row" } }, [_vm._v("2")]),
-          _vm._v(" "),
-          _c("td", [_vm._v("Jacob")]),
-          _vm._v(" "),
-          _c("td", [_vm._v("Thornton")]),
-          _vm._v(" "),
-          _c("td", [_vm._v("@fat")]),
-        ]),
-        _vm._v(" "),
-        _c("tr", [
-          _c("th", { attrs: { scope: "row" } }, [_vm._v("3")]),
-          _vm._v(" "),
-          _c("td", { attrs: { colspan: "2" } }, [_vm._v("Larry the Bird")]),
-          _vm._v(" "),
-          _c("td", [_vm._v("@twitter")]),
+          _c("iframe", {
+            staticStyle: { border: "none", overflow: "hidden" },
+            attrs: {
+              src: "https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fthedhangadhians%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId",
+              width: "340",
+              height: "500",
+              scrolling: "no",
+              frameborder: "0",
+              allowfullscreen: "true",
+              allow:
+                "autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share",
+            },
+          }),
         ]),
       ]),
     ])

@@ -57,9 +57,8 @@ class CurrentMinistryController extends Controller
         //     $image->move($imagePath, $profileImage);
         //     $datas['profile'] = "$profileImage";
         // }
-
         if ($request->hasFile('profile')) {
-            $datas = $request->file('profile')->store('uploads');
+            $datas['profile'] = $request->file('profile')->store('uploads');
         }
 
         CurrentMinistry::create($datas);
@@ -90,7 +89,7 @@ class CurrentMinistryController extends Controller
         // }
         if ($request->hasFile('profile')) {
             Storage::delete($currentMinistry->profile);
-            $datas = $request->file('profile')->store('uploads');
+            $datas['profile'] = $request->file('profile')->store('uploads');
         }
         $currentMinistry->update($datas);
         return redirect()->route('current-ministry.index')->with('success', "हालको मन्त्रिपरिषद् सफलतापूर्वक परिवर्तन भयो");
