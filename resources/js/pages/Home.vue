@@ -381,14 +381,7 @@
 हाम्रो भूगोल             </span>
           </router-link>
         </div>
-        <!-- <div class="col-lg-4 mt-3">
-          <router-link to="/bhugol" class=" ministry-card2 card text-dark text-center py-5 font-weight-bold">
-            <span style="align-items:center;" height="80px" width="90px">
-              <img src="https://img.icons8.com/color/48/000000/earth-planet.png" />
-              पर्यटक स्थल
-            </span>
-          </router-link>
-        </div> -->
+
         <div class="col-lg-4 mt-3">
           <router-link to="/tourist-place" class=" ministry-card2 card text-dark text-center py-5 font-weight-bold">
             <span style="align-items:center;" height="80px" width="90px">
@@ -573,8 +566,8 @@ export default {
 }
 .ministry-card2:hover {
   transform: translateY(-5px) scale(1.005) translateZ(0);
-    box-shadow:2px 2px 10px 3px rgba(14, 90, 230, 0.945);
-  background-color: green;
+    box-shadow:2px 2px 10px 3px rgba(0, 0, 0, 0.336);
+  background-color: rgb(14, 209, 14);
 }
 .ministry-card2:hover span{
   color: #fff;
