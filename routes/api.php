@@ -34,6 +34,7 @@ Route::get('total-budget', 'TotalBudgetController@listingTotalBudget');
 Route::get('employeement-status', 'EmployeementStatusController@listingEmployeementStatus');
 Route::get('total-student', 'TotalStudentController@listingTotalStudent');
 Route::get('display-ministry', 'CurrentMinistryController@displayData');
+Route::get('tourist-area', 'TouristAreaController@displayData');
 
 // unit-2 
 Route::get('geographical-area-population', 'GeographicalAreaPopulationController@listingGeographicalAreaPopulation');

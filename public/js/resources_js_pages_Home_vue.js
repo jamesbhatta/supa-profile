@@ -1492,7 +1492,7 @@ var render = function () {
                 {
                   staticClass:
                     " ministry-card card text-dark text-center py-5 font-weight-bold",
-                  attrs: { to: "#" },
+                  attrs: { to: "/tourist-place" },
                 },
                 [
                   _c(

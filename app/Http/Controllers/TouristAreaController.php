@@ -7,6 +7,12 @@ use Illuminate\Http\Request;
 
 class TouristAreaController extends Controller
 {
+    public function displayData()
+    {
+        $info=TouristArea::get();
+       
+        return response()->json($info, 200);
+    }
     public function index(TouristArea $touristArea)
     {
         $touristAreas=TouristArea::get();

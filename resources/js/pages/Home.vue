@@ -383,7 +383,7 @@
           </router-link>
         </div>
         <div class="col-lg-4 mt-3">
-          <router-link to="#" class=" ministry-card card text-dark text-center py-5 font-weight-bold">
+          <router-link to="/tourist-place" class=" ministry-card card text-dark text-center py-5 font-weight-bold">
             <span style="align-items:center;" height="80px" width="90px">
               <img src="https://img.icons8.com/color/48/000000/earth-planet.png" />
               पर्यटक स्थल

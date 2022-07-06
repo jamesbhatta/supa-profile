@@ -76,11 +76,11 @@ const routes = {
             component: () => import("./pages/MinisterProfile.vue"),
         },
 
-        // {
-        //     path: "/tourist-place",
-        //     name: "tourist-place",
-        //     component: () => import("./pages/TouristPlace.vue"),
-        // },
+        {
+            path: "/tourist-place",
+            name: "tourist-place",
+            component: () => import("./pages/TouristPlace.vue"),
+        },
     ],
 };
 
