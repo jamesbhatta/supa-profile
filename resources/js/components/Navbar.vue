@@ -16,7 +16,7 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
           aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-        </button> 
+        </button>
 
         <!-- Collapsible content -->
         <div class="collapse navbar-collapse" id="basicExampleNav">
@@ -40,8 +40,9 @@
         <!-- Collapsible content -->
 
         <!-- Flag image -->
-        <img src="https://4.bp.blogspot.com/-xQiVfurjEqg/WzOeOJ4aTdI/AAAAAAAAol0/72y9ICam56shTYXRwaUL7vhqqbTDAM80ACLcBGAs/s1600/Flag_of_Nepal.gif" alt="Flag" height="60px">
-      </div>
+<img src="/assets/img/animation-flag.gif" alt="flag" height="50px">
+
+</div>
 
     </nav>
     <div class="gaps"></div>
