@@ -382,6 +382,14 @@
             </span>
           </router-link>
         </div>
+        <!-- <div class="col-lg-4 mt-3">
+          <router-link to="/bhugol" class=" ministry-card2 card text-dark text-center py-5 font-weight-bold">
+            <span style="align-items:center;" height="80px" width="90px">
+              <img src="https://img.icons8.com/color/48/000000/earth-planet.png" />
+              पर्यटक स्थल
+            </span>
+          </router-link>
+        </div> -->
         <div class="col-lg-4 mt-3">
           <router-link to="/tourist-place" class=" ministry-card2 card text-dark text-center py-5 font-weight-bold">
             <span style="align-items:center;" height="80px" width="90px">
@@ -421,32 +429,11 @@
     <table class="table bg-white">
       <thead>
         <tr>
+          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fthedhangadhians%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
           
-          <th scope="col"><label class="font-weight-bold">#</label> </th>
-          <th scope="col"><label class="font-weight-bold">Facebook</label></th>
-          <th scope="col"><label class="font-weight-bold">LinkedIn</label></th>
-          <th scope="col"><label class="font-weight-bold">Twiter</label></th>
         </tr>
       </thead>
-      <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>@fat</td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td colspan="2">Larry the Bird</td>
-          <td>@twitter</td>
-        </tr>
-      </tbody>
+     
     </table>
   </div>
 </template>

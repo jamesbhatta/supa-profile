@@ -503,19 +503,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 
@@ -1701,57 +1688,19 @@ var staticRenderFns = [
     return _c("table", { staticClass: "table bg-white" }, [
       _c("thead", [
         _c("tr", [
-          _c("th", { attrs: { scope: "col" } }, [
-            _c("label", { staticClass: "font-weight-bold" }, [_vm._v("#")]),
-          ]),
-          _vm._v(" "),
-          _c("th", { attrs: { scope: "col" } }, [
-            _c("label", { staticClass: "font-weight-bold" }, [
-              _vm._v("Facebook"),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("th", { attrs: { scope: "col" } }, [
-            _c("label", { staticClass: "font-weight-bold" }, [
-              _vm._v("LinkedIn"),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("th", { attrs: { scope: "col" } }, [
-            _c("label", { staticClass: "font-weight-bold" }, [
-              _vm._v("Twiter"),
-            ]),
-          ]),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("tbody", [
-        _c("tr", [
-          _c("th", { attrs: { scope: "row" } }, [_vm._v("1")]),
-          _vm._v(" "),
-          _c("td", [_vm._v("Mark")]),
-          _vm._v(" "),
-          _c("td", [_vm._v("Otto")]),
-          _vm._v(" "),
-          _c("td", [_vm._v("@mdo")]),
-        ]),
-        _vm._v(" "),
-        _c("tr", [
-          _c("th", { attrs: { scope: "row" } }, [_vm._v("2")]),
-          _vm._v(" "),
-          _c("td", [_vm._v("Jacob")]),
-          _vm._v(" "),
-          _c("td", [_vm._v("Thornton")]),
-          _vm._v(" "),
-          _c("td", [_vm._v("@fat")]),
-        ]),
-        _vm._v(" "),
-        _c("tr", [
-          _c("th", { attrs: { scope: "row" } }, [_vm._v("3")]),
-          _vm._v(" "),
-          _c("td", { attrs: { colspan: "2" } }, [_vm._v("Larry the Bird")]),
-          _vm._v(" "),
-          _c("td", [_vm._v("@twitter")]),
+          _c("iframe", {
+            staticStyle: { border: "none", overflow: "hidden" },
+            attrs: {
+              src: "https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fthedhangadhians%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId",
+              width: "340",
+              height: "500",
+              scrolling: "no",
+              frameborder: "0",
+              allowfullscreen: "true",
+              allow:
+                "autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share",
+            },
+          }),
         ]),
       ]),
     ])
