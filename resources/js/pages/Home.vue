@@ -429,9 +429,9 @@
     </table>
 
 
-   
+
   </div>
-   
+
  </div>
 </template>
 <style>
@@ -596,6 +596,4 @@ export default {
 .ministry-card5:hover span{
   color: #fff;
 }
-
-
 </style>
