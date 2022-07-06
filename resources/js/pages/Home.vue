@@ -96,7 +96,7 @@
                   backgroundColor: ['#007bff', '#dc3545', 'green'],
                   data: [8393.11, 6748.78, 4857.39],
                 },
-            
+
               ],
             }" />
           </div>
@@ -127,7 +127,7 @@
                       backgroundColor: ['#007bff', '#dc3545'],
                       data: [1287997, 1423273],
                     },
-                
+
                   ],
                 }" />
                 <div class="text-center year"><label>2068</label></div>
@@ -362,7 +362,6 @@
     <!-- ========================================================= -->
     <div class="p-3">
       <div class="row my-4 ministries p-3">
-
         <div class="col-lg-4 mt-3">
           <router-link to="/minister-profile" class="ministry-card card text-dark text-center py-5 font-weight-bold">
             <span style="align-items:center;" height="80px" width="90px">
@@ -378,8 +377,7 @@
               <img
                 src="https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/64/000000/external-geography-back-to-school-xnimrodx-lineal-color-xnimrodx.png"
                 height="50px" />
-              हाम्रो भूगोल
-            </span>
+हाम्रो भूगोल             </span>
           </router-link>
         </div>
         <!-- <div class="col-lg-4 mt-3">
@@ -430,10 +428,10 @@
       <thead>
         <tr>
           <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fthedhangadhians%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-          
+
         </tr>
       </thead>
-     
+
     </table>
   </div>
 </template>
@@ -552,38 +550,51 @@ export default {
 
 .ministry-card:hover {
   transform: translateY(-5px) scale(1.005) translateZ(0);
-  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
-    0 24px 46px var(--box-shadow-color);
-  background-color: #afd35b;
+    box-shadow:2px 2px 10px 3px rgba(51, 214, 19, 0.753);
+  background-color: #c6c915;
+}
+.ministry-card:hover span{
+  color: #fff;
 }
 .ministry-card1:hover {
-  transform: translateY(-5px) scale(1.005) translateZ(0);
-  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
-    0 24px 46px var(--box-shadow-color);
+  transform: translateY(-2px) scale(1.005) translateZ(0);
+  box-shadow:2px 2px 10px 3px rgba(51, 214, 19, 0.753);
   background-color: blue;
+  color: #fff;
+  }
+.ministry-card1:hover span{
+  color: #fff;
 }
 .ministry-card2:hover {
   transform: translateY(-5px) scale(1.005) translateZ(0);
-  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
-    0 24px 46px var(--box-shadow-color);
+    box-shadow:2px 2px 10px 3px rgba(14, 90, 230, 0.945);
   background-color: green;
+}
+.ministry-card2:hover span{
+  color: #fff;
 }
 .ministry-card3:hover {
   transform: translateY(-5px) scale(1.005) translateZ(0);
-  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
-    0 24px 46px var(--box-shadow-color);
-  background-color: gray;
+    box-shadow:2px 2px 10px 3px rgba(14, 90, 230, 0.945);
+  background-color: rgb(119, 43, 43);
+}
+.ministry-card3:hover span{
+  color: #fff;
 }
 .ministry-card4:hover {
   transform: translateY(-5px) scale(1.005) translateZ(0);
-  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
-    0 24px 46px var(--box-shadow-color);
+   box-shadow:2px 2px 10px 3px rgba(14, 90, 230, 0.945);
   background-color: rgb(139, 50, 139);
+}
+.ministry-card4:hover span{
+  color: #fff;
 }
 .ministry-card5:hover {
   transform: translateY(-5px) scale(1.005) translateZ(0);
-  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
-    0 24px 46px var(--box-shadow-color);
-  background-color: rgb(14, 210, 236);
+  box-shadow:2px 2px 10px 3px rgba(14, 90, 230, 0.945);
+  background-color: rgb(175, 106, 28);
+}
+.ministry-card5:hover span{
+  color: #fff;
 }
 </style>
