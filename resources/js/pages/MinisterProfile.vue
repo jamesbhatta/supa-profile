@@ -90,6 +90,7 @@ export default {
 
 .profile-img {
   border-radius: 10px;
+  transition: 1s;
 }
 
 .profile-img:hover {
