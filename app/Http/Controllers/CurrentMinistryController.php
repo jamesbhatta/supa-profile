@@ -57,7 +57,6 @@ class CurrentMinistryController extends Controller
         //     $image->move($imagePath, $profileImage);
         //     $datas['profile'] = "$profileImage";
         // }
-
         if ($request->hasFile('profile')) {
             $datas = $request->file('profile')->store('uploads');
         }

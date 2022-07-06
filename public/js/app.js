@@ -2630,6 +2630,12 @@ var routes = {
     component: function component() {
       return __webpack_require__.e(/*! import() */ "resources_js_pages_TouristPlace_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/TouristPlace.vue */ "./resources/js/pages/TouristPlace.vue"));
     }
+  }, {
+    path: "/bhugol",
+    name: "bhugol",
+    component: function component() {
+      return Promise.resolve().then(function webpackMissingModule() { var e = new Error("Cannot find module './pages/Bhugol.vue'"); e.code = 'MODULE_NOT_FOUND'; throw e; });
+    }
   }]
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (routes);

@@ -81,6 +81,12 @@ const routes = {
             name: "tourist-place",
             component: () => import("./pages/TouristPlace.vue"),
         },
+        {
+            path: "/bhugol",
+            name: "bhugol",
+            component: () => import("./pages/Bhugol.vue"),
+        },
+
     ],
 };
 
