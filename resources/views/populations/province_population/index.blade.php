@@ -50,19 +50,19 @@
                         </div>
                         <div class="form-group col-lg-3">
                             <label for="input-fiscal-year-start">जनसङ्ख्या</label>
-                            <input type="text" name="population" class="form-control"
+                            <input type="number" name="population" class="form-control"
                                 value="{{ old('population', $provincePopulation->population) }}">
                         </div>
 
                         <div class="form-group col-lg-3">
                             <label for="input-fiscal-year-start">प्रतिशत</label>
-                            <input type="text" name="percentage" class="form-control"
+                            <input type="number" name="percentage" class="form-control"
                                 value="{{ old('percentage', $provincePopulation->percentage) }}">
                         </div>
 
                         <div class="form-group col-lg-3">
                             <label for="input-fiscal-year-start">जनसंख्या बृद्धिदर</label>
-                            <input type="text" name="population_increase_rate" class="form-control"
+                            <input type="number" name="population_increase_rate" class="form-control"
                                 value="{{ old('population_increase_rate', $provincePopulation->population_increase_rate) }}">
                         </div>
 

@@ -40,7 +40,7 @@
                         </div>
                         <div class="form-group col-lg-6">
                             <label for="input-name">सूचक (प्रतिशत)</label>
-                            <input type="text" id="input-name" name="indicator" class="form-control" autocomplete="off"
+                            <input type="number" id="input-name" name="indicator" class="form-control" autocomplete="off"
                                 value="{{ old('indicator', $economicIndicator->indicator) }}">
                         </div>
                     </div>

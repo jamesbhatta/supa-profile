@@ -41,31 +41,31 @@
 
                     <div class="form-group col-md-4">
                         <label for="input-name ">घरपरिवार संख्या</label>
-                        <input type="text" id="input-name" name="house_number" class="form-control" autocomplete="off" value="{{old('house_number')}}">
+                        <input type="number" id="input-name" name="house_number" class="form-control" autocomplete="off" value="{{old('house_number')}}">
                     </div>
                     <div class="form-group col-md-4">
                         <label for="input-name">पुरुष</label>
-                        <input type="text" id="input-name" name="male_number" class="form-control" autocomplete="off" value="{{old('male_number')}}">
+                        <input type="number" id="input-name" name="male_number" class="form-control" autocomplete="off" value="{{old('male_number')}}">
                     </div>
                     <div class="form-group col-md-4">
                         <label for="input-name">महिला</label>
-                        <input type="text" id="input-name" name="female_number" class="form-control" autocomplete="off" value="{{old('female_number')}}">
+                        <input type="number" id="input-name" name="female_number" class="form-control" autocomplete="off" value="{{old('female_number')}}">
                     </div>
                     <div class="form-group col-md-4">
                         <label for="input-name">औषत घरपरिवार सदस्य संख्या</label>
-                        <input type="text" id="input-name" name="avg_house_number" class="form-control" autocomplete="off" value="{{old('avg_house_number')}}">
+                        <input type="number" id="input-name" name="avg_house_number" class="form-control" autocomplete="off" value="{{old('avg_house_number')}}">
                     </div>
                     <div class="form-group col-md-4">
                         <label for="input-name">लैगिंक अनुपात</label>
-                        <input type="text" id="input-name" name="anupat" class="form-control" autocomplete="off" value="{{old('anupat')}}">
+                        <input type="number" id="input-name" name="anupat" class="form-control" autocomplete="off" value="{{old('anupat')}}">
                     </div>
                     <div class="form-group col-md-4">
                         <label for="input-name">महिला साक्षरता (प्रतिशत)</label>
-                        <input type="text" id="input-name" name="fml_edu_percentage" class="form-control" autocomplete="off" value="{{old('fml_edu_percentage')}}">
+                        <input type="number" id="input-name" name="fml_edu_percentage" class="form-control" autocomplete="off" value="{{old('fml_edu_percentage')}}">
                     </div>
                     <div class="form-group col-md-12">
                         <label for="input-name">पुरुष साक्षरता (प्रतिशत)</label>
-                        <input type="text" id="input-name" name="ml_edu_percentage" class="form-control" autocomplete="off" value="{{old('ml_edu_percentage')}}">
+                        <input type="number" id="input-name" name="ml_edu_percentage" class="form-control" autocomplete="off" value="{{old('ml_edu_percentage')}}">
                     </div>
                     <div class="form-group">
                         <button type="submit" class="btn btn-success z-depth-0">save</button>

@@ -42,12 +42,12 @@
 
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">जनसंख्या</label>
-                            <input type="text" name="population" class="form-control"
+                            <input type="number" name="population" class="form-control"
                                 value="{{ old('population', $languagePopulation->population) }}">
                         </div>
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">प्रतिशत</label>
-                            <input type="text" name="percentage" class="form-control"
+                            <input type="number" name="percentage" class="form-control"
                                 value="{{ old('percentage', $languagePopulation->percentage) }}">
                         </div>
 
@@ -75,7 +75,7 @@
                     <table class="table table-striped table-hover">
                         <thead>
                            <tr>
-                                <th>प्रदेश</th>
+                                <th>भाषा</th>
                                 <th>जनसङ्ख्या</th>
                                 <th>प्रतिशत</th>
                                

@@ -1,9 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
-        @include('alerts.all')
-    </div>
     <div class="container-fluid">
         <h3 class="font-weight-bold">राजश्व बाँडफाँड (रु.दश लाखमा)</h3>
         <nav aria-label="breadcrumb">
@@ -51,30 +48,30 @@
                         </div>
                         <div class="form-group col-lg-4">
                             <label for="input-name">राजश्व बाँडफाँड (रु.दश लाखमा)</label>
-                            <input type="text" id="input-name" name="province_revenue" class="form-control"
+                            <input type="number" id="input-name" name="province_revenue" class="form-control"
                                 autocomplete="off"
                                 value="{{ old('province_revenue', $revenueSharing->province_revenue) }}">
                         </div>
                         <div class="form-group col-lg-4">
                             <label for="input-name">प्रतिशत </label>
-                            <input type="text" id="input-name" name="province_revenue_percentage" class="form-control"
+                            <input type="number" id="input-name" name="province_revenue_percentage" class="form-control"
                                 autocomplete="off"
                                 value="{{ old('province_revenue_percentage', $revenueSharing->province_revenue_percentage) }}">
                         </div>
                         <div class="form-group col-lg-4">
                             <label for="input-name">स्थानीय तह</label>
-                            <input type="text" id="input-name" name="local_level" class="form-control" autocomplete="off"
+                            <input type="number" id="input-name" name="local_level" class="form-control" autocomplete="off"
                                 value="{{ old('local_level', $revenueSharing->local_level) }}">
                         </div>
                         <div class="form-group col-lg-4">
                             <label for="input-name">स्थानीय तहमा राजश्व बाँडफाँड (रु.दश लाखमा)</label>
-                            <input type="text" id="input-name" name="local_level_revenue" class="form-control"
+                            <input type="number" id="input-name" name="local_level_revenue" class="form-control"
                                 autocomplete="off"
                                 value="{{ old('local_level_revenue', $revenueSharing->local_level_revenue) }}">
                         </div>
                         <div class="form-group col-lg-4">
                             <label for="input-name">स्थानीय तहमा राजश्व बाँडफाँड प्रतिशत</label>
-                            <input type="text" id="input-name" name="local_level_revenue_percentage" class="form-control"
+                            <input type="number" id="input-name" name="local_level_revenue_percentage" class="form-control"
                                 autocomplete="off"
                                 value="{{ old('local_level_revenue_percentage', $revenueSharing->local_level_revenue_percentage) }}">
                         </div>

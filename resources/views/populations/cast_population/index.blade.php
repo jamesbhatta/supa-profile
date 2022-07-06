@@ -50,13 +50,13 @@
                         </div>
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">जनसङ्ख्या</label>
-                            <input type="text" name="population" class="form-control"
+                            <input type="number" name="population" class="form-control"
                                 value="{{ old('population', $castPopulation->population) }}">
                         </div>
 
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">प्रतिशत</label>
-                            <input type="text" name="percentage" class="form-control"
+                            <input type="number" name="percentage" class="form-control"
                                 value="{{ old('percentage', $castPopulation->percentage) }}">
                         </div>
 

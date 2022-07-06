@@ -103,7 +103,7 @@
 
                 <li class="nav-item sub-nav">
                     <a class="nav-link" href="{{ route('district-wise-population.index') }}">
-                        <span class="mx-3"><i class="fa fa-circle"></i></span>प्जिल्लागत जनसंख्या 2078
+                        <span class="mx-3"><i class="fa fa-circle"></i></span>जिल्लागत जनसंख्या 2078
                     </a>
                 </li>
                 {{-- <li class="nav-item sub-nav">

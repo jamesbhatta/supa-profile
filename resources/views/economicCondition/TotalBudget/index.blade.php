@@ -53,13 +53,13 @@
                             <label style="position: relative;top:-10px" class="bg-white px-4">बजेट (रु. हजारमा)</label>
                             <div class="form-group">
                                 <label for="input-fiscal-year-start">चालु</label>
-                                <input type="text" id="input-fiscal-year" name="running_budget"
+                                <input type="number" id="input-fiscal-year" name="running_budget"
                                     class="form-control font-roboto"
                                     value="{{ old('running_budget', $totalBudget->running_budget) }}">
                             </div>
                             <div class="form-group">
                                 <label for="input-fiscal-year-start">पुँजीगत</label>
-                                <input type="text" id="input-fiscal-year" name="capitalize_budget"
+                                <input type="number" id="input-fiscal-year" name="capitalize_budget"
                                     class="form-control font-roboto"
                                     value="{{ old('capitalize_budget', $totalBudget->capitalize_budget) }}">
                             </div>
@@ -71,25 +71,25 @@
                             <div class="row">
                                 <div class="form-group col-md-6">
                                     <label for="input-fiscal-year-start">चालु</label>
-                                    <input type="text" id="input-fiscal-year" name="running_expenses"
+                                    <input type="number" id="input-fiscal-year" name="running_expenses"
                                         class="form-control font-roboto"
                                         value="{{ old('running_expenses', $totalBudget->running_expenses) }}">
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="input-fiscal-year-start">चालु प्रतिशत</label>
-                                    <input type="text" id="input-fiscal-year" name="running_expenses_percentage"
+                                    <input type="number" id="input-fiscal-year" name="running_expenses_percentage"
                                         class="form-control font-roboto"
                                         value="{{ old('running_expenses_percentage', $totalBudget->running_expenses_percentage) }}">
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="input-fiscal-year-start">पुँजीगत</label>
-                                    <input type="text" id="input-fiscal-year" name="capitalize_expenses"
+                                    <input type="number" id="input-fiscal-year" name="capitalize_expenses"
                                         class="form-control font-roboto"
                                         value="{{ old('capitalize_expenses', $totalBudget->capitalize_expenses) }}">
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="input-fiscal-year-start">पुँजीगत प्रतिशत</label>
-                                    <input type="text" id="input-fiscal-year" name="capitalize_expenses_percentage"
+                                    <input type="number" id="input-fiscal-year" name="capitalize_expenses_percentage"
                                         class="form-control font-roboto"
                                         value="{{ old('capitalize_expenses_percentage', $totalBudget->capitalize_expenses_percentage) }}">
                                 </div>

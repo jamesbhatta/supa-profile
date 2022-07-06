@@ -39,7 +39,7 @@
                         </div>
                         <div class="form-group col-lg-6">
                             <label for="input-name">रकम</label>
-                            <input type="text" id="input-name" name="price" class="form-control" autocomplete="off"
+                            <input type="number" id="input-name" name="price" class="form-control" autocomplete="off"
                                 value="{{ old('price', $revenue->price) }}">
                         </div>
                     </div>
