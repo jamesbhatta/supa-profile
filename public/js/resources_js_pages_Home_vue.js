@@ -501,8 +501,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 
 
 
@@ -608,7 +606,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.navigation-grid[data-v-b3c5cf30] {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  gap: 1.5rem;\n}\n.navigation-grid>a[data-v-b3c5cf30] {\n  background-color: #fff;\n  padding: 10px 15px;\n  border-radius: 6px;\n  min-height: 200px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  color: #2572bc;\n  font-size: 1.5rem;\n  font-weight: 600;\n  transition: 0.3s ease;\n}\n.navigation-grid>a[data-v-b3c5cf30]:hover {\n  background-color: #2572bc;\n  color: #fff;\n}\n.ministry-card[data-v-b3c5cf30] {\n  border-radius: 10px;\n}\n.ministry-card[data-v-b3c5cf30]:hover {\n  transform: translateY(-5px) scale(1.005) translateZ(0);\n  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),\n    0 24px 46px var(--box-shadow-color);\n  background-color: #afd35b;\n}\n.ministry-card1[data-v-b3c5cf30]:hover {\n  transform: translateY(-5px) scale(1.005) translateZ(0);\n  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),\n    0 24px 46px var(--box-shadow-color);\n  background-color: blue;\n}\n.ministry-card2[data-v-b3c5cf30]:hover {\n  transform: translateY(-5px) scale(1.005) translateZ(0);\n  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),\n    0 24px 46px var(--box-shadow-color);\n  background-color: green;\n}\n.ministry-card3[data-v-b3c5cf30]:hover {\n  transform: translateY(-5px) scale(1.005) translateZ(0);\n  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),\n    0 24px 46px var(--box-shadow-color);\n  background-color: gray;\n}\n.ministry-card4[data-v-b3c5cf30]:hover {\n  transform: translateY(-5px) scale(1.005) translateZ(0);\n  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),\n    0 24px 46px var(--box-shadow-color);\n  background-color: rgb(139, 50, 139);\n}\n.ministry-card5[data-v-b3c5cf30]:hover {\n  transform: translateY(-5px) scale(1.005) translateZ(0);\n  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),\n    0 24px 46px var(--box-shadow-color);\n  background-color: rgb(14, 210, 236);\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.navigation-grid[data-v-b3c5cf30] {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  gap: 1.5rem;\n}\n.navigation-grid>a[data-v-b3c5cf30] {\n  background-color: #fff;\n  padding: 10px 15px;\n  border-radius: 6px;\n  min-height: 200px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  color: #2572bc;\n  font-size: 1.5rem;\n  font-weight: 600;\n  transition: 0.3s ease;\n}\n.navigation-grid>a[data-v-b3c5cf30]:hover {\n  background-color: #2572bc;\n  color: #fff;\n}\n.ministry-card[data-v-b3c5cf30] {\n  border-radius: 10px;\n}\n.ministry-card[data-v-b3c5cf30]:hover {\n  transform: translateY(-5px) scale(1.005) translateZ(0);\n    box-shadow:2px 2px 10px 3px rgba(51, 214, 19, 0.753);\n  background-color: #c6c915;\n}\n.ministry-card:hover span[data-v-b3c5cf30]{\n  color: #fff;\n}\n.ministry-card1[data-v-b3c5cf30]:hover {\n  transform: translateY(-2px) scale(1.005) translateZ(0);\n  box-shadow:2px 2px 10px 3px rgba(51, 214, 19, 0.753);\n  background-color: blue;\n  color: #fff;\n}\n.ministry-card1:hover span[data-v-b3c5cf30]{\n  color: #fff;\n}\n.ministry-card2[data-v-b3c5cf30]:hover {\n  transform: translateY(-5px) scale(1.005) translateZ(0);\n    box-shadow:2px 2px 10px 3px rgba(14, 90, 230, 0.945);\n  background-color: green;\n}\n.ministry-card2:hover span[data-v-b3c5cf30]{\n  color: #fff;\n}\n.ministry-card3[data-v-b3c5cf30]:hover {\n  transform: translateY(-5px) scale(1.005) translateZ(0);\n    box-shadow:2px 2px 10px 3px rgba(14, 90, 230, 0.945);\n  background-color: rgb(119, 43, 43);\n}\n.ministry-card3:hover span[data-v-b3c5cf30]{\n  color: #fff;\n}\n.ministry-card4[data-v-b3c5cf30]:hover {\n  transform: translateY(-5px) scale(1.005) translateZ(0);\n   box-shadow:2px 2px 10px 3px rgba(14, 90, 230, 0.945);\n  background-color: rgb(139, 50, 139);\n}\n.ministry-card4:hover span[data-v-b3c5cf30]{\n  color: #fff;\n}\n.ministry-card5[data-v-b3c5cf30]:hover {\n  transform: translateY(-5px) scale(1.005) translateZ(0);\n  box-shadow:2px 2px 10px 3px rgba(14, 90, 230, 0.945);\n  background-color: rgb(175, 106, 28);\n}\n.ministry-card5:hover span[data-v-b3c5cf30]{\n  color: #fff;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1436,7 +1434,9 @@ var render = function () {
                           height: "50px",
                         },
                       }),
-                      _vm._v("\n            हालको मन्त्रिपरिषद्\n          "),
+                      _vm._v(
+                        "\n              हालको मन्त्रिपरिषद्\n            "
+                      ),
                     ]
                   ),
                 ]
@@ -1470,7 +1470,7 @@ var render = function () {
                           height: "50px",
                         },
                       }),
-                      _vm._v("\n            हाम्रो भूगोल\n          "),
+                      _vm._v("\nहाम्रो भूगोल             "),
                     ]
                   ),
                 ]
@@ -1503,7 +1503,7 @@ var render = function () {
                           src: "https://img.icons8.com/color/48/000000/earth-planet.png",
                         },
                       }),
-                      _vm._v("\n            पर्यटक स्थल\n          "),
+                      _vm._v("\n              पर्यटक स्थल\n            "),
                     ]
                   ),
                 ]
@@ -1537,7 +1537,7 @@ var render = function () {
                         },
                       }),
                       _vm._v(
-                        "\n            स्थानीय तहकाहरू वेबसाइट\n          "
+                        "\n              स्थानीय तहकाहरू वेबसाइट\n            "
                       ),
                     ]
                   ),
@@ -1571,7 +1571,7 @@ var render = function () {
                           src: "https://img.icons8.com/color-glass/48/000000/book-shelf.png",
                         },
                       }),
-                      _vm._v("\n            ई-पुस्तकालय\n          "),
+                      _vm._v("\n              ई-पुस्तकालय\n            "),
                     ]
                   ),
                 ]
@@ -1604,7 +1604,7 @@ var render = function () {
                           src: "https://img.icons8.com/color/48/000000/myspace.png",
                         },
                       }),
-                      _vm._v("\n            सामाजिक संजाल\n          "),
+                      _vm._v("\n              सामाजिक संजाल\n            "),
                     ]
                   ),
                 ]
