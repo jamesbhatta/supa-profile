@@ -36,8 +36,7 @@
             रहेका छन् ।१ उप-महानगरपालिका, ३३ नगरपालिका र ५४ गाउँपालिका गरी जम्मा ८८ स्थानीय तह रहेका छन् ।
         </label>
         <div class="d-flex justify-content-center">
-            <img src="http://ocmcm.sudurpashchim.gov.np/sites/ocmcm/files/inline-images/map.png" alt="map"
-                height="500px" />
+            <img src="/assets/img/map.png" alt="flag" height="400px">
         </div>
 
         <h3>जनसांख्यिकीय विवरण</h3>

@@ -113,11 +113,7 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("div", { staticClass: "d-flex justify-content-center" }, [
         _c("img", {
-          attrs: {
-            src: "http://ocmcm.sudurpashchim.gov.np/sites/ocmcm/files/inline-images/map.png",
-            alt: "map",
-            height: "500px",
-          },
+          attrs: { src: "/assets/img/map.png", alt: "flag", height: "400px" },
         }),
       ]),
       _vm._v(" "),
