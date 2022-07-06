@@ -74,7 +74,7 @@
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
                                     <td>
-                                        <img class="rounded-circle" src="{{asset('/touristArea')}}/{{$item->image}}" alt="img" height="40px" width="40px">
+                                        <img class="rounded-circle" src="{{ $item->imageUrl() }}" height="40px" width="40px">
                                     </td>
                                     <td>{{ $item->name }}</td>
                                     <td>{{ $item->address }}</td>
