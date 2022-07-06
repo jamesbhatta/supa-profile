@@ -362,20 +362,22 @@
     <!-- ========================================================= -->
     <div class="p-3">
       <div class="row my-4 ministries p-3">
-        
+
         <div class="col-lg-4 mt-3">
           <router-link to="/minister-profile" class="ministry-card card text-dark text-center py-5 font-weight-bold">
             <span style="align-items:center;" height="80px" width="90px">
-               <img src="https://img.icons8.com/ios-filled/50/000000/library.png" height="50px"/>
+              <img src="https://img.icons8.com/ios-filled/50/000000/library.png" height="50px" />
               हालको मन्त्रिपरिषद्
             </span>
           </router-link>
         </div>
-       
+
         <div class="col-lg-4 mt-3">
           <router-link to="#" class=" ministry-card card text-dark text-center py-5 font-weight-bold">
             <span style="align-items:center;" height="80px" width="90px">
-               <img src="https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/64/000000/external-geography-back-to-school-xnimrodx-lineal-color-xnimrodx.png" height="50px"/>
+              <img
+                src="https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/64/000000/external-geography-back-to-school-xnimrodx-lineal-color-xnimrodx.png"
+                height="50px" />
               हाम्रो भूगोल
             </span>
           </router-link>
@@ -383,7 +385,7 @@
         <div class="col-lg-4 mt-3">
           <router-link to="#" class=" ministry-card card text-dark text-center py-5 font-weight-bold">
             <span style="align-items:center;" height="80px" width="90px">
-               <img src="https://img.icons8.com/color/48/000000/earth-planet.png" />
+              <img src="https://img.icons8.com/color/48/000000/earth-planet.png" />
               पर्यटक स्थल
             </span>
           </router-link>
@@ -414,6 +416,37 @@
         </div>
       </div>
     </div>
+
+
+    <table class="table bg-white">
+      <thead>
+        <tr>
+          <th scope="col"><label class="font-weight-bold">#</label> </th>
+          <th scope="col"><label class="font-weight-bold">Facebook</label></th>
+          <th scope="col"><label class="font-weight-bold">LinkedIn</label></th>
+          <th scope="col"><label class="font-weight-bold">Twiter</label></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td colspan="2">Larry the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </template>
 <style>
@@ -497,6 +530,7 @@ export default {
   },
 };
 </script>
+
 
 <style scoped>
 .navigation-grid {
