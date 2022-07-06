@@ -53,12 +53,12 @@
                             <label style="position: relative;top:-10px" class="bg-white px-4">सामूदायिक विद्यालय</label>
                             <div class="form-group">
                                 <label for="input-fiscal-year-start">छात्रा </label>
-                                <input type="text" id="input-fiscal-year" name="g_fmale" class="form-control font-roboto"
+                                <input type="number" id="input-fiscal-year" name="g_fmale" class="form-control font-roboto"
                                     value="{{ old('g_fmale', $totalStudent->g_fmale) }}">
                             </div>
                             <div class="form-group">
                                 <label for="input-fiscal-year-start">छात्र</label>
-                                <input type="text" id="input-fiscal-year" name="g_male" class="form-control font-roboto"
+                                <input type="number" id="input-fiscal-year" name="g_male" class="form-control font-roboto"
                                     value="{{ old('g_male', $totalStudent->g_male) }}">
                             </div>
                         </div>
@@ -66,12 +66,12 @@
                             <label style="position: relative;top:-10px" class="bg-white px-4"> संस्थागत विद्यालय</label>
                             <div class="form-group">
                                 <label for="input-fiscal-year-start">छात्रा </label>
-                                <input type="text" id="input-fiscal-year" name="p_fmale" class="form-control font-roboto"
+                                <input type="number" id="input-fiscal-year" name="p_fmale" class="form-control font-roboto"
                                     value="{{ old('p_fmale', $totalStudent->p_fmale) }}">
                             </div>
                             <div class="form-group">
                                 <label for="input-fiscal-year-start">छात्र</label>
-                                <input type="text" id="input-fiscal-year" name="p_male" class="form-control font-roboto"
+                                <input type="number" id="input-fiscal-year" name="p_male" class="form-control font-roboto"
                                     value="{{ old('p_male', $totalStudent->p_male) }}">
                             </div>
                         </div>

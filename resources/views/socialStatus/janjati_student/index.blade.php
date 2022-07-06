@@ -80,12 +80,12 @@
                         </div>
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">छात्रा </label>
-                            <input type="text" id="input-fiscal-year" name="female" class="form-control font-roboto"
+                            <input type="number" id="input-fiscal-year" name="female" class="form-control font-roboto"
                                 value="{{ old('female', $janjatiStudent->female) }}">
                         </div>
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">छात्रा </label>
-                            <input type="text" id="input-fiscal-year" name="male" class="form-control font-roboto"
+                            <input type="number" id="input-fiscal-year" name="male" class="form-control font-roboto"
                                 value="{{ old('male', $janjatiStudent->male) }}">
                         </div>
                     </div>

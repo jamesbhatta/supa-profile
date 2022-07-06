@@ -44,7 +44,7 @@
                             <label style="position: relative;top:-10px" class="bg-white px-4">लघु</label>
                             <div class="form-group">
                                 <label for="input-fiscal-year-start">संख्या</label>
-                                <input type="text" name="laghu_quantity" class="form-control"
+                                <input type="number" name="laghu_quantity" class="form-control"
                                     value="{{ old('laghu_quantity', $supaBusiness->laghu_quantity) }}">
                             </div>
 
@@ -59,7 +59,7 @@
                             <label style="position: relative;top:-10px" class="bg-white px-4">घरेलु</label>
                             <div class="form-group">
                                 <label for="input-fiscal-year-start">संख्या</label>
-                                <input type="text" name="gahrelu_quantity" class="form-control"
+                                <input type="number" name="gahrelu_quantity" class="form-control"
                                     value="{{ old('gahrelu_quantity', $supaBusiness->gahrelu_quantity) }}">
                             </div>
 

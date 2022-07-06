@@ -64,13 +64,13 @@
                             <label style="position: relative;top:-10px" class="bg-white px-4">बालविकास केन्द्र</label>
                             <div class="form-group">
                                 <label for="input-fiscal-year-start">छात्रा </label>
-                                <input type="text" id="input-fiscal-year" name="balbikash_female"
+                                <input type="number" id="input-fiscal-year" name="balbikash_female"
                                     class="form-control font-roboto"
                                     value="{{ old('balbikash_female', $balbikas->balbikash_female) }}">
                             </div>
                             <div class="form-group">
                                 <label for="input-fiscal-year-start">छात्र</label>
-                                <input type="text" id="input-fiscal-year" name="balbikash_male"
+                                <input type="number" id="input-fiscal-year" name="balbikash_male"
                                     class="form-control font-roboto"
                                     value="{{ old('balbikash_male', $balbikas->balbikash_male) }}">
                             </div>
@@ -80,12 +80,12 @@
                                 केन्द्र </label>
                             <div class="form-group">
                                 <label for="input-fiscal-year-start">छात्रा </label>
-                                <input type="text" id="input-fiscal-year" name="female" class="form-control font-roboto"
+                                <input type="number" id="input-fiscal-year" name="female" class="form-control font-roboto"
                                     value="{{ old('female', $balbikas->female) }}">
                             </div>
                             <div class="form-group">
                                 <label for="input-fiscal-year-start">छात्र</label>
-                                <input type="text" id="input-fiscal-year" name="male" class="form-control font-roboto"
+                                <input type="number" id="input-fiscal-year" name="male" class="form-control font-roboto"
                                     value="{{ old('male', $balbikas->male) }}">
                             </div>
                         </div>

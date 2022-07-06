@@ -66,7 +66,7 @@
                     <div class="row">
                         <div class="form-group col-md-4">
                             <label for="input-name">ठेक्का लागेको लम्बाइ</label>
-                            <input type="number" name="lenght" class="form-control"
+                            <input type="text" name="lenght" class="form-control"
                                 value="{{ old('lenght', $proudProject->lenght) }}">
                         </div>
 

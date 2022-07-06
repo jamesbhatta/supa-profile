@@ -44,11 +44,11 @@
                             <label style="position: relative;top:-10px" class="bg-white px-4">राष्ट्रिय</label>
                             <div class="form-group">
                                 <label for="input-fiscal-year-start">From</label>
-                                <input type="text" name="national_from"  class="form-control fiscal-year-date" value="{{ old('national_from', $helthFlow->national_from) }}" >
+                                <input type="number" name="national_from"  class="form-control fiscal-year-date" value="{{ old('national_from', $helthFlow->national_from) }}" >
                             </div>
                             <div class="form-group">
                                 <label for="input-fiscal-year-end">To</label>
-                                <input type="text" name="national_to"class="form-control fiscal-year-date" value="{{ old('national_to', $helthFlow->national_to) }}">
+                                <input type="number" name="national_to"class="form-control fiscal-year-date" value="{{ old('national_to', $helthFlow->national_to) }}">
                             </div>
                             
                         </div>
@@ -56,11 +56,11 @@
                             <label style="position: relative;top:-10px" class="bg-white px-4">प्रदेश</label>
                             <div class="form-group">
                                 <label for="input-fiscal-year-start">From</label>
-                                <input type="text" name="provincinal_from"  class="form-control fiscal-year-date" value="{{ old('provincinal_from', $helthFlow->provincinal_from) }}" >
+                                <input type="number" name="provincinal_from"  class="form-control fiscal-year-date" value="{{ old('provincinal_from', $helthFlow->provincinal_from) }}" >
                             </div>
                             <div class="form-group">
                                 <label for="input-fiscal-year-end">To</label>
-                                <input type="text" name="provincinal_to"class="form-control fiscal-year-date" value="{{ old('provincinal_to', $helthFlow->provincinal_to) }}">
+                                <input type="number" name="provincinal_to"class="form-control fiscal-year-date" value="{{ old('provincinal_to', $helthFlow->provincinal_to) }}">
                             </div>
                             
                         </div>

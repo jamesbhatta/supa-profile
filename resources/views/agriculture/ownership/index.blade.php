@@ -44,7 +44,7 @@
     
                         <div class="form-group col-lg-6">
                             <label for="input-fiscal-year-start">घरपरिवार संख्या</label>
-                            <input type="text" name="family_number" class="form-control"
+                            <input type="number" name="family_number" class="form-control"
                                 value="{{ old('family_number', $ownership->family_number) }}">
                         </div>
                     </div>

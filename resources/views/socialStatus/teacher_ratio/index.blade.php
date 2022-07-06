@@ -68,22 +68,22 @@
                         </div>
                         <div class="form-group col-lg-3">
                             <label for="input-fiscal-year-start">आधारभूत तह (१–५) </label>
-                            <input type="text" id="input-fiscal-year" name="primary" class="form-control font-roboto"
+                            <input type="number" id="input-fiscal-year" name="primary" class="form-control font-roboto"
                                 value="{{ old('primary', $teacherRatio->primary) }}">
                         </div>
                         <div class="form-group col-lg-3">
                             <label for="input-fiscal-year-start">आधारभूत तह (६–८) </label>
-                            <input type="text" id="input-fiscal-year" name="primary_1" class="form-control font-roboto"
+                            <input type="number" id="input-fiscal-year" name="primary_1" class="form-control font-roboto"
                                 value="{{ old('primary_1', $teacherRatio->primary_1) }}">
                         </div>
                         <div class="form-group col-lg-3">
                             <label for="input-fiscal-year-start">माध्यमिक तह (९–१०) </label>
-                            <input type="text" id="input-fiscal-year" name="secondary" class="form-control font-roboto"
+                            <input type="number" id="input-fiscal-year" name="secondary" class="form-control font-roboto"
                                 value="{{ old('secondary', $teacherRatio->secondary) }}">
                         </div>
                         <div class="form-group col-lg-3">
                             <label for="input-fiscal-year-start">माध्यमिक तह (११–१२) </label>
-                            <input type="text" id="input-fiscal-year" name="secondary_1" class="form-control font-roboto"
+                            <input type="number" id="input-fiscal-year" name="secondary_1" class="form-control font-roboto"
                                 value="{{ old('secondary_1', $teacherRatio->secondary_1) }}">
                         </div>
 

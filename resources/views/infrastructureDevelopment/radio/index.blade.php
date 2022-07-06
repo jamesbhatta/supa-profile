@@ -70,7 +70,7 @@
 
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">एफएम रेडियोको संख्या</label>
-                            <input type="text" name="number" class="form-control"
+                            <input type="number" name="number" class="form-control"
                                 value="{{ old('number', $radio->number) }}">
                         </div>
                     </div>

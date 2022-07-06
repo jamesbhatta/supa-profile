@@ -48,12 +48,12 @@
                             <label style="position: relative;top:-10px" class="bg-white px-4">राष्ट्रिय</label>
                             <div class="form-group">
                                 <label for="input-fiscal-year-start">संख्या</label>
-                                <input type="text" id="input-fiscal-year" name="national_number" class="form-control font-roboto"
+                                <input type="number" id="input-fiscal-year" name="national_number" class="form-control font-roboto"
                                     value="{{ old('national_number', $diseas->national_number) }}">
                             </div>
                             <div class="form-group">
                                 <label for="input-fiscal-year-start">प्रतिशत (जम्मा नयााँ बिरामि मध्ये)</label>
-                                <input type="text" id="input-fiscal-year" name="national_percentage" class="form-control font-roboto"
+                                <input type="number" id="input-fiscal-year" name="national_percentage" class="form-control font-roboto"
                                     value="{{ old('national_percentage', $diseas->national_percentage) }}">
                             </div>
                         </div>
@@ -61,12 +61,12 @@
                             <label style="position: relative;top:-10px" class="bg-white px-4">प्रदेश</label>
                             <div class="form-group">
                                 <label for="input-fiscal-year-start">संख्या</label>
-                                <input type="text" id="input-fiscal-year" name="provincenal_number" class="form-control font-roboto"
+                                <input type="number" id="input-fiscal-year" name="provincenal_number" class="form-control font-roboto"
                                     value="{{ old('provincenal_number', $diseas->provincenal_number) }}">
                             </div>
                             <div class="form-group">
                                 <label for="input-fiscal-year-start">प्रतिशत (जम्मा नयााँ बिरामि मध्ये)</label>
-                                <input type="text" id="input-fiscal-year" name="provincenal_percentage" class="form-control font-roboto"
+                                <input type="number" id="input-fiscal-year" name="provincenal_percentage" class="form-control font-roboto"
                                     value="{{ old('provincenal_percentage', $diseas->provincenal_percentage) }}">
                             </div>
                         </div>

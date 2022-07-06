@@ -72,8 +72,8 @@
                                 value="{{ old('area', $hospital->area) }}">
                         </div>
                         <div class="form-group col-lg-3">
-                            <label for="input-fiscal-year-start">Number</label>
-                            <input type="text" id="input-fiscal-year" name="num" class="form-control font-roboto"
+                            <label for="input-fiscal-year-start">संख्या</label>
+                            <input type="number" id="input-fiscal-year" name="num" class="form-control font-roboto"
                                 value="{{ old('num', $hospital->num) }}">
                         </div>
                         
@@ -103,7 +103,7 @@
                             <th>क्र.स.</th>
                             <th>विवरण</th>
                             <th>जिल्लाको</th>
-                            <th>Number</th>
+                            <th>संख्या</th>
                             </tr>
                     </thead>
                     <tbody>
