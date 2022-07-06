@@ -421,6 +421,7 @@
     <table class="table bg-white">
       <thead>
         <tr>
+          
           <th scope="col"><label class="font-weight-bold">#</label> </th>
           <th scope="col"><label class="font-weight-bold">Facebook</label></th>
           <th scope="col"><label class="font-weight-bold">LinkedIn</label></th>
