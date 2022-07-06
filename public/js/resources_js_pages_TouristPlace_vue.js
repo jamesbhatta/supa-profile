@@ -57,10 +57,37 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
-      ministryDetails: []
+      touristAreas: []
     };
   },
   mounted: function mounted() {
@@ -71,7 +98,7 @@ __webpack_require__.r(__webpack_exports__);
       var _this = this;
 
       axios.get("/api/tourist-area").then(function (response) {
-        _this.ministryDetails = response.data.data; // console.log(this.ministryDetails);
+        _this.touristAreas = response.data.data; // console.log(this.ministryDetails);
       })["catch"](function (error) {
         return console.log(error);
       });
@@ -97,7 +124,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.mycards {\n  height: 330px;\n}\n.mycards img {\n  height: 100%;\n  width: 100%;\n  -o-object-fit: fill;\n     object-fit: fill;\n}\n.box {\n  background-color: white;\n  border-radius: 10px;\n}\n.background {\n  background-color: white;\n  border-radius: 10px;\n}\n.profile-img {\n  border-radius: 10px;\n}\n\n/* .profile-img:hover {\n  transform: scale(1.1);\n} */\n.name-tab{\n    height: 100px;\n    position: absolute;\n    background-color: rgba(0, 0,0,0.8);\n    width: 95%;\n    margin-top: -100px;\n    border-bottom-left-radius: 10px;\n    border-bottom-right-radius: 10px;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.mycards {\n  height: 330px;\n}\n.mycards img {\n  height: 100%;\n  width: 100%;\n  -o-object-fit: fill;\n     object-fit: fill;\n}\n.box {\n  background-color: white;\n  border-radius: 10px;\n}\n.background {\n  background-color: white;\n  border-radius: 10px;\n}\n.profile-img {\n  border-radius: 10px;\n}\n\n/* .profile-img:hover {\n  transform: scale(1.1);\n} */\n.name-tab {\n  height: 100px;\n  position: absolute;\n  background-color: rgba(0, 0, 0, 0.8);\n  width: 95%;\n  margin-top: -100px;\n  border-bottom-left-radius: 10px;\n  border-bottom-right-radius: 10px;\n}\n.tourist-place-name {\n  background-color: rgba(0, 0, 0, 0.5);\n  height: 50px;\n  position: relative;\n  margin-top: -50px;\n  border-bottom-left-radius: 10px;\n  border-bottom-right-radius: 10px;\n  transition: 1.2s;\n}\n.tourist-place-name h5 {\n  color: #fff;\n}\n.container .cards .icon {\n\n  position: absolute;\n\n  top: 0;\n\n  left: 0;\n\n  width: 100%;\n\n  height: 100%;\n}\n.container .cards .icon .fa {\n\n  position: absolute;\n\n  top: 50%;\n\n  left: 50%;\n\n  transform: translate(-50%, -50%);\n\n  font-size: 80px;\n\n  color: #fff;\n}\n.container .cards .slide {\n\n  width: 100%;\n\n  height: 300px;\n\n  transition: 0.5s;\n}\n.container .cards .slide2 {\n\n  width: 100%;\n\n  height: 100px;\n\n  transition: 0.5s;\n}\n.container .cards .slide.slide1 {\n\n  position: relative;\n\n  display: flex;\n\n  justify-content: center;\n\n  align-items: center;\n\n  z-index: 1;\n\n  transition: .7s;\n\n  transform: translateY(100px);\n}\n.container .cards:hover .slide.slide1 {\n\n  transform: translateY(0px);\n}\n.container .cards:hover .tourist-place-name {\n\n  opacity: 0;\n  margin-top: 0px;\n  /* transform: rotate(360deg); */\n  /* width: 0px; */\n}\n.container .cards .slide.slide2 {\n\n  position: relative;\n\n  display: flex;\n\n  justify-content: center;\n\n  align-items: center;\n\n  padding: 20px;\n\n  box-sizing: border-box;\n\n  transition: .8s;\n\n  transform: translateY(-100px);\n\n  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);\n}\n.container .cards:hover .slide.slide2 {\n\n  transform: translateY(0);\n}\n.container .cards .slide.slide2::after {\n\n  content: \"\";\n\n  position: absolute;\n\n  width: 30px;\n\n  height: 4px;\n\n  bottom: 15px;\n\n  left: 50%;\n\n  left: 50%;\n\n  transform: translateX(-50%);\n\n  background: #2c73df;\n}\n.container .cards .slide.slide2 .content p {\n\n  margin: 0;\n\n  padding: 0;\n\n  text-align: center;\n\n  color: #414141;\n}\n.container .cards .slide.slide2 .content h3 {\n\n  margin: 0 0 10px 0;\n\n  padding: 0;\n\n  font-size: 24px;\n\n  text-align: center;\n\n  color: #414141;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -236,52 +263,57 @@ var render = function () {
       _vm._v("सुदूरपश्चिमको पर्यटक स्थल"),
     ]),
     _vm._v(" "),
-    _vm.ministryDetails
-      ? _c("section", { attrs: { id: "profile-summary" } }, [
-          _c(
-            "div",
-            { staticClass: "row p-3 background" },
-            _vm._l(_vm.ministryDetails, function (item) {
-              return _c("div", { key: item.id, staticClass: "col-lg-6 mt-4" }, [
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-lg-12" }, [
-                    _c("img", {
-                      staticClass: "profile-img",
-                      attrs: {
-                        src: item.image_url,
-                        alt: item.name,
-                        height: "320px",
-                        width: "100%",
+    _c(
+      "div",
+      { staticClass: "row" },
+      _vm._l(_vm.touristAreas, function (item) {
+        return _c("div", { key: item.id, staticClass: "col-lg-4 mt-4" }, [
+          _c("div", { staticClass: "cards" }, [
+            _c("div", { staticClass: "slide slide1" }, [
+              _c("div", { staticClass: "content" }, [
+                _c("div", { staticClass: "icon" }, [
+                  _c("img", {
+                    staticClass: "profile-img",
+                    attrs: {
+                      src: item.image_url,
+                      alt: "img",
+                      height: "100%",
+                      width: "100%",
+                    },
+                  }),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "tourist-place-name" }, [
+                    _c(
+                      "h5",
+                      {
+                        staticClass:
+                          "text-center text-uppercase text-monospace",
                       },
-                    }),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "name-tab" }, [
-                      _c(
-                        "h4",
-                        {
-                          staticClass:
-                            "font-weight-bold mt-3 text-center text-white text-uppercase",
-                        },
-                        [_vm._v(_vm._s(item.name))]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "h5",
-                        {
-                          staticClass:
-                            "mt-3 text-white text-center text-monospace",
-                        },
-                        [_vm._v(_vm._s(item.address))]
-                      ),
-                    ]),
+                      [_vm._v(_vm._s(item.name))]
+                    ),
                   ]),
                 ]),
-              ])
-            }),
-            0
-          ),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "slide slide2" }, [
+              _c("div", { staticClass: "content" }, [
+                _c("h3", { staticClass: "font-weight-bold text-uppercase" }, [
+                  _vm._v(
+                    "\n              " + _vm._s(item.name) + "\n            "
+                  ),
+                ]),
+                _vm._v(" "),
+                _c("p", { staticClass: "text-monospace text-uppercase" }, [
+                  _vm._v(_vm._s(item.address)),
+                ]),
+              ]),
+            ]),
+          ]),
         ])
-      : _vm._e(),
+      }),
+      0
+    ),
   ])
 }
 var staticRenderFns = []
