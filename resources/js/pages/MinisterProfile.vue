@@ -23,12 +23,11 @@
         </div> -->
     <h2 class="p-3 font-weight-bold">सुदूरपश्चिम प्रदेशमा हालको मन्त्रिपरिषद्</h2>
     <section v-if="ministryDetails" id="profile-summary">
-
       <div class="row p-3 background">
-        <div v-for="item in ministryDetails" class="col-lg-6 mt-4">
+        <div v-for="item in ministryDetails" class="col-lg-6 mt-4" :key="item.id">
           <div class="row">
             <div class="col-lg-6">
-              <img class="profile-img" :src="'/ministry/' + item.profile" alt="img" :height="'320px'" :width="'100%'">
+              <img class="profile-img" :src="item.photo_url" alt="img" :height="'320px'" :width="'100%'" />
             </div>
             <div class="col-lg-6">
               <h4 class="font-weight-bold mt-3">{{ item.name }}</h4>
@@ -39,7 +38,6 @@
           </div>
         </div>
       </div>
-
     </section>
   </div>
 </template>
@@ -48,13 +46,10 @@
 
 <script>
 export default {
-
   data() {
     return {
-      ministryDetails: [
-
-      ],
-    }
+      ministryDetails: [],
+    };
   },
   mounted() {
     this.fetchMinistryDetail();
@@ -64,8 +59,7 @@ export default {
       axios
         .get("/api/display-ministry")
         .then((response) => {
-          this.ministryDetails = response.data;
-          console.log(response.data);
+          this.ministryDetails = response.data.data;
         })
         .catch((error) => console.log(error));
     },
