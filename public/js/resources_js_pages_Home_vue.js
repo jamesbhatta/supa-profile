@@ -620,7 +620,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.navigation-grid[data-v-b3c5cf30] {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  gap: 1.5rem;\n}\n.navigation-grid>a[data-v-b3c5cf30] {\n  background-color: #fff;\n  padding: 10px 15px;\n  border-radius: 6px;\n  min-height: 200px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  color: #2572bc;\n  font-size: 1.5rem;\n  font-weight: 600;\n  transition: 0.3s ease;\n}\n.navigation-grid>a[data-v-b3c5cf30]:hover {\n  background-color: #2572bc;\n  color: #fff;\n}\n.ministry-card[data-v-b3c5cf30] {\n  border-radius: 10px;\n}\n.ministry-card[data-v-b3c5cf30]:hover {\n  transform: translateY(-5px) scale(1.005) translateZ(0);\n  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),\n    0 24px 46px var(--box-shadow-color);\n  background-color: #2572bc;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.navigation-grid[data-v-b3c5cf30] {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  gap: 1.5rem;\n}\n.navigation-grid>a[data-v-b3c5cf30] {\n  background-color: #fff;\n  padding: 10px 15px;\n  border-radius: 6px;\n  min-height: 200px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  color: #2572bc;\n  font-size: 1.5rem;\n  font-weight: 600;\n  transition: 0.3s ease;\n}\n.navigation-grid>a[data-v-b3c5cf30]:hover {\n  background-color: #2572bc;\n  color: #fff;\n}\n.ministry-card[data-v-b3c5cf30] {\n  border-radius: 10px;\n}\n.ministry-card[data-v-b3c5cf30]:hover {\n  transform: translateY(-5px) scale(1.005) translateZ(0);\n  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),\n    0 24px 46px var(--box-shadow-color);\n  background-color: #afd35b;\n}\n.ministry-card1[data-v-b3c5cf30]:hover {\n  transform: translateY(-5px) scale(1.005) translateZ(0);\n  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),\n    0 24px 46px var(--box-shadow-color);\n  background-color: blue;\n}\n.ministry-card2[data-v-b3c5cf30]:hover {\n  transform: translateY(-5px) scale(1.005) translateZ(0);\n  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),\n    0 24px 46px var(--box-shadow-color);\n  background-color: green;\n}\n.ministry-card3[data-v-b3c5cf30]:hover {\n  transform: translateY(-5px) scale(1.005) translateZ(0);\n  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),\n    0 24px 46px var(--box-shadow-color);\n  background-color: gray;\n}\n.ministry-card4[data-v-b3c5cf30]:hover {\n  transform: translateY(-5px) scale(1.005) translateZ(0);\n  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),\n    0 24px 46px var(--box-shadow-color);\n  background-color: rgb(139, 50, 139);\n}\n.ministry-card5[data-v-b3c5cf30]:hover {\n  transform: translateY(-5px) scale(1.005) translateZ(0);\n  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),\n    0 24px 46px var(--box-shadow-color);\n  background-color: rgb(14, 210, 236);\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1457,7 +1457,7 @@ var render = function () {
                 "router-link",
                 {
                   staticClass:
-                    " ministry-card card text-dark text-center py-5 font-weight-bold",
+                    " ministry-card1 card text-dark text-center py-5 font-weight-bold",
                   attrs: { to: "#" },
                 },
                 [
@@ -1491,7 +1491,7 @@ var render = function () {
                 "router-link",
                 {
                   staticClass:
-                    " ministry-card card text-dark text-center py-5 font-weight-bold",
+                    " ministry-card2 card text-dark text-center py-5 font-weight-bold",
                   attrs: { to: "/tourist-place" },
                 },
                 [
@@ -1524,7 +1524,7 @@ var render = function () {
                 "router-link",
                 {
                   staticClass:
-                    " ministry-card card text-dark text-center py-5 font-weight-bold",
+                    " ministry-card3 card text-dark text-center py-5 font-weight-bold",
                   attrs: { to: "#" },
                 },
                 [
@@ -1559,7 +1559,7 @@ var render = function () {
                 "router-link",
                 {
                   staticClass:
-                    " ministry-card card text-dark text-center py-5 font-weight-bold",
+                    " ministry-card4 card text-dark text-center py-5 font-weight-bold",
                   attrs: { to: "#" },
                 },
                 [
@@ -1592,7 +1592,7 @@ var render = function () {
                 "router-link",
                 {
                   staticClass:
-                    " ministry-card card text-dark text-center py-5 font-weight-bold",
+                    " ministry-card5 card text-dark text-center py-5 font-weight-bold",
                   attrs: { to: "#" },
                 },
                 [

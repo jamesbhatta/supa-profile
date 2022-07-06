@@ -373,7 +373,7 @@
         </div>
 
         <div class="col-lg-4 mt-3">
-          <router-link to="#" class=" ministry-card card text-dark text-center py-5 font-weight-bold">
+          <router-link to="#" class=" ministry-card1 card text-dark text-center py-5 font-weight-bold">
             <span style="align-items:center;" height="80px" width="90px">
               <img
                 src="https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/64/000000/external-geography-back-to-school-xnimrodx-lineal-color-xnimrodx.png"
@@ -383,7 +383,7 @@
           </router-link>
         </div>
         <div class="col-lg-4 mt-3">
-          <router-link to="/tourist-place" class=" ministry-card card text-dark text-center py-5 font-weight-bold">
+          <router-link to="/tourist-place" class=" ministry-card2 card text-dark text-center py-5 font-weight-bold">
             <span style="align-items:center;" height="80px" width="90px">
               <img src="https://img.icons8.com/color/48/000000/earth-planet.png" />
               पर्यटक स्थल
@@ -391,7 +391,7 @@
           </router-link>
         </div>
         <div class="col-lg-4 mt-3">
-          <router-link to="#" class=" ministry-card card text-dark text-center py-5 font-weight-bold">
+          <router-link to="#" class=" ministry-card3 card text-dark text-center py-5 font-weight-bold">
             <span style="align-items:center;" height="80px" width="90px">
               <img src="https://img.icons8.com/color/48/000000/domain--v1.png" />
               स्थानीय तहकाहरू वेबसाइट
@@ -399,7 +399,7 @@
           </router-link>
         </div>
         <div class="col-lg-4 mt-3">
-          <router-link to="#" class=" ministry-card card text-dark text-center py-5 font-weight-bold">
+          <router-link to="#" class=" ministry-card4 card text-dark text-center py-5 font-weight-bold">
             <span style="align-items:center;" height="60px" width="70px">
               <img src="https://img.icons8.com/color-glass/48/000000/book-shelf.png" />
               ई-पुस्तकालय
@@ -407,7 +407,7 @@
           </router-link>
         </div>
         <div class="col-lg-4 mt-3">
-          <router-link to="#" class=" ministry-card card text-dark text-center py-5 font-weight-bold">
+          <router-link to="#" class=" ministry-card5 card text-dark text-center py-5 font-weight-bold">
             <span style="align-items:center;" height="60px" width="70px">
               <img src="https://img.icons8.com/color/48/000000/myspace.png" />
               सामाजिक संजाल
@@ -566,6 +566,36 @@ export default {
   transform: translateY(-5px) scale(1.005) translateZ(0);
   box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
     0 24px 46px var(--box-shadow-color);
-  background-color: #2572bc;
+  background-color: #afd35b;
+}
+.ministry-card1:hover {
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
+    0 24px 46px var(--box-shadow-color);
+  background-color: blue;
+}
+.ministry-card2:hover {
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
+    0 24px 46px var(--box-shadow-color);
+  background-color: green;
+}
+.ministry-card3:hover {
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
+    0 24px 46px var(--box-shadow-color);
+  background-color: gray;
+}
+.ministry-card4:hover {
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
+    0 24px 46px var(--box-shadow-color);
+  background-color: rgb(139, 50, 139);
+}
+.ministry-card5:hover {
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
+    0 24px 46px var(--box-shadow-color);
+  background-color: rgb(14, 210, 236);
 }
 </style>
