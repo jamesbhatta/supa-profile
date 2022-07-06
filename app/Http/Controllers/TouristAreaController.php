@@ -27,7 +27,7 @@ class TouristAreaController extends Controller
         $datas = $request->validate([
             'name' => 'required',
             'address' => 'required',
-            'image' => 'nullable',
+            'image' => 'required',
         ]);
         // if ($image = $request->file('image')) {
         //     // return "hello";

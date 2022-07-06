@@ -75,45 +75,7 @@
             </ul>
         </li>
 
-        {{-- ============configrations=========== --}}
-        <li class="nav-item">
-            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"
-                class="dropdown-toggle collapsed nav-link"><span class="text-default"><i
-                        class="fas fa-tools"></i></span>@lang('navigation.configurations')</a>
-            <ul class="list-unstyled collapse" id="homeSubmenu" style="">
-                @hasanyrole('super-admin|admin')
-                    <li class="nav-item sub-nav">
-                        <a class="nav-link" href="{{ route('fiscal-year.index') }}"><span class="mx-3"><i
-                                    class="fas fa-circle"></i></span>@lang('navigation.fiscal_year')</a>
-                    </li>
-                @endhasanyrole
-                @can('province.*')
-                    <li class="nav-item sub-nav {{ setActive('province.*') }}">
-                        <a class="nav-link " href="{{ route('province.index') }}"><span class="mx-3"><i
-                                    class="fas fa-circle"></i></span>@lang('navigation.province')</a>
-                    </li>
-                @endcan
-                @can('district.*')
-                    <li class="nav-item sub-nav {{ setActive('district.*') }}">
-                        <a class="nav-link" href="{{ route('district.index') }}"><span class="mx-3"><i
-                                    class="fas fa-circle"></i></span>@lang('navigation.district')</a>
-                    </li>
-                @endcan
-                @can('municipality.*')
-                    <li class="nav-item sub-nav {{ setActive('municipality.*') }}">
-                        <a class="nav-link" href="{{ route('municipality.index') }}"><span class="mx-3"><i
-                                    class="fas fa-circle"></i></span>@lang('navigation.municipality')</a>
-                    </li>
-                @endcan
-                @can('ward.*')
-                    <li class="nav-item sub-nav {{ setActive('ward.*') }}">
-                        <a class="nav-link" href="{{ route('ward.index') }}"> <span class="mx-3"><i
-                                    class="fas fa-circle"></i></span> @lang('navigation.ward')</a>
-                    </li>
-                @endcan
-
-            </ul>
-        </li>
+       
 
         {{-- ==========populations============ --}}
         <li class="nav-item">
@@ -687,6 +649,45 @@
             </a>
         </li>
 
+         {{-- ============configrations=========== --}}
+         <li class="nav-item">
+            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"
+                class="dropdown-toggle collapsed nav-link"><span class="text-default"><i
+                        class="fas fa-tools"></i></span>@lang('navigation.configurations')</a>
+            <ul class="list-unstyled collapse" id="homeSubmenu" style="">
+                @hasanyrole('super-admin|admin')
+                    <li class="nav-item sub-nav">
+                        <a class="nav-link" href="{{ route('fiscal-year.index') }}"><span class="mx-3"><i
+                                    class="fas fa-circle"></i></span>@lang('navigation.fiscal_year')</a>
+                    </li>
+                @endhasanyrole
+                @can('province.*')
+                    <li class="nav-item sub-nav {{ setActive('province.*') }}">
+                        <a class="nav-link " href="{{ route('province.index') }}"><span class="mx-3"><i
+                                    class="fas fa-circle"></i></span>@lang('navigation.province')</a>
+                    </li>
+                @endcan
+                @can('district.*')
+                    <li class="nav-item sub-nav {{ setActive('district.*') }}">
+                        <a class="nav-link" href="{{ route('district.index') }}"><span class="mx-3"><i
+                                    class="fas fa-circle"></i></span>@lang('navigation.district')</a>
+                    </li>
+                @endcan
+                @can('municipality.*')
+                    <li class="nav-item sub-nav {{ setActive('municipality.*') }}">
+                        <a class="nav-link" href="{{ route('municipality.index') }}"><span class="mx-3"><i
+                                    class="fas fa-circle"></i></span>@lang('navigation.municipality')</a>
+                    </li>
+                @endcan
+                @can('ward.*')
+                    <li class="nav-item sub-nav {{ setActive('ward.*') }}">
+                        <a class="nav-link" href="{{ route('ward.index') }}"> <span class="mx-3"><i
+                                    class="fas fa-circle"></i></span> @lang('navigation.ward')</a>
+                    </li>
+                @endcan
+
+            </ul>
+        </li>
 
         @hasanyrole('super-admin')
             <li class="nav-item">
