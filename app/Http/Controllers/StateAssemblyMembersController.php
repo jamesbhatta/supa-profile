@@ -31,9 +31,9 @@ class StateAssemblyMembersController extends Controller
     public function store(Request $request)
     {
         StateAssemblyMembers::create($request->validate([
-            'name'=>"required|min:3",
-            'constituency'=>"required|min:5",
-            'political_parties'=>"required|min:5",
+            'name'=>"required",
+            'constituency'=>"required",
+            'political_parties'=>"required",
         ]));
         return redirect()->back()->with('success',"प्रदेश सभा सदस्यहरुको नामावली सफलतापूर्वक थपियो");
     }
@@ -52,9 +52,9 @@ class StateAssemblyMembersController extends Controller
     public function update(Request $request,StateAssemblyMembers $assemblyMember)
     {
         $assemblyMember->update($request->validate([
-            'name'=>"required|min:3",
-            'constituency'=>"required|min:5",
-            'political_parties'=>"required|min:5",
+            'name'=>"required",
+            'constituency'=>"required",
+            'political_parties'=>"required",
         ]));
         return redirect()->route('assembly-member.index')->with('success',"प्रदेश सभा सदस्यहरुको नामावली सफलतापूर्वक परिवर्तन भयो");
     }

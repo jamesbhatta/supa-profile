@@ -44,10 +44,10 @@ class CurrentMinistryController extends Controller
     public function store(Request $request)
     {
         $datas = $request->validate([
-            'name' => "required|min:3|max:50",
-            'post' => "required|min:3|max:50",
-            'ministry' => "required|min:10|max:50",
-            'team' => "required|min:10|max:50",
+            'name' => "required",
+            'post' => "required",
+            'ministry' => "required",
+            'team' => "required",
             'profile' => 'nullable'
         ]);
         // if ($image = $request->file('profile')) {
@@ -74,10 +74,10 @@ class CurrentMinistryController extends Controller
     public function update(Request $request, CurrentMinistry $currentMinistry)
     {
         $datas = $request->validate([
-            'name' => "required|min:3|max:50",
-            'post' => "required|min:3|max:50",
-            'ministry' => "required|min:10|max:50",
-            'team' => "required|min:10|max:50",
+            'name' => "required",
+            'post' => "required",
+            'ministry' => "required",
+            'team' => "required",
             'profile' => 'nullable'
         ]);
         // if ($image = $request->file('profile')) {

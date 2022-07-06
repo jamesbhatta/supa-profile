@@ -44,15 +44,15 @@ class NationalPopulationCensusController extends Controller
     {
         NationalPopulationCensus::create($request->validate([
             'district'=>"required",
-            'population'=>"required|min:5|max:8",
-            'dencity'=>"required|min:2|max:5",
-            'census_house_number'=>"required|min:2|max:5",
-            'house_number'=>"required|min:2|max:5",
-            'male'=>"required|min:2|max:7",
-            'female'=>"required|min:2|max:7",
+            'population'=>"required",
+            'dencity'=>"required",
+            'census_house_number'=>"required",
+            'house_number'=>"required",
+            'male'=>"required",
+            'female'=>"required",
             'ratio'=>"required",
-            'avg_family_size'=>"required|max:2",
-            'increase_rate'=>"required|max:3",
+            'avg_family_size'=>"required",
+            'increase_rate'=>"required",
         ]));
         return redirect()->back()->with('success',"Saved");
     }

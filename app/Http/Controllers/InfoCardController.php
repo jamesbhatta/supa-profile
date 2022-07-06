@@ -34,7 +34,7 @@ class InfoCardController extends Controller
     public function store(Request $request)
     {
         $data = $request->validate([
-            'label' => 'required|max:50',
+            'label' => 'required',
             'value' => 'required',
             'icon' => 'nullable',
             'card_theme' => 'nullable',
@@ -55,7 +55,7 @@ class InfoCardController extends Controller
     public function update(Request $request, InfoCard $infocard)
     {
         $data = $request->validate([
-            'label' => 'required|max:50',
+            'label' => 'required',
             'value' => 'required',
             'icon' => 'nullable',
             'card_theme' => 'nullable',

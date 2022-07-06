@@ -43,7 +43,7 @@ class AreaofMunicipalityController extends Controller
     public function store(Request $request)
     {
         MunicipalityArea::create($request->validate([
-            'district_name'=>'required|max:50|min:5',
+            'district_name'=>'required',
             'municipalitiy_id'=>'required|unique:municipality_areas,municipalitiy_id',
             'muncipality_area'=>'required',
             'ward_count'=>'required'
@@ -85,7 +85,7 @@ class AreaofMunicipalityController extends Controller
     public function update(Request $request, MunicipalityArea $municipalityArea)
     {
         $municipalityArea->udpate($request->validate([
-            'district_name'=>'required|max:50|min:5',
+            'district_name'=>'required',
             'municipalitiy_id'=>'required|unique:municipality_areas,municipalitiy_id,' . $request->municipalitiy_id,
             'muncipality_area'=>'required',
             'ward_count'=>'required'

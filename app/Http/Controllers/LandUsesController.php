@@ -58,9 +58,9 @@ class LandUsesController extends Controller
     {
         # code...
         $landUses->update($request->validate([
-            'sector'=>"required|min:3|max:50",
-            'npl_area'=>"required|numeric|min:3|max:8",
-            'supa_area'=>"nullable|numeric",
+            'sector'=>"required",
+            'npl_area'=>"required",
+            'supa_area'=>"nullable",
         ]));
         return redirect()->route("land-uses.index")->with('success',"भू – उपयोगको अवस्था सफलतापूर्वक परिवर्तन भयो");
     }

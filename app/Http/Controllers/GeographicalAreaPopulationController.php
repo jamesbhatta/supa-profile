@@ -33,9 +33,9 @@ class GeographicalAreaPopulationController extends Controller
     {
         GeographicalAreaPopulation::create($request->validate([
             'sector' => "required",
-            'population' => "required|min:3|max:8",
-            'area' => "required|min:3|max:7",
-            'density' => "required|min:3|max:5",
+            'population' => "required",
+            'area' => "required",
+            'density' => "required",
         ]));
         return redirect()->back()->with('success', "क्षेत्रगत जनसंख्या तथा जनघनत्व विवरण सफलतापूर्वक थपियो");
     }
@@ -54,9 +54,9 @@ class GeographicalAreaPopulationController extends Controller
         // return $request;
         $geographicalPopulation->update($request->validate([
             'sector' => "required",
-            'population' => "required|min:3|max:8",
-            'area' => "required|min:3|max:7",
-            'density' => "required|min:3|max:5",
+            'population' => "required",
+            'area' => "required",
+            'density' => "required",
         ]));
         return redirect()->route('geographical-population.index')->with('success', "क्षेत्रगत जनसंख्या तथा जनघनत्व विवरण सफलतापूर्वक परिवर्तन भयो");
     }
