@@ -10,10 +10,7 @@ class CurrentMinistryController extends Controller
     public function displayData()
     {
         $info=CurrentMinistry::get();
-        // $currentMinistry=[
-        //     'name'=>$info->name,
-        // ];
-        // return $currentMinistry;
+       
         return response()->json($info, 200);
     }
     public function listingCurrentMinistry()
