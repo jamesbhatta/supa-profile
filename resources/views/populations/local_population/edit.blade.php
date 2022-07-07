@@ -50,19 +50,19 @@
 
                     <div class="form-group col-md-4">
                         <label for="input-name ">घरपरिवार संख्या</label>
-                        <input type="text" id="input-name" name="house_number" class="form-control" autocomplete="off" value="{{old('house_number',$populations[0]->house_number)}}">
+                        <input type="number" id="input-name" name="house_number" class="form-control" autocomplete="off" value="{{old('house_number',$populations[0]->house_number)}}">
                     </div>
                     <div class="form-group col-md-4">
                         <label for="input-name">पुरुष</label>
-                        <input type="text" id="input-name" name="male_number" class="form-control" autocomplete="off" value="{{old('male_number',$populations[0]->male_number)}}">
+                        <input type="number" id="input-name" name="male_number" class="form-control" autocomplete="off" value="{{old('male_number',$populations[0]->male_number)}}">
                     </div>
                     <div class="form-group col-md-4">
                         <label for="input-name">महिला</label>
-                        <input type="text" id="input-name" name="female_number" class="form-control" autocomplete="off" value="{{old('female_number',$populations[0]->female_number)}}">
+                        <input type="number" id="input-name" name="female_number" class="form-control" autocomplete="off" value="{{old('female_number',$populations[0]->female_number)}}">
                     </div>
                     <div class="form-group col-md-4">
                         <label for="input-name">औषत घरपरिवार सदस्य संख्या</label>
-                        <input type="text" id="input-name" name="avg_house_number" class="form-control" autocomplete="off" value="{{old('avg_house_number',$populations[0]->avg_house_number)}}">
+                        <input type="number" id="input-name" name="avg_house_number" class="form-control" autocomplete="off" value="{{old('avg_house_number',$populations[0]->avg_house_number)}}">
                     </div>
                     <div class="form-group col-md-4">
                         <label for="input-name">लैगिंक अनुपात</label>

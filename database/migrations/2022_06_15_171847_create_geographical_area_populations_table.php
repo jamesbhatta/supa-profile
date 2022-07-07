@@ -17,7 +17,7 @@ class CreateGeographicalAreaPopulationsTable extends Migration
             $table->id();
             $table->string('sector');
             $table->integer('population');
-            $table->integer('area');
+            $table->string('area');
             $table->integer('density');
             $table->timestamps();
         });

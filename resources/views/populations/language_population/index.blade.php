@@ -47,7 +47,7 @@
                         </div>
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">प्रतिशत</label>
-                            <input type="number" name="percentage" class="form-control"
+                            <input type="text" name="percentage" class="form-control"
                                 value="{{ old('percentage', $languagePopulation->percentage) }}">
                         </div>
 

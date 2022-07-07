@@ -15,7 +15,7 @@ class CreateCastPopulationsTable extends Migration
     {
         Schema::create('cast_populations', function (Blueprint $table) {
             $table->id();
-            $table->string('province');
+            $table->string('cast');
             $table->string('population');
             $table->string('percentage');
             $table->timestamps();

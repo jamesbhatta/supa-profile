@@ -16,12 +16,12 @@ class CreateTotalBudgetsTable extends Migration
         Schema::create('total_budgets', function (Blueprint $table) {
             $table->id();
             $table->string('fiscal_year');
-            $table->integer('running_budget');
-            $table->integer('capitalize_budget');
-            $table->integer('running_expenses');
-            $table->integer('running_expenses_percentage');
-            $table->integer('capitalize_expenses');
-            $table->integer('capitalize_expenses_percentage');
+            $table->string('running_budget');
+            $table->string('capitalize_budget');
+            $table->string('running_expenses');
+            $table->string('running_expenses_percentage');
+            $table->string('capitalize_expenses');
+            $table->string('capitalize_expenses_percentage');
 
             $table->timestamps();
         });

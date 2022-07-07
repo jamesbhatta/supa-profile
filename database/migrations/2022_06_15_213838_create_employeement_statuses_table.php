@@ -16,9 +16,9 @@ class CreateEmployeementStatusesTable extends Migration
         Schema::create('employeement_statuses', function (Blueprint $table) {
             $table->id();
             $table->string('province');
-            $table->integer('unemployeement');
-            $table->integer('unemployeement_ratio');
-            $table->integer('labour_force_rate');
+            $table->string('unemployeement');
+            $table->string('unemployeement_ratio');
+            $table->string('labour_force_rate');
             $table->timestamps();
         });
     }

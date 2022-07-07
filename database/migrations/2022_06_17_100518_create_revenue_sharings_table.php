@@ -16,11 +16,11 @@ class CreateRevenueSharingsTable extends Migration
         Schema::create('revenue_sharings', function (Blueprint $table) {
             $table->id();
             $table->string('province');
-            $table->integer('province_revenue');
-            $table->integer('province_revenue_percentage');
-            $table->integer('local_level');
-            $table->integer('local_level_revenue');
-            $table->integer('local_level_revenue_percentage');
+            $table->string('province_revenue');
+            $table->string('province_revenue_percentage');
+            $table->string('local_level');
+            $table->string('local_level_revenue');
+            $table->string('local_level_revenue_percentage');
             $table->timestamps();
         });
     }

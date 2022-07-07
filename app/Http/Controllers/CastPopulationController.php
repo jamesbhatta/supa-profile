@@ -17,7 +17,7 @@ class CastPopulationController extends Controller
         foreach ($data as $key => $item) {
             $dataset['data'][] = [
                 $item->$item+1,
-                $item->province,
+                $item->cast,
                 $item->population+$item->female,
                 $item->percentage,
                
@@ -37,7 +37,7 @@ class CastPopulationController extends Controller
     public function store(Request $request)
     {
         CastPopulation::create($request->validate([
-            'province'=>"required",
+            'cast'=>"required",
             'population'=>"required",
             'percentage'=>"required",
         ]));
@@ -54,7 +54,7 @@ class CastPopulationController extends Controller
     public function update(Request $request, CastPopulation $castPopulation)
     {
         $castPopulation->update($request->validate([
-            'province'=>"required",
+            'cast'=>"required",
             'population'=>"required",
             'percentage'=>"required",
         ]));

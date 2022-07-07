@@ -35,18 +35,9 @@
                     @endisset
                     <div class="row">
                         <div class="form-group col-lg-4">
-                            <label for="select-province-id">प्रदेशको नाम</label>
-                            <select id="select-province-id" name="province" class="custom-select">
-                                @isset($castPopulation->id)
-                                    <option value="{{ $castPopulation->province}}" selected>
-                                        {{ $castPopulation->province }}</option>
-                                @else
-                                    <option value="">प्रदेश छान्नुहोस्</option>
-                                @endisset
-                                @foreach ($provinces as $province)
-                                    <option value="{{ $province->name }}">{{ $province->name }}</option>
-                                @endforeach
-                            </select>
+                            <label for="select-province-id">जातजाती</label>
+                            <input type="text" name="cast" class="form-control"
+                                value="{{ old('cast', $castPopulation->cast) }}">
                         </div>
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">जनसङ्ख्या</label>
@@ -56,7 +47,7 @@
 
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">प्रतिशत</label>
-                            <input type="number" name="percentage" class="form-control"
+                            <input type="text" name="percentage" class="form-control"
                                 value="{{ old('percentage', $castPopulation->percentage) }}">
                         </div>
 
@@ -84,7 +75,7 @@
                     <table class="table table-striped table-hover">
                         <thead>
                            <tr>
-                                <th>प्रदेश</th>
+                                <th>जातजाती</th>
                                 <th>जनसङ्ख्या</th>
                                 <th>प्रतिशत</th>
                                

@@ -39,7 +39,7 @@
                                 value="{{ old('income', $budgetResource->income) }}">
                         </div>
                         <div class="form-group col-lg-6">
-                            <label for="input-name">रकम (रु.हजारमा)</label>
+                            <label for="input-name">रकम</label>
                             <input type="number" id="input-name" name="price" class="form-control" autocomplete="off"
                                 value="{{ old('price', $budgetResource->price) }}">
                         </div>

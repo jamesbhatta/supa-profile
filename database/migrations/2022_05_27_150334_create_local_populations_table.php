@@ -20,10 +20,10 @@ class CreateLocalPopulationsTable extends Migration
             $table->integer('house_number');
             $table->integer('male_number');
             $table->integer('female_number');
-            $table->integer('avg_house_number');
-            $table->integer('anupat');
-            $table->integer('fml_edu_percentage');
-            $table->integer('ml_edu_percentage');
+            $table->string('avg_house_number');
+            $table->string('anupat');
+            $table->string('fml_edu_percentage');
+            $table->string('ml_edu_percentage');
             $table->timestamps();
         });
     }

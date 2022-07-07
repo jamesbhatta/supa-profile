@@ -95,25 +95,25 @@
                         </div>
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">लैंगिक अनुपात</label>
-                            <input type="number" name="ratio" class="form-control"
+                            <input type="text" name="ratio" class="form-control"
                                 value="{{ old('ratio', $nationalPopulationCensus->ratio) }}">
                         </div>
 
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">औषत परिवार आकार</label>
-                            <input type="number" name="avg_family_size" class="form-control"
+                            <input type="text" name="avg_family_size" class="form-control"
                                 value="{{ old('avg_family_size', $nationalPopulationCensus->avg_family_size) }}">
                         </div>
 
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">वार्षिक वृद्धिदर(%)</label>
-                            <input type="number" name="increase_rate" class="form-control"
+                            <input type="text" name="increase_rate" class="form-control"
                                 value="{{ old('increase_rate', $nationalPopulationCensus->increase_rate) }}">
                         </div>
 
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">जनघनत्व र(प्रतिवग कि.मि.)</label>
-                            <input type="number" name="dencity" class="form-control"
+                            <input type="text" name="dencity" class="form-control"
                                 value="{{ old('dencity', $nationalPopulationCensus->dencity) }}">
                         </div>
                     </div>
