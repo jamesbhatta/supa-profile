@@ -16,12 +16,12 @@ class CreateMeatProductionsTable extends Migration
         Schema::create('meat_productions', function (Blueprint $table) {
             $table->id();
              $table->string('district');
-            $table->integer('buff');
-            $table->integer('mutton');
-            $table->integer('chewan');
-            $table->integer('pork');
-            $table->integer('chicken');
-            $table->integer('duck');
+            $table->string('buff');
+            $table->string('mutton');
+            $table->string('chewan');
+            $table->string('pork');
+            $table->string('chicken');
+            $table->string('duck');
             $table->timestamps();
         });
     }

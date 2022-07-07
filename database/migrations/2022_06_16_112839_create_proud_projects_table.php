@@ -18,7 +18,7 @@ class CreateProudProjectsTable extends Migration
             $table->string('road');
             $table->string('district');
             $table->string('lenght');
-            $table->integer('price');
+            $table->string('price');
             $table->date('finishing_date');
             $table->timestamps();
         });

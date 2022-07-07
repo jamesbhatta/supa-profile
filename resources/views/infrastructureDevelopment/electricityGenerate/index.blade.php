@@ -63,7 +63,7 @@
                         </div>
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">बिजुली को मात्रा (मे.वा.)</label>
-                            <input type="number" name="quantity" class="form-control"
+                            <input type="text" name="quantity" class="form-control"
                                 value="{{ old('quantity', $electricityGenerate->quantity) }}">
                         </div>
                     </div>

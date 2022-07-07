@@ -67,8 +67,8 @@
                         </div>
 
                         <div class="form-group col-lg-3">
-                            <label for="input-fiscal-year-start">उन उत्पादन किले</label>
-                            <input type="number" name="wool" class="form-control"
+                            <label for="input-fiscal-year-start">उन उत्पादन (किलो)</label>
+                            <input type="text" name="wool" class="form-control"
                                 value="{{ old('wool', $wool->wool) }}">
                         </div>
                     </div>

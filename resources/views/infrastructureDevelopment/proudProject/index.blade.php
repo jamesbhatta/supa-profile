@@ -72,7 +72,7 @@
 
                         <div class="form-group col-md-4">
                             <label for="input-name">रकम (रु.लाखमा)</label>
-                            <input type="number" name="price" class="form-control"
+                            <input type="text" name="price" class="form-control"
                                 value="{{ old('price', $proudProject->price) }}">
                         </div>
 

@@ -16,8 +16,8 @@ class CreateRoadNetworksTable extends Migration
         Schema::create('road_networks', function (Blueprint $table) {
             $table->id();
             $table->string('road');
-            $table->integer('supa_lenght');
-            $table->integer('npl_lenght');
+            $table->string('supa_lenght');
+            $table->string('npl_lenght');
             $table->timestamps();
         });
     }

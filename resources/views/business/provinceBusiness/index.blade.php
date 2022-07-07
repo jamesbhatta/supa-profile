@@ -104,7 +104,7 @@
 
                         <div class="form-group col-lg-3">
                             <label for="input-fiscal-year-start">कूल लगानी (रु.दश लाखमा)</label>
-                            <input type="number" name="investment" class="form-control"
+                            <input type="text" name="investment" class="form-control"
                                 value="{{ old('investment', $provinceBusiness->investment) }}">
                         </div>
 

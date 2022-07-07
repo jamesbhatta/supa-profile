@@ -17,7 +17,7 @@ class CreateElectricityGeneratesTable extends Migration
             $table->id();
             $table->string('province');
             $table->string('fiscal_year');
-            $table->integer('quantity');
+            $table->string('quantity');
             $table->timestamps();
         });
     }

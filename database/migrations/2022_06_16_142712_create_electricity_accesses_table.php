@@ -16,7 +16,7 @@ class CreateElectricityAccessesTable extends Migration
         Schema::create('electricity_accesses', function (Blueprint $table) {
             $table->id();
             $table->string('province');
-            $table->integer('accessability');
+            $table->string('accessability');
             $table->timestamps();
         });
     }

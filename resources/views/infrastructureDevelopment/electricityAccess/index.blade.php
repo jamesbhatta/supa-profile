@@ -51,7 +51,7 @@
                         </div>
                         <div class="form-group col-lg-6">
                             <label for="input-name-en"> पहुँच (प्रतिशत)</label>
-                            <input type="number" id="input-name-en" name="accessability" class="form-control" autocomplete="off"
+                            <input type="text" id="input-name-en" name="accessability" class="form-control" autocomplete="off"
                                 value="{{ old('accessability', $electricityAccess->accessability) }}">
                         </div>
                     </div>

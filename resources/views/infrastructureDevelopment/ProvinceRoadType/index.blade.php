@@ -50,37 +50,37 @@
                     <div class="row">
                         <div class="form-group col-md-4">
                             <label for="input-fiscal-year-start">धुले/कच्ची</label>
-                            <input type="number" name="normal_road" class="form-control"
+                            <input type="text" name="normal_road" class="form-control"
                                 value="{{ old('normal_road', $provinceRoadType->normal_road) }}">
                         </div>
 
                         <div class="form-group col-md-4">
                             <label for="input-fiscal-year-start">ग्राबेल</label>
-                            <input type="number" name="garvel_road" class="form-control"
+                            <input type="text" name="garvel_road" class="form-control"
                                 value="{{ old('garvel_road', $provinceRoadType->garvel_road) }}">
                         </div>
 
                         <div class="form-group col-md-4">
                             <label for="input-fiscal-year-start">कालोपत्रे</label>
-                            <input type="number" name="black_road" class="form-control"
+                            <input type="text" name="black_road" class="form-control"
                                 value="{{ old('black_road', $provinceRoadType->black_road) }}">
                         </div>
 
                         <div class="form-group col-md-4">
                             <label for="input-fiscal-year-start">जम्मा सडक</label>
-                            <input type="number" name="total_road" class="form-control"
+                            <input type="text" name="total_road" class="form-control"
                                 value="{{ old('total_road', $provinceRoadType->total_road) }}">
                         </div>
 
                         <div class="form-group col-md-4">
                             <label for="input-fiscal-year-start">प्रदेशको हिस्सा प्रतिशत</label>
-                            <input type="number" name="province_percentage" class="form-control"
+                            <input type="text" name="province_percentage" class="form-control"
                                 value="{{ old('province_percentage', $provinceRoadType->province_percentage) }}">
                         </div>
 
                         <div class="form-group col-md-4">
                             <label for="input-fiscal-year-start">सडक घनत्व</label>
-                            <input type="number" name="road_density" class="form-control"
+                            <input type="text" name="road_density" class="form-control"
                                 value="{{ old('road_density', $provinceRoadType->road_density) }}">
                         </div>
 

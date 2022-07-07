@@ -68,7 +68,7 @@
 
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">गाइको दुध</label>
-                            <input type="number" name="cow_milk" class="form-control"
+                            <input type="text" name="cow_milk" class="form-control"
                                 value="{{ old('cow_milk', $milkProduction->cow_milk) }}">
                         </div>
 
@@ -80,7 +80,7 @@
 
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">भैसीको दुध</label>
-                            <input type="number" name="buffalo_milk" class="form-control"
+                            <input type="text" name="buffalo_milk" class="form-control"
                                 value="{{ old('buffalo_milk', $milkProduction->buffalo_milk) }}">
                         </div>
 

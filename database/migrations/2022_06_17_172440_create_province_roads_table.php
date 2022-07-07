@@ -17,7 +17,7 @@ class CreateProvinceRoadsTable extends Migration
             $table->id();
             $table->string('road_detail');
             $table->string('province');
-            $table->integer('lenght');
+            $table->string('lenght');
             $table->timestamps();
         });
     }

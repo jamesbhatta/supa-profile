@@ -16,10 +16,10 @@ class CreateMainCropsTable extends Migration
         Schema::create('main_crops', function (Blueprint $table) {
             $table->id();
              $table->string('crops');
-            $table->integer('from_area');
-            $table->integer('from_production');
-            $table->integer('to_area');
-            $table->integer('to_production');
+            $table->string('from_area');
+            $table->string('from_production');
+            $table->string('to_area');
+            $table->string('to_production');
             $table->timestamps();
         });
     }

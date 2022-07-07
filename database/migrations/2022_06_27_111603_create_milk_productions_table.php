@@ -17,9 +17,9 @@ class CreateMilkProductionsTable extends Migration
             $table->id();
              $table->string('district');
             $table->integer('cow');
-            $table->integer('cow_milk');
+            $table->string('cow_milk');
             $table->integer('buffalo');
-            $table->integer('buffalo_milk');
+            $table->string('buffalo_milk');
             $table->timestamps();
         });
     }

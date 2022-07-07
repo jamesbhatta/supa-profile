@@ -2,12 +2,12 @@
 
 @section('content')
     <div class="container-fluid">
-        <h3 class="font-weight-bold">ठूला तथा मझौला उद्योगहरुको प्रदेशगत विवरण</h3>
+        <h3 class="font-weight-bold">सुदूरपश्चिमका दर्ता भएका कूल साना उद्योगहरुको विवरण</h3>
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
                 <li class="breadcrumb-item active" aria-current="page">उद्योग ब्यवसाय</li>
-                <li class="breadcrumb-item active" aria-current="page">ठूला तथा मझौला उद्योगहरुको प्रदेशगत विवरण
+                <li class="breadcrumb-item active" aria-current="page">सुदूरपश्चिमका दर्ता भएका कूल साना उद्योगहरुको विवरण
                 </li>
             </ol>
         </nav>
@@ -19,7 +19,7 @@
                 <div style="overflow: auto;scrollbar-width: none;">
                     <div>
                         <nav class="nav nav-pills" id="pills-tab" role="tablist">
-                            <h4>ठूला तथा मझौला उद्योगहरुको प्रदेशगत विवरण</h4>
+                            <h4>सुदूरपश्चिमका दर्ता भएका कूल साना उद्योगहरुको विवरण</h4>
                         </nav>
                     </div>
                 </div>

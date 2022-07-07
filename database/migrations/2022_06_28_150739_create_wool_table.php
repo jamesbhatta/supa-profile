@@ -17,7 +17,7 @@ class CreateWoolTable extends Migration
             $table->id();
              $table->string('district');
             $table->integer('sheep');
-            $table->integer('wool');
+            $table->string('wool');
             $table->timestamps();
         });
     }

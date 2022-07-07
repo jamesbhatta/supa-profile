@@ -40,13 +40,13 @@
                         </div>
                         <div class="form-group col-lg-4">
                             <label for="input-name">सडक सञ्जाल सुदूरपश्चिममा लम्बाई (कि.मि)</label>
-                            <input type="number" name="supa_lenght" class="form-control"
+                            <input type="text" name="supa_lenght" class="form-control"
                                 value="{{ old('supa_lenght', $roadNetwork->supa_lenght) }}">
                         </div>
 
                         <div class="form-group col-lg-4">
                             <label for="input-name">नेपालमा लम्बाई (कि.मि.)</label>
-                            <input type="number" name="npl_lenght" class="form-control"
+                            <input type="text" name="npl_lenght" class="form-control"
                                 value="{{ old('npl_lenght', $roadNetwork->npl_lenght) }}">
                         </div>
                     </div>

@@ -16,12 +16,12 @@ class CreateProvinceRoadTypesTable extends Migration
         Schema::create('province_road_types', function (Blueprint $table) {
             $table->id();
             $table->string('province');
-            $table->integer('normal_road');
-            $table->integer('garvel_road');
-            $table->integer('black_road');
-            $table->integer('total_road');
-            $table->integer('province_percentage');
-            $table->integer('road_density');
+            $table->string('normal_road');
+            $table->string('garvel_road');
+            $table->string('black_road');
+            $table->string('total_road');
+            $table->string('province_percentage');
+            $table->string('road_density');
             $table->timestamps();
         });
     }
