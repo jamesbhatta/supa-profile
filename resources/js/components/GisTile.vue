@@ -1,15 +1,6 @@
 <template>
-  <!-- <div class="border" :style="{ height: height }"> -->
-  <div style="height: 1150px">
-    <vue-iframe
-      :src="src"
-      allow="camera *; geolocation *; microphone *; autoplay *"
-      @load="onLoad"
-      @iframe-load="iframeLoaded"
-      name="my-frame"
-      width="150px"
-      :height="height"
-    />
+  <div id="gis-wrapper">
+    <vue-iframe :src="src" allow="camera *; geolocation *; microphone *; autoplay *" @load="onLoad" @iframe-load="iframeLoaded" name="my-frame" width="150px" :height="height" />
   </div>
 </template>
 
@@ -28,8 +19,25 @@ export default {
       this.height = this.myIframe.document.documentElement.scrollHeight + "px";
     },
 
-    iframeLoaded(frame) {
-    },
-  }
+    iframeLoaded(frame) {},
+  },
 };
 </script>
+
+<style scoped>
+#gis-wrapper {
+  height: 800px;
+}
+
+@media screen AND (min-width: 700px) {
+  #gis-wrapper {
+    height: 800px;
+  }
+}
+
+@media screen AND (min-width: 1200px) {
+  #gis-wrapper {
+    height: 1325px;
+  }
+}
+</style>

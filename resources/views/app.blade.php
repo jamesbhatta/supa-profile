@@ -26,16 +26,19 @@
             margin-bottom: 1.5rem;
             text-align: center
         }
-        .subMenu{
+
+        .subMenu {
             display: none;
         }
 
     </style>
 </head>
 <body class="sidebar-opened">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v14.0&appId=2382258412091952&autoLogAppEvents=1" nonce="EfHGDER9"></script>
     <div id="app">
         <!--Navbar-->
-      <navbar></navbar>
+        <navbar></navbar>
         <!--/.Navbar-->
 
         <router-view></router-view>
