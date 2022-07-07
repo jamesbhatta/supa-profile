@@ -69,31 +69,31 @@
                         
                         <div class="form-group col-lg-6">
                             <label for="input-fiscal-year-start">प्रदेशिक चिकित्सालय आयुर्वेद</label>
-                            <input type="text" id="input-fiscal-year" name="pardesika" class="form-control font-roboto"
+                            <input type="number" id="input-fiscal-year" name="pardesika" class="form-control font-roboto"
                                 value="{{ old('pardesika', $ayourbed->pardesika) }}">
                         </div>
 
                         <div class="form-group col-lg-6">
                             <label for="input-fiscal-year-start">जिल्ला आयुर्वेद स्वास्थ्य केन्द्र</label>
-                            <input type="text" id="input-fiscal-year" name="jilla" class="form-control font-roboto"
+                            <input type="number" id="input-fiscal-year" name="jilla" class="form-control font-roboto"
                                 value="{{ old('jilla', $ayourbed->jilla) }}">
                         </div>
 
                         <div class="form-group col-lg-6">
                             <label for="input-fiscal-year-start">आयुर्वेद औषधालय</label>
-                            <input type="text" id="input-fiscal-year" name="pharmesi" class="form-control font-roboto"
+                            <input type="number" id="input-fiscal-year" name="pharmesi" class="form-control font-roboto"
                                 value="{{ old('pharmesi', $ayourbed->pharmesi) }}">
                         </div>
 
                         <div class="form-group col-lg-6">
                             <label for="input-fiscal-year-start">नागरिक आरोग्य सेवा केन्द</label>
-                            <input type="text" id="input-fiscal-year" name="arogye_sewa" class="form-control font-roboto"
+                            <input type="number" id="input-fiscal-year" name="arogye_sewa" class="form-control font-roboto"
                                 value="{{ old('arogye_sewa', $ayourbed->arogye_sewa) }}">
                         </div>
 
                         <div class="form-group col-lg-6">
                             <label for="input-fiscal-year-start">पिएचसीमा जीवनशैली कार्यक्रम</label>
-                            <input type="text" id="input-fiscal-year" name="phc" class="form-control font-roboto"
+                            <input type="number" id="input-fiscal-year" name="phc" class="form-control font-roboto"
                                 value="{{ old('phc', $ayourbed->phc) }}">
                         </div>
                         

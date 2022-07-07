@@ -39,15 +39,17 @@ class AyourbedController extends Controller
 
     public function store(Request $request)
     {
-        Ayourbed::create($request->validate([
-            'district'=>"required",
-            'pardesika'=>"required",
-            'jilla'=>"required",
-            'pharmesi'=>"required",
-            'arogye_sewa'=>"required",
-            'phc'=>"required",
-        ]));
-        return redirect()->back()->with('success',"Saved");
+        // return $request;
+
+            Ayourbed::create($request->validate([
+                'district'=>"required",
+                'pardesika'=>"required",
+                'jilla'=>"required",
+                'pharmesi'=>"required",
+                'arogye_sewa'=>"required",
+                'phc'=>"required",
+            ]));
+            return redirect()->back()->with('success',"Saved");
     }
 
     public function edit(Ayourbed $ayourbed)
