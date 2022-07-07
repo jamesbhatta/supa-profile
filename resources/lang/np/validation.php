@@ -185,7 +185,20 @@ return [
         'kirat'=>'किराँत संख्या',
         'christian'=>'क्रिश्चियन संख्या',
         'prakirty'=>'प्रकृति संख्या',
-        'other'=>'अन्य'
+        'other'=>'अन्य',
+        'municipality_id'=>'न.पा./गा.वि.स.',
+        'family_num'=>'घरपरिवार संख्या',
+        'male_num'=>'पुरुष',
+        'female_num'=>'महिला',
+        'municipality_name'=>'न.पा./गा.वि.स. को नाम',
+        'male_number'=>'पुरुष',
+        'female_number'=>'महिला',
+        'avg_house_number'=>'औषत घरपरिवार सदस्य संख्या',
+        'anupat'=>'लैगिंक अनुपात',
+        'fml_edu_percentage'=>'महिला साक्षरता (प्रतिशत)',
+        'ml_edu_percentage'=>'पुरुष साक्षरता',
+        'language'=>'भाषा',
+        'province'=>'प्रदेशको नाम',
     ],
 
 ];
