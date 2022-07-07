@@ -55,7 +55,7 @@
                         </div>
                         <div class="form-group col-lg-3">
                             <label for="input-name">जनसंख्याको अनुपातमा बेरोजगारी</label>
-                            <input type="number" id="input-name" name="unemployeement_ratio" class="form-control"
+                            <input type="text" id="input-name" name="unemployeement_ratio" class="form-control"
                                 autocomplete="off"
                                 value="{{ old('unemployeement_ratio', $employeementStatus->unemployeement_ratio) }}">
                         </div>
