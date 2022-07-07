@@ -49,7 +49,7 @@
                             value="{{ old('provincinal', $nutrition->provincinal) }}">
                     </div>
                     <div class="form-group ">
-                        <label for="input-fiscal-year-start">प्सुचनाको श्रोत(नेपाल जनसांक्षख्यक र स्वास््य सबेिण २०१६)</label>
+                        <label for="input-fiscal-year-start">सुचनाको श्रोत(नेपाल जनसांक्षख्यक र स्वास््य सबेिण २०१६)</label>
                         <input type="text" id="input-fiscal-year" name="source" class="form-control font-roboto"
                             value="{{ old('source', $nutrition->source) }}">
                     </div>

@@ -41,15 +41,15 @@
 
                     <div class="form-group col-md-4">
                         <label for="input-name ">घरपरिवार संख्या</label>
-                        <input type="text" id="input-name" name="family_num" class="form-control" autocomplete="off" value="{{old('house_number')}}">
+                        <input type="number" id="input-name" name="family_num" class="form-control" autocomplete="off" value="{{old('house_number')}}">
                     </div>
                     <div class="form-group col-md-4">
                         <label for="input-name">पुरुष</label>
-                        <input type="text" id="input-name" name="male_num" class="form-control" autocomplete="off" value="{{old('male_number')}}">
+                        <input type="number" id="input-name" name="male_num" class="form-control" autocomplete="off" value="{{old('male_number')}}">
                     </div>
                     <div class="form-group col-md-4">
                         <label for="input-name">महिला</label>
-                        <input type="text" id="input-name" name="female_num" class="form-control" autocomplete="off" value="{{old('female_number')}}">
+                        <input type="number" id="input-name" name="female_num" class="form-control" autocomplete="off" value="{{old('female_number')}}">
                     </div>
                     <div class="form-group">
                         <button type="submit" class="btn btn-success z-depth-0">save</button>

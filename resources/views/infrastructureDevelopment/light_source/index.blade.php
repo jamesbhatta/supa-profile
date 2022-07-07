@@ -76,29 +76,29 @@
                         </div>
                         <div class="form-group col-lg-3">
                             <label for="select-province-id">विजुली</label>
-                            <input type="text" name="electricity" class="form-control"
+                            <input type="number" name="electricity" class="form-control"
                                 value="{{ old('electricity', $lightSource->electricity) }}">
                         </div>
                         
                         <div class="form-group col-lg-3">
                             <label for="input-fiscal-year-start">मट्टितेल</label>
-                            <input type="text" name="kerosene" class="form-control"
+                            <input type="number" name="kerosene" class="form-control"
                                 value="{{ old('kerosene', $lightSource->kerosene) }}">
                         </div>
 
                         <div class="form-group col-lg-3">
                             <label for="input-fiscal-year-start">ब्यायो ग्यास</label>
-                            <input type="text" name="bio_gas" class="form-control"
+                            <input type="number" name="bio_gas" class="form-control"
                                 value="{{ old('bio_gas', $lightSource->bio_gas) }}">
                         </div>
                         <div class="form-group col-lg-3">
                             <label for="input-fiscal-year-start">सोलार</label>
-                            <input type="text" name="solar" class="form-control"
+                            <input type="number" name="solar" class="form-control"
                                 value="{{ old('solar', $lightSource->solar) }}">
                         </div>
                         <div class="form-group col-lg-3">
                             <label for="input-fiscal-year-start">अन्य</label>
-                            <input type="text" name="other" class="form-control"
+                            <input type="number" name="other" class="form-control"
                                 value="{{ old('other', $lightSource->other) }}">
                         </div>
                         

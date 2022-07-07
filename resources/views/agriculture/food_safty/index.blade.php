@@ -65,19 +65,19 @@
                         </div>
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">उपभोग्य खाद्यान्न</label>
-                            <input type="text" name="usable_food" class="form-control"
+                            <input type="number" name="usable_food" class="form-control"
                                 value="{{ old('usable_food', $foodSafty->usable_food) }}">
                         </div>
 
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">आवश्यक खाद्यान्न</label>
-                            <input type="text" name="required_food" class="form-control"
+                            <input type="number" name="required_food" class="form-control"
                                 value="{{ old('required_food', $foodSafty->required_food) }}">
                         </div>
 
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">वचत वा न्यून</label>
-                            <input type="text" name="safe_food" class="form-control"
+                            <input type="number" name="safe_food" class="form-control"
                                 value="{{ old('safe_food', $foodSafty->safe_food) }}">
                         </div>
 

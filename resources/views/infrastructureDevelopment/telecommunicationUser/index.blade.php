@@ -72,12 +72,12 @@
                     <div class="row">
                         <div class="form-group col-md-6">
                             <label for="input-fiscal-year-start">From</label>
-                            <input type="text" name="users_from" class="form-control"
+                            <input type="number" name="users_from" class="form-control"
                                 value="{{ old('users_from', $telecomunication->users_from) }}">
                         </div>
                         <div class="form-group col-md-6">
                             <label for="input-fiscal-year-start">To</label>
-                            <input type="text" name="users_to" class="form-control"
+                            <input type="number" name="users_to" class="form-control"
                                 value="{{ old('users_to', $telecomunication->users_to) }}">
                         </div>
                     </div>

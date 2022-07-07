@@ -46,13 +46,13 @@
                         
                         <div class="form-group col-lg-3">
                             <label for="input-fiscal-year-start">२०७७ असार मसान्तसम्म</label>
-                            <input type="text" name="from" class="form-control"
+                            <input type="number" name="from" class="form-control"
                                 value="{{ old('from', $vehicle->from) }}">
                         </div>
 
                         <div class="form-group col-lg-3">
                             <label for="input-fiscal-year-start">२०७८ असार मसान्तसम्म</label>
-                            <input type="text" name="to" class="form-control"
+                            <input type="number" name="to" class="form-control"
                                 value="{{ old('to', $vehicle->to) }}">
                         </div>
                         <div class="form-group col-lg-3">

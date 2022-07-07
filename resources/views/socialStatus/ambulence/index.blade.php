@@ -2,13 +2,13 @@
 
 @section('content')
     <div class="container-fluid">
-        <h3 class="font-weight-bold">एम्बुलेन्स वििरण
+        <h3 class="font-weight-bold">एम्बुलेन्स विवरण
 </h3>
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
                 <li class="breadcrumb-item active" aria-current="page">कृषि क्षेत्र</li>
-                <li class="breadcrumb-item active" aria-current="page">एम्बुलेन्स वििरण
+                <li class="breadcrumb-item active" aria-current="page">एम्बुलेन्स विवरण
 </li>
             </ol>
         </nav>
@@ -20,7 +20,7 @@
                 <div style="overflow: auto;scrollbar-width: none;">
                     <div>
                         <nav class="nav nav-pills" id="pills-tab" role="tablist">
-                            <h4>एम्बुलेन्स वििरण
+                            <h4>एम्बुलेन्स विवरण
 </h4>
                         </nav>
                     </div>
@@ -102,7 +102,7 @@
         <div class="container-fluid">
             <div class="card z-depth-0">
                 <div class="card-header">
-                    <h1 class="h3-responsive d-inline-block">एम्बुलेन्स वििरण
+                    <h1 class="h3-responsive d-inline-block">एम्बुलेन्स विवरण
 </h1>
                     {{-- <small>(हाल {{ count($schools)  }}  विद्यालय {{ count($schools) > 1 ? 'हरु छन्' : 'छ' }} )</small> --}}
 

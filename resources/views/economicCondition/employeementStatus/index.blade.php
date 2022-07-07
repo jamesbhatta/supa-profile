@@ -49,19 +49,19 @@
                         </div>
                         <div class="form-group col-lg-3">
                             <label for="input-name">बेरोजगारी</label>
-                            <input type="text" id="input-name" name="unemployeement" class="form-control"
+                            <input type="number" id="input-name" name="unemployeement" class="form-control"
                                 autocomplete="off"
                                 value="{{ old('unemployeement', $employeementStatus->unemployeement) }}">
                         </div>
                         <div class="form-group col-lg-3">
                             <label for="input-name">जनसंख्याको अनुपातमा बेरोजगारी</label>
-                            <input type="text" id="input-name" name="unemployeement_ratio" class="form-control"
+                            <input type="number" id="input-name" name="unemployeement_ratio" class="form-control"
                                 autocomplete="off"
                                 value="{{ old('unemployeement_ratio', $employeementStatus->unemployeement_ratio) }}">
                         </div>
                         <div class="form-group col-lg-3">
                             <label for="input-name">श्रमशक्तिमा सहभागिताको दर</label>
-                            <input type="text" id="input-name" name="labour_force_rate" class="form-control"
+                            <input type="number" id="input-name" name="labour_force_rate" class="form-control"
                                 autocomplete="off"
                                 value="{{ old('labour_force_rate', $employeementStatus->labour_force_rate) }}">
                         </div>

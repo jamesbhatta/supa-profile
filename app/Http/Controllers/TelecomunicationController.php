@@ -34,8 +34,8 @@ class TelecomunicationController extends Controller
     {
         Telecomunication::create($request->validate([
             'detail'=>"required",
-            'date_from'=>"required",
-            'date_to'=>"required",
+            'date_from'=>"required|date",
+            'date_to'=>"required|date",
             'users_from'=>"required",
             'users_to'=>"required",
         ]));
@@ -58,8 +58,8 @@ class TelecomunicationController extends Controller
     {
         $telecomunication->update($request->validate([
             'detail'=>"required",
-            'date_from'=>"required",
-            'date_to'=>"required",
+            'date_from'=>"required|date",
+            'date_to'=>"required|date",
             'users_from'=>"required",
             'users_to'=>"required",
         ]));

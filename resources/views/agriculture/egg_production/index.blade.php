@@ -62,25 +62,25 @@
                         </div>
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">लेयर्स</label>
-                            <input type="text" name="layers" class="form-control"
+                            <input type="number" name="layers" class="form-control"
                                 value="{{ old('layers', $eggProduction->layers) }}">
                         </div>
 
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">हास</label>
-                            <input type="text" name="duck" class="form-control"
+                            <input type="number" name="duck" class="form-control"
                                 value="{{ old('duck', $eggProduction->duck) }}">
                         </div>
 
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">कुखुरा अण्डा</label>
-                            <input type="text" name="chicken_egg" class="form-control"
+                            <input type="number" name="chicken_egg" class="form-control"
                                 value="{{ old('chicken_egg', $eggProduction->chicken_egg) }}">
                         </div>
 
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">हास अण्डा</label>
-                            <input type="text" name="duck_egg" class="form-control"
+                            <input type="number" name="duck_egg" class="form-control"
                                 value="{{ old('duck_egg', $eggProduction->duck_egg) }}">
                         </div>
 

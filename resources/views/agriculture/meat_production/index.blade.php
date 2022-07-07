@@ -68,34 +68,34 @@
                         </div>
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">बफ</label>
-                            <input type="text" name="buff" class="form-control"
+                            <input type="number" name="buff" class="form-control"
                                 value="{{ old('buff', $meatProduction->buff) }}">
                         </div>
 
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">मटन</label>
-                            <input type="text" name="mutton" class="form-control"
+                            <input type="number" name="mutton" class="form-control"
                                 value="{{ old('mutton', $meatProduction->mutton) }}">
                         </div>
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">चेवन</label>
-                            <input type="text" name="chewan" class="form-control"
+                            <input type="number" name="chewan" class="form-control"
                                 value="{{ old('chewan', $meatProduction->chewan) }}">
                         </div>
 
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">पोर्क</label>
-                            <input type="text" name="pork" class="form-control"
+                            <input type="number" name="pork" class="form-control"
                                 value="{{ old('pork', $meatProduction->pork) }}">
                         </div>
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">चिकेन</label>
-                            <input type="text" name="chicken" class="form-control"
+                            <input type="number" name="chicken" class="form-control"
                                 value="{{ old('chicken', $meatProduction->chicken) }}">
                         </div>
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">डक मिट</label>
-                            <input type="text" name="duck" class="form-control"
+                            <input type="number" name="duck" class="form-control"
                                 value="{{ old('duck', $meatProduction->duck) }}">
                         </div>
                     </div>

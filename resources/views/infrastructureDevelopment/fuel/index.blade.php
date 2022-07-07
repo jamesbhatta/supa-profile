@@ -76,39 +76,39 @@
                         </div>
                         <div class="form-group col-lg-3">
                             <label for="select-province-id">काठ दाउरा</label>
-                            <input type="text" name="wood" class="form-control"
+                            <input type="number" name="wood" class="form-control"
                                 value="{{ old('wood', $fuel->wood) }}">
                         </div>
                         
                         <div class="form-group col-lg-3">
                             <label for="input-fiscal-year-start">मट्टितेल</label>
-                            <input type="text" name="Kerosene" class="form-control"
+                            <input type="number" name="Kerosene" class="form-control"
                                 value="{{ old('Kerosene', $fuel->Kerosene) }}">
                         </div>
 
                         <div class="form-group col-lg-3">
                             <label for="input-fiscal-year-start">एलपी ग्यास</label>
-                            <input type="text" name="ALP_gas" class="form-control"
+                            <input type="number" name="ALP_gas" class="form-control"
                                 value="{{ old('ALP_gas', $fuel->ALP_gas) }}">
                         </div>
                         <div class="form-group col-lg-3">
                             <label for="input-fiscal-year-start">गुइँठा, गोबर</label>
-                            <input type="text" name="gobar" class="form-control"
+                            <input type="number" name="gobar" class="form-control"
                                 value="{{ old('gobar', $fuel->gobar) }}">
                         </div>
                         <div class="form-group col-lg-3">
                             <label for="input-fiscal-year-start">बायोग्यास</label>
-                            <input type="text" name="bio_gas" class="form-control"
+                            <input type="number" name="bio_gas" class="form-control"
                                 value="{{ old('bio_gas', $fuel->bio_gas) }}">
                         </div>
                         <div class="form-group col-lg-3">
                             <label for="input-fiscal-year-start">विधुत</label>
-                            <input type="text" name="electricity" class="form-control"
+                            <input type="number" name="electricity" class="form-control"
                                 value="{{ old('electricity', $fuel->electricity) }}">
                         </div>
                         <div class="form-group col-lg-3">
                             <label for="input-fiscal-year-start">अन्य</label>
-                            <input type="text" name="other" class="form-control"
+                            <input type="number" name="other" class="form-control"
                                 value="{{ old('other', $fuel->other) }}">
                         </div>
 

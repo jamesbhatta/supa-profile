@@ -41,7 +41,7 @@ class ProudProjectController extends Controller
             'district'=>"required",
             'lenght'=>"required",
             'price'=>"required",
-            'finishing_date'=>"required",
+            'finishing_date'=>"required|date",
         ]));
         return redirect()->back()->with('success',"प्रदेश गौरबका आयोजन सफलतापूर्वक थपियो");
     }
@@ -64,7 +64,7 @@ class ProudProjectController extends Controller
             'district'=>"required",
             'lenght'=>"required",
             'price'=>"required",
-            'finishing_date'=>"required",
+            'finishing_date'=>"required|date",
         ]));
         return redirect()->route('proud-project.index')->with('success',"रदेश गौरबका आयोजन सफलतापूर्वक परिवर्तन भयो");
     }

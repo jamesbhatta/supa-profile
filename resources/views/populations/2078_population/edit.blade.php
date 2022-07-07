@@ -52,15 +52,15 @@
 
                     <div class="form-group col-md-4">
                         <label for="input-name ">घरपरिवार संख्या</label>
-                        <input type="text" id="input-name" name="family_num" class="form-control" autocomplete="off" value="{{old('house_number',$population[0]->family_num)}}">
+                        <input type="number" id="input-name" name="family_num" class="form-control" autocomplete="off" value="{{old('house_number',$population[0]->family_num)}}">
                     </div>
                     <div class="form-group col-md-4">
                         <label for="input-name">पुरुष</label>
-                        <input type="text" id="input-name" name="male_num" class="form-control" autocomplete="off" value="{{old('male_number',$population[0]->male_num)}}">
+                        <input type="number" id="input-name" name="male_num" class="form-control" autocomplete="off" value="{{old('male_number',$population[0]->male_num)}}">
                     </div>
                     <div class="form-group col-md-4">
                         <label for="input-name">महिला</label>
-                        <input type="text" id="input-name" name="female_num" class="form-control" autocomplete="off" value="{{old('female_number',$population[0]->female_num)}}">
+                        <input type="number" id="input-name" name="female_num" class="form-control" autocomplete="off" value="{{old('female_number',$population[0]->female_num)}}">
                     </div>
                    
                     <div class="form-group">

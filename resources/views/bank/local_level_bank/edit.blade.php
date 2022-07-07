@@ -74,7 +74,7 @@
 
                 <div class="form-group">
                     <label for="input-name">बैंक तथा वित्तिय संस्था संख्या</label>
-                    <input type="text" id="input-name" name="bank_number" class="form-control" autocomplete="off" value="{{$local_banks[0]->bank_number}}">
+                    <input type="number" id="input-name" name="bank_number" class="form-control" autocomplete="off" value="{{$local_banks[0]->bank_number}}">
                 </div>
                 <div class="form-group">
                     <button type="submit" class="btn btn-success z-depth-0">Update</button>

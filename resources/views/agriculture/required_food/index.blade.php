@@ -65,61 +65,61 @@
 
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">जनसंख्या</label>
-                            <input type="text" name="population" class="form-control"
+                            <input type="number" name="population" class="form-control"
                                 value="{{ old('population', $requireFood->population) }}">
                         </div>
 
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">चामल</label>
-                            <input type="text" name="rice" class="form-control"
+                            <input type="number" name="rice" class="form-control"
                                 value="{{ old('rice', $requireFood->rice) }}">
                         </div>
 
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">मकै</label>
-                            <input type="text" name="maize" class="form-control"
+                            <input type="number" name="maize" class="form-control"
                                 value="{{ old('maize', $requireFood->maize) }}">
                         </div>
 
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">कोदो</label>
-                            <input type="text" name="kodo" class="form-control"
+                            <input type="number" name="kodo" class="form-control"
                                 value="{{ old('kodo', $requireFood->kodo) }}">
                         </div>
 
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">फापर</label>
-                            <input type="text" name="phppar" class="form-control"
+                            <input type="number" name="phppar" class="form-control"
                                 value="{{ old('phppar', $requireFood->phppar) }}">
                         </div>
 
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">गहुँ</label>
-                            <input type="text" name="wheat" class="form-control"
+                            <input type="number" name="wheat" class="form-control"
                                 value="{{ old('wheat', $requireFood->wheat) }}">
                         </div>
 
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">जौ</label>
-                            <input type="text" name="Barley" class="form-control"
+                            <input type="number" name="Barley" class="form-control"
                                 value="{{ old('Barley', $requireFood->Barley) }}">
                         </div>
 
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">उपभोग्य खाद्यान्न उत्पादन</label>
-                            <input type="text" name="production" class="form-control"
+                            <input type="number" name="production" class="form-control"
                                 value="{{ old('production', $requireFood->production) }}">
                         </div>
 
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">आवश्यक खाद्यान्न</label>
-                            <input type="text" name="required_food" class="form-control"
+                            <input type="number" name="required_food" class="form-control"
                                 value="{{ old('required_food', $requireFood->required_food) }}">
                         </div>
 
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">बचत वा न्यून</label>
-                            <input type="text" name="saving" class="form-control"
+                            <input type="number" name="saving" class="form-control"
                                 value="{{ old('saving', $requireFood->saving) }}">
                         </div>
                     </div>

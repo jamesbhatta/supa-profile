@@ -62,13 +62,13 @@
                         </div>
                         <div class="form-group col-lg-3">
                             <label for="input-fiscal-year-start">भेडा</label>
-                            <input type="text" name="sheep" class="form-control"
+                            <input type="number" name="sheep" class="form-control"
                                 value="{{ old('sheep', $wool->sheep) }}">
                         </div>
 
                         <div class="form-group col-lg-3">
                             <label for="input-fiscal-year-start">उन उत्पादन किले</label>
-                            <input type="text" name="wool" class="form-control"
+                            <input type="number" name="wool" class="form-control"
                                 value="{{ old('wool', $wool->wool) }}">
                         </div>
                     </div>

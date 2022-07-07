@@ -54,63 +54,63 @@
                         </div>
                         <div class="form-group col-lg-3">
                             <label for="input-fiscal-year-start">कृषि र वन</label>
-                            <input type="text" name="agriculture" class="form-control"
+                            <input type="number" name="agriculture" class="form-control"
                                 value="{{ old('agriculture', $provinceBusiness->agriculture) }}">
                         </div>
                         <div class="form-group col-lg-3">
                             <label for="input-fiscal-year-start">निर्माण</label>
-                            <input type="text" name="construction" class="form-control"
+                            <input type="number" name="construction" class="form-control"
                                 value="{{ old('construction', $provinceBusiness->construction) }}">
                         </div>
 
                         <div class="form-group col-lg-3">
                             <label for="input-fiscal-year-start">उर्जा</label>
-                            <input type="text" name="energy" class="form-control"
+                            <input type="number" name="energy" class="form-control"
                                 value="{{ old('energy', $provinceBusiness->energy) }}">
                         </div>
                         <div class="form-group col-lg-3">
                             <label for="input-fiscal-year-start">सञ्चार</label>
-                            <input type="text" name="communication" class="form-control"
+                            <input type="number" name="communication" class="form-control"
                                 value="{{ old('communication', $provinceBusiness->communication) }}">
                         </div>
                         <div class="form-group col-lg-3">
                             <label for="input-fiscal-year-start">उत्पादनमा आधारित</label>
-                            <input type="text" name="production" class="form-control"
+                            <input type="number" name="production" class="form-control"
                                 value="{{ old('production', $provinceBusiness->production) }}">
                         </div>
                         <div class="form-group col-lg-3">
                             <label for="input-fiscal-year-start">खानी</label>
-                            <input type="text" name="mine" class="form-control"
+                            <input type="number" name="mine" class="form-control"
                                 value="{{ old('mine', $provinceBusiness->mine) }}">
                         </div>
 
                         <div class="form-group col-lg-3">
                             <label for="input-fiscal-year-start">सेवा</label>
-                            <input type="text" name="service" class="form-control"
+                            <input type="number" name="service" class="form-control"
                                 value="{{ old('service', $provinceBusiness->service) }}">
                         </div>
 
                         <div class="form-group col-lg-3">
                             <label for="input-fiscal-year-start">पर्यटन</label>
-                            <input type="text" name="tourism" class="form-control"
+                            <input type="number" name="tourism" class="form-control"
                                 value="{{ old('tourism', $provinceBusiness->tourism) }}">
                         </div>
 
                         <div class="form-group col-lg-3">
                             <label for="input-fiscal-year-start">उद्योगका संख्या</label>
-                            <input type="text" name="business" class="form-control"
+                            <input type="number" name="business" class="form-control"
                                 value="{{ old('business', $provinceBusiness->business) }}">
                         </div>
 
                         <div class="form-group col-lg-3">
                             <label for="input-fiscal-year-start">कूल लगानी (रु.दश लाखमा)</label>
-                            <input type="text" name="investment" class="form-control"
+                            <input type="number" name="investment" class="form-control"
                                 value="{{ old('investment', $provinceBusiness->investment) }}">
                         </div>
 
                         <div class="form-group col-lg-3">
                             <label for="input-fiscal-year-start">रोजगारी</label>
-                            <input type="text" name="employeement" class="form-control"
+                            <input type="number" name="employeement" class="form-control"
                                 value="{{ old('employeement', $provinceBusiness->employeement) }}">
                         </div>
                     </div>

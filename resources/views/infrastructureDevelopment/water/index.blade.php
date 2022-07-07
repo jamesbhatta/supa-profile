@@ -86,39 +86,39 @@
                         </div>
                         <div class="form-group col-lg-3">
                             <label for="select-province-id">धारा</label>
-                            <input type="text" name="tap" class="form-control"
+                            <input type="number" name="tap" class="form-control"
                                 value="{{ old('tap', $water->tap) }}">
                         </div>
 
                         <div class="form-group col-lg-3">
                             <label for="input-fiscal-year-start">ट्युबेल</label>
-                            <input type="text" name="tubwell" class="form-control"
+                            <input type="number" name="tubwell" class="form-control"
                                 value="{{ old('tubwell', $water->tubwell) }}">
                         </div>
                         <div class="form-group col-lg-3">
                             <label for="input-fiscal-year-start">संरक्षित कुवा</label>
-                            <input type="text" name="protected_well" class="form-control"
+                            <input type="number" name="protected_well" class="form-control"
                                 value="{{ old('protected_well', $water->protected_well) }}">
                         </div>
                         <div class="form-group col-lg-3">
                             <label for="input-fiscal-year-start">असंरक्षित कुवा</label>
-                            <input type="text" name="unprotected_well" class="form-control"
+                            <input type="number" name="unprotected_well" class="form-control"
                                 value="{{ old('unprotected_well', $water->unprotected_well) }}">
                         </div>
                         <div class="form-group col-lg-3">
                             <label for="input-fiscal-year-start">थोपा पानी</label>
-                            <input type="text" name="drop_water" class="form-control"
+                            <input type="number" name="drop_water" class="form-control"
                                 value="{{ old('drop_water', $water->drop_water) }}">
                         </div>
                         <div class="form-group col-lg-3">
                             <label for="input-fiscal-year-start">नदीको धारा </label>
-                            <input type="text" name="river_tap" class="form-control"
+                            <input type="number" name="river_tap" class="form-control"
                                 value="{{ old('river_tap', $water->river_tap) }}">
                         </div>
 
                         <div class="form-group col-lg-3">
                             <label for="input-fiscal-year-start">अन्य</label>
-                            <input type="text" name="other" class="form-control"
+                            <input type="number" name="other" class="form-control"
                                 value="{{ old('other', $water->other) }}">
                         </div>
                     </div>

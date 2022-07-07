@@ -50,7 +50,7 @@
 
                             <div class="form-group">
                                 <label for="input-fiscal-year-start">कुलपुँजी</label>
-                                <input type="text" name="laghu_capital" class="form-control"
+                                <input type="number" name="laghu_capital" class="form-control"
                                     value="{{ old('laghu_capital', $supaBusiness->laghu_capital) }}">
                             </div>
                         </div>
@@ -65,7 +65,7 @@
 
                             <div class="form-group">
                                 <label for="input-fiscal-year-start">कुलपुँजी</label>
-                                <input type="text" name="gharelu_capital" class="form-control"
+                                <input type="number" name="gharelu_capital" class="form-control"
                                     value="{{ old('gharelu_capital', $supaBusiness->gharelu_capital) }}">
                             </div>
                         </div>
@@ -74,13 +74,13 @@
                             <label style="position: relative;top:-10px" class="bg-white px-4">साना</label>
                             <div class="form-group">
                                 <label for="input-fiscal-year-start">संख्या</label>
-                                <input type="text" name="sana_quantity" class="form-control"
+                                <input type="number" name="sana_quantity" class="form-control"
                                     value="{{ old('sana_quantity', $supaBusiness->sana_quantity) }}">
                             </div>
 
                             <div class="form-group">
                                 <label for="input-fiscal-year-start">कुलपुँजी</label>
-                                <input type="text" name="sana_capital" class="form-control"
+                                <input type="number" name="sana_capital" class="form-control"
                                     value="{{ old('sana_capital', $supaBusiness->sana_capital) }}">
                             </div>
                         </div>

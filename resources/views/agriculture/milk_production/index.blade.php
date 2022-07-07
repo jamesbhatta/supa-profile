@@ -62,25 +62,25 @@
                         </div>
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">	दुधालु गाइ सख्या</label>
-                            <input type="text" name="cow" class="form-control"
+                            <input type="number" name="cow" class="form-control"
                                 value="{{ old('cow', $milkProduction->cow) }}">
                         </div>
 
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">गाइको दुध</label>
-                            <input type="text" name="cow_milk" class="form-control"
+                            <input type="number" name="cow_milk" class="form-control"
                                 value="{{ old('cow_milk', $milkProduction->cow_milk) }}">
                         </div>
 
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">	दुधालु भैसी सख्या</label>
-                            <input type="text" name="buffalo" class="form-control"
+                            <input type="number" name="buffalo" class="form-control"
                                 value="{{ old('buffalo', $milkProduction->buffalo) }}">
                         </div>
 
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">भैसीको दुध</label>
-                            <input type="text" name="buffalo_milk" class="form-control"
+                            <input type="number" name="buffalo_milk" class="form-control"
                                 value="{{ old('buffalo_milk', $milkProduction->buffalo_milk) }}">
                         </div>
 

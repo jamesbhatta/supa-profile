@@ -49,12 +49,12 @@
                             <div class="row">
                                 <div class="form-group col-lg-12">
                                 <label for="input-fiscal-year-start">क्षेत्रफल हे.</label>
-                                <input type="text" name="from_area" class="form-control"
+                                <input type="number" name="from_area" class="form-control"
                                     value="{{ old('from_area', $mainCrop->from_area) }}">
                             </div>
                             <div class="form-group col-lg-12">
                                 <label for="input-fiscal-year-start">उत्पादन</label>
-                                <input type="text" name="from_production" class="form-control"
+                                <input type="number" name="from_production" class="form-control"
                                     value="{{ old('from_production', $mainCrop->from_production) }}">
                             </div>
                             </div>
@@ -64,12 +64,12 @@
                             <label style="position: relative;top:-10px" class="bg-white px-4">TO</label>
                             <div class="form-group col-lg-12">
                                 <label for="input-fiscal-year-start">क्षेत्रफल हे.</label>
-                                <input type="text" name="to_area" class="form-control"
+                                <input type="number" name="to_area" class="form-control"
                                     value="{{ old('to_area', $mainCrop->to_area) }}">
                             </div>
                             <div class="form-group col-lg-12">
                                 <label for="input-fiscal-year-start">उत्पादन</label>
-                                <input type="text" name="to_production" class="form-control"
+                                <input type="number" name="to_production" class="form-control"
                                     value="{{ old('to_production', $mainCrop->to_production) }}">
                             </div>
                         </div>

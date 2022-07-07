@@ -586,7 +586,7 @@
 
         {{-- ===============Bank============== --}}
 
-        <li class="nav-item">
+        {{-- <li class="nav-item">
             <a href="#bank" data-toggle="collapse" aria-expanded="false"
                 class="dropdown-toggle collapsed nav-link"><span class="text-default"><i
                         class="fa fa-home"></i></span>@lang('navigation.bank')</a>
@@ -607,11 +607,11 @@
                     </a>
                 </li>
             </ul>
-        </li>
+        </li> --}}
 
         {{-- =============+School=========== --}}
 
-        <li class="nav-item">
+        {{-- <li class="nav-item">
             <a href="#school" data-toggle="collapse" aria-expanded="false"
                 class="dropdown-toggle collapsed nav-link"><span class="text-default"><i
                         class="fa fa-school"></i></span>@lang('navigation.school')</a>
@@ -640,7 +640,7 @@
                     </a>
                 </li>
             </ul>
-        </li>
+        </li> --}}
 
         <li class="nav-item">
             <a class="nav-link" href="{{ route('info-card.create') }}">

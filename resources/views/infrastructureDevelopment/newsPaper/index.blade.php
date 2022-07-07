@@ -69,37 +69,37 @@
                     <div class="row">
                         <div class="form-group col-md-3">
                             <label for="input-fiscal-year-start">दैनिक</label>
-                            <input type="text" name="daily" class="form-control"
+                            <input type="number" name="daily" class="form-control"
                                 value="{{ old('daily', $newsPaper->daily) }}">
                         </div>
                         <div class="form-group col-md-3">
                             <label for="input-fiscal-year-start">अर्ध साप्ताहिक </label>
-                            <input type="text" name="half_weakly" class="form-control"
+                            <input type="number" name="half_weakly" class="form-control"
                                 value="{{ old('half_weakly', $newsPaper->half_weakly) }}">
                         </div>
                         <div class="form-group col-md-3">
                             <label for="input-fiscal-year-start">साप्ताहिक</label>
-                            <input type="text" name="weakly" class="form-control"
+                            <input type="number" name="weakly" class="form-control"
                                 value="{{ old('weakly', $newsPaper->weakly) }}">
                         </div>
                         <div class="form-group col-md-3">
                             <label for="input-fiscal-year-start">पाक्षिक</label>
-                            <input type="text" name="fortnightly" class="form-control"
+                            <input type="number" name="fortnightly" class="form-control"
                                 value="{{ old('fortnightly', $newsPaper->fortnightly) }}">
                         </div>
                         <div class="form-group col-md-4">
                             <label for="input-fiscal-year-start">मासिक</label>
-                            <input type="text" name="monthly" class="form-control"
+                            <input type="number" name="monthly" class="form-control"
                                 value="{{ old('monthly', $newsPaper->monthly) }}">
                         </div>
                         <div class="form-group col-md-4">
                             <label for="input-fiscal-year-start">द्धैमासिक</label>
-                            <input type="text" name="monthly_twise" class="form-control"
+                            <input type="number" name="monthly_twise" class="form-control"
                                 value="{{ old('monthly_twise', $newsPaper->monthly_twise) }}">
                         </div>
                         <div class="form-group col-md-4">
                             <label for="input-fiscal-year-start">त्रैमासिक</label>
-                            <input type="text" name="monthly_thirds" class="form-control"
+                            <input type="number" name="monthly_thirds" class="form-control"
                                 value="{{ old('monthly_thirds', $newsPaper->monthly_thirds) }}">
                         </div>
                     </div>

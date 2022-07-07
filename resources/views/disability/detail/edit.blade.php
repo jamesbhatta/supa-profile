@@ -58,12 +58,12 @@
                 </div>
                 <div class="form-group">
                     <label for="input-name">अपाङ्ग पुरुष संख्या </label>
-                    <input type="text" id="input-name" name="male_num" class="form-control" autocomplete="off" value="{{ $disability_details[0]->male_num }}">
+                    <input type="number" id="input-name" name="male_num" class="form-control" autocomplete="off" value="{{ $disability_details[0]->male_num }}">
                 </div>
 
                 <div class="form-group">
-                    <label for="input-name">महिला महिला संख्या </label>
-                    <input type="text" id="input-name" name="female_num" class="form-control" autocomplete="off" value="{{ $disability_details[0]->female_num}}">
+                    <label for="input-name">अपाङ्ग महिला संख्या </label>
+                    <input type="number" id="input-name" name="female_num" class="form-control" autocomplete="off" value="{{ $disability_details[0]->female_num}}">
                 </div>
                 
                 <div class="form-group">

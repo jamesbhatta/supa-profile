@@ -65,7 +65,7 @@
 
                 <div class="form-group">
                     <label for="input-name">बैंक तथा वित्तिय संस्था संख्या</label>
-                    <input type="text" id="input-name" name="bank_number" class="form-control" autocomplete="off" value="{{ old('name') }}">
+                    <input type="number" id="input-name" name="bank_number" class="form-control" autocomplete="off" value="{{ old('name') }}">
                 </div>
                 <div class="form-group">
                     <button type="submit" class="btn btn-success z-depth-0">सेभ गर्नुहोस्</button>

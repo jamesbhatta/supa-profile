@@ -54,7 +54,7 @@
                         </div>
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">लम्बाइ</label>
-                            <input type="text" name="lenght" class="form-control"
+                            <input type="number" name="lenght" class="form-control"
                                 value="{{ old('lenght', $provinceRoad->lenght) }}">
                         </div>
                     </div>
