@@ -2,12 +2,12 @@
 
 @section('content')
     <div class="container-fluid">
-        <h3 class="font-weight-bold">सुदूरपश्चिम प्रादेशमा स्वास्थ्य बीमाको विवरण</h3>
+        <h3 class="font-weight-bold">स्वास्थ्य सेवा प्रवाहको अवस्था</h3>
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
                 <li class="breadcrumb-item active" aria-current="page">सामाजिक विकास</li>
-                <li class="breadcrumb-item active" aria-current="page">सुदूरपश्चिम प्रादेशमा स्वास्थ्य बीमाको विवरण
+                <li class="breadcrumb-item active" aria-current="page">स्वास्थ्य सेवा प्रवाहको अवस्था
                 </li>
             </ol>
         </nav>
@@ -19,7 +19,7 @@
                 <div style="overflow: auto;scrollbar-width: none;">
                     <div>
                         <nav class="nav nav-pills" id="pills-tab" role="tablist">
-                            <h4>सुदूरपश्चिम प्रादेशमा स्वास्थ्य बीमाको विवरण</h4>
+                            <h4>स्वास्थ्य सेवा प्रवाहको अवस्था</h4>
                         </nav>
                     </div>
                 </div>
@@ -44,11 +44,11 @@
                             <label style="position: relative;top:-10px" class="bg-white px-4">राष्ट्रिय</label>
                             <div class="form-group">
                                 <label for="input-fiscal-year-start">From</label>
-                                <input type="number" name="national_from"  class="form-control fiscal-year-date" value="{{ old('national_from', $helthFlow->national_from) }}" >
+                                <input type="text" name="national_from"  class="form-control fiscal-year-date" value="{{ old('national_from', $helthFlow->national_from) }}" >
                             </div>
                             <div class="form-group">
                                 <label for="input-fiscal-year-end">To</label>
-                                <input type="number" name="national_to"class="form-control fiscal-year-date" value="{{ old('national_to', $helthFlow->national_to) }}">
+                                <input type="text" name="national_to"class="form-control fiscal-year-date" value="{{ old('national_to', $helthFlow->national_to) }}">
                             </div>
                             
                         </div>
@@ -56,11 +56,11 @@
                             <label style="position: relative;top:-10px" class="bg-white px-4">प्रदेश</label>
                             <div class="form-group">
                                 <label for="input-fiscal-year-start">From</label>
-                                <input type="number" name="provincinal_from"  class="form-control fiscal-year-date" value="{{ old('provincinal_from', $helthFlow->provincinal_from) }}" >
+                                <input type="text" name="provincinal_from"  class="form-control fiscal-year-date" value="{{ old('provincinal_from', $helthFlow->provincinal_from) }}" >
                             </div>
                             <div class="form-group">
                                 <label for="input-fiscal-year-end">To</label>
-                                <input type="number" name="provincinal_to"class="form-control fiscal-year-date" value="{{ old('provincinal_to', $helthFlow->provincinal_to) }}">
+                                <input type="text" name="provincinal_to"class="form-control fiscal-year-date" value="{{ old('provincinal_to', $helthFlow->provincinal_to) }}">
                             </div>
                             
                         </div>
@@ -80,7 +80,7 @@
 
         <div class="card z-depth-0">
             <div class="card-header">
-                <h1 class="h3-responsive d-inline-block">सुदूरपश्चिम प्रादेशमा स्वास्थ्य बीमाको विवरण</h1>
+                <h1 class="h3-responsive d-inline-block">स्वास्थ्य सेवा प्रवाहको अवस्था</h1>
                 {{-- <small>(हाल {{ $fiscalYears->count() }} आर्थिक वर्षहरु छन्)</small> --}}
             </div>
             <div class="card-body">

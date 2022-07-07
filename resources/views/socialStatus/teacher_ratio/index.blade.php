@@ -2,12 +2,12 @@
 
 @section('content')
     <div class="container-fluid">
-        <h3 class="font-weight-bold">प्रदेशमा रहेका क्याम्पस विवरण</h3>
+        <h3 class="font-weight-bold">सुदूरपश्चिम प्रदेशमा शिक्षक अनुपात विवरण</h3>
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
                 <li class="breadcrumb-item active" aria-current="page">सामाजिक विकास</li>
-                <li class="breadcrumb-item active" aria-current="page">प्रदेशमा रहेका क्याम्पस विवरण
+                <li class="breadcrumb-item active" aria-current="page">सुदूरपश्चिम प्रदेशमा शिक्षक अनुपात विवरण
                 </li>
             </ol>
         </nav>
@@ -19,7 +19,7 @@
                 <div style="overflow: auto;scrollbar-width: none;">
                     <div>
                         <nav class="nav nav-pills" id="pills-tab" role="tablist">
-                            <h4>प्रदेशमा रहेका क्याम्पस विवरण</h4>
+                            <h4>सुदूरपश्चिम प्रदेशमा शिक्षक अनुपात विवरण</h4>
                         </nav>
                     </div>
                 </div>
@@ -68,22 +68,22 @@
                         </div>
                         <div class="form-group col-lg-3">
                             <label for="input-fiscal-year-start">आधारभूत तह (१–५) </label>
-                            <input type="number" id="input-fiscal-year" name="primary" class="form-control font-roboto"
+                            <input type="text" id="input-fiscal-year" name="primary" class="form-control font-roboto"
                                 value="{{ old('primary', $teacherRatio->primary) }}">
                         </div>
                         <div class="form-group col-lg-3">
                             <label for="input-fiscal-year-start">आधारभूत तह (६–८) </label>
-                            <input type="number" id="input-fiscal-year" name="primary_1" class="form-control font-roboto"
+                            <input type="text" id="input-fiscal-year" name="primary_1" class="form-control font-roboto"
                                 value="{{ old('primary_1', $teacherRatio->primary_1) }}">
                         </div>
                         <div class="form-group col-lg-3">
                             <label for="input-fiscal-year-start">माध्यमिक तह (९–१०) </label>
-                            <input type="number" id="input-fiscal-year" name="secondary" class="form-control font-roboto"
+                            <input type="text" id="input-fiscal-year" name="secondary" class="form-control font-roboto"
                                 value="{{ old('secondary', $teacherRatio->secondary) }}">
                         </div>
                         <div class="form-group col-lg-3">
                             <label for="input-fiscal-year-start">माध्यमिक तह (११–१२) </label>
-                            <input type="number" id="input-fiscal-year" name="secondary_1" class="form-control font-roboto"
+                            <input type="text" id="input-fiscal-year" name="secondary_1" class="form-control font-roboto"
                                 value="{{ old('secondary_1', $teacherRatio->secondary_1) }}">
                         </div>
 
@@ -102,7 +102,7 @@
 
         <div class="card z-depth-0">
             <div class="card-header">
-                <h1 class="h3-responsive d-inline-block">प्रदेशमा रहेका क्याम्पस विवरण</h1>
+                <h1 class="h3-responsive d-inline-block">सुदूरपश्चिम प्रदेशमा शिक्षक अनुपात विवरण</h1>
                 {{-- <small>(हाल {{ $fiscalYears->count() }} आर्थिक वर्षहरु छन्)</small> --}}
             </div>
             <div class="card-body">

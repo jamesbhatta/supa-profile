@@ -53,7 +53,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="input-fiscal-year-start">प्रतिशत (जम्मा नयााँ बिरामि मध्ये)</label>
-                                <input type="number" id="input-fiscal-year" name="national_percentage" class="form-control font-roboto"
+                                <input type="text" id="input-fiscal-year" name="national_percentage" class="form-control font-roboto"
                                     value="{{ old('national_percentage', $diseas->national_percentage) }}">
                             </div>
                         </div>
@@ -66,7 +66,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="input-fiscal-year-start">प्रतिशत (जम्मा नयााँ बिरामि मध्ये)</label>
-                                <input type="number" id="input-fiscal-year" name="provincenal_percentage" class="form-control font-roboto"
+                                <input type="text" id="input-fiscal-year" name="provincenal_percentage" class="form-control font-roboto"
                                     value="{{ old('provincenal_percentage', $diseas->provincenal_percentage) }}">
                             </div>
                         </div>
