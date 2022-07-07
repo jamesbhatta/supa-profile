@@ -33,7 +33,7 @@ class PrivinceHeadController extends Controller
         PrivinceHead::create($request->validate([
             'province_head'=>"required",
             'from'=>"required|date",
-            'to'=>"required|date",
+            'to'=>"required",
         ]));
         return redirect()->back()->with('success',"हालसम्म भएका प्रदेश प्रमुखहरुको नामावली र मिति सफलतापूर्वक थपियो");
     }
@@ -53,7 +53,7 @@ class PrivinceHeadController extends Controller
         $provinceHead->update($request->validate([
             'province_head'=>"required|min:3",
             'from'=>"required|min:3|max:50|date",
-            'to'=>"required|min:3|max:50|date",
+            'to'=>"required|min:3|max:50",
         ]));
         return redirect()->route('province-head.index')->with('success','हालसम्म भएका प्रदेश प्रमुखहरुको नामावली र मिति सफलतापूर्वक परिवर्तन भयो');
     }

@@ -48,7 +48,7 @@
                         </div>
                         <div class="form-group col-lg-4">
                             <label for="input-fiscal-year-start">सुदूरपश्चिमको क्षेत्रफल(हे.हजारमा)</label>
-                            <input type="number" name="supa_area" class="form-control"
+                            <input type="text" name="supa_area" class="form-control"
                                 value="{{ old('supa_area', $landUses->supa_area) }}">
                         </div>
                     </div>
