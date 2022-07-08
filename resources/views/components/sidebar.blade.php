@@ -340,11 +340,11 @@
                         <span class="mx-3"><i class="fa fa-circle"></i></span>सडक सञ्जाल
                     </a>
                 </li>
-                <li class="nav-item sub-nav">
+                {{-- <li class="nav-item sub-nav">
                     <a class="nav-link" href="{{ route('province-road.index') }}">
                         <span class="mx-3"><i class="fa fa-circle"></i></span>प्रदेश र स्थानीय तहको सडक
                     </a>
-                </li>
+                </li> --}}
                 <li class="nav-item sub-nav">
                     <a class="nav-link" href="{{ route('road-detail.index') }}">
                         <span class="mx-3"><i class="fa fa-circle"></i></span>स्थानीय तहको सडक
