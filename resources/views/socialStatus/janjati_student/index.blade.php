@@ -84,7 +84,7 @@
                                 value="{{ old('female', $janjatiStudent->female) }}">
                         </div>
                         <div class="form-group col-lg-4">
-                            <label for="input-fiscal-year-start">छात्रा </label>
+                            <label for="input-fiscal-year-start">छात्र </label>
                             <input type="number" id="input-fiscal-year" name="male" class="form-control font-roboto"
                                 value="{{ old('male', $janjatiStudent->male) }}">
                         </div>

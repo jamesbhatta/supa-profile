@@ -2,12 +2,12 @@
 
 @section('content')
     <div class="container-fluid">
-        <h3 class="font-weight-bold">प्रदेश गौरबका आयोजाहरु</h3>
+        <h3 class="font-weight-bold">प्रदेश गौरबका आयोजनाहरु</h3>
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
                 <li class="breadcrumb-item active" aria-current="page">पूर्वाधार विकास</li>
-                <li class="breadcrumb-item active" aria-current="page">प्रदेश गौरबका आयोजाहरु</li>
+                <li class="breadcrumb-item active" aria-current="page">प्रदेश गौरबका आयोजनाहरु</li>
             </ol>
         </nav>
         <div class="container">
@@ -18,7 +18,7 @@
                 <div style="overflow: auto;scrollbar-width: none;">
                     <div>
                         <nav class="nav nav-pills" id="pills-tab" role="tablist">
-                            <h4>प्रदेश गौरबका आयोजाहरु</h4>
+                            <h4>प्रदेश गौरबका आयोजनाहरु</h4>
                         </nav>
                     </div>
                 </div>
@@ -49,7 +49,7 @@
                     </div>
                     <div class="form-group">
                         <label for="select-district-id">जिल्लाको नाम</label>
-                        <select name="district" id="select-district-name" class="custom-select">
+                        <select name="district" id="select-district-id" class="custom-select">
                             @isset($proudProject->id)
                                 <option value="{{ $proudProject->district }}" selected>{{ $proudProject->district }}</option>
                             @else
@@ -63,6 +63,7 @@
                             @endforeach
                         </select>
                     </div>
+                    
                     <div class="row">
                         <div class="form-group col-md-4">
                             <label for="input-name">ठेक्का लागेको लम्बाइ</label>
@@ -98,7 +99,7 @@
 
         <div class="card z-depth-0">
             <div class="card-header">
-                <h1 class="h3-responsive d-inline-block">प्रदेश गौरबका आयोजाहरु</h1>
+                <h1 class="h3-responsive d-inline-block">प्रदेश गौरबका आयोजनाहरु</h1>
                 {{-- <small>(हाल {{ count($schools)  }}  विद्यालय {{ count($schools) > 1 ? 'हरु छन्' : 'छ' }} )</small> --}}
 
             </div>
@@ -159,6 +160,7 @@
             if ($('.fiscal-year-date')[0]) {
                 $('.fiscal-year-date').nepaliDatePicker({});
             }
+
         });
     </script>
 @endpush

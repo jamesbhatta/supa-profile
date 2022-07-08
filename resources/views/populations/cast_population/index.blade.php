@@ -85,7 +85,7 @@
                         <tbody>
                             @forelse ($castPopulations as $item)
                                 <tr>
-                                    <td>{{ $item->province }}</td>
+                                    <td>{{ $item->cast }}</td>
                                     <td>{{ $item->population }}</td>
                                     <td>{{ $item->percentage }}</td>
                                    

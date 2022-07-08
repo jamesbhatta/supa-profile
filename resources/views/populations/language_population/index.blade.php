@@ -2,13 +2,12 @@
 
 @section('content')
     <div class="container-fluid">
-        <h3 class="font-weight-bold">जातजाती आधारमा रहेको जनसंख्या</h3>
+        <h3 class="font-weight-bold">प्रखुम दश भाषाभाषी विवरण</h3>
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
                 <li class="breadcrumb-item active" aria-current="page">जनसांख्यिक स्थिति</li>
-                <li class="breadcrumb-item active" aria-current="page">सुदूरपश्चिम प्रदेश र अन्य प्रदेशमा रहेको जनसांख्यिक
-                    स्थिति</li>
+                <li class="breadcrumb-item active" aria-current="page">प्रखुम दश भाषाभाषी विवरण</li>
             </ol>
         </nav>
         <div class="container">
@@ -19,7 +18,7 @@
                 <div style="overflow: auto;scrollbar-width: none;">
                     <div>
                         <nav class="nav nav-pills" id="pills-tab" role="tablist">
-                            <h4>जातजाती आधारमा रहेको जनसंख्या</h4>
+                            <h4>प्रखुम दश भाषाभाषी विवरण</h4>
                         </nav>
                     </div>
                 </div>
@@ -67,7 +66,7 @@
         <div class="container-fluid">
             <div class="card z-depth-0">
                 <div class="card-header">
-                    <h1 class="h3-responsive d-inline-block">जातजाती आधारमा रहेको जनसंख्या</h1>
+                    <h1 class="h3-responsive d-inline-block">प्रखुम दश भाषाभाषी विवरण</h1>
                     {{-- <small>(हाल {{ count($schools)  }}  विद्यालय {{ count($schools) > 1 ? 'हरु छन्' : 'छ' }} )</small> --}}
 
                 </div>

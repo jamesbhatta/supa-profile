@@ -2,12 +2,12 @@
 
 @section('content')
     <div class="container-fluid">
-        <h3 class="font-weight-bold">सुदूरपश्चिममा रहेका कूल विद्यार्थी संख्या विवरण</h3>
+        <h3 class="font-weight-bold">सामूदायिक विद्यालयमा विद्यार्थीको जिल्लागत संख्या विवरण</h3>
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
                 <li class="breadcrumb-item active" aria-current="page">सामाजिक विकास</li>
-                <li class="breadcrumb-item active" aria-current="page">सुदूरपश्चिममा रहेका कूल विद्यार्थी संख्या विवरण</li>
+                <li class="breadcrumb-item active" aria-current="page">सामूदायिक विद्यालयमा विद्यार्थीको जिल्लागत संख्या विवरण</li>
             </ol>
         </nav>
         <div class="container">
@@ -18,7 +18,7 @@
                 <div style="overflow: auto;scrollbar-width: none;">
                     <div>
                         <nav class="nav nav-pills" id="pills-tab" role="tablist">
-                            <h4>सुदूरपश्चिममा रहेका कूल विद्यार्थी संख्या विवरण</h4>
+                            <h4>सामूदायिक विद्यालयमा विद्यार्थीको जिल्लागत संख्या विवरण</h4>
                         </nav>
                     </div>
                 </div>
@@ -69,7 +69,7 @@
                                     <option value="{{ $govermentSchoolStudent->classes }}" selected>
                                         {{ $govermentSchoolStudent->classes }}</option>
                                 @endif
-                                <option value="०–१ कक्षा">०–१ कक्षा</option>
+                                <option value="०–१ कक्षा">1-12 कक्षा</option>
                                 <option value="१–५ कक्षा">१–५ कक्षा</option>
                                 <option value="६–८ कक्षा">६–८ कक्षा</option>
                                 <option value="९–१० कक्षा">९–१० कक्षा</option>
@@ -104,7 +104,7 @@
 
         <div class="card z-depth-0">
             <div class="card-header">
-                <h1 class="h3-responsive d-inline-block">सुदूरपश्चिममा रहेका कूल विद्यार्थी संख्या विवरण</h1>
+                <h1 class="h3-responsive d-inline-block">सामूदायिक विद्यालयमा विद्यार्थीको जिल्लागत संख्या विवरण</h1>
                 {{-- <small>(हाल {{ $fiscalYears->count() }} आर्थिक वर्षहरु छन्)</small> --}}
             </div>
             <div class="card-body">

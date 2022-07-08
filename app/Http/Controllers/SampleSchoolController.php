@@ -12,13 +12,13 @@ class SampleSchoolController extends Controller
 
     public function listing()
     {
-        $data = SampleSchool::get();
+        $data = SampleSchool::with('district')->get();
         $dataset['labels'] = ["जिल्ला", "नमूना विद्यालयको नाम", "ठेगाना"];
         $dataset['data'] = [];
         foreach ($data as $key => $item) {
             $dataset['data'][] = [
                 // $key + 1,
-                $item->district_id,
+                $item->district->name,
                 $item->name,
                 $item->address,
                 

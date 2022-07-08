@@ -62,7 +62,7 @@
                             </select>
                         </div>
                         <div class="form-group col-lg-6">
-                            <label for="input-fiscal-year-start">नमूना विद्यालयको नाम</label>
+                            <label for="input-fiscal-year-start">विद्यालयको नाम</label>
                             <input type="text" name="name" class="form-control"
                                 value="{{ old('name', $localSchool->name) }}">
                         </div>
