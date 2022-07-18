@@ -24,7 +24,7 @@
                
                 <div class="form-group">
                     <label for="input-name-en">न.पा./गा.वि.स. को छेत्रफल</label>
-                    <input type="number" id="input-name-en" name="area" class="form-control" autocomplete="off" value="{{ old('name_en', $municipality->area) }}">
+                    <input type="text" id="input-name-en" name="area" class="form-control" autocomplete="off" value="{{ old('name_en', $municipality->area) }}">
                 </div>
                 <div class="form-group">
                     <label for="input-name-en">न.पा./गा.वि.स. को वार्ड सांख्य</label>
