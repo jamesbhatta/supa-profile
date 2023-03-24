@@ -59,7 +59,7 @@
                             </div>
                             <div class="form-group">
                                 <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" name="is_ward_login" id="ward-toggler" @if(($user->id && isset($user->ward_id)) || !isset($user->id)) checked @endif>
+                                    <input type="checkbox" class="custom-control-input" name="is_ward_login" id="ward-toggler" @if(($user->id && isset($user->ward_id))) checked @endif>
                                     <label class="custom-control-label" for="ward-toggler">Ward Login</label>
                                     <small class="form-text text-muted">
                                         Check this field for ward employees and make sure to select the ward from dropdown below.
